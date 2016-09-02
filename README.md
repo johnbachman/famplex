@@ -1,2 +1,3 @@
 # bioentities
-Namespace encoding hierarchical relationships between proteins, protein families, and protein complexes.
+Resources for grounding biological entities from text and describing their
+hierarchical relationships.
