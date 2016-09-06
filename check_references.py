@@ -61,6 +61,15 @@ def update_id_prefixes(filename):
         updated_rows.append(updated_row)
     return updated_rows
 
+def pubchem_and_chebi(db_refs):
+    pubchem_id = db_refs.get('PUBCHEM')
+    chebi_id = db_refs.get('CHEBI')
+    if pubchem_id and not chebi_id:
+        return 'chebi_missing'
+    if chebi_id and not pubchem_id:
+        return 'pubchem_missing'
+    return None
+
 if __name__ == '__main__':
     # Check the entity list for duplicates
     entities = load_entity_list('entities.csv')
@@ -77,6 +86,11 @@ if __name__ == '__main__':
                 if db_key == 'INDRA' and db_id not in entities:
                     print "ERROR: ID %s referenced in grounding map " \
                           "is not in entities list." % db_id
+            p_and_c = pubchem_and_chebi(db_refs)
+            if p_and_c == 'chebi_missing':
+                print "WARNING: %s has PUBCHEM ID but no CHEBI ID." % text
+            if p_and_c == 'pubchem_missing':
+                print "WARNING: %s has CHEBI ID but no PUBCHEM ID." % text
 
     # Load the relationships
     relationships = load_relationships('relations.csv')
