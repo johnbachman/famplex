@@ -97,6 +97,11 @@ if __name__ == '__main__':
                 if db_key == 'INDRA' and db_id not in entities:
                     print "ERROR: ID %s referenced in grounding map " \
                           "is not in entities list." % db_id
+
+    print
+    print "-- Checking for CHEBI/PUBCHEM IDs--"
+    for text, db_refs in gm.items():
+        if db_refs is not None:
             p_and_c = pubchem_and_chebi(db_refs)
             if p_and_c == 'chebi_missing':
                 print "WARNING: %s has PUBCHEM ID but no CHEBI ID." % text
