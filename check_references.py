@@ -1,4 +1,5 @@
 import csv
+from collections import Counter
 
 def load_csv(filename):
     with open(filename) as f:
@@ -73,9 +74,19 @@ def pubchem_and_chebi(db_refs):
 if __name__ == '__main__':
     # Check the entity list for duplicates
     entities = load_entity_list('entities.csv')
-    if len(entities) != len(set(entities)):
-        print "ERROR: Duplicate entities in entity list."
+    ent_counter = Counter(entities)
+    print "-- Checking for duplicate entities --"
+    found_duplicates = False
+    for ent, freq in ent_counter.items():
+        if freq > 1:
+            print "ERROR: Duplicate entries for %s in entity list." % \
+                  ent
+            found_duplicates = True
+    if not found_duplicates:
+        print "OK! No duplicates found."
 
+    print
+    print "-- Checking for undeclared INDRA entities in grounding map --"
     # Load the grounding map
     gm = load_grounding_map('grounding_map.csv')
     # Look through grounding map and find all instances with an 'INDRA' db
@@ -92,6 +103,8 @@ if __name__ == '__main__':
             if p_and_c == 'pubchem_missing':
                 print "WARNING: %s has CHEBI ID but no PUBCHEM ID." % text
 
+    print
+    print "-- Checking for undeclared INDRA entities in relationships file --"
     # Load the relationships
     relationships = load_relationships('relations.csv')
     # Check the relationships for consistency with entities
@@ -102,3 +115,4 @@ if __name__ == '__main__':
             if term_ns == 'INDRA' and term_id not in entities:
                 print "ERROR: ID %s referenced in relations " \
                       "is not in entities list." % term_id
+
