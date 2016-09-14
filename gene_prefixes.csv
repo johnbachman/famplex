@@ -119,11 +119,11 @@ dn-{Gene name},inhibition,dominant negative
 dn{Gene name},inhibition,dominant negative
 dominant negative {Gene name},inhibition,dominant negative
 dominant-negative {Gene name},inhibition,dominant negative
-sh{Gene name},inhibition,small hairpin RNA
-sh{Gene name},inhibition,small hairpin RNA
-sh-{Gene name},inhibition,small hairpin RNA
-SH-{Gene name},inhibition,small hairpin RNA
-shRNA-{Gene name},inhibition,small hairpin RNA
+sh{Gene name},inhibition,short hairpin RNA
+sh{Gene name},inhibition,short hairpin RNA
+sh-{Gene name},inhibition,short hairpin RNA
+SH-{Gene name},inhibition,short hairpin RNA
+shRNA-{Gene name},inhibition,short hairpin RNA
 si-{Gene name},inhibition,small interfering RNA
 Si-{Gene name},inhibition,small interfering RNA
 silencing {Gene name},inhibition,
