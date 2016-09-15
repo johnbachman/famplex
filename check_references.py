@@ -86,15 +86,15 @@ if __name__ == '__main__':
         print "OK! No duplicates found."
 
     print
-    print "-- Checking for undeclared INDRA entities in grounding map --"
+    print "-- Checking for undeclared Bioentities IDs in grounding map --"
     # Load the grounding map
     gm = load_grounding_map('grounding_map.csv')
-    # Look through grounding map and find all instances with an 'INDRA' db
+    # Look through grounding map and find all instances with an 'BE' db
     indra_ids = []
     for text, db_refs in gm.items():
         if db_refs is not None:
             for db_key, db_id in db_refs.items():
-                if db_key == 'INDRA' and db_id not in entities:
+                if db_key == 'BE' and db_id not in entities:
                     print "ERROR: ID %s referenced in grounding map " \
                           "is not in entities list." % db_id
 
@@ -109,7 +109,7 @@ if __name__ == '__main__':
                 print "WARNING: %s has CHEBI ID but no PUBCHEM ID." % text
 
     print
-    print "-- Checking for undeclared INDRA entities in relationships file --"
+    print "-- Checking for undeclared Bioentities IDs in relationships file --"
     # Load the relationships
     relationships = load_relationships('relations.csv')
     # Check the relationships for consistency with entities
@@ -117,7 +117,7 @@ if __name__ == '__main__':
         for term in (subj, obj):
             term_ns = term[0]
             term_id = term[1]
-            if term_ns == 'INDRA' and term_id not in entities:
+            if term_ns == 'BE' and term_id not in entities:
                 print "ERROR: ID %s referenced in relations " \
                       "is not in entities list." % term_id
 
