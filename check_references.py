@@ -90,22 +90,27 @@ if __name__ == '__main__':
     # Load the grounding map
     gm = load_grounding_map('grounding_map.csv')
     # Look through grounding map and find all instances with an 'BE' db
-    indra_ids = []
+    entities_missing_gm = []
     for text, db_refs in gm.items():
         if db_refs is not None:
             for db_key, db_id in db_refs.items():
                 if db_key == 'BE' and db_id not in entities:
+                    entities_missing_gm.append(db_id)
                     print "ERROR: ID %s referenced in grounding map " \
                           "is not in entities list." % db_id
 
     print
     print "-- Checking for CHEBI/PUBCHEM IDs--"
+    chebi_id_missing = []
+    pubchem_id_missing = []
     for text, db_refs in gm.items():
         if db_refs is not None:
             p_and_c = pubchem_and_chebi(db_refs)
             if p_and_c == 'chebi_missing':
+                chebi_id_missing.append(db_refs['PUBCHEM'])
                 print "WARNING: %s has PUBCHEM ID but no CHEBI ID." % text
             if p_and_c == 'pubchem_missing':
+                pubchem_id_missing.append(db_refs['CHEBI'])
                 print "WARNING: %s has CHEBI ID but no PUBCHEM ID." % text
 
     print
@@ -113,11 +118,13 @@ if __name__ == '__main__':
     # Load the relationships
     relationships = load_relationships('relations.csv')
     # Check the relationships for consistency with entities
+    entities_missing_rel = []
     for subj, rel, obj in relationships:
         for term in (subj, obj):
             term_ns = term[0]
             term_id = term[1]
             if term_ns == 'BE' and term_id not in entities:
+                entities_missing_rel.append(term_id)
                 print "ERROR: ID %s referenced in relations " \
                       "is not in entities list." % term_id
 
