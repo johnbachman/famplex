@@ -128,3 +128,23 @@ if __name__ == '__main__':
                 print "ERROR: ID %s referenced in relations " \
                       "is not in entities list." % term_id
 
+    print
+    print "-- Checking for Bioentities whose relationships are undefined  --"
+    # Check the relationships for consistency with entities
+    rel_missing_entities = []
+    for ent in entities:
+        found = False
+        for subj, rel, obj in relationships:
+            subj_ns = subj[0]
+            subj_id = subj[1]
+            obj_ns = obj[0]
+            obj_id = obj[1]
+            if subj_ns == 'BE' and subj_id == ent:
+                found = True
+                break
+            if obj_ns == 'BE' and obj_id == ent:
+                found = True
+                break
+        if not found:
+            rel_missing_entities.append(ent)
+            print "ERROR: ID %s has no known relations." % ent
