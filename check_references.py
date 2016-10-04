@@ -163,6 +163,27 @@ if __name__ == '__main__':
     except IOError:
         pass
 
+    # This check requires the requests package to be installed
+    try:
+        import requests
+        import logging
+        logging.getLogger('requests').setLevel(logging.CRITICAL)
+        logging.getLogger('urllib3').setLevel(logging.CRITICAL)
+        print
+        print "-- Checking for invalid PUBCHEM CIDs in grounding map --"
+        pubchem_url = 'https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/' + \
+                      'cid/%s/description/XML'
+        for text, db_refs in gm.items():
+            if db_refs is not None:
+                for db_key, db_id in db_refs.items():
+                    if db_key == 'PUBCHEM':
+                        res = requests.get(pubchem_url % db_id)
+                        if res.status_code != 200:
+                            print "ERROR: ID %s in grounding map is " \
+                                  "not a valid PUBCHEM ID." % db_id
+    except ImportError:
+        pass
+
     print
     print "-- Checking for Bioentities whose relationships are undefined  --"
     # Check the relationships for consistency with entities
