@@ -128,6 +128,22 @@ if __name__ == '__main__':
                 print "ERROR: ID %s referenced in relations " \
                       "is not in entities list." % term_id
 
+    try:
+        from indra.databases import hgnc_client
+        print
+        print "-- Checking for invalid HGNC IDs in relationships file --"
+        for subj, rel, obj in relationships:
+            for term in (subj, obj):
+                term_ns = term[0]
+                term_id = term[1]
+                if term_ns == 'HGNC':
+                    hgnc_id = hgnc_client.get_hgnc_id(term_id)
+                    if not hgnc_id:
+                        print "ERROR: ID %s referenced in relations is " \
+                              "not a valid HGNC ID." % term_id
+    except ImportError:
+        pass
+
     print
     print "-- Checking for Bioentities whose relationships are undefined  --"
     # Check the relationships for consistency with entities
@@ -148,3 +164,4 @@ if __name__ == '__main__':
         if not found:
             rel_missing_entities.append(ent)
             print "ERROR: ID %s has no known relations." % ent
+
