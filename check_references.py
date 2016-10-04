@@ -128,6 +128,7 @@ if __name__ == '__main__':
                 print "ERROR: ID %s referenced in relations " \
                       "is not in entities list." % term_id
 
+    # This check requires the indra package
     try:
         from indra.databases import hgnc_client
         print
@@ -142,6 +143,24 @@ if __name__ == '__main__':
                         print "ERROR: ID %s referenced in relations is " \
                               "not a valid HGNC ID." % term_id
     except ImportError:
+        pass
+
+    # This check requires a ChEBI resource file to be available. You
+    # can obtain it from here: ftp://ftp.ebi.ac.uk/pub/databases/
+    #                          chebi/Flat_file_tab_delimited/compounds.tsv.gz
+    try:
+        with open('chebi_compounds.tsv', 'rt') as fh:
+            chebi_ids = [lin.split('\t')[2] for lin in fh.readlines()]
+        print
+        print "-- Checking for invalid ChEBI IDs in grounding map --"
+        for text, db_refs in gm.items():
+            if db_refs is not None:
+                for db_key, db_id in db_refs.items():
+                    if db_key == 'CHEBI':
+                        if db_id not in chebi_ids:
+                            print "ERROR: ID %s in grounding map is " \
+                                  "not a valid CHEBI ID." % db_id
+    except IOError:
         pass
 
     print
