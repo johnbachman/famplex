@@ -1,3 +1,4 @@
+from __future__ import print_function, unicode_literals
 import csv
 from collections import Counter
 
@@ -16,7 +17,7 @@ def load_grounding_map(filename):
         keys = [entry for entry in row[1::2] if entry != '']
         values = [entry for entry in row[2::2] if entry != '']
         if len(keys) != len(values):
-            print 'ERROR: Mismatched keys and values in row %s' % str(row)
+            print('ERROR: Mismatched keys and values in row %s' % str(row))
             continue
         else:
             db_refs.update(dict(zip(keys, values)))
@@ -75,18 +76,17 @@ if __name__ == '__main__':
     # Check the entity list for duplicates
     entities = load_entity_list('entities.csv')
     ent_counter = Counter(entities)
-    print "-- Checking for duplicate entities --"
+    print("-- Checking for duplicate entities --")
     found_duplicates = False
     for ent, freq in ent_counter.items():
         if freq > 1:
-            print "ERROR: Duplicate entries for %s in entity list." % \
-                  ent
+            print("ERROR: Duplicate entries for %s in entity list." % ent)
             found_duplicates = True
     if not found_duplicates:
-        print "OK! No duplicates found."
+        print("OK! No duplicates found.")
 
-    print
-    print "-- Checking for undeclared Bioentities IDs in grounding map --"
+    print()
+    print("-- Checking for undeclared Bioentities IDs in grounding map --")
     # Load the grounding map
     gm = load_grounding_map('grounding_map.csv')
     # Look through grounding map and find all instances with an 'BE' db
@@ -96,11 +96,11 @@ if __name__ == '__main__':
             for db_key, db_id in db_refs.items():
                 if db_key == 'BE' and db_id not in entities:
                     entities_missing_gm.append(db_id)
-                    print "ERROR: ID %s referenced in grounding map " \
-                          "is not in entities list." % db_id
+                    print("ERROR: ID %s referenced in grounding map "
+                          "is not in entities list." % db_id)
 
-    print
-    print "-- Checking for CHEBI/PUBCHEM IDs--"
+    print()
+    print("-- Checking for CHEBI/PUBCHEM IDs--")
     chebi_id_missing = []
     pubchem_id_missing = []
     for text, db_refs in gm.items():
@@ -108,13 +108,13 @@ if __name__ == '__main__':
             p_and_c = pubchem_and_chebi(db_refs)
             if p_and_c == 'chebi_missing':
                 chebi_id_missing.append(db_refs['PUBCHEM'])
-                print "WARNING: %s has PUBCHEM ID but no CHEBI ID." % text
+                print("WARNING: %s has PUBCHEM ID but no CHEBI ID." % text)
             if p_and_c == 'pubchem_missing':
                 pubchem_id_missing.append(db_refs['CHEBI'])
-                print "WARNING: %s has CHEBI ID but no PUBCHEM ID." % text
+                print("WARNING: %s has CHEBI ID but no PUBCHEM ID." % text)
 
-    print
-    print "-- Checking for undeclared Bioentities IDs in relationships file --"
+    print()
+    print("-- Checking for undeclared Bioentities IDs in relationships file --")
     # Load the relationships
     relationships = load_relationships('relations.csv')
     # Check the relationships for consistency with entities
@@ -125,14 +125,22 @@ if __name__ == '__main__':
             term_id = term[1]
             if term_ns == 'BE' and term_id not in entities:
                 entities_missing_rel.append(term_id)
-                print "ERROR: ID %s referenced in relations " \
-                      "is not in entities list." % term_id
+                print("ERROR: ID %s referenced in relations "
+                      "is not in entities list." % term_id)
+    print()
+    print("-- Checking for valid namespaces in relations --")
+    for ix, (subj, rel, obj) in enumerate(relationships):
+        for term in (subj, obj):
+            term_ns = term[0]
+            if term_ns not in ('BE', 'HGNC', 'UP'):
+                print("ERROR: row %d: Invalid namespace in relations.csv: %s" %
+                      (ix+1, term_ns))
 
     # This check requires the indra package
     try:
         from indra.databases import hgnc_client
-        print
-        print "-- Checking for invalid HGNC IDs in relationships file --"
+        print()
+        print("-- Checking for invalid HGNC IDs in relationships file --")
         for subj, rel, obj in relationships:
             for term in (subj, obj):
                 term_ns = term[0]
@@ -140,24 +148,24 @@ if __name__ == '__main__':
                 if term_ns == 'HGNC':
                     hgnc_id = hgnc_client.get_hgnc_id(term_id)
                     if not hgnc_id:
-                        print "ERROR: ID %s referenced in relations is " \
-                              "not a valid HGNC ID." % term_id
+                        print("ERROR: ID %s referenced in relations is "
+                              "not a valid HGNC ID." % term_id)
     except ImportError:
         pass
 
     # This check requires the indra package
     try:
         from indra.databases import hgnc_client
-        print
-        print "-- Checking for invalid HGNC IDs in grounding map --"
+        print()
+        print("-- Checking for invalid HGNC IDs in grounding map --")
         for text, db_refs in gm.items():
             if db_refs is not None:
                 for db_key, db_id in db_refs.items():
                     if db_key == 'HGNC':
                         hgnc_id = hgnc_client.get_hgnc_id(db_id)
                         if not hgnc_id:
-                            print "ERROR: ID %s in grounding map is " \
-                                   "not a valid HGNC ID." % db_id
+                            print("ERROR: ID %s in grounding map is "
+                                   "not a valid HGNC ID." % db_id)
     except ImportError:
         pass
 
@@ -167,15 +175,15 @@ if __name__ == '__main__':
     try:
         with open('chebi_compounds.tsv', 'rt') as fh:
             chebi_ids = [lin.split('\t')[2] for lin in fh.readlines()]
-        print
-        print "-- Checking for invalid ChEBI IDs in grounding map --"
+        print()
+        print("-- Checking for invalid ChEBI IDs in grounding map --")
         for text, db_refs in gm.items():
             if db_refs is not None:
                 for db_key, db_id in db_refs.items():
                     if db_key == 'CHEBI':
                         if db_id not in chebi_ids:
-                            print "ERROR: ID %s in grounding map is " \
-                                  "not a valid CHEBI ID." % db_id
+                            print("ERROR: ID %s in grounding map is "
+                                  "not a valid CHEBI ID." % db_id)
     except IOError:
         pass
 
@@ -185,8 +193,8 @@ if __name__ == '__main__':
         import logging
         logging.getLogger('requests').setLevel(logging.CRITICAL)
         logging.getLogger('urllib3').setLevel(logging.CRITICAL)
-        print
-        print "-- Checking for invalid PUBCHEM CIDs in grounding map --"
+        print()
+        print("-- Checking for invalid PUBCHEM CIDs in grounding map --")
         pubchem_url = 'https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/' + \
                       'cid/%s/description/XML'
         for text, db_refs in gm.items():
@@ -195,13 +203,13 @@ if __name__ == '__main__':
                     if db_key == 'PUBCHEM':
                         res = requests.get(pubchem_url % db_id)
                         if res.status_code != 200:
-                            print "ERROR: ID %s in grounding map is " \
-                                  "not a valid PUBCHEM ID." % db_id
+                            print("ERROR: ID %s in grounding map is "
+                                  "not a valid PUBCHEM ID." % db_id)
     except ImportError:
         pass
 
-    print
-    print "-- Checking for Bioentities whose relationships are undefined  --"
+    print()
+    print("-- Checking for Bioentities whose relationships are undefined  --")
     # Check the relationships for consistency with entities
     rel_missing_entities = []
     for ent in entities:
@@ -219,5 +227,5 @@ if __name__ == '__main__':
                 break
         if not found:
             rel_missing_entities.append(ent)
-            print "ERROR: ID %s has no known relations." % ent
+            print("ERROR: ID %s has no known relations." % ent)
 

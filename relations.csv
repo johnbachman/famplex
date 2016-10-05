@@ -183,7 +183,7 @@ BE,Histone_H2A,isa,BE,Histone
 BE,Histone_H2B,isa,BE,Histone
 BE,Histone_H3,isa,BE,Histone
 BE,Histone_H4,isa,BE,Histone
-GNC,H1F0,isa,BE,Histone_H1
+HGNC,H1F0,isa,BE,Histone_H1
 HGNC,H1FOO,isa,BE,Histone_H1
 HGNC,H1FX,isa,BE,Histone_H1
 HGNC,HIST1H1A,isa,BE,Histone_H1
