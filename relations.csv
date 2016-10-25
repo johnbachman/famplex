@@ -367,8 +367,8 @@ HGNC,RELB,isa,BE,NFkappaB_2
 HGNC,REL,isa,BE,NFkappaB_2
 HGNC,NFKB1,isa,BE,NFkappaB_1
 HGNC,NFKB2,isa,BE,NFkappaB_1
-BE,NFkappaB_1,isa,BE,NFkappaB
-BE,NFkappaB_2,isa,BE,NFkappaB
+BE,NFkappaB_1,partof,BE,NFkappaB
+BE,NFkappaB_2,partof,BE,NFkappaB
 HGNC,TLR1,isa,BE,TLR
 HGNC,TLR2,isa,BE,TLR
 HGNC,TLR3,isa,BE,TLR
