@@ -26,8 +26,8 @@ Hs{Gene name},species,human
 lenti-{Gene name},experimental context,lentiviral gene delivery
 Lenti-{Gene name} ,experimental context,lentiviral gene delivery
 lent-{Gene name},experimental context,lentiviral gene delivery
-lentivirus-{Gene},experimental context,lentiviral gene delivery
-Lentivirus-{Gene},experimental context,lentiviral gene delivery
+lentivirus-{Gene name},experimental context,lentiviral gene delivery
+Lentivirus-{Gene name},experimental context,lentiviral gene delivery
 LV-{Gene name},experimental context,lentiviral gene delivery
 Lv-{Gene name},experimental context,lentiviral gene delivery
 Luc-{Gene name},experimental context,luciferase gene tag
