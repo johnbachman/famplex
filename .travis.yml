@@ -3,11 +3,14 @@ python:
   - "2.7"
   - "3.5"
 before_install:
+  - pwd
   - pip install future requests
   - if [[ "$TRAVIS_PYTHON_VERSION" == "2.7" ]]; then
-      pip install functools32
+      pip install functools32;
     fi
   - git clone https://github.com/sorgerlab/indra.git
 script:
-  - export PYTHONPATH=$PYTHONPATH:../indra
+  - pwd
+  - echo $TRAVIS_BUILD_DIR
+  - export PYTHONPATH=$PYTHONPATH:$TRAVIS_BUILD_DIR/indra
   - python check_references.py
