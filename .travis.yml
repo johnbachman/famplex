@@ -3,8 +3,11 @@ python:
   - "2.7"
   - "3.5"
 before_install:
-  - easy_install -U setuptools
   - pip install future requests
-  - pip install git+https://github.com/sorgerlab/indra.git
+  - if [[ "$TRAVIS_PYTHON_VERSION" == "2.7" ]]; then
+      pip install functools32
+    fi
+  - git clone https://github.com/sorgerlab/indra.git
 script:
+  - export PYTHONPATH=$PYTHONPATH:../indra
   - python check_references.py
