@@ -1,0 +1,9 @@
+language: python
+python:
+  - "2.7"
+  - "3.5"
+before_install:
+  - pip install future requests
+  - pip install git+https://github.com/sorgerlab/indra.git
+script:
+  - python check_references.py
