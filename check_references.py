@@ -83,6 +83,7 @@ def pubchem_and_chebi(db_refs):
     return None
 
 if __name__ == '__main__':
+    signal_error = False
     # Check the entity list for duplicates
     entities = load_entity_list('entities.csv')
     ent_counter = Counter(entities)
@@ -108,6 +109,7 @@ if __name__ == '__main__':
                     entities_missing_gm.append(db_id)
                     print("ERROR: ID %s referenced in grounding map "
                           "is not in entities list." % db_id)
+                    signal_error = True
 
     print()
     print("-- Checking for CHEBI/PUBCHEM IDs--")
@@ -137,6 +139,7 @@ if __name__ == '__main__':
                 entities_missing_rel.append(term_id)
                 print("ERROR: ID %s referenced in relations "
                       "is not in entities list." % term_id)
+                signal_error = True
     print()
     print("-- Checking for valid namespaces in relations --")
     for ix, (subj, rel, obj) in enumerate(relationships):
@@ -145,6 +148,7 @@ if __name__ == '__main__':
             if term_ns not in ('BE', 'HGNC', 'UP'):
                 print("ERROR: row %d: Invalid namespace in relations.csv: %s" %
                       (ix+1, term_ns))
+                signal_error = True
 
     # This check requires the indra package
     try:
@@ -160,7 +164,11 @@ if __name__ == '__main__':
                     if not hgnc_id:
                         print("ERROR: ID %s referenced in relations is "
                               "not a valid HGNC ID." % term_id)
-    except ImportError:
+                        signal_error = True
+    except ImportError as e:
+        print('HGNC check could not be performed because of import error')
+        print(e)
+        signal_error = True
         pass
 
     # This check requires the indra package
@@ -176,7 +184,11 @@ if __name__ == '__main__':
                         if not hgnc_id:
                             print("ERROR: ID %s in grounding map is "
                                    "not a valid HGNC ID." % db_id)
+                            signal_error = True
     except ImportError:
+        print('HGNC check could not be performed because of import error')
+        print(e)
+        signal_error = True
         pass
 
     # This check requires a ChEBI resource file to be available. You
@@ -239,3 +251,6 @@ if __name__ == '__main__':
             rel_missing_entities.append(ent)
             print("ERROR: ID %s has no known relations." % ent)
 
+    if signal_error:
+        sys.exit(1)
+    sys.exit(0)
