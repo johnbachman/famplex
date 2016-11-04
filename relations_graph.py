@@ -12,9 +12,9 @@ be_style = {'color': 'pink', 'style': 'filled',
 edge_style = {'fontname': 'arial'}
 
 with open('relations.csv') as f:
-    csvreader = csv.reader(f, delimiter=',', lineterminator='\r\n',
+    csvreader = csv.reader(f, delimiter=str(u','), lineterminator='\r\n',
                            quoting=csv.QUOTE_MINIMAL,
-                           quotechar='"')
+                           quotechar=str(u'"'))
     nodes = set([])
     isa_edges = set([])
     partof_edges = set([])
