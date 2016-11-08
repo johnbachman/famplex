@@ -10,10 +10,16 @@ HGNC,ACTG2,isa,BE,Actin
 BE,Activin_A,isa,BE,Activin
 BE,Activin_AB,isa,BE,Activin
 BE,Activin_B,isa,BE,Activin
+BE,Inhibin_A,isa,BE,Inhibin
+BE,Inhibin_B,isa,BE,Inhibin
 HGNC,INHBA,partof,BE,Activin_A
 HGNC,INHBA,partof,BE,Activin_AB
 HGNC,INHBB,partof,BE,Activin_AB
 HGNC,INHBB,partof,BE,Activin_B
+HGNC,INHA,partof,BE,Inhibin_A
+HGNC,INHBA,partof,BE,Inhibin_A
+HGNC,INHA,partof,BE,Inhibin_B
+HGNC,INHBB,partof,BE,Inhibin_B
 HGNC,AKT1,isa,BE,AKT
 HGNC,AKT2,isa,BE,AKT
 HGNC,AKT3,isa,BE,AKT
