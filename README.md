@@ -14,6 +14,9 @@ PIK3C represents the class of catalytic subunits of PI3K; and ```PIK3C partof
 PI3K```, where PI3K represents a named complex consisting of a catalytic and
 regulatory subunit.
 
+* ```equivalences.csv```. Defines mappings between outside namespaces and
+the Bioentities namespace.
+
 * ```entities.csv```. A registry of the families and complexes defined in the
   Bioentities namespace.
 
@@ -25,7 +28,7 @@ regulatory subunit.
 * ```check_references.py```. A script to check the integrity and completeness
   of the cross-references among the various files.
 
-## Entities and Relations
+## Entities, Relations and Equivalences
 
 *Bioentities* contains resources for defining the relationships between
 genes/proteins and their membership in families and named complexes. Entities
@@ -49,6 +52,11 @@ the subject (e.g., ```HGNC``` for gene names, ```UP``` for Uniprot, or ```BE```
 for the Bioentities namespace), (2) the identifier for the subject, (3) the
 relationship (```isa``` or ```partof```), (4) the namespace for the object, and
 (5) the identifier for the object.
+
+The ```equivalences.csv``` file consists of three columns (1) the namespace of
+an outsite entity (e.g. ```BEL```, ```PFAM```),
+(2) the identifier of the outside entity in the namespace given in the
+first column, and (3) the equivalent entity in the ```BE``` namespace.
 
 ## Grounding Map
 
