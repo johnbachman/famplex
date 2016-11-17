@@ -3,6 +3,7 @@ import csv
 import sys
 from collections import Counter
 
+
 def read_csv(fh, delimiter, quotechar):
     if sys.version_info.major < 3:
         csvreader = csv.reader(fh, delimiter=bytes(delimiter),
@@ -17,6 +18,7 @@ def load_csv(filename):
     with open(filename) as f:
         rows = read_csv(f, ',', '"')
     return rows
+
 
 def load_grounding_map(filename):
     gm_rows = load_csv(filename)
@@ -37,11 +39,13 @@ def load_grounding_map(filename):
                 g_map[key] = None
     return g_map
 
+
 def load_entity_list(filename):
     with open(filename) as f:
         rows = read_csv(f, ',', '"')
     entities = [row[0] for row in rows]
     return entities
+
 
 def load_relationships(filename):
     relationships = []
@@ -50,6 +54,16 @@ def load_relationships(filename):
         for row in rows:
             relationships.append(((row[0], row[1]), row[2], (row[3], row[4])))
     return relationships
+
+
+def load_equivalences(filename):
+    equivalences = []
+    with open(filename) as f:
+        rows = read_csv(f, ',', '"')
+        for row in rows:
+            equivalences.append((row[0], row[1], row[2]))
+    return equivalences
+
 
 def update_id_prefixes(filename):
     gm_rows = load_csv(filename)
@@ -73,6 +87,7 @@ def update_id_prefixes(filename):
         updated_rows.append(updated_row)
     return updated_rows
 
+
 def pubchem_and_chebi(db_refs):
     pubchem_id = db_refs.get('PUBCHEM')
     chebi_id = db_refs.get('CHEBI')
@@ -82,10 +97,15 @@ def pubchem_and_chebi(db_refs):
         return 'pubchem_missing'
     return None
 
+
 if __name__ == '__main__':
     signal_error = False
-    # Check the entity list for duplicates
     entities = load_entity_list('entities.csv')
+    relationships = load_relationships('relations.csv')
+    equivalences = load_equivalences('equivalences.csv')
+    gm = load_grounding_map('grounding_map.csv')
+
+    # Check the entity list for duplicates
     ent_counter = Counter(entities)
     print("-- Checking for duplicate entities --")
     found_duplicates = False
@@ -98,8 +118,6 @@ if __name__ == '__main__':
 
     print()
     print("-- Checking for undeclared Bioentities IDs in grounding map --")
-    # Load the grounding map
-    gm = load_grounding_map('grounding_map.csv')
     # Look through grounding map and find all instances with an 'BE' db
     entities_missing_gm = []
     for text, db_refs in gm.items():
@@ -128,7 +146,6 @@ if __name__ == '__main__':
     print()
     print("-- Checking for undeclared Bioentities IDs in relationships file --")
     # Load the relationships
-    relationships = load_relationships('relations.csv')
     # Check the relationships for consistency with entities
     entities_missing_rel = []
     for subj, rel, obj in relationships:
@@ -209,27 +226,6 @@ if __name__ == '__main__':
     except IOError:
         pass
 
-    # This check requires the requests package to be installed
-    try:
-        import requests
-        import logging
-        logging.getLogger('requests').setLevel(logging.CRITICAL)
-        logging.getLogger('urllib3').setLevel(logging.CRITICAL)
-        print()
-        print("-- Checking for invalid PUBCHEM CIDs in grounding map --")
-        pubchem_url = 'https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/' + \
-                      'cid/%s/description/XML'
-        for text, db_refs in gm.items():
-            if db_refs is not None:
-                for db_key, db_id in db_refs.items():
-                    if db_key == 'PUBCHEM':
-                        res = requests.get(pubchem_url % db_id)
-                        if res.status_code != 200:
-                            print("ERROR: ID %s in grounding map is "
-                                  "not a valid PUBCHEM ID." % db_id)
-    except ImportError:
-        pass
-
     print()
     print("-- Checking for Bioentities whose relationships are undefined  --")
     # Check the relationships for consistency with entities
@@ -250,6 +246,37 @@ if __name__ == '__main__':
         if not found:
             rel_missing_entities.append(ent)
             print("ERROR: ID %s has no known relations." % ent)
+
+    print()
+    print("-- Checking for non-existent Bioentities in equivalences  --")
+    entities_missing_eq = []
+    for eq_ns, eq_id, be_id in equivalences:
+        if be_id not in entities:
+            signal_error = True
+            entities_missing_eq.append(be_id)
+            print("ERROR: ID %s referenced in equivalences "
+                  "is not in entities list." % be_id)
+
+    # This check requires the requests package to be installed
+    try:
+        import requests
+        import logging
+        logging.getLogger('requests').setLevel(logging.CRITICAL)
+        logging.getLogger('urllib3').setLevel(logging.CRITICAL)
+        print()
+        print("-- Checking for invalid PUBCHEM CIDs in grounding map --")
+        pubchem_url = 'https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/' + \
+                      'cid/%s/description/XML'
+        for text, db_refs in gm.items():
+            if db_refs is not None:
+                for db_key, db_id in db_refs.items():
+                    if db_key == 'PUBCHEM':
+                        res = requests.get(pubchem_url % db_id)
+                        if res.status_code != 200:
+                            print("ERROR: ID %s in grounding map is "
+                                  "not a valid PUBCHEM ID." % db_id)
+    except ImportError:
+        pass
 
     if signal_error:
         sys.exit(1)
