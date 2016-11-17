@@ -2,7 +2,7 @@ BEL,14-3-3 Family,p14_3_3
 BEL,9-1-1 Complex,9_1_1
 BEL,ACAD Family,ACAD
 BEL,Acetyl CoA Carboxylase Complex,ACC
-BEL,Acetyl-CoA Synthetase Family,Acetyl_CoA_synthase
+BEL,Acetyl-CoA Synthetase Family,Acetyl_CoA_synthetase
 BEL,ACOX Family,ACOX
 BEL,ACSL Family,ACSL
 BEL,ACT Family,Actin
@@ -120,8 +120,8 @@ BEL,GATA Family,GATA
 BEL,GNA Gq Family,G_q
 BEL,GNA Gs Family,G_s
 BEL,GNAI Family,G_i
-BEL,GNB Family,GNB
-BEL,GNG Family,GNG
+BEL,GNB Family,G_beta
+BEL,GNG Family,G_gamma
 BEL,GPIT Complex,GPIT
 BEL,GPX Family,GPX
 BEL,GRIA Family,GRIA
@@ -231,8 +231,8 @@ BEL,PPP2R Subunit B Family,PPP2R_B
 BEL,PPP3C Family,PPP3C
 BEL,PPP3 Family,PPP3
 BEL,PPP3R Family,PPP3R
-BEL,PRC1 Maintenance Complex,PRC1_Maintenance
-BEL,PRC2 Initiation Complex,PRC2_Initiation
+BEL,PRC1 Maintenance Complex,PRC1_complex
+BEL,PRC2 Initiation Complex,PRC2_complex
 BEL,PRDX Family,PRDX
 BEL,PRKAA Family,AMPK_alpha
 BEL,PRKAB Family,AMPK_beta
@@ -304,7 +304,7 @@ BEL,VEGFR Family,VEGFR
 BEL,WNT Family,Wnt
 IPR,IPR015615,TGFB
 PFAM,PF00028,Cadherin
-PFAM,PF00066,NOTCH
+PFAM,PF00066,Notch
 PFAM,PF00071,RAS
 PFAM,PF00167,FGF
 PFAM,PF00178,ETS
