@@ -49,7 +49,7 @@ ATP2A
 ATP5G
 ATP_synthase
 AXIN
-BCKCD
+BCKDC
 BIRC
 BMP
 BMP_receptor_type_I
@@ -224,6 +224,7 @@ IL12
 Inhibin
 Inhibin_B
 Inhibin_A
+INS
 INSR
 Integrins
 Interferon
