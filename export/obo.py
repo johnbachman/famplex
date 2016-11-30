@@ -1,6 +1,7 @@
 from __future__ import print_function, unicode_literals
 import os
 import csv
+import datetime
 import collections
 
 Reference = collections.namedtuple('Reference', ['ns', 'id'])
@@ -25,9 +26,17 @@ class OboTerm(object):
         obo_str += 'id: %s:%s\n' % (self.term_id.ns, self.term_id.id)
         obo_str += 'name: %s\n' % self.name
         for synonym in self.synonyms:
-            obo_str += 'synonym: %s %s []\n' % (synonym.name, synonym.status)
+            obo_str += 'synonym: "%s" %s []\n' % (synonym.name, synonym.status)
         for xref in self.xrefs:
-            obo_str += 'xref: %s:%s\n' % (xref.ns, xref.id)
+            if xref.ns == 'BEL':
+                entry = 'BEL:"%s"' % xref.id
+            elif xref.ns == 'NXP':
+                entry = 'NEXTPROT-FAMILY:%s' % xref.id[3:]
+            elif xref.ns == 'PF':
+                entry = 'XFAM:%s' % xref.id
+            else:
+                entry = '%s:%s' % (xref.ns, xref.id)
+            obo_str += 'xref: %s\n' % entry
         for isa in self.isas:
             obo_str += 'is_a: %s:%s\n' % (isa.ns, isa.id)
         return obo_str
@@ -67,7 +76,7 @@ def get_obo_terms():
     for entity in entities:
         entity_id = Reference('BE', entity)
         # Construct string name
-        name = entity.replace('_', ' ')
+        name = entity.replace('_', '-')
         # Get synonyms
         refs = textrefs.get(entity)
         synonyms = []
@@ -88,10 +97,15 @@ def get_obo_terms():
     return obo_terms
 
 def save_obo_terms(obo_terms, output_file=None):
+    date = datetime.datetime.today()
+    date_str = date.strftime('%d:%m:%Y %H:%M')
     path_this = os.path.dirname(os.path.abspath(__file__))
     if not output_file:
         output_file = os.path.join(path_this, os.pardir, 'bioentities.obo')
     with open(output_file, 'wt') as fh:
+        fh.write('format-version: 1.2\n')
+        fh.write('date: %s\n' % date_str)
+        fh.write('\n')
         for term in obo_terms:
             obo_str = term.to_obo()
             fh.write(obo_str)
