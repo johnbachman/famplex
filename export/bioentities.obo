@@ -1,0 +1,2761 @@
+format-version: 1.2
+date: 29:11:2016 19:20
+
+[Term]
+id: BE:9_1_1
+name: 9-1-1
+xref: BEL:"9-1-1 Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:ABL_family
+name: ABL-family
+synonym: "ABL" EXACT []
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:ACAD
+name: ACAD
+xref: BEL:"ACAD Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:ACC
+name: ACC
+synonym: "ACC" EXACT []
+xref: BEL:"Acetyl CoA Carboxylase Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Acetyl_CoA_synthetase
+name: Acetyl-CoA-synthetase
+xref: BEL:"Acetyl-CoA Synthetase Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:ACOX
+name: ACOX
+xref: BEL:"ACOX Family"
+xref: XFAM:PF01756
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:ACSL
+name: ACSL
+xref: BEL:"ACSL Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Actin
+name: Actin
+synonym: "actin" EXACT []
+xref: BEL:"ACT Family"
+xref: NCIT:C16258
+xref: NEXTPROT-FAMILY:00078
+xref: XFAM:PF00022
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Activin
+name: Activin
+synonym: "Activin" EXACT []
+xref: NCIT:C20456
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Activin_A
+name: Activin-A
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Activin_AB
+name: Activin-AB
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Activin_B
+name: Activin-B
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:ACTN
+name: ACTN
+xref: BEL:"ACTN Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Adaptor_protein_III
+name: Adaptor-protein-III
+xref: BEL:"Adaptor Protein III Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:ADCY
+name: ADCY
+xref: BEL:"ADCY Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:ADH
+name: ADH
+xref: BEL:"ADH Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:ADRA
+name: ADRA
+xref: BEL:"ADRA Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:ADRA2
+name: ADRA2
+xref: BEL:"ADRA2 Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:ADRB
+name: ADRB
+xref: BEL:"ADRB Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:ADRBK
+name: ADRBK
+xref: BEL:"ADRBK Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:AKT
+name: AKT
+synonym: "AKT" EXACT []
+synonym: "Akt" EXACT []
+synonym: "AKT-Ser473" NARROW []
+synonym: "p-AKT" NARROW []
+synonym: "p-Akt" NARROW []
+synonym: "PI3K-AKT" BROAD []
+synonym: "PI3K-Akt" BROAD []
+synonym: "PKB" EXACT []
+synonym: "PKB-Akt" EXACT []
+synonym: "pTyr176-AKT" NARROW []
+synonym: "RAS-AKT" BROAD []
+xref: BEL:"AKT Family"
+xref: NCIT:C41625
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:ALDH
+name: ALDH
+xref: BEL:"ALDH Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:ALDO
+name: ALDO
+xref: BEL:"ALDO Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:AMPK
+name: AMPK
+synonym: "AMPK" EXACT []
+xref: BEL:"PRKA Family"
+xref: NCIT:C94701
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:AMPK_A1B1G1
+name: AMPK-A1B1G1
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:AMPK_A1B1G2
+name: AMPK-A1B1G2
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:AMPK_A1B1G3
+name: AMPK-A1B1G3
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:AMPK_A1B2G1
+name: AMPK-A1B2G1
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:AMPK_A1B2G2
+name: AMPK-A1B2G2
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:AMPK_A1B2G3
+name: AMPK-A1B2G3
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:AMPK_A2B1G1
+name: AMPK-A2B1G1
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:AMPK_A2B1G2
+name: AMPK-A2B1G2
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:AMPK_A2B1G3
+name: AMPK-A2B1G3
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:AMPK_A2B2G1
+name: AMPK-A2B2G1
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:AMPK_A2B2G2
+name: AMPK-A2B2G2
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:AMPK_A2B2G3
+name: AMPK-A2B2G3
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:AMPK_alpha
+name: AMPK-alpha
+synonym: "AMPKalpha" EXACT []
+synonym: "PRKAA" EXACT []
+xref: BEL:"PRKAA Family"
+xref: NCIT:C116019
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:AMPK_beta
+name: AMPK-beta
+synonym: "PRKAB" EXACT []
+xref: BEL:"PRKAB Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:AMPK_gamma
+name: AMPK-gamma
+synonym: "PRKAG" EXACT []
+xref: BEL:"PRKAG Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Annexin_II_heterotetramer
+name: Annexin-II-heterotetramer
+xref: BEL:"Annexin II Heterotetramer Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:AP1
+name: AP1
+synonym: "AP-1" EXACT []
+synonym: "AP1" EXACT []
+xref: NCIT:C17450
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:APC_C
+name: APC-C
+synonym: "APC/C" EXACT []
+xref: GO:GO:0005680
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:APOA
+name: APOA
+xref: BEL:"APOA Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Arp2_3_protein
+name: Arp2-3-protein
+xref: BEL:"Arp2/3 Protein Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:ARRB
+name: ARRB
+xref: BEL:"ARRB Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:ATP1A
+name: ATP1A
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:ATP1B
+name: ATP1B
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:ATP2A
+name: ATP2A
+xref: BEL:"ATP2A Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:ATP5G
+name: ATP5G
+xref: BEL:"ATP5G Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:ATP_synthase
+name: ATP-synthase
+xref: BEL:"Proton Transporting ATP Synthase Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:AXIN
+name: AXIN
+xref: BEL:"AXIN Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:BCKDC
+name: BCKDC
+xref: BEL:"Branched Chain Alpha Keto Acid Dehydrogenase Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:BIRC
+name: BIRC
+xref: BEL:"BIRC Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:BMP
+name: BMP
+synonym: "BMP" EXACT []
+xref: BEL:"BMP Family"
+xref: NCIT:C17274
+xref: XFAM:PF02608
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:BMP_receptor_type_I
+name: BMP-receptor-type-I
+xref: BEL:"BMP Receptor Type I Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:BMP_receptor_type_II
+name: BMP-receptor-type-II
+xref: BEL:"BMP Receptor Type II Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:BRCA
+name: BRCA
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:C1
+name: C1
+xref: BEL:"C1 Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:C1q
+name: C1q
+xref: BEL:"C1q Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Cadherin
+name: Cadherin
+synonym: "cadherin" EXACT []
+xref: BEL:"CDH Family"
+xref: NCIT:C16373
+xref: XFAM:PF00028
+xref: XFAM:PF00028
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:CALM
+name: CALM
+xref: BEL:"CALM Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:CAMK
+name: CAMK
+xref: BEL:"CAMK Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:CAMK2_complex
+name: CAMK2-complex
+xref: BEL:"CAMK2 Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:CAMK2_family
+name: CAMK2-family
+xref: BEL:"CAMK2 Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:CAPN
+name: CAPN
+xref: BEL:"CAPN Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Carboxylesterase
+name: Carboxylesterase
+xref: BEL:"Carboxylesterase Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Caspase
+name: Caspase
+synonym: "caspase" EXACT []
+synonym: "caspases" EXACT []
+xref: BEL:"CASP Family"
+xref: NCIT:C18153
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Caspase_3_7
+name: Caspase-3-7
+synonym: "caspase-3/7" EXACT []
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:CAV
+name: CAV
+xref: BEL:"CAV Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:CBF3
+name: CBF3
+xref: BEL:"CBF3 Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:CCT_complex
+name: CCT-complex
+xref: BEL:"CCT Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:CD16
+name: CD16
+xref: BEL:"CD16 Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:CD3
+name: CD3
+synonym: "CD3" EXACT []
+xref: BEL:"CD3 Complex"
+xref: NCIT:C38897
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:CD32
+name: CD32
+xref: BEL:"CD32 Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:CD64
+name: CD64
+xref: BEL:"CD64 Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:CD8
+name: CD8
+synonym: "CD8" EXACT []
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:CDC25
+name: CDC25
+xref: BEL:"CDC25 Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:CDK
+name: CDK
+synonym: "Cdk" EXACT []
+synonym: "CDK" EXACT []
+synonym: "CDKs" EXACT []
+xref: NCIT:C17767
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:CEBP
+name: CEBP
+xref: BEL:"CEBP Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Chemokine_receptor
+name: Chemokine-receptor
+xref: BEL:"Chemokine Receptor Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Cholinesterase
+name: Cholinesterase
+xref: BEL:"Cholinesterase Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:CHRM
+name: CHRM
+xref: BEL:"CHRM Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:CHRN
+name: CHRN
+xref: BEL:"CHRN Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:CK2
+name: CK2
+synonym: "CK2" EXACT []
+xref: BEL:"CK II Complex"
+xref: NCIT:C107559
+xref: NEXTPROT-FAMILY:03101
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Clathrin
+name: Clathrin
+xref: BEL:"Clathrin Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:CNKSR
+name: CNKSR
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Cofilin
+name: Cofilin
+synonym: "cofilin" EXACT []
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Cohesin
+name: Cohesin
+xref: BEL:"Cohesin Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:COL1
+name: COL1
+xref: BEL:"COL1 Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:COL4
+name: COL4
+xref: BEL:"COL4 Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:COL5
+name: COL5
+xref: BEL:"COL5 Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:COX
+name: COX
+xref: BEL:"Cytochrome C Oxidase Complex Muscle"
+xref: BEL:"Cytochrome C Oxidase Complex Non Muscle"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:COX4
+name: COX4
+xref: BEL:"COX4 Family"
+xref: XFAM:PF02936
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:COX6A
+name: COX6A
+xref: BEL:"COX6A Family"
+xref: XFAM:PF02046
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:COX6B
+name: COX6B
+xref: BEL:"COX6B Family"
+xref: XFAM:PF02297
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:COX7A
+name: COX7A
+xref: BEL:"COX7A Family"
+xref: XFAM:PF02238
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:COX7B
+name: COX7B
+xref: BEL:"COX7B Family"
+xref: XFAM:PF05392
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:COX8
+name: COX8
+xref: BEL:"COX8 Family"
+xref: XFAM:PF02285
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:CREB
+name: CREB
+synonym: "CREB" EXACT []
+xref: BEL:"CREB Family"
+xref: NCIT:C17286
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:CRISP
+name: CRISP
+xref: BEL:"CRISP Family"
+xref: XFAM:PF08562
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:CRSP
+name: CRSP
+xref: BEL:"CRSP Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:CSNK1
+name: CSNK1
+xref: BEL:"CSNK1 Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:CSNK2
+name: CSNK2
+xref: BEL:"CSNK2 Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:CSNK2A
+name: CSNK2A
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:CTNNA
+name: CTNNA
+xref: BEL:"CTNNA Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:CUL
+name: CUL
+xref: BEL:"CUL Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:CXCL_ELR_negative
+name: CXCL-ELR-negative
+xref: BEL:"CXCL ELR-Negative Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:CXCL_ELR_positive
+name: CXCL-ELR-positive
+xref: BEL:"CXCL ELR-Positive Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Cyclin
+name: Cyclin
+synonym: "Cyclin" EXACT []
+synonym: "cyclin" EXACT []
+synonym: "cyclins" EXACT []
+xref: NCIT:C17349
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Cyclin_A
+name: Cyclin-A
+xref: BEL:"CCNA Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Cyclin_D
+name: Cyclin-D
+synonym: "Cyclin D" EXACT []
+xref: BEL:"CCND Family"
+xref: NCIT:C104194
+xref: NEXTPROT-FAMILY:00818
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Cyclin_E
+name: Cyclin-E
+xref: BEL:"CCNE Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Cyclophilin
+name: Cyclophilin
+xref: BEL:"Cyclophilin Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Cytoplasmic_dynein
+name: Cytoplasmic-dynein
+xref: BEL:"Cytoplasmic Dynein Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:DDR
+name: DDR
+xref: BEL:"DDR Family"
+xref: XFAM:PF08841
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Death_receptor
+name: Death-receptor
+synonym: "death receptor" EXACT []
+synonym: "death receptors" EXACT []
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Desmoglein
+name: Desmoglein
+xref: BEL:"Desmoglein Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:DGC
+name: DGC
+xref: BEL:"Dystrophin Associated Glycoprotein Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:DGK
+name: DGK
+xref: BEL:"DGK Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:DNA_polymerase_delta
+name: DNA-polymerase-delta
+xref: BEL:"DNA Polymerase delta Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:DNM
+name: DNM
+xref: BEL:"DNM Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:DRD
+name: DRD
+xref: BEL:"DRD Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:DUSP
+name: DUSP
+synonym: "DUSP" EXACT []
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:DVL
+name: DVL
+xref: BEL:"DVL Family"
+xref: XFAM:PF08137
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:E1A_binding_protein
+name: E1A-binding-protein
+xref: BEL:"E1A Binding Protein Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:E2F
+name: E2F
+xref: BEL:"E2F Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:E3_Ub_ligase
+name: E3-Ub-ligase
+synonym: "E3" EXACT []
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:EDN
+name: EDN
+xref: BEL:"EDN Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:EGFR_ligand
+name: EGFR-ligand
+xref: BEL:"EGFR Ligand Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:EGR
+name: EGR
+xref: BEL:"EGR Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:EIF2B
+name: EIF2B
+xref: BEL:"EIF2B Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:EIF4A
+name: EIF4A
+xref: BEL:"EIF4A Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:EIF4EBP
+name: EIF4EBP
+synonym: "4EBP" EXACT []
+xref: BEL:"EIF4EBP Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:EIF4G
+name: EIF4G
+synonym: "eIF4G" EXACT []
+xref: XFAM:PF02854
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:ELA
+name: ELA
+xref: BEL:"ELA Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:ENO
+name: ENO
+xref: BEL:"ENO Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Ephrin_receptor
+name: Ephrin-receptor
+xref: BEL:"Ephrin Receptor Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:EPN
+name: EPN
+xref: BEL:"EPN Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:ERBB
+name: ERBB
+synonym: "ErbB" EXACT []
+xref: BEL:"EGFR/ERBB Family"
+xref: NCIT:C17763
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:ERK
+name: ERK
+synonym: "ERK 1/2" EXACT []
+synonym: "ERK" EXACT []
+synonym: "Erk" EXACT []
+synonym: "ERK1/2" EXACT []
+synonym: "Erk1/2" EXACT []
+synonym: "ERKs" EXACT []
+synonym: "Extracellular Signal Regulated Kinase" EXACT []
+synonym: "extracellular signal-regulated kinase" EXACT []
+synonym: "MAPK" BROAD []
+synonym: "p-ERK" NARROW []
+synonym: "p-ERK1/2" NARROW []
+synonym: "pERK" NARROW []
+synonym: "pTpYERK" NARROW []
+xref: BEL:"MAPK Erk1/2 Family"
+xref: BEL:"MAPK Erk1/3 Family"
+xref: NCIT:C16376
+xref: NCIT:C26360
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:ESR
+name: ESR
+xref: BEL:"ESR Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:ETC_complex_II
+name: ETC-complex-II
+xref: BEL:"Respiratory Chain Complex II"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:ETC_complex_III
+name: ETC-complex-III
+xref: BEL:"Respiratory Chain Complex III"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:ETS
+name: ETS
+synonym: "ETS" EXACT []
+xref: BEL:"ETS Family"
+xref: XFAM:PF00178
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:EXOC
+name: EXOC
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:F_actin
+name: F-actin
+synonym: "F-actin" EXACT []
+xref: GO:GO:0031941
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:FANC
+name: FANC
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:FGF
+name: FGF
+synonym: "FGF" EXACT []
+xref: BEL:"FGF Family"
+xref: XFAM:PF00167
+xref: XFAM:PF00167
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:FGFR
+name: FGFR
+synonym: "FGFR" EXACT []
+xref: BEL:"FGFR Family"
+xref: NCIT:C17297
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Fibrinogen
+name: Fibrinogen
+xref: BEL:"Fibrinogen Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:FLOT
+name: FLOT
+xref: BEL:"FLOT Family"
+xref: XFAM:PF15975
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:FLRT
+name: FLRT
+xref: BEL:"FLRT Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:FNT
+name: FNT
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:FOS_family
+name: FOS-family
+synonym: "FOS" EXACT []
+synonym: "Fos" EXACT []
+xref: NCIT:C17438
+xref: NCIT:C52887
+xref: NEXTPROT-FAMILY:00408
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:FOXO
+name: FOXO
+synonym: "FOXO" EXACT []
+synonym: "FoxO" EXACT []
+xref: BEL:"FOXO Family"
+xref: NCIT:C118892
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:FSH
+name: FSH
+xref: BEL:"Follicle Stimulating Hormone Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:FZD
+name: FZD
+xref: BEL:"FZD Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:G_12
+name: G-12
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:G_12_alpha
+name: G-12-alpha
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:GABR
+name: GABR
+xref: BEL:"GABR Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:G_alpha
+name: G-alpha
+synonym: "G_alpha" EXACT []
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Gamma_secretase
+name: Gamma-secretase
+xref: BEL:"gamma Secretase Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:GAP
+name: GAP
+synonym: "GAP" EXACT []
+synonym: "GTPase-activating proteins" EXACT []
+xref: NCIT:C17298
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:GAS6_receptor
+name: GAS6-receptor
+xref: BEL:"GAS6 Receptor Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:GATA
+name: GATA
+xref: BEL:"GATA Family"
+xref: XFAM:PF00320
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:G_beta
+name: G-beta
+xref: BEL:"GNB Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:GEF
+name: GEF
+synonym: "GEF" EXACT []
+synonym: "GEFs" EXACT []
+xref: NCIT:C17494
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:G_gamma
+name: G-gamma
+xref: BEL:"GNG Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:G_i
+name: G-i
+xref: BEL:"GNAI Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:G_i_alpha
+name: G-i-alpha
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:GPCR
+name: GPCR
+synonym: "GPCR" EXACT []
+synonym: "GPCRs" EXACT []
+xref: NCIT:C18239
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:GPIb_IX_V
+name: GPIb-IX-V
+xref: BEL:"Ib-V-IX Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:GPIT
+name: GPIT
+xref: BEL:"GPIT Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:G_protein
+name: G-protein
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:GPX
+name: GPX
+xref: BEL:"GPX Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:G_q
+name: G-q
+xref: BEL:"GNA Gq Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:G_q_alpha
+name: G-q-alpha
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:GRIA
+name: GRIA
+xref: BEL:"GRIA Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:GRK
+name: GRK
+xref: BEL:"GRK Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:GRM
+name: GRM
+xref: BEL:"GRM Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:G_s
+name: G-s
+xref: BEL:"GNA Gs Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:G_s_alpha
+name: G-s-alpha
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:GSK3
+name: GSK3
+synonym: "GSK-3" EXACT []
+synonym: "GSK3" EXACT []
+xref: BEL:"GSK3 Family"
+xref: NEXTPROT-FAMILY:03087
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:GST
+name: GST
+xref: BEL:"GST Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:GTF2E
+name: GTF2E
+xref: BEL:"GTF2E Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:GTF2F
+name: GTF2F
+xref: BEL:"GTF2F Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:GTPase
+name: GTPase
+synonym: "GTPase" EXACT []
+xref: NCIT:C16650
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:GUCY
+name: GUCY
+xref: BEL:"GUCY Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:GYS
+name: GYS
+synonym: "glycogen synthase" EXACT []
+xref: BEL:"GYS Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:hCG
+name: hCG
+synonym: "hCG" EXACT []
+xref: NCIT:C2275
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:HDAC
+name: HDAC
+synonym: "HDAC" EXACT []
+xref: BEL:"HDAC Family"
+xref: NCIT:C16682
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:HDAC_I
+name: HDAC-I
+xref: BEL:"HDAC Class I Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:HDAC_II
+name: HDAC-II
+xref: BEL:"HDAC Class II Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:HDAC_III
+name: HDAC-III
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:HDAC_IV
+name: HDAC-IV
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:HDL
+name: HDL
+xref: BEL:"HDL Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Hedgehog
+name: Hedgehog
+xref: BEL:"Hedgehog Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Hemoglobin
+name: Hemoglobin
+xref: BEL:"Hemoglobin Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:HES
+name: HES
+xref: BEL:"HES Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:HIF1
+name: HIF1
+synonym: "HIF-1" EXACT []
+xref: NCIT:C17690
+xref: XFAM:PF11413
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:HIF1_alpha
+name: HIF1-alpha
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:HIF1_beta
+name: HIF1-beta
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Histone
+name: Histone
+synonym: "Histone" EXACT []
+synonym: "histone" EXACT []
+synonym: "histones" EXACT []
+xref: NCIT:C16687
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Histone_H1
+name: Histone-H1
+xref: BEL:"Histone H1 Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Histone_H2A
+name: Histone-H2A
+xref: BEL:"Histone H2A Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Histone_H2B
+name: Histone-H2B
+xref: BEL:"Histone H2B Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Histone_H3
+name: Histone-H3
+synonym: "H3" EXACT []
+synonym: "histone H3" EXACT []
+synonym: "histone-3" EXACT []
+xref: BEL:"Histone H3 Family"
+xref: NCIT:C16685
+xref: NEXTPROT-FAMILY:01764
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Histone_H4
+name: Histone-H4
+synonym: "histone H4" EXACT []
+xref: BEL:"Histone H4 Family"
+xref: NCIT:C16686
+xref: NEXTPROT-FAMILY:01765
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:HLA_DR
+name: HLA-DR
+xref: BEL:"HLA-DR Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:HMOX
+name: HMOX
+xref: BEL:"HMOX Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:HSP90
+name: HSP90
+synonym: "HSP90" EXACT []
+synonym: "Hsp90" EXACT []
+xref: BEL:"HSP90 Family"
+xref: NCIT:C17766
+xref: XFAM:PF00183
+xref: XFAM:PF00183
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:HSP90A
+name: HSP90A
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:HSP90AA
+name: HSP90AA
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:HSPA
+name: HSPA
+xref: BEL:"HSPA Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:HSPB
+name: HSPB
+xref: BEL:"HSPB Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:IFNA
+name: IFNA
+xref: BEL:"IFNA Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:IFNB
+name: IFNB
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:IGFBP
+name: IGFBP
+xref: BEL:"IGFBP Family"
+xref: XFAM:PF00219
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:IKB
+name: IKB
+synonym: "IkappaB" EXACT []
+xref: NCIT:C17583
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:IKK_complex
+name: IKK-complex
+xref: BEL:"IkappaB Kinase Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:IKK_family
+name: IKK-family
+synonym: "IkappaB kinase" EXACT []
+synonym: "IKK" EXACT []
+xref: BEL:"IkappaB Kinase Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:IL1
+name: IL1
+synonym: "IL-1" EXACT []
+xref: BEL:"IL1 Family"
+xref: NCIT:C20506
+xref: NEXTPROT-FAMILY:01820
+xref: XFAM:PF00340
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:IL12
+name: IL12
+synonym: "IL-12" EXACT []
+xref: NCIT:C20514
+xref: XFAM:PF03039
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Inhibin
+name: Inhibin
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Inhibin_B
+name: Inhibin-B
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Inhibin_A
+name: Inhibin-A
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:INS
+name: INS
+xref: BEL:"INS Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:INSR
+name: INSR
+xref: BEL:"INSR Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Integrins
+name: Integrins
+synonym: "integrin" EXACT []
+synonym: "integrins" EXACT []
+xref: NCIT:C16748
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Interferon
+name: Interferon
+synonym: "IFN" EXACT []
+synonym: "interferon" EXACT []
+xref: NCIT:C20493
+xref: XFAM:PF00143
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Interferon_gamma_receptor
+name: Interferon-gamma-receptor
+xref: BEL:"Interferon Gamma Receptor Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:IRS
+name: IRS
+xref: BEL:"IRS Family"
+xref: XFAM:PF02174
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:IRX
+name: IRX
+xref: BEL:"IRX Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:JAK
+name: JAK
+synonym: "JAK" EXACT []
+xref: BEL:"JAK Family"
+xref: NEXTPROT-FAMILY:03129
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:JNK
+name: JNK
+synonym: "c-JNK" EXACT []
+synonym: "c-Jun N-terminal kinase" EXACT []
+synonym: "c-Jun NH2-terminal kinase" EXACT []
+synonym: "JNK MAPK" EXACT []
+synonym: "JNK" EXACT []
+synonym: "JNK1/2" EXACT []
+xref: BEL:"MAPK JNK Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:JUN_family
+name: JUN-family
+synonym: "JUN" EXACT []
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Kinetochore
+name: Kinetochore
+xref: BEL:"Kinetochore Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:KLK
+name: KLK
+xref: BEL:"KLK Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:KSR
+name: KSR
+synonym: "KSR" EXACT []
+xref: NCIT:C51209
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Laminin_111
+name: Laminin-111
+xref: BEL:"Laminin 1 Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Laminin_332
+name: Laminin-332
+xref: BEL:"Laminin 5 Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:LDH
+name: LDH
+synonym: "LDH" EXACT []
+xref: BEL:"LDH Family"
+xref: NCIT:C25184
+xref: NEXTPROT-FAMILY:02022
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:LH
+name: LH
+xref: BEL:"Luteinizing Hormone Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:MAC
+name: MAC
+xref: BEL:"Membrane Attack Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:MAF
+name: MAF
+xref: BEL:"MAF Family"
+xref: XFAM:PF02545
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:MAP1LC3
+name: MAP1LC3
+synonym: "LC3" EXACT []
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:MAP2K
+name: MAP2K
+synonym: "MAPK kinase" EXACT []
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:MAP3K
+name: MAP3K
+synonym: "MAP3K" EXACT []
+synonym: "MAPK kinase kinase" EXACT []
+synonym: "MAPKK kinases" EXACT []
+synonym: "MAPKKK" EXACT []
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:MAPK
+name: MAPK
+synonym: "mitogen-activated protein kinase" EXACT []
+synonym: "mitogen-activated protein kinases" EXACT []
+xref: NCIT:C16376
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:MCM
+name: MCM
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:MEF2
+name: MEF2
+xref: BEL:"MEF2 Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:MEK
+name: MEK
+synonym: "MEK" EXACT []
+synonym: "MEK1/2" EXACT []
+synonym: "p-MEK" NARROW []
+synonym: "p-MEK1/2" NARROW []
+xref: BEL:"MEK1/2 Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:MMP
+name: MMP
+synonym: "MMP" EXACT []
+synonym: "MMPs" EXACT []
+xref: BEL:"MMP Family"
+xref: NCIT:C18164
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:mTORC1
+name: mTORC1
+synonym: "mTORC1" EXACT []
+synonym: "TORC1" EXACT []
+xref: NCIT:C96314
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:mTORC2
+name: mTORC2
+synonym: "mTORC2" EXACT []
+xref: BEL:"TORC2 Complex"
+xref: NCIT:C96315
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:MYH
+name: MYH
+xref: BEL:"MYH Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:MYL
+name: MYL
+synonym: "MLC" EXACT []
+xref: BEL:"MYL Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:MYL_alkali
+name: MYL-alkali
+xref: BEL:"MYL Alkali Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:MYL_regulatory
+name: MYL-regulatory
+xref: BEL:"MYL Regulatory Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:MYL_slow
+name: MYL-slow
+xref: BEL:"MYL Slow Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:MYST
+name: MYST
+xref: BEL:"MYST Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:NADH_dehydrogenase
+name: NADH-dehydrogenase
+xref: BEL:"NADH Dehydrogenase Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:NADPH_oxidase
+name: NADPH-oxidase
+xref: BEL:"NADPH Oxidase Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Na_K_ATPase
+name: Na-K-ATPase
+xref: BEL:"Na/K Exchanging ATPase Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:NCOA
+name: NCOA
+xref: BEL:"p160/SRC Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:NCOR
+name: NCOR
+xref: BEL:"NCOR Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:NDRG
+name: NDRG
+xref: BEL:"NDRG Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:NFAT
+name: NFAT
+synonym: "NFAT" EXACT []
+xref: BEL:"NFAT Family"
+xref: NCIT:C17903
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:NFkappaB
+name: NFkappaB
+synonym: "NF-kappaB" EXACT []
+synonym: "NF-kB" EXACT []
+synonym: "NFkappaB" EXACT []
+xref: BEL:"Nfkb Complex"
+xref: NCIT:C17380
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:NFkappaB_1
+name: NFkappaB-1
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:NFkappaB_2
+name: NFkappaB-2
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:NFY
+name: NFY
+xref: BEL:"Nfy Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:NKD
+name: NKD
+xref: BEL:"NKD Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:NOS
+name: NOS
+xref: BEL:"NOS Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Notch
+name: Notch
+synonym: "Notch" EXACT []
+xref: BEL:"NOTCH Family"
+xref: NEXTPROT-FAMILY:02506
+xref: XFAM:PF00066
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:NRG
+name: NRG
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:NRG_1_2
+name: NRG-1-2
+xref: BEL:"NRG1/2 Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:NRG_3_4
+name: NRG-3-4
+xref: BEL:"NRG3/4 Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:NTRK
+name: NTRK
+xref: BEL:"NTRK Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:p14_3_3
+name: p14-3-3
+synonym: "14-3-3 proteins" EXACT []
+xref: BEL:"14-3-3 Family"
+xref: XFAM:PF00244
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:P2RX
+name: P2RX
+xref: BEL:"P2RX Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:P2RY
+name: P2RY
+xref: BEL:"P2RY Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:p38
+name: p38
+synonym: "P38 MAPK" EXACT []
+synonym: "p38 MAPK" EXACT []
+synonym: "p38" EXACT []
+synonym: "p38-MAPK" EXACT []
+synonym: "p38MAPK" EXACT []
+xref: BEL:"MAPK p38 Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:P70RSK
+name: P70RSK
+xref: BEL:"RPS6KB Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:P90RSK
+name: P90RSK
+synonym: "RPS6KA" EXACT []
+xref: BEL:"RPS6KA Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PAK
+name: PAK
+synonym: "PAK" EXACT []
+synonym: "Pak" EXACT []
+xref: BEL:"PAK Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PARV
+name: PARV
+xref: BEL:"PARV Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PBX
+name: PBX
+xref: BEL:"PBX Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PDC
+name: PDC
+xref: BEL:"Pyruvate Dehydrogenase Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PDE
+name: PDE
+xref: BEL:"PDE Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PDE1
+name: PDE1
+xref: BEL:"PDE1 Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PDE3
+name: PDE3
+xref: BEL:"PDE3 Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PDE4
+name: PDE4
+xref: BEL:"PDE4 Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PDE6
+name: PDE6
+xref: BEL:"PDE6 Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PDE7
+name: PDE7
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PDE8
+name: PDE8
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PDGF
+name: PDGF
+synonym: "PDGF" EXACT []
+xref: BEL:"PDGF Family"
+xref: NCIT:C20448
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PDGF_BB
+name: PDGF-BB
+synonym: "PDGF-BB" EXACT []
+xref: MESH:C072194
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PDGFR
+name: PDGFR
+synonym: "PDGFR" EXACT []
+xref: BEL:"PDGFR Family"
+xref: NCIT:C17322
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PDGFR_AA
+name: PDGFR-AA
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PDGFR_AB
+name: PDGFR-AB
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PDGFR_BB
+name: PDGFR-BB
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PDK
+name: PDK
+xref: BEL:"PDK Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Pertussis_toxin
+name: Pertussis-toxin
+synonym: "Pertussis toxin" EXACT []
+synonym: "pertussis toxin" EXACT []
+synonym: "PTX" EXACT []
+xref: NCIT:C736
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PFN
+name: PFN
+xref: BEL:"PFN Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PhK
+name: PhK
+xref: BEL:"Phosphorylase B Kinase Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Phosphatase
+name: Phosphatase
+synonym: "phosphatase" EXACT []
+xref: NCIT:C16981
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PI3K
+name: PI3K
+synonym: "p-PI3K" EXACT []
+synonym: "phosphatidylinositol 3-kinase" EXACT []
+synonym: "PI" BROAD []
+synonym: "PI-3" BROAD []
+synonym: "PI3-kinase" EXACT []
+synonym: "PI3K" EXACT []
+synonym: "PI3Kinase" EXACT []
+xref: NCIT:C17270
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PI3K-AKT-mTOR
+name: PI3K-AKT-mTOR
+synonym: "PI3K/Akt/mTOR" EXACT []
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PI3K_p110
+name: PI3K-p110
+synonym: "p110" EXACT []
+synonym: "PI3K p110 subunit" EXACT []
+synonym: "PIK3C" EXACT []
+xref: BEL:"PIK3C Class IA Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PI3K_p85
+name: PI3K-p85
+synonym: "GST-p85" NARROW []
+synonym: "p85" EXACT []
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PIK3R_I
+name: PIK3R-I
+synonym: "PIK3R" EXACT []
+xref: BEL:"PIK3R Class IA Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PKA
+name: PKA
+synonym: "PKA" EXACT []
+xref: NCIT:C16479
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PKC
+name: PKC
+synonym: "PKC" EXACT []
+xref: NCIT:C17017
+xref: NEXTPROT-FAMILY:03065
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PKI
+name: PKI
+xref: BEL:"PKI Family"
+xref: XFAM:PF02827
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PLA2
+name: PLA2
+xref: BEL:"PLA2 Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PLA2G2
+name: PLA2G2
+xref: BEL:"PLA2G2 Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PLA2G4
+name: PLA2G4
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PLC
+name: PLC
+xref: BEL:"PLC Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PLCB
+name: PLCB
+xref: BEL:"PLCB Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PLCD
+name: PLCD
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PLCG
+name: PLCG
+xref: BEL:"PLCG Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PLD
+name: PLD
+xref: BEL:"PLD Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PPAP2
+name: PPAP2
+xref: BEL:"PPAP2 Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PPAR
+name: PPAR
+xref: BEL:"PPAR Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PPP1
+name: PPP1
+synonym: "PP1" EXACT []
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PPP1C
+name: PPP1C
+xref: BEL:"PPP1C Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PPP1R
+name: PPP1R
+xref: BEL:"PPP1R Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PPP2
+name: PPP2
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PPP2C
+name: PPP2C
+xref: BEL:"PPP2C Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PPP2R_A
+name: PPP2R-A
+xref: BEL:"PPP2R Subunit A Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PPP2R_B
+name: PPP2R-B
+xref: BEL:"PPP2R Subunit B Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PPP3
+name: PPP3
+xref: BEL:"Calcineurin Complex"
+xref: BEL:"PPP3 Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PPP3C
+name: PPP3C
+xref: BEL:"PPP3C Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PPP3R
+name: PPP3R
+xref: BEL:"PPP3R Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PRC1_complex
+name: PRC1-complex
+xref: BEL:"PRC1 Maintenance Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PRC2_complex
+name: PRC2-complex
+xref: BEL:"PRC2 Initiation Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PRDX
+name: PRDX
+xref: BEL:"PRDX Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PRKAR
+name: PRKAR
+xref: BEL:"PRKAR Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PRKC
+name: PRKC
+xref: BEL:"PRKC Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PRKG
+name: PRKG
+xref: BEL:"PRKG Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Propionyl_CoA_carboxylase
+name: Propionyl-CoA-carboxylase
+xref: BEL:"Propionyl CoA Carboxylase Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Protease
+name: Protease
+synonym: "protease" EXACT []
+xref: NCIT:C16965
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Proteasome
+name: Proteasome
+synonym: "proteasome" EXACT []
+xref: BEL:"Proteasome Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:PTGER
+name: PTGER
+xref: BEL:"PTGER Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:RAB
+name: RAB
+xref: BEL:"RAB Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:RAC
+name: RAC
+synonym: "RAC" EXACT []
+xref: BEL:"RAC Family"
+xref: NEXTPROT-FAMILY:03066
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:RAF
+name: RAF
+synonym: "RAF" EXACT []
+synonym: "Raf" EXACT []
+xref: BEL:"RAF Family"
+xref: NEXTPROT-FAMILY:03114
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:RAL
+name: RAL
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:RAP1
+name: RAP1
+synonym: "Rap1" EXACT []
+xref: NEXTPROT-FAMILY:04773
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:RAPGEF
+name: RAPGEF
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:RAR
+name: RAR
+xref: BEL:"RAR Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:RAS
+name: RAS
+synonym: "RAS" EXACT []
+synonym: "Ras" EXACT []
+synonym: "RAS-GTP" NARROW []
+synonym: "RasV12" NARROW []
+xref: BEL:"RAS Family"
+xref: NCIT:C17061
+xref: NEXTPROT-FAMILY:03663
+xref: XFAM:PF00071
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:RASA
+name: RASA
+synonym: "RASA" EXACT []
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:RASAL
+name: RASAL
+synonym: "RASAL" EXACT []
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:RasGAP
+name: RasGAP
+synonym: "RasGAP" EXACT []
+xref: XFAM:PF00616
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:RASGRF
+name: RASGRF
+synonym: "RASGRF" EXACT []
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:RASGRP
+name: RASGRP
+synonym: "RASGRP" EXACT []
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:RASSF
+name: RASSF
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:RFC
+name: RFC
+xref: BEL:"RFC Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:RFX
+name: RFX
+xref: BEL:"RFX Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:RGL
+name: RGL
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:RHO
+name: RHO
+synonym: "RHO" EXACT []
+xref: BEL:"RHO Family"
+xref: NEXTPROT-FAMILY:03668
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:RNApo_I
+name: RNApo-I
+xref: BEL:"RNApo I Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:RNApo_II
+name: RNApo-II
+xref: BEL:"RNApo II Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:ROCK
+name: ROCK
+synonym: "ROCK" EXACT []
+xref: BEL:"ROCK Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:ROR
+name: ROR
+xref: BEL:"ROR Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:RPA
+name: RPA
+synonym: "RPA" EXACT []
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:RSK
+name: RSK
+synonym: "RSK" EXACT []
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:RTK
+name: RTK
+synonym: "RTKs" EXACT []
+xref: NCIT:C17660
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:RXR
+name: RXR
+xref: BEL:"RXR Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:S100A
+name: S100A
+xref: BEL:"S100A Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:S1PR
+name: S1PR
+xref: BEL:"S1PR Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:SAA
+name: SAA
+synonym: "SAA" EXACT []
+xref: BEL:"SAA Family"
+xref: NEXTPROT-FAMILY:03483
+xref: XFAM:PF00277
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:SCD
+name: SCD
+xref: BEL:"SCD Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:SERPINB
+name: SERPINB
+xref: BEL:"SERPINB Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:SHC
+name: SHC
+synonym: "Shc" EXACT []
+synonym: "SHC" EXACT []
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:SLC2A
+name: SLC2A
+xref: BEL:"SLC2A Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:SMAD
+name: SMAD
+synonym: "SMAD" EXACT []
+synonym: "Smad" EXACT []
+synonym: "smad" EXACT []
+xref: BEL:"SMAD Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:SMAD2_3
+name: SMAD2-3
+synonym: "Smad2/3" EXACT []
+synonym: "Smad2/3-T220/T179" NARROW []
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:SMC1
+name: SMC1
+xref: BEL:"SMC1 Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:SNAI
+name: SNAI
+xref: BEL:"SNAI Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:SOD
+name: SOD
+synonym: "SOD" EXACT []
+xref: BEL:"Cu-Zn SOD Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:SOS
+name: SOS
+synonym: "SOS" EXACT []
+xref: BEL:"SOS Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:SPRED
+name: SPRED
+synonym: "SPRED" EXACT []
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:SPRY
+name: SPRY
+synonym: "SPRY" EXACT []
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:SRC
+name: SRC
+xref: BEL:"SRC Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:SREBF
+name: SREBF
+xref: BEL:"SREBF Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:STAT
+name: STAT
+synonym: "STAT" EXACT []
+xref: BEL:"STAT Family"
+xref: NCIT:C19618
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:STAT5
+name: STAT5
+xref: BEL:"STAT5 Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Sulfonylurea_receptor
+name: Sulfonylurea-receptor
+xref: BEL:"Sulfonylurea Receptor Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:SWI_SNF
+name: SWI-SNF
+synonym: "SWI and SNF complex" EXACT []
+synonym: "SWI/SNF complex" EXACT []
+xref: BEL:"SWI/SNF Complex"
+xref: NCIT:C20591
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:TAP
+name: TAP
+xref: BEL:"TAP Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:TCF_LEF
+name: TCF-LEF
+xref: BEL:"TCF/LEF Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:TCR
+name: TCR
+synonym: "TCR" EXACT []
+xref: NCIT:C17065
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:TFAP2
+name: TFAP2
+xref: BEL:"TFAP2 Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:TFDP
+name: TFDP
+xref: BEL:"TFDP Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:TGFB
+name: TGFB
+xref: BEL:"TGFB Family"
+xref: IP:IPR015615
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:THBS
+name: THBS
+xref: BEL:"THBS Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:THR
+name: THR
+xref: BEL:"THR Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Thrombin_antithrombin
+name: Thrombin-antithrombin
+xref: BEL:"Thrombin Antithrombin Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:TIAM
+name: TIAM
+synonym: "TIAM" EXACT []
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:TIF_IB
+name: TIF-IB
+xref: BEL:"TIF IB Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:TLR
+name: TLR
+synonym: "TLR" EXACT []
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:TN
+name: TN
+xref: BEL:"TN Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:TNF
+name: TNF
+synonym: "tumor necrosis factor" EXACT []
+xref: NEXTPROT-FAMILY:04243
+xref: XFAM:PF00229
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:TNFRSF
+name: TNFRSF
+xref: BEL:"TNFRSF Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:TOP2
+name: TOP2
+xref: BEL:"TOP2 Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Tryptase
+name: Tryptase
+xref: BEL:"Tryptase Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:TSC
+name: TSC
+synonym: "TSC" EXACT []
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:TUBA
+name: TUBA
+xref: BEL:"TUBA Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:TUBB
+name: TUBB
+xref: BEL:"TUBB Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:TUBD
+name: TUBD
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:TUBE
+name: TUBE
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:TUBG
+name: TUBG
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Tubulin
+name: Tubulin
+synonym: "tubulin" EXACT []
+xref: NCIT:C17219
+xref: NEXTPROT-FAMILY:04239
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:TXN
+name: TXN
+xref: BEL:"TXN Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:TXNRD
+name: TXNRD
+xref: BEL:"TXNRD Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:UBE2
+name: UBE2
+xref: BEL:"UBE2 Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Ubiquitin
+name: Ubiquitin
+synonym: "ubiquitin" EXACT []
+xref: NCIT:C17227
+xref: NEXTPROT-FAMILY:04276
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:VAV
+name: VAV
+xref: BEL:"VAV Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:VEGF
+name: VEGF
+xref: BEL:"VEGF Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:VEGFR
+name: VEGFR
+xref: BEL:"VEGFR Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: BE:Wnt
+name: Wnt
+synonym: "WNT" EXACT []
+synonym: "Wnt" EXACT []
+xref: BEL:"WNT Family"
+xref: NEXTPROT-FAMILY:04686
+xref: XFAM:PF00110
+is_a: ONT:PROTEIN-FAMILY
