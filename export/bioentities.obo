@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 29:11:2016 19:20
+date: 15:12:2016 02:42
 
 [Term]
 id: BE:9_1_1
@@ -900,7 +900,7 @@ synonym: "MAPK" BROAD []
 synonym: "p-ERK" NARROW []
 synonym: "p-ERK1/2" NARROW []
 synonym: "pERK" NARROW []
-synonym: "pTpYERK" NARROW []
+synonym: "pTpYERK" NARROWW []
 xref: BEL:"MAPK Erk1/2 Family"
 xref: BEL:"MAPK Erk1/3 Family"
 xref: NCIT:C16376
@@ -1606,6 +1606,7 @@ is_a: ONT:PROTEIN-FAMILY
 id: BE:MAP2K
 name: MAP2K
 synonym: "MAPK kinase" EXACT []
+xref: NCIT:C105947
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
@@ -2598,6 +2599,11 @@ xref: IP:IPR015615
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
+id: BE:TGFBR
+name: TGFBR
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
 id: BE:THBS
 name: THBS
 xref: BEL:"THBS Family"
@@ -2759,3 +2765,4 @@ xref: BEL:"WNT Family"
 xref: NEXTPROT-FAMILY:04686
 xref: XFAM:PF00110
 is_a: ONT:PROTEIN-FAMILY
+
