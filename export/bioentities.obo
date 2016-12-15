@@ -900,7 +900,7 @@ synonym: "MAPK" BROAD []
 synonym: "p-ERK" NARROW []
 synonym: "p-ERK1/2" NARROW []
 synonym: "pERK" NARROW []
-synonym: "pTpYERK" NARROWW []
+synonym: "pTpYERK" NARROW []
 xref: BEL:"MAPK Erk1/2 Family"
 xref: BEL:"MAPK Erk1/3 Family"
 xref: NCIT:C16376
