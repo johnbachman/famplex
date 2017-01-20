@@ -2184,3 +2184,6 @@ HGNC,RICTOR,partof,BE,mTORC2
 HGNC,MLST8,partof,BE,mTORC2
 HGNC,MTOR,partof,BE,mTORC1
 HGNC,RPTOR,partof,BE,mTORC1
+HGNC,TP53,partof,BE,p53_family
+HGNC,TP63,partof,BE,p53_family
+HGNC,TP73,partof,BE,p53_family
