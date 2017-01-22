@@ -17,7 +17,9 @@ BEL,ADRBK Family,ADRBK
 BEL,AKT Family,AKT
 BEL,ALDH Family,ALDH
 BEL,ALDO Family,ALDO
+BEL,AMP Activated Protein Kinase Complex,AMPK
 BEL,Annexin II Heterotetramer Complex,Annexin_II_heterotetramer
+BEL,AP-1 Complex,AP1
 BEL,APOA Family,APOA
 BEL,Arp2/3 Protein Complex,Arp2_3_protein
 BEL,ARRB Family,ARRB
@@ -140,6 +142,7 @@ BEL,HDL Complex,HDL
 BEL,Hedgehog Family,Hedgehog
 BEL,Hemoglobin Complex,Hemoglobin
 BEL,HES Family,HES
+BEL,Histone Family,Histone
 BEL,Histone H1 Family,Histone_H1
 BEL,Histone H2A Family,Histone_H2A
 BEL,Histone H2B Family,Histone_H2B
@@ -200,6 +203,7 @@ BEL,NTRK Family,NTRK
 BEL,p160/SRC Family,NCOA
 BEL,P2RX Family,P2RX
 BEL,P2RY Family,P2RY
+BEL,p85/p110 PI3Kinase Complex,PI3K
 BEL,PAK Family,PAK
 BEL,PARV Family,PARV
 BEL,PBX Family,PBX
