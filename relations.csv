@@ -2189,3 +2189,14 @@ HGNC,TP63,isa,BE,p53_family
 HGNC,TP73,isa,BE,p53_family
 HGNC,PTCH1,isa,BE,Patched
 HGNC,PTCH2,isa,BE,Patched
+HGNC,TNNC1,isa,BE,Troponin_C
+HGNC,TNNC2,isa,BE,Troponin_C
+HGNC,TNNI1,isa,BE,Troponin_I
+HGNC,TNNI2,isa,BE,Troponin_I
+HGNC,TNNI3,isa,BE,Troponin_I
+HGNC,TNNT1,isa,BE,Troponin_T
+HGNC,TNNT2,isa,BE,Troponin_T
+HGNC,TNNT3,isa,BE,Troponin_T
+BE,Troponin_C,partof,BE,Troponin
+BE,Troponin_I,partof,BE,Troponin
+BE,Troponin_T,partof,BE,Troponin
