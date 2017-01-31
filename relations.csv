@@ -2200,3 +2200,6 @@ HGNC,TNNT3,isa,BE,Troponin_T
 BE,Troponin_C,partof,BE,Troponin
 BE,Troponin_I,partof,BE,Troponin
 BE,Troponin_T,partof,BE,Troponin
+HGNC,ATP2A1,isa,BE,SERCA
+HGNC,ATP2A2,isa,BE,SERCA
+HGNC,ATP2A3,isa,BE,SERCA
