@@ -76,7 +76,11 @@ CD64
 CD8
 CDC25
 CDK
+CDKN
+CDKN1
+CDKN2
 CEBP
+CHEK
 Chemokine_receptor
 Cholinesterase
 CHRM
@@ -266,6 +270,7 @@ NCOA
 NCOR
 NDRG
 NFAT
+NFE
 NFkappaB
 NFkappaB_1
 NFkappaB_2
@@ -285,6 +290,7 @@ p53_family
 P70RSK
 P90RSK
 PAK
+PARP
 PARV
 Patched
 PBX
@@ -339,7 +345,6 @@ PRC1_complex
 PRC2_complex
 PRDX
 PRKAR
-PRKC
 PRKG
 Propionyl_CoA_carboxylase
 Protease
@@ -430,3 +435,4 @@ VAV
 VEGF
 VEGFR
 Wnt
+Y_box
