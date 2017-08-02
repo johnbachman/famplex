@@ -239,7 +239,7 @@ BEL,PPP3R Family,PPP3R
 BEL,PRC1 Maintenance Complex,PRC1_complex
 BEL,PRC2 Initiation Complex,PRC2_complex
 BEL,PRDX Family,PRDX
-BEL,PRKA Family,AMPK
+BEL,PRKA Family,PRKAC
 BEL,PRKAA Family,AMPK_alpha
 BEL,PRKAB Family,AMPK_beta
 BEL,PRKAG Family,AMPK_gamma
