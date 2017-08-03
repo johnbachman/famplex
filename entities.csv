@@ -287,14 +287,13 @@ P2RX
 P2RY
 p38
 p53_family
-P70RSK
+P70S6K
 P90RSK
 PAK
 PARP
 PARV
 Patched
 PBX
-PDC
 PDE
 PDE1
 PDE3
@@ -308,6 +307,7 @@ PDGFR_AA
 PDGFR_AB
 PDGFR_BB
 PDGF_BB
+PDH
 PDK
 Pertussis_toxin
 PFN
@@ -344,6 +344,7 @@ PPP3R
 PRC1_complex
 PRC2_complex
 PRDX
+PRKAC
 PRKAR
 PRKG
 Propionyl_CoA_carboxylase

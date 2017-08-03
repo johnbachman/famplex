@@ -239,7 +239,7 @@ BEL,PPP3R Family,PPP3R
 BEL,PRC1 Maintenance Complex,PRC1_complex
 BEL,PRC2 Initiation Complex,PRC2_complex
 BEL,PRDX Family,PRDX
-BEL,PRKA Family,AMPK
+BEL,PRKA Family,PRKAC
 BEL,PRKAA Family,AMPK_alpha
 BEL,PRKAB Family,AMPK_beta
 BEL,PRKAG Family,AMPK_gamma
@@ -250,7 +250,7 @@ BEL,Propionyl CoA Carboxylase Complex,Propionyl_CoA_carboxylase
 BEL,Proteasome Complex,Proteasome
 BEL,Proton Transporting ATP Synthase Complex,ATP_synthase
 BEL,PTGER Family,PTGER
-BEL,Pyruvate Dehydrogenase Complex,PDC
+BEL,Pyruvate Dehydrogenase Complex,PDH
 BEL,RAB Family,RAB
 BEL,RAC Family,RAC
 BEL,RAF Family,RAF
@@ -266,7 +266,7 @@ BEL,RNApo II Complex,RNApo_II
 BEL,ROCK Family,ROCK
 BEL,ROR Family,ROR
 BEL,RPS6KA Family,P90RSK
-BEL,RPS6KB Family,P70RSK
+BEL,RPS6KB Family,P70S6K
 BEL,RXR Family,RXR
 BEL,S100A Family,S100A
 BEL,S1PR Family,S1PR
