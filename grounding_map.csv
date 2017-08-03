@@ -959,6 +959,7 @@ PRL-3,UP,O75365,,,,
 progesterone,CHEBI,CHEBI:17026,PUBCHEM,5994,,
 Proliferation,GO,GO:0008283,,,,
 proliferation,GO,GO:0008283,MESH,D049109,,
+prostaglandin E receptor,BE,PTGER,,,,
 protease,BE,Protease,,,,
 proteasome,BE,Proteasome,MESH,D046988,GO,GO:0000502
 protein kinase A,BE,PKA,,,,
