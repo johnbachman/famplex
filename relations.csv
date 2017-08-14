@@ -1013,6 +1013,8 @@ HGNC,CUL4A,isa,BE,CUL
 HGNC,CUL4B,isa,BE,CUL
 HGNC,CUL5,isa,BE,CUL
 HGNC,CUL7,isa,BE,CUL
+BE,CXCL_ELR_negative,isa,BE,Chemokine
+BE,CXCL_ELR_positive,isa,BE,Chemokine
 HGNC,CXCL10,isa,BE,CXCL_ELR_negative
 HGNC,CXCL11,isa,BE,CXCL_ELR_negative
 HGNC,CXCL12,isa,BE,CXCL_ELR_negative
