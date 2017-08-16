@@ -41,11 +41,11 @@ Annexin_II_heterotetramer
 AP1
 APC_C
 APOA
+Apolipoprotein
 Arp2_3_protein
 ARRB
 ATP1A
 ATP1B
-ATP2A
 ATP5G
 ATP_synthase
 AXIN
@@ -81,6 +81,7 @@ CDKN1
 CDKN2
 CEBP
 CHEK
+Chemokine
 Chemokine_receptor
 Cholinesterase
 CHRM
@@ -105,7 +106,6 @@ CRISP
 CRSP
 CSNK1
 CSNK2
-CSNK2A
 CTNNA
 CUL
 CXCL_ELR_negative
@@ -126,7 +126,6 @@ DNM
 DRD
 DUSP
 DVL
-E1A_binding_protein
 E2F
 E3_Ub_ligase
 EDN
@@ -201,9 +200,10 @@ HDL
 Hedgehog
 Hemoglobin
 HES
+HIF
 HIF1
-HIF1_alpha
-HIF1_beta
+HIF_alpha
+HIF_beta
 Histone
 Histone_H1
 Histone_H2A
@@ -306,7 +306,11 @@ PDGFR
 PDGFR_AA
 PDGFR_AB
 PDGFR_BB
+PDGF_AA
+PDGF_AB
 PDGF_BB
+PDGF_CC
+PDGF_DD
 PDH
 PDK
 Pertussis_toxin
@@ -425,8 +429,6 @@ Tryptase
 TSC
 TUBA
 TUBB
-TUBD
-TUBE
 TUBG
 Tubulin
 TXN
@@ -437,4 +439,4 @@ VAV
 VEGF
 VEGFR
 Wnt
-Y_box
+YBX
