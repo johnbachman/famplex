@@ -1945,10 +1945,6 @@ HGNC,SNTG1,partof,BE,DGC
 HGNC,SNTG2,partof,BE,DGC
 HGNC,SSPN,partof,BE,DGC
 HGNC,UTRN,partof,BE,DGC
-HGNC,ACTL6A,partof,BE,E1A_binding_protein
-HGNC,EPC1,partof,BE,E1A_binding_protein
-HGNC,MAX,partof,BE,E1A_binding_protein
-HGNC,TRRAP,partof,BE,E1A_binding_protein
 HGNC,EIF2B1,partof,BE,EIF2B
 HGNC,EIF2B2,partof,BE,EIF2B
 HGNC,EIF2B3,partof,BE,EIF2B
