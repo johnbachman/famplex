@@ -3,11 +3,8 @@ import json
 import requests
 from functools import lru_cache
 from collections import defaultdict
-from indra.statements import Agent
-from indra.databases import hgnc_client
-from indra.databases import uniprot_client
-from indra.tools.expand_families import Expander
-from indra.preassembler.hierarchy_manager import hierarchies
+
+import common
 
 
 @lru_cache(10000)
@@ -136,29 +133,6 @@ def get_all_parents(up_id):
     return sets, complexes
 
 
-def get_be_child_map():
-    """Get dictionary mapping BE IDs to Uniprot IDs of all children."""
-    with open('../entities.csv', 'rt') as fh:
-        entities = [line.strip() for line in fh.readlines()]
-    be_agents = [Agent(be_id, db_refs={'BE': be_id})
-                 for be_id in entities]
-    ex = Expander(hierarchies)
-    child_map = {}
-    for be_agent in be_agents:
-        children = ex.get_children(be_agent)
-        children_up_ids = []
-        for child_ns, child_id in children:
-            if child_ns == 'HGNC':
-                hgnc_id = hgnc_client.get_hgnc_id(child_id)
-                up_id = hgnc_client.get_uniprot_id(hgnc_id)
-                children_up_ids.append(up_id)
-            else:
-                print("Unhandled NS: %s %s" % (child_ns, child_id))
-                continue
-        child_map[be_agent.name] = list(set(children_up_ids))
-    return child_map
-
-
 def get_rx_family_members(up_ids, cache_file=None):
     """Get dictionary mapping Reactome sets/complexes to member Uniprot IDs."""
     # Check to see if we're loading from a cache
@@ -249,7 +223,7 @@ def get_mappings(be_child_map, rx_family_members, diff_threshold=0):
 
 
 if __name__ == '__main__':
-    be_child_map = get_be_child_map()
+    be_child_map = common.get_child_map()
     be_up_ids = [up_id for child_list in be_child_map.values()
                        for up_id in child_list]
     rx_family_members = get_rx_family_members(be_up_ids,

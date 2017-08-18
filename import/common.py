@@ -1,6 +1,13 @@
 import re
 import sys
 import csv
+from indra.statements import Agent
+from indra.databases import hgnc_client
+from indra.databases import uniprot_client
+from indra.tools.expand_families import Expander
+from indra.preassembler.hierarchy_manager import hierarchies
+
+import common
 
 def read_csv(fh, delimiter, quotechar):
     if sys.version_info.major < 3:
@@ -11,10 +18,12 @@ def read_csv(fh, delimiter, quotechar):
     rows = [row for row in csvreader]
     return rows
 
+
 def load_csv(filename):
     with open(filename) as f:
         rows = read_csv(f, ',', '"')
     return rows
+
 
 def load_equivalences(filename):
     equivalences = []
@@ -23,6 +32,7 @@ def load_equivalences(filename):
         for row in rows:
             equivalences.append((row[0], row[1], row[2]))
     return equivalences
+
 
 def load_grounding_map(filename):
     gm_rows = load_csv(filename)
@@ -43,9 +53,35 @@ def load_grounding_map(filename):
                 g_map[key] = None
     return g_map
 
+
 def load_entity_list(filename):
     with open(filename) as f:
         rows = read_csv(f, ',', '"')
     entities = [row[0] for row in rows]
     return entities
+
+
+def get_child_map():
+    """Get dictionary mapping BE IDs to Uniprot IDs of all children."""
+    entities = common.load_entity_list('../entities.csv')
+
+    be_agents = [Agent(be_id, db_refs={'BE': be_id})
+                 for be_id in entities]
+    ex = Expander(hierarchies)
+    child_map = {}
+    for be_agent in be_agents:
+        children = ex.get_children(be_agent)
+        children_up_ids = []
+        for child_ns, child_id in children:
+            if child_ns == 'HGNC':
+                hgnc_id = hgnc_client.get_hgnc_id(child_id)
+                up_id = hgnc_client.get_uniprot_id(hgnc_id)
+                children_up_ids.append(up_id)
+            else:
+                print("Unhandled NS: %s %s" % (child_ns, child_id))
+                continue
+        child_map[be_agent.name] = list(set(children_up_ids))
+    return child_map
+
+
 
