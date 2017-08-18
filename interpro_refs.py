@@ -53,8 +53,6 @@ if __name__ == '__main__':
     ip_family_members = {}
 
     with open('protein2ipr.dat', 'rt') as f:
-        #f.seek(29500000000)
-        #f.readline()
         counter = 0
         for line in f:
             if counter % 100000 == 0:

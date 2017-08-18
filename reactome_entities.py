@@ -1,5 +1,3 @@
-import os
-import sys
 import csv
 import json
 import logging
@@ -138,7 +136,6 @@ def get_all_parents(up_id):
 
 if __name__ == '__main__':
 
-    sys.stdout = os.fdopen(sys.stdout.fileno(), 'w', 0)
     """
     genes = []
     with open('../../bioentities/relations.csv', 'rt') as fh:
