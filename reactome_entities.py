@@ -224,7 +224,8 @@ def get_mappings(be_child_map, rx_family_members, diff_threshold=0):
                        'reactomeName': rx_name, 'reactomeMembers': list(rx_set)}
             # Exact match
             if be_set == rx_set:
-                print("Found match for %s: %s (%s)" % (be_id, rx_name, rx_type))
+                #print("Found match for %s: %s (%s)" %
+                #      (be_id, rx_name, rx_type))
                 print("RE,%s,%s" % (rx_id, be_id))
                 mapping.update({'match_type': 'exact', 'difference': 0})
                 mapped = True
