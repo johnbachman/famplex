@@ -134,6 +134,76 @@ def get_all_parents(up_id):
     return sets, complexes
 
 
+def get_be_child_map():
+    with open('entities.csv', 'rt') as fh:
+        entities = [line.strip() for line in fh.readlines()]
+    be_agents = [Agent(be_id, db_refs={'BE': be_id})
+                 for be_id in entities]
+    ex = Expander(hierarchies)
+    """Get a dictionary mapping Bioentities IDs to their children, in the
+    form of Uniprot IDs."""
+    child_map = {}
+    for be_agent in be_agents:
+        children = ex.get_children(be_agent)
+        children_up_ids = []
+        for child_ns, child_id in children:
+            if child_ns == 'HGNC':
+                hgnc_id = hgnc_client.get_hgnc_id(child_id)
+                up_id = hgnc_client.get_uniprot_id(hgnc_id)
+                children_up_ids.append(up_id)
+            else:
+                print("Unhandled NS: %s %s" % (child_ns, child_id))
+                continue
+        child_map[be_agent.name] = list(set(children_up_ids))
+    return child_map
+
+
+def get_rx_family_members(up_ids, cache_file=None):
+    # Check to see if we're loading from a cache
+    if cache_file is not None:
+        with open(cache_file, 'rt') as f:
+            rx_family_members = json.load(f)
+        return rx_family_members
+
+    # Not cached, get members from the Reactome web service
+    rx_family_members = {}
+    for be_id, children_up_ids in be_child_map.items():
+        print("Getting family info for %s" % be_id)
+        # For every child, get all parents in Reactome
+        rx_sets = set([])
+        rx_complexes = set([])
+        for up_id in children_up_ids:
+            sets, complexes = get_all_parents(up_id)
+            rx_sets = rx_sets.union(sets)
+            rx_complexes = rx_complexes.union(complexes)
+        # Next, for all of the sets, get their membership
+        for rx_set in rx_sets.union(rx_complexes):
+            name, rx_id, rx_type = rx_set
+            # If we've already gotten info for this Reactome Set/Complex,
+            # we can skip it
+            if rx_id in rx_family_members:
+                continue
+            # Otherwise, get members
+            if rx_type == 'DefinedSet' or rx_type == 'CandidateSet':
+                rx_members = set(get_participants(rx_id))
+            elif rx_type == 'Complex':
+                rx_members = set(get_subunits(rx_id))
+            else:
+                print("Unrecognized type %s for %s, %s" %
+                      (rx_type, name, rx_id))
+                continue
+            # Save info in dict
+            rx_family_members[rx_id] = {'name': name, 'type': rx_type,
+                                        'members': list(rx_members)}
+    # Save to JSON
+    with open('rx_family_members.json', 'wt') as f:
+        json.dump(rx_family_members, f, indent=2)
+    # Return
+    return rx_family_members
+
+def get_mappings(be_child_map, rx_family_members):
+    pass
+
 if __name__ == '__main__':
 
     """
@@ -160,62 +230,9 @@ if __name__ == '__main__':
     for hgnc_sym, up_id in gene_ids:
         parents = get_all_parents(up_id)
     """
-
-    with open('entities.csv', 'rt') as fh:
-        entities = [line.strip() for line in fh.readlines()]
-    be_agents = [Agent(be_id, db_refs={'BE': be_id})
-                 for be_id in entities]
-    ex = Expander(hierarchies)
-    child_map = {}
-    rx_family_members = {}
-    for be_agent in be_agents:
-        print(be_agent.name)
-        children = ex.get_children(be_agent)
-        #child_map[be_agent.name] = children
-        # For every child, get all parents
-        rx_sets = set([])
-        rx_complexes = set([])
-        children_up_ids = set([])
-        for child_ns, child_id in children:
-            if child_ns == 'HGNC':
-                hgnc_id = hgnc_client.get_hgnc_id(child_id)
-                up_id = hgnc_client.get_uniprot_id(hgnc_id)
-                children_up_ids.add(up_id)
-            else:
-                print("Unhandled NS: %s %s" % (child_ns, child_id))
-                continue
-            sets, complexes = get_all_parents(up_id)
-            rx_sets = rx_sets.union(sets)
-            rx_complexes = rx_complexes.union(complexes)
-        # Next, for all of the sets, get their membership
-        #matches = defaultdict(list)
-        for rx_set in rx_sets.union(rx_complexes):
-            name, rx_id, rx_type = rx_set
-            # If we've already gotten info for this Reactome Set/Complex,
-            # we can skip it
-            if rx_id in rx_family_members:
-                continue
-            # Otherwise, get members
-            if rx_type == 'DefinedSet' or rx_type == 'CandidateSet':
-                rx_members = set(get_participants(rx_id))
-            elif rx_type == 'Complex':
-                rx_members = set(get_subunits(rx_id))
-            else:
-                print("Unrecognized type %s for %s, %s" %
-                      (rx_type, name, rx_id))
-                continue
-            # Save info in dict
-            rx_family_members[rx_id] = {'name': name, 'type': rx_type,
-                                        'members': list(rx_members)}
-            #print("Comparing %s with children %s (upids %s) to %s, rx_id %s "
-            #      "with members %s" %
-            #      (be_agent.name, children, children_up_ids, name, rx_id,
-            #       rx_members))
-            #if rx_members == children_up_ids:
-            #    print("Found match for %s: %s" % (be_agent, name))
-            #    matches[be_agent.name].append(rx_set)
-    # Save to JSON
-    with open('rx_family_members.json', 'wt') as f:
-        json.dump(rx_family_members, f, indent=2)
-
-
+    be_child_map = get_be_child_map()
+    be_up_ids = [up_id for child_list in be_child_map.values()
+                       for up_id in child_list]
+    rx_family_members = get_rx_family_members(be_up_ids,
+                                          cache_file='rx_family_members.json')
+    mappings = get_mappings(be_child_map, rx_family_members)
