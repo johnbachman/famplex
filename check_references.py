@@ -256,6 +256,15 @@ if __name__ == '__main__':
             entities_missing_eq.append(be_id)
             print("ERROR: ID %s referenced in equivalences "
                   "is not in entities list." % be_id)
+    print()
+    print("-- Checking for duplicate equivalences --")
+    equiv_counter = Counter(equivalences)
+    duplicate_eq = [item for item, count in equiv_counter.items()
+                    if count > 1]
+    if duplicate_eq:
+        print("ERROR: Duplicate equivalences found:")
+        for dup in duplicate_eq:
+            print(dup)
 
     # This check requires the requests package to be installed
     try:

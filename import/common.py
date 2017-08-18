@@ -1,6 +1,13 @@
 import re
-import csv
 import sys
+import csv
+from indra.statements import Agent
+from indra.databases import hgnc_client
+from indra.databases import uniprot_client
+from indra.tools.expand_families import Expander
+from indra.preassembler.hierarchy_manager import hierarchies
+
+import common
 
 def read_csv(fh, delimiter, quotechar):
     if sys.version_info.major < 3:
@@ -17,6 +24,7 @@ def load_csv(filename):
         rows = read_csv(f, ',', '"')
     return rows
 
+
 def load_equivalences(filename):
     equivalences = []
     with open(filename) as f:
@@ -24,6 +32,7 @@ def load_equivalences(filename):
         for row in rows:
             equivalences.append((row[0], row[1], row[2]))
     return equivalences
+
 
 def load_grounding_map(filename):
     gm_rows = load_csv(filename)
@@ -44,6 +53,7 @@ def load_grounding_map(filename):
                 g_map[key] = None
     return g_map
 
+
 def load_entity_list(filename):
     with open(filename) as f:
         rows = read_csv(f, ',', '"')
@@ -51,42 +61,30 @@ def load_entity_list(filename):
     return entities
 
 
-equivalences = load_equivalences('../equivalences.csv')
-has_bel_mapping = set()
-for source_db, source_id, be_id in equivalences:
-    if source_db == 'BEL':
-        has_bel_mapping.add(be_id)
+def get_child_map():
+    """Get dictionary mapping BE IDs to Uniprot IDs of all children."""
+    entities = common.load_entity_list('../entities.csv')
 
-gm = load_grounding_map('../grounding_map.csv')
-has_grounding = set()
-for text, refs in gm.items():
-    be_id = refs.get('BE')
-    if be_id:
-        has_grounding.add(be_id)
+    be_agents = [Agent(be_id, db_refs={'BE': be_id})
+                 for be_id in entities]
+    ex = Expander(hierarchies)
+    child_map = {}
+    for be_agent in be_agents:
+        children = ex.get_children(be_agent)
+        children_up_ids = []
+        for child_ns, child_id in children:
+            if child_ns == 'HGNC':
+                hgnc_id = hgnc_client.get_hgnc_id(child_id)
+                up_id = hgnc_client.get_uniprot_id(hgnc_id)
+                children_up_ids.append(up_id)
+            else:
+                print("Unhandled NS: %s %s" % (child_ns, child_id))
+                continue
+        child_map[be_agent.name] = list(set(children_up_ids))
+    return child_map
 
-entities = load_entity_list('../entities.csv')
 
-no_grounding = sorted(list(set(entities) - set(has_grounding)))
-bel_no_grounding = sorted(list(set(has_bel_mapping) & set(no_grounding)))
-
-print('# entities: %d' % len(entities))
-print('# has grounding: %d' % len(has_grounding))
-print('# no grounding: %d' % len(no_grounding))
-print('# no grounding but has BEL mapping: %d' % len(bel_no_grounding))
-
-bel_no_grounding_mapped = set()
-for source_db, source_id, be_id in equivalences:
-    if be_id in bel_no_grounding:
-        if source_db == 'BEL':
-            bel_no_grounding_mapped.add(source_id)
-
-with open('../../indra/data/large_corpus.bel', 'r') as fh:
-    large_corpus = fh.read()
-
-bel_counts = {}
-for bel_fam in bel_no_grounding_mapped:
-    search = 'H:"%s"' % bel_fam
-    bel_counts[bel_fam] = large_corpus.count(search)
-
-bel_to_lookup = sorted(bel_counts.items(), key=lambda x: x[1], reverse=True)
-bel_to_lookup = [b for b in bel_to_lookup if b[1] > 0]
+def jaccard_index(a, b):
+    int_size = len(a.intersection(b))
+    union_size = len(a.union(b))
+    return int_size / float(union_size)
