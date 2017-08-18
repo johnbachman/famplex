@@ -1,92 +1,42 @@
-import re
-import csv
-import sys
+from common import *
 
-def read_csv(fh, delimiter, quotechar):
-    if sys.version_info.major < 3:
-        csvreader = csv.reader(fh, delimiter=bytes(delimiter),
-                               quotechar=bytes(quotechar))
-    else:
-        csvreader = csv.reader(fh, delimiter=delimiter, quotechar=quotechar)
-    rows = [row for row in csvreader]
-    return rows
-
-
-def load_csv(filename):
-    with open(filename) as f:
-        rows = read_csv(f, ',', '"')
-    return rows
-
-def load_equivalences(filename):
-    equivalences = []
-    with open(filename) as f:
-        rows = read_csv(f, ',', '"')
-        for row in rows:
-            equivalences.append((row[0], row[1], row[2]))
-    return equivalences
-
-def load_grounding_map(filename):
-    gm_rows = load_csv(filename)
-    g_map = {}
-    for row in gm_rows:
-        key = row[0]
-        db_refs = {'TEXT': key}
-        keys = [entry for entry in row[1::2] if entry != '']
-        values = [entry for entry in row[2::2] if entry != '']
-        if len(keys) != len(values):
-            print('ERROR: Mismatched keys and values in row %s' % str(row))
-            continue
-        else:
-            db_refs.update(dict(zip(keys, values)))
-            if len(db_refs.keys()) > 1:
-                g_map[key] = db_refs
-            else:
-                g_map[key] = None
-    return g_map
-
-def load_entity_list(filename):
-    with open(filename) as f:
-        rows = read_csv(f, ',', '"')
-    entities = [row[0] for row in rows]
-    return entities
-
-
-equivalences = load_equivalences('../equivalences.csv')
-has_bel_mapping = set()
-for source_db, source_id, be_id in equivalences:
-    if source_db == 'BEL':
-        has_bel_mapping.add(be_id)
-
-gm = load_grounding_map('../grounding_map.csv')
-has_grounding = set()
-for text, refs in gm.items():
-    be_id = refs.get('BE')
-    if be_id:
-        has_grounding.add(be_id)
-
-entities = load_entity_list('../entities.csv')
-
-no_grounding = sorted(list(set(entities) - set(has_grounding)))
-bel_no_grounding = sorted(list(set(has_bel_mapping) & set(no_grounding)))
-
-print('# entities: %d' % len(entities))
-print('# has grounding: %d' % len(has_grounding))
-print('# no grounding: %d' % len(no_grounding))
-print('# no grounding but has BEL mapping: %d' % len(bel_no_grounding))
-
-bel_no_grounding_mapped = set()
-for source_db, source_id, be_id in equivalences:
-    if be_id in bel_no_grounding:
+if __name__ == '__main__':
+    equivalences = load_equivalences('../equivalences.csv')
+    has_bel_mapping = set()
+    for source_db, source_id, be_id in equivalences:
         if source_db == 'BEL':
-            bel_no_grounding_mapped.add(source_id)
+            has_bel_mapping.add(be_id)
 
-with open('../../indra/data/large_corpus.bel', 'r') as fh:
-    large_corpus = fh.read()
+    gm = load_grounding_map('../grounding_map.csv')
+    has_grounding = set()
+    for text, refs in gm.items():
+        be_id = refs.get('BE')
+        if be_id:
+            has_grounding.add(be_id)
 
-bel_counts = {}
-for bel_fam in bel_no_grounding_mapped:
-    search = 'H:"%s"' % bel_fam
-    bel_counts[bel_fam] = large_corpus.count(search)
+    entities = load_entity_list('../entities.csv')
 
-bel_to_lookup = sorted(bel_counts.items(), key=lambda x: x[1], reverse=True)
-bel_to_lookup = [b for b in bel_to_lookup if b[1] > 0]
+    no_grounding = sorted(list(set(entities) - set(has_grounding)))
+    bel_no_grounding = sorted(list(set(has_bel_mapping) & set(no_grounding)))
+
+    print('# entities: %d' % len(entities))
+    print('# has grounding: %d' % len(has_grounding))
+    print('# no grounding: %d' % len(no_grounding))
+    print('# no grounding but has BEL mapping: %d' % len(bel_no_grounding))
+
+    bel_no_grounding_mapped = set()
+    for source_db, source_id, be_id in equivalences:
+        if be_id in bel_no_grounding:
+            if source_db == 'BEL':
+                bel_no_grounding_mapped.add(source_id)
+
+    with open('../../indra/data/large_corpus.bel', 'r') as fh:
+        large_corpus = fh.read()
+
+    bel_counts = {}
+    for bel_fam in bel_no_grounding_mapped:
+        search = 'H:"%s"' % bel_fam
+        bel_counts[bel_fam] = large_corpus.count(search)
+
+    bel_to_lookup = sorted(bel_counts.items(), key=lambda x: x[1], reverse=True)
+    bel_to_lookup = [b for b in bel_to_lookup if b[1] > 0]
