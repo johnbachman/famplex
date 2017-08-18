@@ -84,4 +84,7 @@ def get_child_map():
     return child_map
 
 
-
+def jaccard_index(a, b):
+    int_size = len(a.intersection(b))
+    union_size = len(a.union(b))
+    return int_size / float(union_size)

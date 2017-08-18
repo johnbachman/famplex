@@ -178,7 +178,7 @@ def get_rx_family_members(up_ids, cache_file=None):
     return rx_family_members
 
 
-def get_mappings(be_child_map, rx_family_members, diff_threshold=0):
+def get_mappings(be_child_map, rx_family_members, jaccard_cutoff=1.):
     """Find matches between BE and Reactome families/complexes."""
     mappings = defaultdict(list)
     for be_id, be_children in be_child_map.items():
@@ -193,32 +193,15 @@ def get_mappings(be_child_map, rx_family_members, diff_threshold=0):
             # Skip empty sets
             if not rx_set:
                 continue
-            mapped = False
-            mapping = {'reactomeId': rx_id, 'reactomeType': rx_type,
-                       'reactomeName': rx_name, 'reactomeMembers': list(rx_set)}
-            # Exact match
-            if be_set == rx_set:
-                #print("Found match for %s: %s (%s)" %
-                #      (be_id, rx_name, rx_type))
-                print("RE,%s,%s" % (rx_id, be_id))
-                mapping.update({'match_type': 'exact', 'difference': 0})
-                mapped = True
-            # BE is subset of Reactome
-            elif be_set.issubset(rx_set):
-                diff = len(rx_set.difference(be_set))
-                if diff <= diff_threshold:
-                    mapping.update({'match_type': 'subset', 'difference': diff})
-                    mapped = True
-            # BE is superset of Reactome
-            elif be_set.issuperset(rx_set):
-                diff = len(be_set.difference(rx_set))
-                if diff <= diff_threshold:
-                    mapping.update({'match_type': 'superset',
-                                    'difference': diff})
-                    mapped = True
-            # Check if we've got a successful match
-            if mapped:
+            jacc = common.jaccard_index(be_set, rx_set)
+            if jacc >= jaccard_cutoff:
+                mapping = {'reactomeId': rx_id, 'reactomeType': rx_type,
+                           'reactomeName': rx_name,
+                           'reactomeMembers': list(rx_set),
+                           'jaccardIndex': jacc}
                 mappings[be_id].append(mapping)
+        if be_id in mappings:
+            mappings[be_id].sort(key=lambda d: d['jaccardIndex'], reverse=True)
     return mappings
 
 
@@ -228,6 +211,6 @@ if __name__ == '__main__':
                        for up_id in child_list]
     rx_family_members = get_rx_family_members(be_up_ids,
                                           cache_file='rx_family_members.json')
-    mappings = get_mappings(be_child_map, rx_family_members, diff_threshold=0)
+    mappings = get_mappings(be_child_map, rx_family_members, jaccard_cutoff=1.)
     with open('reactome_mappings.json', 'wt') as f:
         json.dump(mappings, f, indent=2)
