@@ -1,4 +1,5 @@
 import json
+from collections import defaultdict
 from indra.statements import Agent
 from indra.databases import hgnc_client
 from indra.tools.expand_families import Expander
@@ -60,24 +61,38 @@ def get_ip_family_members(ip_families_for_be, ip_datafile='protein2ipr.dat',
     return ip_family_members
 
 
-def get_mappings(be_child_map, ip_family_members, jaccard_cutoff=1.):
+def load_uniprot(filename):
+    with open(filename, 'rt') as f:
+        entries = common.read_csv(f, delimiter='\t', quotechar='"')
+    up_ids = [row[0] for row in entries[1:]]
+    return up_ids
+
+
+def get_mappings(be_child_map, ip_family_members, uniprot_ids,
+                 jaccard_cutoff=1.):
     mappings = defaultdict(list)
+    up_set = set(uniprot_ids)
     for be_id, be_children in be_child_map.items():
+        print("Mapping %s" % be_id)
         # Skip empty sets
         be_set = set(be_children)
         if not be_set:
             continue
-        for ip_id, ip_info in rx_family_members.items():
+        for ip_id, ip_info in ip_family_members.items():
             ip_name = ip_info['name']
-            ip_set = set(ip_info['members'])
+            members = ip_info['members']
+            ip_set = set(members).intersection(up_set)
             # Skip empty sets
             if not ip_set:
                 continue
             jacc = common.jaccard_index(be_set, ip_set)
             if jacc >= jaccard_cutoff:
-                mapping = {'id': ip_id, 'members': list(ip_set),
-                           'jaccardIndex': jacc}
+                mapping = {'id': ip_id, 'name': ip_name,
+                           'members': list(ip_set), 'jaccardIndex': jacc,
+                           'equivalence': 'IP,%s,%s' % (ip_id, be_id)}
                 mappings[be_id].append(mapping)
+        if be_id in mappings:
+            mappings[be_id].sort(key=lambda d: d['jaccardIndex'], reverse=True)
     return mappings
 
 
@@ -90,4 +105,11 @@ if __name__ == '__main__':
                                     cache_file='ip_families_for_be.txt')
     ip_family_members = get_ip_family_members(ip_families_for_be,
                                         cache_file='ip_family_members.json')
-    mappings = get_mappings(be_child_map, ip_family_members)
+    up_ids = load_uniprot('uniprot_reviewed_human.tsv')
+    mappings = get_mappings(be_child_map, ip_family_members, up_ids,
+                            jaccard_cutoff=1)
+    for be_id, map_list in mappings.items():
+        for map_info in map_list:
+            ip_id = map_info['id']
+            print("IP,%s,%s" % (ip_id, be_id))
+
