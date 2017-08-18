@@ -53,21 +53,17 @@ if __name__ == '__main__':
     ip_family_members = {}
 
     with open('protein2ipr.dat', 'rt') as f:
-        f.seek(80*2700000)
-        f.readline()
+        #f.seek(29500000000)
+        #f.readline()
         counter = 0
-        while True:
+        for line in f:
             if counter % 100000 == 0:
                 print("At line %d" % counter)
-            if counter > 1000000:
-                break;
-            line = f.readline()
-            if not line:
+            if line == '' or line.strip() == '':
                 continue
             entries = line.strip().split('\t')
             up_id, ip_id, ip_name = entries[0:3]
             if ip_id in ip_families_for_be and uniprot_client.is_human(up_id):
-                print(entries)
                 ip_fam_info = ip_family_members.get(ip_id)
                 if ip_fam_info is None:
                     ip_family_members[ip_id] = {'name': ip_name,
@@ -76,5 +72,5 @@ if __name__ == '__main__':
                     ip_fam_info['members'].append(up_id)
             counter += 1
     with open('ip_family_members.json', 'wt') as f:
-        json.dump(ip_family_members, f)
+        json.dump(ip_family_members, f, indent=2)
 
