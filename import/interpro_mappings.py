@@ -5,8 +5,9 @@ from indra.tools.expand_families import Expander
 from indra.preassembler.hierarchy_manager import hierarchies
 from indra.databases import uniprot_client
 
+
 def get_be_up_ids():
-    with open('entities.csv', 'rt') as fh:
+    with open('../entities.csv', 'rt') as fh:
         entities = [line.strip() for line in fh.readlines()]
     be_agents = [Agent(be_id, db_refs={'BE': be_id})
                  for be_id in entities]
@@ -24,6 +25,7 @@ def get_be_up_ids():
         child_map[be_agent.name] = children_up_ids
         all_up_ids = all_up_ids.union(children_up_ids)
     return child_map, all_up_ids
+
 
 def get_ip_families_for_be(cache_file=None):
     if cache_file is not None:
@@ -45,6 +47,7 @@ def get_ip_families_for_be(cache_file=None):
                 print(entries)
                 ip_families_for_be.add(ip_id)
             counter += 1
+
 
 if __name__ == '__main__':
     child_map, all_up_ids = get_be_up_ids()

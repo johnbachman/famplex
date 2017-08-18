@@ -138,7 +138,7 @@ def get_all_parents(up_id):
 
 def get_be_child_map():
     """Get dictionary mapping BE IDs to Uniprot IDs of all children."""
-    with open('entities.csv', 'rt') as fh:
+    with open('../entities.csv', 'rt') as fh:
         entities = [line.strip() for line in fh.readlines()]
     be_agents = [Agent(be_id, db_refs={'BE': be_id})
                  for be_id in entities]
