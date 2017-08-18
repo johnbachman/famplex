@@ -1,6 +1,5 @@
 import csv
 import json
-import logging
 import requests
 from functools import lru_cache
 from collections import defaultdict
@@ -11,11 +10,9 @@ from indra.tools.expand_families import Expander
 from indra.preassembler.hierarchy_manager import hierarchies
 
 
-logger = logging.getLogger('reactome')
-
-
 @lru_cache(10000)
-def query_id(up_id):
+def rx_id_from_up_id(up_id):
+    """Get the Reactome Stable ID for a given Uniprot ID."""
     react_search_url = 'http://www.reactome.org/ContentService/search/query'
     params = {'query': up_id, 'cluster': 'true', 'species':'Homo sapiens'}
     headers = {'Accept': 'application/json'}
@@ -40,7 +37,8 @@ def query_id(up_id):
 
 
 @lru_cache(100000)
-def get_uniprot_id(reactome_id):
+def up_id_from_rx_id(reactome_id):
+    """Get the Uniprot ID (referenceEntity) for a given Reactome Stable ID."""
     react_url = 'http://www.reactome.org/ContentService/data/query/' \
                 + reactome_id + '/referenceEntity'
     res = requests.get(react_url)
@@ -58,6 +56,7 @@ def get_uniprot_id(reactome_id):
 
 @lru_cache(10000)
 def get_participants(reactome_id):
+    """Get Uniprot IDs of members of a Reactome DefinedSet or CandidateSet."""
     react_url = 'http://www.reactome.org/ContentService/data/event/' \
                 + reactome_id + '/participatingReferenceEntities'
     headers = {'Accept': 'application/json'}
@@ -77,6 +76,7 @@ def get_participants(reactome_id):
 
 @lru_cache(10000)
 def get_subunits(complex_id):
+    """Get Uniprot IDs of subunits of a Reactome Complex."""
     react_url = 'http://www.reactome.org/ContentService/data/complex/' \
                 + complex_id + '/subunits'
     headers = {'Accept': 'application/json'}
@@ -89,14 +89,15 @@ def get_subunits(complex_id):
         subunit_rx_id = subunit.get('stId')
         if not subunit_rx_id:
             continue
-        up_id = get_uniprot_id(subunit_rx_id)
+        up_id = up_id_from_rx_id(subunit_rx_id)
         if up_id:
             up_ids.append(up_id)
     return up_ids
 
 
 @lru_cache(10000)
-def get_parents(stable_id):
+def _get_parents(stable_id):
+    """Recursively get all parents of a Reactome ID."""
     react_data_url = 'http://www.reactome.org/ContentService/data/entity/' + \
                      stable_id + '/componentOf'
     headers = {'Accept': 'application/json'}
@@ -117,31 +118,31 @@ def get_parents(stable_id):
     parents_at_this_level = list(zip(names, stable_ids, schema_classes))
     parents_at_next_level_up = []
     for p_name, p_id, sc in parents_at_this_level:
-        parents_at_next_level_up += get_parents(p_id)
+        parents_at_next_level_up += _get_parents(p_id)
     return parents_at_this_level + parents_at_next_level_up
 
 
 @lru_cache(10000)
 def get_all_parents(up_id):
-    linked_stable_ids = query_id(up_id)
+    """Get all parents for all Reactome IDs linked to a Uniprot ID."""
+    linked_stable_ids = rx_id_from_up_id(up_id)
     if linked_stable_ids is None:
         return ([], [])
     parents = []
     for ls_id in linked_stable_ids:
-        parents += get_parents(ls_id)
+        parents += _get_parents(ls_id)
     sets = [tup for tup in parents if tup[2] != 'Complex']
     complexes = [tup for tup in parents if tup[2] == 'Complex']
     return sets, complexes
 
 
 def get_be_child_map():
+    """Get dictionary mapping BE IDs to Uniprot IDs of all children."""
     with open('entities.csv', 'rt') as fh:
         entities = [line.strip() for line in fh.readlines()]
     be_agents = [Agent(be_id, db_refs={'BE': be_id})
                  for be_id in entities]
     ex = Expander(hierarchies)
-    """Get a dictionary mapping Bioentities IDs to their children, in the
-    form of Uniprot IDs."""
     child_map = {}
     for be_agent in be_agents:
         children = ex.get_children(be_agent)
@@ -159,6 +160,7 @@ def get_be_child_map():
 
 
 def get_rx_family_members(up_ids, cache_file=None):
+    """Get dictionary mapping Reactome sets/complexes to member Uniprot IDs."""
     # Check to see if we're loading from a cache
     if cache_file is not None:
         with open(cache_file, 'rt') as f:
@@ -201,35 +203,50 @@ def get_rx_family_members(up_ids, cache_file=None):
     # Return
     return rx_family_members
 
-def get_mappings(be_child_map, rx_family_members):
-    pass
+
+def get_mappings(be_child_map, rx_family_members, diff_threshold=0):
+    """Find matches between BE and Reactome families/complexes."""
+    mappings = defaultdict(list)
+    for be_id, be_children in be_child_map.items():
+        # Skip empty sets
+        be_set = set(be_children)
+        if not be_set:
+            continue
+        for rx_id, rx_info in rx_family_members.items():
+            rx_name = rx_info['name']
+            rx_type = rx_info['type']
+            rx_set = set(rx_info['members'])
+            # Skip empty sets
+            if not rx_set:
+                continue
+            mapped = False
+            mapping = {'reactomeId': rx_id, 'reactomeType': rx_type,
+                       'reactomeName': rx_name, 'reactomeMembers': list(rx_set)}
+            # Exact match
+            if be_set == rx_set:
+                print("Found match for %s: %s" % (be_id, rx_name))
+                mapping.update({'match_type': 'exact', 'difference': 0})
+                mapped = True
+            # BE is subset of Reactome
+            elif be_set.issubset(rx_set):
+                diff = len(rx_set.difference(be_set))
+                if diff <= diff_threshold:
+                    mapping.update({'match_type': 'subset', 'difference': diff})
+                    mapped = True
+            # BE is superset of Reactome
+            elif be_set.issuperset(rx_set):
+                diff = len(be_set.difference(rx_set))
+                if diff <= diff_threshold:
+                    mapping.update({'match_type': 'superset',
+                                    'difference': diff})
+                    mapped = True
+            # Check if we've got a successful match
+            if mapped:
+                mappings[be_id].append(mapping)
+    return mappings
+
 
 if __name__ == '__main__':
-
-    """
-    genes = []
-    with open('../../bioentities/relations.csv', 'rt') as fh:
-        csvreader = csv.reader(fh, delimiter=',', quotechar='"')
-        for row in csvreader:
-            if row[0] == 'HGNC':
-                genes.append(row[1])
-    with open('bioentities_genes.csv', 'wt') as f:
-        for gene in genes:
-            f.write('%s\n' % gene)
-
-    gene_ids = []
-    for hgnc_sym in genes:
-        hgnc_id = hgnc_client.get_hgnc_id(hgnc_sym)
-        up_id = hgnc_client.get_uniprot_id(hgnc_id)
-        gene_ids.append((hgnc_sym, up_id))
-    gene_ids = list(set(gene_ids))
-    # Iterate over all genes and get all the sets (families)
-    # For every bioentities family, get its child genes
-
-    parents = []
-    for hgnc_sym, up_id in gene_ids:
-        parents = get_all_parents(up_id)
-    """
     be_child_map = get_be_child_map()
     be_up_ids = [up_id for child_list in be_child_map.values()
                        for up_id in child_list]
