@@ -5,29 +5,9 @@ from indra.tools.expand_families import Expander
 from indra.preassembler.hierarchy_manager import hierarchies
 from indra.databases import uniprot_client
 
+import common
 
-def get_be_up_ids():
-    with open('../entities.csv', 'rt') as fh:
-        entities = [line.strip() for line in fh.readlines()]
-    be_agents = [Agent(be_id, db_refs={'BE': be_id})
-                 for be_id in entities]
-    ex = Expander(hierarchies)
-    child_map = {}
-    all_up_ids = set([])
-    for be_agent in be_agents:
-        children = ex.get_children(be_agent)
-        children_up_ids = set([])
-        for child_ns, child_id in children:
-            assert child_ns == 'HGNC'
-            hgnc_id = hgnc_client.get_hgnc_id(child_id)
-            up_id = hgnc_client.get_uniprot_id(hgnc_id)
-            children_up_ids.add(up_id)
-        child_map[be_agent.name] = children_up_ids
-        all_up_ids = all_up_ids.union(children_up_ids)
-    return child_map, all_up_ids
-
-
-def get_ip_families_for_be(cache_file=None):
+def get_ip_families_for_be(be_up_ids, cache_file=None):
     if cache_file is not None:
         with open(cache_file, 'rt') as f:
             ipfs = [line.strip() for line in f.readlines()]
@@ -43,19 +23,22 @@ def get_ip_families_for_be(cache_file=None):
                 continue
             entries = line.strip().split('\t')
             up_id, ip_id = entries[0:2]
-            if up_id in all_up_ids:
+            if up_id in be_up_ids:
                 print(entries)
                 ip_families_for_be.add(ip_id)
             counter += 1
 
 
-if __name__ == '__main__':
-    child_map, all_up_ids = get_be_up_ids()
-    ip_families_for_be = get_ip_families_for_be(
-                                cache_file='ip_families_for_be.txt')
+def get_ip_family_members(ip_families_for_be, ip_datafile='protein2ipr.dat',
+                          cache_file=None):
+    # Check if Interpro info is cached
+    if cache_file is not None:
+        with open(cache_file, 'rt') as f:
+            ip_family_members = json.load(f)
+        return ip_family_members
+    # If not cached, load from file
     ip_family_members = {}
-
-    with open('protein2ipr.dat', 'rt') as f:
+    with open(ip_datafile, 'rt') as f:
         counter = 0
         for line in f:
             if counter % 100000 == 0:
@@ -74,4 +57,37 @@ if __name__ == '__main__':
             counter += 1
     with open('ip_family_members.json', 'wt') as f:
         json.dump(ip_family_members, f, indent=2)
+    return ip_family_members
 
+
+def get_mappings(be_child_map, ip_family_members, jaccard_cutoff=1.):
+    mappings = defaultdict(list)
+    for be_id, be_children in be_child_map.items():
+        # Skip empty sets
+        be_set = set(be_children)
+        if not be_set:
+            continue
+        for ip_id, ip_info in rx_family_members.items():
+            ip_name = ip_info['name']
+            ip_set = set(ip_info['members'])
+            # Skip empty sets
+            if not ip_set:
+                continue
+            jacc = common.jaccard_index(be_set, ip_set)
+            if jacc >= jaccard_cutoff:
+                mapping = {'id': ip_id, 'members': list(ip_set),
+                           'jaccardIndex': jacc}
+                mappings[be_id].append(mapping)
+    return mappings
+
+
+if __name__ == '__main__':
+    be_child_map = common.get_child_map()
+    be_up_ids = [up_id for child_list in be_child_map.values()
+                       for up_id in child_list]
+
+    ip_families_for_be = get_ip_families_for_be(be_up_ids,
+                                    cache_file='ip_families_for_be.txt')
+    ip_family_members = get_ip_family_members(ip_families_for_be,
+                                        cache_file='ip_family_members.json')
+    mappings = get_mappings(be_child_map, ip_family_members)
