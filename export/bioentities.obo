@@ -216,16 +216,16 @@ id: BE:AKT
 name: AKT
 synonym: "AKT" EXACT []
 synonym: "Akt" EXACT []
-synonym: "AKT-Ser473" EXACT []
-synonym: "p-AKT" EXACT []
-synonym: "p-Akt" EXACT []
-synonym: "PI3K-AKT" EXACT []
-synonym: "PI3K-Akt" EXACT []
+synonym: "AKT-Ser473" NARROW []
+synonym: "p-AKT" NARROW []
+synonym: "p-Akt" NARROW []
+synonym: "PI3K-AKT" BROAD []
+synonym: "PI3K-Akt" BROAD []
 synonym: "PKB" EXACT []
 synonym: "PKB-Akt" EXACT []
 synonym: "PKB/Akt" EXACT []
-synonym: "pTyr176-AKT" EXACT []
-synonym: "RAS-AKT" EXACT []
+synonym: "pTyr176-AKT" NARROW []
+synonym: "RAS-AKT" BROAD []
 xref: BEL:"AKT Family"
 xref: NCIT:C41625
 xref: RE:R-HSA-202052
@@ -1482,11 +1482,11 @@ synonym: "Erk1/2" EXACT []
 synonym: "ERKs" EXACT []
 synonym: "Extracellular Signal Regulated Kinase" EXACT []
 synonym: "extracellular signal-regulated kinase" EXACT []
-synonym: "MAPK" EXACT []
-synonym: "p-ERK" EXACT []
-synonym: "p-ERK1/2" EXACT []
-synonym: "pERK" EXACT []
-synonym: "pTpYERK" EXACT []
+synonym: "MAPK" BROAD []
+synonym: "p-ERK" NARROW []
+synonym: "p-ERK1/2" NARROW []
+synonym: "pERK" NARROW []
+synonym: "pTpYERK" NARROW []
 xref: BEL:"MAPK Erk1/2 Family"
 xref: BEL:"MAPK Erk1/3 Family"
 xref: IP:IPR008349
@@ -2671,8 +2671,8 @@ name: MEK
 synonym: "MEK 1/2" EXACT []
 synonym: "MEK" EXACT []
 synonym: "MEK1/2" EXACT []
-synonym: "p-MEK" EXACT []
-synonym: "p-MEK1/2" EXACT []
+synonym: "p-MEK" NARROW []
+synonym: "p-MEK1/2" NARROW []
 xref: BEL:"MEK1/2 Family"
 xref: RE:R-HSA-5672686
 xref: RE:R-HSA-5672705
@@ -3392,10 +3392,10 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: BE:PI3K
 name: PI3K
-synonym: "p-PI3K" EXACT []
+synonym: "p-PI3K" NARROW []
 synonym: "phosphatidylinositol 3-kinase" EXACT []
-synonym: "PI" EXACT []
-synonym: "PI-3" EXACT []
+synonym: "PI" BROAD []
+synonym: "PI-3" BROAD []
 synonym: "PI3-kinase" EXACT []
 synonym: "PI3K" EXACT []
 synonym: "PI3Kinase" EXACT []
@@ -3416,7 +3416,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: BE:PI3K_p85
 name: PI3K-p85
-synonym: "GST-p85" EXACT []
+synonym: "GST-p85" NARROW []
 synonym: "p85" EXACT []
 xref: RE:R-HSA-74688
 is_a: ONT:PROTEIN-FAMILY
@@ -3864,8 +3864,8 @@ id: BE:RAS
 name: RAS
 synonym: "RAS" EXACT []
 synonym: "Ras" EXACT []
-synonym: "RAS-GTP" EXACT []
-synonym: "RasV12" EXACT []
+synonym: "RAS-GTP" NARROW []
+synonym: "RasV12" NARROW []
 xref: BEL:"RAS Family"
 xref: NCIT:C17061
 xref: NEXTPROT-FAMILY:03663
@@ -4149,7 +4149,7 @@ id: BE:SMAD2_3
 name: SMAD2-3
 synonym: "SMAD 2/3" EXACT []
 synonym: "Smad2/3" EXACT []
-synonym: "Smad2/3-T220/T179" EXACT []
+synonym: "Smad2/3-T220/T179" NARROW []
 xref: RE:R-HSA-171172
 xref: RE:R-HSA-171182
 xref: RE:R-HSA-177105
