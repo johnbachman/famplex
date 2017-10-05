@@ -50,7 +50,7 @@ def get_obo_terms():
     entities_file = os.path.join(path_this, os.pardir, 'entities.csv')
     grounding_file = os.path.join(path_this, os.pardir, 'grounding_map.csv')
     equiv_file = os.path.join(path_this, os.pardir, 'equivalences.csv')
-    # For each entity in famplex
+    rel_file = os.path.join(path_this, os.pardir, 'relations.csv')
     with open(entities_file, 'r') as fh:
         entities = [l.strip() for l in fh.readlines()]
     with open(equiv_file, 'r') as fh:
@@ -73,6 +73,28 @@ def get_obo_terms():
             for ns, id in zip(namespaces, ids):
                 if ns == 'FPLX':
                     textrefs[id].append(text_str)
+    with open(rel_file) as fh:
+        isa_rels = defaultdict(list)
+        partof_rels = defaultdict(list)
+        inverse_isa_rels = defaultdict(list)
+        has_part_rels = defaultdict(list)
+        csvreader = csv.reader(fh, delimiter=str(u','), lineterminator='\r\n',
+                               quoting=csv.QUOTE_MINIMAL,
+                               quotechar=str(u'"'))
+        for row in csvreader:
+            ns1, id1, rel, ns2, id2 = row
+            if ns1 == 'BE':
+                if rel == 'isa':
+                    isa_rels[id1].append((ns2, id2))
+                elif rel == 'partof':
+                    partof_rels[id1].append((ns2, id2))
+            if ns2 == 'BE':
+                if rel == 'isa':
+                    inverse_isa_rels[id2].append((ns1, id1))
+                elif rel == 'partof':
+                    has_part_rels[id2].append((ns1, id1))
+
+    # For each entity in famplex
     for entity in entities:
         entity_id = Reference('FPLX', entity)
         # Construct string name
