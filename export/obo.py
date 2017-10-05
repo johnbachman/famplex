@@ -8,7 +8,7 @@ Reference = collections.namedtuple('Reference', ['ns', 'id'])
 Synonym = collections.namedtuple('Synonym', ['name', 'status'])
 
 class OboTerm(object):
-    def __init__(self, term_id, name, synonyms=None, xrefs=None, isas=None):
+    def __init__(self, term_id, name, rels, synonyms=None, xrefs=None):
         self.term_id = term_id
         self.name = name
         self.synonyms = synonyms
@@ -16,10 +16,7 @@ class OboTerm(object):
             self.xrefs = xrefs
         else:
             self.xrefs = []
-        if isas is not None:
-            self.isas = isas
-        else:
-            self.isas = []
+        self.rels = rels
 
     def to_obo(self):
         obo_str = '[Term]\n'
@@ -37,8 +34,9 @@ class OboTerm(object):
             else:
                 entry = '%s:%s' % (xref.ns, xref.id)
             obo_str += 'xref: %s\n' % entry
-        for isa in self.isas:
-            obo_str += 'is_a: %s:%s\n' % (isa.ns, isa.id)
+        for rel_type, rel_entries in self.rels.items():
+            for ref in rel_entries:
+                obo_str += '%s: %s:%s\n' % (rel_type, ref.ns, ref.id)
         return obo_str
 
     def __str__(self):
@@ -74,10 +72,9 @@ def get_obo_terms():
                 if ns == 'FPLX':
                     textrefs[id].append(text_str)
     with open(rel_file) as fh:
-        isa_rels = defaultdict(list)
-        partof_rels = defaultdict(list)
-        inverse_isa_rels = defaultdict(list)
-        has_part_rels = defaultdict(list)
+        rels = {entity: {'is_a': [], 'part_of': [],
+                         'inverse_is_a': [], 'has_part': []}
+                for entity in entities}
         csvreader = csv.reader(fh, delimiter=str(u','), lineterminator='\r\n',
                                quoting=csv.QUOTE_MINIMAL,
                                quotechar=str(u'"'))
@@ -85,14 +82,14 @@ def get_obo_terms():
             ns1, id1, rel, ns2, id2 = row
             if ns1 == 'BE':
                 if rel == 'isa':
-                    isa_rels[id1].append((ns2, id2))
-                elif rel == 'partof':
-                    partof_rels[id1].append((ns2, id2))
+                    rels[id1]['is_a'].append(Reference(ns2, id2))
+                elif rel == 'part_of':
+                    rels[id1]['part_of'].append(Reference(ns2, id2))
             if ns2 == 'BE':
                 if rel == 'isa':
-                    inverse_isa_rels[id2].append((ns1, id1))
+                    rels[id2]['inverse_is_a'].append(Reference(ns1, id1))
                 elif rel == 'partof':
-                    has_part_rels[id2].append((ns1, id1))
+                    rels[id2]['has_part'].append(Reference(ns1, id1))
 
     # For each entity in famplex
     for entity in entities:
@@ -111,10 +108,8 @@ def get_obo_terms():
         if equivs:
             for equiv in equivs:
                 xrefs.append(Reference(equiv[0], equiv[1]))
-        # Get isa
-        isas = []
-        isas.append(Reference('ONT', 'PROTEIN-FAMILY'))
-        term = OboTerm(entity_id, name, synonyms, xrefs, isas)
+        rels[entity]['is_a'].append(Reference('ONT', 'PROTEIN-FAMILY'))
+        term = OboTerm(entity_id, name, rels[entity], synonyms, xrefs)
         obo_terms.append(term)
     return obo_terms
 
