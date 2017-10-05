@@ -1,15 +1,20 @@
 format-version: 1.2
-date: 06:03:2018 10:03
+date: 18:03:2018 19:57
 
 [Term]
 id: FPLX:9_1_1
 name: 9-1-1
+synonym: "(9-1-1) complex" EXACT []
+synonym: "9-1-1 complex" EXACT []
+synonym: "9-1-1" EXACT []
+synonym: "h9-1-1 complex" EXACT []
 xref: BEL:"9-1-1 Complex"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:ABL_family
 name: ABL-family
+synonym: "ABL" EXACT []
 xref: IP:IPR015015
 xref: RE:R-HSA-376002
 is_a: ONT:PROTEIN-FAMILY
@@ -17,6 +22,9 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:ACAD
 name: ACAD
+synonym: "ACAD" EXACT []
+synonym: "acyl CoA dehydrogenase" EXACT []
+synonym: "acyl-CoA dehydrogenase" EXACT []
 xref: BEL:"ACAD Family"
 xref: NEXTPROT-FAMILY:00093
 is_a: ONT:PROTEIN-FAMILY
@@ -24,6 +32,11 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:ACC
 name: ACC
+synonym: "ACC" EXACT []
+synonym: "ACCs" EXACT []
+synonym: "Acetyl Coenzyme A Carboxylase" EXACT []
+synonym: "Acetyl-CoA carboxylase" EXACT []
+synonym: "acetyl-CoA carboxylase" EXACT []
 xref: BEL:"Acetyl CoA Carboxylase Complex"
 xref: IP:IPR013537
 xref: RE:R-HSA-200563
@@ -32,12 +45,21 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:Acetyl_CoA_synthetase
 name: Acetyl-CoA-synthetase
+synonym: "Acetate-CoA ligase" EXACT []
+synonym: "acetyl CoA ligase" EXACT []
+synonym: "acetyl CoA synthase" EXACT []
+synonym: "Acetyl-CoA synthetase" EXACT []
+synonym: "acetyl-CoA synthetase" EXACT []
+synonym: "acetyl-coenzyme A synthase" EXACT []
+synonym: "ACS" EXACT []
 xref: BEL:"Acetyl-CoA Synthetase Family"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:ACOX
 name: ACOX
+synonym: "Acyl-CoA Oxidase" EXACT []
+synonym: "acyl-CoA oxidases" EXACT []
 xref: BEL:"ACOX Family"
 xref: IP:IPR002655
 xref: XFAM:PF01756
@@ -46,12 +68,15 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:ACSL
 name: ACSL
+synonym: "Acsl" EXACT []
+synonym: "long-chain acyl-CoA synthetase" EXACT []
 xref: BEL:"ACSL Family"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:Actin
 name: Actin
+synonym: "actin" EXACT []
 xref: BEL:"ACT Family"
 xref: IP:IPR004000
 xref: MESH:D000199
@@ -63,6 +88,10 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:Activin
 name: Activin
+synonym: "activin protein" EXACT []
+synonym: "Activin" EXACT []
+synonym: "activin" EXACT []
+synonym: "activins" EXACT []
 xref: NCIT:C20456
 xref: RE:R-HSA-2470478
 xref: RE:R-HSA-2470491
@@ -72,6 +101,11 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:Activin_A
 name: Activin-A
+synonym: "Activin A protein" EXACT []
+synonym: "Activin A" EXACT []
+synonym: "activin A" EXACT []
+synonym: "activin-A" EXACT []
+synonym: "activinA" EXACT []
 xref: GO:GO:0043509
 xref: IP:IPR000491
 xref: RE:R-HSA-206893
@@ -80,6 +114,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:Activin_AB
 name: Activin-AB
+synonym: "activin AB" EXACT []
 xref: RE:R-HSA-1449698
 xref: RE:R-HSA-2470478
 xref: RE:R-HSA-2470491
@@ -89,6 +124,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:Activin_B
 name: Activin-B
+synonym: "activin-B" EXACT []
 xref: IP:IPR000381
 xref: RE:R-HSA-1449672
 is_a: ONT:PROTEIN-FAMILY
@@ -96,6 +132,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:ACTN
 name: ACTN
+synonym: "actinin" EXACT []
 xref: BEL:"ACTN Family"
 xref: RE:R-HSA-451402
 is_a: ONT:PROTEIN-FAMILY
@@ -103,12 +140,17 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:Adaptor_protein_III
 name: Adaptor-protein-III
+synonym: "adaptor protein complex 3" EXACT []
+synonym: "AP-3" EXACT []
+synonym: "AP3" EXACT []
 xref: BEL:"Adaptor Protein III Complex"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:ADCY
 name: ADCY
+synonym: "adenylate cyclase" EXACT []
+synonym: "adenylyl cyclase" EXACT []
 xref: BEL:"ADCY Family"
 xref: NCIT:C16264
 xref: RE:R-HSA-5610577
@@ -118,6 +160,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:ADH
 name: ADH
+synonym: "alcohol dehydrogenase" EXACT []
 xref: BEL:"ADH Family"
 xref: NCIT:C16272
 xref: XFAM:PF00465
@@ -126,12 +169,27 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:ADRA
 name: ADRA
+synonym: "a-adrenoreceptor" EXACT []
+synonym: "alpha-adrenergic receptor" EXACT []
+synonym: "alpha-adrenoreceptor" EXACT []
+synonym: "alpha-adrenoreceptors" EXACT []
+synonym: "α-adrenergic receptor" EXACT []
+synonym: "α-adrenoreceptor" EXACT []
+synonym: "α-adrenoreceptors" EXACT []
 xref: BEL:"ADRA Family"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:ADRA2
 name: ADRA2
+synonym: "alpha(2)-adrenoceptors" EXACT []
+synonym: "alpha(2)-ARs" EXACT []
+synonym: "alpha2-AR" EXACT []
+synonym: "ofalpha(2)-adrenoceptor" EXACT []
+synonym: "α(2)-adrenoceptors" EXACT []
+synonym: "α(2)-ARs" EXACT []
+synonym: "α2-AR" EXACT []
+synonym: "ofα(2)-adrenoceptor" EXACT []
 xref: BEL:"ADRA2 Family"
 xref: RE:R-HSA-390664
 xref: RE:R-HSA-390700
@@ -140,6 +198,14 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:ADRB
 name: ADRB
+synonym: "b-adrenergic receptor" EXACT []
+synonym: "b-receptors" EXACT []
+synonym: "beta-adrenergic receptor" EXACT []
+synonym: "beta-adrenoreceptor" EXACT []
+synonym: "betaAR" EXACT []
+synonym: "β-adrenergic receptor" EXACT []
+synonym: "β-adrenoreceptor" EXACT []
+synonym: "βAR" EXACT []
 xref: BEL:"ADRB Family"
 xref: NCIT:C17062
 xref: RE:R-HSA-390643
@@ -149,6 +215,11 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:ADRBK
 name: ADRBK
+synonym: "BARK" EXACT []
+synonym: "beta adrenergic receptor kinase" EXACT []
+synonym: "betaARK" EXACT []
+synonym: "β adrenergic receptor kinase" EXACT []
+synonym: "βARK" EXACT []
 xref: BEL:"ADRBK Family"
 xref: RE:R-HSA-8866229
 is_a: ONT:PROTEIN-FAMILY
@@ -156,6 +227,11 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:AKT
 name: AKT
+synonym: "AKT" EXACT []
+synonym: "Akt" EXACT []
+synonym: "PKB" EXACT []
+synonym: "PKB-Akt" EXACT []
+synonym: "PKB/Akt" EXACT []
 xref: BEL:"AKT Family"
 xref: NCIT:C41625
 xref: RE:R-HSA-202052
@@ -172,6 +248,9 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:ALDH
 name: ALDH
+synonym: "Aldehyde dehydrogenase" EXACT []
+synonym: "aldehyde dehydrogenase" EXACT []
+synonym: "ALDH" EXACT []
 xref: BEL:"ALDH Family"
 xref: NCIT:C118481
 is_a: ONT:PROTEIN-FAMILY
@@ -179,6 +258,8 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:ALDO
 name: ALDO
+synonym: "ALDO" EXACT []
+synonym: "fructose-bisphosphate aldolase" EXACT []
 xref: BEL:"ALDO Family"
 xref: IP:IPR000741
 xref: IP:IPR029768
@@ -188,6 +269,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:AMPK
 name: AMPK
+synonym: "AMPK" EXACT []
 xref: BEL:"AMP Activated Protein Kinase Complex"
 xref: NCIT:C94701
 xref: NEXTPROT-FAMILY:03071
@@ -200,56 +282,135 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:AMPK_A1B1G1
 name: AMPK-A1B1G1
+synonym: "AMPK (alpha 1, beta 1, gamma 1)" EXACT []
+synonym: "alpha1beta1gamma1" EXACT []
+synonym: "AMPK (A1/B1/G1)" EXACT []
+synonym: "AMPK a1b1g1" EXACT []
+synonym: "AMPK alpha1beta1gamma1" EXACT []
+synonym: "AMPK (α 1, β 1, γ 1)" EXACT []
+synonym: "α1β1γ1" EXACT []
+synonym: "AMPK α1β1γ1" EXACT []
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:AMPK_A1B1G2
 name: AMPK-A1B1G2
+synonym: "AMPK (alpha 1, beta 1, gamma 2)" EXACT []
+synonym: "alpha1beta1gamma2" EXACT []
+synonym: "AMPK (A1/B1/G2)" EXACT []
+synonym: "AMPK a1b1g2" EXACT []
+synonym: "AMPK alpha1beta1gamma2" EXACT []
+synonym: "AMPK (α 1, β 1, γ 2)" EXACT []
+synonym: "α1β1γ2" EXACT []
+synonym: "AMPK α1β1γ2" EXACT []
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:AMPK_A1B1G3
 name: AMPK-A1B1G3
+synonym: "AMPK (alpha 1, beta 1, gamma 3)" EXACT []
+synonym: "alpha1beta1gamma3" EXACT []
+synonym: "AMPK (A1/B1/G3)" EXACT []
+synonym: "AMPK a1b1g3" EXACT []
+synonym: "AMPK alpha1beta1gamma3" EXACT []
+synonym: "AMPK (α 1, β 1, γ 3)" EXACT []
+synonym: "α1β1γ3" EXACT []
+synonym: "AMPK α1β1γ3" EXACT []
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:AMPK_A1B2G1
 name: AMPK-A1B2G1
+synonym: "AMPK (alpha 1, beta 2, gamma 1)" EXACT []
+synonym: "alpha1beta2gamma1" EXACT []
+synonym: "AMPK (A1/B2/G1)" EXACT []
+synonym: "AMPK a1b2g1" EXACT []
+synonym: "AMPK alpha1beta2gamma1" EXACT []
+synonym: "AMPK (α 1, β 2, γ 1)" EXACT []
+synonym: "α1β2γ1" EXACT []
+synonym: "AMPK α1β2γ1" EXACT []
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:AMPK_A1B2G2
 name: AMPK-A1B2G2
+synonym: "AMPK (alpha 1, beta 2, gamma 2)" EXACT []
+synonym: "alpha1beta2gamma2" EXACT []
+synonym: "AMPK (A1/B2/G2)" EXACT []
+synonym: "AMPK a1b2g2" EXACT []
+synonym: "AMPK alpha1beta2gamma2" EXACT []
+synonym: "AMPK (α 1, β 2, γ 2)" EXACT []
+synonym: "α1β2γ2" EXACT []
+synonym: "AMPK α1β2γ2" EXACT []
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:AMPK_A1B2G3
 name: AMPK-A1B2G3
+synonym: "AMPK (alpha 1, beta 2, gamma 3)" EXACT []
+synonym: "AMPK (A1/B2/G3)" EXACT []
+synonym: "AMPK alpha1beta2gamma3" EXACT []
+synonym: "AMPK (α 1, β 2, γ 3)" EXACT []
+synonym: "AMPK α1β2γ3" EXACT []
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:AMPK_A2B1G1
 name: AMPK-A2B1G1
+synonym: "AMPK (alpha 2, beta 1, gamma 1)" EXACT []
+synonym: "alpha2beta1gamma1" EXACT []
+synonym: "AMPK (A2/B1/G1)" EXACT []
+synonym: "AMPK a2b1g1" EXACT []
+synonym: "AMPK alpha2beta1gamma1" EXACT []
+synonym: "AMPK (α 2, β 1, γ 1)" EXACT []
+synonym: "α2β1γ1" EXACT []
+synonym: "AMPK α2β1γ1" EXACT []
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:AMPK_A2B1G2
 name: AMPK-A2B1G2
+synonym: "AMPK (alpha 2, beta 1, gamma 2)" EXACT []
+synonym: "AMPK (A2/B1/G2)" EXACT []
+synonym: "AMPK alpha2beta1gamma2" EXACT []
+synonym: "AMPK (α 2, β 1, γ 2)" EXACT []
+synonym: "AMPK α2β1γ2" EXACT []
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:AMPK_A2B1G3
 name: AMPK-A2B1G3
+synonym: "AMPK (alpha 2, beta 1, gamma 3)" EXACT []
+synonym: "AMPK (A2/B1/G3)" EXACT []
+synonym: "AMPK alpha2beta1gamma3" EXACT []
+synonym: "AMPK (α 2, β 1, γ 3)" EXACT []
+synonym: "AMPK α2β1γ3" EXACT []
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:AMPK_A2B2G1
 name: AMPK-A2B2G1
+synonym: "AMPK (alpha 2, beta 2, gamma 1)" EXACT []
+synonym: "alpha2beta2gamma1" EXACT []
+synonym: "AMPK (A2/B2/G1)" EXACT []
+synonym: "AMPK a2b2g1" EXACT []
+synonym: "AMPK alpha2beta2gamma1" EXACT []
+synonym: "AMPK (α 2, β 2, γ 1)" EXACT []
+synonym: "α2β2γ1" EXACT []
+synonym: "AMPK α2β2γ1" EXACT []
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:AMPK_A2B2G2
 name: AMPK-A2B2G2
+synonym: "AMPK (alpha 2, beta 2, gamma 2)" EXACT []
+synonym: "alpha2beta2gamma2" EXACT []
+synonym: "AMPK (A2/B2/G2)" EXACT []
+synonym: "AMPK a2b2g2" EXACT []
+synonym: "AMPK alpha2beta2gamma2" EXACT []
+synonym: "AMPK (α 2, β 2, γ 2)" EXACT []
+synonym: "α2β2γ2" EXACT []
+synonym: "AMPK α2β2γ2" EXACT []
 xref: RE:R-HSA-163679
 xref: RE:R-HSA-163736
 xref: RE:R-HSA-163747
@@ -259,11 +420,22 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:AMPK_A2B2G3
 name: AMPK-A2B2G3
+synonym: "AMPK (alpha 2, beta 2, gamma 3)" EXACT []
+synonym: "alpha2beta2gamma3" EXACT []
+synonym: "AMPK (A2/B2/G3)" EXACT []
+synonym: "AMPK a2b2g3" EXACT []
+synonym: "AMPK alpha2beta2gamma3" EXACT []
+synonym: "AMPK (α 2, β 2, γ 3)" EXACT []
+synonym: "α2β2γ3" EXACT []
+synonym: "AMPK α2β2γ3" EXACT []
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:AMPK_alpha
 name: AMPK-alpha
+synonym: "AMPKalpha" EXACT []
+synonym: "PRKAA" EXACT []
+synonym: "AMPKα" EXACT []
 xref: BEL:"PRKAA Family"
 xref: IP:IPR032270
 xref: NCIT:C116019
@@ -275,6 +447,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:AMPK_beta
 name: AMPK-beta
+synonym: "PRKAB" EXACT []
 xref: BEL:"PRKAB Family"
 xref: IP:IPR006828
 xref: IP:IPR032640
@@ -285,6 +458,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:AMPK_gamma
 name: AMPK-gamma
+synonym: "PRKAG" EXACT []
 xref: BEL:"PRKAG Family"
 xref: RE:R-HSA-2151212
 xref: RE:R-HSA-2316451
@@ -294,6 +468,10 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:Annexin_II_heterotetramer
 name: Annexin-II-heterotetramer
+synonym: "A2t" EXACT []
+synonym: "annexin A2 heterotetramer" EXACT []
+synonym: "annexin II heterotetramer" EXACT []
+synonym: "ANXA2 heterotetramer" EXACT []
 xref: BEL:"Annexin II Heterotetramer Complex"
 xref: RE:R-HSA-5336141
 is_a: ONT:PROTEIN-FAMILY
@@ -301,6 +479,8 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:AP1
 name: AP1
+synonym: "AP-1" EXACT []
+synonym: "AP1" EXACT []
 xref: BEL:"AP-1 Complex"
 xref: MESH:D018808
 xref: NCIT:C17450
@@ -309,12 +489,19 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:APC_C
 name: APC-C
+synonym: "APC/C" EXACT []
 xref: GO:GO:0005680
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:APOA
 name: APOA
+synonym: "ApoA" EXACT []
+synonym: "apoA" EXACT []
+synonym: "apolipoprotein (a)" EXACT []
+synonym: "apolipoprotein A" EXACT []
+synonym: "apolipoprotein(A)" EXACT []
+synonym: "apolipoprotein(a)" EXACT []
 xref: BEL:"APOA Family"
 xref: NCIT:C105952
 is_a: ONT:PROTEIN-FAMILY
@@ -322,6 +509,9 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:Apolipoprotein
 name: Apolipoprotein
+synonym: "Apolipoprotein" EXACT []
+synonym: "apolipoprotein" EXACT []
+synonym: "apolipoproteins" EXACT []
 xref: IP:IPR000074
 xref: XFAM:PF01442
 is_a: ONT:PROTEIN-FAMILY
@@ -329,12 +519,15 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:Arp2_3_protein
 name: Arp2-3-protein
+synonym: "Arp2/3" EXACT []
 xref: BEL:"Arp2/3 Protein Complex"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:ARRB
 name: ARRB
+synonym: "b-arrestin" EXACT []
+synonym: "barrestins" EXACT []
 xref: BEL:"ARRB Family"
 xref: RE:R-HSA-1911410
 is_a: ONT:PROTEIN-FAMILY
@@ -342,18 +535,29 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:ATP1A
 name: ATP1A
+synonym: "ATP1A" EXACT []
+synonym: "ATPase Na+/K+ transporting subunit alpha" EXACT []
+synonym: "ATPase Na+/K+ transporting subunit beta" EXACT []
+synonym: "Na/K ATPase alpha" EXACT []
+synonym: "ATPase Na+/K+ transporting subunit α" EXACT []
+synonym: "ATPase Na+/K+ transporting subunit β" EXACT []
+synonym: "Na/K ATPase α" EXACT []
 xref: RE:R-HSA-936779
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:ATP1B
 name: ATP1B
+synonym: "Na,K-ATPase beta subunit" EXACT []
+synonym: "ATP1B" EXACT []
+synonym: "Na,K-ATPase β subunit" EXACT []
 xref: RE:R-HSA-936820
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:ATP5G
 name: ATP5G
+synonym: "ATP synthase H + transporting mitochondrial F0 complex subunit G" EXACT []
 xref: BEL:"ATP5G Family"
 xref: IP:IPR000454
 xref: IP:IPR020537
@@ -362,12 +566,15 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:ATP_synthase
 name: ATP-synthase
+synonym: "ATP synthase" EXACT []
 xref: BEL:"Proton Transporting ATP Synthase Complex"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:AXIN
 name: AXIN
+synonym: "Axin" EXACT []
+synonym: "hAxin" EXACT []
 xref: BEL:"AXIN Family"
 xref: IP:IPR014936
 xref: IP:IPR032101
@@ -380,6 +587,12 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:BCKDC
 name: BCKDC
+synonym: "BCKDC" EXACT []
+synonym: "BCKDH" EXACT []
+synonym: "branched-chain alpha-keto acid dehydrogenase complex" EXACT []
+synonym: "branched-chain alpha-ketoacid dehydrogenase complex" EXACT []
+synonym: "branched-chain α-keto acid dehydrogenase complex" EXACT []
+synonym: "branched-chain α-ketoacid dehydrogenase complex" EXACT []
 xref: BEL:"Branched Chain Alpha Keto Acid Dehydrogenase Complex"
 xref: RE:R-HSA-5693120
 xref: RE:R-HSA-6792583
@@ -389,6 +602,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:BIRC
 name: BIRC
+synonym: "BIRs" EXACT []
 xref: BEL:"BIRC Family"
 xref: IP:IPR001370
 is_a: ONT:PROTEIN-FAMILY
@@ -396,6 +610,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:BMP
 name: BMP
+synonym: "BMP" EXACT []
 xref: BEL:"BMP Family"
 xref: NCIT:C17274
 xref: XFAM:PF02608
@@ -404,12 +619,24 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:BMP_receptor_type_I
 name: BMP-receptor-type-I
+synonym: "BMP Receptor Type I" EXACT []
+synonym: "BMP type I receptor" EXACT []
+synonym: "bone morphogenetic protein receptor 1" EXACT []
+synonym: "bone morphogenetic protein receptor type I" EXACT []
+synonym: "bone morphogenetic protein type I receptors" EXACT []
+synonym: "BRI" EXACT []
 xref: BEL:"BMP Receptor Type I Family"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:BMP_receptor_type_II
 name: BMP-receptor-type-II
+synonym: "BMP Receptor Type II" EXACT []
+synonym: "BMP type II receptor" EXACT []
+synonym: "bone morphogenetic protein receptor 2" EXACT []
+synonym: "bone morphogenetic protein receptor type II" EXACT []
+synonym: "bone morphogenetic protein type II receptors" EXACT []
+synonym: "BRII" EXACT []
 xref: BEL:"BMP Receptor Type II Family"
 xref: RE:R-HSA-201465
 xref: RE:R-HSA-201804
@@ -418,11 +645,15 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:BRCA
 name: BRCA
+synonym: "BRCA" EXACT []
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:C1
 name: C1
+synonym: "c1 complex" EXACT []
+synonym: "C1" EXACT []
+synonym: "C1-complex" EXACT []
 xref: BEL:"C1 Complex"
 xref: RE:R-HSA-173584
 xref: RE:R-HSA-173615
@@ -432,12 +663,14 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:C1q
 name: C1q
+synonym: "C1q" EXACT []
 xref: BEL:"C1q Complex"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:Cadherin
 name: Cadherin
+synonym: "cadherin" EXACT []
 xref: BEL:"CDH Family"
 xref: NCIT:C16373
 xref: XFAM:PF00028
@@ -446,6 +679,9 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:CALM
 name: CALM
+synonym: "Calmodulin" EXACT []
+synonym: "calmodulin" EXACT []
+synonym: "CaM" EXACT []
 xref: BEL:"CALM Family"
 xref: NCIT:C16375
 xref: NEXTPROT-FAMILY:00440
@@ -454,6 +690,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:CAMK
 name: CAMK
+synonym: "CaMK" EXACT []
 xref: BEL:"CAMK Family"
 xref: NEXTPROT-FAMILY:03072
 is_a: ONT:PROTEIN-FAMILY
@@ -461,6 +698,11 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:CAMK2_complex
 name: CAMK2-complex
+synonym: "Ca(2+)-calmodulin-dependent protein kinase II" EXACT []
+synonym: "Ca(2+)/calmodulin-dependent kinase II" EXACT []
+synonym: "CaM kinase II" EXACT []
+synonym: "CaMK II" EXACT []
+synonym: "CaMKII" EXACT []
 xref: BEL:"CAMK2 Complex"
 xref: IP:IPR013543
 xref: RE:R-HSA-417004
@@ -472,6 +714,10 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:CAMK2_family
 name: CAMK2-family
+synonym: "calmodulindependent kinase II" EXACT []
+synonym: "CAMK2" EXACT []
+synonym: "CaMK2" EXACT []
+synonym: "CAMKII" EXACT []
 xref: BEL:"CAMK2 Family"
 xref: IP:IPR013543
 xref: RE:R-HSA-417004
@@ -483,6 +729,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:CAPN
 name: CAPN
+synonym: "calpain" EXACT []
 xref: BEL:"CAPN Family"
 xref: IP:IPR022684
 xref: NCIT:C16377
@@ -493,6 +740,8 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:Carboxylesterase
 name: Carboxylesterase
+synonym: "carboxylesterase" EXACT []
+synonym: "carboxylesterases" EXACT []
 xref: BEL:"Carboxylesterase Family"
 xref: NCIT:C112051
 is_a: ONT:PROTEIN-FAMILY
@@ -500,6 +749,8 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:Caspase
 name: Caspase
+synonym: "caspase" EXACT []
+synonym: "caspases" EXACT []
 xref: BEL:"CASP Family"
 xref: IP:IPR002138
 xref: IP:IPR033139
@@ -511,12 +762,15 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:Caspase_3_7
 name: Caspase-3-7
+synonym: "caspase-3/7" EXACT []
 xref: RE:R-HSA-202877
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:CAV
 name: CAV
+synonym: "Caveolin" EXACT []
+synonym: "caveolin" EXACT []
 xref: BEL:"CAV Family"
 xref: IP:IPR001612
 xref: IP:IPR018361
@@ -527,6 +781,9 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:CBF3
 name: CBF3
+synonym: "CBF3 complex" EXACT []
+synonym: "CBF3" EXACT []
+synonym: "kinetochore centromere binding factor 3" EXACT []
 xref: BEL:"CBF3 Complex"
 xref: GO:GO:0031518
 xref: IP:IPR016072
@@ -536,6 +793,13 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:CCT_complex
 name: CCT-complex
+synonym: "CCT complex" EXACT []
+synonym: "CCT" EXACT []
+synonym: "chaperonin containing TCP-1" EXACT []
+synonym: "chaperonin" EXACT []
+synonym: "chaperonin-containing t-complex polypeptide 1" EXACT []
+synonym: "chaperonin-containing TCP1 complex" EXACT []
+synonym: "TRiC" EXACT []
 xref: BEL:"CCT Complex"
 xref: IP:IPR002194
 xref: RE:R-HSA-390455
@@ -545,6 +809,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:CD16
 name: CD16
+synonym: "CD16" EXACT []
 xref: BEL:"CD16 Family"
 xref: NCIT:C17487
 is_a: ONT:PROTEIN-FAMILY
@@ -552,6 +817,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:CD3
 name: CD3
+synonym: "CD3" EXACT []
 xref: BEL:"CD3 Complex"
 xref: NCIT:C38897
 is_a: ONT:PROTEIN-FAMILY
@@ -559,6 +825,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:CD32
 name: CD32
+synonym: "CD32" EXACT []
 xref: BEL:"CD32 Family"
 xref: NCIT:C18308
 is_a: ONT:PROTEIN-FAMILY
@@ -566,6 +833,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:CD64
 name: CD64
+synonym: "CD64" EXACT []
 xref: BEL:"CD64 Family"
 xref: NCIT:C104238
 xref: RE:R-HSA-1031694
@@ -576,12 +844,16 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:CD8
 name: CD8
+synonym: "CD8" EXACT []
 xref: RE:R-HSA-198899
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:CDC25
 name: CDC25
+synonym: "Cdc25 phosphatases" EXACT []
+synonym: "CDC25" EXACT []
+synonym: "Cdc25" EXACT []
 xref: BEL:"CDC25 Family"
 xref: IP:IPR000751
 xref: RE:R-HSA-170108
@@ -591,6 +863,9 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:CDK
 name: CDK
+synonym: "CDK" EXACT []
+synonym: "Cdk" EXACT []
+synonym: "CDKs" EXACT []
 xref: MESH:D018844
 xref: NCIT:C17767
 is_a: ONT:PROTEIN-FAMILY
@@ -598,6 +873,11 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:CDKN
 name: CDKN
+synonym: "CDKN" EXACT []
+synonym: "CKI" EXACT []
+synonym: "cyclin dependent kinase inhibitors" EXACT []
+synonym: "cyclin-dependent kinase inhibitor" EXACT []
+synonym: "cyclin-dependent protein kinase inhibitors" EXACT []
 xref: NCIT:C18492
 xref: XFAM:PF02234
 is_a: ONT:PROTEIN-FAMILY
@@ -605,6 +885,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:CDKN1
 name: CDKN1
+synonym: "CDKN1" EXACT []
 xref: IP:IPR003175
 xref: RE:R-HSA-8941923
 xref: RE:R-HSA-8942604
@@ -614,11 +895,14 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:CDKN2
 name: CDKN2
+synonym: "CDKN2" EXACT []
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:CEBP
 name: CEBP
+synonym: "C/EBP" EXACT []
+synonym: "CCAAT/enhancer binding protein" EXACT []
 xref: BEL:"CEBP Family"
 xref: NEXTPROT-FAMILY:00406
 is_a: ONT:PROTEIN-FAMILY
@@ -626,23 +910,29 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:CHEK
 name: CHEK
+synonym: "checkpoint kinase" EXACT []
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:Chemokine
 name: Chemokine
+synonym: "chemokine" EXACT []
+synonym: "chemokines" EXACT []
 xref: NCIT:C20466
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:Chemokine_receptor
 name: Chemokine-receptor
+synonym: "chemoattractant receptor" EXACT []
 xref: BEL:"Chemokine Receptor Family"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:Cholinesterase
 name: Cholinesterase
+synonym: "choline esterase" EXACT []
+synonym: "cholinesterase" EXACT []
 xref: BEL:"Cholinesterase Family"
 xref: IP:IPR000997
 xref: IP:IPR014788
@@ -653,6 +943,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:CHRM
 name: CHRM
+synonym: "acetylcholine receptor" EXACT []
 xref: BEL:"CHRM Family"
 xref: IP:IPR000995
 is_a: ONT:PROTEIN-FAMILY
@@ -660,12 +951,19 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:CHRN
 name: CHRN
+synonym: "nAChR" EXACT []
+synonym: "nicotine class acetylcholine receptors" EXACT []
+synonym: "nicotinic acetylcholine receptor" EXACT []
 xref: BEL:"CHRN Complex"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:CK2
 name: CK2
+synonym: "casein kinase 2" EXACT []
+synonym: "casein kinase II complex" EXACT []
+synonym: "casein kinase II" EXACT []
+synonym: "CK2" EXACT []
 xref: BEL:"CK II Complex"
 xref: NCIT:C107559
 xref: NEXTPROT-FAMILY:03101
@@ -676,6 +974,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:Clathrin
 name: Clathrin
+synonym: "clathrin" EXACT []
 xref: BEL:"Clathrin Complex"
 xref: RE:R-HSA-5138439
 xref: RE:R-HSA-5138447
@@ -685,18 +984,23 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:CNKSR
 name: CNKSR
+synonym: "CNKSR" EXACT []
+synonym: "connector enhancer of kinase suppressor of ras" EXACT []
 xref: NEXTPROT-FAMILY:00653
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:Cofilin
 name: Cofilin
+synonym: "cofilin" EXACT []
 xref: IP:IPR017904
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:Cohesin
 name: Cohesin
+synonym: "cohesin complex" EXACT []
+synonym: "cohesin" EXACT []
 xref: BEL:"Cohesin Complex"
 xref: GO:GO:0008278
 xref: XFAM:PF00963
@@ -705,6 +1009,9 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:COL1
 name: COL1
+synonym: "collagen type I" EXACT []
+synonym: "Type I collagen" EXACT []
+synonym: "type I collagen" EXACT []
 xref: BEL:"COL1 Family"
 xref: NCIT:C124129
 xref: RE:R-HSA-2089970
@@ -725,6 +1032,10 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:COL4
 name: COL4
+synonym: "Col4" EXACT []
+synonym: "ColIV" EXACT []
+synonym: "collagen IV" EXACT []
+synonym: "Collagen Type IV" EXACT []
 xref: BEL:"COL4 Family"
 xref: IP:IPR001442
 xref: NCIT:C16448
@@ -734,6 +1045,8 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:COL5
 name: COL5
+synonym: "type V collagen" EXACT []
+synonym: "type-V collagen" EXACT []
 xref: BEL:"COL5 Family"
 xref: RE:R-HSA-2127310
 xref: RE:R-HSA-2127422
@@ -742,6 +1055,8 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:COX
 name: COX
+synonym: "Complex IV" EXACT []
+synonym: "cytochrome c oxidase" EXACT []
 xref: BEL:"Cytochrome C Oxidase Complex Muscle"
 xref: BEL:"Cytochrome C Oxidase Complex Non Muscle"
 is_a: ONT:PROTEIN-FAMILY
@@ -749,6 +1064,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:COX4
 name: COX4
+synonym: "Cox4" EXACT []
 xref: BEL:"COX4 Family"
 xref: IP:IPR004203
 xref: IP:IPR013288
@@ -758,6 +1074,9 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:COX6A
 name: COX6A
+synonym: "COX6A" EXACT []
+synonym: "Cox6a" EXACT []
+synonym: "Cytochrome c oxidase subunit 6a" EXACT []
 xref: BEL:"COX6A Family"
 xref: IP:IPR001349
 xref: IP:IPR018507
@@ -767,6 +1086,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:COX6B
 name: COX6B
+synonym: "Cox6b" EXACT []
 xref: BEL:"COX6B Family"
 xref: XFAM:PF02297
 is_a: ONT:PROTEIN-FAMILY
@@ -774,6 +1094,8 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:COX7A
 name: COX7A
+synonym: "COX7A" EXACT []
+synonym: "Cox7a" EXACT []
 xref: BEL:"COX7A Family"
 xref: XFAM:PF02238
 is_a: ONT:PROTEIN-FAMILY
@@ -781,6 +1103,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:COX7B
 name: COX7B
+synonym: "Cox7b" EXACT []
 xref: BEL:"COX7B Family"
 xref: IP:IPR008433
 xref: IP:IPR023272
@@ -790,6 +1113,8 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:COX8
 name: COX8
+synonym: "Cox8" EXACT []
+synonym: "cytochrome c oxidase subunit VIII" EXACT []
 xref: BEL:"COX8 Family"
 xref: IP:IPR003205
 xref: XFAM:PF02285
@@ -798,6 +1123,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:CREB
 name: CREB
+synonym: "CREB" EXACT []
 xref: BEL:"CREB Family"
 xref: NCIT:C17286
 is_a: ONT:PROTEIN-FAMILY
@@ -805,6 +1131,10 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:CRISP
 name: CRISP
+synonym: "CRISP" EXACT []
+synonym: "CRISPs" EXACT []
+synonym: "cysteine rich secretory proteins" EXACT []
+synonym: "cysteine-rich secretory proteins" EXACT []
 xref: BEL:"CRISP Family"
 xref: IP:IPR013871
 xref: IP:IPR034117
@@ -814,6 +1144,10 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:CRSP
 name: CRSP
+synonym: "CRSP complex" EXACT []
+synonym: "CRSP" EXACT []
+synonym: "CRSP/Med complex" EXACT []
+synonym: "transcriptional cofactor complex CRSP" EXACT []
 xref: BEL:"CRSP Complex"
 xref: NCIT:C28687
 is_a: ONT:PROTEIN-FAMILY
@@ -821,6 +1155,10 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:CSNK1
 name: CSNK1
+synonym: "Casein kinase 1" EXACT []
+synonym: "casein kinase 1" EXACT []
+synonym: "casein kinase I" EXACT []
+synonym: "CSNK1" EXACT []
 xref: BEL:"CSNK1 Family"
 xref: NEXTPROT-FAMILY:03083
 is_a: ONT:PROTEIN-FAMILY
@@ -828,6 +1166,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:CSNK2
 name: CSNK2
+synonym: "CSNK2" EXACT []
 xref: BEL:"CSNK2 Family"
 xref: RE:R-HSA-5083623
 xref: RE:R-HSA-5083624
@@ -838,12 +1177,22 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:CTNNA
 name: CTNNA
+synonym: "a-cathenin" EXACT []
+synonym: "alpha catenin" EXACT []
+synonym: "alpha-catenin" EXACT []
+synonym: "catenin alpha" EXACT []
+synonym: "α catenin" EXACT []
+synonym: "α-catenin" EXACT []
+synonym: "catenin α" EXACT []
 xref: BEL:"CTNNA Family"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:CUL
 name: CUL
+synonym: "cullin proteins" EXACT []
+synonym: "cullin" EXACT []
+synonym: "cullins" EXACT []
 xref: BEL:"CUL Family"
 xref: NEXTPROT-FAMILY:00787
 xref: XFAM:PF00888
@@ -852,18 +1201,28 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:CXCL_ELR_negative
 name: CXCL-ELR-negative
+synonym: "ELR (-) CXC chemokines" EXACT []
+synonym: "ELR-negative CXC chemokine" EXACT []
+synonym: "ELR-negative CXC family" EXACT []
+synonym: "non-ELR-CXC chemokines" EXACT []
 xref: BEL:"CXCL ELR-Negative Family"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:CXCL_ELR_positive
 name: CXCL-ELR-positive
+synonym: "ELR (+) CXC chemokines" EXACT []
+synonym: "ELR-positive CXC chemokine" EXACT []
+synonym: "ELR-positive CXC family" EXACT []
 xref: BEL:"CXCL ELR-Positive Family"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:Cyclin
 name: Cyclin
+synonym: "Cyclin" EXACT []
+synonym: "cyclin" EXACT []
+synonym: "cyclins" EXACT []
 xref: NCIT:C17349
 xref: NEXTPROT-FAMILY:00815
 is_a: ONT:PROTEIN-FAMILY
@@ -871,6 +1230,9 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:Cyclin_A
 name: Cyclin-A
+synonym: "Cyclin A" EXACT []
+synonym: "cyclin A" EXACT []
+synonym: "Cyclin-A" EXACT []
 xref: BEL:"CCNA Family"
 xref: RE:R-HSA-170089
 xref: RE:R-HSA-174074
@@ -882,6 +1244,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:Cyclin_D
 name: Cyclin-D
+synonym: "Cyclin D" EXACT []
 xref: BEL:"CCND Family"
 xref: IP:IPR015451
 xref: NCIT:C104194
@@ -894,6 +1257,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:Cyclin_E
 name: Cyclin-E
+synonym: "cyclin E" EXACT []
 xref: BEL:"CCNE Family"
 xref: IP:IPR028858
 xref: NCIT:C104197
@@ -907,18 +1271,24 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:Cyclophilin
 name: Cyclophilin
+synonym: "cyclophilin" EXACT []
+synonym: "cyclophilins" EXACT []
 xref: BEL:"Cyclophilin Family"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:Cytoplasmic_dynein
 name: Cytoplasmic-dynein
+synonym: "cytoplasmic dynein" EXACT []
 xref: BEL:"Cytoplasmic Dynein Complex"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:DDR
 name: DDR
+synonym: "discoidin domain receptor family" EXACT []
+synonym: "discoidin domain receptors" EXACT []
+synonym: "discoidin domain-containing receptor" EXACT []
 xref: BEL:"DDR Family"
 xref: XFAM:PF08841
 is_a: ONT:PROTEIN-FAMILY
@@ -926,11 +1296,15 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:Death_receptor
 name: Death-receptor
+synonym: "death receptor" EXACT []
+synonym: "death receptors" EXACT []
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:Desmoglein
 name: Desmoglein
+synonym: "desmoglein" EXACT []
+synonym: "desmogleins" EXACT []
 xref: BEL:"Desmoglein Family"
 xref: IP:IPR009123
 xref: RE:R-HSA-6814694
@@ -940,6 +1314,10 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:DGC
 name: DGC
+synonym: "DGC" EXACT []
+synonym: "dystrophin glycoprotein complex" EXACT []
+synonym: "dystrophin-associated glycoprotein complex" EXACT []
+synonym: "dystrophin-glycoprotein complex" EXACT []
 xref: BEL:"Dystrophin Associated Glycoprotein Complex"
 xref: GO:GO:0016010
 is_a: ONT:PROTEIN-FAMILY
@@ -947,6 +1325,9 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:DGK
 name: DGK
+synonym: "DAG kinase" EXACT []
+synonym: "DGK" EXACT []
+synonym: "diacyl glycerol kinase" EXACT []
 xref: BEL:"DGK Family"
 xref: IP:IPR000756
 xref: RE:R-HSA-426070
@@ -955,6 +1336,12 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:DNA_polymerase_delta
 name: DNA-polymerase-delta
+synonym: "DNA polymerase delta" EXACT []
+synonym: "Pol delta" EXACT []
+synonym: "pol delta" EXACT []
+synonym: "DNA polymerase δ" EXACT []
+synonym: "Pol δ" EXACT []
+synonym: "pol δ" EXACT []
 xref: BEL:"DNA Polymerase delta Complex"
 xref: NCIT:C16511
 xref: RE:R-HSA-68450
@@ -963,6 +1350,8 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:DNM
 name: DNM
+synonym: "dynamin family" EXACT []
+synonym: "dynamin" EXACT []
 xref: BEL:"DNM Family"
 xref: RE:R-HSA-2213185
 xref: RE:R-HSA-446847
@@ -973,6 +1362,8 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:DRD
 name: DRD
+synonym: "dopamine receptor" EXACT []
+synonym: "dopamine receptors" EXACT []
 xref: BEL:"DRD Family"
 xref: IP:IPR000929
 xref: NCIT:C17066
@@ -981,11 +1372,14 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:DUSP
 name: DUSP
+synonym: "DUSP" EXACT []
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:DVL
 name: DVL
+synonym: "dishevelled" EXACT []
+synonym: "Dvl" EXACT []
 xref: BEL:"DVL Family"
 xref: XFAM:PF02377
 xref: XFAM:PF08137
@@ -1001,6 +1395,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:E2F
 name: E2F
+synonym: "E2F" EXACT []
 xref: BEL:"E2F Family"
 xref: IP:IPR015633
 is_a: ONT:PROTEIN-FAMILY
@@ -1008,6 +1403,8 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:E3_Ub_ligase
 name: E3-Ub-ligase
+synonym: "E3" EXACT []
+synonym: "E3 ubiquitin ligase" EXACT []
 xref: XFAM:PF12483
 xref: RE:R-HSA-976075
 is_a: ONT:PROTEIN-FAMILY
@@ -1015,6 +1412,8 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:EDN
 name: EDN
+synonym: "endothelin" EXACT []
+synonym: "endothelins" EXACT []
 xref: BEL:"EDN Family"
 xref: IP:IPR001928
 xref: IP:IPR019764
@@ -1026,18 +1425,23 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:EGFR_ligand
 name: EGFR-ligand
+synonym: "EGFR ligands" EXACT []
 xref: BEL:"EGFR Ligand Family"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:EGR
 name: EGR
+synonym: "early growth response proteins" EXACT []
+synonym: "EGR" EXACT []
 xref: BEL:"EGR Family"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:EIF2B
 name: EIF2B
+synonym: "EIF2B" EXACT []
+synonym: "eIF2B" EXACT []
 xref: BEL:"EIF2B Complex"
 xref: NCIT:C18162
 xref: RE:R-HSA-72526
@@ -1046,6 +1450,8 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:EIF4A
 name: EIF4A
+synonym: "eIF4A" EXACT []
+synonym: "eukaryotic initiation factor-4A" EXACT []
 xref: BEL:"EIF4A Family"
 xref: NEXTPROT-FAMILY:00921
 xref: RE:R-HSA-429842
@@ -1054,6 +1460,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:EIF4EBP
 name: EIF4EBP
+synonym: "4EBP" EXACT []
 xref: BEL:"EIF4EBP Family"
 xref: IP:IPR008606
 is_a: ONT:PROTEIN-FAMILY
@@ -1061,6 +1468,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:EIF4G
 name: EIF4G
+synonym: "eIF4G" EXACT []
 xref: XFAM:PF02854
 xref: RE:R-HSA-1678828
 is_a: ONT:PROTEIN-FAMILY
@@ -1068,6 +1476,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:ELA
 name: ELA
+synonym: "elastase" EXACT []
 xref: BEL:"ELA Family"
 xref: NEXTPROT-FAMILY:02762
 is_a: ONT:PROTEIN-FAMILY
@@ -1075,6 +1484,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:ENO
 name: ENO
+synonym: "enolase" EXACT []
 xref: BEL:"ENO Family"
 xref: IP:IPR000941
 xref: IP:IPR020810
@@ -1085,6 +1495,9 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:Ephrin_receptor
 name: Ephrin-receptor
+synonym: "Eph receptor" EXACT []
+synonym: "Eph receptors" EXACT []
+synonym: "ephrin receptor" EXACT []
 xref: BEL:"Ephrin Receptor Family"
 xref: IP:IPR001090
 xref: IP:IPR001426
@@ -1097,6 +1510,8 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:EPN
 name: EPN
+synonym: "epsin" EXACT []
+synonym: "epsins" EXACT []
 xref: BEL:"EPN Family"
 xref: NEXTPROT-FAMILY:01121
 is_a: ONT:PROTEIN-FAMILY
@@ -1104,6 +1519,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:ERBB
 name: ERBB
+synonym: "ErbB" EXACT []
 xref: BEL:"EGFR/ERBB Family"
 xref: IP:IPR016245
 xref: NCIT:C17763
@@ -1112,6 +1528,15 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:ERK
 name: ERK
+synonym: "ERK 1/2" EXACT []
+synonym: "ERK" EXACT []
+synonym: "Erk" EXACT []
+synonym: "ERK1/2" EXACT []
+synonym: "Erk1/2" EXACT []
+synonym: "ERKs" EXACT []
+synonym: "Extracellular Signal Regulated Kinase" EXACT []
+synonym: "extracellular signal-regulated kinase" EXACT []
+synonym: "MAPK" EXACT []
 xref: BEL:"MAPK Erk1/2 Family"
 xref: BEL:"MAPK Erk1/3 Family"
 xref: IP:IPR008349
@@ -1133,12 +1558,16 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:ESR
 name: ESR
+synonym: "ER" EXACT []
+synonym: "ESR" EXACT []
 xref: BEL:"ESR Family"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:ETC_complex_II
 name: ETC-complex-II
+synonym: "complex II" EXACT []
+synonym: "succinate dehydrogenase" EXACT []
 xref: BEL:"Respiratory Chain Complex II"
 xref: NCIT:C112049
 xref: RE:R-HSA-165631
@@ -1148,6 +1577,8 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:ETC_complex_III
 name: ETC-complex-III
+synonym: "complex III" EXACT []
+synonym: "cytochrome bc1 complex" EXACT []
 xref: BEL:"Respiratory Chain Complex III"
 xref: GO:GO:0045275
 is_a: ONT:PROTEIN-FAMILY
@@ -1155,6 +1586,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:ETS
 name: ETS
+synonym: "ETS" EXACT []
 xref: BEL:"ETS Family"
 xref: IP:IPR016311
 xref: XFAM:PF00178
@@ -1166,6 +1598,9 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:EXOC
 name: EXOC
+synonym: "EXOC" EXACT []
+synonym: "exocyst complex" EXACT []
+synonym: "exocyst" EXACT []
 xref: RE:R-HSA-264974
 xref: RE:R-HSA-5623453
 is_a: ONT:PROTEIN-FAMILY
@@ -1173,11 +1608,14 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:FANC
 name: FANC
+synonym: "FANC proteins" EXACT []
+synonym: "FANC" EXACT []
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:FGF
 name: FGF
+synonym: "FGF" EXACT []
 xref: BEL:"FGF Family"
 xref: IP:IPR002209
 xref: XFAM:PF00167
@@ -1186,6 +1624,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:FGFR
 name: FGFR
+synonym: "FGFR" EXACT []
 xref: BEL:"FGFR Family"
 xref: IP:IPR016248
 xref: NCIT:C17297
@@ -1194,6 +1633,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:Fibrinogen
 name: Fibrinogen
+synonym: "fibrinogen" EXACT []
 xref: BEL:"Fibrinogen Complex"
 xref: IP:IPR012290
 xref: RE:R-HSA-114617
@@ -1208,6 +1648,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:FLOT
 name: FLOT
+synonym: "flotillin" EXACT []
 xref: BEL:"FLOT Family"
 xref: IP:IPR027705
 xref: IP:IPR031905
@@ -1218,6 +1659,9 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:FLRT
 name: FLRT
+synonym: "FLRT family" EXACT []
+synonym: "Flrt family" EXACT []
+synonym: "FLRT proteins" EXACT []
 xref: BEL:"FLRT Family"
 xref: RE:R-HSA-5656056
 is_a: ONT:PROTEIN-FAMILY
@@ -1225,12 +1669,16 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:FNT
 name: FNT
+synonym: "farnesyltransferase" EXACT []
+synonym: "FTase" EXACT []
 xref: RE:R-HSA-2530496
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:FOS_family
 name: FOS-family
+synonym: "FOS" EXACT []
+synonym: "Fos" EXACT []
 xref: NCIT:C17438
 xref: NCIT:C52887
 xref: NEXTPROT-FAMILY:00408
@@ -1239,6 +1687,8 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:FOXO
 name: FOXO
+synonym: "FOXO" EXACT []
+synonym: "FoxO" EXACT []
 xref: BEL:"FOXO Family"
 xref: IP:IPR032067
 xref: NCIT:C118892
@@ -1247,6 +1697,8 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:FSH
 name: FSH
+synonym: "follicle-stimulating hormone" EXACT []
+synonym: "FSH" EXACT []
 xref: BEL:"Follicle Stimulating Hormone Complex"
 xref: RE:R-HSA-378947
 is_a: ONT:PROTEIN-FAMILY
@@ -1254,6 +1706,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:FZD
 name: FZD
+synonym: "Fz" EXACT []
 xref: BEL:"FZD Family"
 xref: XFAM:PF01534
 xref: RE:R-HSA-517388
@@ -1262,18 +1715,25 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:F_actin
 name: F-actin
+synonym: "F-actin" EXACT []
 xref: GO:GO:0031941
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:GABR
 name: GABR
+synonym: "GABA receptor" EXACT []
+synonym: "GABA receptors" EXACT []
+synonym: "gamma-aminobutyric-acid A receptor" EXACT []
+synonym: "γ-aminobutyric-acid A receptor" EXACT []
 xref: BEL:"GABR Family"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:Gamma_secretase
 name: Gamma-secretase
+synonym: "gamma secretase" EXACT []
+synonym: "γ secretase" EXACT []
 xref: BEL:"gamma Secretase Complex"
 xref: NCIT:C95114
 is_a: ONT:PROTEIN-FAMILY
@@ -1281,18 +1741,23 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:GAP
 name: GAP
+synonym: "GAP" EXACT []
+synonym: "GTPase-activating proteins" EXACT []
 xref: NCIT:C17298
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:GAS6_receptor
 name: GAS6-receptor
+synonym: "Gas6 receptors" EXACT []
 xref: BEL:"GAS6 Receptor Family"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:GATA
 name: GATA
+synonym: "GATA family" EXACT []
+synonym: "GATA" EXACT []
 xref: BEL:"GATA Family"
 xref: XFAM:PF00320
 xref: RE:R-HSA-996770
@@ -1301,18 +1766,28 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:GEF
 name: GEF
+synonym: "GEF" EXACT []
+synonym: "GEFs" EXACT []
 xref: NCIT:C17494
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:GPCR
 name: GPCR
+synonym: "GPCR" EXACT []
+synonym: "GPCRs" EXACT []
 xref: NCIT:C18239
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:GPIb_IX_V
 name: GPIb-IX-V
+synonym: "glycoprotein Ib-V-IX complex" EXACT []
+synonym: "Glycoprotein Ib-V-IX" EXACT []
+synonym: "Glycoprotein Ib/V/IX" EXACT []
+synonym: "GPIb-IX-V complex" EXACT []
+synonym: "GPIb-IX-V" EXACT []
+synonym: "GpIb-V-IX" EXACT []
 xref: BEL:"Ib-V-IX Complex"
 xref: GO:GO:1990779
 xref: NCIT:C126122
@@ -1322,6 +1797,10 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:GPIT
 name: GPIT
+synonym: "glycosylphosphatidylinositol transamidase complex" EXACT []
+synonym: "GPI transamidase complex" EXACT []
+synonym: "GPIT complex" EXACT []
+synonym: "GPIT" EXACT []
 xref: BEL:"GPIT Complex"
 xref: RE:R-HSA-162690
 is_a: ONT:PROTEIN-FAMILY
@@ -1329,6 +1808,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:GPX
 name: GPX
+synonym: "glutathione peroxidase" EXACT []
 xref: BEL:"GPX Family"
 xref: IP:IPR000889
 xref: IP:IPR029760
@@ -1339,6 +1819,11 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:GRIA
 name: GRIA
+synonym: "AMPA glutamate receptor" EXACT []
+synonym: "AMPA receptor" EXACT []
+synonym: "AMPA-subtype ionotropic glutamate receptors" EXACT []
+synonym: "AMPAR" EXACT []
+synonym: "AMPARs" EXACT []
 xref: BEL:"GRIA Family"
 xref: RE:R-HSA-399713
 xref: RE:R-HSA-416323
@@ -1349,6 +1834,9 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:GRK
 name: GRK
+synonym: "G protein-coupled receptor kinases" EXACT []
+synonym: "GPCR kinases" EXACT []
+synonym: "GRKs" EXACT []
 xref: BEL:"GRK Family"
 xref: IP:IPR000239
 xref: NCIT:C26233
@@ -1357,6 +1845,9 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:GRM
 name: GRM
+synonym: "glutamate metabotropic receptors" EXACT []
+synonym: "metabotropic glutamate receptor" EXACT []
+synonym: "mGluRs" EXACT []
 xref: BEL:"GRM Family"
 xref: IP:IPR000162
 xref: RE:R-HSA-420516
@@ -1366,6 +1857,8 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:GSK3
 name: GSK3
+synonym: "GSK-3" EXACT []
+synonym: "GSK3" EXACT []
 xref: BEL:"GSK3 Family"
 xref: NEXTPROT-FAMILY:03087
 xref: RE:R-HSA-198358
@@ -1375,6 +1868,9 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:GST
 name: GST
+synonym: "glutathione S-transferase" EXACT []
+synonym: "GST" EXACT []
+synonym: "GSTs" EXACT []
 xref: BEL:"GST Family"
 xref: NCIT:C16641
 xref: NEXTPROT-FAMILY:01669
@@ -1383,6 +1879,10 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:GTF2E
 name: GTF2E
+synonym: "general transcription factor II E" EXACT []
+synonym: "TFIIE" EXACT []
+synonym: "transcription factor II E" EXACT []
+synonym: "transcription factor IIE" EXACT []
 xref: BEL:"GTF2E Complex"
 xref: RE:R-HSA-109633
 is_a: ONT:PROTEIN-FAMILY
@@ -1390,6 +1890,10 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:GTF2F
 name: GTF2F
+synonym: "general transcription factor II F" EXACT []
+synonym: "TFIIF" EXACT []
+synonym: "transcription factor II F" EXACT []
+synonym: "transcription factor IIF" EXACT []
 xref: BEL:"GTF2F Complex"
 xref: IP:IPR011039
 xref: RE:R-HSA-109631
@@ -1398,12 +1902,15 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:GTPase
 name: GTPase
+synonym: "GTPase" EXACT []
 xref: NCIT:C16650
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:GUCY
 name: GUCY
+synonym: "guanylate cyclase" EXACT []
+synonym: "guanylyl cyclase" EXACT []
 xref: BEL:"GUCY Family"
 xref: NCIT:C16653
 is_a: ONT:PROTEIN-FAMILY
@@ -1411,6 +1918,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:GYS
 name: GYS
+synonym: "glycogen synthase" EXACT []
 xref: BEL:"GYS Family"
 xref: IP:IPR008631
 is_a: ONT:PROTEIN-FAMILY
@@ -1418,6 +1926,10 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:G_12
 name: G-12
+synonym: "G(12)" EXACT []
+synonym: "G12 family" EXACT []
+synonym: "G12 proteins" EXACT []
+synonym: "G12" EXACT []
 xref: IP:IPR000469
 xref: RE:R-HSA-114547
 xref: RE:R-HSA-418570
@@ -1427,6 +1939,11 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:G_12_alpha
 name: G-12-alpha
+synonym: "G-protein alpha-12" EXACT []
+synonym: "Ga12" EXACT []
+synonym: "Galpha12" EXACT []
+synonym: "G-protein α-12" EXACT []
+synonym: "Gα12" EXACT []
 xref: IP:IPR000469
 xref: RE:R-HSA-114525
 xref: RE:R-HSA-418570
@@ -1436,12 +1953,20 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:G_alpha
 name: G-alpha
+synonym: "G_alpha" EXACT []
+synonym: "G_α" EXACT []
 xref: XFAM:PF00503
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:G_beta
 name: G-beta
+synonym: "G protein beta" EXACT []
+synonym: "G-protein beta" EXACT []
+synonym: "Gbeta" EXACT []
+synonym: "G protein β" EXACT []
+synonym: "G-protein β" EXACT []
+synonym: "Gβ" EXACT []
 xref: BEL:"GNB Family"
 xref: IP:IPR016346
 xref: RE:R-HSA-167409
@@ -1454,6 +1979,10 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:G_gamma
 name: G-gamma
+synonym: "G protein gamma subunit" EXACT []
+synonym: "G protein gamma" EXACT []
+synonym: "G protein γ subunit" EXACT []
+synonym: "G protein γ" EXACT []
 xref: BEL:"GNG Family"
 xref: IP:IPR001770
 xref: NEXTPROT-FAMILY:01400
@@ -1464,6 +1993,8 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:G_i
 name: G-i
+synonym: "Gi protein" EXACT []
+synonym: "Gi" EXACT []
 xref: BEL:"GNAI Family"
 xref: IP:IPR001408
 xref: RE:R-HSA-111864
@@ -1475,6 +2006,16 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:G_i_alpha
 name: G-i-alpha
+synonym: "G alphai" EXACT []
+synonym: "G-Protein alpha-i" EXACT []
+synonym: "Galphai" EXACT []
+synonym: "Gi alpha subunit" EXACT []
+synonym: "Gi alpha" EXACT []
+synonym: "G αi" EXACT []
+synonym: "G-Protein α-i" EXACT []
+synonym: "Gαi" EXACT []
+synonym: "Gi α subunit" EXACT []
+synonym: "Gi α" EXACT []
 xref: IP:IPR001408
 xref: NCIT:C19275
 xref: RE:R-HSA-111864
@@ -1486,12 +2027,16 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:G_protein
 name: G-protein
+synonym: "G protein" EXACT []
+synonym: "G proteins" EXACT []
 xref: NCIT:C17458
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:G_q
 name: G-q
+synonym: "G(q/11)" EXACT []
+synonym: "Gq/11" EXACT []
 xref: BEL:"GNA Gq Family"
 xref: IP:IPR000654
 xref: RE:R-HSA-114534
@@ -1507,6 +2052,16 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:G_q_alpha
 name: G-q-alpha
+synonym: "G alphaq" EXACT []
+synonym: "G-Protein alpha-q" EXACT []
+synonym: "Galphaq" EXACT []
+synonym: "Gq alpha subunit" EXACT []
+synonym: "Gq alpha" EXACT []
+synonym: "G αq" EXACT []
+synonym: "G-Protein α-q" EXACT []
+synonym: "Gαq" EXACT []
+synonym: "Gq α subunit" EXACT []
+synonym: "Gq α" EXACT []
 xref: IP:IPR000654
 xref: NCIT:C19276
 xref: RE:R-HSA-114534
@@ -1522,17 +2077,37 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:G_s
 name: G-s
+synonym: "G protein Gs" EXACT []
+synonym: "G protein(s)" EXACT []
+synonym: "G S protein" EXACT []
+synonym: "Gs family" EXACT []
+synonym: "Gs protein" EXACT []
 xref: BEL:"GNA Gs Family"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:G_s_alpha
 name: G-s-alpha
+synonym: "G alphaS" EXACT []
+synonym: "G-alpha(s)" EXACT []
+synonym: "G-AlphaS" EXACT []
+synonym: "G-Protein alpha-s" EXACT []
+synonym: "GalphaS" EXACT []
+synonym: "Gs alpha subunit" EXACT []
+synonym: "Gs alpha" EXACT []
+synonym: "G αS" EXACT []
+synonym: "G-α(s)" EXACT []
+synonym: "G-αS" EXACT []
+synonym: "G-Protein α-s" EXACT []
+synonym: "GαS" EXACT []
+synonym: "Gs α subunit" EXACT []
+synonym: "Gs α" EXACT []
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:hCG
 name: hCG
+synonym: "hCG" EXACT []
 xref: NCIT:C2275
 xref: RE:R-HSA-378941
 is_a: ONT:PROTEIN-FAMILY
@@ -1540,6 +2115,8 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:HDAC
 name: HDAC
+synonym: "HDAC" EXACT []
+synonym: "histone deacetylases" EXACT []
 xref: BEL:"HDAC Family"
 xref: IP:IPR003084
 xref: NCIT:C16682
@@ -1548,6 +2125,9 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:HDAC_I
 name: HDAC-I
+synonym: "Class I HDACs" EXACT []
+synonym: "class I HDACs" EXACT []
+synonym: "class I histone deacetylases" EXACT []
 xref: BEL:"HDAC Class I Family"
 xref: IP:IPR003084
 is_a: ONT:PROTEIN-FAMILY
@@ -1555,12 +2135,17 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:HDAC_II
 name: HDAC-II
+synonym: "class II HDACs" EXACT []
+synonym: "class II histone deacetylases" EXACT []
 xref: BEL:"HDAC Class II Family"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:HDAC_III
 name: HDAC-III
+synonym: "Class III HDACs" EXACT []
+synonym: "class III HDACs" EXACT []
+synonym: "class III histone deacetylases" EXACT []
 xref: IP:IPR003000
 xref: IP:IPR026590
 is_a: ONT:PROTEIN-FAMILY
@@ -1568,11 +2153,16 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:HDAC_IV
 name: HDAC-IV
+synonym: "Class IV HDACs" EXACT []
+synonym: "class IV HDACs" EXACT []
+synonym: "class IV histone deacetylases" EXACT []
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:HDL
 name: HDL
+synonym: "HDL" EXACT []
+synonym: "High-density lipoproteins" EXACT []
 xref: BEL:"HDL Complex"
 xref: NCIT:C25186
 is_a: ONT:PROTEIN-FAMILY
@@ -1580,6 +2170,9 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:Hedgehog
 name: Hedgehog
+synonym: "hedgehog protein" EXACT []
+synonym: "hedgehog signaling proteins" EXACT []
+synonym: "Hedgehog" EXACT []
 xref: BEL:"Hedgehog Family"
 xref: IP:IPR000320
 xref: IP:IPR001657
@@ -1600,6 +2193,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:Hemoglobin
 name: Hemoglobin
+synonym: "hemoglobin" EXACT []
 xref: BEL:"Hemoglobin Complex"
 xref: NCIT:C16676
 is_a: ONT:PROTEIN-FAMILY
@@ -1607,12 +2201,19 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:HES
 name: HES
+synonym: "Hes gene family" EXACT []
+synonym: "Hes genes" EXACT []
+synonym: "HES" EXACT []
+synonym: "Hes" EXACT []
 xref: BEL:"HES Family"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:HIF
 name: HIF
+synonym: "HIF" EXACT []
+synonym: "HIFs" EXACT []
+synonym: "hypoxia-inducible factors" EXACT []
 xref: NCIT:C113839
 xref: RE:R-HSA-1234130
 is_a: ONT:PROTEIN-FAMILY
@@ -1620,6 +2221,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:HIF1
 name: HIF1
+synonym: "HIF-1" EXACT []
 xref: NCIT:C17690
 xref: XFAM:PF11413
 is_a: ONT:PROTEIN-FAMILY
@@ -1627,18 +2229,29 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:HIF_alpha
 name: HIF-alpha
+synonym: "HIFalpha" EXACT []
+synonym: "Hifalpha" EXACT []
+synonym: "HIFα" EXACT []
+synonym: "Hifα" EXACT []
 xref: RE:R-HSA-1234147
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:HIF_beta
 name: HIF-beta
+synonym: "HIFbeta" EXACT []
+synonym: "Hifbeta" EXACT []
+synonym: "HIFβ" EXACT []
+synonym: "Hifβ" EXACT []
 xref: RE:R-HSA-8936837
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:Histone
 name: Histone
+synonym: "Histone" EXACT []
+synonym: "histone" EXACT []
+synonym: "histones" EXACT []
 xref: BEL:"Histone Family"
 xref: MESH:D006657
 xref: NCIT:C16687
@@ -1647,6 +2260,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:Histone_H1
 name: Histone-H1
+synonym: "histone H1" EXACT []
 xref: BEL:"Histone H1 Family"
 xref: NCIT:C16683
 is_a: ONT:PROTEIN-FAMILY
@@ -1654,6 +2268,9 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:Histone_H2A
 name: Histone-H2A
+synonym: "Histone 2A" EXACT []
+synonym: "Histone H2A" EXACT []
+synonym: "histone H2A" EXACT []
 xref: BEL:"Histone H2A Family"
 xref: NCIT:C16684
 xref: NEXTPROT-FAMILY:01762
@@ -1662,12 +2279,16 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:Histone_H2B
 name: Histone-H2B
+synonym: "H2B" EXACT []
 xref: BEL:"Histone H2B Family"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:Histone_H3
 name: Histone-H3
+synonym: "H3" EXACT []
+synonym: "histone H3" EXACT []
+synonym: "histone-3" EXACT []
 xref: BEL:"Histone H3 Family"
 xref: IP:IPR000164
 xref: NCIT:C16685
@@ -1677,6 +2298,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:Histone_H4
 name: Histone-H4
+synonym: "histone H4" EXACT []
 xref: BEL:"Histone H4 Family"
 xref: IP:IPR001951
 xref: NCIT:C16686
@@ -1686,6 +2308,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:HLA_DR
 name: HLA-DR
+synonym: "HLA-DR" EXACT []
 xref: BEL:"HLA-DR Family"
 xref: NCIT:C16692
 is_a: ONT:PROTEIN-FAMILY
@@ -1693,6 +2316,8 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:HMOX
 name: HMOX
+synonym: "haem oxygenase" EXACT []
+synonym: "heme oxygenase" EXACT []
 xref: BEL:"HMOX Family"
 xref: IP:IPR002051
 xref: IP:IPR016053
@@ -1704,6 +2329,8 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:HSP90
 name: HSP90
+synonym: "HSP90" EXACT []
+synonym: "Hsp90" EXACT []
 xref: BEL:"HSP90 Family"
 xref: NCIT:C17766
 xref: XFAM:PF00183
@@ -1712,6 +2339,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:HSP90A
 name: HSP90A
+synonym: "HSP90A" EXACT []
 xref: RE:R-HSA-3371429
 xref: RE:R-HSA-419619
 xref: RE:R-HSA-5082395
@@ -1721,6 +2349,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:HSP90AA
 name: HSP90AA
+synonym: "HSP90AA" EXACT []
 xref: RE:R-HSA-1218829
 xref: RE:R-HSA-1221657
 xref: RE:R-HSA-5082406
@@ -1729,6 +2358,9 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:HSPA
 name: HSPA
+synonym: "Heat Shock Protein 70" EXACT []
+synonym: "HSP70" EXACT []
+synonym: "Hsp70" EXACT []
 xref: BEL:"HSPA Family"
 xref: XFAM:PF00012
 is_a: ONT:PROTEIN-FAMILY
@@ -1736,12 +2368,21 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:HSPB
 name: HSPB
+synonym: "heat shock protein family B" EXACT []
+synonym: "HSPB proteins" EXACT []
+synonym: "HSPB" EXACT []
+synonym: "small HSPs" EXACT []
 xref: BEL:"HSPB Family"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:IFNA
 name: IFNA
+synonym: "IFN-a" EXACT []
+synonym: "IFN-alpha" EXACT []
+synonym: "IFNalpha" EXACT []
+synonym: "IFN-α" EXACT []
+synonym: "IFNα" EXACT []
 xref: BEL:"IFNA Family"
 xref: RE:R-HSA-909688
 is_a: ONT:PROTEIN-FAMILY
@@ -1749,6 +2390,14 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:IFNB
 name: IFNB
+synonym: "beta interferons" EXACT []
+synonym: "IFN-beta" EXACT []
+synonym: "Interferon beta" EXACT []
+synonym: "interferon beta" EXACT []
+synonym: "β interferons" EXACT []
+synonym: "IFN-β" EXACT []
+synonym: "Interferon β" EXACT []
+synonym: "interferon β" EXACT []
 xref: IP:IPR015588
 xref: NCIT:C20495
 is_a: ONT:PROTEIN-FAMILY
@@ -1756,6 +2405,10 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:IGFBP
 name: IGFBP
+synonym: "IGF-BP" EXACT []
+synonym: "IGFBP" EXACT []
+synonym: "IGFBPs" EXACT []
+synonym: "insulin-like growth factor binding proteins" EXACT []
 xref: BEL:"IGFBP Family"
 xref: XFAM:PF00219
 is_a: ONT:PROTEIN-FAMILY
@@ -1763,12 +2416,15 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:IKB
 name: IKB
+synonym: "IkappaB" EXACT []
+synonym: "IκB" EXACT []
 xref: NCIT:C17583
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:IKK_complex
 name: IKK-complex
+synonym: "IKK complex" EXACT []
 xref: BEL:"IkappaB Kinase Complex"
 xref: RE:R-HSA-1168621
 xref: RE:R-HSA-168113
@@ -1782,6 +2438,9 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:IKK_family
 name: IKK-family
+synonym: "IkappaB kinase" EXACT []
+synonym: "IKK" EXACT []
+synonym: "IκB kinase" EXACT []
 xref: BEL:"IkappaB Kinase Family"
 xref: NCIT:C104199
 xref: NEXTPROT-FAMILY:03104
@@ -1790,6 +2449,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:IL1
 name: IL1
+synonym: "IL-1" EXACT []
 xref: BEL:"IL1 Family"
 xref: IP:IPR003502
 xref: NCIT:C20506
@@ -1801,6 +2461,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:IL12
 name: IL12
+synonym: "IL-12" EXACT []
 xref: NCIT:C20514
 xref: XFAM:PF03039
 xref: RE:R-HSA-447102
@@ -1812,6 +2473,8 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:Inhibin
 name: Inhibin
+synonym: "Inhibin" EXACT []
+synonym: "inhibin" EXACT []
 xref: NCIT:C2276
 xref: RE:R-HSA-1449688
 is_a: ONT:PROTEIN-FAMILY
@@ -1819,18 +2482,25 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:Inhibin_A
 name: Inhibin-A
+synonym: "inhibin A" EXACT []
+synonym: "inhibin-A" EXACT []
+synonym: "inhibin-a" EXACT []
 xref: NCIT:C2277
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:Inhibin_B
 name: Inhibin-B
+synonym: "inhibin B" EXACT []
+synonym: "inhibin-B" EXACT []
+synonym: "inhibin-b" EXACT []
 xref: NCIT:C2278
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:INS
 name: INS
+synonym: "insulin family" EXACT []
 xref: BEL:"INS Family"
 xref: NEXTPROT-FAMILY:01869
 xref: RE:R-HSA-429349
@@ -1845,6 +2515,8 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:INSR
 name: INSR
+synonym: "insulin receptor family" EXACT []
+synonym: "insulin receptor/insulin-like growth factor receptor family" EXACT []
 xref: BEL:"INSR Family"
 xref: IP:IPR016246
 xref: NCIT:C17072
@@ -1854,12 +2526,16 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:Integrins
 name: Integrins
+synonym: "integrin" EXACT []
+synonym: "integrins" EXACT []
 xref: NCIT:C16748
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:Interferon
 name: Interferon
+synonym: "IFN" EXACT []
+synonym: "interferon" EXACT []
 xref: NCIT:C20493
 xref: XFAM:PF00143
 is_a: ONT:PROTEIN-FAMILY
@@ -1867,12 +2543,20 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:Interferon_gamma_receptor
 name: Interferon-gamma-receptor
+synonym: "IFNGR" EXACT []
+synonym: "interferon gamma receptor" EXACT []
+synonym: "interferon-gamma receptor" EXACT []
+synonym: "interferon γ receptor" EXACT []
+synonym: "interferon-γ receptor" EXACT []
 xref: BEL:"Interferon Gamma Receptor Complex"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:IRS
 name: IRS
+synonym: "insulin receptor substrate" EXACT []
+synonym: "IRS family" EXACT []
+synonym: "IRS" EXACT []
 xref: BEL:"IRS Family"
 xref: XFAM:PF02174
 xref: RE:R-HSA-2445131
@@ -1882,12 +2566,17 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:IRX
 name: IRX
+synonym: "homeodomain iroquois proteins" EXACT []
+synonym: "Iroquois family" EXACT []
+synonym: "Iroquois proteins" EXACT []
+synonym: "Iroquois-class homeodomain proteins" EXACT []
 xref: BEL:"IRX Family"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:JAK
 name: JAK
+synonym: "JAK" EXACT []
 xref: BEL:"JAK Family"
 xref: IP:IPR016251
 xref: NEXTPROT-FAMILY:03129
@@ -1896,6 +2585,12 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:JNK
 name: JNK
+synonym: "c-JNK" EXACT []
+synonym: "c-Jun N-terminal kinase" EXACT []
+synonym: "c-Jun NH2-terminal kinase" EXACT []
+synonym: "JNK MAPK" EXACT []
+synonym: "JNK" EXACT []
+synonym: "JNK1/2" EXACT []
 xref: BEL:"MAPK JNK Family"
 xref: IP:IPR008351
 xref: RE:R-HSA-450226
@@ -1906,6 +2601,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:JUN_family
 name: JUN-family
+synonym: "JUN" EXACT []
 xref: IP:IPR002112
 xref: IP:IPR005643
 is_a: ONT:PROTEIN-FAMILY
@@ -1913,6 +2609,9 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:Kinetochore
 name: Kinetochore
+synonym: "kinetochore complex" EXACT []
+synonym: "kinetochore" EXACT []
+synonym: "kinetochores" EXACT []
 xref: BEL:"Kinetochore Complex"
 xref: GO:GO:0000776
 is_a: ONT:PROTEIN-FAMILY
@@ -1920,18 +2619,24 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:KLK
 name: KLK
+synonym: "kallikrein-related peptidases" EXACT []
+synonym: "KLKs" EXACT []
+synonym: "tissue kallikrein" EXACT []
+synonym: "tissue kallikreins" EXACT []
 xref: BEL:"KLK Family"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:KSR
 name: KSR
+synonym: "KSR" EXACT []
 xref: IP:IPR025561
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:Laminin_111
 name: Laminin-111
+synonym: "LM-1" EXACT []
 xref: BEL:"Laminin 1 Complex"
 xref: RE:R-HSA-215989
 xref: RE:R-HSA-2426371
@@ -1940,6 +2645,12 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:Laminin_332
 name: Laminin-332
+synonym: "laminin 332 chains" EXACT []
+synonym: "laminin 332" EXACT []
+synonym: "laminin-332 chains" EXACT []
+synonym: "laminin-332" EXACT []
+synonym: "Laminin-5" EXACT []
+synonym: "laminin-5" EXACT []
 xref: BEL:"Laminin 5 Complex"
 xref: RE:R-HSA-216001
 xref: RE:R-HSA-2220790
@@ -1950,6 +2661,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:LDH
 name: LDH
+synonym: "LDH" EXACT []
 xref: BEL:"LDH Family"
 xref: NCIT:C25184
 xref: NEXTPROT-FAMILY:02022
@@ -1958,6 +2670,9 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:LH
 name: LH
+synonym: "LH" EXACT []
+synonym: "luteinizing hormone" EXACT []
+synonym: "luteinizing-hormone" EXACT []
 xref: BEL:"Luteinizing Hormone Complex"
 xref: RE:R-HSA-378969
 xref: RE:R-HSA-6793931
@@ -1967,6 +2682,8 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:MAC
 name: MAC
+synonym: "MAC" EXACT []
+synonym: "membrane attack complex" EXACT []
 xref: BEL:"Membrane Attack Complex"
 xref: GO:GO:0005579
 xref: RE:R-HSA-173728
@@ -1976,6 +2693,9 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:MAF
 name: MAF
+synonym: "MAF" EXACT []
+synonym: "Maf" EXACT []
+synonym: "maf" EXACT []
 xref: BEL:"MAF Family"
 xref: IP:IPR004826
 xref: XFAM:PF02545
@@ -1984,29 +2704,45 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:MAP1LC3
 name: MAP1LC3
+synonym: "LC3" EXACT []
 xref: IP:IPR004241
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:MAP2K
 name: MAP2K
+synonym: "MAPK kinase" EXACT []
 xref: NCIT:C105947
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:MAP3K
 name: MAP3K
+synonym: "MAP3K" EXACT []
+synonym: "MAPK kinase kinase" EXACT []
+synonym: "MAPKK kinases" EXACT []
+synonym: "MAPKKK" EXACT []
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:MAPK
 name: MAPK
+synonym: "mitogen-activated protein kinase" EXACT []
+synonym: "mitogen-activated protein kinases" EXACT []
+synonym: "mitogen activated protein kinase" EXACT []
+synonym: "mitogen activated protein kinases" EXACT []
+synonym: "MAP kinase" EXACT []
+synonym: "MAP kinases" EXACT []
 xref: NCIT:C16376
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:MCM
 name: MCM
+synonym: "MCM" EXACT []
+synonym: "mini-chromosome maintenance complex" EXACT []
+synonym: "minichromosome maintenance complex" EXACT []
+synonym: "minichromosome maintenance protein complex" EXACT []
 xref: GO:GO:0042555
 xref: IP:IPR001208
 xref: IP:IPR031327
@@ -2017,6 +2753,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:MEF2
 name: MEF2
+synonym: "MEF2" EXACT []
 xref: BEL:"MEF2 Family"
 xref: IP:IPR033896
 xref: RE:R-HSA-448866
@@ -2026,6 +2763,9 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:MEK
 name: MEK
+synonym: "MEK 1/2" EXACT []
+synonym: "MEK" EXACT []
+synonym: "MEK1/2" EXACT []
 xref: BEL:"MEK1/2 Family"
 xref: RE:R-HSA-5672686
 xref: RE:R-HSA-5672705
@@ -2037,6 +2777,8 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:MMP
 name: MMP
+synonym: "MMP" EXACT []
+synonym: "MMPs" EXACT []
 xref: BEL:"MMP Family"
 xref: NCIT:C18164
 is_a: ONT:PROTEIN-FAMILY
@@ -2044,12 +2786,15 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:mTORC1
 name: mTORC1
+synonym: "mTORC1" EXACT []
+synonym: "TORC1" EXACT []
 xref: NCIT:C96314
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:mTORC2
 name: mTORC2
+synonym: "mTORC2" EXACT []
 xref: BEL:"TORC2 Complex"
 xref: NCIT:C96315
 is_a: ONT:PROTEIN-FAMILY
@@ -2057,36 +2802,56 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:MYH
 name: MYH
+synonym: "myosin heavy chain genes" EXACT []
+synonym: "myosin heavy chain isoforms" EXACT []
+synonym: "myosin heavy chain protein" EXACT []
+synonym: "Myosin heavy chain" EXACT []
+synonym: "myosin heavy chain" EXACT []
+synonym: "Myosin heavy chains" EXACT []
+synonym: "myosin heavy chains" EXACT []
 xref: BEL:"MYH Family"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:MYL
 name: MYL
+synonym: "MLC" EXACT []
+synonym: "myosin light chain protein" EXACT []
+synonym: "myosin light chain" EXACT []
+synonym: "myosin light chains" EXACT []
 xref: BEL:"MYL Family"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:MYL_alkali
 name: MYL-alkali
+synonym: "alkali myosin light chains" EXACT []
+synonym: "AMLC" EXACT []
+synonym: "myosin alkali light chain proteins" EXACT []
+synonym: "myosin alkali light chain" EXACT []
 xref: BEL:"MYL Alkali Family"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:MYL_regulatory
 name: MYL-regulatory
+synonym: "regulatory myosin light chain" EXACT []
 xref: BEL:"MYL Regulatory Family"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:MYL_slow
 name: MYL-slow
+synonym: "slow myosin" EXACT []
 xref: BEL:"MYL Slow Family"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:MYST
 name: MYST
+synonym: "MYST family" EXACT []
+synonym: "MYST histone acetylase" EXACT []
+synonym: "MYST proteins" EXACT []
 xref: BEL:"MYST Family"
 xref: IP:IPR002717
 is_a: ONT:PROTEIN-FAMILY
@@ -2094,6 +2859,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:NADH_dehydrogenase
 name: NADH-dehydrogenase
+synonym: "NADH dehydrogenase" EXACT []
 xref: BEL:"NADH Dehydrogenase Complex"
 xref: XFAM:PF00146
 is_a: ONT:PROTEIN-FAMILY
@@ -2101,18 +2867,26 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:NADPH_oxidase
 name: NADPH-oxidase
+synonym: "NAD(P)H oxidase" EXACT []
+synonym: "NAD(P)H-oxidase" EXACT []
+synonym: "NADPH oxidase" EXACT []
 xref: BEL:"NADPH Oxidase Complex"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:Na_K_ATPase
 name: Na-K-ATPase
+synonym: "Na(+),K(+)-ATPase" EXACT []
+synonym: "Na,K-ATPase" EXACT []
+synonym: "Na+/K+ATPase" EXACT []
+synonym: "Na/K-ATPase" EXACT []
 xref: BEL:"Na/K Exchanging ATPase Complex"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:NCOA
 name: NCOA
+synonym: "p160/SRC" EXACT []
 xref: BEL:"p160/SRC Family"
 xref: IP:IPR010011
 xref: IP:IPR014920
@@ -2123,6 +2897,10 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:NCOR
 name: NCOR
+synonym: "Nuclear Receptor Co-Repressor" EXACT []
+synonym: "nuclear receptor co-repressor" EXACT []
+synonym: "Nuclear receptor corepressor" EXACT []
+synonym: "nuclear receptor corepressor" EXACT []
 xref: BEL:"NCOR Family"
 xref: RE:R-HSA-349716
 is_a: ONT:PROTEIN-FAMILY
@@ -2130,6 +2908,9 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:NDRG
 name: NDRG
+synonym: "N-myc downstream regulated gene family" EXACT []
+synonym: "NDR family" EXACT []
+synonym: "NDR-family" EXACT []
 xref: BEL:"NDRG Family"
 xref: IP:IPR004142
 xref: XFAM:PF03096
@@ -2138,6 +2919,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:NFAT
 name: NFAT
+synonym: "NFAT" EXACT []
 xref: BEL:"NFAT Family"
 xref: IP:IPR008366
 xref: NCIT:C17903
@@ -2146,11 +2928,38 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:NFE
 name: NFE
+synonym: "NF-E2-related factor" EXACT []
+synonym: "Nuclear factor erythroid 2-related factor" EXACT []
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:NFkappaB
 name: NFkappaB
+synonym: "NF-kappaB complexes" EXACT []
+synonym: "NF-kappaB dimers" EXACT []
+synonym: "NF-kappaB Factors" EXACT []
+synonym: "NF-kappaB factors" EXACT []
+synonym: "NF-kappaB genes" EXACT []
+synonym: "NF-kappaB subunits" EXACT []
+synonym: "NF-kappaB TFs" EXACT []
+synonym: "NF-kappaB" EXACT []
+synonym: "NF-kappabeta" EXACT []
+synonym: "NF-kappaBs" EXACT []
+synonym: "NF-kB" EXACT []
+synonym: "NFkappaB complexes" EXACT []
+synonym: "NFkappaB" EXACT []
+synonym: "NF-κB complexes" EXACT []
+synonym: "NF-κB dimers" EXACT []
+synonym: "NF-κB Factors" EXACT []
+synonym: "NF-κB factors" EXACT []
+synonym: "NF-κB genes" EXACT []
+synonym: "NF-κB subunits" EXACT []
+synonym: "NF-κB TFs" EXACT []
+synonym: "NF-κB" EXACT []
+synonym: "NF-κβ" EXACT []
+synonym: "NF-κBs" EXACT []
+synonym: "NFκB complexes" EXACT []
+synonym: "NFκB" EXACT []
 xref: BEL:"Nfkb Complex"
 xref: IP:IPR000451
 xref: IP:IPR030492
@@ -2161,6 +2970,22 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:NFkappaB_1
 name: NFkappaB-1
+synonym: "Class 1 NF-kappaBs" EXACT []
+synonym: "class 1 NF-kappaBs" EXACT []
+synonym: "Class I NF-kappaBs" EXACT []
+synonym: "class I NF-kappaBs" EXACT []
+synonym: "NF-kappaB Class 1" EXACT []
+synonym: "NF-kappaB class 1" EXACT []
+synonym: "NF-kappaB Class I" EXACT []
+synonym: "NF-kappaB class I" EXACT []
+synonym: "Class 1 NF-κBs" EXACT []
+synonym: "class 1 NF-κBs" EXACT []
+synonym: "Class I NF-κBs" EXACT []
+synonym: "class I NF-κBs" EXACT []
+synonym: "NF-κB Class 1" EXACT []
+synonym: "NF-κB class 1" EXACT []
+synonym: "NF-κB Class I" EXACT []
+synonym: "NF-κB class I" EXACT []
 xref: RE:R-HSA-177656
 xref: RE:R-HSA-177662
 is_a: ONT:PROTEIN-FAMILY
@@ -2168,11 +2993,31 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:NFkappaB_2
 name: NFkappaB-2
+synonym: "Class 2 NF-kappaBs" EXACT []
+synonym: "class 2 NF-kappaBs" EXACT []
+synonym: "Class II NF-kappaBs" EXACT []
+synonym: "class II NF-kappaBs" EXACT []
+synonym: "NF-kappaB Class 2" EXACT []
+synonym: "NF-kappaB class 2" EXACT []
+synonym: "NF-kappaB Class II" EXACT []
+synonym: "NF-kappaB class II" EXACT []
+synonym: "Class 2 NF-κBs" EXACT []
+synonym: "class 2 NF-κBs" EXACT []
+synonym: "Class II NF-κBs" EXACT []
+synonym: "class II NF-κBs" EXACT []
+synonym: "NF-κB Class 2" EXACT []
+synonym: "NF-κB class 2" EXACT []
+synonym: "NF-κB Class II" EXACT []
+synonym: "NF-κB class II" EXACT []
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:NFY
 name: NFY
+synonym: "NF-Y" EXACT []
+synonym: "NFY" EXACT []
+synonym: "nuclear factor Y" EXACT []
+synonym: "nuclear factor-Y" EXACT []
 xref: BEL:"Nfy Complex"
 xref: RE:R-HSA-2426131
 xref: RE:R-HSA-381204
@@ -2181,12 +3026,14 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:NKD
 name: NKD
+synonym: "naked cuticle" EXACT []
 xref: BEL:"NKD Family"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:NOS
 name: NOS
+synonym: "NOS" EXACT []
 xref: BEL:"NOS Family"
 xref: IP:IPR004030
 xref: IP:IPR012144
@@ -2197,6 +3044,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:Notch
 name: Notch
+synonym: "Notch" EXACT []
 xref: BEL:"NOTCH Family"
 xref: IP:IPR008297
 xref: IP:IPR010660
@@ -2214,6 +3062,11 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:NRG
 name: NRG
+synonym: "Neuregulin" EXACT []
+synonym: "neuregulin" EXACT []
+synonym: "Neuregulins" EXACT []
+synonym: "neuregulins" EXACT []
+synonym: "NRGs" EXACT []
 xref: XFAM:PF02158
 xref: RE:R-HSA-1227957
 is_a: ONT:PROTEIN-FAMILY
@@ -2221,6 +3074,8 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:NRG_1_2
 name: NRG-1-2
+synonym: "NRG1-NRG2" EXACT []
+synonym: "NRG1/2" EXACT []
 xref: BEL:"NRG1/2 Family"
 xref: RE:R-HSA-1227956
 xref: RE:R-HSA-1247495
@@ -2230,12 +3085,20 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:NRG_3_4
 name: NRG-3-4
+synonym: "NRG3-NRG4" EXACT []
+synonym: "NRG3/4" EXACT []
 xref: BEL:"NRG3/4 Family"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:NTRK
 name: NTRK
+synonym: "NTRK" EXACT []
+synonym: "NTRKs" EXACT []
+synonym: "Trk receptor" EXACT []
+synonym: "trk receptor" EXACT []
+synonym: "Trk receptors" EXACT []
+synonym: "trk receptors" EXACT []
 xref: BEL:"NTRK Family"
 xref: IP:IPR020777
 xref: IP:IPR031635
@@ -2244,6 +3107,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:p14_3_3
 name: p14-3-3
+synonym: "14-3-3 proteins" EXACT []
 xref: BEL:"14-3-3 Family"
 xref: IP:IPR000308
 xref: IP:IPR023409
@@ -2256,6 +3120,11 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:P2RX
 name: P2RX
+synonym: "P2X purinoreceptor" EXACT []
+synonym: "P2X purinoreceptors" EXACT []
+synonym: "P2X receptor" EXACT []
+synonym: "P2X receptors" EXACT []
+synonym: "P2X" EXACT []
 xref: BEL:"P2RX Family"
 xref: IP:IPR001429
 xref: IP:IPR027309
@@ -2268,12 +3137,20 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:P2RY
 name: P2RY
+synonym: "P2Y receptor" EXACT []
 xref: BEL:"P2RY Family"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:p38
 name: p38
+synonym: "MAPK p38" EXACT []
+synonym: "P38 MAPK" EXACT []
+synonym: "p38 MAPK" EXACT []
+synonym: "p38 MAPKs" EXACT []
+synonym: "p38" EXACT []
+synonym: "p38-MAPK" EXACT []
+synonym: "p38MAPK" EXACT []
 xref: BEL:"MAPK p38 Family"
 xref: IP:IPR008352
 xref: RE:R-HSA-1250100
@@ -2285,6 +3162,10 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:p53_family
 name: p53-family
+synonym: "P53 family" EXACT []
+synonym: "p53 Family" EXACT []
+synonym: "p53 family" EXACT []
+synonym: "p53/p63/p73 family" EXACT []
 xref: IP:IPR002117
 xref: IP:IPR010991
 xref: IP:IPR011615
@@ -2297,12 +3178,17 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:P70S6K
 name: P70S6K
+synonym: "p70 S6 kinase" EXACT []
+synonym: "P70RSK" EXACT []
+synonym: "P70S6K" EXACT []
+synonym: "S6K" EXACT []
 xref: BEL:"RPS6KB Family"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:P90RSK
 name: P90RSK
+synonym: "RPS6KA" EXACT []
 xref: BEL:"RPS6KA Family"
 xref: IP:IPR016239
 xref: RE:R-HSA-446849
@@ -2311,6 +3197,8 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:PAK
 name: PAK
+synonym: "PAK" EXACT []
+synonym: "Pak" EXACT []
 xref: BEL:"PAK Family"
 xref: IP:IPR033923
 xref: RE:R-HSA-428475
@@ -2319,12 +3207,20 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:PARP
 name: PARP
+synonym: "PARP genes" EXACT []
+synonym: "PARPs" EXACT []
+synonym: "Poly(ADP-ribose) polymerase" EXACT []
+synonym: "Poly(ADP-ribose) polymerases" EXACT []
 xref: XFAM:PF00644
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:PARV
 name: PARV
+synonym: "Parvin" EXACT []
+synonym: "parvin" EXACT []
+synonym: "Parvins" EXACT []
+synonym: "parvins" EXACT []
 xref: BEL:"PARV Family"
 xref: IP:IPR028433
 xref: NEXTPROT-FAMILY:02660
@@ -2333,6 +3229,8 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:Patched
 name: Patched
+synonym: "PATCHED" EXACT []
+synonym: "Patched" EXACT []
 xref: IP:IPR004766
 xref: XFAM:PF02460
 xref: RE:R-HSA-445134
@@ -2341,6 +3239,10 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:PBX
 name: PBX
+synonym: "PBX" EXACT []
+synonym: "Pbx" EXACT []
+synonym: "pbx" EXACT []
+synonym: "PBXs" EXACT []
 xref: BEL:"PBX Family"
 xref: IP:IPR005542
 is_a: ONT:PROTEIN-FAMILY
@@ -2348,12 +3250,23 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:PDE
 name: PDE
+synonym: "PDE" EXACT []
+synonym: "PDEs" EXACT []
+synonym: "Phosphodiesterase" EXACT []
+synonym: "phosphodiesterase" EXACT []
+synonym: "Phosphodiesterases" EXACT []
+synonym: "phosphodiesterases" EXACT []
 xref: BEL:"PDE Family"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:PDE1
 name: PDE1
+synonym: "PDE1" EXACT []
+synonym: "Phosphodiesterase 1" EXACT []
+synonym: "phosphodiesterase 1" EXACT []
+synonym: "Phosphodiesterase-1" EXACT []
+synonym: "phosphodiesterase-1" EXACT []
 xref: BEL:"PDE1 Family"
 xref: IP:IPR013706
 xref: RE:R-HSA-111952
@@ -2363,6 +3276,12 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:PDE3
 name: PDE3
+synonym: "PDE 3" EXACT []
+synonym: "PDE3" EXACT []
+synonym: "Phosphodiesterase 3" EXACT []
+synonym: "phosphodiesterase 3" EXACT []
+synonym: "Phosphodiesterase-3" EXACT []
+synonym: "phosphodiesterase-3" EXACT []
 xref: BEL:"PDE3 Family"
 xref: NEXTPROT-FAMILY:00803
 is_a: ONT:PROTEIN-FAMILY
@@ -2370,6 +3289,13 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:PDE4
 name: PDE4
+synonym: "PDE4 isoforms" EXACT []
+synonym: "PDE4" EXACT []
+synonym: "Phosphodiesterase 4" EXACT []
+synonym: "phosphodiesterase 4" EXACT []
+synonym: "Phosphodiesterase-4" EXACT []
+synonym: "phosphodiesterase-4" EXACT []
+synonym: "type 4 cyclic nucleotide phosphodiesterase" EXACT []
 xref: BEL:"PDE4 Family"
 xref: NCIT:C107433
 xref: NEXTPROT-FAMILY:00804
@@ -2379,24 +3305,40 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:PDE6
 name: PDE6
+synonym: "PDE6" EXACT []
+synonym: "Phosphodiesterase 6" EXACT []
+synonym: "phosphodiesterase 6" EXACT []
+synonym: "Phosphodiesterase-6" EXACT []
+synonym: "phosphodiesterase-6" EXACT []
 xref: BEL:"PDE6 Family"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:PDE7
 name: PDE7
+synonym: "PDE7" EXACT []
+synonym: "Phosphodiesterase 7" EXACT []
+synonym: "phosphodiesterase 7" EXACT []
+synonym: "Phosphodiesterase-7" EXACT []
+synonym: "phosphodiesterase-7" EXACT []
 xref: RE:R-HSA-418540
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:PDE8
 name: PDE8
+synonym: "PDE8" EXACT []
+synonym: "Phosphodiesterase 8" EXACT []
+synonym: "phosphodiesterase 8" EXACT []
+synonym: "Phosphodiesterase-8" EXACT []
+synonym: "phosphodiesterase-8" EXACT []
 xref: RE:R-HSA-418541
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:PDGF
 name: PDGF
+synonym: "PDGF" EXACT []
 xref: BEL:"PDGF Family"
 xref: NCIT:C20448
 xref: RE:R-HSA-381926
@@ -2406,6 +3348,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:PDGFR
 name: PDGFR
+synonym: "PDGFR" EXACT []
 xref: BEL:"PDGFR Family"
 xref: NCIT:C17322
 xref: RE:R-HSA-186769
@@ -2419,6 +3362,11 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:PDGFR_AA
 name: PDGFR-AA
+synonym: "PDGFR-AA" EXACT []
+synonym: "PDGFR-alphaalpha" EXACT []
+synonym: "PDGFRalphaalpha" EXACT []
+synonym: "PDGFR-αα" EXACT []
+synonym: "PDGFRαα" EXACT []
 xref: IP:IPR027290
 xref: RE:R-HSA-186816
 xref: RE:R-HSA-186817
@@ -2427,6 +3375,11 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:PDGFR_AB
 name: PDGFR-AB
+synonym: "PDGFR-AB" EXACT []
+synonym: "PDGFR-alphabeta" EXACT []
+synonym: "PDGFRalphabeta" EXACT []
+synonym: "PDGFR-αβ" EXACT []
+synonym: "PDGFRαβ" EXACT []
 xref: RE:R-HSA-186769
 xref: RE:R-HSA-186770
 xref: RE:R-HSA-186791
@@ -2438,6 +3391,11 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:PDGFR_BB
 name: PDGFR-BB
+synonym: "PDGFR-BB" EXACT []
+synonym: "PDGFR-betabeta" EXACT []
+synonym: "PDGFRbetabeta" EXACT []
+synonym: "PDGFR-ββ" EXACT []
+synonym: "PDGFRββ" EXACT []
 xref: IP:IPR027288
 xref: RE:R-HSA-186799
 xref: RE:R-HSA-186805
@@ -2447,18 +3405,27 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:PDGF_AA
 name: PDGF-AA
+synonym: "PDGF-AA" EXACT []
+synonym: "PDGF-aa" EXACT []
+synonym: "PDGFAA" EXACT []
 xref: RE:R-HSA-184203
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:PDGF_AB
 name: PDGF-AB
+synonym: "PDGF-AB" EXACT []
+synonym: "PDGF-ab" EXACT []
+synonym: "PDGFAB" EXACT []
 xref: RE:R-HSA-380759
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:PDGF_BB
 name: PDGF-BB
+synonym: "PDGF-BB" EXACT []
+synonym: "PDGF-bb" EXACT []
+synonym: "PDGFBB" EXACT []
 xref: IP:IPR015583
 xref: MESH:C072194
 xref: RE:R-HSA-184196
@@ -2478,24 +3445,35 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:PDGF_CC
 name: PDGF-CC
+synonym: "PDGF CC" EXACT []
+synonym: "PDGF-CC" EXACT []
+synonym: "PDGF-cc" EXACT []
 xref: RE:R-HSA-381941
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:PDGF_DD
 name: PDGF-DD
+synonym: "PDGF DD" EXACT []
+synonym: "PDGF-DD" EXACT []
+synonym: "PDGF-dd" EXACT []
 xref: RE:R-HSA-381930
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:PDH
 name: PDH
+synonym: "PDH" EXACT []
 xref: BEL:"Pyruvate Dehydrogenase Complex"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:PDK
 name: PDK
+synonym: "PDK" EXACT []
+synonym: "PDKs" EXACT []
+synonym: "Pyruvate dehydrogenase kinase" EXACT []
+synonym: "pyruvate dehydrogenase kinase" EXACT []
 xref: BEL:"PDK Family"
 xref: RE:R-HSA-203947
 is_a: ONT:PROTEIN-FAMILY
@@ -2503,12 +3481,19 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:Pertussis_toxin
 name: Pertussis-toxin
+synonym: "Pertussis toxin" EXACT []
+synonym: "pertussis toxin" EXACT []
+synonym: "PTX" EXACT []
 xref: NCIT:C736
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:PFN
 name: PFN
+synonym: "Profilin" EXACT []
+synonym: "profilin" EXACT []
+synonym: "Profilins" EXACT []
+synonym: "profilins" EXACT []
 xref: BEL:"PFN Family"
 xref: IP:IPR005455
 xref: XFAM:PF00235
@@ -2517,12 +3502,16 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:PhK
 name: PhK
+synonym: "PhK" EXACT []
+synonym: "Phosphorylase kinase" EXACT []
+synonym: "phosphorylase kinase" EXACT []
 xref: BEL:"Phosphorylase B Kinase Complex"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:Phosphatase
 name: Phosphatase
+synonym: "phosphatase" EXACT []
 xref: MESH:D010749
 xref: NCIT:C16981
 is_a: ONT:PROTEIN-FAMILY
@@ -2530,6 +3519,10 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:PI3K
 name: PI3K
+synonym: "phosphatidylinositol 3-kinase" EXACT []
+synonym: "PI3-kinase" EXACT []
+synonym: "PI3K" EXACT []
+synonym: "PI3Kinase" EXACT []
 xref: BEL:"p85/p110 PI3Kinase Complex"
 xref: NCIT:C17270
 is_a: ONT:PROTEIN-FAMILY
@@ -2537,6 +3530,9 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:PI3K_p110
 name: PI3K-p110
+synonym: "p110" EXACT []
+synonym: "PI3K p110 subunit" EXACT []
+synonym: "PIK3C" EXACT []
 xref: BEL:"PIK3C Class IA Family"
 xref: IP:IPR003113
 is_a: ONT:PROTEIN-FAMILY
@@ -2544,24 +3540,35 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:PI3K_p85
 name: PI3K-p85
+synonym: "p85" EXACT []
 xref: RE:R-HSA-74688
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:PIK3R_I
 name: PIK3R-I
+synonym: "PIK3R" EXACT []
 xref: BEL:"PIK3R Class IA Family"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:PKA
 name: PKA
+synonym: "cAMP-dependent PK" EXACT []
+synonym: "cAMP-dependent protein kinase" EXACT []
+synonym: "cyclic AMP-dependent protein kinase" EXACT []
+synonym: "cyclic-AMP-dependent protein kinase" EXACT []
+synonym: "PK-A" EXACT []
+synonym: "PKA" EXACT []
+synonym: "protein kinase A" EXACT []
 xref: NCIT:C16479
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:PKC
 name: PKC
+synonym: "PKC" EXACT []
+synonym: "protein kinase C" EXACT []
 xref: BEL:"PRKC Family"
 xref: IP:IPR012233
 xref: MESH:D011493
@@ -2572,6 +3579,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:PKI
 name: PKI
+synonym: "PKI" EXACT []
 xref: BEL:"PKI Family"
 xref: IP:IPR004171
 xref: XFAM:PF02827
@@ -2580,6 +3588,11 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:PLA2
 name: PLA2
+synonym: "cPLA2" EXACT []
+synonym: "cytosolic phospholipase A(2)" EXACT []
+synonym: "cytosolic phospholipase A2" EXACT []
+synonym: "cytosolic PLA2" EXACT []
+synonym: "phospholipase A2" EXACT []
 xref: BEL:"PLA2 Family"
 xref: NCIT:C16979
 xref: NEXTPROT-FAMILY:02840
@@ -2588,24 +3601,47 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:PLA2G2
 name: PLA2G2
+synonym: "GII PLA2" EXACT []
+synonym: "GIIPLA2" EXACT []
+synonym: "phospholipase A2 group-II" EXACT []
+synonym: "PLA2G2" EXACT []
+synonym: "PLA2g2" EXACT []
 xref: BEL:"PLA2G2 Family"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:PLA2G4
 name: PLA2G4
+synonym: "gIV-PLA(2)" EXACT []
+synonym: "group IV-PLA(2)" EXACT []
+synonym: "Phospholipase A2 Group IV" EXACT []
+synonym: "phospholipase A2 group-IV" EXACT []
+synonym: "PLA2G4" EXACT []
 xref: NCIT:C19836
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:PLC
 name: PLC
+synonym: "Phospholipase C" EXACT []
+synonym: "phospholipase C" EXACT []
+synonym: "Phospholipase-C" EXACT []
+synonym: "phospholipase-C" EXACT []
+synonym: "PLC" EXACT []
 xref: BEL:"PLC Family"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:PLCB
 name: PLCB
+synonym: "Phospholipase C-beta" EXACT []
+synonym: "phospholipase C-beta" EXACT []
+synonym: "Phospholipase Cbeta" EXACT []
+synonym: "phospholipase Cbeta" EXACT []
+synonym: "Phospholipase C-β" EXACT []
+synonym: "phospholipase C-β" EXACT []
+synonym: "Phospholipase Cβ" EXACT []
+synonym: "phospholipase Cβ" EXACT []
 xref: BEL:"PLCB Family"
 xref: IP:IPR016280
 xref: RE:R-HSA-111854
@@ -2614,11 +3650,21 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:PLCD
 name: PLCD
+synonym: "Phospholipase C-delta" EXACT []
+synonym: "phospholipase C-delta" EXACT []
+synonym: "Phospholipase Cdelta" EXACT []
+synonym: "phospholipase Cdelta" EXACT []
+synonym: "Phospholipase C-δ" EXACT []
+synonym: "phospholipase C-δ" EXACT []
+synonym: "Phospholipase Cδ" EXACT []
+synonym: "phospholipase Cδ" EXACT []
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:PLCG
 name: PLCG
+synonym: "PLC-gamma" EXACT []
+synonym: "PLC-γ" EXACT []
 xref: BEL:"PLCG Family"
 xref: IP:IPR016279
 xref: IP:IPR035023
@@ -2634,6 +3680,8 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:PLD
 name: PLD
+synonym: "Phospholipase D" EXACT []
+synonym: "phospholipase D" EXACT []
 xref: BEL:"PLD Family"
 xref: IP:IPR015679
 is_a: ONT:PROTEIN-FAMILY
@@ -2641,6 +3689,10 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:PPAP2
 name: PPAP2
+synonym: "type 2 phosphatidic acid phosphatase" EXACT []
+synonym: "type 2 phosphatidic acid phosphatases" EXACT []
+synonym: "type II phosphatidic acid phosphatase" EXACT []
+synonym: "type II phosphatidic acid phosphatases" EXACT []
 xref: BEL:"PPAP2 Family"
 xref: RE:R-HSA-428110
 is_a: ONT:PROTEIN-FAMILY
@@ -2648,6 +3700,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:PPAR
 name: PPAR
+synonym: "PPAR" EXACT []
 xref: BEL:"PPAR Family"
 xref: IP:IPR003074
 is_a: ONT:PROTEIN-FAMILY
@@ -2655,12 +3708,17 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:PPP1
 name: PPP1
+synonym: "PP1" EXACT []
+synonym: "PPP1" EXACT []
 xref: NEXTPROT-FAMILY:03001
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:PPP1C
 name: PPP1C
+synonym: "PP1C" EXACT []
+synonym: "PP1c" EXACT []
+synonym: "PPP1C" EXACT []
 xref: BEL:"PPP1C Family"
 xref: IP:IPR031675
 xref: RE:R-HSA-163538
@@ -2669,24 +3727,35 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:PPP1R
 name: PPP1R
+synonym: "PP1R" EXACT []
+synonym: "PP1r" EXACT []
 xref: BEL:"PPP1R Family"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:PPP2
 name: PPP2
+synonym: "PP2 phosphatases" EXACT []
+synonym: "PP2" EXACT []
+synonym: "PP2A" EXACT []
+synonym: "protein phosphatase 2" EXACT []
 xref: RE:R-HSA-196206
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:PPP2C
 name: PPP2C
+synonym: "PP2A catalytic C subunit" EXACT []
+synonym: "PP2A-C" EXACT []
+synonym: "PP2Ac" EXACT []
 xref: BEL:"PPP2C Family"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:PPP2R_A
 name: PPP2R-A
+synonym: "PP2A regulatory subunit A" EXACT []
+synonym: "regulatory A subunit of PP2A" EXACT []
 xref: BEL:"PPP2R Subunit A Family"
 xref: RE:R-HSA-165990
 xref: RE:R-HSA-165997
@@ -2695,12 +3764,18 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:PPP2R_B
 name: PPP2R-B
+synonym: "PP2A regulatory subunit B" EXACT []
+synonym: "regulatory B subunit of PP2A" EXACT []
 xref: BEL:"PPP2R Subunit B Family"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:PPP3
 name: PPP3
+synonym: "calcineurin" EXACT []
+synonym: "CaN" EXACT []
+synonym: "PP2B" EXACT []
+synonym: "protein phosphatase 2B" EXACT []
 xref: BEL:"Calcineurin Complex"
 xref: BEL:"PPP3 Family"
 is_a: ONT:PROTEIN-FAMILY
@@ -2708,6 +3783,9 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:PPP3C
 name: PPP3C
+synonym: "Calcineurin catalytic subunit" EXACT []
+synonym: "catalytic subunit of calcineurin" EXACT []
+synonym: "PP2B catalytic subunit" EXACT []
 xref: BEL:"PPP3C Family"
 xref: RE:R-HSA-201779
 xref: RE:R-HSA-201798
@@ -2716,6 +3794,8 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:PPP3R
 name: PPP3R
+synonym: "Calcineurin regulatory subunit" EXACT []
+synonym: "regulatory subunit of calcineurin" EXACT []
 xref: BEL:"PPP3R Family"
 xref: NEXTPROT-FAMILY:00421
 is_a: ONT:PROTEIN-FAMILY
@@ -2723,6 +3803,13 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:PRC1_complex
 name: PRC1-complex
+synonym: "Polycomb Repressive Complex 1" EXACT []
+synonym: "Polycomb repressive complex 1" EXACT []
+synonym: "polycomb repressive complex 1" EXACT []
+synonym: "Polycomb repressive complex PRC1" EXACT []
+synonym: "Polycomb Repressive Complexes 1" EXACT []
+synonym: "Polycomb-repressive complex 1" EXACT []
+synonym: "PRC1" EXACT []
 xref: BEL:"PRC1 Maintenance Complex"
 xref: NCIT:C19866
 is_a: ONT:PROTEIN-FAMILY
@@ -2730,24 +3817,48 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:PRC2_complex
 name: PRC2-complex
+synonym: "Polycomb Repressive Complex 2" EXACT []
+synonym: "Polycomb repressive complex 2" EXACT []
+synonym: "polycomb repressive complex 2" EXACT []
+synonym: "Polycomb repressive complex PRC2" EXACT []
+synonym: "Polycomb Repressive Complexes 2" EXACT []
+synonym: "Polycomb-repressive complex 2" EXACT []
+synonym: "PRC2" EXACT []
 xref: BEL:"PRC2 Initiation Complex"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:PRDX
 name: PRDX
+synonym: "Peroxiredoxin" EXACT []
+synonym: "peroxiredoxin" EXACT []
+synonym: "Peroxiredoxins" EXACT []
+synonym: "peroxiredoxins" EXACT []
 xref: BEL:"PRDX Family"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:PRKAC
 name: PRKAC
+synonym: "PKA catalytic subunit" EXACT []
+synonym: "PKA catalytic subunits" EXACT []
+synonym: "Protein kinase A catalytic subunit" EXACT []
+synonym: "protein kinase A catalytic subunit" EXACT []
+synonym: "Protein kinase A catalytic subunits" EXACT []
+synonym: "protein kinase A catalytic subunits" EXACT []
 xref: BEL:"PRKA Family"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:PRKAR
 name: PRKAR
+synonym: "PKA regulatory subunit" EXACT []
+synonym: "PKA regulatory subunits" EXACT []
+synonym: "Protein kinase A regulatory subunit" EXACT []
+synonym: "protein kinase A regulatory subunit" EXACT []
+synonym: "Protein kinase A regulatory subunits" EXACT []
+synonym: "protein kinase A regulatory subunits" EXACT []
+synonym: "rPKA" EXACT []
 xref: BEL:"PRKAR Family"
 xref: IP:IPR012198
 xref: RE:R-HSA-111921
@@ -2759,6 +3870,8 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:PRKG
 name: PRKG
+synonym: "PKG" EXACT []
+synonym: "protein kinase G" EXACT []
 xref: BEL:"PRKG Family"
 xref: IP:IPR002374
 xref: IP:IPR035014
@@ -2770,6 +3883,8 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:Propionyl_CoA_carboxylase
 name: Propionyl-CoA-carboxylase
+synonym: "Propionyl-CoA carboxylase" EXACT []
+synonym: "propionyl-CoA carboxylase" EXACT []
 xref: BEL:"Propionyl CoA Carboxylase Complex"
 xref: RE:R-HSA-2993807
 xref: RE:R-HSA-2993809
@@ -2782,12 +3897,14 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:Protease
 name: Protease
+synonym: "protease" EXACT []
 xref: NCIT:C16965
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:Proteasome
 name: Proteasome
+synonym: "proteasome" EXACT []
 xref: BEL:"Proteasome Complex"
 xref: GO:GO:0000502
 xref: MESH:D046988
@@ -2796,12 +3913,20 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:PTGER
 name: PTGER
+synonym: "prostaglandin E receptor" EXACT []
 xref: BEL:"PTGER Family"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:RAB
 name: RAB
+synonym: "Rab GTPases" EXACT []
+synonym: "rab GTPases" EXACT []
+synonym: "rab proteins" EXACT []
+synonym: "RAB" EXACT []
+synonym: "Rab" EXACT []
+synonym: "rab" EXACT []
+synonym: "Rabs" EXACT []
 xref: BEL:"RAB Family"
 xref: NEXTPROT-FAMILY:03661
 is_a: ONT:PROTEIN-FAMILY
@@ -2809,6 +3934,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:RAC
 name: RAC
+synonym: "RAC" EXACT []
 xref: BEL:"RAC Family"
 xref: NEXTPROT-FAMILY:03066
 is_a: ONT:PROTEIN-FAMILY
@@ -2816,6 +3942,8 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:RAF
 name: RAF
+synonym: "RAF" EXACT []
+synonym: "Raf" EXACT []
 xref: BEL:"RAF Family"
 xref: NEXTPROT-FAMILY:03114
 xref: RE:R-HSA-5672708
@@ -2827,6 +3955,13 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:RAL
 name: RAL
+synonym: "RAL family" EXACT []
+synonym: "Ral family" EXACT []
+synonym: "RAL isoforms" EXACT []
+synonym: "Ral isoforms" EXACT []
+synonym: "RAL proteins" EXACT []
+synonym: "Ral proteins" EXACT []
+synonym: "RAL" EXACT []
 xref: IP:IPR028412
 xref: RE:R-HSA-170994
 xref: RE:R-HSA-170998
@@ -2835,17 +3970,23 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:RAP1
 name: RAP1
+synonym: "Rap1" EXACT []
 xref: NEXTPROT-FAMILY:04773
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:RAPGEF
 name: RAPGEF
+synonym: "Rap guanine nucleotide exchange factor" EXACT []
+synonym: "Rap guanine nucleotide exchange factors" EXACT []
+synonym: "RapGEFs" EXACT []
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:RAR
 name: RAR
+synonym: "RAR" EXACT []
+synonym: "retinoic acid receptors" EXACT []
 xref: BEL:"RAR Family"
 xref: NCIT:C17532
 is_a: ONT:PROTEIN-FAMILY
@@ -2853,6 +3994,8 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:RAS
 name: RAS
+synonym: "RAS" EXACT []
+synonym: "Ras" EXACT []
 xref: BEL:"RAS Family"
 xref: NCIT:C17061
 xref: NEXTPROT-FAMILY:03663
@@ -2868,16 +4011,20 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:RASA
 name: RASA
+synonym: "RASA" EXACT []
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:RASAL
 name: RASAL
+synonym: "RASAL" EXACT []
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:RasGAP
 name: RasGAP
+synonym: "RasGAP" EXACT []
+synonym: "RasGAPs" EXACT []
 xref: XFAM:PF00616
 xref: RE:R-HSA-5658216
 is_a: ONT:PROTEIN-FAMILY
@@ -2885,24 +4032,35 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:RASGRF
 name: RASGRF
+synonym: "RASGRF" EXACT []
 xref: RE:R-HSA-442734
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:RASGRP
 name: RASGRP
+synonym: "RASGRP" EXACT []
 xref: RE:R-HSA-2685656
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:RASSF
 name: RASSF
+synonym: "RAS association domain family" EXACT []
+synonym: "Ras association domain family" EXACT []
+synonym: "RAS-association domain family" EXACT []
+synonym: "Ras-association domain family" EXACT []
+synonym: "RASSF family" EXACT []
 xref: IP:IPR033614
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:RFC
 name: RFC
+synonym: "DNA replication factor C complex" EXACT []
+synonym: "replication factor C" EXACT []
+synonym: "RF-C" EXACT []
+synonym: "RFC" EXACT []
 xref: BEL:"RFC Complex"
 xref: GO:GO:0005663
 xref: RE:R-HSA-174454
@@ -2912,17 +4070,26 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:RFX
 name: RFX
+synonym: "regulatory family X" EXACT []
+synonym: "RFX family" EXACT []
+synonym: "RFX proteins" EXACT []
+synonym: "RFX" EXACT []
 xref: BEL:"RFX Family"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:RGL
 name: RGL
+synonym: "RAL guanine nucleotide dissociation stimulator like" EXACT []
+synonym: "Ral guanine nucleotide dissociation stimulator like" EXACT []
+synonym: "ral guanine nucleotide dissociation stimulator like" EXACT []
+synonym: "RALGDS-like" EXACT []
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:RHO
 name: RHO
+synonym: "RHO" EXACT []
 xref: BEL:"RHO Family"
 xref: NEXTPROT-FAMILY:03668
 xref: RE:R-HSA-419160
@@ -2933,12 +4100,20 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:RhoGDI
 name: RhoGDI
+synonym: "Rho-GDI" EXACT []
+synonym: "RHOGDI" EXACT []
+synonym: "RhoGDI" EXACT []
+synonym: "rhoGDI" EXACT []
+synonym: "RhoGDIs" EXACT []
 xref: IP:IPR000406
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:RNApo_I
 name: RNApo-I
+synonym: "Pol I" EXACT []
+synonym: "RNA polymerase 1" EXACT []
+synonym: "RNA polymerase I" EXACT []
 xref: BEL:"RNApo I Complex"
 xref: NCIT:C95947
 is_a: ONT:PROTEIN-FAMILY
@@ -2946,6 +4121,8 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:RNApo_II
 name: RNApo-II
+synonym: "RNA polymerase II" EXACT []
+synonym: "RNAP II" EXACT []
 xref: BEL:"RNApo II Complex"
 xref: NCIT:C95948
 is_a: ONT:PROTEIN-FAMILY
@@ -2953,6 +4130,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:ROCK
 name: ROCK
+synonym: "ROCK" EXACT []
 xref: BEL:"ROCK Family"
 xref: IP:IPR015008
 xref: IP:IPR020684
@@ -2963,6 +4141,9 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:ROR
 name: ROR
+synonym: "receptor tyrosine kinase-like orphan receptor" EXACT []
+synonym: "receptor tyrosine kinase-like orphan receptors" EXACT []
+synonym: "RORs" EXACT []
 xref: BEL:"ROR Family"
 xref: IP:IPR016247
 xref: NEXTPROT-FAMILY:03130
@@ -2971,23 +4152,30 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:RPA
 name: RPA
+synonym: "Replication protein A" EXACT []
+synonym: "replication protein A" EXACT []
+synonym: "RPA" EXACT []
 xref: RE:R-HSA-68462
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:RSK
 name: RSK
+synonym: "RSK" EXACT []
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:RTK
 name: RTK
+synonym: "RTKs" EXACT []
 xref: NCIT:C17660
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:RXR
 name: RXR
+synonym: "retinoid X receptors" EXACT []
+synonym: "RXR" EXACT []
 xref: BEL:"RXR Family"
 xref: NCIT:C17534
 is_a: ONT:PROTEIN-FAMILY
@@ -2995,12 +4183,17 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:S100A
 name: S100A
+synonym: "S100A" EXACT []
+synonym: "S100a" EXACT []
 xref: BEL:"S100A Family"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:S1PR
 name: S1PR
+synonym: "S1P receptor" EXACT []
+synonym: "Sphingosine 1-phosphate receptor" EXACT []
+synonym: "sphingosine-1-phosphate receptors" EXACT []
 xref: BEL:"S1PR Family"
 xref: IP:IPR004061
 xref: RE:R-HSA-419346
@@ -3010,6 +4203,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:SAA
 name: SAA
+synonym: "SAA" EXACT []
 xref: BEL:"SAA Family"
 xref: IP:IPR000096
 xref: NEXTPROT-FAMILY:03483
@@ -3019,6 +4213,8 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:SCD
 name: SCD
+synonym: "Stearoyl-CoA desaturase" EXACT []
+synonym: "stearoyl-CoA desaturase" EXACT []
 xref: BEL:"SCD Family"
 xref: IP:IPR001522
 xref: IP:IPR015876
@@ -3027,6 +4223,10 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:SERCA
 name: SERCA
+synonym: "sarcoplasmic/endoplasmic reticulum calcium ATPase" EXACT []
+synonym: "SERCA" EXACT []
+synonym: "SERCAs" EXACT []
+synonym: "SR Ca(2+)-ATPase" EXACT []
 xref: BEL:"ATP2A Family"
 xref: IP:IPR005782
 xref: RE:R-HSA-418312
@@ -3036,6 +4236,9 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:SERPINB
 name: SERPINB
+synonym: "Clade B serpin" EXACT []
+synonym: "clade B serpins" EXACT []
+synonym: "ov-serpins" EXACT []
 xref: BEL:"SERPINB Family"
 xref: NEXTPROT-FAMILY:03579
 is_a: ONT:PROTEIN-FAMILY
@@ -3043,6 +4246,8 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:SHC
 name: SHC
+synonym: "SHC" EXACT []
+synonym: "Shc" EXACT []
 xref: IP:IPR006019
 xref: RE:R-HSA-167023
 is_a: ONT:PROTEIN-FAMILY
@@ -3050,6 +4255,9 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:SLC2A
 name: SLC2A
+synonym: "glucose transporters" EXACT []
+synonym: "GLUT" EXACT []
+synonym: "SLC2" EXACT []
 xref: BEL:"SLC2A Family"
 xref: NEXTPROT-FAMILY:02159
 is_a: ONT:PROTEIN-FAMILY
@@ -3057,6 +4265,9 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:SMAD
 name: SMAD
+synonym: "SMAD" EXACT []
+synonym: "Smad" EXACT []
+synonym: "smad" EXACT []
 xref: BEL:"SMAD Family"
 xref: IP:IPR001132
 xref: IP:IPR013019
@@ -3066,6 +4277,8 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:SMAD2_3
 name: SMAD2-3
+synonym: "SMAD 2/3" EXACT []
+synonym: "Smad2/3" EXACT []
 xref: RE:R-HSA-171172
 xref: RE:R-HSA-171182
 xref: RE:R-HSA-177105
@@ -3077,6 +4290,8 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:SMC1
 name: SMC1
+synonym: "SMC1" EXACT []
+synonym: "Smc1" EXACT []
 xref: BEL:"SMC1 Family"
 xref: NEXTPROT-FAMILY:03686
 is_a: ONT:PROTEIN-FAMILY
@@ -3084,18 +4299,22 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:SNAI
 name: SNAI
+synonym: "SNAI family" EXACT []
+synonym: "SNAI" EXACT []
 xref: BEL:"SNAI Family"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:SOD
 name: SOD
+synonym: "SOD" EXACT []
 xref: BEL:"Cu-Zn SOD Family"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:SOS
 name: SOS
+synonym: "SOS" EXACT []
 xref: BEL:"SOS Family"
 xref: RE:R-HSA-167215
 is_a: ONT:PROTEIN-FAMILY
@@ -3103,6 +4322,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:SPRED
 name: SPRED
+synonym: "SPRED" EXACT []
 xref: IP:IPR023337
 xref: RE:R-HSA-5658219
 is_a: ONT:PROTEIN-FAMILY
@@ -3110,11 +4330,14 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:SPRY
 name: SPRY
+synonym: "SPRY" EXACT []
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:SRC
 name: SRC
+synonym: "Src family kinase" EXACT []
+synonym: "Src-kinases" EXACT []
 xref: BEL:"SRC Family"
 xref: NEXTPROT-FAMILY:03131
 is_a: ONT:PROTEIN-FAMILY
@@ -3122,6 +4345,9 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:SREBF
 name: SREBF
+synonym: "SREBF family" EXACT []
+synonym: "SREBF" EXACT []
+synonym: "sterol regulatory element-binding factor" EXACT []
 xref: BEL:"SREBF Family"
 xref: RE:R-HSA-1655720
 xref: RE:R-HSA-1655725
@@ -3134,6 +4360,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:STAT
 name: STAT
+synonym: "STAT" EXACT []
 xref: BEL:"STAT Family"
 xref: IP:IPR001217
 xref: IP:IPR012345
@@ -3147,6 +4374,8 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:STAT5
 name: STAT5
+synonym: "STAT5" EXACT []
+synonym: "Stat5" EXACT []
 xref: BEL:"STAT5 Family"
 xref: RE:R-HSA-1469978
 xref: RE:R-HSA-452094
@@ -3159,6 +4388,10 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:Sulfonylurea_receptor
 name: Sulfonylurea-receptor
+synonym: "Sulfonylurea Receptor" EXACT []
+synonym: "sulfonylurea receptor" EXACT []
+synonym: "sulfonylurea receptors" EXACT []
+synonym: "SUR" EXACT []
 xref: BEL:"Sulfonylurea Receptor Family"
 xref: IP:IPR000388
 is_a: ONT:PROTEIN-FAMILY
@@ -3166,6 +4399,8 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:SWI_SNF
 name: SWI-SNF
+synonym: "SWI and SNF complex" EXACT []
+synonym: "SWI/SNF complex" EXACT []
 xref: BEL:"SWI/SNF Complex"
 xref: NCIT:C20591
 is_a: ONT:PROTEIN-FAMILY
@@ -3173,12 +4408,18 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:TAP
 name: TAP
+synonym: "TAP transporter" EXACT []
+synonym: "TAP" EXACT []
 xref: BEL:"TAP Family"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:TCF_LEF
 name: TCF-LEF
+synonym: "T-cell factor (TCF)/lymphoid enhancer factor" EXACT []
+synonym: "TCF" EXACT []
+synonym: "Tcf" EXACT []
+synonym: "Tcf/Lef" EXACT []
 xref: BEL:"TCF/LEF Family"
 xref: IP:IPR013558
 xref: IP:IPR024940
@@ -3192,6 +4433,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:TCR
 name: TCR
+synonym: "TCR" EXACT []
 xref: MESH:D011948
 xref: NCIT:C17065
 is_a: ONT:PROTEIN-FAMILY
@@ -3199,6 +4441,9 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:TFAP2
 name: TFAP2
+synonym: "AP-2 transcription factor" EXACT []
+synonym: "Transcription factor AP-2" EXACT []
+synonym: "transcription factor AP-2" EXACT []
 xref: BEL:"TFAP2 Family"
 xref: IP:IPR004979
 xref: IP:IPR013854
@@ -3210,6 +4455,9 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:TFDP
 name: TFDP
+synonym: "DP complex" EXACT []
+synonym: "TFDP" EXACT []
+synonym: "transcription factor DP" EXACT []
 xref: BEL:"TFDP Family"
 xref: RE:R-HSA-1362227
 is_a: ONT:PROTEIN-FAMILY
@@ -3217,6 +4465,20 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:TGFB
 name: TGFB
+synonym: "TGF beta" EXACT []
+synonym: "TGF-b" EXACT []
+synonym: "TGF-beta" EXACT []
+synonym: "TGFB family" EXACT []
+synonym: "TGFB" EXACT []
+synonym: "TGFbeta" EXACT []
+synonym: "transforming growth factor beta" EXACT []
+synonym: "transforming growth factor-beta" EXACT []
+synonym: "TGF β" EXACT []
+synonym: "TGFβ" EXACT []
+synonym: "TGF-β" EXACT []
+synonym: "TGFβ" EXACT []
+synonym: "transforming growth factor β" EXACT []
+synonym: "transforming growth factor-β" EXACT []
 xref: BEL:"TGFB Family"
 xref: IP:IPR015615
 xref: IP:IPR016319
@@ -3228,11 +4490,23 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:TGFBR
 name: TGFBR
+synonym: "TGF beta receptor" EXACT []
+synonym: "TGF-beta receptor" EXACT []
+synonym: "TGF-beta receptors" EXACT []
+synonym: "TGFBR" EXACT []
+synonym: "TGF β receptor" EXACT []
+synonym: "TGF-β receptor" EXACT []
+synonym: "TGF-β receptors" EXACT []
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:THBS
 name: THBS
+synonym: "thrombospondin protein" EXACT []
+synonym: "Thrombospondin" EXACT []
+synonym: "thrombospondin" EXACT []
+synonym: "Thrombospondins" EXACT []
+synonym: "thrombospondins" EXACT []
 xref: BEL:"THBS Family"
 xref: IP:IPR003367
 xref: IP:IPR008859
@@ -3243,6 +4517,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:THR
 name: THR
+synonym: "thyroid hormone receptor" EXACT []
 xref: BEL:"THR Family"
 xref: NCIT:C17078
 is_a: ONT:PROTEIN-FAMILY
@@ -3250,6 +4525,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:Thrombin_antithrombin
 name: Thrombin-antithrombin
+synonym: "thrombin-anti-thrombin III complexes" EXACT []
 xref: BEL:"Thrombin Antithrombin Complex"
 xref: RE:R-HSA-140812
 xref: RE:R-HSA-140871
@@ -3259,23 +4535,28 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:TIAM
 name: TIAM
+synonym: "TIAM" EXACT []
 xref: NEXTPROT-FAMILY:04014
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:TIF_IB
 name: TIF-IB
+synonym: "TIF-IB" EXACT []
 xref: BEL:"TIF IB Complex"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:TLR
 name: TLR
+synonym: "TLR" EXACT []
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:TN
 name: TN
+synonym: "Tenascin" EXACT []
+synonym: "tenascin" EXACT []
 xref: BEL:"TN Family"
 xref: NCIT:C104676
 xref: NEXTPROT-FAMILY:03964
@@ -3286,6 +4567,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:TNF
 name: TNF
+synonym: "tumor necrosis factor" EXACT []
 xref: NEXTPROT-FAMILY:04243
 xref: XFAM:PF00229
 is_a: ONT:PROTEIN-FAMILY
@@ -3293,12 +4575,20 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:TNFRSF
 name: TNFRSF
+synonym: "TNF-R superfamily" EXACT []
+synonym: "TNF-receptor family" EXACT []
+synonym: "TNFR family" EXACT []
+synonym: "TNFR subfamily" EXACT []
+synonym: "TNFR superfamily members" EXACT []
+synonym: "TNFR superfamily receptors" EXACT []
+synonym: "TNFR superfamily" EXACT []
 xref: BEL:"TNFRSF Family"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:TOP2
 name: TOP2
+synonym: "topoisomerase II" EXACT []
 xref: BEL:"TOP2 Family"
 xref: IP:IPR001154
 xref: IP:IPR001241
@@ -3319,6 +4609,9 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:Troponin
 name: Troponin
+synonym: "troponin complex" EXACT []
+synonym: "troponin" EXACT []
+synonym: "troponins" EXACT []
 xref: RE:R-HSA-390583
 xref: RE:R-HSA-390585
 is_a: ONT:PROTEIN-FAMILY
@@ -3326,6 +4619,11 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:Troponin_C
 name: Troponin-C
+synonym: "cTnC" EXACT []
+synonym: "cTnI" EXACT []
+synonym: "TN-C" EXACT []
+synonym: "TnC" EXACT []
+synonym: "troponin C" EXACT []
 xref: RE:R-HSA-390532
 xref: RE:R-HSA-390587
 is_a: ONT:PROTEIN-FAMILY
@@ -3333,6 +4631,8 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:Troponin_I
 name: Troponin-I
+synonym: "TPNI" EXACT []
+synonym: "troponin I" EXACT []
 xref: NCIT:C17343
 xref: RE:R-HSA-390541
 is_a: ONT:PROTEIN-FAMILY
@@ -3340,6 +4640,9 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:Troponin_T
 name: Troponin-T
+synonym: "cTnT" EXACT []
+synonym: "TPNT" EXACT []
+synonym: "troponin T" EXACT []
 xref: IP:IPR027707
 xref: NCIT:C38041
 xref: RE:R-HSA-390546
@@ -3348,6 +4651,9 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:Tryptase
 name: Tryptase
+synonym: "Tryptase" EXACT []
+synonym: "tryptase" EXACT []
+synonym: "tryptases" EXACT []
 xref: BEL:"Tryptase Family"
 xref: NCIT:C120030
 xref: NEXTPROT-FAMILY:02767
@@ -3356,6 +4662,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:TSC
 name: TSC
+synonym: "TSC" EXACT []
 xref: RE:R-HSA-165175
 xref: RE:R-HSA-165180
 xref: RE:R-HSA-381855
@@ -3365,12 +4672,22 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:TUBA
 name: TUBA
+synonym: "alpha tubulin" EXACT []
+synonym: "TUBA" EXACT []
+synonym: "tubulin alpha chain" EXACT []
+synonym: "α tubulin" EXACT []
+synonym: "tubulin α chain" EXACT []
 xref: BEL:"TUBA Family"
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:TUBB
 name: TUBB
+synonym: "TUBB" EXACT []
+synonym: "tubulin beta chain" EXACT []
+synonym: "tubulin beta" EXACT []
+synonym: "tubulin β chain" EXACT []
+synonym: "tubulin β" EXACT []
 xref: BEL:"TUBB Family"
 xref: NCIT:C104166
 is_a: ONT:PROTEIN-FAMILY
@@ -3378,12 +4695,19 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:TUBG
 name: TUBG
+synonym: "Gamma tubulin" EXACT []
+synonym: "gamma-tubulin" EXACT []
+synonym: "tubulin gamma" EXACT []
+synonym: "γ tubulin" EXACT []
+synonym: "γ-tubulin" EXACT []
+synonym: "tubulin γ" EXACT []
 xref: IP:IPR002454
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: FPLX:Tubulin
 name: Tubulin
+synonym: "tubulin" EXACT []
 xref: NCIT:C17219
 xref: NEXTPROT-FAMILY:04239
 is_a: ONT:PROTEIN-FAMILY
@@ -3391,6 +4715,9 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:TXN
 name: TXN
+synonym: "Thioredoxin" EXACT []
+synonym: "thioredoxin" EXACT []
+synonym: "thioredoxins" EXACT []
 xref: BEL:"TXN Family"
 xref: NEXTPROT-FAMILY:04000
 is_a: ONT:PROTEIN-FAMILY
@@ -3398,6 +4725,8 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:TXNRD
 name: TXNRD
+synonym: "Thioredoxin reductase" EXACT []
+synonym: "thioredoxin reductase" EXACT []
 xref: BEL:"TXNRD Family"
 xref: IP:IPR006338
 is_a: ONT:PROTEIN-FAMILY
@@ -3405,6 +4734,12 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:UBE2
 name: UBE2
+synonym: "E2 enzyme" EXACT []
+synonym: "E2 ubiquitin-conjugating enzyme" EXACT []
+synonym: "E2" EXACT []
+synonym: "UBE2" EXACT []
+synonym: "ubiquitin conjugating enzyme" EXACT []
+synonym: "ubiquitin-conjugating enzymes" EXACT []
 xref: BEL:"UBE2 Family"
 xref: NEXTPROT-FAMILY:04282
 is_a: ONT:PROTEIN-FAMILY
@@ -3412,6 +4747,10 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:Ubiquitin
 name: Ubiquitin
+synonym: "ubiquitin" EXACT []
+synonym: "Ubiquitin" EXACT []
+synonym: "Ub" EXACT []
+synonym: "ub" EXACT []
 xref: NCIT:C17227
 xref: NEXTPROT-FAMILY:04276
 is_a: ONT:PROTEIN-FAMILY
@@ -3419,6 +4758,7 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:VAV
 name: VAV
+synonym: "Vav" EXACT []
 xref: BEL:"VAV Family"
 xref: RE:R-HSA-2029115
 xref: RE:R-HSA-430172
@@ -3432,6 +4772,8 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:VEGF
 name: VEGF
+synonym: "vascular endothelial growth factor" EXACT []
+synonym: "VEGF" EXACT []
 xref: BEL:"VEGF Family"
 xref: NCIT:C20450
 xref: RE:R-HSA-195361
@@ -3441,6 +4783,10 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:VEGFR
 name: VEGFR
+synonym: "VEGF receptor" EXACT []
+synonym: "VEGF receptors" EXACT []
+synonym: "VEGFR" EXACT []
+synonym: "VEGFRs" EXACT []
 xref: BEL:"VEGFR Family"
 xref: NCIT:C17293
 is_a: ONT:PROTEIN-FAMILY
@@ -3448,6 +4794,8 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:Wnt
 name: Wnt
+synonym: "WNT" EXACT []
+synonym: "Wnt" EXACT []
 xref: BEL:"WNT Family"
 xref: IP:IPR005817
 xref: IP:IPR018161
@@ -3463,5 +4811,8 @@ is_a: ONT:PROTEIN-FAMILY
 [Term]
 id: FPLX:YBX
 name: YBX
+synonym: "Y box binding protein" EXACT []
+synonym: "Y-box-binding protein" EXACT []
+synonym: "YBX protein family" EXACT []
 is_a: ONT:PROTEIN-FAMILY
 
