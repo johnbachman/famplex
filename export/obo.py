@@ -72,8 +72,10 @@ def get_obo_terms():
                 if ns == 'FPLX':
                     textrefs[id].append(text_str)
     with open(rel_file) as fh:
-        rels = {entity: {'is_a': [], 'part_of': [],
-                         'inverse_is_a': [], 'has_part': []}
+        rels = {entity: collections.OrderedDict(is_a=[],
+                                                part_of=[],
+                                                inverse_is_a=[],
+                                                has_part=[])
                 for entity in entities}
         csvreader = csv.reader(fh, delimiter=str(u','), lineterminator='\r\n',
                                quoting=csv.QUOTE_MINIMAL,
@@ -83,7 +85,7 @@ def get_obo_terms():
             if ns1 == 'BE':
                 if rel == 'isa':
                     rels[id1]['is_a'].append(Reference(ns2, id2))
-                elif rel == 'part_of':
+                elif rel == 'partof':
                     rels[id1]['part_of'].append(Reference(ns2, id2))
             if ns2 == 'BE':
                 if rel == 'isa':
@@ -108,9 +110,14 @@ def get_obo_terms():
         if equivs:
             for equiv in equivs:
                 xrefs.append(Reference(equiv[0], equiv[1]))
-        rels[entity]['is_a'].append(Reference('ONT', 'PROTEIN-FAMILY'))
+        # If the entity has no isa relations, connect it to the root
+        if not rels[entity]['is_a'] and not rels[entity]['part_of']:
+            rels[entity]['is_a'].append(Reference('BE', 'root'))
         term = OboTerm(entity_id, name, rels[entity], synonyms, xrefs)
         obo_terms.append(term)
+    obo_terms.append(OboTerm(Reference('BE', 'root'),
+                                       'PROTEIN-FAMILY-OR-COMPLEX',
+                                       {}, [], {}))
     return obo_terms
 
 def save_obo_terms(obo_terms, output_file=None):
