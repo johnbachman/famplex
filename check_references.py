@@ -264,7 +264,7 @@ if __name__ == '__main__':
                 break
         if not found:
             rel_missing_entities.append(ent)
-            print("ERROR: ID %s has no known relations." % ent)
+            print("WARNING: ID %s has no known relations." % ent)
 
     print()
     print("-- Checking for non-existent Bioentities in equivalences  --")
