@@ -22,6 +22,7 @@ def load_csv(filename):
 
 def load_grounding_map(filename):
     gm_rows = load_csv(filename)
+    check_rows(gm_rows, 7, filename)
     g_map = {}
     for row in gm_rows:
         key = row[0]
@@ -40,9 +41,23 @@ def load_grounding_map(filename):
     return g_map
 
 
+def check_file_rows(filename, row_length):
+    with open(filename) as f:
+        rows = read_csv(f, ',', '"')
+    check_rows(rows, row_length, filename)
+
+
+def check_rows(rows, row_length, filename):
+    for ix, row in enumerate(rows):
+        if len(row) != row_length:
+            print("ERROR: Line %d in file %s has %d columns, should be %d" %
+                  ((ix + 1), filename, len(row), row_length))
+
+
 def load_entity_list(filename):
     with open(filename) as f:
         rows = read_csv(f, ',', '"')
+    check_rows(rows, 1, filename)
     entities = [row[0] for row in rows]
     return entities
 
@@ -51,8 +66,9 @@ def load_relationships(filename):
     relationships = []
     with open(filename) as f:
         rows = read_csv(f, ',', '"')
-        for row in rows:
-            relationships.append(((row[0], row[1]), row[2], (row[3], row[4])))
+    check_rows(rows, 5, filename)
+    for row in rows:
+        relationships.append(((row[0], row[1]), row[2], (row[3], row[4])))
     return relationships
 
 
@@ -60,8 +76,9 @@ def load_equivalences(filename):
     equivalences = []
     with open(filename) as f:
         rows = read_csv(f, ',', '"')
-        for row in rows:
-            equivalences.append((row[0], row[1], row[2]))
+    check_rows(rows, 3, filename)
+    for row in rows:
+        equivalences.append((row[0], row[1], row[2]))
     return equivalences
 
 
@@ -104,6 +121,8 @@ if __name__ == '__main__':
     relationships = load_relationships('relations.csv')
     equivalences = load_equivalences('equivalences.csv')
     gm = load_grounding_map('grounding_map.csv')
+    check_file_rows('gene_prefixes.csv', 3)
+    check_file_rows('ignore.csv', 7)
 
     # Check the entity list for duplicates
     ent_counter = Counter(entities)
