@@ -28,6 +28,7 @@ the Bioentities namespace.
 * ```check_references.py```. A script to check the integrity and completeness
   of the cross-references among the various files.
 
+
 ## Entities, Relations and Equivalences
 
 *Bioentities* contains resources for defining the relationships between
@@ -150,7 +151,10 @@ be incorporated by a parser. The categories are as follows:
 
 ## Contributing
 
-Contributions are welcome! If making additions or revisions to the CSV files
+Contributions are welcome! Please submit pull requests via the main
+sorgerlab/bioentities repository: https://github.com/sorgerlab/bioentities
+
+If making additions or revisions to the CSV files
 take care to handle quotations and newlines correctly. This allows diffs to be
 handled correctly so changes can be reviewed. Please submit updates via pull
 requests on Github.
