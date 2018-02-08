@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 18:03:2018 19:58
+date: 18:03:2018 19:59
 
 [Term]
 id: FPLX:9_1_1
@@ -106,7 +106,7 @@ synonym: "Activin A" EXACT []
 synonym: "activin A" EXACT []
 synonym: "activin-A" EXACT []
 synonym: "activinA" EXACT []
-xref: GO:GO:0043509
+xref: GO:0043509
 xref: IP:IPR000491
 xref: RE:R-HSA-206893
 is_a: BE:root
@@ -490,7 +490,7 @@ is_a: BE:root
 id: FPLX:APC_C
 name: APC-C
 synonym: "APC/C" EXACT []
-xref: GO:GO:0005680
+xref: GO:0005680
 is_a: BE:root
 
 [Term]
@@ -785,7 +785,7 @@ synonym: "CBF3 complex" EXACT []
 synonym: "CBF3" EXACT []
 synonym: "kinetochore centromere binding factor 3" EXACT []
 xref: BEL:"CBF3 Complex"
-xref: GO:GO:0031518
+xref: GO:0031518
 xref: IP:IPR016072
 xref: IP:IPR016897
 is_a: BE:root
@@ -1002,7 +1002,7 @@ name: Cohesin
 synonym: "cohesin complex" EXACT []
 synonym: "cohesin" EXACT []
 xref: BEL:"Cohesin Complex"
-xref: GO:GO:0008278
+xref: GO:0008278
 xref: XFAM:PF00963
 is_a: BE:root
 
@@ -1319,7 +1319,7 @@ synonym: "dystrophin glycoprotein complex" EXACT []
 synonym: "dystrophin-associated glycoprotein complex" EXACT []
 synonym: "dystrophin-glycoprotein complex" EXACT []
 xref: BEL:"Dystrophin Associated Glycoprotein Complex"
-xref: GO:GO:0016010
+xref: GO:0016010
 is_a: BE:root
 
 [Term]
@@ -1580,7 +1580,7 @@ name: ETC-complex-III
 synonym: "complex III" EXACT []
 synonym: "cytochrome bc1 complex" EXACT []
 xref: BEL:"Respiratory Chain Complex III"
-xref: GO:GO:0045275
+xref: GO:0045275
 is_a: BE:root
 
 [Term]
@@ -1716,7 +1716,7 @@ is_a: BE:root
 id: FPLX:F_actin
 name: F-actin
 synonym: "F-actin" EXACT []
-xref: GO:GO:0031941
+xref: GO:0031941
 is_a: BE:root
 
 [Term]
@@ -1789,7 +1789,7 @@ synonym: "GPIb-IX-V complex" EXACT []
 synonym: "GPIb-IX-V" EXACT []
 synonym: "GpIb-V-IX" EXACT []
 xref: BEL:"Ib-V-IX Complex"
-xref: GO:GO:1990779
+xref: GO:1990779
 xref: NCIT:C126122
 xref: RE:R-HSA-114668
 is_a: BE:root
@@ -2613,7 +2613,7 @@ synonym: "kinetochore complex" EXACT []
 synonym: "kinetochore" EXACT []
 synonym: "kinetochores" EXACT []
 xref: BEL:"Kinetochore Complex"
-xref: GO:GO:0000776
+xref: GO:0000776
 is_a: BE:root
 
 [Term]
@@ -2685,7 +2685,7 @@ name: MAC
 synonym: "MAC" EXACT []
 synonym: "membrane attack complex" EXACT []
 xref: BEL:"Membrane Attack Complex"
-xref: GO:GO:0005579
+xref: GO:0005579
 xref: RE:R-HSA-173728
 xref: RE:R-HSA-8852568
 is_a: BE:root
@@ -2743,7 +2743,7 @@ synonym: "MCM" EXACT []
 synonym: "mini-chromosome maintenance complex" EXACT []
 synonym: "minichromosome maintenance complex" EXACT []
 synonym: "minichromosome maintenance protein complex" EXACT []
-xref: GO:GO:0042555
+xref: GO:0042555
 xref: IP:IPR001208
 xref: IP:IPR031327
 xref: NEXTPROT-FAMILY:02187
@@ -3906,7 +3906,7 @@ id: FPLX:Proteasome
 name: Proteasome
 synonym: "proteasome" EXACT []
 xref: BEL:"Proteasome Complex"
-xref: GO:GO:0000502
+xref: GO:0000502
 xref: MESH:D046988
 is_a: BE:root
 
@@ -4062,7 +4062,7 @@ synonym: "replication factor C" EXACT []
 synonym: "RF-C" EXACT []
 synonym: "RFC" EXACT []
 xref: BEL:"RFC Complex"
-xref: GO:GO:0005663
+xref: GO:0005663
 xref: RE:R-HSA-174454
 xref: RE:R-HSA-68436
 is_a: BE:root

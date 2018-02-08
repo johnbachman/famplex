@@ -31,6 +31,8 @@ class OboTerm(object):
                 entry = 'NEXTPROT-FAMILY:%s' % xref.id[3:]
             elif xref.ns == 'PF':
                 entry = 'XFAM:%s' % xref.id
+            elif xref.ns == 'GO':
+                entry = xref.id
             else:
                 entry = '%s:%s' % (xref.ns, xref.id)
             obo_str += 'xref: %s\n' % entry
