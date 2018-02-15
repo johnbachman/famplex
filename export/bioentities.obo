@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 03:10:2017 14:12
+date: 15:02:2018 11:17
 
 [Term]
 id: BE:9_1_1
@@ -52,6 +52,8 @@ synonym: "Acetyl-CoA synthetase" EXACT []
 synonym: "acetyl-CoA synthetase" EXACT []
 synonym: "acetyl-coenzyme A synthase" EXACT []
 synonym: "ACS" EXACT []
+synonym: "Acetyl-CoA synθse" EXACT []
+synonym: "acetyl-CoA synθse" EXACT []
 xref: BEL:"Acetyl-CoA Synthetase Family"
 is_a: ONT:PROTEIN-FAMILY
 
@@ -70,6 +72,7 @@ id: BE:ACSL
 name: ACSL
 synonym: "Acsl" EXACT []
 synonym: "long-chain acyl-CoA synthetase" EXACT []
+synonym: "long-chain acyl-CoA synθse" EXACT []
 xref: BEL:"ACSL Family"
 is_a: ONT:PROTEIN-FAMILY
 
@@ -106,6 +109,7 @@ synonym: "Activin A" EXACT []
 synonym: "activin A" EXACT []
 synonym: "activin-A" EXACT []
 synonym: "activinA" EXACT []
+xref: GO:GO:0043509
 xref: IP:IPR000491
 xref: RE:R-HSA-206893
 is_a: ONT:PROTEIN-FAMILY
@@ -172,6 +176,9 @@ synonym: "a-adrenoreceptor" EXACT []
 synonym: "alpha-adrenergic receptor" EXACT []
 synonym: "alpha-adrenoreceptor" EXACT []
 synonym: "alpha-adrenoreceptors" EXACT []
+synonym: "α-adrenergic receptor" EXACT []
+synonym: "α-adrenoreceptor" EXACT []
+synonym: "α-adrenoreceptors" EXACT []
 xref: BEL:"ADRA Family"
 is_a: ONT:PROTEIN-FAMILY
 
@@ -182,6 +189,10 @@ synonym: "alpha(2)-adrenoceptors" EXACT []
 synonym: "alpha(2)-ARs" EXACT []
 synonym: "alpha2-AR" EXACT []
 synonym: "ofalpha(2)-adrenoceptor" EXACT []
+synonym: "α(2)-adrenoceptors" EXACT []
+synonym: "α(2)-ARs" EXACT []
+synonym: "α2-AR" EXACT []
+synonym: "ofα(2)-adrenoceptor" EXACT []
 xref: BEL:"ADRA2 Family"
 xref: RE:R-HSA-390664
 xref: RE:R-HSA-390700
@@ -195,6 +206,9 @@ synonym: "b-receptors" EXACT []
 synonym: "beta-adrenergic receptor" EXACT []
 synonym: "beta-adrenoreceptor" EXACT []
 synonym: "betaAR" EXACT []
+synonym: "β-adrenergic receptor" EXACT []
+synonym: "β-adrenoreceptor" EXACT []
+synonym: "βAR" EXACT []
 xref: BEL:"ADRB Family"
 xref: NCIT:C17062
 xref: RE:R-HSA-390643
@@ -207,6 +221,8 @@ name: ADRBK
 synonym: "BARK" EXACT []
 synonym: "beta adrenergic receptor kinase" EXACT []
 synonym: "betaARK" EXACT []
+synonym: "β adrenergic receptor kinase" EXACT []
+synonym: "βARK" EXACT []
 xref: BEL:"ADRBK Family"
 xref: RE:R-HSA-8866229
 is_a: ONT:PROTEIN-FAMILY
@@ -274,6 +290,9 @@ synonym: "alpha1beta1gamma1" EXACT []
 synonym: "AMPK (A1/B1/G1)" EXACT []
 synonym: "AMPK a1b1g1" EXACT []
 synonym: "AMPK alpha1beta1gamma1" EXACT []
+synonym: "AMPK (α 1, β 1, γ 1)" EXACT []
+synonym: "α1β1γ1" EXACT []
+synonym: "AMPK α1β1γ1" EXACT []
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
@@ -284,6 +303,9 @@ synonym: "alpha1beta1gamma2" EXACT []
 synonym: "AMPK (A1/B1/G2)" EXACT []
 synonym: "AMPK a1b1g2" EXACT []
 synonym: "AMPK alpha1beta1gamma2" EXACT []
+synonym: "AMPK (α 1, β 1, γ 2)" EXACT []
+synonym: "α1β1γ2" EXACT []
+synonym: "AMPK α1β1γ2" EXACT []
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
@@ -294,6 +316,9 @@ synonym: "alpha1beta1gamma3" EXACT []
 synonym: "AMPK (A1/B1/G3)" EXACT []
 synonym: "AMPK a1b1g3" EXACT []
 synonym: "AMPK alpha1beta1gamma3" EXACT []
+synonym: "AMPK (α 1, β 1, γ 3)" EXACT []
+synonym: "α1β1γ3" EXACT []
+synonym: "AMPK α1β1γ3" EXACT []
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
@@ -304,6 +329,9 @@ synonym: "alpha1beta2gamma1" EXACT []
 synonym: "AMPK (A1/B2/G1)" EXACT []
 synonym: "AMPK a1b2g1" EXACT []
 synonym: "AMPK alpha1beta2gamma1" EXACT []
+synonym: "AMPK (α 1, β 2, γ 1)" EXACT []
+synonym: "α1β2γ1" EXACT []
+synonym: "AMPK α1β2γ1" EXACT []
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
@@ -314,6 +342,9 @@ synonym: "alpha1beta2gamma2" EXACT []
 synonym: "AMPK (A1/B2/G2)" EXACT []
 synonym: "AMPK a1b2g2" EXACT []
 synonym: "AMPK alpha1beta2gamma2" EXACT []
+synonym: "AMPK (α 1, β 2, γ 2)" EXACT []
+synonym: "α1β2γ2" EXACT []
+synonym: "AMPK α1β2γ2" EXACT []
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
@@ -322,6 +353,8 @@ name: AMPK-A1B2G3
 synonym: "AMPK (alpha 1, beta 2, gamma 3)" EXACT []
 synonym: "AMPK (A1/B2/G3)" EXACT []
 synonym: "AMPK alpha1beta2gamma3" EXACT []
+synonym: "AMPK (α 1, β 2, γ 3)" EXACT []
+synonym: "AMPK α1β2γ3" EXACT []
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
@@ -332,6 +365,9 @@ synonym: "alpha2beta1gamma1" EXACT []
 synonym: "AMPK (A2/B1/G1)" EXACT []
 synonym: "AMPK a2b1g1" EXACT []
 synonym: "AMPK alpha2beta1gamma1" EXACT []
+synonym: "AMPK (α 2, β 1, γ 1)" EXACT []
+synonym: "α2β1γ1" EXACT []
+synonym: "AMPK α2β1γ1" EXACT []
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
@@ -340,6 +376,8 @@ name: AMPK-A2B1G2
 synonym: "AMPK (alpha 2, beta 1, gamma 2)" EXACT []
 synonym: "AMPK (A2/B1/G2)" EXACT []
 synonym: "AMPK alpha2beta1gamma2" EXACT []
+synonym: "AMPK (α 2, β 1, γ 2)" EXACT []
+synonym: "AMPK α2β1γ2" EXACT []
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
@@ -348,6 +386,8 @@ name: AMPK-A2B1G3
 synonym: "AMPK (alpha 2, beta 1, gamma 3)" EXACT []
 synonym: "AMPK (A2/B1/G3)" EXACT []
 synonym: "AMPK alpha2beta1gamma3" EXACT []
+synonym: "AMPK (α 2, β 1, γ 3)" EXACT []
+synonym: "AMPK α2β1γ3" EXACT []
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
@@ -358,6 +398,9 @@ synonym: "alpha2beta2gamma1" EXACT []
 synonym: "AMPK (A2/B2/G1)" EXACT []
 synonym: "AMPK a2b2g1" EXACT []
 synonym: "AMPK alpha2beta2gamma1" EXACT []
+synonym: "AMPK (α 2, β 2, γ 1)" EXACT []
+synonym: "α2β2γ1" EXACT []
+synonym: "AMPK α2β2γ1" EXACT []
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
@@ -368,6 +411,9 @@ synonym: "alpha2beta2gamma2" EXACT []
 synonym: "AMPK (A2/B2/G2)" EXACT []
 synonym: "AMPK a2b2g2" EXACT []
 synonym: "AMPK alpha2beta2gamma2" EXACT []
+synonym: "AMPK (α 2, β 2, γ 2)" EXACT []
+synonym: "α2β2γ2" EXACT []
+synonym: "AMPK α2β2γ2" EXACT []
 xref: RE:R-HSA-163679
 xref: RE:R-HSA-163736
 xref: RE:R-HSA-163747
@@ -382,6 +428,9 @@ synonym: "alpha2beta2gamma3" EXACT []
 synonym: "AMPK (A2/B2/G3)" EXACT []
 synonym: "AMPK a2b2g3" EXACT []
 synonym: "AMPK alpha2beta2gamma3" EXACT []
+synonym: "AMPK (α 2, β 2, γ 3)" EXACT []
+synonym: "α2β2γ3" EXACT []
+synonym: "AMPK α2β2γ3" EXACT []
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
@@ -389,6 +438,7 @@ id: BE:AMPK_alpha
 name: AMPK-alpha
 synonym: "AMPKalpha" EXACT []
 synonym: "PRKAA" EXACT []
+synonym: "AMPKα" EXACT []
 xref: BEL:"PRKAA Family"
 xref: IP:IPR032270
 xref: NCIT:C116019
@@ -492,6 +542,9 @@ synonym: "ATP1A" EXACT []
 synonym: "ATPase Na+/K+ transporting subunit alpha" EXACT []
 synonym: "ATPase Na+/K+ transporting subunit beta" EXACT []
 synonym: "Na/K ATPase alpha" EXACT []
+synonym: "ATPase Na+/K+ transporting subunit α" EXACT []
+synonym: "ATPase Na+/K+ transporting subunit β" EXACT []
+synonym: "Na/K ATPase α" EXACT []
 xref: RE:R-HSA-936779
 is_a: ONT:PROTEIN-FAMILY
 
@@ -500,6 +553,7 @@ id: BE:ATP1B
 name: ATP1B
 synonym: "Na,K-ATPase beta subunit" EXACT []
 synonym: "ATP1B" EXACT []
+synonym: "Na,K-ATPase β subunit" EXACT []
 xref: RE:R-HSA-936820
 is_a: ONT:PROTEIN-FAMILY
 
@@ -540,6 +594,8 @@ synonym: "BCKDC" EXACT []
 synonym: "BCKDH" EXACT []
 synonym: "branched-chain alpha-keto acid dehydrogenase complex" EXACT []
 synonym: "branched-chain alpha-ketoacid dehydrogenase complex" EXACT []
+synonym: "branched-chain α-keto acid dehydrogenase complex" EXACT []
+synonym: "branched-chain α-ketoacid dehydrogenase complex" EXACT []
 xref: BEL:"Branched Chain Alpha Keto Acid Dehydrogenase Complex"
 xref: RE:R-HSA-5693120
 xref: RE:R-HSA-6792583
@@ -1128,6 +1184,9 @@ synonym: "a-cathenin" EXACT []
 synonym: "alpha catenin" EXACT []
 synonym: "alpha-catenin" EXACT []
 synonym: "catenin alpha" EXACT []
+synonym: "α catenin" EXACT []
+synonym: "α-catenin" EXACT []
+synonym: "catenin α" EXACT []
 xref: BEL:"CTNNA Family"
 is_a: ONT:PROTEIN-FAMILY
 
@@ -1283,6 +1342,9 @@ name: DNA-polymerase-delta
 synonym: "DNA polymerase delta" EXACT []
 synonym: "Pol delta" EXACT []
 synonym: "pol delta" EXACT []
+synonym: "DNA polymerase δ" EXACT []
+synonym: "Pol δ" EXACT []
+synonym: "pol δ" EXACT []
 xref: BEL:"DNA Polymerase delta Complex"
 xref: NCIT:C16511
 xref: RE:R-HSA-68450
@@ -1477,7 +1539,7 @@ synonym: "Erk1/2" EXACT []
 synonym: "ERKs" EXACT []
 synonym: "Extracellular Signal Regulated Kinase" EXACT []
 synonym: "extracellular signal-regulated kinase" EXACT []
-synonym: "MAPK" BROAD []
+synonym: "MAPK" EXACT []
 xref: BEL:"MAPK Erk1/2 Family"
 xref: BEL:"MAPK Erk1/3 Family"
 xref: IP:IPR008349
@@ -1666,6 +1728,7 @@ name: GABR
 synonym: "GABA receptor" EXACT []
 synonym: "GABA receptors" EXACT []
 synonym: "gamma-aminobutyric-acid A receptor" EXACT []
+synonym: "γ-aminobutyric-acid A receptor" EXACT []
 xref: BEL:"GABR Family"
 is_a: ONT:PROTEIN-FAMILY
 
@@ -1673,6 +1736,7 @@ is_a: ONT:PROTEIN-FAMILY
 id: BE:Gamma_secretase
 name: Gamma-secretase
 synonym: "gamma secretase" EXACT []
+synonym: "γ secretase" EXACT []
 xref: BEL:"gamma Secretase Complex"
 xref: NCIT:C95114
 is_a: ONT:PROTEIN-FAMILY
@@ -1728,7 +1792,7 @@ synonym: "GPIb-IX-V complex" EXACT []
 synonym: "GPIb-IX-V" EXACT []
 synonym: "GpIb-V-IX" EXACT []
 xref: BEL:"Ib-V-IX Complex"
-xref: GO:1990779
+xref: GO:GO:1990779
 xref: NCIT:C126122
 xref: RE:R-HSA-114668
 is_a: ONT:PROTEIN-FAMILY
@@ -1881,6 +1945,8 @@ name: G-12-alpha
 synonym: "G-protein alpha-12" EXACT []
 synonym: "Ga12" EXACT []
 synonym: "Galpha12" EXACT []
+synonym: "G-protein α-12" EXACT []
+synonym: "Gα12" EXACT []
 xref: IP:IPR000469
 xref: RE:R-HSA-114525
 xref: RE:R-HSA-418570
@@ -1891,6 +1957,7 @@ is_a: ONT:PROTEIN-FAMILY
 id: BE:G_alpha
 name: G-alpha
 synonym: "G_alpha" EXACT []
+synonym: "G_α" EXACT []
 xref: XFAM:PF00503
 is_a: ONT:PROTEIN-FAMILY
 
@@ -1900,6 +1967,9 @@ name: G-beta
 synonym: "G protein beta" EXACT []
 synonym: "G-protein beta" EXACT []
 synonym: "Gbeta" EXACT []
+synonym: "G protein β" EXACT []
+synonym: "G-protein β" EXACT []
+synonym: "Gβ" EXACT []
 xref: BEL:"GNB Family"
 xref: IP:IPR016346
 xref: RE:R-HSA-167409
@@ -1914,6 +1984,8 @@ id: BE:G_gamma
 name: G-gamma
 synonym: "G protein gamma subunit" EXACT []
 synonym: "G protein gamma" EXACT []
+synonym: "G protein γ subunit" EXACT []
+synonym: "G protein γ" EXACT []
 xref: BEL:"GNG Family"
 xref: IP:IPR001770
 xref: NEXTPROT-FAMILY:01400
@@ -1942,6 +2014,11 @@ synonym: "G-Protein alpha-i" EXACT []
 synonym: "Galphai" EXACT []
 synonym: "Gi alpha subunit" EXACT []
 synonym: "Gi alpha" EXACT []
+synonym: "G αi" EXACT []
+synonym: "G-Protein α-i" EXACT []
+synonym: "Gαi" EXACT []
+synonym: "Gi α subunit" EXACT []
+synonym: "Gi α" EXACT []
 xref: IP:IPR001408
 xref: NCIT:C19275
 xref: RE:R-HSA-111864
@@ -1983,6 +2060,11 @@ synonym: "G-Protein alpha-q" EXACT []
 synonym: "Galphaq" EXACT []
 synonym: "Gq alpha subunit" EXACT []
 synonym: "Gq alpha" EXACT []
+synonym: "G αq" EXACT []
+synonym: "G-Protein α-q" EXACT []
+synonym: "Gαq" EXACT []
+synonym: "Gq α subunit" EXACT []
+synonym: "Gq α" EXACT []
 xref: IP:IPR000654
 xref: NCIT:C19276
 xref: RE:R-HSA-114534
@@ -2016,6 +2098,13 @@ synonym: "G-Protein alpha-s" EXACT []
 synonym: "GalphaS" EXACT []
 synonym: "Gs alpha subunit" EXACT []
 synonym: "Gs alpha" EXACT []
+synonym: "G αS" EXACT []
+synonym: "G-α(s)" EXACT []
+synonym: "G-αS" EXACT []
+synonym: "G-Protein α-s" EXACT []
+synonym: "GαS" EXACT []
+synonym: "Gs α subunit" EXACT []
+synonym: "Gs α" EXACT []
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
@@ -2145,6 +2234,8 @@ id: BE:HIF_alpha
 name: HIF-alpha
 synonym: "HIFalpha" EXACT []
 synonym: "Hifalpha" EXACT []
+synonym: "HIFα" EXACT []
+synonym: "Hifα" EXACT []
 xref: RE:R-HSA-1234147
 is_a: ONT:PROTEIN-FAMILY
 
@@ -2153,6 +2244,8 @@ id: BE:HIF_beta
 name: HIF-beta
 synonym: "HIFbeta" EXACT []
 synonym: "Hifbeta" EXACT []
+synonym: "HIFβ" EXACT []
+synonym: "Hifβ" EXACT []
 xref: RE:R-HSA-8936837
 is_a: ONT:PROTEIN-FAMILY
 
@@ -2291,6 +2384,8 @@ name: IFNA
 synonym: "IFN-a" EXACT []
 synonym: "IFN-alpha" EXACT []
 synonym: "IFNalpha" EXACT []
+synonym: "IFN-α" EXACT []
+synonym: "IFNα" EXACT []
 xref: BEL:"IFNA Family"
 xref: RE:R-HSA-909688
 is_a: ONT:PROTEIN-FAMILY
@@ -2302,6 +2397,10 @@ synonym: "beta interferons" EXACT []
 synonym: "IFN-beta" EXACT []
 synonym: "Interferon beta" EXACT []
 synonym: "interferon beta" EXACT []
+synonym: "β interferons" EXACT []
+synonym: "IFN-β" EXACT []
+synonym: "Interferon β" EXACT []
+synonym: "interferon β" EXACT []
 xref: IP:IPR015588
 xref: NCIT:C20495
 is_a: ONT:PROTEIN-FAMILY
@@ -2321,6 +2420,7 @@ is_a: ONT:PROTEIN-FAMILY
 id: BE:IKB
 name: IKB
 synonym: "IkappaB" EXACT []
+synonym: "IκB" EXACT []
 xref: NCIT:C17583
 is_a: ONT:PROTEIN-FAMILY
 
@@ -2343,6 +2443,7 @@ id: BE:IKK_family
 name: IKK-family
 synonym: "IkappaB kinase" EXACT []
 synonym: "IKK" EXACT []
+synonym: "IκB kinase" EXACT []
 xref: BEL:"IkappaB Kinase Family"
 xref: NCIT:C104199
 xref: NEXTPROT-FAMILY:03104
@@ -2448,6 +2549,8 @@ name: Interferon-gamma-receptor
 synonym: "IFNGR" EXACT []
 synonym: "interferon gamma receptor" EXACT []
 synonym: "interferon-gamma receptor" EXACT []
+synonym: "interferon γ receptor" EXACT []
+synonym: "interferon-γ receptor" EXACT []
 xref: BEL:"Interferon Gamma Receptor Complex"
 is_a: ONT:PROTEIN-FAMILY
 
@@ -2629,6 +2732,10 @@ id: BE:MAPK
 name: MAPK
 synonym: "mitogen-activated protein kinase" EXACT []
 synonym: "mitogen-activated protein kinases" EXACT []
+synonym: "mitogen activated protein kinase" EXACT []
+synonym: "mitogen activated protein kinases" EXACT []
+synonym: "MAP kinase" EXACT []
+synonym: "MAP kinases" EXACT []
 xref: NCIT:C16376
 is_a: ONT:PROTEIN-FAMILY
 
@@ -2639,7 +2746,7 @@ synonym: "MCM" EXACT []
 synonym: "mini-chromosome maintenance complex" EXACT []
 synonym: "minichromosome maintenance complex" EXACT []
 synonym: "minichromosome maintenance protein complex" EXACT []
-xref: GO:0042555
+xref: GO:GO:0042555
 xref: IP:IPR001208
 xref: IP:IPR031327
 xref: NEXTPROT-FAMILY:02187
@@ -2844,6 +2951,18 @@ synonym: "NF-kappaBs" EXACT []
 synonym: "NF-kB" EXACT []
 synonym: "NFkappaB complexes" EXACT []
 synonym: "NFkappaB" EXACT []
+synonym: "NF-κB complexes" EXACT []
+synonym: "NF-κB dimers" EXACT []
+synonym: "NF-κB Factors" EXACT []
+synonym: "NF-κB factors" EXACT []
+synonym: "NF-κB genes" EXACT []
+synonym: "NF-κB subunits" EXACT []
+synonym: "NF-κB TFs" EXACT []
+synonym: "NF-κB" EXACT []
+synonym: "NF-κβ" EXACT []
+synonym: "NF-κBs" EXACT []
+synonym: "NFκB complexes" EXACT []
+synonym: "NFκB" EXACT []
 xref: BEL:"Nfkb Complex"
 xref: IP:IPR000451
 xref: IP:IPR030492
@@ -2862,6 +2981,14 @@ synonym: "NF-kappaB Class 1" EXACT []
 synonym: "NF-kappaB class 1" EXACT []
 synonym: "NF-kappaB Class I" EXACT []
 synonym: "NF-kappaB class I" EXACT []
+synonym: "Class 1 NF-κBs" EXACT []
+synonym: "class 1 NF-κBs" EXACT []
+synonym: "Class I NF-κBs" EXACT []
+synonym: "class I NF-κBs" EXACT []
+synonym: "NF-κB Class 1" EXACT []
+synonym: "NF-κB class 1" EXACT []
+synonym: "NF-κB Class I" EXACT []
+synonym: "NF-κB class I" EXACT []
 xref: RE:R-HSA-177656
 xref: RE:R-HSA-177662
 is_a: ONT:PROTEIN-FAMILY
@@ -2877,6 +3004,14 @@ synonym: "NF-kappaB Class 2" EXACT []
 synonym: "NF-kappaB class 2" EXACT []
 synonym: "NF-kappaB Class II" EXACT []
 synonym: "NF-kappaB class II" EXACT []
+synonym: "Class 2 NF-κBs" EXACT []
+synonym: "class 2 NF-κBs" EXACT []
+synonym: "Class II NF-κBs" EXACT []
+synonym: "class II NF-κBs" EXACT []
+synonym: "NF-κB Class 2" EXACT []
+synonym: "NF-κB class 2" EXACT []
+synonym: "NF-κB Class II" EXACT []
+synonym: "NF-κB class II" EXACT []
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
@@ -3233,6 +3368,8 @@ name: PDGFR-AA
 synonym: "PDGFR-AA" EXACT []
 synonym: "PDGFR-alphaalpha" EXACT []
 synonym: "PDGFRalphaalpha" EXACT []
+synonym: "PDGFR-αα" EXACT []
+synonym: "PDGFRαα" EXACT []
 xref: IP:IPR027290
 xref: RE:R-HSA-186816
 xref: RE:R-HSA-186817
@@ -3244,6 +3381,8 @@ name: PDGFR-AB
 synonym: "PDGFR-AB" EXACT []
 synonym: "PDGFR-alphabeta" EXACT []
 synonym: "PDGFRalphabeta" EXACT []
+synonym: "PDGFR-αβ" EXACT []
+synonym: "PDGFRαβ" EXACT []
 xref: RE:R-HSA-186769
 xref: RE:R-HSA-186770
 xref: RE:R-HSA-186791
@@ -3258,6 +3397,8 @@ name: PDGFR-BB
 synonym: "PDGFR-BB" EXACT []
 synonym: "PDGFR-betabeta" EXACT []
 synonym: "PDGFRbetabeta" EXACT []
+synonym: "PDGFR-ββ" EXACT []
+synonym: "PDGFRββ" EXACT []
 xref: IP:IPR027288
 xref: RE:R-HSA-186799
 xref: RE:R-HSA-186805
@@ -3500,6 +3641,10 @@ synonym: "Phospholipase C-beta" EXACT []
 synonym: "phospholipase C-beta" EXACT []
 synonym: "Phospholipase Cbeta" EXACT []
 synonym: "phospholipase Cbeta" EXACT []
+synonym: "Phospholipase C-β" EXACT []
+synonym: "phospholipase C-β" EXACT []
+synonym: "Phospholipase Cβ" EXACT []
+synonym: "phospholipase Cβ" EXACT []
 xref: BEL:"PLCB Family"
 xref: IP:IPR016280
 xref: RE:R-HSA-111854
@@ -3512,12 +3657,17 @@ synonym: "Phospholipase C-delta" EXACT []
 synonym: "phospholipase C-delta" EXACT []
 synonym: "Phospholipase Cdelta" EXACT []
 synonym: "phospholipase Cdelta" EXACT []
+synonym: "Phospholipase C-δ" EXACT []
+synonym: "phospholipase C-δ" EXACT []
+synonym: "Phospholipase Cδ" EXACT []
+synonym: "phospholipase Cδ" EXACT []
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
 id: BE:PLCG
 name: PLCG
 synonym: "PLC-gamma" EXACT []
+synonym: "PLC-γ" EXACT []
 xref: BEL:"PLCG Family"
 xref: IP:IPR016279
 xref: IP:IPR035023
@@ -3915,7 +4065,7 @@ synonym: "replication factor C" EXACT []
 synonym: "RF-C" EXACT []
 synonym: "RFC" EXACT []
 xref: BEL:"RFC Complex"
-xref: GO:0005663
+xref: GO:GO:0005663
 xref: RE:R-HSA-174454
 xref: RE:R-HSA-68436
 is_a: ONT:PROTEIN-FAMILY
@@ -4326,6 +4476,11 @@ synonym: "TGFB" EXACT []
 synonym: "TGFbeta" EXACT []
 synonym: "transforming growth factor beta" EXACT []
 synonym: "transforming growth factor-beta" EXACT []
+synonym: "TGF β" EXACT []
+synonym: "TGF-β" EXACT []
+synonym: "TGFβ" EXACT []
+synonym: "transforming growth factor β" EXACT []
+synonym: "transforming growth factor-β" EXACT []
 xref: BEL:"TGFB Family"
 xref: IP:IPR015615
 xref: IP:IPR016319
@@ -4341,6 +4496,9 @@ synonym: "TGF beta receptor" EXACT []
 synonym: "TGF-beta receptor" EXACT []
 synonym: "TGF-beta receptors" EXACT []
 synonym: "TGFBR" EXACT []
+synonym: "TGF β receptor" EXACT []
+synonym: "TGF-β receptor" EXACT []
+synonym: "TGF-β receptors" EXACT []
 is_a: ONT:PROTEIN-FAMILY
 
 [Term]
@@ -4519,6 +4677,8 @@ name: TUBA
 synonym: "alpha tubulin" EXACT []
 synonym: "TUBA" EXACT []
 synonym: "tubulin alpha chain" EXACT []
+synonym: "α tubulin" EXACT []
+synonym: "tubulin α chain" EXACT []
 xref: BEL:"TUBA Family"
 is_a: ONT:PROTEIN-FAMILY
 
@@ -4528,6 +4688,8 @@ name: TUBB
 synonym: "TUBB" EXACT []
 synonym: "tubulin beta chain" EXACT []
 synonym: "tubulin beta" EXACT []
+synonym: "tubulin β chain" EXACT []
+synonym: "tubulin β" EXACT []
 xref: BEL:"TUBB Family"
 xref: NCIT:C104166
 is_a: ONT:PROTEIN-FAMILY
@@ -4538,6 +4700,9 @@ name: TUBG
 synonym: "Gamma tubulin" EXACT []
 synonym: "gamma-tubulin" EXACT []
 synonym: "tubulin gamma" EXACT []
+synonym: "γ tubulin" EXACT []
+synonym: "γ-tubulin" EXACT []
+synonym: "tubulin γ" EXACT []
 xref: IP:IPR002454
 is_a: ONT:PROTEIN-FAMILY
 
