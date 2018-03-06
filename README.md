@@ -94,13 +94,6 @@ Entities are grounded to the following databases:
   files, and to identifiers in [PFAM](http://pfam.xfam.org/)
   and [Interpro](https://www.ebi.ac.uk/interpro/) when possible.
 
-**Note: Some text strings in the map have no grounding.** This was originally
-used to identify entities that represent parsing errors and that should not be
-included in downstream output. For example, "MAP" a degenerate extraction that
-could signify many entities, including MAP kinase, MAP kinase inhibitor, MAP
-kinase kinase, etc. However, these empty entries could be used differently
-depending on the downstream application.
-
 ## Gene prefixes
 
 The file ```gene_prefixes.csv``` enumerates prefixes and suffixes frequently

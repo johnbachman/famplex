@@ -122,7 +122,6 @@ if __name__ == '__main__':
     equivalences = load_equivalences('equivalences.csv')
     gm = load_grounding_map('grounding_map.csv')
     check_file_rows('gene_prefixes.csv', 3)
-    check_file_rows('ignore.csv', 7)
 
     # Check the entity list for duplicates
     ent_counter = Counter(entities)
