@@ -8,7 +8,8 @@ Mechanism](http://www.darpa.mil/program/big-mechanism) and [Communicating with
 Computers](http://www.darpa.mil/program/communicating-with-computers) programs.
 
 Note: FamPlex used to be called Bioentities, and was renamed to better reflect
-the focus of the resource.
+the focus of the resource on protein families, complexes, and their lexical
+synonyms.
 
 The repository contains the following files:
 
