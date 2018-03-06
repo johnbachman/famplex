@@ -137,12 +137,12 @@ if __name__ == '__main__':
 
     print()
     print("-- Checking for undeclared FamPlex IDs in grounding map --")
-    # Look through grounding map and find all instances with an FP' db
+    # Look through grounding map and find all instances with an FPLX db key
     entities_missing_gm = []
     for text, db_refs in gm.items():
         if db_refs is not None:
             for db_key, db_id in db_refs.items():
-                if db_key == 'FP' and db_id not in entities:
+                if db_key == 'FPLX' and db_id not in entities:
                     entities_missing_gm.append(db_id)
                     print("ERROR: ID %s referenced in grounding map "
                           "is not in entities list." % db_id)
@@ -171,7 +171,7 @@ if __name__ == '__main__':
         for term in (subj, obj):
             term_ns = term[0]
             term_id = term[1]
-            if term_ns == 'FP' and term_id not in entities:
+            if term_ns == 'FPLX' and term_id not in entities:
                 entities_missing_rel.append(term_id)
                 print("ERROR: ID %s referenced in relations "
                       "is not in entities list." % term_id)
@@ -181,7 +181,7 @@ if __name__ == '__main__':
     for ix, (subj, rel, obj) in enumerate(relationships):
         for term in (subj, obj):
             term_ns = term[0]
-            if term_ns not in ('FP', 'HGNC', 'UP'):
+            if term_ns not in ('FPLX', 'HGNC', 'UP'):
                 print("ERROR: row %d: Invalid namespace in relations.csv: %s" %
                       (ix+1, term_ns))
                 signal_error = True
@@ -256,10 +256,10 @@ if __name__ == '__main__':
             subj_id = subj[1]
             obj_ns = obj[0]
             obj_id = obj[1]
-            if subj_ns == 'FP' and subj_id == ent:
+            if subj_ns == 'FPLX' and subj_id == ent:
                 found = True
                 break
-            if obj_ns == 'FP' and obj_id == ent:
+            if obj_ns == 'FPLX' and obj_id == ent:
                 found = True
                 break
         if not found:

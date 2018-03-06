@@ -179,7 +179,7 @@ def get_rx_family_members(up_ids, cache_file=None):
 
 
 def get_mappings(be_child_map, rx_family_members, jaccard_cutoff=1.):
-    """Find matches between BE and Reactome families/complexes."""
+    """Find matches between FPLX and Reactome families/complexes."""
     mappings = defaultdict(list)
     for be_id, be_children in be_child_map.items():
         # Skip empty sets

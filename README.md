@@ -6,6 +6,10 @@ developed by manual curation for use by natural language processing and
 biological modeling teams in the [DARPA Big
 Mechanism](http://www.darpa.mil/program/big-mechanism) and [Communicating with
 Computers](http://www.darpa.mil/program/communicating-with-computers) programs.
+
+Note: FamPlex used to be called Bioentities, and was renamed to better reflect
+the focus of the resource.
+
 The repository contains the following files:
 
 * ```relations.csv```. Defines membership of specific genes/proteins in
@@ -49,15 +53,15 @@ relationships, including sub-families (families within families) and complexes
 consisting of families of related subunits (e.g., PI3K, NF-kB).
 
 The ```relations.csv``` file consists of five columns: (1) the namespace for
-the subject (e.g., ```HGNC``` for gene names, ```UP``` for Uniprot, or ```BE```
-for the FamPlex namespace), (2) the identifier for the subject, (3) the
-relationship (```isa``` or ```partof```), (4) the namespace for the object, and
-(5) the identifier for the object.
+the subject (e.g., ```HGNC``` for gene names, ```UP``` for Uniprot, or
+```FPLX``` for the FamPlex namespace), (2) the identifier for the subject,
+(3) the relationship (```isa``` or ```partof```), (4) the namespace for the
+object, and (5) the identifier for the object.
 
 The ```equivalences.csv``` file consists of three columns (1) the namespace of
 an outsite entity (e.g. ```BEL```, ```PFAM```),
 (2) the identifier of the outside entity in the namespace given in the
-first column, and (3) the equivalent entity in the ```BE``` namespace.
+first column, and (3) the equivalent entity in the ```FPLX``` namespace.
 
 ## Grounding Map
 
