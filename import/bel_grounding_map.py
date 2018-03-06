@@ -10,7 +10,7 @@ if __name__ == '__main__':
     gm = load_grounding_map('../grounding_map.csv')
     has_grounding = set()
     for text, refs in gm.items():
-        be_id = refs.get('BE')
+        be_id = refs.get('FPLX')
         if be_id:
             has_grounding.add(be_id)
 

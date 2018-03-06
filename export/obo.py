@@ -50,7 +50,7 @@ def get_obo_terms():
     entities_file = os.path.join(path_this, os.pardir, 'entities.csv')
     grounding_file = os.path.join(path_this, os.pardir, 'grounding_map.csv')
     equiv_file = os.path.join(path_this, os.pardir, 'equivalences.csv')
-    # For each entity in bioentities
+    # For each entity in famplex
     with open(entities_file, 'r') as fh:
         entities = [l.strip() for l in fh.readlines()]
     with open(equiv_file, 'r') as fh:
@@ -71,10 +71,10 @@ def get_obo_terms():
             namespaces = row[1::2]
             ids = row[2::2]
             for ns, id in zip(namespaces, ids):
-                if ns == 'BE':
+                if ns == 'FPLX':
                     textrefs[id].append(text_str)
     for entity in entities:
-        entity_id = Reference('BE', entity)
+        entity_id = Reference('FPLX', entity)
         # Construct string name
         name = entity.replace('_', '-')
         # Get synonyms
@@ -101,7 +101,7 @@ def save_obo_terms(obo_terms, output_file=None):
     date_str = date.strftime('%d:%m:%Y %H:%M')
     path_this = os.path.dirname(os.path.abspath(__file__))
     if not output_file:
-        output_file = os.path.join(path_this, os.pardir, 'bioentities.obo')
+        output_file = os.path.join(path_this, os.pardir, 'famplex.obo')
     with open(output_file, 'wt') as fh:
         fh.write('format-version: 1.2\n')
         fh.write('date: %s\n' % date_str)
@@ -113,5 +113,5 @@ def save_obo_terms(obo_terms, output_file=None):
 
 if __name__ == '__main__':
     obo_terms = get_obo_terms()
-    save_obo_terms(obo_terms, 'bioentities.obo')
+    save_obo_terms(obo_terms, 'famplex.obo')
 

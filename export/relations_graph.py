@@ -31,7 +31,7 @@ if __name__ == '__main__':
             for ns, id in ((ns1, id1), (ns2, id2)):
                 if ns == 'HGNC':
                     graph.add_node(node_label(ns, id), **hgnc_style)
-                elif ns == 'BE':
+                elif ns == 'FPLX':
                     graph.add_node(node_label(ns, id), **be_style)
             edge = (node_label(ns1, id1), node_label(ns2, id2))
             if rel == 'isa':

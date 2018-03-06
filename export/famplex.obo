@@ -1,0 +1,3467 @@
+format-version: 1.2
+date: 06:03:2018 10:03
+
+[Term]
+id: FPLX:9_1_1
+name: 9-1-1
+xref: BEL:"9-1-1 Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:ABL_family
+name: ABL-family
+xref: IP:IPR015015
+xref: RE:R-HSA-376002
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:ACAD
+name: ACAD
+xref: BEL:"ACAD Family"
+xref: NEXTPROT-FAMILY:00093
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:ACC
+name: ACC
+xref: BEL:"Acetyl CoA Carboxylase Complex"
+xref: IP:IPR013537
+xref: RE:R-HSA-200563
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Acetyl_CoA_synthetase
+name: Acetyl-CoA-synthetase
+xref: BEL:"Acetyl-CoA Synthetase Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:ACOX
+name: ACOX
+xref: BEL:"ACOX Family"
+xref: IP:IPR002655
+xref: XFAM:PF01756
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:ACSL
+name: ACSL
+xref: BEL:"ACSL Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Actin
+name: Actin
+xref: BEL:"ACT Family"
+xref: IP:IPR004000
+xref: MESH:D000199
+xref: NCIT:C16258
+xref: NEXTPROT-FAMILY:00078
+xref: XFAM:PF00022
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Activin
+name: Activin
+xref: NCIT:C20456
+xref: RE:R-HSA-2470478
+xref: RE:R-HSA-2470491
+xref: RE:R-HSA-2470494
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Activin_A
+name: Activin-A
+xref: GO:GO:0043509
+xref: IP:IPR000491
+xref: RE:R-HSA-206893
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Activin_AB
+name: Activin-AB
+xref: RE:R-HSA-1449698
+xref: RE:R-HSA-2470478
+xref: RE:R-HSA-2470491
+xref: RE:R-HSA-2470494
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Activin_B
+name: Activin-B
+xref: IP:IPR000381
+xref: RE:R-HSA-1449672
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:ACTN
+name: ACTN
+xref: BEL:"ACTN Family"
+xref: RE:R-HSA-451402
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Adaptor_protein_III
+name: Adaptor-protein-III
+xref: BEL:"Adaptor Protein III Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:ADCY
+name: ADCY
+xref: BEL:"ADCY Family"
+xref: NCIT:C16264
+xref: RE:R-HSA-5610577
+xref: RE:R-HSA-5610578
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:ADH
+name: ADH
+xref: BEL:"ADH Family"
+xref: NCIT:C16272
+xref: XFAM:PF00465
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:ADRA
+name: ADRA
+xref: BEL:"ADRA Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:ADRA2
+name: ADRA2
+xref: BEL:"ADRA2 Family"
+xref: RE:R-HSA-390664
+xref: RE:R-HSA-390700
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:ADRB
+name: ADRB
+xref: BEL:"ADRB Family"
+xref: NCIT:C17062
+xref: RE:R-HSA-390643
+xref: RE:R-HSA-390670
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:ADRBK
+name: ADRBK
+xref: BEL:"ADRBK Family"
+xref: RE:R-HSA-8866229
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:AKT
+name: AKT
+xref: BEL:"AKT Family"
+xref: NCIT:C41625
+xref: RE:R-HSA-202052
+xref: RE:R-HSA-202072
+xref: RE:R-HSA-202074
+xref: RE:R-HSA-202088
+xref: RE:R-HSA-2317310
+xref: RE:R-HSA-2317317
+xref: RE:R-HSA-2317329
+xref: RE:R-HSA-2400006
+xref: RE:R-HSA-2400013
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:ALDH
+name: ALDH
+xref: BEL:"ALDH Family"
+xref: NCIT:C118481
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:ALDO
+name: ALDO
+xref: BEL:"ALDO Family"
+xref: IP:IPR000741
+xref: IP:IPR029768
+xref: RE:R-HSA-179508
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:AMPK
+name: AMPK
+xref: BEL:"AMP Activated Protein Kinase Complex"
+xref: NCIT:C94701
+xref: NEXTPROT-FAMILY:03071
+xref: RE:R-HSA-380931
+xref: RE:R-HSA-380934
+xref: RE:R-HSA-380961
+xref: RE:R-HSA-6805467
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:AMPK_A1B1G1
+name: AMPK-A1B1G1
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:AMPK_A1B1G2
+name: AMPK-A1B1G2
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:AMPK_A1B1G3
+name: AMPK-A1B1G3
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:AMPK_A1B2G1
+name: AMPK-A1B2G1
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:AMPK_A1B2G2
+name: AMPK-A1B2G2
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:AMPK_A1B2G3
+name: AMPK-A1B2G3
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:AMPK_A2B1G1
+name: AMPK-A2B1G1
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:AMPK_A2B1G2
+name: AMPK-A2B1G2
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:AMPK_A2B1G3
+name: AMPK-A2B1G3
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:AMPK_A2B2G1
+name: AMPK-A2B2G1
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:AMPK_A2B2G2
+name: AMPK-A2B2G2
+xref: RE:R-HSA-163679
+xref: RE:R-HSA-163736
+xref: RE:R-HSA-163747
+xref: RE:R-HSA-200408
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:AMPK_A2B2G3
+name: AMPK-A2B2G3
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:AMPK_alpha
+name: AMPK-alpha
+xref: BEL:"PRKAA Family"
+xref: IP:IPR032270
+xref: NCIT:C116019
+xref: RE:R-HSA-2151213
+xref: RE:R-HSA-381844
+xref: RE:R-HSA-381845
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:AMPK_beta
+name: AMPK-beta
+xref: BEL:"PRKAB Family"
+xref: IP:IPR006828
+xref: IP:IPR032640
+xref: RE:R-HSA-2151208
+xref: RE:R-HSA-381854
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:AMPK_gamma
+name: AMPK-gamma
+xref: BEL:"PRKAG Family"
+xref: RE:R-HSA-2151212
+xref: RE:R-HSA-2316451
+xref: RE:R-HSA-381851
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Annexin_II_heterotetramer
+name: Annexin-II-heterotetramer
+xref: BEL:"Annexin II Heterotetramer Complex"
+xref: RE:R-HSA-5336141
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:AP1
+name: AP1
+xref: BEL:"AP-1 Complex"
+xref: MESH:D018808
+xref: NCIT:C17450
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:APC_C
+name: APC-C
+xref: GO:GO:0005680
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:APOA
+name: APOA
+xref: BEL:"APOA Family"
+xref: NCIT:C105952
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Apolipoprotein
+name: Apolipoprotein
+xref: IP:IPR000074
+xref: XFAM:PF01442
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Arp2_3_protein
+name: Arp2-3-protein
+xref: BEL:"Arp2/3 Protein Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:ARRB
+name: ARRB
+xref: BEL:"ARRB Family"
+xref: RE:R-HSA-1911410
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:ATP1A
+name: ATP1A
+xref: RE:R-HSA-936779
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:ATP1B
+name: ATP1B
+xref: RE:R-HSA-936820
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:ATP5G
+name: ATP5G
+xref: BEL:"ATP5G Family"
+xref: IP:IPR000454
+xref: IP:IPR020537
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:ATP_synthase
+name: ATP-synthase
+xref: BEL:"Proton Transporting ATP Synthase Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:AXIN
+name: AXIN
+xref: BEL:"AXIN Family"
+xref: IP:IPR014936
+xref: IP:IPR032101
+xref: RE:R-HSA-3640819
+xref: RE:R-HSA-3640863
+xref: RE:R-HSA-3772502
+xref: RE:R-HSA-4641132
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:BCKDC
+name: BCKDC
+xref: BEL:"Branched Chain Alpha Keto Acid Dehydrogenase Complex"
+xref: RE:R-HSA-5693120
+xref: RE:R-HSA-6792583
+xref: RE:R-HSA-70019
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:BIRC
+name: BIRC
+xref: BEL:"BIRC Family"
+xref: IP:IPR001370
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:BMP
+name: BMP
+xref: BEL:"BMP Family"
+xref: NCIT:C17274
+xref: XFAM:PF02608
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:BMP_receptor_type_I
+name: BMP-receptor-type-I
+xref: BEL:"BMP Receptor Type I Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:BMP_receptor_type_II
+name: BMP-receptor-type-II
+xref: BEL:"BMP Receptor Type II Family"
+xref: RE:R-HSA-201465
+xref: RE:R-HSA-201804
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:BRCA
+name: BRCA
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:C1
+name: C1
+xref: BEL:"C1 Complex"
+xref: RE:R-HSA-173584
+xref: RE:R-HSA-173615
+xref: RE:R-HSA-173617
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:C1q
+name: C1q
+xref: BEL:"C1q Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Cadherin
+name: Cadherin
+xref: BEL:"CDH Family"
+xref: NCIT:C16373
+xref: XFAM:PF00028
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:CALM
+name: CALM
+xref: BEL:"CALM Family"
+xref: NCIT:C16375
+xref: NEXTPROT-FAMILY:00440
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:CAMK
+name: CAMK
+xref: BEL:"CAMK Family"
+xref: NEXTPROT-FAMILY:03072
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:CAMK2_complex
+name: CAMK2-complex
+xref: BEL:"CAMK2 Complex"
+xref: IP:IPR013543
+xref: RE:R-HSA-417004
+xref: RE:R-HSA-432792
+xref: RE:R-HSA-444796
+xref: RE:R-HSA-445374
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:CAMK2_family
+name: CAMK2-family
+xref: BEL:"CAMK2 Family"
+xref: IP:IPR013543
+xref: RE:R-HSA-417004
+xref: RE:R-HSA-432792
+xref: RE:R-HSA-444796
+xref: RE:R-HSA-445374
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:CAPN
+name: CAPN
+xref: BEL:"CAPN Family"
+xref: IP:IPR022684
+xref: NCIT:C16377
+xref: RE:R-HSA-8848649
+xref: RE:R-HSA-8848668
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Carboxylesterase
+name: Carboxylesterase
+xref: BEL:"Carboxylesterase Family"
+xref: NCIT:C112051
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Caspase
+name: Caspase
+xref: BEL:"CASP Family"
+xref: IP:IPR002138
+xref: IP:IPR033139
+xref: MESH:D020169
+xref: NCIT:C18153
+xref: XFAM:PF00656
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Caspase_3_7
+name: Caspase-3-7
+xref: RE:R-HSA-202877
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:CAV
+name: CAV
+xref: BEL:"CAV Family"
+xref: IP:IPR001612
+xref: IP:IPR018361
+xref: NEXTPROT-FAMILY:00489
+xref: XFAM:PF01146
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:CBF3
+name: CBF3
+xref: BEL:"CBF3 Complex"
+xref: GO:GO:0031518
+xref: IP:IPR016072
+xref: IP:IPR016897
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:CCT_complex
+name: CCT-complex
+xref: BEL:"CCT Complex"
+xref: IP:IPR002194
+xref: RE:R-HSA-390455
+xref: RE:R-HSA-390474
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:CD16
+name: CD16
+xref: BEL:"CD16 Family"
+xref: NCIT:C17487
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:CD3
+name: CD3
+xref: BEL:"CD3 Complex"
+xref: NCIT:C38897
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:CD32
+name: CD32
+xref: BEL:"CD32 Family"
+xref: NCIT:C18308
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:CD64
+name: CD64
+xref: BEL:"CD64 Family"
+xref: NCIT:C104238
+xref: RE:R-HSA-1031694
+xref: RE:R-HSA-1236898
+xref: RE:R-HSA-1236905
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:CD8
+name: CD8
+xref: RE:R-HSA-198899
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:CDC25
+name: CDC25
+xref: BEL:"CDC25 Family"
+xref: IP:IPR000751
+xref: RE:R-HSA-170108
+xref: RE:R-HSA-69261
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:CDK
+name: CDK
+xref: MESH:D018844
+xref: NCIT:C17767
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:CDKN
+name: CDKN
+xref: NCIT:C18492
+xref: XFAM:PF02234
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:CDKN1
+name: CDKN1
+xref: IP:IPR003175
+xref: RE:R-HSA-8941923
+xref: RE:R-HSA-8942604
+xref: RE:R-HSA-8948131
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:CDKN2
+name: CDKN2
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:CEBP
+name: CEBP
+xref: BEL:"CEBP Family"
+xref: NEXTPROT-FAMILY:00406
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:CHEK
+name: CHEK
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Chemokine
+name: Chemokine
+xref: NCIT:C20466
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Chemokine_receptor
+name: Chemokine-receptor
+xref: BEL:"Chemokine Receptor Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Cholinesterase
+name: Cholinesterase
+xref: BEL:"Cholinesterase Family"
+xref: IP:IPR000997
+xref: IP:IPR014788
+xref: RE:R-HSA-2990868
+xref: RE:R-HSA-3640837
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:CHRM
+name: CHRM
+xref: BEL:"CHRM Family"
+xref: IP:IPR000995
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:CHRN
+name: CHRN
+xref: BEL:"CHRN Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:CK2
+name: CK2
+xref: BEL:"CK II Complex"
+xref: NCIT:C107559
+xref: NEXTPROT-FAMILY:03101
+xref: RE:R-HSA-201711
+xref: RE:R-HSA-6805066
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Clathrin
+name: Clathrin
+xref: BEL:"Clathrin Complex"
+xref: RE:R-HSA-5138439
+xref: RE:R-HSA-5138447
+xref: RE:R-HSA-5333713
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:CNKSR
+name: CNKSR
+xref: NEXTPROT-FAMILY:00653
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Cofilin
+name: Cofilin
+xref: IP:IPR017904
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Cohesin
+name: Cohesin
+xref: BEL:"Cohesin Complex"
+xref: GO:GO:0008278
+xref: XFAM:PF00963
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:COL1
+name: COL1
+xref: BEL:"COL1 Family"
+xref: NCIT:C124129
+xref: RE:R-HSA-2089970
+xref: RE:R-HSA-2396039
+xref: RE:R-HSA-2396161
+xref: RE:R-HSA-2396179
+xref: RE:R-HSA-2396183
+xref: RE:R-HSA-2396256
+xref: RE:R-HSA-2396260
+xref: RE:R-HSA-2396334
+xref: RE:R-HSA-2396451
+xref: RE:R-HSA-2396456
+xref: RE:R-HSA-2396478
+xref: RE:R-HSA-2399520
+xref: RE:R-HSA-2428941
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:COL4
+name: COL4
+xref: BEL:"COL4 Family"
+xref: IP:IPR001442
+xref: NCIT:C16448
+xref: RE:R-HSA-2127389
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:COL5
+name: COL5
+xref: BEL:"COL5 Family"
+xref: RE:R-HSA-2127310
+xref: RE:R-HSA-2127422
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:COX
+name: COX
+xref: BEL:"Cytochrome C Oxidase Complex Muscle"
+xref: BEL:"Cytochrome C Oxidase Complex Non Muscle"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:COX4
+name: COX4
+xref: BEL:"COX4 Family"
+xref: IP:IPR004203
+xref: IP:IPR013288
+xref: XFAM:PF02936
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:COX6A
+name: COX6A
+xref: BEL:"COX6A Family"
+xref: IP:IPR001349
+xref: IP:IPR018507
+xref: XFAM:PF02046
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:COX6B
+name: COX6B
+xref: BEL:"COX6B Family"
+xref: XFAM:PF02297
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:COX7A
+name: COX7A
+xref: BEL:"COX7A Family"
+xref: XFAM:PF02238
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:COX7B
+name: COX7B
+xref: BEL:"COX7B Family"
+xref: IP:IPR008433
+xref: IP:IPR023272
+xref: XFAM:PF05392
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:COX8
+name: COX8
+xref: BEL:"COX8 Family"
+xref: IP:IPR003205
+xref: XFAM:PF02285
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:CREB
+name: CREB
+xref: BEL:"CREB Family"
+xref: NCIT:C17286
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:CRISP
+name: CRISP
+xref: BEL:"CRISP Family"
+xref: IP:IPR013871
+xref: IP:IPR034117
+xref: XFAM:PF08562
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:CRSP
+name: CRSP
+xref: BEL:"CRSP Complex"
+xref: NCIT:C28687
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:CSNK1
+name: CSNK1
+xref: BEL:"CSNK1 Family"
+xref: NEXTPROT-FAMILY:03083
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:CSNK2
+name: CSNK2
+xref: BEL:"CSNK2 Family"
+xref: RE:R-HSA-5083623
+xref: RE:R-HSA-5083624
+xref: RE:R-HSA-6805064
+xref: RE:R-HSA-6805073
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:CTNNA
+name: CTNNA
+xref: BEL:"CTNNA Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:CUL
+name: CUL
+xref: BEL:"CUL Family"
+xref: NEXTPROT-FAMILY:00787
+xref: XFAM:PF00888
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:CXCL_ELR_negative
+name: CXCL-ELR-negative
+xref: BEL:"CXCL ELR-Negative Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:CXCL_ELR_positive
+name: CXCL-ELR-positive
+xref: BEL:"CXCL ELR-Positive Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Cyclin
+name: Cyclin
+xref: NCIT:C17349
+xref: NEXTPROT-FAMILY:00815
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Cyclin_A
+name: Cyclin-A
+xref: BEL:"CCNA Family"
+xref: RE:R-HSA-170089
+xref: RE:R-HSA-174074
+xref: RE:R-HSA-5696998
+xref: RE:R-HSA-6783051
+xref: RE:R-HSA-75202
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Cyclin_D
+name: Cyclin-D
+xref: BEL:"CCND Family"
+xref: IP:IPR015451
+xref: NCIT:C104194
+xref: NEXTPROT-FAMILY:00818
+xref: RE:R-HSA-182582
+xref: RE:R-HSA-182700
+xref: RE:R-HSA-8938866
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Cyclin_E
+name: Cyclin-E
+xref: BEL:"CCNE Family"
+xref: IP:IPR028858
+xref: NCIT:C104197
+xref: NEXTPROT-FAMILY:00819
+xref: RE:R-HSA-157462
+xref: RE:R-HSA-187493
+xref: RE:R-HSA-6813837
+xref: RE:R-HSA-68373
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Cyclophilin
+name: Cyclophilin
+xref: BEL:"Cyclophilin Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Cytoplasmic_dynein
+name: Cytoplasmic-dynein
+xref: BEL:"Cytoplasmic Dynein Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:DDR
+name: DDR
+xref: BEL:"DDR Family"
+xref: XFAM:PF08841
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Death_receptor
+name: Death-receptor
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Desmoglein
+name: Desmoglein
+xref: BEL:"Desmoglein Family"
+xref: IP:IPR009123
+xref: RE:R-HSA-6814694
+xref: RE:R-HSA-8847714
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:DGC
+name: DGC
+xref: BEL:"Dystrophin Associated Glycoprotein Complex"
+xref: GO:GO:0016010
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:DGK
+name: DGK
+xref: BEL:"DGK Family"
+xref: IP:IPR000756
+xref: RE:R-HSA-426070
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:DNA_polymerase_delta
+name: DNA-polymerase-delta
+xref: BEL:"DNA Polymerase delta Complex"
+xref: NCIT:C16511
+xref: RE:R-HSA-68450
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:DNM
+name: DNM
+xref: BEL:"DNM Family"
+xref: RE:R-HSA-2213185
+xref: RE:R-HSA-446847
+xref: RE:R-HSA-8868235
+xref: RE:R-HSA-8868609
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:DRD
+name: DRD
+xref: BEL:"DRD Family"
+xref: IP:IPR000929
+xref: NCIT:C17066
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:DUSP
+name: DUSP
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:DVL
+name: DVL
+xref: BEL:"DVL Family"
+xref: XFAM:PF02377
+xref: XFAM:PF08137
+xref: RE:R-HSA-1504201
+xref: RE:R-HSA-201689
+xref: RE:R-HSA-201725
+xref: RE:R-HSA-3772407
+xref: RE:R-HSA-3858467
+xref: RE:R-HSA-3858479
+xref: RE:R-HSA-4652685
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:E2F
+name: E2F
+xref: BEL:"E2F Family"
+xref: IP:IPR015633
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:E3_Ub_ligase
+name: E3-Ub-ligase
+xref: XFAM:PF12483
+xref: RE:R-HSA-976075
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:EDN
+name: EDN
+xref: BEL:"EDN Family"
+xref: IP:IPR001928
+xref: IP:IPR019764
+xref: IP:IPR020475
+xref: XFAM:PF00322
+xref: RE:R-HSA-388544
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:EGFR_ligand
+name: EGFR-ligand
+xref: BEL:"EGFR Ligand Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:EGR
+name: EGR
+xref: BEL:"EGR Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:EIF2B
+name: EIF2B
+xref: BEL:"EIF2B Complex"
+xref: NCIT:C18162
+xref: RE:R-HSA-72526
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:EIF4A
+name: EIF4A
+xref: BEL:"EIF4A Family"
+xref: NEXTPROT-FAMILY:00921
+xref: RE:R-HSA-429842
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:EIF4EBP
+name: EIF4EBP
+xref: BEL:"EIF4EBP Family"
+xref: IP:IPR008606
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:EIF4G
+name: EIF4G
+xref: XFAM:PF02854
+xref: RE:R-HSA-1678828
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:ELA
+name: ELA
+xref: BEL:"ELA Family"
+xref: NEXTPROT-FAMILY:02762
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:ENO
+name: ENO
+xref: BEL:"ENO Family"
+xref: IP:IPR000941
+xref: IP:IPR020810
+xref: IP:IPR020811
+xref: NEXTPROT-FAMILY:01112
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Ephrin_receptor
+name: Ephrin-receptor
+xref: BEL:"Ephrin Receptor Family"
+xref: IP:IPR001090
+xref: IP:IPR001426
+xref: IP:IPR016257
+xref: IP:IPR027936
+xref: NCIT:C18606
+xref: NEXTPROT-FAMILY:03124
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:EPN
+name: EPN
+xref: BEL:"EPN Family"
+xref: NEXTPROT-FAMILY:01121
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:ERBB
+name: ERBB
+xref: BEL:"EGFR/ERBB Family"
+xref: IP:IPR016245
+xref: NCIT:C17763
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:ERK
+name: ERK
+xref: BEL:"MAPK Erk1/2 Family"
+xref: BEL:"MAPK Erk1/3 Family"
+xref: IP:IPR008349
+xref: NCIT:C16376
+xref: NCIT:C26360
+xref: RE:R-HSA-1268261
+xref: RE:R-HSA-169289
+xref: RE:R-HSA-169291
+xref: RE:R-HSA-198701
+xref: RE:R-HSA-2422450
+xref: RE:R-HSA-3656389
+xref: RE:R-HSA-5674338
+xref: RE:R-HSA-5674340
+xref: RE:R-HSA-5674341
+xref: RE:R-HSA-5675361
+xref: RE:R-HSA-5675363
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:ESR
+name: ESR
+xref: BEL:"ESR Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:ETC_complex_II
+name: ETC-complex-II
+xref: BEL:"Respiratory Chain Complex II"
+xref: NCIT:C112049
+xref: RE:R-HSA-165631
+xref: RE:R-HSA-70990
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:ETC_complex_III
+name: ETC-complex-III
+xref: BEL:"Respiratory Chain Complex III"
+xref: GO:GO:0045275
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:ETS
+name: ETS
+xref: BEL:"ETS Family"
+xref: IP:IPR016311
+xref: XFAM:PF00178
+xref: RE:R-HSA-3132719
+xref: RE:R-HSA-3132724
+xref: RE:R-HSA-3200029
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:EXOC
+name: EXOC
+xref: RE:R-HSA-264974
+xref: RE:R-HSA-5623453
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:FANC
+name: FANC
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:FGF
+name: FGF
+xref: BEL:"FGF Family"
+xref: IP:IPR002209
+xref: XFAM:PF00167
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:FGFR
+name: FGFR
+xref: BEL:"FGFR Family"
+xref: IP:IPR016248
+xref: NCIT:C17297
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Fibrinogen
+name: Fibrinogen
+xref: BEL:"Fibrinogen Complex"
+xref: IP:IPR012290
+xref: RE:R-HSA-114617
+xref: RE:R-HSA-114618
+xref: RE:R-HSA-139933
+xref: RE:R-HSA-139934
+xref: RE:R-HSA-140586
+xref: RE:R-HSA-140919
+xref: RE:R-HSA-8870680
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:FLOT
+name: FLOT
+xref: BEL:"FLOT Family"
+xref: IP:IPR027705
+xref: IP:IPR031905
+xref: XFAM:PF15975
+xref: RE:R-HSA-8849894
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:FLRT
+name: FLRT
+xref: BEL:"FLRT Family"
+xref: RE:R-HSA-5656056
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:FNT
+name: FNT
+xref: RE:R-HSA-2530496
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:FOS_family
+name: FOS-family
+xref: NCIT:C17438
+xref: NCIT:C52887
+xref: NEXTPROT-FAMILY:00408
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:FOXO
+name: FOXO
+xref: BEL:"FOXO Family"
+xref: IP:IPR032067
+xref: NCIT:C118892
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:FSH
+name: FSH
+xref: BEL:"Follicle Stimulating Hormone Complex"
+xref: RE:R-HSA-378947
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:FZD
+name: FZD
+xref: BEL:"FZD Family"
+xref: XFAM:PF01534
+xref: RE:R-HSA-517388
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:F_actin
+name: F-actin
+xref: GO:GO:0031941
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:GABR
+name: GABR
+xref: BEL:"GABR Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Gamma_secretase
+name: Gamma-secretase
+xref: BEL:"gamma Secretase Complex"
+xref: NCIT:C95114
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:GAP
+name: GAP
+xref: NCIT:C17298
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:GAS6_receptor
+name: GAS6-receptor
+xref: BEL:"GAS6 Receptor Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:GATA
+name: GATA
+xref: BEL:"GATA Family"
+xref: XFAM:PF00320
+xref: RE:R-HSA-996770
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:GEF
+name: GEF
+xref: NCIT:C17494
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:GPCR
+name: GPCR
+xref: NCIT:C18239
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:GPIb_IX_V
+name: GPIb-IX-V
+xref: BEL:"Ib-V-IX Complex"
+xref: GO:GO:1990779
+xref: NCIT:C126122
+xref: RE:R-HSA-114668
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:GPIT
+name: GPIT
+xref: BEL:"GPIT Complex"
+xref: RE:R-HSA-162690
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:GPX
+name: GPX
+xref: BEL:"GPX Family"
+xref: IP:IPR000889
+xref: IP:IPR029760
+xref: NEXTPROT-FAMILY:01553
+xref: XFAM:PF00255
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:GRIA
+name: GRIA
+xref: BEL:"GRIA Family"
+xref: RE:R-HSA-399713
+xref: RE:R-HSA-416323
+xref: RE:R-HSA-420974
+xref: RE:R-HSA-421001
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:GRK
+name: GRK
+xref: BEL:"GRK Family"
+xref: IP:IPR000239
+xref: NCIT:C26233
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:GRM
+name: GRM
+xref: BEL:"GRM Family"
+xref: IP:IPR000162
+xref: RE:R-HSA-420516
+xref: RE:R-HSA-420519
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:GSK3
+name: GSK3
+xref: BEL:"GSK3 Family"
+xref: NEXTPROT-FAMILY:03087
+xref: RE:R-HSA-198358
+xref: RE:R-HSA-198373
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:GST
+name: GST
+xref: BEL:"GST Family"
+xref: NCIT:C16641
+xref: NEXTPROT-FAMILY:01669
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:GTF2E
+name: GTF2E
+xref: BEL:"GTF2E Complex"
+xref: RE:R-HSA-109633
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:GTF2F
+name: GTF2F
+xref: BEL:"GTF2F Complex"
+xref: IP:IPR011039
+xref: RE:R-HSA-109631
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:GTPase
+name: GTPase
+xref: NCIT:C16650
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:GUCY
+name: GUCY
+xref: BEL:"GUCY Family"
+xref: NCIT:C16653
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:GYS
+name: GYS
+xref: BEL:"GYS Family"
+xref: IP:IPR008631
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:G_12
+name: G-12
+xref: IP:IPR000469
+xref: RE:R-HSA-114547
+xref: RE:R-HSA-418570
+xref: RE:R-HSA-418572
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:G_12_alpha
+name: G-12-alpha
+xref: IP:IPR000469
+xref: RE:R-HSA-114525
+xref: RE:R-HSA-418570
+xref: RE:R-HSA-418572
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:G_alpha
+name: G-alpha
+xref: XFAM:PF00503
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:G_beta
+name: G-beta
+xref: BEL:"GNB Family"
+xref: IP:IPR016346
+xref: RE:R-HSA-167409
+xref: RE:R-HSA-400093
+xref: RE:R-HSA-6814207
+xref: RE:R-HSA-6814413
+xref: RE:R-HSA-8850524
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:G_gamma
+name: G-gamma
+xref: BEL:"GNG Family"
+xref: IP:IPR001770
+xref: NEXTPROT-FAMILY:01400
+xref: RE:R-HSA-167442
+xref: RE:R-HSA-400062
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:G_i
+name: G-i
+xref: BEL:"GNAI Family"
+xref: IP:IPR001408
+xref: RE:R-HSA-111864
+xref: RE:R-HSA-167410
+xref: RE:R-HSA-167413
+xref: RE:R-HSA-167438
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:G_i_alpha
+name: G-i-alpha
+xref: IP:IPR001408
+xref: NCIT:C19275
+xref: RE:R-HSA-111864
+xref: RE:R-HSA-167410
+xref: RE:R-HSA-167413
+xref: RE:R-HSA-167438
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:G_protein
+name: G-protein
+xref: NCIT:C17458
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:G_q
+name: G-q
+xref: BEL:"GNA Gq Family"
+xref: IP:IPR000654
+xref: RE:R-HSA-114534
+xref: RE:R-HSA-114556
+xref: RE:R-HSA-374848
+xref: RE:R-HSA-399987
+xref: RE:R-HSA-399992
+xref: RE:R-HSA-400000
+xref: RE:R-HSA-400008
+xref: RE:R-HSA-749499
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:G_q_alpha
+name: G-q-alpha
+xref: IP:IPR000654
+xref: NCIT:C19276
+xref: RE:R-HSA-114534
+xref: RE:R-HSA-114556
+xref: RE:R-HSA-374848
+xref: RE:R-HSA-399987
+xref: RE:R-HSA-399992
+xref: RE:R-HSA-400000
+xref: RE:R-HSA-400008
+xref: RE:R-HSA-749499
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:G_s
+name: G-s
+xref: BEL:"GNA Gs Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:G_s_alpha
+name: G-s-alpha
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:hCG
+name: hCG
+xref: NCIT:C2275
+xref: RE:R-HSA-378941
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:HDAC
+name: HDAC
+xref: BEL:"HDAC Family"
+xref: IP:IPR003084
+xref: NCIT:C16682
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:HDAC_I
+name: HDAC-I
+xref: BEL:"HDAC Class I Family"
+xref: IP:IPR003084
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:HDAC_II
+name: HDAC-II
+xref: BEL:"HDAC Class II Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:HDAC_III
+name: HDAC-III
+xref: IP:IPR003000
+xref: IP:IPR026590
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:HDAC_IV
+name: HDAC-IV
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:HDL
+name: HDL
+xref: BEL:"HDL Complex"
+xref: NCIT:C25186
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Hedgehog
+name: Hedgehog
+xref: BEL:"Hedgehog Family"
+xref: IP:IPR000320
+xref: IP:IPR001657
+xref: IP:IPR001767
+xref: IP:IPR003586
+xref: IP:IPR003587
+xref: IP:IPR009045
+xref: IP:IPR028992
+xref: NCIT:C120493
+xref: NEXTPROT-FAMILY:01729
+xref: RE:R-HSA-5358286
+xref: RE:R-HSA-5358318
+xref: RE:R-HSA-5358332
+xref: RE:R-HSA-5362382
+xref: RE:R-HSA-5362391
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Hemoglobin
+name: Hemoglobin
+xref: BEL:"Hemoglobin Complex"
+xref: NCIT:C16676
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:HES
+name: HES
+xref: BEL:"HES Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:HIF
+name: HIF
+xref: NCIT:C113839
+xref: RE:R-HSA-1234130
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:HIF1
+name: HIF1
+xref: NCIT:C17690
+xref: XFAM:PF11413
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:HIF_alpha
+name: HIF-alpha
+xref: RE:R-HSA-1234147
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:HIF_beta
+name: HIF-beta
+xref: RE:R-HSA-8936837
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Histone
+name: Histone
+xref: BEL:"Histone Family"
+xref: MESH:D006657
+xref: NCIT:C16687
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Histone_H1
+name: Histone-H1
+xref: BEL:"Histone H1 Family"
+xref: NCIT:C16683
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Histone_H2A
+name: Histone-H2A
+xref: BEL:"Histone H2A Family"
+xref: NCIT:C16684
+xref: NEXTPROT-FAMILY:01762
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Histone_H2B
+name: Histone-H2B
+xref: BEL:"Histone H2B Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Histone_H3
+name: Histone-H3
+xref: BEL:"Histone H3 Family"
+xref: IP:IPR000164
+xref: NCIT:C16685
+xref: NEXTPROT-FAMILY:01764
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Histone_H4
+name: Histone-H4
+xref: BEL:"Histone H4 Family"
+xref: IP:IPR001951
+xref: NCIT:C16686
+xref: NEXTPROT-FAMILY:01765
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:HLA_DR
+name: HLA-DR
+xref: BEL:"HLA-DR Family"
+xref: NCIT:C16692
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:HMOX
+name: HMOX
+xref: BEL:"HMOX Family"
+xref: IP:IPR002051
+xref: IP:IPR016053
+xref: IP:IPR016084
+xref: IP:IPR018207
+xref: RE:R-HSA-189382
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:HSP90
+name: HSP90
+xref: BEL:"HSP90 Family"
+xref: NCIT:C17766
+xref: XFAM:PF00183
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:HSP90A
+name: HSP90A
+xref: RE:R-HSA-3371429
+xref: RE:R-HSA-419619
+xref: RE:R-HSA-5082395
+xref: RE:R-HSA-5618088
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:HSP90AA
+name: HSP90AA
+xref: RE:R-HSA-1218829
+xref: RE:R-HSA-1221657
+xref: RE:R-HSA-5082406
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:HSPA
+name: HSPA
+xref: BEL:"HSPA Family"
+xref: XFAM:PF00012
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:HSPB
+name: HSPB
+xref: BEL:"HSPB Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:IFNA
+name: IFNA
+xref: BEL:"IFNA Family"
+xref: RE:R-HSA-909688
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:IFNB
+name: IFNB
+xref: IP:IPR015588
+xref: NCIT:C20495
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:IGFBP
+name: IGFBP
+xref: BEL:"IGFBP Family"
+xref: XFAM:PF00219
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:IKB
+name: IKB
+xref: NCIT:C17583
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:IKK_complex
+name: IKK-complex
+xref: BEL:"IkappaB Kinase Complex"
+xref: RE:R-HSA-1168621
+xref: RE:R-HSA-168113
+xref: RE:R-HSA-177663
+xref: RE:R-HSA-202513
+xref: RE:R-HSA-202562
+xref: RE:R-HSA-5262981
+xref: RE:R-HSA-727820
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:IKK_family
+name: IKK-family
+xref: BEL:"IkappaB Kinase Family"
+xref: NCIT:C104199
+xref: NEXTPROT-FAMILY:03104
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:IL1
+name: IL1
+xref: BEL:"IL1 Family"
+xref: IP:IPR003502
+xref: NCIT:C20506
+xref: NEXTPROT-FAMILY:01820
+xref: XFAM:PF00340
+xref: RE:R-HSA-445744
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:IL12
+name: IL12
+xref: NCIT:C20514
+xref: XFAM:PF03039
+xref: RE:R-HSA-447102
+xref: RE:R-HSA-8950122
+xref: RE:R-HSA-8950228
+xref: RE:R-HSA-8950694
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Inhibin
+name: Inhibin
+xref: NCIT:C2276
+xref: RE:R-HSA-1449688
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Inhibin_A
+name: Inhibin-A
+xref: NCIT:C2277
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Inhibin_B
+name: Inhibin-B
+xref: NCIT:C2278
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:INS
+name: INS
+xref: BEL:"INS Family"
+xref: NEXTPROT-FAMILY:01869
+xref: RE:R-HSA-429349
+xref: RE:R-HSA-429352
+xref: RE:R-HSA-429384
+xref: RE:R-HSA-429407
+xref: RE:R-HSA-429472
+xref: RE:R-HSA-74674
+xref: RE:R-HSA-77385
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:INSR
+name: INSR
+xref: BEL:"INSR Family"
+xref: IP:IPR016246
+xref: NCIT:C17072
+xref: NEXTPROT-FAMILY:03128
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Integrins
+name: Integrins
+xref: NCIT:C16748
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Interferon
+name: Interferon
+xref: NCIT:C20493
+xref: XFAM:PF00143
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Interferon_gamma_receptor
+name: Interferon-gamma-receptor
+xref: BEL:"Interferon Gamma Receptor Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:IRS
+name: IRS
+xref: BEL:"IRS Family"
+xref: XFAM:PF02174
+xref: RE:R-HSA-2445131
+xref: RE:R-HSA-2445139
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:IRX
+name: IRX
+xref: BEL:"IRX Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:JAK
+name: JAK
+xref: BEL:"JAK Family"
+xref: IP:IPR016251
+xref: NEXTPROT-FAMILY:03129
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:JNK
+name: JNK
+xref: BEL:"MAPK JNK Family"
+xref: IP:IPR008351
+xref: RE:R-HSA-450226
+xref: RE:R-HSA-450253
+xref: RE:R-HSA-450289
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:JUN_family
+name: JUN-family
+xref: IP:IPR002112
+xref: IP:IPR005643
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Kinetochore
+name: Kinetochore
+xref: BEL:"Kinetochore Complex"
+xref: GO:GO:0000776
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:KLK
+name: KLK
+xref: BEL:"KLK Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:KSR
+name: KSR
+xref: IP:IPR025561
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Laminin_111
+name: Laminin-111
+xref: BEL:"Laminin 1 Complex"
+xref: RE:R-HSA-215989
+xref: RE:R-HSA-2426371
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Laminin_332
+name: Laminin-332
+xref: BEL:"Laminin 5 Complex"
+xref: RE:R-HSA-216001
+xref: RE:R-HSA-2220790
+xref: RE:R-HSA-2399659
+xref: RE:R-HSA-2533911
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:LDH
+name: LDH
+xref: BEL:"LDH Family"
+xref: NCIT:C25184
+xref: NEXTPROT-FAMILY:02022
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:LH
+name: LH
+xref: BEL:"Luteinizing Hormone Complex"
+xref: RE:R-HSA-378969
+xref: RE:R-HSA-6793931
+xref: RE:R-HSA-6793934
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:MAC
+name: MAC
+xref: BEL:"Membrane Attack Complex"
+xref: GO:GO:0005579
+xref: RE:R-HSA-173728
+xref: RE:R-HSA-8852568
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:MAF
+name: MAF
+xref: BEL:"MAF Family"
+xref: IP:IPR004826
+xref: XFAM:PF02545
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:MAP1LC3
+name: MAP1LC3
+xref: IP:IPR004241
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:MAP2K
+name: MAP2K
+xref: NCIT:C105947
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:MAP3K
+name: MAP3K
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:MAPK
+name: MAPK
+xref: NCIT:C16376
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:MCM
+name: MCM
+xref: GO:GO:0042555
+xref: IP:IPR001208
+xref: IP:IPR031327
+xref: NEXTPROT-FAMILY:02187
+xref: XFAM:PF00493
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:MEF2
+name: MEF2
+xref: BEL:"MEF2 Family"
+xref: IP:IPR033896
+xref: RE:R-HSA-448866
+xref: RE:R-HSA-448868
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:MEK
+name: MEK
+xref: BEL:"MEK1/2 Family"
+xref: RE:R-HSA-5672686
+xref: RE:R-HSA-5672705
+xref: RE:R-HSA-5672716
+xref: RE:R-HSA-5672721
+xref: RE:R-HSA-5674489
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:MMP
+name: MMP
+xref: BEL:"MMP Family"
+xref: NCIT:C18164
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:mTORC1
+name: mTORC1
+xref: NCIT:C96314
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:mTORC2
+name: mTORC2
+xref: BEL:"TORC2 Complex"
+xref: NCIT:C96315
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:MYH
+name: MYH
+xref: BEL:"MYH Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:MYL
+name: MYL
+xref: BEL:"MYL Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:MYL_alkali
+name: MYL-alkali
+xref: BEL:"MYL Alkali Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:MYL_regulatory
+name: MYL-regulatory
+xref: BEL:"MYL Regulatory Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:MYL_slow
+name: MYL-slow
+xref: BEL:"MYL Slow Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:MYST
+name: MYST
+xref: BEL:"MYST Family"
+xref: IP:IPR002717
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:NADH_dehydrogenase
+name: NADH-dehydrogenase
+xref: BEL:"NADH Dehydrogenase Complex"
+xref: XFAM:PF00146
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:NADPH_oxidase
+name: NADPH-oxidase
+xref: BEL:"NADPH Oxidase Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Na_K_ATPase
+name: Na-K-ATPase
+xref: BEL:"Na/K Exchanging ATPase Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:NCOA
+name: NCOA
+xref: BEL:"p160/SRC Family"
+xref: IP:IPR010011
+xref: IP:IPR014920
+xref: IP:IPR014935
+xref: IP:IPR017426
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:NCOR
+name: NCOR
+xref: BEL:"NCOR Family"
+xref: RE:R-HSA-349716
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:NDRG
+name: NDRG
+xref: BEL:"NDRG Family"
+xref: IP:IPR004142
+xref: XFAM:PF03096
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:NFAT
+name: NFAT
+xref: BEL:"NFAT Family"
+xref: IP:IPR008366
+xref: NCIT:C17903
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:NFE
+name: NFE
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:NFkappaB
+name: NFkappaB
+xref: BEL:"Nfkb Complex"
+xref: IP:IPR000451
+xref: IP:IPR030492
+xref: IP:IPR033926
+xref: NCIT:C17380
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:NFkappaB_1
+name: NFkappaB-1
+xref: RE:R-HSA-177656
+xref: RE:R-HSA-177662
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:NFkappaB_2
+name: NFkappaB-2
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:NFY
+name: NFY
+xref: BEL:"Nfy Complex"
+xref: RE:R-HSA-2426131
+xref: RE:R-HSA-381204
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:NKD
+name: NKD
+xref: BEL:"NKD Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:NOS
+name: NOS
+xref: BEL:"NOS Family"
+xref: IP:IPR004030
+xref: IP:IPR012144
+xref: NEXTPROT-FAMILY:02504
+xref: RE:R-HSA-419294
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Notch
+name: Notch
+xref: BEL:"NOTCH Family"
+xref: IP:IPR008297
+xref: IP:IPR010660
+xref: IP:IPR011656
+xref: NEXTPROT-FAMILY:02506
+xref: XFAM:PF00066
+xref: RE:R-HSA-1911440
+xref: RE:R-HSA-1911472
+xref: RE:R-HSA-1911474
+xref: RE:R-HSA-1911547
+xref: RE:R-HSA-1911550
+xref: RE:R-HSA-212420
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:NRG
+name: NRG
+xref: XFAM:PF02158
+xref: RE:R-HSA-1227957
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:NRG_1_2
+name: NRG-1-2
+xref: BEL:"NRG1/2 Family"
+xref: RE:R-HSA-1227956
+xref: RE:R-HSA-1247495
+xref: RE:R-HSA-1248743
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:NRG_3_4
+name: NRG-3-4
+xref: BEL:"NRG3/4 Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:NTRK
+name: NTRK
+xref: BEL:"NTRK Family"
+xref: IP:IPR020777
+xref: IP:IPR031635
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:p14_3_3
+name: p14-3-3
+xref: BEL:"14-3-3 Family"
+xref: IP:IPR000308
+xref: IP:IPR023409
+xref: IP:IPR023410
+xref: XFAM:PF00244
+xref: RE:R-HSA-1445138
+xref: RE:R-HSA-2457842
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:P2RX
+name: P2RX
+xref: BEL:"P2RX Family"
+xref: IP:IPR001429
+xref: IP:IPR027309
+xref: NEXTPROT-FAMILY:02630
+xref: XFAM:PF00864
+xref: RE:R-HSA-139848
+xref: RE:R-HSA-8861873
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:P2RY
+name: P2RY
+xref: BEL:"P2RY Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:p38
+name: p38
+xref: BEL:"MAPK p38 Family"
+xref: IP:IPR008352
+xref: RE:R-HSA-1250100
+xref: RE:R-HSA-1250102
+xref: RE:R-HSA-171016
+xref: RE:R-HSA-189828
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:p53_family
+name: p53-family
+xref: IP:IPR002117
+xref: IP:IPR010991
+xref: IP:IPR011615
+xref: NEXTPROT-FAMILY:02632
+xref: XFAM:PF00870
+xref: RE:R-HSA-6798076
+xref: RE:R-HSA-6798078
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:P70S6K
+name: P70S6K
+xref: BEL:"RPS6KB Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:P90RSK
+name: P90RSK
+xref: BEL:"RPS6KA Family"
+xref: IP:IPR016239
+xref: RE:R-HSA-446849
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PAK
+name: PAK
+xref: BEL:"PAK Family"
+xref: IP:IPR033923
+xref: RE:R-HSA-428475
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PARP
+name: PARP
+xref: XFAM:PF00644
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PARV
+name: PARV
+xref: BEL:"PARV Family"
+xref: IP:IPR028433
+xref: NEXTPROT-FAMILY:02660
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Patched
+name: Patched
+xref: IP:IPR004766
+xref: XFAM:PF02460
+xref: RE:R-HSA-445134
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PBX
+name: PBX
+xref: BEL:"PBX Family"
+xref: IP:IPR005542
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PDE
+name: PDE
+xref: BEL:"PDE Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PDE1
+name: PDE1
+xref: BEL:"PDE1 Family"
+xref: IP:IPR013706
+xref: RE:R-HSA-111952
+xref: RE:R-HSA-111953
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PDE3
+name: PDE3
+xref: BEL:"PDE3 Family"
+xref: NEXTPROT-FAMILY:00803
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PDE4
+name: PDE4
+xref: BEL:"PDE4 Family"
+xref: NCIT:C107433
+xref: NEXTPROT-FAMILY:00804
+xref: RE:R-HSA-111960
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PDE6
+name: PDE6
+xref: BEL:"PDE6 Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PDE7
+name: PDE7
+xref: RE:R-HSA-418540
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PDE8
+name: PDE8
+xref: RE:R-HSA-418541
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PDGF
+name: PDGF
+xref: BEL:"PDGF Family"
+xref: NCIT:C20448
+xref: RE:R-HSA-381926
+xref: RE:R-HSA-381936
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PDGFR
+name: PDGFR
+xref: BEL:"PDGFR Family"
+xref: NCIT:C17322
+xref: RE:R-HSA-186769
+xref: RE:R-HSA-186770
+xref: RE:R-HSA-186791
+xref: RE:R-HSA-186792
+xref: RE:R-HSA-186821
+xref: RE:R-HSA-8864040
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PDGFR_AA
+name: PDGFR-AA
+xref: IP:IPR027290
+xref: RE:R-HSA-186816
+xref: RE:R-HSA-186817
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PDGFR_AB
+name: PDGFR-AB
+xref: RE:R-HSA-186769
+xref: RE:R-HSA-186770
+xref: RE:R-HSA-186791
+xref: RE:R-HSA-186792
+xref: RE:R-HSA-186821
+xref: RE:R-HSA-8864040
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PDGFR_BB
+name: PDGFR-BB
+xref: IP:IPR027288
+xref: RE:R-HSA-186799
+xref: RE:R-HSA-186805
+xref: RE:R-HSA-8864046
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PDGF_AA
+name: PDGF-AA
+xref: RE:R-HSA-184203
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PDGF_AB
+name: PDGF-AB
+xref: RE:R-HSA-380759
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PDGF_BB
+name: PDGF-BB
+xref: IP:IPR015583
+xref: MESH:C072194
+xref: RE:R-HSA-184196
+xref: RE:R-HSA-184198
+xref: RE:R-HSA-184204
+xref: RE:R-HSA-184206
+xref: RE:R-HSA-2426276
+xref: RE:R-HSA-380748
+xref: RE:R-HSA-380751
+xref: RE:R-HSA-380759
+xref: RE:R-HSA-381935
+xref: RE:R-HSA-381938
+xref: RE:R-HSA-387074
+xref: RE:R-HSA-392712
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PDGF_CC
+name: PDGF-CC
+xref: RE:R-HSA-381941
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PDGF_DD
+name: PDGF-DD
+xref: RE:R-HSA-381930
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PDH
+name: PDH
+xref: BEL:"Pyruvate Dehydrogenase Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PDK
+name: PDK
+xref: BEL:"PDK Family"
+xref: RE:R-HSA-203947
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Pertussis_toxin
+name: Pertussis-toxin
+xref: NCIT:C736
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PFN
+name: PFN
+xref: BEL:"PFN Family"
+xref: IP:IPR005455
+xref: XFAM:PF00235
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PhK
+name: PhK
+xref: BEL:"Phosphorylase B Kinase Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Phosphatase
+name: Phosphatase
+xref: MESH:D010749
+xref: NCIT:C16981
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PI3K
+name: PI3K
+xref: BEL:"p85/p110 PI3Kinase Complex"
+xref: NCIT:C17270
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PI3K_p110
+name: PI3K-p110
+xref: BEL:"PIK3C Class IA Family"
+xref: IP:IPR003113
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PI3K_p85
+name: PI3K-p85
+xref: RE:R-HSA-74688
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PIK3R_I
+name: PIK3R-I
+xref: BEL:"PIK3R Class IA Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PKA
+name: PKA
+xref: NCIT:C16479
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PKC
+name: PKC
+xref: BEL:"PRKC Family"
+xref: IP:IPR012233
+xref: MESH:D011493
+xref: NCIT:C17017
+xref: NEXTPROT-FAMILY:03065
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PKI
+name: PKI
+xref: BEL:"PKI Family"
+xref: IP:IPR004171
+xref: XFAM:PF02827
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PLA2
+name: PLA2
+xref: BEL:"PLA2 Family"
+xref: NCIT:C16979
+xref: NEXTPROT-FAMILY:02840
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PLA2G2
+name: PLA2G2
+xref: BEL:"PLA2G2 Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PLA2G4
+name: PLA2G4
+xref: NCIT:C19836
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PLC
+name: PLC
+xref: BEL:"PLC Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PLCB
+name: PLCB
+xref: BEL:"PLCB Family"
+xref: IP:IPR016280
+xref: RE:R-HSA-111854
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PLCD
+name: PLCD
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PLCG
+name: PLCG
+xref: BEL:"PLCG Family"
+xref: IP:IPR016279
+xref: IP:IPR035023
+xref: IP:IPR035024
+xref: NCIT:C126114
+xref: RE:R-HSA-1168365
+xref: RE:R-HSA-1169086
+xref: RE:R-HSA-1169089
+xref: RE:R-HSA-2029095
+xref: RE:R-HSA-2685653
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PLD
+name: PLD
+xref: BEL:"PLD Family"
+xref: IP:IPR015679
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PPAP2
+name: PPAP2
+xref: BEL:"PPAP2 Family"
+xref: RE:R-HSA-428110
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PPAR
+name: PPAR
+xref: BEL:"PPAR Family"
+xref: IP:IPR003074
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PPP1
+name: PPP1
+xref: NEXTPROT-FAMILY:03001
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PPP1C
+name: PPP1C
+xref: BEL:"PPP1C Family"
+xref: IP:IPR031675
+xref: RE:R-HSA-163538
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PPP1R
+name: PPP1R
+xref: BEL:"PPP1R Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PPP2
+name: PPP2
+xref: RE:R-HSA-196206
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PPP2C
+name: PPP2C
+xref: BEL:"PPP2C Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PPP2R_A
+name: PPP2R-A
+xref: BEL:"PPP2R Subunit A Family"
+xref: RE:R-HSA-165990
+xref: RE:R-HSA-165997
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PPP2R_B
+name: PPP2R-B
+xref: BEL:"PPP2R Subunit B Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PPP3
+name: PPP3
+xref: BEL:"Calcineurin Complex"
+xref: BEL:"PPP3 Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PPP3C
+name: PPP3C
+xref: BEL:"PPP3C Family"
+xref: RE:R-HSA-201779
+xref: RE:R-HSA-201798
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PPP3R
+name: PPP3R
+xref: BEL:"PPP3R Family"
+xref: NEXTPROT-FAMILY:00421
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PRC1_complex
+name: PRC1-complex
+xref: BEL:"PRC1 Maintenance Complex"
+xref: NCIT:C19866
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PRC2_complex
+name: PRC2-complex
+xref: BEL:"PRC2 Initiation Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PRDX
+name: PRDX
+xref: BEL:"PRDX Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PRKAC
+name: PRKAC
+xref: BEL:"PRKA Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PRKAR
+name: PRKAR
+xref: BEL:"PRKAR Family"
+xref: IP:IPR012198
+xref: RE:R-HSA-111921
+xref: RE:R-HSA-111923
+xref: RE:R-HSA-5610566
+xref: RE:R-HSA-5610568
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PRKG
+name: PRKG
+xref: BEL:"PRKG Family"
+xref: IP:IPR002374
+xref: IP:IPR035014
+xref: RE:R-HSA-418379
+xref: RE:R-HSA-4551456
+xref: RE:R-HSA-4551462
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Propionyl_CoA_carboxylase
+name: Propionyl-CoA-carboxylase
+xref: BEL:"Propionyl CoA Carboxylase Complex"
+xref: RE:R-HSA-2993807
+xref: RE:R-HSA-2993809
+xref: RE:R-HSA-3323122
+xref: RE:R-HSA-3323155
+xref: RE:R-HSA-71025
+xref: RE:R-HSA-71026
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Protease
+name: Protease
+xref: NCIT:C16965
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Proteasome
+name: Proteasome
+xref: BEL:"Proteasome Complex"
+xref: GO:GO:0000502
+xref: MESH:D046988
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:PTGER
+name: PTGER
+xref: BEL:"PTGER Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:RAB
+name: RAB
+xref: BEL:"RAB Family"
+xref: NEXTPROT-FAMILY:03661
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:RAC
+name: RAC
+xref: BEL:"RAC Family"
+xref: NEXTPROT-FAMILY:03066
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:RAF
+name: RAF
+xref: BEL:"RAF Family"
+xref: NEXTPROT-FAMILY:03114
+xref: RE:R-HSA-5672708
+xref: RE:R-HSA-5672726
+xref: RE:R-HSA-5674134
+xref: RE:R-HSA-5674136
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:RAL
+name: RAL
+xref: IP:IPR028412
+xref: RE:R-HSA-170994
+xref: RE:R-HSA-170998
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:RAP1
+name: RAP1
+xref: NEXTPROT-FAMILY:04773
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:RAPGEF
+name: RAPGEF
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:RAR
+name: RAR
+xref: BEL:"RAR Family"
+xref: NCIT:C17532
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:RAS
+name: RAS
+xref: BEL:"RAS Family"
+xref: NCIT:C17061
+xref: NEXTPROT-FAMILY:03663
+xref: XFAM:PF00071
+xref: RE:R-HSA-109782
+xref: RE:R-HSA-109783
+xref: RE:R-HSA-109796
+xref: RE:R-HSA-167204
+xref: RE:R-HSA-6802607
+xref: RE:R-HSA-6802608
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:RASA
+name: RASA
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:RASAL
+name: RASAL
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:RasGAP
+name: RasGAP
+xref: XFAM:PF00616
+xref: RE:R-HSA-5658216
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:RASGRF
+name: RASGRF
+xref: RE:R-HSA-442734
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:RASGRP
+name: RASGRP
+xref: RE:R-HSA-2685656
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:RASSF
+name: RASSF
+xref: IP:IPR033614
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:RFC
+name: RFC
+xref: BEL:"RFC Complex"
+xref: GO:GO:0005663
+xref: RE:R-HSA-174454
+xref: RE:R-HSA-68436
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:RFX
+name: RFX
+xref: BEL:"RFX Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:RGL
+name: RGL
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:RHO
+name: RHO
+xref: BEL:"RHO Family"
+xref: NEXTPROT-FAMILY:03668
+xref: RE:R-HSA-419160
+xref: RE:R-HSA-419161
+xref: RE:R-HSA-419164
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:RhoGDI
+name: RhoGDI
+xref: IP:IPR000406
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:RNApo_I
+name: RNApo-I
+xref: BEL:"RNApo I Complex"
+xref: NCIT:C95947
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:RNApo_II
+name: RNApo-II
+xref: BEL:"RNApo II Complex"
+xref: NCIT:C95948
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:ROCK
+name: ROCK
+xref: BEL:"ROCK Family"
+xref: IP:IPR015008
+xref: IP:IPR020684
+xref: RE:R-HSA-419057
+xref: RE:R-HSA-4687776
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:ROR
+name: ROR
+xref: BEL:"ROR Family"
+xref: IP:IPR016247
+xref: NEXTPROT-FAMILY:03130
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:RPA
+name: RPA
+xref: RE:R-HSA-68462
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:RSK
+name: RSK
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:RTK
+name: RTK
+xref: NCIT:C17660
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:RXR
+name: RXR
+xref: BEL:"RXR Family"
+xref: NCIT:C17534
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:S100A
+name: S100A
+xref: BEL:"S100A Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:S1PR
+name: S1PR
+xref: BEL:"S1PR Family"
+xref: IP:IPR004061
+xref: RE:R-HSA-419346
+xref: RE:R-HSA-419401
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:SAA
+name: SAA
+xref: BEL:"SAA Family"
+xref: IP:IPR000096
+xref: NEXTPROT-FAMILY:03483
+xref: XFAM:PF00277
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:SCD
+name: SCD
+xref: BEL:"SCD Family"
+xref: IP:IPR001522
+xref: IP:IPR015876
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:SERCA
+name: SERCA
+xref: BEL:"ATP2A Family"
+xref: IP:IPR005782
+xref: RE:R-HSA-418312
+xref: RE:R-HSA-427905
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:SERPINB
+name: SERPINB
+xref: BEL:"SERPINB Family"
+xref: NEXTPROT-FAMILY:03579
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:SHC
+name: SHC
+xref: IP:IPR006019
+xref: RE:R-HSA-167023
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:SLC2A
+name: SLC2A
+xref: BEL:"SLC2A Family"
+xref: NEXTPROT-FAMILY:02159
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:SMAD
+name: SMAD
+xref: BEL:"SMAD Family"
+xref: IP:IPR001132
+xref: IP:IPR013019
+xref: IP:IPR013790
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:SMAD2_3
+name: SMAD2-3
+xref: RE:R-HSA-171172
+xref: RE:R-HSA-171182
+xref: RE:R-HSA-177105
+xref: RE:R-HSA-2176482
+xref: RE:R-HSA-2187329
+xref: RE:R-HSA-2187387
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:SMC1
+name: SMC1
+xref: BEL:"SMC1 Family"
+xref: NEXTPROT-FAMILY:03686
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:SNAI
+name: SNAI
+xref: BEL:"SNAI Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:SOD
+name: SOD
+xref: BEL:"Cu-Zn SOD Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:SOS
+name: SOS
+xref: BEL:"SOS Family"
+xref: RE:R-HSA-167215
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:SPRED
+name: SPRED
+xref: IP:IPR023337
+xref: RE:R-HSA-5658219
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:SPRY
+name: SPRY
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:SRC
+name: SRC
+xref: BEL:"SRC Family"
+xref: NEXTPROT-FAMILY:03131
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:SREBF
+name: SREBF
+xref: BEL:"SREBF Family"
+xref: RE:R-HSA-1655720
+xref: RE:R-HSA-1655725
+xref: RE:R-HSA-1655726
+xref: RE:R-HSA-1655730
+xref: RE:R-HSA-1655732
+xref: RE:R-HSA-1655734
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:STAT
+name: STAT
+xref: BEL:"STAT Family"
+xref: IP:IPR001217
+xref: IP:IPR012345
+xref: IP:IPR013799
+xref: IP:IPR013800
+xref: IP:IPR013801
+xref: IP:IPR015988
+xref: NCIT:C19618
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:STAT5
+name: STAT5
+xref: BEL:"STAT5 Family"
+xref: RE:R-HSA-1469978
+xref: RE:R-HSA-452094
+xref: RE:R-HSA-507919
+xref: RE:R-HSA-507929
+xref: RE:R-HSA-508012
+xref: RE:R-HSA-8865622
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Sulfonylurea_receptor
+name: Sulfonylurea-receptor
+xref: BEL:"Sulfonylurea Receptor Family"
+xref: IP:IPR000388
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:SWI_SNF
+name: SWI-SNF
+xref: BEL:"SWI/SNF Complex"
+xref: NCIT:C20591
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:TAP
+name: TAP
+xref: BEL:"TAP Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:TCF_LEF
+name: TCF-LEF
+xref: BEL:"TCF/LEF Family"
+xref: IP:IPR013558
+xref: IP:IPR024940
+xref: NEXTPROT-FAMILY:03943
+xref: RE:R-HSA-3299546
+xref: RE:R-HSA-5323539
+xref: RE:R-HSA-8944354
+xref: RE:R-HSA-8951427
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:TCR
+name: TCR
+xref: MESH:D011948
+xref: NCIT:C17065
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:TFAP2
+name: TFAP2
+xref: BEL:"TFAP2 Family"
+xref: IP:IPR004979
+xref: IP:IPR013854
+xref: NEXTPROT-FAMILY:00209
+xref: RE:R-HSA-8864283
+xref: RE:R-HSA-8864286
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:TFDP
+name: TFDP
+xref: BEL:"TFDP Family"
+xref: RE:R-HSA-1362227
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:TGFB
+name: TGFB
+xref: BEL:"TGFB Family"
+xref: IP:IPR015615
+xref: IP:IPR016319
+xref: NEXTPROT-FAMILY:03989
+xref: RE:R-HSA-114657
+xref: RE:R-HSA-2395330
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:TGFBR
+name: TGFBR
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:THBS
+name: THBS
+xref: BEL:"THBS Family"
+xref: IP:IPR003367
+xref: IP:IPR008859
+xref: IP:IPR017897
+xref: IP:IPR028974
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:THR
+name: THR
+xref: BEL:"THR Family"
+xref: NCIT:C17078
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Thrombin_antithrombin
+name: Thrombin-antithrombin
+xref: BEL:"Thrombin Antithrombin Complex"
+xref: RE:R-HSA-140812
+xref: RE:R-HSA-140871
+xref: RE:R-HSA-140874
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:TIAM
+name: TIAM
+xref: NEXTPROT-FAMILY:04014
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:TIF_IB
+name: TIF-IB
+xref: BEL:"TIF IB Complex"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:TLR
+name: TLR
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:TN
+name: TN
+xref: BEL:"TN Family"
+xref: NCIT:C104676
+xref: NEXTPROT-FAMILY:03964
+xref: RE:R-HSA-2672035
+xref: RE:R-HSA-2681744
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:TNF
+name: TNF
+xref: NEXTPROT-FAMILY:04243
+xref: XFAM:PF00229
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:TNFRSF
+name: TNFRSF
+xref: BEL:"TNFRSF Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:TOP2
+name: TOP2
+xref: BEL:"TOP2 Family"
+xref: IP:IPR001154
+xref: IP:IPR001241
+xref: IP:IPR002205
+xref: IP:IPR012542
+xref: IP:IPR013506
+xref: IP:IPR013757
+xref: IP:IPR013758
+xref: IP:IPR013759
+xref: IP:IPR013760
+xref: IP:IPR018522
+xref: IP:IPR024946
+xref: IP:IPR031660
+xref: IP:IPR034157
+xref: NCIT:C18434
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Troponin
+name: Troponin
+xref: RE:R-HSA-390583
+xref: RE:R-HSA-390585
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Troponin_C
+name: Troponin-C
+xref: RE:R-HSA-390532
+xref: RE:R-HSA-390587
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Troponin_I
+name: Troponin-I
+xref: NCIT:C17343
+xref: RE:R-HSA-390541
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Troponin_T
+name: Troponin-T
+xref: IP:IPR027707
+xref: NCIT:C38041
+xref: RE:R-HSA-390546
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Tryptase
+name: Tryptase
+xref: BEL:"Tryptase Family"
+xref: NCIT:C120030
+xref: NEXTPROT-FAMILY:02767
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:TSC
+name: TSC
+xref: RE:R-HSA-165175
+xref: RE:R-HSA-165180
+xref: RE:R-HSA-381855
+xref: RE:R-HSA-5672337
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:TUBA
+name: TUBA
+xref: BEL:"TUBA Family"
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:TUBB
+name: TUBB
+xref: BEL:"TUBB Family"
+xref: NCIT:C104166
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:TUBG
+name: TUBG
+xref: IP:IPR002454
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Tubulin
+name: Tubulin
+xref: NCIT:C17219
+xref: NEXTPROT-FAMILY:04239
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:TXN
+name: TXN
+xref: BEL:"TXN Family"
+xref: NEXTPROT-FAMILY:04000
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:TXNRD
+name: TXNRD
+xref: BEL:"TXNRD Family"
+xref: IP:IPR006338
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:UBE2
+name: UBE2
+xref: BEL:"UBE2 Family"
+xref: NEXTPROT-FAMILY:04282
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Ubiquitin
+name: Ubiquitin
+xref: NCIT:C17227
+xref: NEXTPROT-FAMILY:04276
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:VAV
+name: VAV
+xref: BEL:"VAV Family"
+xref: RE:R-HSA-2029115
+xref: RE:R-HSA-430172
+xref: RE:R-HSA-434632
+xref: RE:R-HSA-442272
+xref: RE:R-HSA-442295
+xref: RE:R-HSA-5218789
+xref: RE:R-HSA-5340329
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:VEGF
+name: VEGF
+xref: BEL:"VEGF Family"
+xref: NCIT:C20450
+xref: RE:R-HSA-195361
+xref: RE:R-HSA-195376
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:VEGFR
+name: VEGFR
+xref: BEL:"VEGFR Family"
+xref: NCIT:C17293
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:Wnt
+name: Wnt
+xref: BEL:"WNT Family"
+xref: IP:IPR005817
+xref: IP:IPR018161
+xref: NEXTPROT-FAMILY:04686
+xref: XFAM:PF00110
+xref: RE:R-HSA-3238268
+xref: RE:R-HSA-3238374
+xref: RE:R-HSA-3247790
+xref: RE:R-HSA-3247824
+xref: RE:R-HSA-3247835
+is_a: ONT:PROTEIN-FAMILY
+
+[Term]
+id: FPLX:YBX
+name: YBX
+is_a: ONT:PROTEIN-FAMILY
+

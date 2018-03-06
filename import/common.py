@@ -62,10 +62,10 @@ def load_entity_list(filename):
 
 
 def get_child_map():
-    """Get dictionary mapping BE IDs to Uniprot IDs of all children."""
+    """Get dictionary mapping FPLX IDs to Uniprot IDs of all children."""
     entities = common.load_entity_list('../entities.csv')
 
-    be_agents = [Agent(be_id, db_refs={'BE': be_id})
+    be_agents = [Agent(be_id, db_refs={'FPLX': be_id})
                  for be_id in entities]
     ex = Expander(hierarchies)
     child_map = {}
