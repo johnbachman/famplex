@@ -1,8 +1,14 @@
-from __future__ import print_function, unicode_literals
 import os
 import csv
+import sys
 import datetime
 import collections
+
+
+if sys.version_info.major < 3:
+    raise Exception('This script should be run in Python 3.')
+
+
 
 Reference = collections.namedtuple('Reference', ['ns', 'id'])
 Synonym = collections.namedtuple('Synonym', ['name', 'status'])
