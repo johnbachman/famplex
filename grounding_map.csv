@@ -2305,7 +2305,7 @@ ERK mitogen-activated protein kinase,FPLX,ERK,,,,
 Jak,FPLX,JAK,,,,
 JAKs,FPLX,JAK,,,,
 c-src,HGNC,SRC,,,,
-src kinases,FPLX,SRC
+src kinases,FPLX,SRC,,,,
 phospho-ERK1/2,FPLX,ERK,,,,
 ERK1/2 MAPK,FPLX,ERK,,,,
 STATs,FPLX,STAT,,,,
