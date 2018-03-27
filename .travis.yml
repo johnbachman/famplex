@@ -16,4 +16,6 @@ script:
   - export PYTHONPATH=$PYTHONPATH:$TRAVIS_BUILD_DIR/indra
   - python check_references.py
   - python export/relations_graph.py
-  - python export/obo.py
+  - if [[ "$TRAVIS_PYTHON_VERSION" == "3.5" ]]; then
+      python export/obo.py;
+    fi

@@ -1,14 +1,20 @@
-from __future__ import print_function, unicode_literals
 import os
 import csv
+import sys
 import datetime
 import collections
+
+
+if sys.version_info.major < 3:
+    raise Exception('This script should be run in Python 3.')
+
+
 
 Reference = collections.namedtuple('Reference', ['ns', 'id'])
 Synonym = collections.namedtuple('Synonym', ['name', 'status'])
 
 class OboTerm(object):
-    def __init__(self, term_id, name, synonyms=None, xrefs=None, isas=None):
+    def __init__(self, term_id, name, rels, synonyms=None, xrefs=None):
         self.term_id = term_id
         self.name = name
         self.synonyms = synonyms
@@ -16,10 +22,7 @@ class OboTerm(object):
             self.xrefs = xrefs
         else:
             self.xrefs = []
-        if isas is not None:
-            self.isas = isas
-        else:
-            self.isas = []
+        self.rels = rels
 
     def to_obo(self):
         obo_str = '[Term]\n'
@@ -34,11 +37,14 @@ class OboTerm(object):
                 entry = 'NEXTPROT-FAMILY:%s' % xref.id[3:]
             elif xref.ns == 'PF':
                 entry = 'XFAM:%s' % xref.id
+            elif xref.ns == 'GO':
+                entry = xref.id
             else:
                 entry = '%s:%s' % (xref.ns, xref.id)
             obo_str += 'xref: %s\n' % entry
-        for isa in self.isas:
-            obo_str += 'is_a: %s:%s\n' % (isa.ns, isa.id)
+        for rel_type, rel_entries in self.rels.items():
+            for ref in rel_entries:
+                obo_str += '%s: %s:%s\n' % (rel_type, ref.ns, ref.id)
         return obo_str
 
     def __str__(self):
@@ -50,7 +56,7 @@ def get_obo_terms():
     entities_file = os.path.join(path_this, os.pardir, 'entities.csv')
     grounding_file = os.path.join(path_this, os.pardir, 'grounding_map.csv')
     equiv_file = os.path.join(path_this, os.pardir, 'equivalences.csv')
-    # For each entity in famplex
+    rel_file = os.path.join(path_this, os.pardir, 'relations.csv')
     with open(entities_file, 'r') as fh:
         entities = [l.strip() for l in fh.readlines()]
     with open(equiv_file, 'r') as fh:
@@ -59,8 +65,8 @@ def get_obo_terms():
                                quotechar=str(u'"'))
         equivalences = collections.defaultdict(list)
         for row in csvreader:
-            source_ns, source_id, be_id = row
-            equivalences[be_id].append((source_ns, source_id))
+            source_ns, source_id, fplx_id = row
+            equivalences[fplx_id].append((source_ns, source_id))
     with open(grounding_file) as fh:
         csvreader = csv.reader(fh, delimiter=str(u','), lineterminator='\r\n',
                                quoting=csv.QUOTE_MINIMAL,
@@ -73,6 +79,29 @@ def get_obo_terms():
             for ns, id in zip(namespaces, ids):
                 if ns == 'FPLX':
                     textrefs[id].append(text_str)
+    with open(rel_file) as fh:
+        rels = {entity: collections.OrderedDict(is_a=[],
+                                                part_of=[],
+                                                inverse_is_a=[],
+                                                has_part=[])
+                for entity in entities}
+        csvreader = csv.reader(fh, delimiter=str(u','), lineterminator='\r\n',
+                               quoting=csv.QUOTE_MINIMAL,
+                               quotechar=str(u'"'))
+        for row in csvreader:
+            ns1, id1, rel, ns2, id2 = row
+            if ns1 == 'FPLX':
+                if rel == 'isa':
+                    rels[id1]['is_a'].append(Reference(ns2, id2))
+                elif rel == 'partof':
+                    rels[id1]['part_of'].append(Reference(ns2, id2))
+            if ns2 == 'FPLX':
+                if rel == 'isa':
+                    rels[id2]['inverse_is_a'].append(Reference(ns1, id1))
+                elif rel == 'partof':
+                    rels[id2]['has_part'].append(Reference(ns1, id1))
+
+    # For each entity in famplex
     for entity in entities:
         entity_id = Reference('FPLX', entity)
         # Construct string name
@@ -89,11 +118,14 @@ def get_obo_terms():
         if equivs:
             for equiv in equivs:
                 xrefs.append(Reference(equiv[0], equiv[1]))
-        # Get isa
-        isas = []
-        isas.append(Reference('ONT', 'PROTEIN-FAMILY'))
-        term = OboTerm(entity_id, name, synonyms, xrefs, isas)
+        # If the entity has no isa relations, connect it to the root
+        if not rels[entity]['is_a'] and not rels[entity]['part_of']:
+            rels[entity]['is_a'].append(Reference('FPLX', 'root'))
+        term = OboTerm(entity_id, name, rels[entity], synonyms, xrefs)
         obo_terms.append(term)
+    obo_terms.append(OboTerm(Reference('FPLX', 'root'),
+                                       'PROTEIN-FAMILY-OR-COMPLEX',
+                                       {}, [], {}))
     return obo_terms
 
 def save_obo_terms(obo_terms, output_file=None):
