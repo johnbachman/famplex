@@ -17,5 +17,5 @@ script:
   - python check_references.py
   - python export/relations_graph.py
   - if [[ "$TRAVIS_PYTHON_VERSION" == "3.5" ]]; then
-      python export/obo.py
+      python export/obo.py;
     fi
