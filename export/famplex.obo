@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 18:03:2018 20:33
+date: 26:03:2018 20:49
 
 [Term]
 id: FPLX:9_1_1
@@ -330,6 +330,7 @@ xref: RE:R-HSA-2317317
 xref: RE:R-HSA-2317329
 xref: RE:R-HSA-2400006
 xref: RE:R-HSA-2400013
+xref: SIGNOR:SIGNOR-PF24
 is_a: FPLX:root
 inverse_is_a: HGNC:AKT1
 inverse_is_a: HGNC:AKT2
@@ -596,6 +597,7 @@ xref: NCIT:C116019
 xref: RE:R-HSA-2151213
 xref: RE:R-HSA-381844
 xref: RE:R-HSA-381845
+xref: SIGNOR:SIGNOR-PF6
 part_of: FPLX:AMPK
 inverse_is_a: HGNC:PRKAA1
 inverse_is_a: HGNC:PRKAA2
@@ -868,6 +870,14 @@ inverse_is_a: HGNC:GDF6
 inverse_is_a: HGNC:GDF7
 
 [Term]
+id: FPLX:BMP_receptor
+name: BMP-receptor
+xref: SIGNOR:SIGNOR-PF9
+is_a: FPLX:root
+inverse_is_a: FPLX:BMP_receptor_type_I
+inverse_is_a: FPLX:BMP_receptor_type_II
+
+[Term]
 id: FPLX:BMP_receptor_type_I
 name: BMP-receptor-type-I
 synonym: "BMP Receptor Type I" EXACT []
@@ -877,7 +887,7 @@ synonym: "bone morphogenetic protein receptor type I" EXACT []
 synonym: "bone morphogenetic protein type I receptors" EXACT []
 synonym: "BRI" EXACT []
 xref: BEL:"BMP Receptor Type I Family"
-is_a: FPLX:root
+is_a: FPLX:BMP_receptor
 inverse_is_a: HGNC:ACVR1
 inverse_is_a: HGNC:BMPR1A
 inverse_is_a: HGNC:BMPR1B
@@ -894,7 +904,7 @@ synonym: "BRII" EXACT []
 xref: BEL:"BMP Receptor Type II Family"
 xref: RE:R-HSA-201465
 xref: RE:R-HSA-201804
-is_a: FPLX:root
+is_a: FPLX:BMP_receptor
 inverse_is_a: HGNC:ACVR2A
 inverse_is_a: HGNC:ACVR2B
 inverse_is_a: HGNC:BMPR2
@@ -2056,6 +2066,7 @@ xref: RE:R-HSA-3772407
 xref: RE:R-HSA-3858467
 xref: RE:R-HSA-3858479
 xref: RE:R-HSA-4652685
+xref: SIGNOR:SIGNOR-PF10
 is_a: FPLX:root
 inverse_is_a: HGNC:DVL1
 inverse_is_a: HGNC:DVL2
@@ -2277,6 +2288,11 @@ synonym: "ERKs" EXACT []
 synonym: "Extracellular Signal Regulated Kinase" EXACT []
 synonym: "extracellular signal-regulated kinase" EXACT []
 synonym: "MAPK" EXACT []
+synonym: "ERK MAPK" EXACT []
+synonym: "ERK mitogen-activated protein kinase" EXACT []
+synonym: "phospho-ERK1/2" EXACT []
+synonym: "ERK1/2 MAPK" EXACT []
+synonym: "ERK-1/2" EXACT []
 xref: BEL:"MAPK Erk1/2 Family"
 xref: BEL:"MAPK Erk1/3 Family"
 xref: IP:IPR008349
@@ -2293,6 +2309,7 @@ xref: RE:R-HSA-5674340
 xref: RE:R-HSA-5674341
 xref: RE:R-HSA-5675361
 xref: RE:R-HSA-5675363
+xref: SIGNOR:SIGNOR-PF1
 is_a: FPLX:MAPK
 inverse_is_a: HGNC:MAPK1
 inverse_is_a: HGNC:MAPK3
@@ -2405,6 +2422,7 @@ synonym: "FGF" EXACT []
 xref: BEL:"FGF Family"
 xref: IP:IPR002209
 xref: XFAM:PF00167
+xref: SIGNOR:SIGNOR-PF8
 is_a: FPLX:root
 inverse_is_a: HGNC:FGF1
 inverse_is_a: HGNC:FGF2
@@ -2436,6 +2454,7 @@ synonym: "FGFR" EXACT []
 xref: BEL:"FGFR Family"
 xref: IP:IPR016248
 xref: NCIT:C17297
+xref: SIGNOR:SIGNOR-PF23
 is_a: FPLX:root
 inverse_is_a: HGNC:FGFR1
 inverse_is_a: HGNC:FGFR2
@@ -2519,6 +2538,7 @@ synonym: "FoxO" EXACT []
 xref: BEL:"FOXO Family"
 xref: IP:IPR032067
 xref: NCIT:C118892
+xref: SIGNOR:SIGNOR-PF27
 is_a: FPLX:root
 inverse_is_a: HGNC:FOXO1
 inverse_is_a: HGNC:FOXO3
@@ -2543,6 +2563,7 @@ synonym: "Fz" EXACT []
 xref: BEL:"FZD Family"
 xref: XFAM:PF01534
 xref: RE:R-HSA-517388
+xref: SIGNOR:SIGNOR-PF11
 is_a: FPLX:root
 inverse_is_a: HGNC:FZD1
 inverse_is_a: HGNC:FZD10
@@ -2922,6 +2943,7 @@ xref: RE:R-HSA-400093
 xref: RE:R-HSA-6814207
 xref: RE:R-HSA-6814413
 xref: RE:R-HSA-8850524
+xref: SIGNOR:SIGNOR-PF4
 is_a: FPLX:root
 inverse_is_a: HGNC:GNB1
 inverse_is_a: HGNC:GNB2
@@ -2941,6 +2963,7 @@ xref: IP:IPR001770
 xref: NEXTPROT-FAMILY:01400
 xref: RE:R-HSA-167442
 xref: RE:R-HSA-400062
+xref: SIGNOR:SIGNOR-PF3
 is_a: FPLX:root
 inverse_is_a: HGNC:GNG10
 inverse_is_a: HGNC:GNG11
@@ -3776,6 +3799,8 @@ inverse_is_a: HGNC:MKX
 id: FPLX:JAK
 name: JAK
 synonym: "JAK" EXACT []
+synonym: "Jak" EXACT []
+synonym: "JAKs" EXACT []
 xref: BEL:"JAK Family"
 xref: IP:IPR016251
 xref: NEXTPROT-FAMILY:03129
@@ -3799,6 +3824,7 @@ xref: IP:IPR008351
 xref: RE:R-HSA-450226
 xref: RE:R-HSA-450253
 xref: RE:R-HSA-450289
+xref: SIGNOR:SIGNOR-PF15
 is_a: FPLX:MAPK
 inverse_is_a: HGNC:MAPK8
 inverse_is_a: HGNC:MAPK9
@@ -3935,6 +3961,15 @@ has_part: HGNC:CGA
 has_part: HGNC:LHB
 
 [Term]
+id: FPLX:LPAR
+name: LPAR
+xref: SIGNOR:SIGNOR-PF2
+is_a: FPLX:root
+inverse_is_a: HGNC:LPAR1
+inverse_is_a: HGNC:LPAR2
+inverse_is_a: HGNC:LPAR3
+
+[Term]
 id: FPLX:MAC
 name: MAC
 synonym: "MAC" EXACT []
@@ -4017,9 +4052,7 @@ inverse_is_a: HGNC:MAP3K12
 inverse_is_a: HGNC:MAP3K13
 inverse_is_a: HGNC:MAP3K14
 inverse_is_a: HGNC:MAP3K15
-inverse_is_a: HGNC:TAOK1
-inverse_is_a: HGNC:TAOK2
-inverse_is_a: HGNC:TAOK3
+inverse_is_a: FPLX:TAOK
 inverse_is_a: HGNC:MAP3K19
 inverse_is_a: HGNC:MAP3K20
 inverse_is_a: HGNC:MAP3K21
@@ -4088,6 +4121,7 @@ xref: RE:R-HSA-5672705
 xref: RE:R-HSA-5672716
 xref: RE:R-HSA-5672721
 xref: RE:R-HSA-5674489
+xref: SIGNOR:SIGNOR-PF25
 is_a: FPLX:MAP2K
 inverse_is_a: HGNC:MAP2K1
 inverse_is_a: HGNC:MAP2K2
@@ -4389,6 +4423,7 @@ xref: IP:IPR000451
 xref: IP:IPR030492
 xref: IP:IPR033926
 xref: NCIT:C17380
+xref: SIGNOR:SIGNOR-PF12
 is_a: FPLX:root
 has_part: FPLX:NFkappaB_1
 has_part: FPLX:NFkappaB_2
@@ -4496,6 +4531,7 @@ xref: RE:R-HSA-1911474
 xref: RE:R-HSA-1911547
 xref: RE:R-HSA-1911550
 xref: RE:R-HSA-212420
+xref: SIGNOR:SIGNOR-PF30
 is_a: FPLX:root
 inverse_is_a: HGNC:NOTCH1
 inverse_is_a: HGNC:NOTCH2
@@ -4567,6 +4603,7 @@ xref: IP:IPR023410
 xref: XFAM:PF00244
 xref: RE:R-HSA-1445138
 xref: RE:R-HSA-2457842
+xref: SIGNOR:SIGNOR-PF7
 is_a: FPLX:root
 inverse_is_a: HGNC:SFN
 inverse_is_a: HGNC:YWHAB
@@ -4635,6 +4672,7 @@ xref: RE:R-HSA-1250100
 xref: RE:R-HSA-1250102
 xref: RE:R-HSA-171016
 xref: RE:R-HSA-189828
+xref: SIGNOR:SIGNOR-PF16
 is_a: FPLX:MAPK
 inverse_is_a: HGNC:MAPK11
 inverse_is_a: HGNC:MAPK12
@@ -4680,6 +4718,7 @@ synonym: "RPS6KA" EXACT []
 xref: BEL:"RPS6KA Family"
 xref: IP:IPR016239
 xref: RE:R-HSA-446849
+xref: SIGNOR:SIGNOR-PF26
 is_a: FPLX:RSK
 inverse_is_a: HGNC:RPS6KA1
 inverse_is_a: HGNC:RPS6KA2
@@ -4696,6 +4735,7 @@ synonym: "Pak" EXACT []
 xref: BEL:"PAK Family"
 xref: IP:IPR033923
 xref: RE:R-HSA-428475
+xref: SIGNOR:SIGNOR-PF13
 is_a: FPLX:root
 inverse_is_a: HGNC:PAK1
 inverse_is_a: HGNC:PAK2
@@ -5502,6 +5542,7 @@ synonym: "PP2B catalytic subunit" EXACT []
 xref: BEL:"PPP3C Family"
 xref: RE:R-HSA-201779
 xref: RE:R-HSA-201798
+xref: SIGNOR:SIGNOR-PF18
 part_of: FPLX:PPP3
 inverse_is_a: HGNC:PPP3CA
 inverse_is_a: HGNC:PPP3CB
@@ -5589,6 +5630,7 @@ synonym: "protein kinase A catalytic subunit" EXACT []
 synonym: "Protein kinase A catalytic subunits" EXACT []
 synonym: "protein kinase A catalytic subunits" EXACT []
 xref: BEL:"PRKA Family"
+xref: SIGNOR:SIGNOR-PF17
 part_of: FPLX:PKA
 inverse_is_a: HGNC:PRKACA
 inverse_is_a: HGNC:PRKACB
@@ -6075,6 +6117,15 @@ has_part: HGNC:POLR2K
 has_part: HGNC:POLR2L
 
 [Term]
+id: FPLX:ROBO
+name: ROBO
+xref: SIGNOR:SIGNOR-PF14
+is_a: FPLX:root
+inverse_is_a: HGNC:ROBO1
+inverse_is_a: HGNC:ROBO2
+inverse_is_a: HGNC:ROBO3
+
+[Term]
 id: FPLX:ROCK
 name: ROCK
 synonym: "ROCK" EXACT []
@@ -6328,6 +6379,14 @@ inverse_is_a: HGNC:SMC1A
 inverse_is_a: HGNC:SMC1B
 
 [Term]
+id: FPLX:SMURF
+name: SMURF
+xref: SIGNOR:SIGNOR-PF29
+is_a: FPLX:root
+inverse_is_a: HGNC:SMURF1
+inverse_is_a: HGNC:SMURF2
+
+[Term]
 id: FPLX:SNAI
 name: SNAI
 synonym: "SNAI family" EXACT []
@@ -6384,6 +6443,9 @@ id: FPLX:SRC
 name: SRC
 synonym: "Src family kinase" EXACT []
 synonym: "Src-kinases" EXACT []
+synonym: "SRC-family kinases" EXACT []
+synonym: "SFK" EXACT []
+synonym: "src kinases" EXACT []
 xref: BEL:"SRC Family"
 xref: NEXTPROT-FAMILY:03131
 is_a: FPLX:root
@@ -6413,6 +6475,7 @@ inverse_is_a: HGNC:SREBF2
 id: FPLX:STAT
 name: STAT
 synonym: "STAT" EXACT []
+synonym: "STATs" EXACT []
 xref: BEL:"STAT Family"
 xref: IP:IPR001217
 xref: IP:IPR012345
@@ -6495,6 +6558,15 @@ inverse_is_a: HGNC:TAP2
 inverse_is_a: HGNC:ABCB9
 
 [Term]
+id: FPLX:TAOK
+name: TAOK
+xref: SIGNOR:SIGNOR-PF21
+is_a: FPLX:MAP3K
+inverse_is_a: HGNC:TAOK1
+inverse_is_a: HGNC:TAOK2
+inverse_is_a: HGNC:TAOK3
+
+[Term]
 id: FPLX:TCF_LEF
 name: TCF-LEF
 synonym: "T-cell factor (TCF)/lymphoid enhancer factor" EXACT []
@@ -6526,6 +6598,16 @@ has_part: HGNC:TRA
 has_part: HGNC:TRB
 has_part: HGNC:TRD
 has_part: HGNC:TRG
+
+[Term]
+id: FPLX:TEAD
+name: TEAD
+xref: SIGNOR:SIGNOR-PF22
+is_a: FPLX:root
+inverse_is_a: HGNC:TEAD1
+inverse_is_a: HGNC:TEAD2
+inverse_is_a: HGNC:TEAD3
+inverse_is_a: HGNC:TEAD4
 
 [Term]
 id: FPLX:TFAP2
@@ -6581,6 +6663,7 @@ xref: IP:IPR016319
 xref: NEXTPROT-FAMILY:03989
 xref: RE:R-HSA-114657
 xref: RE:R-HSA-2395330
+xref: SIGNOR:SIGNOR-PF5
 is_a: FPLX:root
 inverse_is_a: HGNC:TGFB1
 inverse_is_a: HGNC:TGFB2
@@ -6667,6 +6750,7 @@ has_part: HGNC:TBP
 id: FPLX:TLR
 name: TLR
 synonym: "TLR" EXACT []
+xref: SIGNOR:SIGNOR-PF20
 is_a: FPLX:root
 inverse_is_a: HGNC:TLR1
 inverse_is_a: HGNC:TLR2
@@ -6698,7 +6782,6 @@ inverse_is_a: HGNC:TNXB
 [Term]
 id: FPLX:TNF
 name: TNF
-synonym: "tumor necrosis factor" EXACT []
 xref: NEXTPROT-FAMILY:04243
 xref: XFAM:PF00229
 is_a: FPLX:root
