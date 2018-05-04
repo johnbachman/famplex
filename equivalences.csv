@@ -1428,7 +1428,6 @@ MEDSCAN,urn:agi-go:0005094,RhoGDI
 MEDSCAN,urn:agi-gocomplex:0043625,DNA_polymerase_delta
 MEDSCAN,urn:agi-aopfc:0000473,JNK
 MEDSCAN,urn:agi-complex:prophash-8cfce9bfac3857e6f068d517deadfeaa,NFkappaB
-MEDSCAN,urn:agi-aopfc:0000425,P01375
 MEDSCAN,urn:agi-enz:4.6.1.2,GUCY
 MEDSCAN,urn:agi-protfc:profilin,PFN
 MEDSCAN,urn:agi-aopfc:0000434,GSK3
@@ -1490,7 +1489,6 @@ MEDSCAN,urn:agi-aopfc:0000143,MEF2
 MEDSCAN,urn:agi-complex:prophash-aba0c4130764ae7a26054736114e65cd,PRC1_complex
 MEDSCAN,urn:agi-aopfc:0000150,NFE
 MEDSCAN,urn:agi-protfc:bone%20morphogenetic%20protein%20I%20receptor,BMP_receptor_type_I
-MEDSCAN,urn:agi-complex:prophash-f8d23dcf92c473215af590e92677249a,NFKB1
 MEDSCAN,urn:agi-gocomplex:0005673,GTF2E
 MEDSCAN,urn:agi-complex:platelet%20derived%20growth%20factor%20AB,PDGF_AB
 MEDSCAN,urn:agi-complex:prophash-8a9e47ee0ee03d8d8b6e029e2fba6896,Cadherin
