@@ -1358,7 +1358,7 @@ MEDSCAN,urn:agi-enz:1.2.1.3,ALDH
 MEDSCAN,urn:agi-protfc:AMPK,AMPK
 MEDSCAN,urn:agi-gocomplex:0032281,GRIA
 MEDSCAN,urn:agi-enz:1.3.5.1,ETC_complex_II
-MEDSCAN,urn:agi-aopfc:0000480,adcy
+MEDSCAN,urn:agi-aopfc:0000480,ADCY
 MEDSCAN,urn:agi-gocomplex:0005587,COL4
 MEDSCAN,urn:agi-aopfc:0000197,FZD
 MEDSCAN,urn:agi-go:0004886,RXR
@@ -1428,7 +1428,6 @@ MEDSCAN,urn:agi-go:0005094,RhoGDI
 MEDSCAN,urn:agi-gocomplex:0043625,DNA_polymerase_delta
 MEDSCAN,urn:agi-aopfc:0000473,JNK
 MEDSCAN,urn:agi-complex:prophash-8cfce9bfac3857e6f068d517deadfeaa,NFkappaB
-MEDSCAN,urn:agi-protfc:opsin, 
 MEDSCAN,urn:agi-aopfc:0000425,P01375
 MEDSCAN,urn:agi-enz:4.6.1.2,GUCY
 MEDSCAN,urn:agi-protfc:profilin,PFN
@@ -1514,7 +1513,7 @@ MEDSCAN,urn:agi-go:0008190,EIF4EBP
 MEDSCAN,urn:agi-complex:prophash-763d31b31e177311583df0ac1ea015da,GPCR
 MEDSCAN,urn:agi-complex:prophash-7e8823afb9ca7870b95633dcb782500b,HDAC
 MEDSCAN,urn:agi-protfc:thioredoxin,TXN
-MEDSCAN,urn:agi-protfc:proteasome%20activator,proteasome
+MEDSCAN,urn:agi-protfc:proteasome%20activator,Proteasome
 MEDSCAN,urn:agi-complex:prophash-e6be10f6a8e79aed1daa4ec2ac191db1,MCM
 MEDSCAN,urn:agi-enz:3.4.21.35,KLK
 MEDSCAN,urn:agi-enz:6.4.1.2,ACC
