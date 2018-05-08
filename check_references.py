@@ -23,9 +23,11 @@ def load_csv(filename):
 
 def load_grounding_map(filename):
     gm_rows = load_csv(filename)
+    gm_tuples = []
     check_rows(gm_rows, 7, filename)
     g_map = {}
     for row in gm_rows:
+        gm_tuples.append(tuple(row))
         key = row[0]
         db_refs = {'TEXT': key}
         keys = [entry for entry in row[1::2] if entry != '']
@@ -39,7 +41,7 @@ def load_grounding_map(filename):
                 g_map[key] = db_refs
             else:
                 g_map[key] = None
-    return g_map
+    return g_map, tuple(gm_tuples)
 
 
 def check_file_rows(filename, row_length):
@@ -116,26 +118,33 @@ def pubchem_and_chebi(db_refs):
     return None
 
 
+def check_duplicates(entries, entry_label):
+    ent_counter = Counter(entries)
+    print("-- Checking for duplicate %s --" % entry_label)
+    found_duplicates = False
+    for ent, freq in ent_counter.items():
+        if freq > 1:
+            print("ERROR: Duplicate %s in %s." % (str(ent), entry_label))
+            found_duplicates = True
+    print()
+    return found_duplicates
+
+
 if __name__ == '__main__':
     signal_error = False
     entities = load_entity_list('entities.csv')
     relationships = load_relationships('relations.csv')
     equivalences = load_equivalences('equivalences.csv')
-    gm = load_grounding_map('grounding_map.csv')
+    gm, gm_tuples = load_grounding_map('grounding_map.csv')
     check_file_rows('gene_prefixes.csv', 3)
 
-    # Check the entity list for duplicates
-    ent_counter = Counter(entities)
-    print("-- Checking for duplicate entities --")
-    found_duplicates = False
-    for ent, freq in ent_counter.items():
-        if freq > 1:
-            print("ERROR: Duplicate entries for %s in entity list." % ent)
-            found_duplicates = True
-    if not found_duplicates:
-        print("OK! No duplicates found.")
+    for entries, entry_label in ((entities, 'entities'),
+                                 (relationships, 'relationships'),
+                                 (equivalences, 'equivalences'),
+                                 (gm_tuples, 'groundings')):
+        if check_duplicates(entries, entry_label):
+            signal_error = True
 
-    print()
     print("-- Checking for undeclared FamPlex IDs in grounding map --")
     # Look through grounding map and find all instances with an FPLX db key
     entities_missing_gm = []
