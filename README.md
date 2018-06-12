@@ -1,4 +1,4 @@
-# FamPlex
+# FamPlex [![Build Status](https://travis-ci.org/sorgerlab/famplex.svg?branch=master)](https://travis-ci.org/sorgerlab/famplex)
 
 *FamPlex* is a collection of resources for grounding biological entities
 from text and describing their hierarchical relationships. Resources were
