@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-"""Output FamPlex as a BEL namespace."""
+"""Output FamPlex as a BEL namespace. Requires the `pybel` package."""
 
 import os
 
@@ -10,7 +10,7 @@ from pybel.resources import write_namespace
 
 path_this = os.path.dirname(os.path.abspath(__file__))
 entities_file = os.path.join(path_this, os.pardir, 'entities.csv')
-output_file = os.path.join(path_this, os.pardir, 'famplex.belns')
+output_file = os.path.join(path_this, 'famplex.belns')
 
 
 def _get_entities():
