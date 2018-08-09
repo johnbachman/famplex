@@ -2299,3 +2299,8 @@ FPLX,SLRP_5,isa,FPLX,SLRP
 HGNC,PIM1,isa,FPLX,PIM
 HGNC,PIM2,isa,FPLX,PIM
 HGNC,PIM3,isa,FPLX,PIM
+HGNC,GRIK1,isa,FPLX,Kainate_family
+HGNC,GRIK2,isa,FPLX,Kainate_family
+HGNC,GRIK3,isa,FPLX,Kainate_family
+HGNC,GRIK4,isa,FPLX,Kainate_family
+HGNC,GRIK5,isa,FPLX,Kainate_family
