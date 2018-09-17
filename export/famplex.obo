@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 17:09:2018 17:42
+date: 17:09:2018 17:51
 
 [Term]
 id: FPLX:9_1_1
@@ -3808,6 +3808,26 @@ xref: RE:R-HSA-8950694
 is_a: FPLX:root
 inverse_is_a: HGNC:IL12A
 inverse_is_a: HGNC:IL12B
+
+[Term]
+id: FPLX:IL2R
+name: IL2R
+synonym: "IL-2R" EXACT []
+synonym: "IL-2 receptor" EXACT []
+is_a: FPLX:root
+has_part: HGNC:IL2RA
+has_part: HGNC:IL2RB
+has_part: HGNC:IL2RG
+
+[Term]
+id: FPLX:IL15R
+name: IL15R
+synonym: "IL-15R" EXACT []
+synonym: "IL-15 receptor" EXACT []
+is_a: FPLX:root
+has_part: HGNC:IL15RA
+has_part: HGNC:IL2RB
+has_part: HGNC:IL2RG
 
 [Term]
 id: FPLX:Inhibin
