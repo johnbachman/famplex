@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 17:09:2018 17:51
+date: 17:09:2018 18:00
 
 [Term]
 id: FPLX:9_1_1
@@ -3810,22 +3810,22 @@ inverse_is_a: HGNC:IL12A
 inverse_is_a: HGNC:IL12B
 
 [Term]
-id: FPLX:IL2R
-name: IL2R
-synonym: "IL-2R" EXACT []
-synonym: "IL-2 receptor" EXACT []
-is_a: FPLX:root
-has_part: HGNC:IL2RA
-has_part: HGNC:IL2RB
-has_part: HGNC:IL2RG
-
-[Term]
 id: FPLX:IL15R
 name: IL15R
 synonym: "IL-15R" EXACT []
 synonym: "IL-15 receptor" EXACT []
 is_a: FPLX:root
 has_part: HGNC:IL15RA
+has_part: HGNC:IL2RB
+has_part: HGNC:IL2RG
+
+[Term]
+id: FPLX:IL2R
+name: IL2R
+synonym: "IL-2R" EXACT []
+synonym: "IL-2 receptor" EXACT []
+is_a: FPLX:root
+has_part: HGNC:IL2RA
 has_part: HGNC:IL2RB
 has_part: HGNC:IL2RG
 
@@ -6778,6 +6778,15 @@ inverse_is_a: FPLX:SMAD2_3
 inverse_is_a: FPLX:SMAD1_5_9
 
 [Term]
+id: FPLX:SMAD1_5_9
+name: SMAD1-5-9
+xref: SIGNOR:SIGNOR-PF35
+is_a: FPLX:SMAD
+inverse_is_a: HGNC:SMAD1
+inverse_is_a: HGNC:SMAD5
+inverse_is_a: HGNC:SMAD9
+
+[Term]
 id: FPLX:SMAD2_3
 name: SMAD2-3
 synonym: "SMAD 2/3" EXACT []
@@ -6793,15 +6802,6 @@ xref: RE:R-HSA-2187387
 is_a: FPLX:SMAD
 inverse_is_a: HGNC:SMAD2
 inverse_is_a: HGNC:SMAD3
-
-[Term]
-id: FPLX:SMAD1_5_9
-name: SMAD1-5-9
-xref: SIGNOR:SIGNOR-PF35
-is_a: FPLX:SMAD
-inverse_is_a: HGNC:SMAD1
-inverse_is_a: HGNC:SMAD5
-inverse_is_a: HGNC:SMAD9
 
 [Term]
 id: FPLX:SMC1
@@ -6997,6 +6997,15 @@ has_part: HGNC:ACTL6B
 has_part: HGNC:HLTF
 
 [Term]
+id: FPLX:TAOK
+name: TAOK
+xref: SIGNOR:SIGNOR-PF21
+is_a: FPLX:MAP3K
+inverse_is_a: HGNC:TAOK1
+inverse_is_a: HGNC:TAOK2
+inverse_is_a: HGNC:TAOK3
+
+[Term]
 id: FPLX:TAP
 name: TAP
 synonym: "TAP transporter" EXACT []
@@ -7007,15 +7016,6 @@ is_a: FPLX:root
 inverse_is_a: HGNC:TAP1
 inverse_is_a: HGNC:TAP2
 inverse_is_a: HGNC:ABCB9
-
-[Term]
-id: FPLX:TAOK
-name: TAOK
-xref: SIGNOR:SIGNOR-PF21
-is_a: FPLX:MAP3K
-inverse_is_a: HGNC:TAOK1
-inverse_is_a: HGNC:TAOK2
-inverse_is_a: HGNC:TAOK3
 
 [Term]
 id: FPLX:TCF_LEF
