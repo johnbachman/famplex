@@ -1,9 +1,9 @@
 [Namespace]
-Keyword=FAMPLEX
+Keyword=FPLX
 NameString=FamPlex
 DomainString=Gene and Gene Products
-VersionString=20180612
-CreatedDateTime=2018-06-12T09:39:55
+VersionString=20180917
+CreatedDateTime=2018-09-17T11:30:15
 DescriptionString=FamPlex is a collection of resources for grounding biological entities from text and describing their hierarchical relationships.
 QueryValueURL=http://identifiers.org/fplx/
 
@@ -263,6 +263,7 @@ JNK|P
 JUN_family|P
 KLK|P
 KSR|P
+Kainate_family|P
 Kinetochore|P
 LDH|P
 LH|P
@@ -303,6 +304,7 @@ NRG_1_2|P
 NRG_3_4|P
 NTRK|P
 Na_K_ATPase|P
+Neurexins|P
 Notch|P
 P2RX|P
 P2RY|P
