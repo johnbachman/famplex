@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 12:06:2018 09:39
+date: 17:09:2018 17:42
 
 [Term]
 id: FPLX:9_1_1
@@ -4004,6 +4004,20 @@ inverse_is_a: HGNC:JUNB
 inverse_is_a: HGNC:JUND
 
 [Term]
+id: FPLX:Kainate_family
+name: Kainate-family
+synonym: "Kainate receptors" EXACT []
+synonym: "KARs" EXACT []
+synonym: "Glutamate receptors, ionotropic, kainate" EXACT []
+xref: GFAM:1199
+is_a: FPLX:root
+inverse_is_a: HGNC:GRIK1
+inverse_is_a: HGNC:GRIK2
+inverse_is_a: HGNC:GRIK3
+inverse_is_a: HGNC:GRIK4
+inverse_is_a: HGNC:GRIK5
+
+[Term]
 id: FPLX:Kinetochore
 name: Kinetochore
 synonym: "kinetochore complex" EXACT []
@@ -4556,6 +4570,17 @@ inverse_is_a: HGNC:NDRG1
 inverse_is_a: HGNC:NDRG2
 inverse_is_a: HGNC:NDRG3
 inverse_is_a: HGNC:NDRG4
+
+[Term]
+id: FPLX:Neurexins
+name: Neurexins
+synonym: "Neurexins" EXACT []
+synonym: "NRXN" EXACT []
+xref: GFAM:1582
+is_a: FPLX:root
+inverse_is_a: HGNC:NRXN1
+inverse_is_a: HGNC:NRXN2
+inverse_is_a: HGNC:NRXN3
 
 [Term]
 id: FPLX:NFAT
@@ -7085,6 +7110,8 @@ synonym: "TGF-beta receptor" EXACT []
 synonym: "TGF-beta receptors" EXACT []
 synonym: "TGF-β receptor" EXACT []
 synonym: "TGF-β receptors" EXACT []
+synonym: "TGFβ receptor" EXACT []
+synonym: "TGFβ receptors" EXACT []
 synonym: "TGFBR family" EXACT []
 synonym: "TGFBR" EXACT []
 xref: MEDSCAN:urn:agi-aopfc:0000294

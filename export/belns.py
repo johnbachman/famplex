@@ -22,7 +22,7 @@ def _write_namespace(values):
     with open(output_file, 'w') as file:
         write_namespace(
             namespace_name='FamPlex',
-            namespace_keyword='FAMPLEX',
+            namespace_keyword='FPLX',
             namespace_domain=NAMESPACE_DOMAIN_GENE,
             author_name='John Bachman and Ben Gyori',
             citation_name='FamPlex',
