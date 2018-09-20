@@ -226,6 +226,8 @@ IKK_complex
 IKK_family
 IL1
 IL12
+IL15R
+IL2R
 Inhibin
 Inhibin_A
 Inhibin_B
@@ -403,8 +405,8 @@ SLRP_3
 SLRP_4
 SLRP_5
 SMAD
-SMAD2_3
 SMAD1_5_9
+SMAD2_3
 SMC1
 SMURF
 SNAI
@@ -418,8 +420,8 @@ STAT
 STAT5
 Sulfonylurea_receptor
 SWI_SNF
-TAP
 TAOK
+TAP
 TCF_LEF
 TCR
 TEAD
