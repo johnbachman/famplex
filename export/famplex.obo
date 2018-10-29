@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 29:10:2018 11:29
+date: 29:10:2018 09:40
 
 [Term]
 id: FPLX:9_1_1
@@ -757,6 +757,9 @@ inverse_is_a: HGNC:ARRB2
 [Term]
 id: FPLX:ATG4
 name: ATG4
+synonym: "Atg4" EXACT []
+synonym: "ATG4" EXACT []
+xref: RE:R-HSA-5682664
 is_a: FPLX:root
 inverse_is_a: HGNC:ATG4A
 inverse_is_a: HGNC:ATG4B
