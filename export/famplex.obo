@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 29:10:2018 09:40
+date: 05:11:2018 10:28
 
 [Term]
 id: FPLX:9_1_1
@@ -196,6 +196,26 @@ inverse_is_a: HGNC:ACTN1
 inverse_is_a: HGNC:ACTN2
 inverse_is_a: HGNC:ACTN3
 inverse_is_a: HGNC:ACTN4
+
+[Term]
+id: FPLX:Adaptor_protein_II
+name: Adaptor-protein-II
+synonym: "AP2 adaptor complex" EXACT []
+synonym: "AP-2 adaptor complex" EXACT []
+synonym: "AP2 clathrin adaptor complex" EXACT []
+synonym: "Adaptor Protein 2 complex" EXACT []
+synonym: "adaptor protein complex 2" EXACT []
+synonym: "AP-2 complex" EXACT []
+synonym: "AP2 complex" EXACT []
+synonym: "AP-2" EXACT []
+synonym: "AP2" EXACT []
+xref: BEL:"Adaptor Protein II Complex"
+xref: GO:0030122
+is_a: FPLX:root
+has_part: HGNC:AP2B1
+has_part: HGNC:AP2M1
+has_part: HGNC:AP2S1
+has_part: FPLX:AP2A
 
 [Term]
 id: FPLX:Adaptor_protein_III
@@ -675,6 +695,14 @@ xref: NCIT:C17450
 is_a: FPLX:root
 has_part: FPLX:FOS_family
 has_part: FPLX:JUN_family
+
+[Term]
+id: FPLX:AP2A
+name: AP2A
+xref: IP:IPR017104
+part_of: FPLX:Adaptor_protein_II
+inverse_is_a: HGNC:AP2A1
+inverse_is_a: HGNC:AP2A2
 
 [Term]
 id: FPLX:APC_C
@@ -4974,7 +5002,6 @@ xref: MEDSCAN:urn:agi-protfc:p70rsk
 is_a: FPLX:RSK
 inverse_is_a: HGNC:RPS6KB1
 inverse_is_a: HGNC:RPS6KB2
-inverse_is_a: HGNC:RPS6KB3
 
 [Term]
 id: FPLX:P90RSK

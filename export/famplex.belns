@@ -2,8 +2,8 @@
 Keyword=FPLX
 NameString=FamPlex
 DomainString=Gene and Gene Products
-VersionString=20181029
-CreatedDateTime=2018-10-29T11:29:26
+VersionString=20181105
+CreatedDateTime=2018-11-05T10:28:25
 DescriptionString=FamPlex is a collection of resources for grounding biological entities from text and describing their hierarchical relationships.
 QueryValueURL=http://identifiers.org/fplx/
 
@@ -54,6 +54,7 @@ AMPK_alpha|P
 AMPK_beta|P
 AMPK_gamma|P
 AP1|P
+AP2A|P
 APC_C|P
 APOA|P
 ARRB|P
@@ -69,6 +70,7 @@ Activin|P
 Activin_A|P
 Activin_AB|P
 Activin_B|P
+Adaptor_protein_II|P
 Adaptor_protein_III|P
 Annexin_II_heterotetramer|P
 Apolipoprotein|P
