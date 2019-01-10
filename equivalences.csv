@@ -348,6 +348,9 @@ ECCODE,6.4.1.2,ACC
 ECCODE,6.4.1.3,Propionyl_CoA_carboxylase
 GFAM,1199,Kainate_family
 GFAM,1582,Neurexins
+GO,GO:0005761,Mitochondrial_Ribosome
+GO,GO:0005762,MRPL
+GO,GO:0005763,MRPS
 GO,GO:0000145,EXOC
 GO,GO:0000502,Proteasome
 GO,GO:0000776,Kinetochore
