@@ -2,24 +2,20 @@
 Keyword=FPLX
 NameString=FamPlex
 DomainString=Gene and Gene Products
-VersionString=20181105
-CreatedDateTime=2018-11-05T10:28:25
+VersionString=20190217
+CreatedDateTime=2019-02-17T17:54:44
 DescriptionString=FamPlex is a collection of resources for grounding biological entities from text and describing their hierarchical relationships.
 QueryValueURL=http://identifiers.org/fplx/
-
 [Author]
 NameString=John Bachman and Ben Gyori
 CopyrightString=CC0 1.0 Universal
-
 [Citation]
 NameString=FamPlex
 ReferenceURL=https://github.com/sorgerlab/famplex
-
 [Processing]
 CaseSensitiveFlag=yes
 DelimiterString=|
 CacheableFlag=yes
-
 [Values]
 9_1_1|P
 ABL_family|P
@@ -285,12 +281,15 @@ MCM|P
 MEF2|P
 MEK|P
 MMP|P
+MRPL|P
+MRPS|P
 MYH|P
 MYL|P
 MYL_alkali|P
 MYL_regulatory|P
 MYL_slow|P
 MYST|P
+Mitochondrial_Ribosome|P
 NADH_dehydrogenase|P
 NADPH_oxidase|P
 NCOA|P

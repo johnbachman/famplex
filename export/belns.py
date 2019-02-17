@@ -1,12 +1,12 @@
 #! /usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-"""Output FamPlex as a BEL namespace. Requires the `pybel` package."""
+"""Output FamPlex as a BEL namespace. Requires the `bel_resources` package."""
 
 import os
 
-from pybel.constants import NAMESPACE_DOMAIN_GENE
-from pybel.resources import write_namespace
+from bel_resources import write_namespace
+from bel_resources.constants import NAMESPACE_DOMAIN_GENE
 
 path_this = os.path.dirname(os.path.abspath(__file__))
 entities_file = os.path.join(path_this, os.pardir, 'entities.csv')
@@ -15,7 +15,7 @@ output_file = os.path.join(path_this, 'famplex.belns')
 
 def _get_entities():
     with open(entities_file, 'r') as fh:
-        return [l.strip() for l in fh.readlines()]
+        return {l.strip(): 'P' for l in fh.readlines()}
 
 
 def _write_namespace(values):
@@ -27,13 +27,13 @@ def _write_namespace(values):
             author_name='John Bachman and Ben Gyori',
             citation_name='FamPlex',
             values=values,
-            namespace_description='FamPlex is a collection of resources for grounding biological entities from text and describing their hierarchical relationships.',
+            namespace_description='FamPlex is a collection of resources for grounding biological entities from text '
+                                  'and describing their hierarchical relationships.',
             namespace_query_url='http://identifiers.org/fplx/',
             author_copyright='CC0 1.0 Universal',
             citation_url='https://github.com/sorgerlab/famplex',
             case_sensitive=True,
             cacheable=True,
-            functions='P',
             file=file,
         )
 
