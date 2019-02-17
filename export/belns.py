@@ -15,7 +15,7 @@ output_file = os.path.join(path_this, 'famplex.belns')
 
 def _get_entities():
     with open(entities_file, 'r') as fh:
-        return {l.strip(): 'PC' for l in fh.readlines()}
+        return {l.strip(): 'GRPC' for l in fh.readlines()}
 
 
 def _write_namespace(values):
