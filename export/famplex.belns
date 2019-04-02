@@ -2,8 +2,8 @@
 Keyword=FPLX
 NameString=FamPlex
 DomainString=Gene and Gene Products
-VersionString=20190217
-CreatedDateTime=2019-02-17T18:08:12
+VersionString=20190402
+CreatedDateTime=2019-04-02T15:56:14
 DescriptionString=FamPlex is a collection of resources for grounding biological entities from text and describing their hierarchical relationships.
 QueryValueURL=http://identifiers.org/fplx/
 [Author]
@@ -308,6 +308,7 @@ NRG_1_2|GRPC
 NRG_3_4|GRPC
 NTRK|GRPC
 Na_K_ATPase|GRPC
+Natriuretic_peptide|GRPC
 Neurexins|GRPC
 Notch|GRPC
 P2RX|GRPC
