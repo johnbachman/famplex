@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 05:11:2018 10:28
+date: 03:04:2019 12:53
 
 [Term]
 id: FPLX:9_1_1
@@ -200,14 +200,14 @@ inverse_is_a: HGNC:ACTN4
 [Term]
 id: FPLX:Adaptor_protein_II
 name: Adaptor-protein-II
-synonym: "AP2 adaptor complex" EXACT []
-synonym: "AP-2 adaptor complex" EXACT []
-synonym: "AP2 clathrin adaptor complex" EXACT []
 synonym: "Adaptor Protein 2 complex" EXACT []
 synonym: "adaptor protein complex 2" EXACT []
+synonym: "AP-2 adaptor complex" EXACT []
 synonym: "AP-2 complex" EXACT []
-synonym: "AP2 complex" EXACT []
 synonym: "AP-2" EXACT []
+synonym: "AP2 adaptor complex" EXACT []
+synonym: "AP2 clathrin adaptor complex" EXACT []
+synonym: "AP2 complex" EXACT []
 synonym: "AP2" EXACT []
 xref: BEL:"Adaptor Protein II Complex"
 xref: GO:0030122
@@ -785,8 +785,8 @@ inverse_is_a: HGNC:ARRB2
 [Term]
 id: FPLX:ATG4
 name: ATG4
-synonym: "Atg4" EXACT []
 synonym: "ATG4" EXACT []
+synonym: "Atg4" EXACT []
 xref: RE:R-HSA-5682664
 is_a: FPLX:root
 inverse_is_a: HGNC:ATG4A
@@ -3852,8 +3852,8 @@ inverse_is_a: HGNC:IL12B
 [Term]
 id: FPLX:IL15R
 name: IL15R
-synonym: "IL-15R" EXACT []
 synonym: "IL-15 receptor" EXACT []
+synonym: "IL-15R" EXACT []
 is_a: FPLX:root
 has_part: HGNC:IL15RA
 has_part: HGNC:IL2RB
@@ -3862,8 +3862,8 @@ has_part: HGNC:IL2RG
 [Term]
 id: FPLX:IL2R
 name: IL2R
-synonym: "IL-2R" EXACT []
 synonym: "IL-2 receptor" EXACT []
+synonym: "IL-2R" EXACT []
 is_a: FPLX:root
 has_part: HGNC:IL2RA
 has_part: HGNC:IL2RB
@@ -4066,9 +4066,9 @@ inverse_is_a: HGNC:JUND
 [Term]
 id: FPLX:Kainate_family
 name: Kainate-family
+synonym: "Glutamate receptors, ionotropic, kainate" EXACT []
 synonym: "Kainate receptors" EXACT []
 synonym: "KARs" EXACT []
-synonym: "Glutamate receptors, ionotropic, kainate" EXACT []
 xref: GFAM:1199
 is_a: FPLX:root
 inverse_is_a: HGNC:GRIK1
@@ -4381,6 +4381,125 @@ inverse_is_a: HGNC:MAP2K1
 inverse_is_a: HGNC:MAP2K2
 
 [Term]
+id: FPLX:Mitochondrial_Ribosome
+name: Mitochondrial-Ribosome
+synonym: "mammalian mitochondrial ribosome" EXACT []
+synonym: "Mitochondrial ribosome" EXACT []
+synonym: "Mitochondrial Ribosome" EXACT []
+synonym: "mitochondrial ribosomes" EXACT []
+synonym: "Mitochondrial ribosomes" EXACT []
+synonym: "Mitochondrial Ribosomes" EXACT []
+synonym: "mitoribosome" EXACT []
+synonym: "Mitoribosome" EXACT []
+synonym: "55S mammalian mitochondrial ribosome" EXACT []
+synonym: "55S mitoribosome" EXACT []
+synonym: "55s mitoribosome" EXACT []
+synonym: "55S Mitoribosome" EXACT []
+synonym: "55s Mitoribosome" EXACT []
+xref: GO:0005761
+is_a: FPLX:root
+has_part: FPLX:MRPS
+has_part: FPLX:MRPL
+
+[Term]
+id: FPLX:MRPS
+name: MRPS
+synonym: "small mitoribosomal subunit" EXACT []
+synonym: "Small Mitoribosomal Subunit" EXACT []
+synonym: "small subunit of the mammalian mitochondrial ribosome" EXACT []
+synonym: "mitochondrial ribosomal small subunit" EXACT []
+xref: GO:0005763
+part_of: FPLX:Mitochondrial_Ribosome
+has_part: HGNC:MRPS2
+has_part: HGNC:MRPS5
+has_part: HGNC:MRPS6
+has_part: HGNC:MRPS7
+has_part: HGNC:MRPS9
+has_part: HGNC:MRPS10
+has_part: HGNC:MRPS11
+has_part: HGNC:MRPS12
+has_part: HGNC:MRPS14
+has_part: HGNC:MRPS15
+has_part: HGNC:MRPS16
+has_part: HGNC:MRPS17
+has_part: HGNC:MRPS18A
+has_part: HGNC:MRPS18B
+has_part: HGNC:MRPS18C
+has_part: HGNC:MRPS21
+has_part: HGNC:MRPS22
+has_part: HGNC:MRPS23
+has_part: HGNC:MRPS24
+has_part: HGNC:MRPS25
+has_part: HGNC:MRPS26
+has_part: HGNC:MRPS27
+has_part: HGNC:MRPS28
+has_part: HGNC:DAP3
+has_part: HGNC:MRPS30
+has_part: HGNC:MRPS31
+has_part: HGNC:MRPS33
+has_part: HGNC:MRPS34
+has_part: HGNC:MRPS35
+has_part: HGNC:MRPS36
+
+[Term]
+id: FPLX:MRPL
+name: MRPL
+synonym: "large mitoribosomal subunit" EXACT []
+synonym: "Large Mitoribosomal Subunit" EXACT []
+synonym: "large subunit of the mammalian mitochondrial ribosome" EXACT []
+synonym: "mitochondrial ribosomal large subunit" EXACT []
+xref: GO:0005762
+part_of: FPLX:Mitochondrial_Ribosome
+has_part: HGNC:MRPL1
+has_part: HGNC:MRPL2
+has_part: HGNC:MRPL3
+has_part: HGNC:MRPL4
+has_part: HGNC:MRPL9
+has_part: HGNC:MRPL10
+has_part: HGNC:MRPL11
+has_part: HGNC:MRPL12
+has_part: HGNC:MRPL13
+has_part: HGNC:MRPL14
+has_part: HGNC:MRPL15
+has_part: HGNC:MRPL16
+has_part: HGNC:MRPL17
+has_part: HGNC:MRPL18
+has_part: HGNC:MRPL19
+has_part: HGNC:MRPL20
+has_part: HGNC:MRPL21
+has_part: HGNC:MRPL22
+has_part: HGNC:MRPL23
+has_part: HGNC:MRPL24
+has_part: HGNC:MRPL27
+has_part: HGNC:MRPL28
+has_part: HGNC:MRPL30
+has_part: HGNC:MRPL32
+has_part: HGNC:MRPL33
+has_part: HGNC:MRPL34
+has_part: HGNC:MRPL35
+has_part: HGNC:MRPL36
+has_part: HGNC:MRPL37
+has_part: HGNC:MRPL38
+has_part: HGNC:MRPL39
+has_part: HGNC:MRPL40
+has_part: HGNC:MRPL41
+has_part: HGNC:MRPL42
+has_part: HGNC:MRPL43
+has_part: HGNC:MRPL44
+has_part: HGNC:MRPL45
+has_part: HGNC:MRPL46
+has_part: HGNC:MRPL47
+has_part: HGNC:MRPL48
+has_part: HGNC:MRPL49
+has_part: HGNC:MRPL50
+has_part: HGNC:MRPL51
+has_part: HGNC:MRPL52
+has_part: HGNC:MRPL53
+has_part: HGNC:MRPL54
+has_part: HGNC:MRPL55
+has_part: HGNC:MRPL57
+
+[Term]
 id: FPLX:MMP
 name: MMP
 synonym: "MMP" EXACT []
@@ -4588,6 +4707,20 @@ xref: ECCODE:3.6.3.9
 is_a: FPLX:root
 has_part: FPLX:ATP1A
 has_part: FPLX:ATP1B
+
+[Term]
+id: FPLX:Natriuretic_peptide
+name: Natriuretic-peptide
+synonym: "Natriuretic Peptide" EXACT []
+synonym: "Natriuretic peptide" EXACT []
+synonym: "natriuretic peptide" EXACT []
+synonym: "Natriuretic Peptides" EXACT []
+synonym: "Natriuretic peptides" EXACT []
+synonym: "natriuretic peptides" EXACT []
+is_a: FPLX:root
+inverse_is_a: HGNC:NPPA
+inverse_is_a: HGNC:NPPB
+inverse_is_a: HGNC:NPPC
 
 [Term]
 id: FPLX:NCOA
@@ -7169,10 +7302,10 @@ synonym: "TGF-beta receptor" EXACT []
 synonym: "TGF-beta receptors" EXACT []
 synonym: "TGF-β receptor" EXACT []
 synonym: "TGF-β receptors" EXACT []
-synonym: "TGFβ receptor" EXACT []
-synonym: "TGFβ receptors" EXACT []
 synonym: "TGFBR family" EXACT []
 synonym: "TGFBR" EXACT []
+synonym: "TGFβ receptor" EXACT []
+synonym: "TGFβ receptors" EXACT []
 xref: MEDSCAN:urn:agi-aopfc:0000294
 xref: MEDSCAN:urn:agi-complex:prophash-9e456bf1de2c5eb1107156c96a1450e6
 is_a: FPLX:root
@@ -7448,13 +7581,22 @@ inverse_is_a: HGNC:TUBAL3
 [Term]
 id: FPLX:TUBB
 name: TUBB
+synonym: "Beta Tubulin" EXACT []
+synonym: "Beta tubulin" EXACT []
+synonym: "beta Tubulin" EXACT []
+synonym: "beta tubulin" EXACT []
+synonym: "Beta-Tubulin" EXACT []
+synonym: "Beta-tubulin" EXACT []
+synonym: "beta-Tubulin" EXACT []
+synonym: "beta-tubulin" EXACT []
 synonym: "TUBB" EXACT []
 synonym: "tubulin beta chain" EXACT []
 synonym: "tubulin beta" EXACT []
 synonym: "tubulin β chain" EXACT []
 synonym: "tubulin β" EXACT []
 xref: BEL:"TUBB Family"
-xref: NCIT:C104166
+xref: IP:IPR002453
+xref: NCIT:C129655
 is_a: FPLX:Tubulin
 inverse_is_a: HGNC:TUBB
 inverse_is_a: HGNC:TUBB1
