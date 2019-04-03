@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 02:04:2019 15:56
+date: 03:04:2019 12:53
 
 [Term]
 id: FPLX:9_1_1
@@ -4717,8 +4717,6 @@ synonym: "natriuretic peptide" EXACT []
 synonym: "Natriuretic Peptides" EXACT []
 synonym: "Natriuretic peptides" EXACT []
 synonym: "natriuretic peptides" EXACT []
-synonym: "NP" EXACT []
-synonym: "NPs" EXACT []
 is_a: FPLX:root
 inverse_is_a: HGNC:NPPA
 inverse_is_a: HGNC:NPPB
