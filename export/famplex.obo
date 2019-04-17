@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 03:04:2019 12:53
+date: 16:04:2019 20:41
 
 [Term]
 id: FPLX:9_1_1
@@ -847,16 +847,19 @@ has_part: HGNC:ATP5F1B
 has_part: HGNC:ATP5F1C
 has_part: HGNC:ATP5F1D
 has_part: HGNC:ATP5F1E
-has_part: HGNC:ATP5PB
-has_part: FPLX:ATP5G
-has_part: HGNC:ATP5PD
+has_part: HGNC:ATP5MD
 has_part: HGNC:ATP5ME
 has_part: HGNC:ATP5MF
 has_part: HGNC:ATP5MG
-has_part: HGNC:ATP5PO
-has_part: HGNC:ATP5PF
+has_part: HGNC:ATP5MPL
 has_part: HGNC:MT-ATP6
 has_part: HGNC:MT-ATP8
+has_part: HGNC:ATP5PB
+has_part: HGNC:ATP5PD
+has_part: HGNC:ATP5PF
+has_part: HGNC:ATP5PO
+has_part: HGNC:ATP5IF1
+has_part: FPLX:ATP5G
 
 [Term]
 id: FPLX:AXIN
@@ -2443,40 +2446,6 @@ xref: BEL:"ESR Family"
 is_a: FPLX:root
 inverse_is_a: HGNC:ESR1
 inverse_is_a: HGNC:ESR2
-
-[Term]
-id: FPLX:ETC_complex_II
-name: ETC-complex-II
-synonym: "complex II" EXACT []
-synonym: "succinate dehydrogenase (ubiquinone)" EXACT []
-synonym: "succinate dehydrogenase" EXACT []
-xref: BEL:"Respiratory Chain Complex II"
-xref: ECCODE:1.3.5.1
-xref: NCIT:C112049
-xref: RE:R-HSA-165631
-xref: RE:R-HSA-70990
-is_a: FPLX:root
-has_part: HGNC:SDHA
-has_part: HGNC:SDHB
-has_part: HGNC:SDHC
-has_part: HGNC:SDHD
-
-[Term]
-id: FPLX:ETC_complex_III
-name: ETC-complex-III
-synonym: "complex III" EXACT []
-synonym: "cytochrome bc1 complex" EXACT []
-xref: BEL:"Respiratory Chain Complex III"
-xref: GO:0045275
-is_a: FPLX:root
-has_part: HGNC:CYC1
-has_part: HGNC:MT-CYB
-has_part: HGNC:UQCRB
-has_part: HGNC:UQCRC1
-has_part: HGNC:UQCRC2
-has_part: HGNC:UQCRFS1
-has_part: HGNC:UQCRH
-has_part: HGNC:UQCRQ
 
 [Term]
 id: FPLX:ETS
@@ -7818,6 +7787,158 @@ is_a: FPLX:root
 inverse_is_a: HGNC:YBX1
 inverse_is_a: HGNC:YBX2
 inverse_is_a: HGNC:YBX3
+
+[Term]
+id: FPLX:ETC_complex_I_core
+name: ETC-complex-I-core
+xref: HGNC_GROUP:1149
+part_of: FPLX:ETC_complex_I
+has_part: HGNC:MT-ND1
+has_part: HGNC:MT-ND2
+has_part: HGNC:MT-ND3
+has_part: HGNC:MT-ND4
+has_part: HGNC:MT-ND4L
+has_part: HGNC:MT-ND5
+has_part: HGNC:MT-ND6
+has_part: HGNC:NDUFS1
+has_part: HGNC:NDUFS2
+has_part: HGNC:NDUFS3
+has_part: HGNC:NDUFS7
+has_part: HGNC:NDUFS8
+has_part: HGNC:NDUFV1
+has_part: HGNC:NDUFV2
+
+[Term]
+id: FPLX:ETC_complex_I_supernumerary
+name: ETC-complex-I-supernumerary
+xref: HGNC_GROUP:1150
+part_of: FPLX:ETC_complex_I
+has_part: HGNC:NDUFAB1
+has_part: HGNC:NDUFA1
+has_part: HGNC:NDUFA2
+has_part: HGNC:NDUFA3
+has_part: HGNC:NDUFA5
+has_part: HGNC:NDUFA6
+has_part: HGNC:NDUFA7
+has_part: HGNC:NDUFA8
+has_part: HGNC:NDUFA9
+has_part: HGNC:NDUFA10
+has_part: HGNC:NDUFA11
+has_part: HGNC:NDUFA12
+has_part: HGNC:NDUFA13
+has_part: HGNC:NDUFB1
+has_part: HGNC:NDUFB2
+has_part: HGNC:NDUFB3
+has_part: HGNC:NDUFB4
+has_part: HGNC:NDUFB5
+has_part: HGNC:NDUFB6
+has_part: HGNC:NDUFB7
+has_part: HGNC:NDUFB8
+has_part: HGNC:NDUFB9
+has_part: HGNC:NDUFB10
+has_part: HGNC:NDUFB11
+has_part: HGNC:NDUFC1
+has_part: HGNC:NDUFC2
+has_part: HGNC:NDUFS4
+has_part: HGNC:NDUFS5
+has_part: HGNC:NDUFS6
+has_part: HGNC:NDUFV3
+
+[Term]
+id: FPLX:ETC_complex_I
+name: ETC-complex-I
+xref: COMPLEXPORTAL:CPX-577
+xref: ECCODE:1.6.5.3
+xref: GO:0005747
+xref: HGNC_GROUP:640
+xref: MESH:D042967
+xref: NCIT:C118184
+is_a: FPLX:root
+has_part: FPLX:ETC_complex_I_core
+has_part: FPLX:ETC_complex_I_supernumerary
+
+[Term]
+id: FPLX:ETC_complex_II
+name: ETC-complex-II
+synonym: "complex II" EXACT []
+synonym: "succinate dehydrogenase (ubiquinone)" EXACT []
+synonym: "succinate dehydrogenase" EXACT []
+xref: BEL:"Respiratory Chain Complex II"
+xref: COMPLEXPORTAL:CPX-561
+xref: ECCODE:1.3.5.1
+xref: GO:0005749
+xref: HGNC_GROUP:641
+xref: MESH:D042963
+xref: NCIT:C112049
+xref: RE:R-HSA-165631
+xref: RE:R-HSA-70990
+is_a: FPLX:root
+has_part: HGNC:SDHA
+has_part: HGNC:SDHB
+has_part: HGNC:SDHC
+has_part: HGNC:SDHD
+
+[Term]
+id: FPLX:ETC_complex_III
+name: ETC-complex-III
+synonym: "complex III" EXACT []
+synonym: "cytochrome bc1 complex" EXACT []
+xref: BEL:"Respiratory Chain Complex III"
+xref: COMPLEXPORTAL:CPX-560
+xref: ECCODE:1.10.2.2
+xref: GO:0005750
+xref: GO:0045275
+xref: HGNC_GROUP:642
+xref: MESH:D014450
+is_a: FPLX:root
+has_part: HGNC:CYC1
+has_part: HGNC:MT-CYB
+has_part: HGNC:UQCRB
+has_part: HGNC:UQCRC1
+has_part: HGNC:UQCRC2
+has_part: HGNC:UQCRFS1
+has_part: HGNC:UQCRH
+has_part: HGNC:UQCRQ
+has_part: HGNC:UQCR10
+has_part: HGNC:UQCR11
+
+[Term]
+id: FPLX:ETC_complex_IV
+name: ETC-complex-IV
+xref: ECCODE:1.9.3.1
+xref: GO:0005751
+xref: HGNC_GROUP:643
+xref: MESH:D003576
+xref: NCIT:C26034
+is_a: FPLX:root
+has_part: HGNC:COX4I1
+has_part: HGNC:COX4I2
+has_part: HGNC:COX5A
+has_part: HGNC:COX5B
+has_part: HGNC:COX6A1
+has_part: HGNC:COX6A2
+has_part: HGNC:COX6B1
+has_part: HGNC:COX6B2
+has_part: HGNC:COX6C
+has_part: HGNC:COX7A1
+has_part: HGNC:COX7A2
+has_part: HGNC:COX7B
+has_part: HGNC:COX7B2
+has_part: HGNC:COX7C
+has_part: HGNC:COX8A
+has_part: HGNC:COX8C
+has_part: HGNC:MT-CO1
+has_part: HGNC:MT-CO2
+has_part: HGNC:MT-CO3
+
+[Term]
+id: FPLX:ETC_complex_V
+name: ETC-complex-V
+xref: ECCODE:3.6.3.14
+xref: GO:0005753
+xref: HGNC_GROUP:644
+xref: MESH:D025261
+is_a: FPLX:root
 
 [Term]
 id: FPLX:root
