@@ -166,10 +166,12 @@ if __name__ == '__main__':
             p_and_c = pubchem_and_chebi(db_refs)
             if p_and_c == 'chebi_missing':
                 chebi_id_missing.append(db_refs['PUBCHEM'])
-                print("WARNING: %s has PUBCHEM ID but no CHEBI ID." % text)
+                print("WARNING: %s has PUBCHEM ID (%s) but no CHEBI ID."
+                      % (text, db_refs['PUBCHEM']))
             if p_and_c == 'pubchem_missing':
                 pubchem_id_missing.append(db_refs['CHEBI'])
-                print("WARNING: %s has CHEBI ID but no PUBCHEM ID." % text)
+                print("WARNING: %s has CHEBI ID (%s) but no PUBCHEM ID." %
+                      (text, db_refs['CHEBI']))
 
     print()
     print("-- Checking for undeclared FamPlex IDs in relationships file --")
