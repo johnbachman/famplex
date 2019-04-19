@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 16:04:2019 20:41
+date: 19:04:2019 14:16
 
 [Term]
 id: FPLX:9_1_1
@@ -4499,6 +4499,33 @@ inverse_is_a: HGNC:MMP25
 inverse_is_a: HGNC:MMP26
 inverse_is_a: HGNC:MMP27
 inverse_is_a: HGNC:MMP28
+
+[Term]
+id: FPLX:MT
+name: MT
+synonym: "Metallothionein" EXACT []
+synonym: "metallothionein" EXACT []
+synonym: "MT" EXACT []
+is_a: FPLX:root
+inverse_is_a: HGNC:MT1A
+inverse_is_a: HGNC:MT1B
+inverse_is_a: HGNC:MT1CP
+inverse_is_a: HGNC:MT1DP
+inverse_is_a: HGNC:MT1E
+inverse_is_a: HGNC:MT1F
+inverse_is_a: HGNC:MT1G
+inverse_is_a: HGNC:MT1H
+inverse_is_a: HGNC:MT1HL1
+inverse_is_a: HGNC:MT1IP
+inverse_is_a: HGNC:MT1JP
+inverse_is_a: HGNC:MT1L
+inverse_is_a: HGNC:MT1M
+inverse_is_a: HGNC:MT1P1
+inverse_is_a: HGNC:MT1P3
+inverse_is_a: HGNC:MT1X
+inverse_is_a: HGNC:MT2A
+inverse_is_a: HGNC:MT3
+inverse_is_a: HGNC:MT4
 
 [Term]
 id: FPLX:mTORC1
