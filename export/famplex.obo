@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 22:04:2019 13:17
+date: 22:04:2019 14:44
 
 [Term]
 id: FPLX:9_1_1
@@ -758,6 +758,44 @@ inverse_is_a: FPLX:APOA
 inverse_is_a: HGNC:APOE
 
 [Term]
+id: FPLX:ARF_GTPase_family
+name: ARF-GTPase-family
+synonym: "ADP ribosylation factor" EXACT []
+synonym: "ARF" EXACT []
+is_a: FPLX:root
+inverse_is_a: HGNC:TRIM23
+inverse_is_a: HGNC:ARF1
+inverse_is_a: HGNC:ARF3
+inverse_is_a: HGNC:ARF4
+inverse_is_a: HGNC:ARF5
+inverse_is_a: HGNC:ARF6
+inverse_is_a: HGNC:ARL1
+inverse_is_a: HGNC:ARL2
+inverse_is_a: HGNC:ARL3
+inverse_is_a: HGNC:ARL4A
+inverse_is_a: HGNC:ARL4C
+inverse_is_a: HGNC:ARL4D
+inverse_is_a: HGNC:ARL5A
+inverse_is_a: HGNC:ARL5B
+inverse_is_a: HGNC:ARL5C
+inverse_is_a: HGNC:ARL6
+inverse_is_a: HGNC:ARL8A
+inverse_is_a: HGNC:ARL8B
+inverse_is_a: HGNC:ARL9
+inverse_is_a: HGNC:ARL10
+inverse_is_a: HGNC:ARL11
+inverse_is_a: HGNC:ARL13A
+inverse_is_a: HGNC:ARL13B
+inverse_is_a: HGNC:ARL14
+inverse_is_a: HGNC:ARL15
+inverse_is_a: HGNC:ARL16
+inverse_is_a: HGNC:ARL17A
+inverse_is_a: HGNC:ARL17B
+inverse_is_a: HGNC:ARFRP1
+inverse_is_a: HGNC:SAR1A
+inverse_is_a: HGNC:SAR1B
+
+[Term]
 id: FPLX:Arp2_3_protein
 name: Arp2-3-protein
 synonym: "Arp2/3" EXACT []
@@ -1287,7 +1325,6 @@ id: FPLX:CD64
 name: CD64
 synonym: "CD64" EXACT []
 xref: BEL:"CD64 Family"
-xref: NCIT:C104238
 xref: RE:R-HSA-1031694
 xref: RE:R-HSA-1236898
 xref: RE:R-HSA-1236905
@@ -2619,8 +2656,6 @@ id: FPLX:FOS_family
 name: FOS-family
 synonym: "FOS" EXACT []
 synonym: "Fos" EXACT []
-xref: NCIT:C17438
-xref: NCIT:C52887
 xref: NEXTPROT-FAMILY:00408
 part_of: FPLX:AP1
 inverse_is_a: HGNC:FOS
@@ -3194,7 +3229,6 @@ synonym: "Gq α subunit" EXACT []
 synonym: "Gq α" EXACT []
 synonym: "Gαq" EXACT []
 xref: IP:IPR000654
-xref: NCIT:C19276
 xref: RE:R-HSA-114534
 xref: RE:R-HSA-114556
 xref: RE:R-HSA-374848
@@ -3898,7 +3932,6 @@ synonym: "insulin receptor/insulin-like growth factor receptor family" EXACT []
 xref: BEL:"INSR Family"
 xref: IP:IPR016246
 xref: MEDSCAN:urn:agi-aopfc:0000264
-xref: NCIT:C17072
 xref: NEXTPROT-FAMILY:03128
 is_a: FPLX:root
 inverse_is_a: HGNC:IGF1R
@@ -7741,7 +7774,7 @@ name: VEGF
 synonym: "vascular endothelial growth factor" EXACT []
 synonym: "VEGF" EXACT []
 xref: BEL:"VEGF Family"
-xref: NCIT:C20450
+xref: NCIT:C129646
 xref: RE:R-HSA-195361
 xref: RE:R-HSA-195376
 is_a: FPLX:root

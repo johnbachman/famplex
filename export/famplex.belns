@@ -3,7 +3,7 @@ Keyword=FPLX
 NameString=FamPlex
 DomainString=Gene and Gene Products
 VersionString=20190422
-CreatedDateTime=2019-04-22T13:17:22
+CreatedDateTime=2019-04-22T14:44:40
 DescriptionString=FamPlex is a collection of resources for grounding biological entities from text and describing their hierarchical relationships.
 QueryValueURL=http://identifiers.org/fplx/
 [Author]
@@ -53,6 +53,7 @@ AP1|GRPC
 AP2A|GRPC
 APC_C|GRPC
 APOA|GRPC
+ARF_GTPase_family|GRPC
 ARRB|GRPC
 ATG4|GRPC
 ATP1A|GRPC
