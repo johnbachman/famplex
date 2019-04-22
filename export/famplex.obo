@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 19:04:2019 14:16
+date: 22:04:2019 13:17
 
 [Term]
 id: FPLX:9_1_1
@@ -4501,8 +4501,8 @@ inverse_is_a: HGNC:MMP27
 inverse_is_a: HGNC:MMP28
 
 [Term]
-id: FPLX:MT
-name: MT
+id: FPLX:Metallothionein
+name: Metallothionein
 synonym: "Metallothionein" EXACT []
 synonym: "metallothionein" EXACT []
 synonym: "MT" EXACT []

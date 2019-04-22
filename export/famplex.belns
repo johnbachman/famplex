@@ -2,8 +2,8 @@
 Keyword=FPLX
 NameString=FamPlex
 DomainString=Gene and Gene Products
-VersionString=20190419
-CreatedDateTime=2019-04-19T14:16:52
+VersionString=20190422
+CreatedDateTime=2019-04-22T13:17:22
 DescriptionString=FamPlex is a collection of resources for grounding biological entities from text and describing their hierarchical relationships.
 QueryValueURL=http://identifiers.org/fplx/
 [Author]
@@ -288,13 +288,13 @@ MEK|GRPC
 MMP|GRPC
 MRPL|GRPC
 MRPS|GRPC
-MT|GRPC
 MYH|GRPC
 MYL|GRPC
 MYL_alkali|GRPC
 MYL_regulatory|GRPC
 MYL_slow|GRPC
 MYST|GRPC
+Metallothionein|GRPC
 Mitochondrial_Ribosome|GRPC
 NADH_dehydrogenase|GRPC
 NADPH_oxidase|GRPC
