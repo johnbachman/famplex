@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 24:04:2019 11:47
+date: 24:04:2019 11:56
 
 [Term]
 id: FPLX:9_1_1
@@ -427,7 +427,7 @@ synonym: "Alpha-1,2-glucosyltransferases" EXACT []
 synonym: "alpha-1,2-glucosyltransferase" EXACT []
 synonym: "alpha-1,2-glucosyltransferases" EXACT []
 is_a: FPLX:Glycosyltransferase
-inverse_is_a: HGNC:AlG10
+inverse_is_a: HGNC:ALG10
 inverse_is_a: HGNC:ALG10B
 
 [Term]
@@ -1812,7 +1812,7 @@ synonym: "COLGALT" EXACT []
 synonym: "Collagen beta(1-O)galactosyltransferase" EXACT []
 synonym: "Collagen beta(1-O)galactosyltransferases" EXACT []
 synonym: "collagen beta(1-O)galactosyltransferase" EXACT []
-synonym: "collagen beta(1-O)galactosyltransferase" EXACT []
+synonym: "collagen beta(1-O)galactosyltransferases" EXACT []
 is_a: FPLX:Glycosyltransferase
 inverse_is_a: HGNC:COLGALT1
 inverse_is_a: HGNC:COLGALT2
@@ -3349,7 +3349,7 @@ synonym: "glycosyltransferase family 90" EXACT []
 is_a: FPLX:Glycosyltransferase
 inverse_is_a: HGNC:POGLUT2
 inverse_is_a: HGNC:POGLUT3
-inverse_is_a: HGNC:POGULT1
+inverse_is_a: HGNC:POGLUT1
 
 [Term]
 id: FPLX:GTPase
