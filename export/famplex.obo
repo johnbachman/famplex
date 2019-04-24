@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 22:04:2019 14:44
+date: 24:04:2019 11:47
 
 [Term]
 id: FPLX:9_1_1
@@ -13,6 +13,13 @@ is_a: FPLX:root
 has_part: HGNC:HUS1
 has_part: HGNC:RAD1
 has_part: HGNC:RAD9A
+
+[Term]
+id: FPLX:A4GALT_family
+name: A4GALT-family
+is_a: FPLX:Glycosyltransferase
+inverse_is_a: HGNC:A4GALT
+inverse_is_a: HGNC:A4GNT
 
 [Term]
 id: FPLX:ABL_family
@@ -410,6 +417,69 @@ is_a: FPLX:root
 inverse_is_a: HGNC:ALDOA
 inverse_is_a: HGNC:ALDOB
 inverse_is_a: HGNC:ALDOC
+
+[Term]
+id: FPLX:ALG10
+name: ALG10
+synonym: "ALG10" EXACT []
+synonym: "Alpha-1,2-glucosyltransferase" EXACT []
+synonym: "Alpha-1,2-glucosyltransferases" EXACT []
+synonym: "alpha-1,2-glucosyltransferase" EXACT []
+synonym: "alpha-1,2-glucosyltransferases" EXACT []
+is_a: FPLX:Glycosyltransferase
+inverse_is_a: HGNC:AlG10
+inverse_is_a: HGNC:ALG10B
+
+[Term]
+id: FPLX:ALG1_family
+name: ALG1-family
+is_a: FPLX:Glycosyltransferase
+inverse_is_a: HGNC:ALG1
+inverse_is_a: HGNC:ALG1L
+inverse_is_a: HGNC:ALG1L2
+inverse_is_a: HGNC:ALG2
+inverse_is_a: HGNC:ALG11
+inverse_is_a: HGNC:GLT1D1
+inverse_is_a: HGNC:GTDC1
+inverse_is_a: HGNC:GYS1
+inverse_is_a: HGNC:GYS2
+inverse_is_a: HGNC:PIGA
+
+[Term]
+id: FPLX:ALG3_family
+name: ALG3-family
+is_a: FPLX:Glycosyltransferase
+inverse_is_a: HGNC:ALG3
+inverse_is_a: HGNC:ALG9
+inverse_is_a: HGNC:ALG12
+inverse_is_a: HGNC:PIGB
+inverse_is_a: HGNC:PIGM
+inverse_is_a: HGNC:PIGV
+inverse_is_a: HGNC:PIGZ
+inverse_is_a: HGNC:POMT1
+inverse_is_a: HGNC:POMT2
+
+[Term]
+id: FPLX:ALG6_family
+name: ALG6-family
+synonym: "Alpha-1,3-glucosyltransferase" EXACT []
+synonym: "Alpha-1,3-glucosyltransferases" EXACT []
+synonym: "alpha-1,3-glucosyltransferase" EXACT []
+synonym: "alpha-1,3-glucosyltransferases" EXACT []
+synonym: "Alpha-1,4-glucosyltransferase" EXACT []
+synonym: "Alpha-1,4-glucosyltransferases" EXACT []
+synonym: "alpha-1,4-glucosyltransferase" EXACT []
+synonym: "alpha-1,4-glucosyltransferases" EXACT []
+is_a: FPLX:Glycosyltransferase
+inverse_is_a: HGNC:ALG6
+inverse_is_a: HGNC:ALG8
+
+[Term]
+id: FPLX:ALG13_family
+name: ALG13-family
+is_a: FPLX:Glycosyltransferase
+inverse_is_a: HGNC:ALG13
+inverse_is_a: HGNC:ALG14
 
 [Term]
 id: FPLX:AMPK
@@ -916,6 +986,19 @@ inverse_is_a: HGNC:AXIN1
 inverse_is_a: HGNC:AXIN2
 
 [Term]
+id: FPLX:B3GAT
+name: B3GAT
+synonym: "B3GAT" EXACT []
+synonym: "Beta-1,3-glucuronyltransferase" EXACT []
+synonym: "Beta-1,3-glucuronyltransferases" EXACT []
+synonym: "beta-1,3-glucuronyltransferase" EXACT []
+synonym: "beta-1,3-glucuronyltransferases" EXACT []
+is_a: FPLX:Glycosyltransferase
+inverse_is_a: HGNC:B3GAT1
+inverse_is_a: HGNC:B3GAT2
+inverse_is_a: HGNC:B3GAT3
+
+[Term]
 id: FPLX:BCKDC
 name: BCKDC
 synonym: "BCKDC" EXACT []
@@ -933,6 +1016,56 @@ has_part: HGNC:BCKDHA
 has_part: HGNC:BCKDHB
 has_part: HGNC:DBT
 has_part: HGNC:DLD
+
+[Term]
+id: FPLX:Beta_3_4_GTF
+name: Beta-3-4-GTF
+synonym: "Beta 3-glycosyltransferase" EXACT []
+synonym: "Beta 3-glycosyltransferases" EXACT []
+synonym: "beta 3-glycosyltransferase" EXACT []
+synonym: "beta 3-glycosyltransferases" EXACT []
+synonym: "Beta 4-glycosyltransferase" EXACT []
+synonym: "Beta 4-glycosyltransferases" EXACT []
+synonym: "beta 4-glycosyltransferase" EXACT []
+synonym: "beta 4-glycosyltransferases" EXACT []
+is_a: FPLX:Glycosyltransferase
+inverse_is_a: HGNC:B3GALNT1
+inverse_is_a: HGNC:B3GALNT2
+inverse_is_a: HGNC:B3GLCT
+inverse_is_a: HGNC:B3GALT1
+inverse_is_a: HGNC:B3GALT2
+inverse_is_a: HGNC:B3GALT4
+inverse_is_a: HGNC:B3GALT5
+inverse_is_a: HGNC:B3GALT6
+inverse_is_a: HGNC:B3GNT2
+inverse_is_a: HGNC:B3GNT3
+inverse_is_a: HGNC:B3GNT4
+inverse_is_a: HGNC:B3GNT5
+inverse_is_a: HGNC:B3GNT6
+inverse_is_a: HGNC:B3GNT7
+inverse_is_a: HGNC:B3GNT8
+inverse_is_a: HGNC:B3GNT9
+inverse_is_a: HGNC:CHPF
+inverse_is_a: HGNC:CHPF2
+inverse_is_a: HGNC:CHSY1
+inverse_is_a: HGNC:CHSY3
+inverse_is_a: HGNC:C1GALT1
+inverse_is_a: HGNC:LFNG
+inverse_is_a: HGNC:MFNG
+inverse_is_a: HGNC:RFNG
+inverse_is_a: HGNC:B4GALNT1
+inverse_is_a: HGNC:B4GALNT2
+inverse_is_a: HGNC:B4GALNT3
+inverse_is_a: HGNC:B4GALNT4
+inverse_is_a: HGNC:B4GALT1
+inverse_is_a: HGNC:B4GALT2
+inverse_is_a: HGNC:B4GALT3
+inverse_is_a: HGNC:B4GALT4
+inverse_is_a: HGNC:B4GALT5
+inverse_is_a: HGNC:B4GALT6
+inverse_is_a: HGNC:B4GALT7
+inverse_is_a: HGNC:CSGALNACT1
+inverse_is_a: HGNC:CSGALNACT2
 
 [Term]
 id: FPLX:BIRC
@@ -1671,6 +1804,18 @@ is_a: FPLX:root
 inverse_is_a: HGNC:COL5A1
 inverse_is_a: HGNC:COL5A2
 inverse_is_a: HGNC:COL5A3
+
+[Term]
+id: FPLX:COLGALT
+name: COLGALT
+synonym: "COLGALT" EXACT []
+synonym: "Collagen beta(1-O)galactosyltransferase" EXACT []
+synonym: "Collagen beta(1-O)galactosyltransferases" EXACT []
+synonym: "collagen beta(1-O)galactosyltransferase" EXACT []
+synonym: "collagen beta(1-O)galactosyltransferase" EXACT []
+is_a: FPLX:Glycosyltransferase
+inverse_is_a: HGNC:COLGALT1
+inverse_is_a: HGNC:COLGALT2
 
 [Term]
 id: FPLX:COX
@@ -2518,6 +2663,19 @@ has_part: HGNC:EXOC7
 has_part: HGNC:EXOC8
 
 [Term]
+id: FPLX:EXT
+name: EXT
+synonym: "Exostosin glycosyltransferase family" EXACT []
+synonym: "exostosin glycosyltransferase family" EXACT []
+synonym: "EXT" EXACT []
+is_a: FPLX:Glycosyltransferase
+inverse_is_a: HGNC:EXTL1
+inverse_is_a: HGNC:EXTL2
+inverse_is_a: HGNC:EXTL3
+inverse_is_a: HGNC:EXT1
+inverse_is_a: HGNC:EXT2
+
+[Term]
 id: FPLX:FANC
 name: FANC
 synonym: "FANC proteins" EXACT []
@@ -2691,6 +2849,29 @@ has_part: HGNC:CGA
 has_part: HGNC:FSHB
 
 [Term]
+id: FPLX:FUT
+name: FUT
+synonym: "Fucosyltransferase" EXACT []
+synonym: "Fucosyltransferases" EXACT []
+synonym: "fucosyltransferase" EXACT []
+synonym: "fucosyltransferases" EXACT []
+synonym: "FUT" EXACT []
+is_a: FPLX:Glycosyltransferase
+inverse_is_a: HGNC:FUT1
+inverse_is_a: HGNC:FUT2
+inverse_is_a: HGNC:FUT3
+inverse_is_a: HGNC:FUT4
+inverse_is_a: HGNC:FUT5
+inverse_is_a: HGNC:FUT6
+inverse_is_a: HGNC:FUT7
+inverse_is_a: HGNC:FUT8
+inverse_is_a: HGNC:FUT9
+inverse_is_a: HGNC:FUT10
+inverse_is_a: HGNC:FUT11
+inverse_is_a: HGNC:POFUT1
+inverse_is_a: HGNC:POFUT2
+
+[Term]
 id: FPLX:FZD
 name: FZD
 synonym: "Fz" EXACT []
@@ -2753,6 +2934,32 @@ inverse_is_a: HGNC:GABRR2
 inverse_is_a: HGNC:GABRR3
 
 [Term]
+id: FPLX:GALNT
+name: GALNT
+synonym: "GALNT" EXACT []
+is_a: FPLX:Glycosyltransferase
+inverse_is_a: HGNC:GALNTL5
+inverse_is_a: HGNC:GALNTL6
+inverse_is_a: HGNC:GALNT1
+inverse_is_a: HGNC:GALNT2
+inverse_is_a: HGNC:GALNT3
+inverse_is_a: HGNC:GALNT4
+inverse_is_a: HGNC:GALNT5
+inverse_is_a: HGNC:GALNT6
+inverse_is_a: HGNC:GALNT7
+inverse_is_a: HGNC:GALNT8
+inverse_is_a: HGNC:GALNT9
+inverse_is_a: HGNC:GALNT10
+inverse_is_a: HGNC:GALNT11
+inverse_is_a: HGNC:GALNT12
+inverse_is_a: HGNC:GALNT13
+inverse_is_a: HGNC:GALNT14
+inverse_is_a: HGNC:GALNT15
+inverse_is_a: HGNC:GALNT16
+inverse_is_a: HGNC:GALNT18
+inverse_is_a: HGNC:GALNT17
+
+[Term]
 id: FPLX:Gamma_secretase
 name: Gamma-secretase
 synonym: "gamma secretase" EXACT []
@@ -2801,6 +3008,24 @@ inverse_is_a: HGNC:GATA3
 inverse_is_a: HGNC:GATA4
 inverse_is_a: HGNC:GATA5
 inverse_is_a: HGNC:GATA6
+
+[Term]
+id: FPLX:GCNT
+name: GCNT
+synonym: "GCNT" EXACT []
+synonym: "XYLT" EXACT []
+synonym: "Xylosyltransferase" EXACT []
+synonym: "Xylosyltransferases" EXACT []
+synonym: "xylosyltransferase" EXACT []
+synonym: "xylosyltransferases" EXACT []
+is_a: FPLX:Glycosyltransferase
+inverse_is_a: HGNC:GCNT1
+inverse_is_a: HGNC:GCNT2
+inverse_is_a: HGNC:GCNT3
+inverse_is_a: HGNC:GCNT4
+inverse_is_a: HGNC:GCNT7
+inverse_is_a: HGNC:XYLT1
+inverse_is_a: HGNC:XYLT2
 
 [Term]
 id: FPLX:GEF
@@ -3012,6 +3237,119 @@ xref: RE:R-HSA-109631
 is_a: FPLX:root
 has_part: HGNC:GTF2F1
 has_part: HGNC:GTF2F2
+
+[Term]
+id: FPLX:Glycosyltransferase
+name: Glycosyltransferase
+xref: MESH:D016695
+is_a: FPLX:root
+inverse_is_a: FPLX:A4GALT_family
+inverse_is_a: FPLX:ALG10
+inverse_is_a: FPLX:ALG1_family
+inverse_is_a: FPLX:ALG3_family
+inverse_is_a: FPLX:ALG6_family
+inverse_is_a: FPLX:ALG13_family
+inverse_is_a: FPLX:B3GAT
+inverse_is_a: FPLX:Beta_3_4_GTF
+inverse_is_a: FPLX:COLGALT
+inverse_is_a: FPLX:EXT
+inverse_is_a: FPLX:FUT
+inverse_is_a: FPLX:GALNT
+inverse_is_a: FPLX:GCNT
+inverse_is_a: FPLX:GTF_family_2
+inverse_is_a: FPLX:GTF_family_6
+inverse_is_a: FPLX:GTF_family_8
+inverse_is_a: FPLX:GTF_family_29
+inverse_is_a: FPLX:GTF_family_90
+inverse_is_a: FPLX:MGAT
+inverse_is_a: FPLX:OGT_family
+inverse_is_a: FPLX:PYG
+inverse_is_a: FPLX:STT3
+inverse_is_a: FPLX:UGCG
+inverse_is_a: FPLX:UGT
+inverse_is_a: FPLX:UGGT
+
+[Term]
+id: FPLX:GTF_family_2
+name: GTF-family-2
+synonym: "Glycosyltransferase family 2" EXACT []
+synonym: "glycosyltransferase family 2" EXACT []
+is_a: FPLX:Glycosyltransferase
+inverse_is_a: HGNC:ALG5
+inverse_is_a: HGNC:B3GNTL1
+inverse_is_a: HGNC:DPM1
+inverse_is_a: HGNC:HAS1
+inverse_is_a: HGNC:HAS2
+inverse_is_a: HGNC:HAS3
+
+[Term]
+id: FPLX:GTF_family_6
+name: GTF-family-6
+synonym: "Glycosyltransferase family 6" EXACT []
+synonym: "glycosyltransferase family 6" EXACT []
+is_a: FPLX:Glycosyltransferase
+inverse_is_a: HGNC:ABO
+inverse_is_a: HGNC:A3GALT2
+inverse_is_a: HGNC:GBGT1
+inverse_is_a: HGNC:GLT6D1
+
+[Term]
+id: FPLX:GTF_family_8
+name: GTF-family-8
+synonym: "Glycosyltransferase family 8" EXACT []
+synonym: "glycosyltransferase family 8" EXACT []
+is_a: FPLX:Glycosyltransferase
+inverse_is_a: HGNC:GLT8D1
+inverse_is_a: HGNC:GLT8D2
+inverse_is_a: HGNC:GXYLT1
+inverse_is_a: HGNC:GXYLT2
+inverse_is_a: HGNC:GYG1
+inverse_is_a: HGNC:GYG2
+inverse_is_a: HGNC:LARGE1
+inverse_is_a: HGNC:LARGE2
+inverse_is_a: HGNC:RXYLT1
+inverse_is_a: HGNC:XXYLT1
+
+[Term]
+id: FPLX:GTF_family_29
+name: GTF-family-29
+synonym: "Glycosyltransferase family 29" EXACT []
+synonym: "glycosyltransferase family 29" EXACT []
+synonym: "Sialytransferase" EXACT []
+synonym: "Sialytransferases" EXACT []
+synonym: "sialytransferase" EXACT []
+synonym: "sialytransferases" EXACT []
+is_a: FPLX:Glycosyltransferase
+inverse_is_a: HGNC:ST3GAL1
+inverse_is_a: HGNC:ST3GAL2
+inverse_is_a: HGNC:ST3GAL3
+inverse_is_a: HGNC:ST3GAL4
+inverse_is_a: HGNC:ST3GAL5
+inverse_is_a: HGNC:ST3GAL6
+inverse_is_a: HGNC:ST6GALNAC1
+inverse_is_a: HGNC:ST6GALNAC2
+inverse_is_a: HGNC:ST6GALNAC3
+inverse_is_a: HGNC:ST6GALNAC4
+inverse_is_a: HGNC:ST6GALNAC5
+inverse_is_a: HGNC:ST6GALNAC6
+inverse_is_a: HGNC:ST6GAL1
+inverse_is_a: HGNC:ST6GAL2
+inverse_is_a: HGNC:ST8SIA1
+inverse_is_a: HGNC:ST8SIA2
+inverse_is_a: HGNC:ST8SIA3
+inverse_is_a: HGNC:ST8SIA4
+inverse_is_a: HGNC:ST8SIA5
+inverse_is_a: HGNC:ST8SIA6
+
+[Term]
+id: FPLX:GTF_family_90
+name: GTF-family-90
+synonym: "Glycosyltransferase family 90" EXACT []
+synonym: "glycosyltransferase family 90" EXACT []
+is_a: FPLX:Glycosyltransferase
+inverse_is_a: HGNC:POGLUT2
+inverse_is_a: HGNC:POGLUT3
+inverse_is_a: HGNC:POGULT1
 
 [Term]
 id: FPLX:GTPase
@@ -4383,6 +4721,21 @@ inverse_is_a: HGNC:MAP2K1
 inverse_is_a: HGNC:MAP2K2
 
 [Term]
+id: FPLX:MGAT
+name: MGAT
+synonym: "MGAT" EXACT []
+is_a: FPLX:Glycosyltransferase
+inverse_is_a: HGNC:MGAT1
+inverse_is_a: HGNC:MGAT2
+inverse_is_a: HGNC:MGAT3
+inverse_is_a: HGNC:MGAT4A
+inverse_is_a: HGNC:MGAT4B
+inverse_is_a: HGNC:MGAT4C
+inverse_is_a: HGNC:MGAT4D
+inverse_is_a: HGNC:MGAT5
+inverse_is_a: HGNC:MGAT5B
+
+[Term]
 id: FPLX:Mitochondrial_Ribosome
 name: Mitochondrial-Ribosome
 synonym: "mammalian mitochondrial ribosome" EXACT []
@@ -5039,6 +5392,15 @@ is_a: FPLX:root
 inverse_is_a: HGNC:NTRK1
 inverse_is_a: HGNC:NTRK2
 inverse_is_a: HGNC:NTRK3
+
+[Term]
+id: FPLX:OGT_family
+name: OGT-family
+is_a: FPLX:Glycosyltransferase
+inverse_is_a: HGNC:EOGT
+inverse_is_a: HGNC:OGT
+inverse_is_a: HGNC:POMGNT1
+inverse_is_a: HGNC:POMGNT2
 
 [Term]
 id: FPLX:p14_3_3
@@ -6276,6 +6638,19 @@ inverse_is_a: HGNC:PTGER3
 inverse_is_a: HGNC:PTGER4
 
 [Term]
+id: FPLX:PYG
+name: PYG
+synonym: "Glycogen phosphorylase" EXACT []
+synonym: "Glycogen phosphorylases" EXACT []
+synonym: "glycogen phosphorylase" EXACT []
+synonym: "glycogen phosphorylases" EXACT []
+synonym: "PYG" EXACT []
+is_a: FPLX:Glycosyltransferase
+inverse_is_a: HGNC:PYGB
+inverse_is_a: HGNC:PYGL
+inverse_is_a: HGNC:PYGM
+
+[Term]
 id: FPLX:RAB
 name: RAB
 synonym: "Rab GTPase" EXACT []
@@ -7154,6 +7529,14 @@ inverse_is_a: HGNC:STAT5A
 inverse_is_a: HGNC:STAT5B
 
 [Term]
+id: FPLX:STT3
+name: STT3
+synonym: "STT3" EXACT []
+is_a: FPLX:Glycosyltransferase
+inverse_is_a: HGNC:STT3A
+inverse_is_a: HGNC:STT3B
+
+[Term]
 id: FPLX:Sulfonylurea_receptor
 name: Sulfonylurea-receptor
 synonym: "Sulfonylurea Receptor" EXACT []
@@ -7748,6 +8131,57 @@ xref: MEDSCAN:urn:agi-protfc:ubiquitin
 xref: NCIT:C17227
 xref: NEXTPROT-FAMILY:04276
 is_a: FPLX:root
+
+[Term]
+id: FPLX:UGCG
+name: UGCG
+is_a: FPLX:Glycosyltransferase
+inverse_is_a: HGNC:UGCG
+
+[Term]
+id: FPLX:UGT
+name: UGT
+synonym: "UGT" EXACT []
+is_a: FPLX:Glycosyltransferase
+inverse_is_a: HGNC:UGT1A
+inverse_is_a: HGNC:UGT1A1
+inverse_is_a: HGNC:UGT1A2P
+inverse_is_a: HGNC:UGT1A3
+inverse_is_a: HGNC:UGT1A4
+inverse_is_a: HGNC:UGT1A5
+inverse_is_a: HGNC:UGT1A6
+inverse_is_a: HGNC:UGT1A7
+inverse_is_a: HGNC:UGT1A8
+inverse_is_a: HGNC:UGT1A9
+inverse_is_a: HGNC:UGT1A10
+inverse_is_a: HGNC:UGT1A11P
+inverse_is_a: HGNC:UGT1A12P
+inverse_is_a: HGNC:UGT1A13P
+inverse_is_a: HGNC:UGT2A1
+inverse_is_a: HGNC:UGT2A2
+inverse_is_a: HGNC:UGT2A3
+inverse_is_a: HGNC:UGT2B4
+inverse_is_a: HGNC:UGT2B7
+inverse_is_a: HGNC:UGT2B10
+inverse_is_a: HGNC:UGT2B11
+inverse_is_a: HGNC:UGT2B15
+inverse_is_a: HGNC:UGT2B17
+inverse_is_a: HGNC:UGT2B24P
+inverse_is_a: HGNC:UGT2B25P
+inverse_is_a: HGNC:UGT2B26P
+inverse_is_a: HGNC:UGT2B27P
+inverse_is_a: HGNC:UGT2B28
+inverse_is_a: HGNC:UGT2B29P
+inverse_is_a: HGNC:UGT3A1
+inverse_is_a: HGNC:UGT3A2
+inverse_is_a: HGNC:UGT8
+
+[Term]
+id: FPLX:UGGT
+name: UGGT
+is_a: FPLX:Glycosyltransferase
+inverse_is_a: HGNC:UGGT1
+inverse_is_a: HGNC:UGGT2
 
 [Term]
 id: FPLX:VAV
