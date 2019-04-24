@@ -2550,7 +2550,7 @@ FPLX,STT3,isa,FPLX,Glycosyltransferase
 FPLX,UGCG,isa,FPLX,Glycosyltransferase
 FPLX,UGT,isa,FPLX,Glycosyltransferase
 FPLX,UGGT,isa,FPLX,Glycosyltransferase
-HGNC,AlG10,isa,FPLX,ALG10
+HGNC,ALG10,isa,FPLX,ALG10
 HGNC,ALG10B,isa,FPLX,ALG10
 HGNC,ALG6,isa,FPLX,ALG6_family
 HGNC,ALG8,isa,FPLX,ALG6_family
@@ -2657,7 +2657,7 @@ HGNC,RXYLT1,isa,FPLX,GTF_family_8
 HGNC,XXYLT1,isa,FPLX,GTF_family_8
 HGNC,POGLUT2,isa,FPLX,GTF_family_90
 HGNC,POGLUT3,isa,FPLX,GTF_family_90
-HGNC,POGULT1,isa,FPLX,GTF_family_90
+HGNC,POGLUT1,isa,FPLX,GTF_family_90
 HGNC,ALG1,isa,FPLX,ALG1_family
 HGNC,ALG1L,isa,FPLX,ALG1_family
 HGNC,ALG1L2,isa,FPLX,ALG1_family
