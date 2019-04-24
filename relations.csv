@@ -2533,7 +2533,7 @@ FPLX,ALG6_family,isa,FPLX,Glycosyltransferase
 FPLX,ALG13_family,isa,FPLX,Glycosyltransferase
 FPLX,B3GAT,isa,FPLX,Glycosyltransferase
 FPLX,Beta_3_4_GTF,isa,FPLX,Glycosyltransferase
-FPLX,COLGAT,isa,FPLX,Glycosyltransferase
+FPLX,COLGALT,isa,FPLX,Glycosyltransferase
 FPLX,EXT,isa,FPLX,Glycosyltransferase
 FPLX,FUT,isa,FPLX,Glycosyltransferase
 FPLX,GALNT,isa,FPLX,Glycosyltransferase
