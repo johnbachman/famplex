@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 24:04:2019 11:58
+date: 21:05:2019 15:58
 
 [Term]
 id: FPLX:9_1_1
@@ -1508,8 +1508,7 @@ inverse_is_a: HGNC:CDKL2
 inverse_is_a: HGNC:CDKL3
 inverse_is_a: HGNC:CDKL4
 inverse_is_a: HGNC:CDKL5
-inverse_is_a: HGNC:CDK1
-inverse_is_a: HGNC:CDK2
+inverse_is_a: FPLX:CDK1_2
 inverse_is_a: HGNC:CDK3
 inverse_is_a: HGNC:CDK4
 inverse_is_a: HGNC:CDK5
@@ -1529,6 +1528,16 @@ inverse_is_a: HGNC:CDK17
 inverse_is_a: HGNC:CDK18
 inverse_is_a: HGNC:CDK19
 inverse_is_a: HGNC:CDK20
+
+[Term]
+id: FPLX:CDK1_2
+name: CDK1-2
+synonym: "CDK1/2" EXACT []
+synonym: "cdk1/2" EXACT []
+synonym: "Cdk1/2" EXACT []
+is_a: FPLX:CDK
+inverse_is_a: HGNC:CDK1
+inverse_is_a: HGNC:CDK2
 
 [Term]
 id: FPLX:CDKN
@@ -1586,6 +1595,7 @@ inverse_is_a: HGNC:CEBPE
 id: FPLX:CHEK
 name: CHEK
 synonym: "checkpoint kinase" EXACT []
+synonym: "Chk1/2" EXACT []
 xref: MEDSCAN:urn:agi-protfc:checkpoint%20kinase
 is_a: FPLX:root
 inverse_is_a: HGNC:CHEK1
@@ -2571,6 +2581,7 @@ inverse_is_a: HGNC:CLINT1
 id: FPLX:ERBB
 name: ERBB
 synonym: "ErbB" EXACT []
+synonym: "erbB" EXACT []
 xref: BEL:"EGFR/ERBB Family"
 xref: IP:IPR016245
 xref: NCIT:C17763
