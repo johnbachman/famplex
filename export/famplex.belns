@@ -2,8 +2,8 @@
 Keyword=FPLX
 NameString=FamPlex
 DomainString=Gene and Gene Products
-VersionString=20190416
-CreatedDateTime=2019-04-16T20:43:01
+VersionString=20190424
+CreatedDateTime=2019-04-24T11:58:07
 DescriptionString=FamPlex is a collection of resources for grounding biological entities from text and describing their hierarchical relationships.
 QueryValueURL=http://identifiers.org/fplx/
 [Author]
@@ -18,6 +18,7 @@ DelimiterString=|
 CacheableFlag=yes
 [Values]
 9_1_1|GRPC
+A4GALT_family|GRPC
 ABL_family|GRPC
 ACAD|GRPC
 ACC|GRPC
@@ -33,6 +34,11 @@ ADRBK|GRPC
 AKT|GRPC
 ALDH|GRPC
 ALDO|GRPC
+ALG10|GRPC
+ALG13_family|GRPC
+ALG1_family|GRPC
+ALG3_family|GRPC
+ALG6_family|GRPC
 AMPK|GRPC
 AMPK_A1B1G1|GRPC
 AMPK_A1B1G2|GRPC
@@ -53,6 +59,7 @@ AP1|GRPC
 AP2A|GRPC
 APC_C|GRPC
 APOA|GRPC
+ARF_GTPase_family|GRPC
 ARRB|GRPC
 ATG4|GRPC
 ATP1A|GRPC
@@ -71,6 +78,7 @@ Adaptor_protein_III|GRPC
 Annexin_II_heterotetramer|GRPC
 Apolipoprotein|GRPC
 Arp2_3_protein|GRPC
+B3GAT|GRPC
 BCKDC|GRPC
 BIRC|GRPC
 BMP|GRPC
@@ -78,6 +86,7 @@ BMP_receptor|GRPC
 BMP_receptor_type_I|GRPC
 BMP_receptor_type_II|GRPC
 BRCA|GRPC
+Beta_3_4_GTF|GRPC
 C1|GRPC
 C1q|GRPC
 CALM|GRPC
@@ -107,6 +116,7 @@ CNKSR|GRPC
 COL1|GRPC
 COL4|GRPC
 COL5|GRPC
+COLGALT|GRPC
 COX|GRPC
 COX4|GRPC
 COX6A|GRPC
@@ -173,6 +183,7 @@ ETC_complex_I_supernumerary|GRPC
 ETC_complex_V|GRPC
 ETS|GRPC
 EXOC|GRPC
+EXT|GRPC
 Ephrin_receptor|GRPC
 FANC|GRPC
 FGF|GRPC
@@ -183,13 +194,16 @@ FNT|GRPC
 FOS_family|GRPC
 FOXO|GRPC
 FSH|GRPC
+FUT|GRPC
 FZD|GRPC
 F_actin|GRPC
 Fibrinogen|GRPC
 GABR|GRPC
+GALNT|GRPC
 GAP|GRPC
 GAS6_receptor|GRPC
 GATA|GRPC
+GCNT|GRPC
 GEF|GRPC
 GPCR|GRPC
 GPIT|GRPC
@@ -202,6 +216,11 @@ GSK3|GRPC
 GST|GRPC
 GTF2E|GRPC
 GTF2F|GRPC
+GTF_family_2|GRPC
+GTF_family_29|GRPC
+GTF_family_6|GRPC
+GTF_family_8|GRPC
+GTF_family_90|GRPC
 GTPase|GRPC
 GUCY|GRPC
 GYS|GRPC
@@ -218,6 +237,7 @@ G_q_alpha|GRPC
 G_s|GRPC
 G_s_alpha|GRPC
 Gamma_secretase|GRPC
+Glycosyltransferase|GRPC
 HDAC|GRPC
 HDAC_I|GRPC
 HDAC_II|GRPC
@@ -285,6 +305,7 @@ MAPK|GRPC
 MCM|GRPC
 MEF2|GRPC
 MEK|GRPC
+MGAT|GRPC
 MMP|GRPC
 MRPL|GRPC
 MRPS|GRPC
@@ -294,6 +315,7 @@ MYL_alkali|GRPC
 MYL_regulatory|GRPC
 MYL_slow|GRPC
 MYST|GRPC
+Metallothionein|GRPC
 Mitochondrial_Ribosome|GRPC
 NADH_dehydrogenase|GRPC
 NADPH_oxidase|GRPC
@@ -316,6 +338,7 @@ Na_K_ATPase|GRPC
 Natriuretic_peptide|GRPC
 Neurexins|GRPC
 Notch|GRPC
+OGT_family|GRPC
 P2RX|GRPC
 P2RY|GRPC
 P70S6K|GRPC
@@ -379,6 +402,7 @@ PRKAC|GRPC
 PRKAR|GRPC
 PRKG|GRPC
 PTGER|GRPC
+PYG|GRPC
 Patched|GRPC
 Pertussis_toxin|GRPC
 PhK|GRPC
@@ -443,6 +467,7 @@ SRC|GRPC
 SREBF|GRPC
 STAT|GRPC
 STAT5|GRPC
+STT3|GRPC
 SWI_SNF|GRPC
 Sulfonylurea_receptor|GRPC
 TAOK|GRPC
@@ -477,6 +502,9 @@ Troponin_T|GRPC
 Tryptase|GRPC
 Tubulin|GRPC
 UBE2|GRPC
+UGCG|GRPC
+UGGT|GRPC
+UGT|GRPC
 Ubiquitin|GRPC
 VAV|GRPC
 VEGF|GRPC
