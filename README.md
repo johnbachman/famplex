@@ -21,10 +21,10 @@ synonyms.
 The repository contains the following files:
 
 * ```relations.csv```. Defines membership of specific genes/proteins in
-  families and protein complexes. For example, ```PIK3CA isa PIK3C```, where
-PIK3C represents the class of catalytic subunits of PI3K; and ```PIK3C partof
-PI3K```, where PI3K represents a named complex consisting of a catalytic and
-regulatory subunit.
+  families and protein complexes. For example, ```PIK3CA isa PI3K_p110```,
+  where PI3K_p110 represents the class of catalytic subunits of PI3K; and
+  ```PI3K_p110 partof PI3K```, where PI3K represents a named complex consisting
+  of a catalytic and regulatory subunit.
 
 * ```equivalences.csv```. Defines mappings between outside namespaces and
 the FamPlex namespace.
