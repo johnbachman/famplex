@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 21:05:2019 15:58
+date: 19:06:2019 23:40
 
 [Term]
 id: FPLX:9_1_1
@@ -3730,6 +3730,7 @@ synonym: "Hedgehog family" EXACT []
 synonym: "hedgehog protein" EXACT []
 synonym: "hedgehog signaling proteins" EXACT []
 synonym: "Hedgehog" EXACT []
+synonym: "Hh" EXACT []
 xref: BEL:"Hedgehog Family"
 xref: IP:IPR000320
 xref: IP:IPR001657
@@ -6796,6 +6797,8 @@ name: RAP1
 synonym: "Rap1" EXACT []
 xref: NEXTPROT-FAMILY:04773
 is_a: FPLX:root
+inverse_is_a: HGNC:RAP1A
+inverse_is_a: HGNC:RAP1B
 
 [Term]
 id: FPLX:RAPGEF
