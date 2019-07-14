@@ -25,10 +25,10 @@ script:
   - python export/belns.py
   - belns_diff=$(git diff -U0 export/famplex.belns | egrep "^[\+-][^\+-]")
   - belns=$(echo "$belns_diff" | egrep -v "^[\+-](VersionString|CreatedDateTime)")
-  - obo_diff=$(git diff -U0 export/famplex.obo | egrep "^[\+-][^\+-]");
-  - obo=$(echo "$obo_diff" | egrep -v "^[\+-]date");
-  - hgnc=$(git diff -U0 export/hgnc_symbol_map.csv | egrep "^[\+-][^\+-]");
+  - obo_diff=$(git diff -U0 export/famplex.obo | egrep "^[\+-][^\+-]")
+  - obo=$(echo "$obo_diff" | egrep -v "^[\+-]date")
+  - hgnc=$(git diff -U0 export/hgnc_symbol_map.csv | egrep "^[\+-][^\+-]")
   - if [[ ! -z $belns ]] || [[ ! -z $obo ]] || [[ ! -z $hgnc ]]; then
-    echo "FAIL exports have not been updated";
-    exit 1;
-  fi
+      echo "FAIL exports have not been updated";
+      exit 1;
+    fi
