@@ -2,8 +2,8 @@
 Keyword=FPLX
 NameString=FamPlex
 DomainString=Gene and Gene Products
-VersionString=20190711
-CreatedDateTime=2019-07-11T13:36:18
+VersionString=20190714
+CreatedDateTime=2019-07-14T11:42:05
 DescriptionString=FamPlex is a collection of resources for grounding biological entities from text and describing their hierarchical relationships.
 QueryValueURL=http://identifiers.org/fplx/
 [Author]
@@ -158,6 +158,7 @@ DNM|GRPC
 DRD|GRPC
 DUSP|GRPC
 DVL|GRPC
+DYRK|GRPC
 Death_receptor|GRPC
 Desmoglein|GRPC
 E2F|GRPC
