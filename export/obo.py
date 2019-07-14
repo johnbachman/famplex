@@ -9,9 +9,9 @@ if sys.version_info.major < 3:
     raise Exception('This script should be run in Python 3.')
 
 
-
 Reference = collections.namedtuple('Reference', ['ns', 'id'])
 Synonym = collections.namedtuple('Synonym', ['name', 'status'])
+
 
 class OboTerm(object):
     def __init__(self, term_id, name, rels, synonyms=None, xrefs=None):
@@ -49,6 +49,7 @@ class OboTerm(object):
 
     def __str__(self):
         return self.to_obo()
+
 
 def get_obo_terms():
     obo_terms = []
@@ -124,9 +125,10 @@ def get_obo_terms():
         term = OboTerm(entity_id, name, rels[entity], synonyms, xrefs)
         obo_terms.append(term)
     obo_terms.append(OboTerm(Reference('FPLX', 'root'),
-                                       'PROTEIN-FAMILY-OR-COMPLEX',
-                                       {}, [], {}))
+                             'PROTEIN-FAMILY-OR-COMPLEX',
+                             {}, [], {}))
     return obo_terms
+
 
 def save_obo_terms(obo_terms, output_file=None):
     date = datetime.datetime.today()
@@ -143,7 +145,9 @@ def save_obo_terms(obo_terms, output_file=None):
             fh.write(obo_str)
             fh.write('\n')
 
+
 if __name__ == '__main__':
     obo_terms = get_obo_terms()
-    save_obo_terms(obo_terms, 'famplex.obo')
+    path_this = os.path.dirname(os.path.abspath(__file__))
+    save_obo_terms(obo_terms, os.path.join(path_this, 'famplex.obo'))
 
