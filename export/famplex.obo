@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 19:06:2019 23:40
+date: 14:07:2019 11:41
 
 [Term]
 id: FPLX:9_1_1
@@ -2378,6 +2378,18 @@ is_a: FPLX:root
 inverse_is_a: HGNC:DVL1
 inverse_is_a: HGNC:DVL2
 inverse_is_a: HGNC:DVL3
+
+[Term]
+id: FPLX:DYRK
+name: DYRK
+synonym: "DYRK" EXACT []
+xref: NEXTPROT-FAMILY:03091
+is_a: FPLX:root
+inverse_is_a: HGNC:DYRK1A
+inverse_is_a: HGNC:DYRK1B
+inverse_is_a: HGNC:DYRK2
+inverse_is_a: HGNC:DYRK3
+inverse_is_a: HGNC:DYRK4
 
 [Term]
 id: FPLX:E2F
@@ -7250,6 +7262,16 @@ inverse_is_a: HGNC:SHC1
 inverse_is_a: HGNC:SHC2
 inverse_is_a: HGNC:SHC3
 inverse_is_a: HGNC:SHC4
+
+[Term]
+id: FPLX:SIK
+name: SIK
+synonym: "SIK" EXACT []
+synonym: "salt inducible kinase" EXACT []
+is_a: FPLX:root
+inverse_is_a: HGNC:SIK1
+inverse_is_a: HGNC:SIK2
+inverse_is_a: HGNC:SIK3
 
 [Term]
 id: FPLX:SLC2A
