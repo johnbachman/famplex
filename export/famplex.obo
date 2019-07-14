@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 14:07:2019 11:41
+date: 14:07:2019 11:51
 
 [Term]
 id: FPLX:9_1_1
@@ -968,6 +968,25 @@ has_part: HGNC:ATP5PF
 has_part: HGNC:ATP5PO
 has_part: HGNC:ATP5IF1
 has_part: FPLX:ATP5G
+
+[Term]
+id: FPLX:Augmin
+name: Augmin
+synonym: "Augmin" EXACT []
+synonym: "HAUS" EXACT []
+synonym: "HAUS complex" EXACT []
+xref: GO:0070652
+xref: HGNC_GROUP:581
+xref: RE:R-HSA-8855211
+is_a: FPLX:root
+has_part: HGNC:HAUS1
+has_part: HGNC:HAUS2
+has_part: HGNC:HAUS3
+has_part: HGNC:HAUS4
+has_part: HGNC:HAUS5
+has_part: HGNC:HAUS6
+has_part: HGNC:HAUS7
+has_part: HGNC:HAUS8
 
 [Term]
 id: FPLX:AXIN
