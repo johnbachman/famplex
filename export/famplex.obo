@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 14:07:2019 11:51
+date: 14:07:2019 13:17
 
 [Term]
 id: FPLX:9_1_1
@@ -1992,6 +1992,15 @@ has_part: HGNC:MED23
 has_part: HGNC:MED26
 has_part: HGNC:MED27
 has_part: HGNC:MED7
+
+[Term]
+id: FPLX:CRTC
+name: CRTC
+synonym: "CRTC" EXACT []
+is_a: FPLX:root
+inverse_is_a: HGNC:CRTC1
+inverse_is_a: HGNC:CRTC2
+inverse_is_a: HGNC:CRTC3
 
 [Term]
 id: FPLX:CSNK1
