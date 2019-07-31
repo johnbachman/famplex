@@ -1067,6 +1067,8 @@ GSTs,FPLX,GST,,,,
 GTP,HMDB,HMDB01273,CHEBI,CHEBI:15996,PUBCHEM,135398633
 GTPase,FPLX,GTPase,,,,
 GTPase-activating proteins,FPLX,GAP,,,,
+GTPase-activating protein,FPLX,GAP,,,,
+GTPase activating protein,FPLX,GAP,,,,
 guanine,PUBCHEM,135398634,CHEBI,CHEBI:16235,,
 guanylate cyclase,FPLX,GUCY,,,,
 guanylyl cyclase,FPLX,GUCY,,,,
