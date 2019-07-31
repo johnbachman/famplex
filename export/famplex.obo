@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 14:07:2019 13:17
+date: 31:07:2019 13:00
 
 [Term]
 id: FPLX:9_1_1
@@ -1719,7 +1719,7 @@ xref: NCIT:C107559
 xref: NEXTPROT-FAMILY:03101
 xref: RE:R-HSA-201711
 xref: RE:R-HSA-6805066
-is_a: FPLX:root
+is_a: FPLX:CSNK
 has_part: HGNC:CSNK2A1
 has_part: HGNC:CSNK2A2
 has_part: HGNC:CSNK2B
@@ -2003,6 +2003,14 @@ inverse_is_a: HGNC:CRTC2
 inverse_is_a: HGNC:CRTC3
 
 [Term]
+id: FPLX:CSNK
+name: CSNK
+synonym: "casein kinase" EXACT []
+is_a: FPLX:root
+inverse_is_a: FPLX:CSNK1
+inverse_is_a: FPLX:CK2
+
+[Term]
 id: FPLX:CSNK1
 name: CSNK1
 synonym: "Casein kinase 1" EXACT []
@@ -2012,7 +2020,7 @@ synonym: "CSNK1" EXACT []
 xref: BEL:"CSNK1 Family"
 xref: MEDSCAN:urn:agi-protfc:casein%20kinase%20I
 xref: NEXTPROT-FAMILY:03083
-is_a: FPLX:root
+is_a: FPLX:CSNK
 inverse_is_a: HGNC:CSNK1A1
 inverse_is_a: HGNC:CSNK1A1L
 inverse_is_a: HGNC:CSNK1D
@@ -2576,6 +2584,16 @@ inverse_is_a: HGNC:ENO3
 inverse_is_a: HGNC:ENO4
 
 [Term]
+id: FPLX:Eotaxin
+name: Eotaxin
+synonym: "eotaxin" EXACT []
+synonym: "eotaxins" EXACT []
+is_a: FPLX:root
+inverse_is_a: HGNC:CCL11
+inverse_is_a: HGNC:CCL24
+inverse_is_a: HGNC:CCL26
+
+[Term]
 id: FPLX:Ephrin_receptor
 name: Ephrin-receptor
 synonym: "Eph receptor" EXACT []
@@ -3029,6 +3047,8 @@ id: FPLX:GAP
 name: GAP
 synonym: "GAP" EXACT []
 synonym: "GTPase-activating proteins" EXACT []
+synonym: "GTPase-activating protein" EXACT []
+synonym: "GTPase activating protein" EXACT []
 xref: GO:0005096
 xref: NCIT:C17298
 is_a: FPLX:root
@@ -6385,6 +6405,7 @@ name: PPP2
 synonym: "PP2 phosphatases" EXACT []
 synonym: "PP2" EXACT []
 synonym: "PP2A" EXACT []
+synonym: "phosphatase PP2A" EXACT []
 synonym: "protein phosphatase 2" EXACT []
 xref: MEDSCAN:urn:agi-complex:prophash-f2e03d3bf1f747adab17ce77b9b5e5b3
 xref: MEDSCAN:urn:agi-complex:protein%20phosphatase%20type%202A%20complex
@@ -7036,6 +7057,17 @@ inverse_is_a: HGNC:ARHGDIB
 inverse_is_a: HGNC:ARHGDIG
 
 [Term]
+id: FPLX:RLR
+name: RLR
+synonym: "RLRs" EXACT []
+synonym: "RLR" EXACT []
+synonym: "RIG-I like receptors" EXACT []
+is_a: FPLX:root
+inverse_is_a: HGNC:DDX58
+inverse_is_a: HGNC:DHX58
+inverse_is_a: HGNC:MDA5
+
+[Term]
 id: FPLX:RNApo_I
 name: RNApo-I
 synonym: "Pol I" EXACT []
@@ -7087,6 +7119,7 @@ inverse_is_a: HGNC:ROBO3
 id: FPLX:ROCK
 name: ROCK
 synonym: "ROCK" EXACT []
+synonym: "Rho kinase" EXACT []
 xref: BEL:"ROCK Family"
 xref: IP:IPR015008
 xref: IP:IPR020684

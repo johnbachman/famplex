@@ -2,8 +2,8 @@
 Keyword=FPLX
 NameString=FamPlex
 DomainString=Gene and Gene Products
-VersionString=20190714
-CreatedDateTime=2019-07-14T13:17:44
+VersionString=20190731
+CreatedDateTime=2019-07-31T13:01:03
 DescriptionString=FamPlex is a collection of resources for grounding biological entities from text and describing their hierarchical relationships.
 QueryValueURL=http://identifiers.org/fplx/
 [Author]
@@ -130,6 +130,7 @@ CREB|GRPC
 CRISP|GRPC
 CRSP|GRPC
 CRTC|GRPC
+CSNK|GRPC
 CSNK1|GRPC
 CSNK2|GRPC
 CTNNA|GRPC
@@ -188,6 +189,7 @@ ETC_complex_V|GRPC
 ETS|GRPC
 EXOC|GRPC
 EXT|GRPC
+Eotaxin|GRPC
 Ephrin_receptor|GRPC
 FANC|GRPC
 FGF|GRPC
@@ -431,6 +433,7 @@ RFC|GRPC
 RFX|GRPC
 RGL|GRPC
 RHO|GRPC
+RLR|GRPC
 RNApo_I|GRPC
 RNApo_II|GRPC
 ROBO|GRPC
