@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 10:08:2019 21:59
+date: 10:08:2019 22:22
 
 [Term]
 id: FPLX:9_1_1
@@ -8553,6 +8553,19 @@ xref: GO:0005753
 xref: HGNC_GROUP:644
 xref: MESH:D025261
 is_a: FPLX:root
+
+[Term]
+id: FPLX:LXR
+name: LXR
+synonym: "liver X receptors" EXACT []
+synonym: "liver X receptor" EXACT []
+synonym: "Liver X receptors" EXACT []
+synonym: "Liver X receptor" EXACT []
+synonym: "LXRs" EXACT []
+xref: IP:IPR023257
+is_a: FPLX:root
+inverse_is_a: HGNC:NR1H2
+inverse_is_a: HGNC:NR1H3
 
 [Term]
 id: FPLX:root
