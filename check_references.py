@@ -201,7 +201,7 @@ if __name__ == '__main__':
     try:
         from indra.databases import hgnc_client
         print()
-        print("-- Checking for invalid HGNC IDs in relationships file --")
+        print("-- Checking for invalid HGNC Symbols in relationships file --")
         for subj, rel, obj in relationships:
             for term in (subj, obj):
                 term_ns = term[0]
@@ -209,8 +209,8 @@ if __name__ == '__main__':
                 if term_ns == 'HGNC':
                     hgnc_id = hgnc_client.get_hgnc_id(term_id)
                     if not hgnc_id:
-                        print("ERROR: ID %s referenced in relations is "
-                              "not a valid HGNC ID." % term_id)
+                        print("ERROR: Symbol %s referenced in relations is "
+                              "not a valid HGNC Symbol." % term_id)
                         signal_error = True
     except ImportError as e:
         print('HGNC check could not be performed because of import error')
@@ -222,15 +222,15 @@ if __name__ == '__main__':
     try:
         from indra.databases import hgnc_client
         print()
-        print("-- Checking for invalid HGNC IDs in grounding map --")
+        print("-- Checking for invalid HGNC Symbols in grounding map --")
         for text, db_refs in gm.items():
             if db_refs is not None:
                 for db_key, db_id in db_refs.items():
                     if db_key == 'HGNC':
                         hgnc_id = hgnc_client.get_hgnc_id(db_id)
                         if not hgnc_id:
-                            print("ERROR: ID %s in grounding map is "
-                                   "not a valid HGNC ID." % db_id)
+                            print("ERROR: Symbol %s in grounding map is "
+                                   "not a valid HGNC Symbol." % db_id)
                             signal_error = True
     except ImportError:
         print('HGNC check could not be performed because of import error')
