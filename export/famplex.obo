@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 10:08:2019 22:22
+date: 19:08:2019 16:52
 
 [Term]
 id: FPLX:9_1_1
@@ -1295,6 +1295,7 @@ synonym: "calmodulindependent kinase II" EXACT []
 synonym: "CAMK2" EXACT []
 synonym: "CaMK2" EXACT []
 synonym: "CAMKII" EXACT []
+synonym: "CaM serine/threonine kinase II" EXACT []
 xref: BEL:"CAMK2 Family"
 xref: IP:IPR013543
 xref: RE:R-HSA-417004
@@ -2013,6 +2014,10 @@ inverse_is_a: FPLX:CK2
 [Term]
 id: FPLX:CSNK1
 name: CSNK1
+synonym: "CK1" EXACT []
+synonym: "casein kinase 1 (CK1)" EXACT []
+synonym: "CK-1" EXACT []
+synonym: "serine/threonine protein kinase CK1" EXACT []
 synonym: "Casein kinase 1" EXACT []
 synonym: "casein kinase 1" EXACT []
 synonym: "casein kinase I" EXACT []
@@ -2682,6 +2687,14 @@ synonym: "Extracellular Signal Regulated Kinase" EXACT []
 synonym: "extracellular signal-regulated kinase" EXACT []
 synonym: "MAPK" EXACT []
 synonym: "phospho-ERK1/2" EXACT []
+synonym: "p44 and p42" EXACT []
+synonym: "p42 and p44" EXACT []
+synonym: "p42 and p44 MAPK" EXACT []
+synonym: "p42 and p44MAP kinase" EXACT []
+synonym: "p42(mapk) and p44(mapk)" EXACT []
+synonym: "p42 and p38 MAPK" EXACT []
+synonym: "p42 and p38 MAP kinases" EXACT []
+synonym: "p42 and p38 MAPKs" EXACT []
 xref: BEL:"MAPK Erk1/2 Family"
 xref: BEL:"MAPK Erk1/3 Family"
 xref: IP:IPR008349
@@ -6072,6 +6085,13 @@ is_a: FPLX:root
 id: FPLX:PI3K
 name: PI3K
 synonym: "phosphatidylinositol 3-kinase" EXACT []
+synonym: "Ptdins 3-kinase" EXACT []
+synonym: "Ptdins 3-Kinase" EXACT []
+synonym: "PI3-K" EXACT []
+synonym: "PI3 K" EXACT []
+synonym: "PI-3-K" EXACT []
+synonym: "PI3-Kinase" EXACT []
+synonym: "PI3Ks" EXACT []
 synonym: "PI 3-kinase" EXACT []
 synonym: "PI 3-kinases" EXACT []
 synonym: "PI3-kinase" EXACT []
@@ -8566,6 +8586,19 @@ xref: IP:IPR023257
 is_a: FPLX:root
 inverse_is_a: HGNC:NR1H2
 inverse_is_a: HGNC:NR1H3
+
+[Term]
+id: FPLX:MKNK
+name: MKNK
+synonym: "Mnk1 and Mnk2" EXACT []
+synonym: "MNK1 and MNK2" EXACT []
+synonym: "MNK1 and MNK2 kinases" EXACT []
+synonym: "Mnk1 and Mnk2 kinases" EXACT []
+synonym: "MNK" EXACT []
+synonym: "Mnk" EXACT []
+is_a: FPLX:root
+inverse_is_a: HGNC:MKNK1
+inverse_is_a: HGNC:MKNK2
 
 [Term]
 id: FPLX:root
