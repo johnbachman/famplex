@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 19:08:2019 23:08
+date: 14:09:2019 19:57
 
 [Term]
 id: FPLX:9_1_1
@@ -3953,16 +3953,16 @@ xref: BEL:"Histone H1 Family"
 xref: MEDSCAN:urn:agi-protfc:histone%20H1
 xref: NCIT:C16683
 is_a: FPLX:Histone
-inverse_is_a: HGNC:H1F0
-inverse_is_a: HGNC:H1FOO
-inverse_is_a: HGNC:H1FX
-inverse_is_a: HGNC:HIST1H1A
-inverse_is_a: HGNC:HIST1H1B
-inverse_is_a: HGNC:HIST1H1C
-inverse_is_a: HGNC:HIST1H1D
-inverse_is_a: HGNC:HIST1H1E
-inverse_is_a: HGNC:HIST1H1T
-inverse_is_a: HGNC:H1FNT
+inverse_is_a: HGNC:H1-0
+inverse_is_a: HGNC:H1-1
+inverse_is_a: HGNC:H1-2
+inverse_is_a: HGNC:H1-3
+inverse_is_a: HGNC:H1-4
+inverse_is_a: HGNC:H1-5
+inverse_is_a: HGNC:H1-6
+inverse_is_a: HGNC:H1-7
+inverse_is_a: HGNC:H1-8
+inverse_is_a: HGNC:H1-10
 
 [Term]
 id: FPLX:Histone_H2A
@@ -3976,22 +3976,22 @@ xref: NCIT:C16684
 xref: NEXTPROT-FAMILY:01762
 is_a: FPLX:Histone
 inverse_is_a: UP:P0C0S8
-inverse_is_a: HGNC:H2AFB1
+inverse_is_a: HGNC:H2AB1
 inverse_is_a: UP:P0C5Y9
-inverse_is_a: HGNC:H2AFJ
-inverse_is_a: HGNC:H2AFV
-inverse_is_a: HGNC:H2AFX
-inverse_is_a: HGNC:H2AFY
-inverse_is_a: HGNC:H2AFY2
-inverse_is_a: HGNC:H2AFZ
-inverse_is_a: HGNC:HIST1H2AA
-inverse_is_a: HGNC:HIST1H2AC
-inverse_is_a: HGNC:HIST1H2AD
-inverse_is_a: HGNC:HIST1H2AH
-inverse_is_a: HGNC:HIST1H2AJ
-inverse_is_a: HGNC:HIST2H2AB
-inverse_is_a: HGNC:HIST2H2AC
-inverse_is_a: HGNC:HIST3H2A
+inverse_is_a: HGNC:H2AJ
+inverse_is_a: HGNC:H2AZ2
+inverse_is_a: HGNC:H2AX
+inverse_is_a: HGNC:MACROH2A1
+inverse_is_a: HGNC:MACROH2A2
+inverse_is_a: HGNC:H2AZ1
+inverse_is_a: HGNC:H2AC1
+inverse_is_a: HGNC:H2AC6
+inverse_is_a: HGNC:H2AC7
+inverse_is_a: HGNC:H2AC12
+inverse_is_a: HGNC:H2AC14
+inverse_is_a: HGNC:H2AC21
+inverse_is_a: HGNC:H2AC20
+inverse_is_a: HGNC:H2AW
 inverse_is_a: UP:P04908
 inverse_is_a: UP:Q6FI13
 
@@ -4004,24 +4004,24 @@ xref: BEL:"Histone H2B Family"
 xref: MEDSCAN:urn:agi-protfc:histone%20H2B
 is_a: FPLX:Histone
 inverse_is_a: UP:P62807
-inverse_is_a: HGNC:HIST1H2BA
-inverse_is_a: HGNC:HIST1H2BB
-inverse_is_a: HGNC:HIST1H2BD
-inverse_is_a: HGNC:HIST1H2BH
-inverse_is_a: HGNC:HIST1H2BJ
-inverse_is_a: HGNC:HIST1H2BK
-inverse_is_a: HGNC:HIST1H2BL
-inverse_is_a: HGNC:HIST1H2BM
-inverse_is_a: HGNC:HIST1H2BN
-inverse_is_a: HGNC:HIST1H2BO
-inverse_is_a: HGNC:HIST2H2BC
-inverse_is_a: HGNC:HIST2H2BD
-inverse_is_a: HGNC:HIST2H2BE
-inverse_is_a: HGNC:HIST2H2BF
-inverse_is_a: HGNC:HIST3H2BB
-inverse_is_a: HGNC:H2BFS
-inverse_is_a: HGNC:H2BFM
-inverse_is_a: HGNC:H2BFWT
+inverse_is_a: HGNC:H2BC1
+inverse_is_a: HGNC:H2BC3
+inverse_is_a: HGNC:H2BC5
+inverse_is_a: HGNC:H2BC9
+inverse_is_a: HGNC:H2BC11
+inverse_is_a: HGNC:H2BC12
+inverse_is_a: HGNC:H2BC13
+inverse_is_a: HGNC:H2BC14
+inverse_is_a: HGNC:H2BC15
+inverse_is_a: HGNC:H2BC17
+inverse_is_a: HGNC:H2BC18
+inverse_is_a: HGNC:H2BC19P
+inverse_is_a: HGNC:H2BC20P
+inverse_is_a: HGNC:H2BC21
+inverse_is_a: HGNC:H2BU1
+inverse_is_a: HGNC:H2BS1
+inverse_is_a: HGNC:H2BW2
+inverse_is_a: HGNC:H2BW1
 
 [Term]
 id: FPLX:Histone_H3
@@ -4037,9 +4037,9 @@ xref: NEXTPROT-FAMILY:01764
 is_a: FPLX:Histone
 inverse_is_a: UP:P68431
 inverse_is_a: UP:Q71DI3
-inverse_is_a: HGNC:HIST3H3
+inverse_is_a: HGNC:H3-4
 inverse_is_a: UP:P84243
-inverse_is_a: HGNC:H3F3C
+inverse_is_a: HGNC:H3-5
 
 [Term]
 id: FPLX:Histone_H4
@@ -4052,7 +4052,7 @@ xref: NCIT:C16686
 xref: NEXTPROT-FAMILY:01765
 is_a: FPLX:Histone
 inverse_is_a: UP:P62805
-inverse_is_a: HGNC:HIST1H4G
+inverse_is_a: HGNC:H4C7
 
 [Term]
 id: FPLX:HLA_DR
