@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 14:09:2019 19:47
+date: 14:09:2019 19:57
 
 [Term]
 id: FPLX:9_1_1
@@ -3954,15 +3954,15 @@ xref: MEDSCAN:urn:agi-protfc:histone%20H1
 xref: NCIT:C16683
 is_a: FPLX:Histone
 inverse_is_a: HGNC:H1-0
-inverse_is_a: HGNC:H1-8
-inverse_is_a: HGNC:H1-10
 inverse_is_a: HGNC:H1-1
-inverse_is_a: HGNC:H1-5
 inverse_is_a: HGNC:H1-2
 inverse_is_a: HGNC:H1-3
 inverse_is_a: HGNC:H1-4
+inverse_is_a: HGNC:H1-5
 inverse_is_a: HGNC:H1-6
 inverse_is_a: HGNC:H1-7
+inverse_is_a: HGNC:H1-8
+inverse_is_a: HGNC:H1-10
 
 [Term]
 id: FPLX:Histone_H2A
@@ -4014,10 +4014,10 @@ inverse_is_a: HGNC:H2BC13
 inverse_is_a: HGNC:H2BC14
 inverse_is_a: HGNC:H2BC15
 inverse_is_a: HGNC:H2BC17
-inverse_is_a: HGNC:H2BC20P
-inverse_is_a: HGNC:H2BC19P
-inverse_is_a: HGNC:H2BC21
 inverse_is_a: HGNC:H2BC18
+inverse_is_a: HGNC:H2BC19P
+inverse_is_a: HGNC:H2BC20P
+inverse_is_a: HGNC:H2BC21
 inverse_is_a: HGNC:H2BU1
 inverse_is_a: HGNC:H2BS1
 inverse_is_a: HGNC:H2BW2
