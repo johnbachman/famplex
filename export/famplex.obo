@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 14:09:2019 19:57
+date: 19:09:2019 18:52
 
 [Term]
 id: FPLX:9_1_1
@@ -4045,6 +4045,7 @@ inverse_is_a: HGNC:H3-5
 id: FPLX:Histone_H4
 name: Histone-H4
 synonym: "histone H4" EXACT []
+synonym: "H4" EXACT []
 xref: BEL:"Histone H4 Family"
 xref: IP:IPR001951
 xref: MEDSCAN:urn:agi-protfc:histone%20H4
