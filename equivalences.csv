@@ -296,6 +296,7 @@ BEL,TIF IB Complex,TIF_IB
 BEL,TN Family,TN
 BEL,TNFRSF Family,TNFRSF
 BEL,TOP2 Family,TOP2
+BEL,TORC1 Complex,mTORC1
 BEL,TORC2 Complex,mTORC2
 BEL,Tryptase Family,Tryptase
 BEL,TUBA Family,TUBA
