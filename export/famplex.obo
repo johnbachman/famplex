@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 19:09:2019 18:52
+date: 08:10:2019 10:30
 
 [Term]
 id: FPLX:9_1_1
@@ -1696,16 +1696,24 @@ synonym: "nicotine class acetylcholine receptors" EXACT []
 synonym: "nicotinic acetylcholine receptor" EXACT []
 xref: BEL:"CHRN Complex"
 xref: GO:0016904
-is_a: FPLX:root
-has_part: HGNC:CHRNA2
-has_part: HGNC:CHRNA3
-has_part: HGNC:CHRNA4
-has_part: HGNC:CHRNA5
-has_part: HGNC:CHRNA6
-has_part: HGNC:CHRNA7
-has_part: HGNC:CHRNB2
-has_part: HGNC:CHRNB3
-has_part: HGNC:CHRNB4
+xref: HGNC_GROUP:173
+is_a: FPLX:Ligand_gated_ion_channels
+inverse_is_a: HGNC:CHRNA1
+inverse_is_a: HGNC:CHRNA10
+inverse_is_a: HGNC:CHRNA2
+inverse_is_a: HGNC:CHRNA3
+inverse_is_a: HGNC:CHRNA4
+inverse_is_a: HGNC:CHRNA5
+inverse_is_a: HGNC:CHRNA6
+inverse_is_a: HGNC:CHRNA7
+inverse_is_a: HGNC:CHRNA9
+inverse_is_a: HGNC:CHRNB1
+inverse_is_a: HGNC:CHRNB2
+inverse_is_a: HGNC:CHRNB3
+inverse_is_a: HGNC:CHRNB4
+inverse_is_a: HGNC:CHRND
+inverse_is_a: HGNC:CHRNE
+inverse_is_a: HGNC:CHRNG
 
 [Term]
 id: FPLX:CK2
@@ -3010,7 +3018,7 @@ synonym: "gamma-aminobutyric-acid A receptor" EXACT []
 synonym: "γ-aminobutyric-acid A receptor" EXACT []
 xref: BEL:"GABR Family"
 xref: GO:0004890
-is_a: FPLX:root
+is_a: FPLX:Ligand_gated_ion_channels
 inverse_is_a: HGNC:GABRA1
 inverse_is_a: HGNC:GABRA2
 inverse_is_a: HGNC:GABRA3
@@ -3219,7 +3227,7 @@ xref: RE:R-HSA-399713
 xref: RE:R-HSA-416323
 xref: RE:R-HSA-420974
 xref: RE:R-HSA-421001
-is_a: FPLX:root
+is_a: FPLX:GRI
 inverse_is_a: HGNC:GRIA1
 inverse_is_a: HGNC:GRIA2
 inverse_is_a: HGNC:GRIA3
@@ -4512,7 +4520,7 @@ synonym: "Glutamate receptors, ionotropic, kainate" EXACT []
 synonym: "Kainate receptors" EXACT []
 synonym: "KARs" EXACT []
 xref: GFAM:1199
-is_a: FPLX:root
+is_a: FPLX:GRI
 inverse_is_a: HGNC:GRIK1
 inverse_is_a: HGNC:GRIK2
 inverse_is_a: HGNC:GRIK3
@@ -5020,6 +5028,7 @@ id: FPLX:mTORC1
 name: mTORC1
 synonym: "mTORC1" EXACT []
 synonym: "TORC1" EXACT []
+xref: BEL:"TORC1 Complex"
 xref: GO:0031931
 xref: MEDSCAN:urn:agi-complex:prophash-f472fef3f59301aee0b776702a30f03e
 xref: NCIT:C96314
@@ -5543,7 +5552,7 @@ xref: NEXTPROT-FAMILY:02630
 xref: XFAM:PF00864
 xref: RE:R-HSA-139848
 xref: RE:R-HSA-8861873
-is_a: FPLX:root
+is_a: FPLX:Ligand_gated_ion_channels
 inverse_is_a: HGNC:P2RX1
 inverse_is_a: HGNC:P2RX2
 inverse_is_a: HGNC:P2RX3
@@ -8600,6 +8609,649 @@ synonym: "Mnk" EXACT []
 is_a: FPLX:root
 inverse_is_a: HGNC:MKNK1
 inverse_is_a: HGNC:MKNK2
+
+[Term]
+id: FPLX:5_hydroxytryptamine_receptors_ionotropic
+name: 5-hydroxytryptamine-receptors-ionotropic
+xref: HGNC_GROUP:172
+is_a: FPLX:Ligand_gated_ion_channels
+inverse_is_a: HGNC:HTR3A
+inverse_is_a: HGNC:HTR3B
+inverse_is_a: HGNC:HTR3C
+inverse_is_a: HGNC:HTR3D
+inverse_is_a: HGNC:HTR3E
+
+[Term]
+id: FPLX:ANO
+name: ANO
+xref: HGNC_GROUP:865
+is_a: FPLX:Chloride_calcium_activated_channels
+inverse_is_a: HGNC:ANO1
+inverse_is_a: HGNC:ANO10
+inverse_is_a: HGNC:ANO2
+inverse_is_a: HGNC:ANO3
+inverse_is_a: HGNC:ANO4
+inverse_is_a: HGNC:ANO5
+inverse_is_a: HGNC:ANO6
+inverse_is_a: HGNC:ANO7
+inverse_is_a: HGNC:ANO8
+inverse_is_a: HGNC:ANO9
+
+[Term]
+id: FPLX:AQP
+name: AQP
+xref: HGNC_GROUP:305
+is_a: FPLX:Porins
+inverse_is_a: HGNC:AQP1
+inverse_is_a: HGNC:AQP10
+inverse_is_a: HGNC:AQP11
+inverse_is_a: HGNC:AQP12A
+inverse_is_a: HGNC:AQP12B
+inverse_is_a: HGNC:AQP2
+inverse_is_a: HGNC:AQP3
+inverse_is_a: HGNC:AQP4
+inverse_is_a: HGNC:AQP5
+inverse_is_a: HGNC:AQP6
+inverse_is_a: HGNC:AQP7
+inverse_is_a: HGNC:AQP8
+inverse_is_a: HGNC:AQP9
+inverse_is_a: HGNC:MIP
+
+[Term]
+id: FPLX:ASIC
+name: ASIC
+xref: HGNC_GROUP:290
+is_a: FPLX:Sodium_channels
+inverse_is_a: HGNC:ASIC1
+inverse_is_a: HGNC:ASIC2
+inverse_is_a: HGNC:ASIC3
+inverse_is_a: HGNC:ASIC4
+inverse_is_a: HGNC:ASIC5
+
+[Term]
+id: FPLX:BEST
+name: BEST
+xref: HGNC_GROUP:866
+is_a: FPLX:Chloride_calcium_activated_channels
+inverse_is_a: HGNC:BEST1
+inverse_is_a: HGNC:BEST2
+inverse_is_a: HGNC:BEST3
+inverse_is_a: HGNC:BEST4
+
+[Term]
+id: FPLX:CACN
+name: CACN
+xref: HGNC_GROUP:253
+is_a: FPLX:Calcium_channels
+is_a: FPLX:Voltage_gated_ion_channels
+inverse_is_a: FPLX:CACNA1
+inverse_is_a: FPLX:CACNA2D
+inverse_is_a: FPLX:CACNB
+inverse_is_a: FPLX:CACNG
+
+[Term]
+id: FPLX:CACNA1
+name: CACNA1
+xref: HGNC_GROUP:1512
+is_a: FPLX:CACN
+inverse_is_a: HGNC:CACNA1A
+inverse_is_a: HGNC:CACNA1B
+inverse_is_a: HGNC:CACNA1C
+inverse_is_a: HGNC:CACNA1D
+inverse_is_a: HGNC:CACNA1E
+inverse_is_a: HGNC:CACNA1F
+inverse_is_a: HGNC:CACNA1G
+inverse_is_a: HGNC:CACNA1H
+inverse_is_a: HGNC:CACNA1I
+inverse_is_a: HGNC:CACNA1S
+
+[Term]
+id: FPLX:CACNA2D
+name: CACNA2D
+xref: HGNC_GROUP:1514
+is_a: FPLX:CACN
+inverse_is_a: HGNC:CACNA2D1
+inverse_is_a: HGNC:CACNA2D2
+inverse_is_a: HGNC:CACNA2D3
+inverse_is_a: HGNC:CACNA2D4
+
+[Term]
+id: FPLX:CACNB
+name: CACNB
+xref: HGNC_GROUP:1515
+is_a: FPLX:CACN
+inverse_is_a: HGNC:CACNB1
+inverse_is_a: HGNC:CACNB2
+inverse_is_a: HGNC:CACNB3
+inverse_is_a: HGNC:CACNB4
+
+[Term]
+id: FPLX:CACNG
+name: CACNG
+xref: HGNC_GROUP:1511
+is_a: FPLX:CACN
+inverse_is_a: HGNC:CACNG1
+inverse_is_a: HGNC:CACNG2
+inverse_is_a: HGNC:CACNG3
+inverse_is_a: HGNC:CACNG4
+inverse_is_a: HGNC:CACNG5
+inverse_is_a: HGNC:CACNG6
+inverse_is_a: HGNC:CACNG7
+inverse_is_a: HGNC:CACNG8
+
+[Term]
+id: FPLX:CATSPER
+name: CATSPER
+xref: HGNC_GROUP:186
+is_a: FPLX:Calcium_channels
+is_a: FPLX:Voltage_gated_ion_channels
+inverse_is_a: HGNC:CATSPER1
+inverse_is_a: HGNC:CATSPER2
+inverse_is_a: HGNC:CATSPER3
+inverse_is_a: HGNC:CATSPER4
+inverse_is_a: HGNC:CATSPERB
+inverse_is_a: HGNC:CATSPERD
+inverse_is_a: HGNC:CATSPERG
+
+[Term]
+id: FPLX:CFTR
+name: CFTR
+xref: HGNC_GROUP:309
+is_a: FPLX:Chloride_channels
+is_a: FPLX:Ligand_gated_ion_channels
+inverse_is_a: HGNC:CFTR
+
+[Term]
+id: FPLX:CHRN
+name: CHRN
+synonym: "nAChR" EXACT []
+synonym: "nicotine class acetylcholine receptors" EXACT []
+synonym: "nicotinic acetylcholine receptor" EXACT []
+xref: BEL:"CHRN Complex"
+xref: GO:0016904
+xref: HGNC_GROUP:173
+is_a: FPLX:Ligand_gated_ion_channels
+inverse_is_a: HGNC:CHRNA1
+inverse_is_a: HGNC:CHRNA10
+inverse_is_a: HGNC:CHRNA2
+inverse_is_a: HGNC:CHRNA3
+inverse_is_a: HGNC:CHRNA4
+inverse_is_a: HGNC:CHRNA5
+inverse_is_a: HGNC:CHRNA6
+inverse_is_a: HGNC:CHRNA7
+inverse_is_a: HGNC:CHRNA9
+inverse_is_a: HGNC:CHRNB1
+inverse_is_a: HGNC:CHRNB2
+inverse_is_a: HGNC:CHRNB3
+inverse_is_a: HGNC:CHRNB4
+inverse_is_a: HGNC:CHRND
+inverse_is_a: HGNC:CHRNE
+inverse_is_a: HGNC:CHRNG
+
+[Term]
+id: FPLX:CLCN
+name: CLCN
+xref: HGNC_GROUP:302
+is_a: FPLX:Chloride_channels
+inverse_is_a: HGNC:BSND
+inverse_is_a: HGNC:CLCN1
+inverse_is_a: HGNC:CLCN2
+inverse_is_a: HGNC:CLCN3
+inverse_is_a: HGNC:CLCN4
+inverse_is_a: HGNC:CLCN5
+inverse_is_a: HGNC:CLCN6
+inverse_is_a: HGNC:CLCN7
+inverse_is_a: HGNC:CLCNKA
+inverse_is_a: HGNC:CLCNKB
+
+[Term]
+id: FPLX:CLIC
+name: CLIC
+xref: HGNC_GROUP:307
+is_a: FPLX:Chloride_channels
+inverse_is_a: HGNC:CLIC1
+inverse_is_a: HGNC:CLIC2
+inverse_is_a: HGNC:CLIC3
+inverse_is_a: HGNC:CLIC4
+inverse_is_a: HGNC:CLIC5
+inverse_is_a: HGNC:CLIC6
+
+[Term]
+id: FPLX:CNG
+name: CNG
+xref: HGNC_GROUP:250
+is_a: FPLX:Voltage_gated_ion_channels
+inverse_is_a: HGNC:CNGA1
+inverse_is_a: HGNC:CNGA2
+inverse_is_a: HGNC:CNGA3
+inverse_is_a: HGNC:CNGA4
+inverse_is_a: HGNC:CNGB1
+inverse_is_a: HGNC:CNGB3
+inverse_is_a: HGNC:HCN1
+inverse_is_a: HGNC:HCN2
+inverse_is_a: HGNC:HCN3
+inverse_is_a: HGNC:HCN4
+
+[Term]
+id: FPLX:Calcium_channels
+name: Calcium-channels
+xref: HGNC_GROUP:182
+is_a: FPLX:root
+inverse_is_a: FPLX:CACN
+inverse_is_a: FPLX:CATSPER
+inverse_is_a: FPLX:ITPR
+inverse_is_a: FPLX:RYR
+inverse_is_a: FPLX:TPCN
+
+[Term]
+id: FPLX:Chloride_calcium_activated_channels
+name: Chloride-calcium-activated-channels
+xref: HGNC_GROUP:301
+is_a: FPLX:Chloride_channels
+inverse_is_a: FPLX:ANO
+inverse_is_a: FPLX:BEST
+
+[Term]
+id: FPLX:Chloride_channels
+name: Chloride-channels
+xref: HGNC_GROUP:278
+is_a: FPLX:root
+inverse_is_a: FPLX:CFTR
+inverse_is_a: FPLX:CLCN
+inverse_is_a: FPLX:CLIC
+inverse_is_a: FPLX:Chloride_calcium_activated_channels
+inverse_is_a: FPLX:LRRC8
+
+[Term]
+id: FPLX:GJ
+name: GJ
+xref: HGNC_GROUP:314
+is_a: FPLX:root
+inverse_is_a: HGNC:GJA1
+inverse_is_a: HGNC:GJA10
+inverse_is_a: HGNC:GJA3
+inverse_is_a: HGNC:GJA4
+inverse_is_a: HGNC:GJA5
+inverse_is_a: HGNC:GJA6P
+inverse_is_a: HGNC:GJA8
+inverse_is_a: HGNC:GJA9
+inverse_is_a: HGNC:GJB1
+inverse_is_a: HGNC:GJB2
+inverse_is_a: HGNC:GJB3
+inverse_is_a: HGNC:GJB4
+inverse_is_a: HGNC:GJB5
+inverse_is_a: HGNC:GJB6
+inverse_is_a: HGNC:GJB7
+inverse_is_a: HGNC:GJC1
+inverse_is_a: HGNC:GJC2
+inverse_is_a: HGNC:GJC3
+inverse_is_a: HGNC:GJD2
+inverse_is_a: HGNC:GJD3
+inverse_is_a: HGNC:GJD4
+inverse_is_a: HGNC:GJE1
+
+[Term]
+id: FPLX:GLRA_GLRB
+name: GLRA-GLRB
+xref: HGNC_GROUP:868
+is_a: FPLX:Ligand_gated_ion_channels
+inverse_is_a: HGNC:GLRA1
+inverse_is_a: HGNC:GLRA2
+inverse_is_a: HGNC:GLRA3
+inverse_is_a: HGNC:GLRA4
+inverse_is_a: HGNC:GLRB
+
+[Term]
+id: FPLX:GRI
+name: GRI
+xref: HGNC_GROUP:284
+is_a: FPLX:Ligand_gated_ion_channels
+inverse_is_a: FPLX:GRIA
+inverse_is_a: FPLX:GRID
+inverse_is_a: FPLX:Kainate_family
+inverse_is_a: FPLX:GRIN
+
+[Term]
+id: FPLX:GRID
+name: GRID
+xref: HGNC_GROUP:1202
+is_a: FPLX:GRI
+inverse_is_a: HGNC:GRID1
+inverse_is_a: HGNC:GRID2
+
+[Term]
+id: FPLX:GRIN
+name: GRIN
+xref: HGNC_GROUP:1201
+is_a: FPLX:GRI
+inverse_is_a: HGNC:GRIN1
+inverse_is_a: HGNC:GRIN2A
+inverse_is_a: HGNC:GRIN2B
+inverse_is_a: HGNC:GRIN2C
+inverse_is_a: HGNC:GRIN2D
+inverse_is_a: HGNC:GRIN3A
+inverse_is_a: HGNC:GRIN3B
+
+[Term]
+id: FPLX:HVCN
+name: HVCN
+xref: HGNC_GROUP:254
+is_a: FPLX:Voltage_gated_ion_channels
+inverse_is_a: HGNC:HVCN1
+
+[Term]
+id: FPLX:ITPR
+name: ITPR
+xref: HGNC_GROUP:297
+is_a: FPLX:Calcium_channels
+is_a: FPLX:Ligand_gated_ion_channels
+inverse_is_a: HGNC:ITPR1
+inverse_is_a: HGNC:ITPR2
+inverse_is_a: HGNC:ITPR3
+
+[Term]
+id: FPLX:KCN
+name: KCN
+xref: HGNC_GROUP:183
+is_a: FPLX:root
+inverse_is_a: FPLX:KCNJ
+inverse_is_a: FPLX:KCNK
+inverse_is_a: FPLX:KCNT
+inverse_is_a: FPLX:Potassium_calcium_activated_channels
+inverse_is_a: FPLX:Potassium_voltage_gated_channels
+
+[Term]
+id: FPLX:KCNJ
+name: KCNJ
+xref: HGNC_GROUP:276
+is_a: FPLX:KCN
+inverse_is_a: HGNC:KCNJ1
+inverse_is_a: HGNC:KCNJ10
+inverse_is_a: HGNC:KCNJ11
+inverse_is_a: HGNC:KCNJ12
+inverse_is_a: HGNC:KCNJ13
+inverse_is_a: HGNC:KCNJ14
+inverse_is_a: HGNC:KCNJ15
+inverse_is_a: HGNC:KCNJ16
+inverse_is_a: HGNC:KCNJ18
+inverse_is_a: HGNC:KCNJ2
+inverse_is_a: HGNC:KCNJ3
+inverse_is_a: HGNC:KCNJ4
+inverse_is_a: HGNC:KCNJ5
+inverse_is_a: HGNC:KCNJ6
+inverse_is_a: HGNC:KCNJ8
+inverse_is_a: HGNC:KCNJ9
+
+[Term]
+id: FPLX:KCNK
+name: KCNK
+xref: HGNC_GROUP:277
+is_a: FPLX:KCN
+is_a: FPLX:Voltage_gated_ion_channels
+inverse_is_a: HGNC:KCNK1
+inverse_is_a: HGNC:KCNK10
+inverse_is_a: HGNC:KCNK12
+inverse_is_a: HGNC:KCNK13
+inverse_is_a: HGNC:KCNK15
+inverse_is_a: HGNC:KCNK16
+inverse_is_a: HGNC:KCNK17
+inverse_is_a: HGNC:KCNK18
+inverse_is_a: HGNC:KCNK2
+inverse_is_a: HGNC:KCNK3
+inverse_is_a: HGNC:KCNK4
+inverse_is_a: HGNC:KCNK5
+inverse_is_a: HGNC:KCNK6
+inverse_is_a: HGNC:KCNK7
+inverse_is_a: HGNC:KCNK9
+
+[Term]
+id: FPLX:KCNT
+name: KCNT
+xref: HGNC_GROUP:856
+is_a: FPLX:KCN
+inverse_is_a: HGNC:KCNT1
+inverse_is_a: HGNC:KCNT2
+
+[Term]
+id: FPLX:LRRC8
+name: LRRC8
+xref: HGNC_GROUP:1158
+is_a: FPLX:Chloride_channels
+inverse_is_a: HGNC:LRRC8A
+inverse_is_a: HGNC:LRRC8B
+inverse_is_a: HGNC:LRRC8C
+inverse_is_a: HGNC:LRRC8D
+inverse_is_a: HGNC:LRRC8E
+
+[Term]
+id: FPLX:Ligand_gated_ion_channels
+name: Ligand-gated-ion-channels
+xref: HGNC_GROUP:161
+is_a: FPLX:root
+inverse_is_a: FPLX:5_hydroxytryptamine_receptors_ionotropic
+inverse_is_a: FPLX:CFTR
+inverse_is_a: FPLX:CHRN
+inverse_is_a: FPLX:GABR
+inverse_is_a: FPLX:GLRA_GLRB
+inverse_is_a: FPLX:GRI
+inverse_is_a: FPLX:ITPR
+inverse_is_a: FPLX:P2RX
+inverse_is_a: FPLX:RYR
+inverse_is_a: FPLX:ZACN
+
+[Term]
+id: FPLX:NALCN
+name: NALCN
+xref: HGNC_GROUP:283
+is_a: FPLX:Sodium_channels
+inverse_is_a: HGNC:NALCN
+
+[Term]
+id: FPLX:Porins
+name: Porins
+xref: HGNC_GROUP:304
+is_a: FPLX:root
+inverse_is_a: FPLX:AQP
+inverse_is_a: FPLX:VDAC
+
+[Term]
+id: FPLX:Potassium_calcium_activated_channels
+name: Potassium-calcium-activated-channels
+xref: HGNC_GROUP:255
+is_a: FPLX:KCN
+is_a: FPLX:Voltage_gated_ion_channels
+inverse_is_a: HGNC:KCNMA1
+inverse_is_a: HGNC:KCNN1
+inverse_is_a: HGNC:KCNN2
+inverse_is_a: HGNC:KCNN3
+inverse_is_a: HGNC:KCNN4
+inverse_is_a: HGNC:KCNU1
+
+[Term]
+id: FPLX:Potassium_voltage_gated_channels
+name: Potassium-voltage-gated-channels
+xref: HGNC_GROUP:274
+is_a: FPLX:KCN
+is_a: FPLX:Voltage_gated_ion_channels
+inverse_is_a: HGNC:KCNA1
+inverse_is_a: HGNC:KCNA10
+inverse_is_a: HGNC:KCNA2
+inverse_is_a: HGNC:KCNA3
+inverse_is_a: HGNC:KCNA4
+inverse_is_a: HGNC:KCNA5
+inverse_is_a: HGNC:KCNA6
+inverse_is_a: HGNC:KCNA7
+inverse_is_a: HGNC:KCNB1
+inverse_is_a: HGNC:KCNB2
+inverse_is_a: HGNC:KCNC1
+inverse_is_a: HGNC:KCNC2
+inverse_is_a: HGNC:KCNC3
+inverse_is_a: HGNC:KCNC4
+inverse_is_a: HGNC:KCND1
+inverse_is_a: HGNC:KCND2
+inverse_is_a: HGNC:KCND3
+inverse_is_a: HGNC:KCNF1
+inverse_is_a: HGNC:KCNG1
+inverse_is_a: HGNC:KCNG2
+inverse_is_a: HGNC:KCNG3
+inverse_is_a: HGNC:KCNG4
+inverse_is_a: HGNC:KCNH1
+inverse_is_a: HGNC:KCNH2
+inverse_is_a: HGNC:KCNH3
+inverse_is_a: HGNC:KCNH4
+inverse_is_a: HGNC:KCNH5
+inverse_is_a: HGNC:KCNH6
+inverse_is_a: HGNC:KCNH7
+inverse_is_a: HGNC:KCNH8
+inverse_is_a: HGNC:KCNQ1
+inverse_is_a: HGNC:KCNQ2
+inverse_is_a: HGNC:KCNQ3
+inverse_is_a: HGNC:KCNQ4
+inverse_is_a: HGNC:KCNQ5
+inverse_is_a: HGNC:KCNS1
+inverse_is_a: HGNC:KCNS2
+inverse_is_a: HGNC:KCNS3
+inverse_is_a: HGNC:KCNV1
+inverse_is_a: HGNC:KCNV2
+
+[Term]
+id: FPLX:RYR
+name: RYR
+xref: HGNC_GROUP:287
+is_a: FPLX:Calcium_channels
+is_a: FPLX:Ligand_gated_ion_channels
+inverse_is_a: HGNC:RYR1
+inverse_is_a: HGNC:RYR2
+inverse_is_a: HGNC:RYR3
+
+[Term]
+id: FPLX:SCN
+name: SCN
+xref: HGNC_GROUP:184
+is_a: FPLX:Sodium_channels
+is_a: FPLX:Voltage_gated_ion_channels
+inverse_is_a: FPLX:Sodium_voltage_gated_channel_alpha_subunits
+inverse_is_a: FPLX:Sodium_voltage_gated_channel_beta_subunits
+
+[Term]
+id: FPLX:SCNN
+name: SCNN
+xref: HGNC_GROUP:185
+is_a: FPLX:Sodium_channels
+inverse_is_a: HGNC:SCNN1A
+inverse_is_a: HGNC:SCNN1B
+inverse_is_a: HGNC:SCNN1D
+inverse_is_a: HGNC:SCNN1G
+
+[Term]
+id: FPLX:Sodium_channels
+name: Sodium-channels
+xref: HGNC_GROUP:179
+is_a: FPLX:root
+inverse_is_a: FPLX:ASIC
+inverse_is_a: FPLX:NALCN
+inverse_is_a: FPLX:SCN
+inverse_is_a: FPLX:SCNN
+
+[Term]
+id: FPLX:Sodium_voltage_gated_channel_alpha_subunits
+name: Sodium-voltage-gated-channel-alpha-subunits
+xref: HGNC_GROUP:1203
+is_a: FPLX:SCN
+inverse_is_a: HGNC:SCN10A
+inverse_is_a: HGNC:SCN11A
+inverse_is_a: HGNC:SCN1A
+inverse_is_a: HGNC:SCN2A
+inverse_is_a: HGNC:SCN3A
+inverse_is_a: HGNC:SCN4A
+inverse_is_a: HGNC:SCN5A
+inverse_is_a: HGNC:SCN8A
+inverse_is_a: HGNC:SCN9A
+
+[Term]
+id: FPLX:Sodium_voltage_gated_channel_beta_subunits
+name: Sodium-voltage-gated-channel-beta-subunits
+xref: HGNC_GROUP:1204
+is_a: FPLX:SCN
+inverse_is_a: HGNC:SCN1B
+inverse_is_a: HGNC:SCN2B
+inverse_is_a: HGNC:SCN3B
+inverse_is_a: HGNC:SCN4B
+
+[Term]
+id: FPLX:TPCN
+name: TPCN
+xref: HGNC_GROUP:247
+is_a: FPLX:Calcium_channels
+is_a: FPLX:Voltage_gated_ion_channels
+inverse_is_a: HGNC:TPCN1
+inverse_is_a: HGNC:TPCN2
+
+[Term]
+id: FPLX:TRP
+name: TRP
+xref: HGNC_GROUP:249
+is_a: FPLX:Voltage_gated_ion_channels
+inverse_is_a: HGNC:MCOLN1
+inverse_is_a: HGNC:MCOLN2
+inverse_is_a: HGNC:MCOLN3
+inverse_is_a: HGNC:PKD2
+inverse_is_a: HGNC:PKD2L1
+inverse_is_a: HGNC:PKD2L2
+inverse_is_a: HGNC:TRPA1
+inverse_is_a: HGNC:TRPC1
+inverse_is_a: HGNC:TRPC2
+inverse_is_a: HGNC:TRPC3
+inverse_is_a: HGNC:TRPC4
+inverse_is_a: HGNC:TRPC5
+inverse_is_a: HGNC:TRPC6
+inverse_is_a: HGNC:TRPC7
+inverse_is_a: HGNC:TRPM1
+inverse_is_a: HGNC:TRPM2
+inverse_is_a: HGNC:TRPM3
+inverse_is_a: HGNC:TRPM4
+inverse_is_a: HGNC:TRPM5
+inverse_is_a: HGNC:TRPM6
+inverse_is_a: HGNC:TRPM7
+inverse_is_a: HGNC:TRPM8
+inverse_is_a: HGNC:TRPV1
+inverse_is_a: HGNC:TRPV2
+inverse_is_a: HGNC:TRPV3
+inverse_is_a: HGNC:TRPV4
+inverse_is_a: HGNC:TRPV5
+inverse_is_a: HGNC:TRPV6
+
+[Term]
+id: FPLX:VDAC
+name: VDAC
+xref: HGNC_GROUP:306
+is_a: FPLX:Porins
+inverse_is_a: HGNC:VDAC1
+inverse_is_a: HGNC:VDAC2
+inverse_is_a: HGNC:VDAC3
+
+[Term]
+id: FPLX:Voltage_gated_ion_channels
+name: Voltage-gated-ion-channels
+xref: HGNC_GROUP:178
+is_a: FPLX:root
+inverse_is_a: FPLX:CACN
+inverse_is_a: FPLX:CATSPER
+inverse_is_a: FPLX:CNG
+inverse_is_a: FPLX:HVCN
+inverse_is_a: FPLX:KCNK
+inverse_is_a: FPLX:Potassium_calcium_activated_channels
+inverse_is_a: FPLX:Potassium_voltage_gated_channels
+inverse_is_a: FPLX:SCN
+inverse_is_a: FPLX:TPCN
+inverse_is_a: FPLX:TRP
+
+[Term]
+id: FPLX:ZACN
+name: ZACN
+xref: HGNC_GROUP:176
+is_a: FPLX:Ligand_gated_ion_channels
+inverse_is_a: HGNC:ZACN
 
 [Term]
 id: FPLX:root
