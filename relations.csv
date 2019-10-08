@@ -2943,11 +2943,11 @@ HGNC,GJD2,isa,FPLX,GJ
 HGNC,GJD3,isa,FPLX,GJ
 HGNC,GJD4,isa,FPLX,GJ
 HGNC,GJE1,isa,FPLX,GJ
-HGNC,GLRA1,isa,FPLX,GLRA, GLRB
-HGNC,GLRA2,isa,FPLX,GLRA, GLRB
-HGNC,GLRA3,isa,FPLX,GLRA, GLRB
-HGNC,GLRA4,isa,FPLX,GLRA, GLRB
-HGNC,GLRB,isa,FPLX,GLRA, GLRB
+HGNC,GLRA1,isa,FPLX,GLRA_GLRB
+HGNC,GLRA2,isa,FPLX,GLRA_GLRB
+HGNC,GLRA3,isa,FPLX,GLRA_GLRB
+HGNC,GLRA4,isa,FPLX,GLRA_GLRB
+HGNC,GLRB,isa,FPLX,GLRA_GLRB
 FPLX,GRIA,isa,FPLX,GRI
 FPLX,GRID,isa,FPLX,GRI
 FPLX,GRIK,isa,FPLX,GRI
@@ -3012,7 +3012,7 @@ FPLX,5_hydroxytryptamine_receptors_ionotropic,isa,FPLX,Ligand_gated_ion_channels
 FPLX,CFTR,isa,FPLX,Ligand_gated_ion_channels
 FPLX,CHRN,isa,FPLX,Ligand_gated_ion_channels
 FPLX,GABR,isa,FPLX,Ligand_gated_ion_channels
-FPLX,GLRA, GLRB,isa,FPLX,Ligand_gated_ion_channels
+FPLX,GLRA_GLRB,isa,FPLX,Ligand_gated_ion_channels
 FPLX,GRI,isa,FPLX,Ligand_gated_ion_channels
 FPLX,ITPR,isa,FPLX,Ligand_gated_ion_channels
 FPLX,P2RX,isa,FPLX,Ligand_gated_ion_channels

@@ -58,7 +58,7 @@ gene_to_family, family_to_gene = _read_hgnc_family_genes()
 
 def get_famplex_id(family):
     if family['abbreviation']:
-        return family['abbreviation'].strip()
+        return family['abbreviation'].strip().replace(', ', '_')
     else:
         replaces = {' ': '_', '-': '_', ',': ''}
         name = family['name'].strip()
