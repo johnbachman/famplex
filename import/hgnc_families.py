@@ -2,6 +2,7 @@ import io
 import os
 import csv
 import urllib
+import itertools
 from collections import defaultdict
 from indra.databases import hgnc_client
 
@@ -118,22 +119,59 @@ def add_equivalences(relations):
 
 
 def find_overlaps(relations):
-    all_gene_names = set(r[1] for r in relations if r[0] == 'HGNC')
+    all_gene_names = {r[1]: r[4] for r in relations if r[0] == 'HGNC'}
 
     rel_file = os.path.join(os.path.dirname(__file__), os.pardir,
                             'relations.csv')
+    covered_genes = set()
+    covered_families = set()
+    fam_members = defaultdict(list)
+    hgnc_families = set()
     with open(rel_file, 'r') as fh:
         for sns, sid, rel, tns, tid in csv.reader(fh):
+            if sns == 'HGNC' and tns == 'FPLX':
+                fam_members[tid].append(sid)
             if sns == 'HGNC' and sid in all_gene_names:
+                covered_genes.add(sid)
                 print('%s covered already' % sid)
+                covered_families.add(tid)
+                hgnc_families.add(all_gene_names[sid])
+
+    fplx_fam_members = {}
+    for famplex_fam in covered_families:
+        fplx_fam_members[famplex_fam] = set(fam_members[famplex_fam])
+
+    fplx_fam_members = sorted(fplx_fam_members.items(),
+                              key=lambda x: list(x[1])[0])
+
+    hgnc_fam_members = {}
+    for hgnc_fam in hgnc_families:
+        hgnc_fam_members[hgnc_fam] = set(g for g, f in all_gene_names.items()
+                                         if f == hgnc_fam)
+    hgnc_fam_members = sorted(hgnc_fam_members.items(),
+                              key=lambda x: list(x[1])[0])
+
+    totally_redundant = set()
+    for ff, hf in zip(fplx_fam_members, hgnc_fam_members):
+        if set(ff[1]) == set(hf[1]):
+            totally_redundant.add(hf[0])
+            print('FamPlex %s and HGNC-derived %s are exactly the same.' %
+                  (ff[0], hf[0]))
+        else:
+            print('FamPlex %s and HGNC-derived %s are overlapping.' %
+                  (ff[0], hf[0]))
+        print('Members of %s are: %s' % (ff[0], ','.join(sorted(ff[1]))))
+        print('Members of %s are: %s' % (hf[0], ','.join(sorted(hf[1]))))
+    return totally_redundant
 
 
 if __name__ == '__main__':
     relations = get_relations_from_root('292')
     relations += get_relations_from_root('294')
     relations = sorted(list(set(relations)), key= lambda x: (x[4], x[1]))
+    totally_redundant = find_overlaps(relations)
+    relations = [r for r in relations if r[4] not in totally_redundant]
     entities = sorted(list(set(r[4] for r in relations)))
-    find_overlaps(relations)
     add_relations_to_famplex(relations)
     add_entities_to_famplex(entities)
     add_equivalences(relations)
