@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 08:10:2019 10:30
+date: 08:10:2019 10:41
 
 [Term]
 id: FPLX:9_1_1
@@ -1687,33 +1687,6 @@ inverse_is_a: HGNC:CHRM2
 inverse_is_a: HGNC:CHRM3
 inverse_is_a: HGNC:CHRM4
 inverse_is_a: HGNC:CHRM5
-
-[Term]
-id: FPLX:CHRN
-name: CHRN
-synonym: "nAChR" EXACT []
-synonym: "nicotine class acetylcholine receptors" EXACT []
-synonym: "nicotinic acetylcholine receptor" EXACT []
-xref: BEL:"CHRN Complex"
-xref: GO:0016904
-xref: HGNC_GROUP:173
-is_a: FPLX:Ligand_gated_ion_channels
-inverse_is_a: HGNC:CHRNA1
-inverse_is_a: HGNC:CHRNA10
-inverse_is_a: HGNC:CHRNA2
-inverse_is_a: HGNC:CHRNA3
-inverse_is_a: HGNC:CHRNA4
-inverse_is_a: HGNC:CHRNA5
-inverse_is_a: HGNC:CHRNA6
-inverse_is_a: HGNC:CHRNA7
-inverse_is_a: HGNC:CHRNA9
-inverse_is_a: HGNC:CHRNB1
-inverse_is_a: HGNC:CHRNB2
-inverse_is_a: HGNC:CHRNB3
-inverse_is_a: HGNC:CHRNB4
-inverse_is_a: HGNC:CHRND
-inverse_is_a: HGNC:CHRNE
-inverse_is_a: HGNC:CHRNG
 
 [Term]
 id: FPLX:CK2
