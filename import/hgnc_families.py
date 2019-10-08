@@ -59,7 +59,11 @@ def get_famplex_id(family):
     if family['abbreviation']:
         return family['abbreviation'].strip()
     else:
-        return family['name'].strip().replace(' ', '_').replace('-', '_')
+        replaces = {' ': '_', '-': '_', ',': ''}
+        name = family['name'].strip()
+        for k, v in replaces.items():
+            name = name.replace(k, v)
+        return name
 
 
 def get_relations_from_root(root_id, relations=None):
@@ -104,12 +108,24 @@ def add_equivalences(relations):
     hgnc_fam_ids = sorted(list(set(int(r[5]) for r in relations)))
     equivs = []
     for fid in hgnc_fam_ids:
-        equivs.append(('HGNC_GROUP', fid, get_famplex_id(families[fid])))
+        equivs.append(('HGNC_GROUP', str(fid),
+                       get_famplex_id(families[str(fid)])))
     equivs_file = os.path.join(os.path.dirname(__file__), os.pardir,
                                'equivalences.csv')
     with open(equivs_file, 'a') as fh:
         for eq in equivs:
-            fh.write('%s\n' % ','.join(str(e) for e in eq))
+            fh.write('%s\n' % ','.join(eq))
+
+
+def find_overlaps(relations):
+    all_gene_names = set(r[1] for r in relations if r[0] == 'HGNC')
+
+    rel_file = os.path.join(os.path.dirname(__file__), os.pardir,
+                            'relations.csv')
+    with open(rel_file, 'r') as fh:
+        for sns, sid, rel, tns, tid in csv.reader(fh):
+            if sns == 'HGNC' and sid in all_gene_names:
+                print('%s covered already' % sid)
 
 
 if __name__ == '__main__':
@@ -117,6 +133,7 @@ if __name__ == '__main__':
     relations += get_relations_from_root('294')
     relations = sorted(list(set(relations)), key= lambda x: (x[4], x[1]))
     entities = sorted(list(set(r[4] for r in relations)))
+    find_overlaps(relations)
     add_relations_to_famplex(relations)
     add_entities_to_famplex(entities)
     add_equivalences(relations)
