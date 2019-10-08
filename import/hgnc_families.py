@@ -57,9 +57,9 @@ gene_to_family, family_to_gene = _read_hgnc_family_genes()
 
 def get_famplex_id(family):
     if family['abbreviation']:
-        return family['abbreviation']
+        return family['abbreviation'].strip()
     else:
-        return family['name'].replace(' ', '_').replace('-', '_')
+        return family['name'].strip().replace(' ', '_').replace('-', '_')
 
 
 def get_relations_from_root(root_id, relations=None):
@@ -71,13 +71,14 @@ def get_relations_from_root(root_id, relations=None):
     if not child_ids:
         for gene in family_to_gene[root_id]:
             gene_name = hgnc_client.get_hgnc_name(gene)
-            rel = ('HGNC', gene_name, 'isa', 'FPLX', famplex_id)
+            rel = ('HGNC', gene_name, 'isa', 'FPLX', famplex_id, root_id)
             relations.append(rel)
     else:
         for child_id in child_ids:
             child_info = families[child_id]
             child_famplex_id = get_famplex_id(child_info)
-            rel = ('FPLX', child_famplex_id, 'isa', 'FPLX', famplex_id)
+            rel = ('FPLX', child_famplex_id, 'isa', 'FPLX', famplex_id,
+                   root_id)
             relations.append(rel)
             get_relations_from_root(child_id, relations)
     return relations
@@ -88,7 +89,7 @@ def add_relations_to_famplex(relations):
                             'relations.csv')
     with open(rel_file, 'a') as fh:
         for rel in relations:
-            fh.write(','.join(rel) + '\n')
+            fh.write(','.join(rel[:-1]) + '\n')
 
 
 def add_entities_to_famplex(entities):
@@ -99,6 +100,18 @@ def add_entities_to_famplex(entities):
             fh.write('%s\n' % ent)
 
 
+def add_equivalences(relations):
+    hgnc_fam_ids = sorted(list(set(int(r[5]) for r in relations)))
+    equivs = []
+    for fid in hgnc_fam_ids:
+        equivs.append(('HGNC_GROUP', fid, get_famplex_id(families[fid])))
+    equivs_file = os.path.join(os.path.dirname(__file__), os.pardir,
+                               'equivalences.csv')
+    with open(equivs_file, 'a') as fh:
+        for eq in equivs:
+            fh.write('%s\n' % ','.join(str(e) for e in eq))
+
+
 if __name__ == '__main__':
     relations = get_relations_from_root('292')
     relations += get_relations_from_root('294')
@@ -106,3 +119,4 @@ if __name__ == '__main__':
     entities = sorted(list(set(r[4] for r in relations)))
     add_relations_to_famplex(relations)
     add_entities_to_famplex(entities)
+    add_equivalences(relations)
