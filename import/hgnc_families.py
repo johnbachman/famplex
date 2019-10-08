@@ -1,7 +1,7 @@
 import io
+import os
 import csv
 import urllib
-import requests
 from collections import defaultdict
 from indra.databases import hgnc_client
 
@@ -62,22 +62,47 @@ def get_famplex_id(family):
         return family['name'].replace(' ', '_').replace('-', '_')
 
 
-def get_families_from_root(root_id):
+def get_relations_from_root(root_id, relations=None):
+    if relations is None:
+        relations = []
     family_info = families[root_id]
     child_ids = children.get(root_id)
     famplex_id = get_famplex_id(family_info)
     if not child_ids:
         for gene in family_to_gene[root_id]:
             gene_name = hgnc_client.get_hgnc_name(gene)
-            print('HGNC,%s,isa,FPLX,%s' % (gene_name, famplex_id))
+            rel = ('HGNC', gene_name, 'isa', 'FPLX', famplex_id)
+            relations.append(rel)
     else:
         for child_id in child_ids:
             child_info = families[child_id]
             child_famplex_id = get_famplex_id(child_info)
-            print('FPLX,%s,isa,FPLX,%s' % (child_famplex_id,
-                                           famplex_id))
-            get_families_from_root(child_id)
+            rel = ('FPLX', child_famplex_id, 'isa', 'FPLX', famplex_id)
+            relations.append(rel)
+            get_relations_from_root(child_id, relations)
+    return relations
+
+
+def add_relations_to_famplex(relations):
+    rel_file = os.path.join(os.path.dirname(__file__), os.pardir,
+                            'relations.csv')
+    with open(rel_file, 'a') as fh:
+        for rel in relations:
+            fh.write(','.join(rel) + '\n')
+
+
+def add_entities_to_famplex(entities):
+    ents_file = os.path.join(os.path.dirname(__file__), os.pardir,
+                             'entities.csv')
+    with open(ents_file, 'a') as fh:
+        for ent in entities:
+            fh.write('%s\n' % ent)
 
 
 if __name__ == '__main__':
-    get_families_from_root('177')
+    relations = get_relations_from_root('292')
+    relations += get_relations_from_root('294')
+    relations = sorted(list(set(relations)), key= lambda x: (x[4], x[1]))
+    entities = sorted(list(set(r[4] for r in relations)))
+    add_relations_to_famplex(relations)
+    add_entities_to_famplex(entities)
