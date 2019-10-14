@@ -1,5 +1,16 @@
 format-version: 1.2
-date: 08:10:2019 10:41
+date: 14:10:2019 10:01
+
+[Term]
+id: FPLX:5_hydroxytryptamine_receptors_ionotropic
+name: 5-hydroxytryptamine-receptors-ionotropic
+xref: HGNC_GROUP:172
+is_a: FPLX:Ligand_gated_ion_channels
+inverse_is_a: HGNC:HTR3A
+inverse_is_a: HGNC:HTR3B
+inverse_is_a: HGNC:HTR3C
+inverse_is_a: HGNC:HTR3D
+inverse_is_a: HGNC:HTR3E
 
 [Term]
 id: FPLX:9_1_1
@@ -431,6 +442,13 @@ inverse_is_a: HGNC:ALG10
 inverse_is_a: HGNC:ALG10B
 
 [Term]
+id: FPLX:ALG13_family
+name: ALG13-family
+is_a: FPLX:Glycosyltransferase
+inverse_is_a: HGNC:ALG13
+inverse_is_a: HGNC:ALG14
+
+[Term]
 id: FPLX:ALG1_family
 name: ALG1-family
 is_a: FPLX:Glycosyltransferase
@@ -473,13 +491,6 @@ synonym: "alpha-1,4-glucosyltransferases" EXACT []
 is_a: FPLX:Glycosyltransferase
 inverse_is_a: HGNC:ALG6
 inverse_is_a: HGNC:ALG8
-
-[Term]
-id: FPLX:ALG13_family
-name: ALG13-family
-is_a: FPLX:Glycosyltransferase
-inverse_is_a: HGNC:ALG13
-inverse_is_a: HGNC:ALG14
 
 [Term]
 id: FPLX:AMPK
@@ -755,6 +766,22 @@ has_part: HGNC:ANXA2
 has_part: HGNC:S100A10
 
 [Term]
+id: FPLX:ANO
+name: ANO
+xref: HGNC_GROUP:865
+is_a: FPLX:Chloride_calcium_activated_channels
+inverse_is_a: HGNC:ANO1
+inverse_is_a: HGNC:ANO10
+inverse_is_a: HGNC:ANO2
+inverse_is_a: HGNC:ANO3
+inverse_is_a: HGNC:ANO4
+inverse_is_a: HGNC:ANO5
+inverse_is_a: HGNC:ANO6
+inverse_is_a: HGNC:ANO7
+inverse_is_a: HGNC:ANO8
+inverse_is_a: HGNC:ANO9
+
+[Term]
 id: FPLX:AP1
 name: AP1
 synonym: "AP-1" EXACT []
@@ -828,6 +855,26 @@ inverse_is_a: FPLX:APOA
 inverse_is_a: HGNC:APOE
 
 [Term]
+id: FPLX:AQP
+name: AQP
+xref: HGNC_GROUP:305
+is_a: FPLX:Porins
+inverse_is_a: HGNC:AQP1
+inverse_is_a: HGNC:AQP10
+inverse_is_a: HGNC:AQP11
+inverse_is_a: HGNC:AQP12A
+inverse_is_a: HGNC:AQP12B
+inverse_is_a: HGNC:AQP2
+inverse_is_a: HGNC:AQP3
+inverse_is_a: HGNC:AQP4
+inverse_is_a: HGNC:AQP5
+inverse_is_a: HGNC:AQP6
+inverse_is_a: HGNC:AQP7
+inverse_is_a: HGNC:AQP8
+inverse_is_a: HGNC:AQP9
+inverse_is_a: HGNC:MIP
+
+[Term]
 id: FPLX:ARF_GTPase_family
 name: ARF-GTPase-family
 synonym: "ADP ribosylation factor" EXACT []
@@ -889,6 +936,17 @@ xref: RE:R-HSA-1911410
 is_a: FPLX:root
 inverse_is_a: HGNC:ARRB1
 inverse_is_a: HGNC:ARRB2
+
+[Term]
+id: FPLX:ASIC
+name: ASIC
+xref: HGNC_GROUP:290
+is_a: FPLX:Sodium_channels
+inverse_is_a: HGNC:ASIC1
+inverse_is_a: HGNC:ASIC2
+inverse_is_a: HGNC:ASIC3
+inverse_is_a: HGNC:ASIC4
+inverse_is_a: HGNC:ASIC5
 
 [Term]
 id: FPLX:ATG4
@@ -1035,6 +1093,16 @@ has_part: HGNC:BCKDHA
 has_part: HGNC:BCKDHB
 has_part: HGNC:DBT
 has_part: HGNC:DLD
+
+[Term]
+id: FPLX:BEST
+name: BEST
+xref: HGNC_GROUP:866
+is_a: FPLX:Chloride_calcium_activated_channels
+inverse_is_a: HGNC:BEST1
+inverse_is_a: HGNC:BEST2
+inverse_is_a: HGNC:BEST3
+inverse_is_a: HGNC:BEST4
 
 [Term]
 id: FPLX:Beta_3_4_GTF
@@ -1205,6 +1273,67 @@ has_part: HGNC:C1QA
 has_part: HGNC:C1QB
 
 [Term]
+id: FPLX:CACN
+name: CACN
+xref: HGNC_GROUP:253
+is_a: FPLX:Calcium_channels
+is_a: FPLX:Voltage_gated_ion_channels
+inverse_is_a: FPLX:CACNA1
+inverse_is_a: FPLX:CACNA2D
+inverse_is_a: FPLX:CACNB
+inverse_is_a: FPLX:CACNG
+
+[Term]
+id: FPLX:CACNA1
+name: CACNA1
+xref: HGNC_GROUP:1512
+is_a: FPLX:CACN
+inverse_is_a: HGNC:CACNA1A
+inverse_is_a: HGNC:CACNA1B
+inverse_is_a: HGNC:CACNA1C
+inverse_is_a: HGNC:CACNA1D
+inverse_is_a: HGNC:CACNA1E
+inverse_is_a: HGNC:CACNA1F
+inverse_is_a: HGNC:CACNA1G
+inverse_is_a: HGNC:CACNA1H
+inverse_is_a: HGNC:CACNA1I
+inverse_is_a: HGNC:CACNA1S
+
+[Term]
+id: FPLX:CACNA2D
+name: CACNA2D
+xref: HGNC_GROUP:1514
+is_a: FPLX:CACN
+inverse_is_a: HGNC:CACNA2D1
+inverse_is_a: HGNC:CACNA2D2
+inverse_is_a: HGNC:CACNA2D3
+inverse_is_a: HGNC:CACNA2D4
+
+[Term]
+id: FPLX:CACNB
+name: CACNB
+xref: HGNC_GROUP:1515
+is_a: FPLX:CACN
+inverse_is_a: HGNC:CACNB1
+inverse_is_a: HGNC:CACNB2
+inverse_is_a: HGNC:CACNB3
+inverse_is_a: HGNC:CACNB4
+
+[Term]
+id: FPLX:CACNG
+name: CACNG
+xref: HGNC_GROUP:1511
+is_a: FPLX:CACN
+inverse_is_a: HGNC:CACNG1
+inverse_is_a: HGNC:CACNG2
+inverse_is_a: HGNC:CACNG3
+inverse_is_a: HGNC:CACNG4
+inverse_is_a: HGNC:CACNG5
+inverse_is_a: HGNC:CACNG6
+inverse_is_a: HGNC:CACNG7
+inverse_is_a: HGNC:CACNG8
+
+[Term]
 id: FPLX:Cadherin
 name: Cadherin
 synonym: "cadherin" EXACT []
@@ -1235,6 +1364,17 @@ inverse_is_a: HGNC:CDH6
 inverse_is_a: HGNC:CDH7
 inverse_is_a: HGNC:CDH8
 inverse_is_a: HGNC:CDH9
+
+[Term]
+id: FPLX:Calcium_channels
+name: Calcium-channels
+xref: HGNC_GROUP:182
+is_a: FPLX:root
+inverse_is_a: FPLX:CACN
+inverse_is_a: FPLX:CATSPER
+inverse_is_a: FPLX:ITPR
+inverse_is_a: FPLX:RYR
+inverse_is_a: FPLX:TPCN
 
 [Term]
 id: FPLX:CALM
@@ -1382,6 +1522,20 @@ xref: RE:R-HSA-202877
 is_a: FPLX:Caspase
 inverse_is_a: HGNC:CASP3
 inverse_is_a: HGNC:CASP7
+
+[Term]
+id: FPLX:CATSPER
+name: CATSPER
+xref: HGNC_GROUP:186
+is_a: FPLX:Calcium_channels
+is_a: FPLX:Voltage_gated_ion_channels
+inverse_is_a: HGNC:CATSPER1
+inverse_is_a: HGNC:CATSPER2
+inverse_is_a: HGNC:CATSPER3
+inverse_is_a: HGNC:CATSPER4
+inverse_is_a: HGNC:CATSPERB
+inverse_is_a: HGNC:CATSPERD
+inverse_is_a: HGNC:CATSPERG
 
 [Term]
 id: FPLX:CAV
@@ -1662,6 +1816,25 @@ inverse_is_a: HGNC:ACKR3
 inverse_is_a: HGNC:XCR1
 
 [Term]
+id: FPLX:Chloride_calcium_activated_channels
+name: Chloride-calcium-activated-channels
+xref: HGNC_GROUP:301
+is_a: FPLX:Chloride_channels
+inverse_is_a: FPLX:ANO
+inverse_is_a: FPLX:BEST
+
+[Term]
+id: FPLX:Chloride_channels
+name: Chloride-channels
+xref: HGNC_GROUP:278
+is_a: FPLX:root
+inverse_is_a: HGNC:CFTR
+inverse_is_a: FPLX:CLCN
+inverse_is_a: FPLX:CLIC
+inverse_is_a: FPLX:Chloride_calcium_activated_channels
+inverse_is_a: FPLX:LRRC8
+
+[Term]
 id: FPLX:Cholinesterase
 name: Cholinesterase
 synonym: "choline esterase" EXACT []
@@ -1687,6 +1860,33 @@ inverse_is_a: HGNC:CHRM2
 inverse_is_a: HGNC:CHRM3
 inverse_is_a: HGNC:CHRM4
 inverse_is_a: HGNC:CHRM5
+
+[Term]
+id: FPLX:CHRN
+name: CHRN
+synonym: "nAChR" EXACT []
+synonym: "nicotine class acetylcholine receptors" EXACT []
+synonym: "nicotinic acetylcholine receptor" EXACT []
+xref: BEL:"CHRN Complex"
+xref: GO:0016904
+xref: HGNC_GROUP:173
+is_a: FPLX:Ligand_gated_ion_channels
+inverse_is_a: HGNC:CHRNA1
+inverse_is_a: HGNC:CHRNA10
+inverse_is_a: HGNC:CHRNA2
+inverse_is_a: HGNC:CHRNA3
+inverse_is_a: HGNC:CHRNA4
+inverse_is_a: HGNC:CHRNA5
+inverse_is_a: HGNC:CHRNA6
+inverse_is_a: HGNC:CHRNA7
+inverse_is_a: HGNC:CHRNA9
+inverse_is_a: HGNC:CHRNB1
+inverse_is_a: HGNC:CHRNB2
+inverse_is_a: HGNC:CHRNB3
+inverse_is_a: HGNC:CHRNB4
+inverse_is_a: HGNC:CHRND
+inverse_is_a: HGNC:CHRNE
+inverse_is_a: HGNC:CHRNG
 
 [Term]
 id: FPLX:CK2
@@ -1720,6 +1920,50 @@ is_a: FPLX:root
 has_part: HGNC:CLTA
 has_part: HGNC:CLTB
 has_part: HGNC:CLTC
+
+[Term]
+id: FPLX:CLCN
+name: CLCN
+xref: HGNC_GROUP:302
+is_a: FPLX:Chloride_channels
+inverse_is_a: HGNC:BSND
+inverse_is_a: HGNC:CLCN1
+inverse_is_a: HGNC:CLCN2
+inverse_is_a: HGNC:CLCN3
+inverse_is_a: HGNC:CLCN4
+inverse_is_a: HGNC:CLCN5
+inverse_is_a: HGNC:CLCN6
+inverse_is_a: HGNC:CLCN7
+inverse_is_a: HGNC:CLCNKA
+inverse_is_a: HGNC:CLCNKB
+
+[Term]
+id: FPLX:CLIC
+name: CLIC
+xref: HGNC_GROUP:307
+is_a: FPLX:Chloride_channels
+inverse_is_a: HGNC:CLIC1
+inverse_is_a: HGNC:CLIC2
+inverse_is_a: HGNC:CLIC3
+inverse_is_a: HGNC:CLIC4
+inverse_is_a: HGNC:CLIC5
+inverse_is_a: HGNC:CLIC6
+
+[Term]
+id: FPLX:CNG
+name: CNG
+xref: HGNC_GROUP:250
+is_a: FPLX:Voltage_gated_ion_channels
+inverse_is_a: HGNC:CNGA1
+inverse_is_a: HGNC:CNGA2
+inverse_is_a: HGNC:CNGA3
+inverse_is_a: HGNC:CNGA4
+inverse_is_a: HGNC:CNGB1
+inverse_is_a: HGNC:CNGB3
+inverse_is_a: HGNC:HCN1
+inverse_is_a: HGNC:HCN2
+inverse_is_a: HGNC:HCN3
+inverse_is_a: HGNC:HCN4
 
 [Term]
 id: FPLX:CNKSR
@@ -2501,6 +2745,14 @@ has_part: HGNC:EIF2B4
 has_part: HGNC:EIF2B5
 
 [Term]
+id: FPLX:EIF4
+name: EIF4
+is_a: FPLX:root
+has_part: FPLX:EIF4A
+has_part: FPLX:EIF4E
+has_part: FPLX:EIF4G
+
+[Term]
 id: FPLX:EIF4A
 name: EIF4A
 synonym: "eIF4A" EXACT []
@@ -2512,6 +2764,14 @@ part_of: FPLX:EIF4
 inverse_is_a: HGNC:EIF4A1
 inverse_is_a: HGNC:EIF4A2
 inverse_is_a: HGNC:EIF4A3
+
+[Term]
+id: FPLX:EIF4E
+name: EIF4E
+part_of: FPLX:EIF4
+inverse_is_a: HGNC:EIF4E
+inverse_is_a: HGNC:EIF4E2
+inverse_is_a: HGNC:EIF4E3
 
 [Term]
 id: FPLX:EIF4EBP
@@ -2536,22 +2796,6 @@ part_of: FPLX:EIF4
 inverse_is_a: HGNC:EIF4G1
 inverse_is_a: HGNC:EIF4G2
 inverse_is_a: HGNC:EIF4G3
-
-[Term]
-id: FPLX:EIF4E
-name: EIF4E
-part_of: FPLX:EIF4
-inverse_is_a: HGNC:EIF4E
-inverse_is_a: HGNC:EIF4E2
-inverse_is_a: HGNC:EIF4E3
-
-[Term]
-id: FPLX:EIF4
-name: EIF4
-is_a: FPLX:root
-has_part: FPLX:EIF4A
-has_part: FPLX:EIF4E
-has_part: FPLX:EIF4G
 
 [Term]
 id: FPLX:ELA
@@ -2709,6 +2953,158 @@ inverse_is_a: HGNC:ESR1
 inverse_is_a: HGNC:ESR2
 
 [Term]
+id: FPLX:ETC_complex_I
+name: ETC-complex-I
+xref: COMPLEXPORTAL:CPX-577
+xref: ECCODE:1.6.5.3
+xref: GO:0005747
+xref: HGNC_GROUP:640
+xref: MESH:D042967
+xref: NCIT:C118184
+is_a: FPLX:root
+has_part: FPLX:ETC_complex_I_core
+has_part: FPLX:ETC_complex_I_supernumerary
+
+[Term]
+id: FPLX:ETC_complex_I_core
+name: ETC-complex-I-core
+xref: HGNC_GROUP:1149
+part_of: FPLX:ETC_complex_I
+has_part: HGNC:MT-ND1
+has_part: HGNC:MT-ND2
+has_part: HGNC:MT-ND3
+has_part: HGNC:MT-ND4
+has_part: HGNC:MT-ND4L
+has_part: HGNC:MT-ND5
+has_part: HGNC:MT-ND6
+has_part: HGNC:NDUFS1
+has_part: HGNC:NDUFS2
+has_part: HGNC:NDUFS3
+has_part: HGNC:NDUFS7
+has_part: HGNC:NDUFS8
+has_part: HGNC:NDUFV1
+has_part: HGNC:NDUFV2
+
+[Term]
+id: FPLX:ETC_complex_II
+name: ETC-complex-II
+synonym: "complex II" EXACT []
+synonym: "succinate dehydrogenase (ubiquinone)" EXACT []
+synonym: "succinate dehydrogenase" EXACT []
+xref: BEL:"Respiratory Chain Complex II"
+xref: COMPLEXPORTAL:CPX-561
+xref: ECCODE:1.3.5.1
+xref: GO:0005749
+xref: HGNC_GROUP:641
+xref: MESH:D042963
+xref: NCIT:C112049
+xref: RE:R-HSA-165631
+xref: RE:R-HSA-70990
+is_a: FPLX:root
+has_part: HGNC:SDHA
+has_part: HGNC:SDHB
+has_part: HGNC:SDHC
+has_part: HGNC:SDHD
+
+[Term]
+id: FPLX:ETC_complex_III
+name: ETC-complex-III
+synonym: "complex III" EXACT []
+synonym: "cytochrome bc1 complex" EXACT []
+xref: BEL:"Respiratory Chain Complex III"
+xref: COMPLEXPORTAL:CPX-560
+xref: ECCODE:1.10.2.2
+xref: GO:0005750
+xref: GO:0045275
+xref: HGNC_GROUP:642
+xref: MESH:D014450
+is_a: FPLX:root
+has_part: HGNC:CYC1
+has_part: HGNC:MT-CYB
+has_part: HGNC:UQCRB
+has_part: HGNC:UQCRC1
+has_part: HGNC:UQCRC2
+has_part: HGNC:UQCRFS1
+has_part: HGNC:UQCRH
+has_part: HGNC:UQCRQ
+has_part: HGNC:UQCR10
+has_part: HGNC:UQCR11
+
+[Term]
+id: FPLX:ETC_complex_I_supernumerary
+name: ETC-complex-I-supernumerary
+xref: HGNC_GROUP:1150
+part_of: FPLX:ETC_complex_I
+has_part: HGNC:NDUFAB1
+has_part: HGNC:NDUFA1
+has_part: HGNC:NDUFA2
+has_part: HGNC:NDUFA3
+has_part: HGNC:NDUFA5
+has_part: HGNC:NDUFA6
+has_part: HGNC:NDUFA7
+has_part: HGNC:NDUFA8
+has_part: HGNC:NDUFA9
+has_part: HGNC:NDUFA10
+has_part: HGNC:NDUFA11
+has_part: HGNC:NDUFA12
+has_part: HGNC:NDUFA13
+has_part: HGNC:NDUFB1
+has_part: HGNC:NDUFB2
+has_part: HGNC:NDUFB3
+has_part: HGNC:NDUFB4
+has_part: HGNC:NDUFB5
+has_part: HGNC:NDUFB6
+has_part: HGNC:NDUFB7
+has_part: HGNC:NDUFB8
+has_part: HGNC:NDUFB9
+has_part: HGNC:NDUFB10
+has_part: HGNC:NDUFB11
+has_part: HGNC:NDUFC1
+has_part: HGNC:NDUFC2
+has_part: HGNC:NDUFS4
+has_part: HGNC:NDUFS5
+has_part: HGNC:NDUFS6
+has_part: HGNC:NDUFV3
+
+[Term]
+id: FPLX:ETC_complex_IV
+name: ETC-complex-IV
+xref: ECCODE:1.9.3.1
+xref: GO:0005751
+xref: HGNC_GROUP:643
+xref: MESH:D003576
+xref: NCIT:C26034
+is_a: FPLX:root
+has_part: HGNC:COX4I1
+has_part: HGNC:COX4I2
+has_part: HGNC:COX5A
+has_part: HGNC:COX5B
+has_part: HGNC:COX6A1
+has_part: HGNC:COX6A2
+has_part: HGNC:COX6B1
+has_part: HGNC:COX6B2
+has_part: HGNC:COX6C
+has_part: HGNC:COX7A1
+has_part: HGNC:COX7A2
+has_part: HGNC:COX7B
+has_part: HGNC:COX7B2
+has_part: HGNC:COX7C
+has_part: HGNC:COX8A
+has_part: HGNC:COX8C
+has_part: HGNC:MT-CO1
+has_part: HGNC:MT-CO2
+has_part: HGNC:MT-CO3
+
+[Term]
+id: FPLX:ETC_complex_V
+name: ETC-complex-V
+xref: ECCODE:3.6.3.14
+xref: GO:0005753
+xref: HGNC_GROUP:644
+xref: MESH:D025261
+is_a: FPLX:root
+
+[Term]
 id: FPLX:ETS
 name: ETS
 synonym: "ETS" EXACT []
@@ -2753,6 +3149,14 @@ inverse_is_a: HGNC:EXTL2
 inverse_is_a: HGNC:EXTL3
 inverse_is_a: HGNC:EXT1
 inverse_is_a: HGNC:EXT2
+
+[Term]
+id: FPLX:F_actin
+name: F-actin
+synonym: "F-actin" EXACT []
+xref: GO:0031941
+xref: MEDSCAN:urn:agi-protfc:F-actin-binding%20protein
+is_a: FPLX:Actin
 
 [Term]
 id: FPLX:FANC
@@ -2974,12 +3378,35 @@ inverse_is_a: HGNC:FZD8
 inverse_is_a: HGNC:FZD9
 
 [Term]
-id: FPLX:F_actin
-name: F-actin
-synonym: "F-actin" EXACT []
-xref: GO:0031941
-xref: MEDSCAN:urn:agi-protfc:F-actin-binding%20protein
-is_a: FPLX:Actin
+id: FPLX:G_12
+name: G-12
+synonym: "G(12)" EXACT []
+synonym: "G12 family" EXACT []
+synonym: "G12 proteins" EXACT []
+synonym: "G12" EXACT []
+xref: IP:IPR000469
+xref: RE:R-HSA-114547
+xref: RE:R-HSA-418570
+xref: RE:R-HSA-418572
+is_a: FPLX:G_protein
+has_part: FPLX:G_12_alpha
+
+[Term]
+id: FPLX:G_12_alpha
+name: G-12-alpha
+synonym: "G-protein alpha-12" EXACT []
+synonym: "G-protein α-12" EXACT []
+synonym: "Ga12" EXACT []
+synonym: "Galpha12" EXACT []
+synonym: "Gα12" EXACT []
+xref: IP:IPR000469
+xref: RE:R-HSA-114525
+xref: RE:R-HSA-418570
+xref: RE:R-HSA-418572
+is_a: FPLX:G_alpha
+part_of: FPLX:G_12
+inverse_is_a: HGNC:GNA12
+inverse_is_a: HGNC:GNA13
 
 [Term]
 id: FPLX:GABR
@@ -2991,6 +3418,7 @@ synonym: "gamma-aminobutyric-acid A receptor" EXACT []
 synonym: "γ-aminobutyric-acid A receptor" EXACT []
 xref: BEL:"GABR Family"
 xref: GO:0004890
+xref: HGNC_GROUP:563
 is_a: FPLX:Ligand_gated_ion_channels
 inverse_is_a: HGNC:GABRA1
 inverse_is_a: HGNC:GABRA2
@@ -3037,6 +3465,18 @@ inverse_is_a: HGNC:GALNT15
 inverse_is_a: HGNC:GALNT16
 inverse_is_a: HGNC:GALNT18
 inverse_is_a: HGNC:GALNT17
+
+[Term]
+id: FPLX:G_alpha
+name: G-alpha
+synonym: "G_alpha" EXACT []
+synonym: "G_α" EXACT []
+xref: XFAM:PF00503
+is_a: FPLX:root
+inverse_is_a: FPLX:G_i_alpha
+inverse_is_a: FPLX:G_s_alpha
+inverse_is_a: FPLX:G_q_alpha
+inverse_is_a: FPLX:G_12_alpha
 
 [Term]
 id: FPLX:Gamma_secretase
@@ -3091,6 +3531,30 @@ inverse_is_a: HGNC:GATA5
 inverse_is_a: HGNC:GATA6
 
 [Term]
+id: FPLX:G_beta
+name: G-beta
+synonym: "G protein beta" EXACT []
+synonym: "G protein β" EXACT []
+synonym: "G-protein beta" EXACT []
+synonym: "G-protein β" EXACT []
+synonym: "Gbeta" EXACT []
+synonym: "Gβ" EXACT []
+xref: BEL:"GNB Family"
+xref: IP:IPR016346
+xref: RE:R-HSA-167409
+xref: RE:R-HSA-400093
+xref: RE:R-HSA-6814207
+xref: RE:R-HSA-6814413
+xref: RE:R-HSA-8850524
+xref: SIGNOR:SIGNOR-PF4
+is_a: FPLX:root
+inverse_is_a: HGNC:GNB1
+inverse_is_a: HGNC:GNB2
+inverse_is_a: HGNC:GNB3
+inverse_is_a: HGNC:GNB4
+inverse_is_a: HGNC:GNB5
+
+[Term]
 id: FPLX:GCNT
 name: GCNT
 synonym: "GCNT" EXACT []
@@ -3116,6 +3580,147 @@ synonym: "GEFs" EXACT []
 xref: GO:0008433
 xref: NCIT:C17494
 is_a: FPLX:root
+
+[Term]
+id: FPLX:G_gamma
+name: G-gamma
+synonym: "G protein gamma subunit" EXACT []
+synonym: "G protein gamma" EXACT []
+synonym: "G protein γ subunit" EXACT []
+synonym: "G protein γ" EXACT []
+xref: BEL:"GNG Family"
+xref: IP:IPR001770
+xref: NEXTPROT-FAMILY:01400
+xref: RE:R-HSA-167442
+xref: RE:R-HSA-400062
+xref: SIGNOR:SIGNOR-PF3
+is_a: FPLX:root
+inverse_is_a: HGNC:GNG10
+inverse_is_a: HGNC:GNG11
+inverse_is_a: HGNC:GNG12
+inverse_is_a: HGNC:GNG13
+inverse_is_a: HGNC:GNG2
+inverse_is_a: HGNC:GNG3
+inverse_is_a: HGNC:GNG4
+inverse_is_a: HGNC:GNG5
+inverse_is_a: HGNC:GNG7
+inverse_is_a: HGNC:GNG8
+inverse_is_a: HGNC:GNGT1
+inverse_is_a: HGNC:GNGT2
+
+[Term]
+id: FPLX:G_i
+name: G-i
+synonym: "Gi protein" EXACT []
+synonym: "Gi" EXACT []
+xref: BEL:"GNAI Family"
+xref: IP:IPR001408
+xref: RE:R-HSA-111864
+xref: RE:R-HSA-167410
+xref: RE:R-HSA-167413
+xref: RE:R-HSA-167438
+is_a: FPLX:G_protein
+has_part: FPLX:G_i_alpha
+
+[Term]
+id: FPLX:G_i_alpha
+name: G-i-alpha
+synonym: "G alphai" EXACT []
+synonym: "G αi" EXACT []
+synonym: "G-Protein alpha-i" EXACT []
+synonym: "G-Protein α-i" EXACT []
+synonym: "Galphai" EXACT []
+synonym: "Gi alpha subunit" EXACT []
+synonym: "Gi alpha" EXACT []
+synonym: "Gi α subunit" EXACT []
+synonym: "Gi α" EXACT []
+synonym: "Gαi" EXACT []
+xref: IP:IPR001408
+xref: NCIT:C19275
+xref: RE:R-HSA-111864
+xref: RE:R-HSA-167410
+xref: RE:R-HSA-167413
+xref: RE:R-HSA-167438
+is_a: FPLX:G_alpha
+part_of: FPLX:G_i
+inverse_is_a: HGNC:GNAO1
+inverse_is_a: HGNC:GNAI1
+inverse_is_a: HGNC:GNAI2
+inverse_is_a: HGNC:GNAI3
+inverse_is_a: HGNC:GNAT1
+inverse_is_a: HGNC:GNAT2
+inverse_is_a: HGNC:GNAT3
+inverse_is_a: HGNC:GNAZ
+
+[Term]
+id: FPLX:GJ
+name: GJ
+xref: HGNC_GROUP:314
+is_a: FPLX:root
+inverse_is_a: HGNC:GJA1
+inverse_is_a: HGNC:GJA10
+inverse_is_a: HGNC:GJA3
+inverse_is_a: HGNC:GJA4
+inverse_is_a: HGNC:GJA5
+inverse_is_a: HGNC:GJA6P
+inverse_is_a: HGNC:GJA8
+inverse_is_a: HGNC:GJA9
+inverse_is_a: HGNC:GJB1
+inverse_is_a: HGNC:GJB2
+inverse_is_a: HGNC:GJB3
+inverse_is_a: HGNC:GJB4
+inverse_is_a: HGNC:GJB5
+inverse_is_a: HGNC:GJB6
+inverse_is_a: HGNC:GJB7
+inverse_is_a: HGNC:GJC1
+inverse_is_a: HGNC:GJC2
+inverse_is_a: HGNC:GJC3
+inverse_is_a: HGNC:GJD2
+inverse_is_a: HGNC:GJD3
+inverse_is_a: HGNC:GJD4
+inverse_is_a: HGNC:GJE1
+
+[Term]
+id: FPLX:GLRA_GLRB
+name: GLRA-GLRB
+xref: HGNC_GROUP:868
+is_a: FPLX:Ligand_gated_ion_channels
+inverse_is_a: HGNC:GLRA1
+inverse_is_a: HGNC:GLRA2
+inverse_is_a: HGNC:GLRA3
+inverse_is_a: HGNC:GLRA4
+inverse_is_a: HGNC:GLRB
+
+[Term]
+id: FPLX:Glycosyltransferase
+name: Glycosyltransferase
+xref: MESH:D016695
+is_a: FPLX:root
+inverse_is_a: FPLX:A4GALT_family
+inverse_is_a: FPLX:ALG10
+inverse_is_a: FPLX:ALG1_family
+inverse_is_a: FPLX:ALG3_family
+inverse_is_a: FPLX:ALG6_family
+inverse_is_a: FPLX:ALG13_family
+inverse_is_a: FPLX:B3GAT
+inverse_is_a: FPLX:Beta_3_4_GTF
+inverse_is_a: FPLX:COLGALT
+inverse_is_a: FPLX:EXT
+inverse_is_a: FPLX:FUT
+inverse_is_a: FPLX:GALNT
+inverse_is_a: FPLX:GCNT
+inverse_is_a: FPLX:GTF_family_2
+inverse_is_a: FPLX:GTF_family_6
+inverse_is_a: FPLX:GTF_family_8
+inverse_is_a: FPLX:GTF_family_29
+inverse_is_a: FPLX:GTF_family_90
+inverse_is_a: FPLX:MGAT
+inverse_is_a: FPLX:OGT_family
+inverse_is_a: FPLX:PYG
+inverse_is_a: FPLX:STT3
+inverse_is_a: FPLX:UGCG
+inverse_is_a: FPLX:UGT
+inverse_is_a: FPLX:UGGT
 
 [Term]
 id: FPLX:GPCR
@@ -3166,6 +3771,18 @@ has_part: HGNC:PIGT
 has_part: HGNC:PIGU
 
 [Term]
+id: FPLX:G_protein
+name: G-protein
+synonym: "G protein" EXACT []
+synonym: "G proteins" EXACT []
+xref: NCIT:C17458
+is_a: FPLX:root
+inverse_is_a: FPLX:G_i
+inverse_is_a: FPLX:G_s
+inverse_is_a: FPLX:G_q
+inverse_is_a: FPLX:G_12
+
+[Term]
 id: FPLX:GPX
 name: GPX
 synonym: "glutathione peroxidase" EXACT []
@@ -3186,6 +3803,63 @@ inverse_is_a: HGNC:GPX7
 inverse_is_a: HGNC:GPX8
 
 [Term]
+id: FPLX:G_q
+name: G-q
+synonym: "G(q/11)" EXACT []
+synonym: "Gq/11" EXACT []
+xref: BEL:"GNA Gq Family"
+xref: IP:IPR000654
+xref: RE:R-HSA-114534
+xref: RE:R-HSA-114556
+xref: RE:R-HSA-374848
+xref: RE:R-HSA-399987
+xref: RE:R-HSA-399992
+xref: RE:R-HSA-400000
+xref: RE:R-HSA-400008
+xref: RE:R-HSA-749499
+is_a: FPLX:G_protein
+has_part: FPLX:G_q_alpha
+
+[Term]
+id: FPLX:G_q_alpha
+name: G-q-alpha
+synonym: "G alphaq" EXACT []
+synonym: "G αq" EXACT []
+synonym: "G-Protein alpha-q" EXACT []
+synonym: "G-Protein α-q" EXACT []
+synonym: "Galphaq" EXACT []
+synonym: "Gq alpha subunit" EXACT []
+synonym: "Gq alpha" EXACT []
+synonym: "Gq α subunit" EXACT []
+synonym: "Gq α" EXACT []
+synonym: "Gαq" EXACT []
+xref: IP:IPR000654
+xref: RE:R-HSA-114534
+xref: RE:R-HSA-114556
+xref: RE:R-HSA-374848
+xref: RE:R-HSA-399987
+xref: RE:R-HSA-399992
+xref: RE:R-HSA-400000
+xref: RE:R-HSA-400008
+xref: RE:R-HSA-749499
+is_a: FPLX:G_alpha
+part_of: FPLX:G_q
+inverse_is_a: HGNC:GNAQ
+inverse_is_a: HGNC:GNA11
+inverse_is_a: HGNC:GNA14
+inverse_is_a: HGNC:GNA15
+
+[Term]
+id: FPLX:GRI
+name: GRI
+xref: HGNC_GROUP:284
+is_a: FPLX:Ligand_gated_ion_channels
+inverse_is_a: FPLX:GRIA
+inverse_is_a: FPLX:GRID
+inverse_is_a: FPLX:Kainate_family
+inverse_is_a: FPLX:GRIN
+
+[Term]
 id: FPLX:GRIA
 name: GRIA
 synonym: "AMPA glutamate receptor" EXACT []
@@ -3196,6 +3870,7 @@ synonym: "AMPAR" EXACT []
 synonym: "AMPARs" EXACT []
 xref: BEL:"GRIA Family"
 xref: GO:0032281
+xref: HGNC_GROUP:1200
 xref: RE:R-HSA-399713
 xref: RE:R-HSA-416323
 xref: RE:R-HSA-420974
@@ -3205,6 +3880,27 @@ inverse_is_a: HGNC:GRIA1
 inverse_is_a: HGNC:GRIA2
 inverse_is_a: HGNC:GRIA3
 inverse_is_a: HGNC:GRIA4
+
+[Term]
+id: FPLX:GRID
+name: GRID
+xref: HGNC_GROUP:1202
+is_a: FPLX:GRI
+inverse_is_a: HGNC:GRID1
+inverse_is_a: HGNC:GRID2
+
+[Term]
+id: FPLX:GRIN
+name: GRIN
+xref: HGNC_GROUP:1201
+is_a: FPLX:GRI
+inverse_is_a: HGNC:GRIN1
+inverse_is_a: HGNC:GRIN2A
+inverse_is_a: HGNC:GRIN2B
+inverse_is_a: HGNC:GRIN2C
+inverse_is_a: HGNC:GRIN2D
+inverse_is_a: HGNC:GRIN3A
+inverse_is_a: HGNC:GRIN3B
 
 [Term]
 id: FPLX:GRK
@@ -3246,6 +3942,40 @@ inverse_is_a: HGNC:GRM5
 inverse_is_a: HGNC:GRM6
 inverse_is_a: HGNC:GRM7
 inverse_is_a: HGNC:GRM8
+
+[Term]
+id: FPLX:G_s
+name: G-s
+synonym: "G protein Gs" EXACT []
+synonym: "G protein(s)" EXACT []
+synonym: "G S protein" EXACT []
+synonym: "Gs family" EXACT []
+synonym: "Gs protein" EXACT []
+xref: BEL:"GNA Gs Family"
+is_a: FPLX:G_protein
+has_part: FPLX:G_s_alpha
+
+[Term]
+id: FPLX:G_s_alpha
+name: G-s-alpha
+synonym: "G alphaS" EXACT []
+synonym: "G αS" EXACT []
+synonym: "G-alpha(s)" EXACT []
+synonym: "G-AlphaS" EXACT []
+synonym: "G-Protein alpha-s" EXACT []
+synonym: "G-Protein α-s" EXACT []
+synonym: "G-α(s)" EXACT []
+synonym: "G-αS" EXACT []
+synonym: "GalphaS" EXACT []
+synonym: "Gs alpha subunit" EXACT []
+synonym: "Gs alpha" EXACT []
+synonym: "Gs α subunit" EXACT []
+synonym: "Gs α" EXACT []
+synonym: "GαS" EXACT []
+is_a: FPLX:G_alpha
+part_of: FPLX:G_s
+inverse_is_a: HGNC:GNAS
+inverse_is_a: HGNC:GNAL
 
 [Term]
 id: FPLX:GSK3
@@ -3320,37 +4050,6 @@ has_part: HGNC:GTF2F1
 has_part: HGNC:GTF2F2
 
 [Term]
-id: FPLX:Glycosyltransferase
-name: Glycosyltransferase
-xref: MESH:D016695
-is_a: FPLX:root
-inverse_is_a: FPLX:A4GALT_family
-inverse_is_a: FPLX:ALG10
-inverse_is_a: FPLX:ALG1_family
-inverse_is_a: FPLX:ALG3_family
-inverse_is_a: FPLX:ALG6_family
-inverse_is_a: FPLX:ALG13_family
-inverse_is_a: FPLX:B3GAT
-inverse_is_a: FPLX:Beta_3_4_GTF
-inverse_is_a: FPLX:COLGALT
-inverse_is_a: FPLX:EXT
-inverse_is_a: FPLX:FUT
-inverse_is_a: FPLX:GALNT
-inverse_is_a: FPLX:GCNT
-inverse_is_a: FPLX:GTF_family_2
-inverse_is_a: FPLX:GTF_family_6
-inverse_is_a: FPLX:GTF_family_8
-inverse_is_a: FPLX:GTF_family_29
-inverse_is_a: FPLX:GTF_family_90
-inverse_is_a: FPLX:MGAT
-inverse_is_a: FPLX:OGT_family
-inverse_is_a: FPLX:PYG
-inverse_is_a: FPLX:STT3
-inverse_is_a: FPLX:UGCG
-inverse_is_a: FPLX:UGT
-inverse_is_a: FPLX:UGGT
-
-[Term]
 id: FPLX:GTF_family_2
 name: GTF-family-2
 synonym: "Glycosyltransferase family 2" EXACT []
@@ -3362,34 +4061,6 @@ inverse_is_a: HGNC:DPM1
 inverse_is_a: HGNC:HAS1
 inverse_is_a: HGNC:HAS2
 inverse_is_a: HGNC:HAS3
-
-[Term]
-id: FPLX:GTF_family_6
-name: GTF-family-6
-synonym: "Glycosyltransferase family 6" EXACT []
-synonym: "glycosyltransferase family 6" EXACT []
-is_a: FPLX:Glycosyltransferase
-inverse_is_a: HGNC:ABO
-inverse_is_a: HGNC:A3GALT2
-inverse_is_a: HGNC:GBGT1
-inverse_is_a: HGNC:GLT6D1
-
-[Term]
-id: FPLX:GTF_family_8
-name: GTF-family-8
-synonym: "Glycosyltransferase family 8" EXACT []
-synonym: "glycosyltransferase family 8" EXACT []
-is_a: FPLX:Glycosyltransferase
-inverse_is_a: HGNC:GLT8D1
-inverse_is_a: HGNC:GLT8D2
-inverse_is_a: HGNC:GXYLT1
-inverse_is_a: HGNC:GXYLT2
-inverse_is_a: HGNC:GYG1
-inverse_is_a: HGNC:GYG2
-inverse_is_a: HGNC:LARGE1
-inverse_is_a: HGNC:LARGE2
-inverse_is_a: HGNC:RXYLT1
-inverse_is_a: HGNC:XXYLT1
 
 [Term]
 id: FPLX:GTF_family_29
@@ -3421,6 +4092,34 @@ inverse_is_a: HGNC:ST8SIA3
 inverse_is_a: HGNC:ST8SIA4
 inverse_is_a: HGNC:ST8SIA5
 inverse_is_a: HGNC:ST8SIA6
+
+[Term]
+id: FPLX:GTF_family_6
+name: GTF-family-6
+synonym: "Glycosyltransferase family 6" EXACT []
+synonym: "glycosyltransferase family 6" EXACT []
+is_a: FPLX:Glycosyltransferase
+inverse_is_a: HGNC:ABO
+inverse_is_a: HGNC:A3GALT2
+inverse_is_a: HGNC:GBGT1
+inverse_is_a: HGNC:GLT6D1
+
+[Term]
+id: FPLX:GTF_family_8
+name: GTF-family-8
+synonym: "Glycosyltransferase family 8" EXACT []
+synonym: "glycosyltransferase family 8" EXACT []
+is_a: FPLX:Glycosyltransferase
+inverse_is_a: HGNC:GLT8D1
+inverse_is_a: HGNC:GLT8D2
+inverse_is_a: HGNC:GXYLT1
+inverse_is_a: HGNC:GXYLT2
+inverse_is_a: HGNC:GYG1
+inverse_is_a: HGNC:GYG2
+inverse_is_a: HGNC:LARGE1
+inverse_is_a: HGNC:LARGE2
+inverse_is_a: HGNC:RXYLT1
+inverse_is_a: HGNC:XXYLT1
 
 [Term]
 id: FPLX:GTF_family_90
@@ -3465,237 +4164,6 @@ xref: IP:IPR008631
 is_a: FPLX:root
 inverse_is_a: HGNC:GYS1
 inverse_is_a: HGNC:GYS2
-
-[Term]
-id: FPLX:G_12
-name: G-12
-synonym: "G(12)" EXACT []
-synonym: "G12 family" EXACT []
-synonym: "G12 proteins" EXACT []
-synonym: "G12" EXACT []
-xref: IP:IPR000469
-xref: RE:R-HSA-114547
-xref: RE:R-HSA-418570
-xref: RE:R-HSA-418572
-is_a: FPLX:G_protein
-has_part: FPLX:G_12_alpha
-
-[Term]
-id: FPLX:G_12_alpha
-name: G-12-alpha
-synonym: "G-protein alpha-12" EXACT []
-synonym: "G-protein α-12" EXACT []
-synonym: "Ga12" EXACT []
-synonym: "Galpha12" EXACT []
-synonym: "Gα12" EXACT []
-xref: IP:IPR000469
-xref: RE:R-HSA-114525
-xref: RE:R-HSA-418570
-xref: RE:R-HSA-418572
-is_a: FPLX:G_alpha
-part_of: FPLX:G_12
-inverse_is_a: HGNC:GNA12
-inverse_is_a: HGNC:GNA13
-
-[Term]
-id: FPLX:G_alpha
-name: G-alpha
-synonym: "G_alpha" EXACT []
-synonym: "G_α" EXACT []
-xref: XFAM:PF00503
-is_a: FPLX:root
-inverse_is_a: FPLX:G_i_alpha
-inverse_is_a: FPLX:G_s_alpha
-inverse_is_a: FPLX:G_q_alpha
-inverse_is_a: FPLX:G_12_alpha
-
-[Term]
-id: FPLX:G_beta
-name: G-beta
-synonym: "G protein beta" EXACT []
-synonym: "G protein β" EXACT []
-synonym: "G-protein beta" EXACT []
-synonym: "G-protein β" EXACT []
-synonym: "Gbeta" EXACT []
-synonym: "Gβ" EXACT []
-xref: BEL:"GNB Family"
-xref: IP:IPR016346
-xref: RE:R-HSA-167409
-xref: RE:R-HSA-400093
-xref: RE:R-HSA-6814207
-xref: RE:R-HSA-6814413
-xref: RE:R-HSA-8850524
-xref: SIGNOR:SIGNOR-PF4
-is_a: FPLX:root
-inverse_is_a: HGNC:GNB1
-inverse_is_a: HGNC:GNB2
-inverse_is_a: HGNC:GNB3
-inverse_is_a: HGNC:GNB4
-inverse_is_a: HGNC:GNB5
-
-[Term]
-id: FPLX:G_gamma
-name: G-gamma
-synonym: "G protein gamma subunit" EXACT []
-synonym: "G protein gamma" EXACT []
-synonym: "G protein γ subunit" EXACT []
-synonym: "G protein γ" EXACT []
-xref: BEL:"GNG Family"
-xref: IP:IPR001770
-xref: NEXTPROT-FAMILY:01400
-xref: RE:R-HSA-167442
-xref: RE:R-HSA-400062
-xref: SIGNOR:SIGNOR-PF3
-is_a: FPLX:root
-inverse_is_a: HGNC:GNG10
-inverse_is_a: HGNC:GNG11
-inverse_is_a: HGNC:GNG12
-inverse_is_a: HGNC:GNG13
-inverse_is_a: HGNC:GNG2
-inverse_is_a: HGNC:GNG3
-inverse_is_a: HGNC:GNG4
-inverse_is_a: HGNC:GNG5
-inverse_is_a: HGNC:GNG7
-inverse_is_a: HGNC:GNG8
-inverse_is_a: HGNC:GNGT1
-inverse_is_a: HGNC:GNGT2
-
-[Term]
-id: FPLX:G_i
-name: G-i
-synonym: "Gi protein" EXACT []
-synonym: "Gi" EXACT []
-xref: BEL:"GNAI Family"
-xref: IP:IPR001408
-xref: RE:R-HSA-111864
-xref: RE:R-HSA-167410
-xref: RE:R-HSA-167413
-xref: RE:R-HSA-167438
-is_a: FPLX:G_protein
-has_part: FPLX:G_i_alpha
-
-[Term]
-id: FPLX:G_i_alpha
-name: G-i-alpha
-synonym: "G alphai" EXACT []
-synonym: "G αi" EXACT []
-synonym: "G-Protein alpha-i" EXACT []
-synonym: "G-Protein α-i" EXACT []
-synonym: "Galphai" EXACT []
-synonym: "Gi alpha subunit" EXACT []
-synonym: "Gi alpha" EXACT []
-synonym: "Gi α subunit" EXACT []
-synonym: "Gi α" EXACT []
-synonym: "Gαi" EXACT []
-xref: IP:IPR001408
-xref: NCIT:C19275
-xref: RE:R-HSA-111864
-xref: RE:R-HSA-167410
-xref: RE:R-HSA-167413
-xref: RE:R-HSA-167438
-is_a: FPLX:G_alpha
-part_of: FPLX:G_i
-inverse_is_a: HGNC:GNAO1
-inverse_is_a: HGNC:GNAI1
-inverse_is_a: HGNC:GNAI2
-inverse_is_a: HGNC:GNAI3
-inverse_is_a: HGNC:GNAT1
-inverse_is_a: HGNC:GNAT2
-inverse_is_a: HGNC:GNAT3
-inverse_is_a: HGNC:GNAZ
-
-[Term]
-id: FPLX:G_protein
-name: G-protein
-synonym: "G protein" EXACT []
-synonym: "G proteins" EXACT []
-xref: NCIT:C17458
-is_a: FPLX:root
-inverse_is_a: FPLX:G_i
-inverse_is_a: FPLX:G_s
-inverse_is_a: FPLX:G_q
-inverse_is_a: FPLX:G_12
-
-[Term]
-id: FPLX:G_q
-name: G-q
-synonym: "G(q/11)" EXACT []
-synonym: "Gq/11" EXACT []
-xref: BEL:"GNA Gq Family"
-xref: IP:IPR000654
-xref: RE:R-HSA-114534
-xref: RE:R-HSA-114556
-xref: RE:R-HSA-374848
-xref: RE:R-HSA-399987
-xref: RE:R-HSA-399992
-xref: RE:R-HSA-400000
-xref: RE:R-HSA-400008
-xref: RE:R-HSA-749499
-is_a: FPLX:G_protein
-has_part: FPLX:G_q_alpha
-
-[Term]
-id: FPLX:G_q_alpha
-name: G-q-alpha
-synonym: "G alphaq" EXACT []
-synonym: "G αq" EXACT []
-synonym: "G-Protein alpha-q" EXACT []
-synonym: "G-Protein α-q" EXACT []
-synonym: "Galphaq" EXACT []
-synonym: "Gq alpha subunit" EXACT []
-synonym: "Gq alpha" EXACT []
-synonym: "Gq α subunit" EXACT []
-synonym: "Gq α" EXACT []
-synonym: "Gαq" EXACT []
-xref: IP:IPR000654
-xref: RE:R-HSA-114534
-xref: RE:R-HSA-114556
-xref: RE:R-HSA-374848
-xref: RE:R-HSA-399987
-xref: RE:R-HSA-399992
-xref: RE:R-HSA-400000
-xref: RE:R-HSA-400008
-xref: RE:R-HSA-749499
-is_a: FPLX:G_alpha
-part_of: FPLX:G_q
-inverse_is_a: HGNC:GNAQ
-inverse_is_a: HGNC:GNA11
-inverse_is_a: HGNC:GNA14
-inverse_is_a: HGNC:GNA15
-
-[Term]
-id: FPLX:G_s
-name: G-s
-synonym: "G protein Gs" EXACT []
-synonym: "G protein(s)" EXACT []
-synonym: "G S protein" EXACT []
-synonym: "Gs family" EXACT []
-synonym: "Gs protein" EXACT []
-xref: BEL:"GNA Gs Family"
-is_a: FPLX:G_protein
-has_part: FPLX:G_s_alpha
-
-[Term]
-id: FPLX:G_s_alpha
-name: G-s-alpha
-synonym: "G alphaS" EXACT []
-synonym: "G αS" EXACT []
-synonym: "G-alpha(s)" EXACT []
-synonym: "G-AlphaS" EXACT []
-synonym: "G-Protein alpha-s" EXACT []
-synonym: "G-Protein α-s" EXACT []
-synonym: "G-α(s)" EXACT []
-synonym: "G-αS" EXACT []
-synonym: "GalphaS" EXACT []
-synonym: "Gs alpha subunit" EXACT []
-synonym: "Gs alpha" EXACT []
-synonym: "Gs α subunit" EXACT []
-synonym: "Gs α" EXACT []
-synonym: "GαS" EXACT []
-is_a: FPLX:G_alpha
-part_of: FPLX:G_s
-inverse_is_a: HGNC:GNAS
-inverse_is_a: HGNC:GNAL
 
 [Term]
 id: FPLX:hCG
@@ -4140,6 +4608,13 @@ inverse_is_a: HGNC:HSPB2
 inverse_is_a: HGNC:HSPB8
 
 [Term]
+id: FPLX:HVCN
+name: HVCN
+xref: HGNC_GROUP:254
+is_a: FPLX:Voltage_gated_ion_channels
+inverse_is_a: HGNC:HVCN1
+
+[Term]
 id: FPLX:IFNA
 name: IFNA
 synonym: "IFN-a" EXACT []
@@ -4437,6 +4912,16 @@ inverse_is_a: HGNC:IRX6
 inverse_is_a: HGNC:MKX
 
 [Term]
+id: FPLX:ITPR
+name: ITPR
+xref: HGNC_GROUP:297
+is_a: FPLX:Calcium_channels
+is_a: FPLX:Ligand_gated_ion_channels
+inverse_is_a: HGNC:ITPR1
+inverse_is_a: HGNC:ITPR2
+inverse_is_a: HGNC:ITPR3
+
+[Term]
 id: FPLX:JAK
 name: JAK
 synonym: "JAK" EXACT []
@@ -4499,6 +4984,69 @@ inverse_is_a: HGNC:GRIK2
 inverse_is_a: HGNC:GRIK3
 inverse_is_a: HGNC:GRIK4
 inverse_is_a: HGNC:GRIK5
+
+[Term]
+id: FPLX:KCN
+name: KCN
+xref: HGNC_GROUP:183
+is_a: FPLX:root
+inverse_is_a: FPLX:KCNJ
+inverse_is_a: FPLX:KCNK
+inverse_is_a: FPLX:KCNT
+inverse_is_a: FPLX:Potassium_calcium_activated_channels
+inverse_is_a: FPLX:Potassium_voltage_gated_channels
+
+[Term]
+id: FPLX:KCNJ
+name: KCNJ
+xref: HGNC_GROUP:276
+is_a: FPLX:KCN
+inverse_is_a: HGNC:KCNJ1
+inverse_is_a: HGNC:KCNJ10
+inverse_is_a: HGNC:KCNJ11
+inverse_is_a: HGNC:KCNJ12
+inverse_is_a: HGNC:KCNJ13
+inverse_is_a: HGNC:KCNJ14
+inverse_is_a: HGNC:KCNJ15
+inverse_is_a: HGNC:KCNJ16
+inverse_is_a: HGNC:KCNJ18
+inverse_is_a: HGNC:KCNJ2
+inverse_is_a: HGNC:KCNJ3
+inverse_is_a: HGNC:KCNJ4
+inverse_is_a: HGNC:KCNJ5
+inverse_is_a: HGNC:KCNJ6
+inverse_is_a: HGNC:KCNJ8
+inverse_is_a: HGNC:KCNJ9
+
+[Term]
+id: FPLX:KCNK
+name: KCNK
+xref: HGNC_GROUP:277
+is_a: FPLX:KCN
+is_a: FPLX:Voltage_gated_ion_channels
+inverse_is_a: HGNC:KCNK1
+inverse_is_a: HGNC:KCNK10
+inverse_is_a: HGNC:KCNK12
+inverse_is_a: HGNC:KCNK13
+inverse_is_a: HGNC:KCNK15
+inverse_is_a: HGNC:KCNK16
+inverse_is_a: HGNC:KCNK17
+inverse_is_a: HGNC:KCNK18
+inverse_is_a: HGNC:KCNK2
+inverse_is_a: HGNC:KCNK3
+inverse_is_a: HGNC:KCNK4
+inverse_is_a: HGNC:KCNK5
+inverse_is_a: HGNC:KCNK6
+inverse_is_a: HGNC:KCNK7
+inverse_is_a: HGNC:KCNK9
+
+[Term]
+id: FPLX:KCNT
+name: KCNT
+xref: HGNC_GROUP:856
+is_a: FPLX:KCN
+inverse_is_a: HGNC:KCNT1
+inverse_is_a: HGNC:KCNT2
 
 [Term]
 id: FPLX:Kinetochore
@@ -4626,6 +5174,22 @@ has_part: HGNC:CGA
 has_part: HGNC:LHB
 
 [Term]
+id: FPLX:Ligand_gated_ion_channels
+name: Ligand-gated-ion-channels
+xref: HGNC_GROUP:161
+is_a: FPLX:root
+inverse_is_a: FPLX:5_hydroxytryptamine_receptors_ionotropic
+inverse_is_a: HGNC:CFTR
+inverse_is_a: FPLX:CHRN
+inverse_is_a: FPLX:GABR
+inverse_is_a: FPLX:GLRA_GLRB
+inverse_is_a: FPLX:GRI
+inverse_is_a: FPLX:ITPR
+inverse_is_a: FPLX:P2RX
+inverse_is_a: FPLX:RYR
+inverse_is_a: FPLX:ZACN
+
+[Term]
 id: FPLX:LPAR
 name: LPAR
 xref: SIGNOR:SIGNOR-PF2
@@ -4633,6 +5197,30 @@ is_a: FPLX:root
 inverse_is_a: HGNC:LPAR1
 inverse_is_a: HGNC:LPAR2
 inverse_is_a: HGNC:LPAR3
+
+[Term]
+id: FPLX:LRRC8
+name: LRRC8
+xref: HGNC_GROUP:1158
+is_a: FPLX:Chloride_channels
+inverse_is_a: HGNC:LRRC8A
+inverse_is_a: HGNC:LRRC8B
+inverse_is_a: HGNC:LRRC8C
+inverse_is_a: HGNC:LRRC8D
+inverse_is_a: HGNC:LRRC8E
+
+[Term]
+id: FPLX:LXR
+name: LXR
+synonym: "liver X receptors" EXACT []
+synonym: "liver X receptor" EXACT []
+synonym: "Liver X receptors" EXACT []
+synonym: "Liver X receptor" EXACT []
+synonym: "LXRs" EXACT []
+xref: IP:IPR023257
+is_a: FPLX:root
+inverse_is_a: HGNC:NR1H2
+inverse_is_a: HGNC:NR1H3
 
 [Term]
 id: FPLX:MAC
@@ -4804,6 +5392,33 @@ inverse_is_a: HGNC:MAP2K1
 inverse_is_a: HGNC:MAP2K2
 
 [Term]
+id: FPLX:Metallothionein
+name: Metallothionein
+synonym: "Metallothionein" EXACT []
+synonym: "metallothionein" EXACT []
+synonym: "MT" EXACT []
+is_a: FPLX:root
+inverse_is_a: HGNC:MT1A
+inverse_is_a: HGNC:MT1B
+inverse_is_a: HGNC:MT1CP
+inverse_is_a: HGNC:MT1DP
+inverse_is_a: HGNC:MT1E
+inverse_is_a: HGNC:MT1F
+inverse_is_a: HGNC:MT1G
+inverse_is_a: HGNC:MT1H
+inverse_is_a: HGNC:MT1HL1
+inverse_is_a: HGNC:MT1IP
+inverse_is_a: HGNC:MT1JP
+inverse_is_a: HGNC:MT1L
+inverse_is_a: HGNC:MT1M
+inverse_is_a: HGNC:MT1P1
+inverse_is_a: HGNC:MT1P3
+inverse_is_a: HGNC:MT1X
+inverse_is_a: HGNC:MT2A
+inverse_is_a: HGNC:MT3
+inverse_is_a: HGNC:MT4
+
+[Term]
 id: FPLX:MGAT
 name: MGAT
 synonym: "MGAT" EXACT []
@@ -4840,44 +5455,49 @@ has_part: FPLX:MRPS
 has_part: FPLX:MRPL
 
 [Term]
-id: FPLX:MRPS
-name: MRPS
-synonym: "small mitoribosomal subunit" EXACT []
-synonym: "Small Mitoribosomal Subunit" EXACT []
-synonym: "small subunit of the mammalian mitochondrial ribosome" EXACT []
-synonym: "mitochondrial ribosomal small subunit" EXACT []
-xref: GO:0005763
-part_of: FPLX:Mitochondrial_Ribosome
-has_part: HGNC:MRPS2
-has_part: HGNC:MRPS5
-has_part: HGNC:MRPS6
-has_part: HGNC:MRPS7
-has_part: HGNC:MRPS9
-has_part: HGNC:MRPS10
-has_part: HGNC:MRPS11
-has_part: HGNC:MRPS12
-has_part: HGNC:MRPS14
-has_part: HGNC:MRPS15
-has_part: HGNC:MRPS16
-has_part: HGNC:MRPS17
-has_part: HGNC:MRPS18A
-has_part: HGNC:MRPS18B
-has_part: HGNC:MRPS18C
-has_part: HGNC:MRPS21
-has_part: HGNC:MRPS22
-has_part: HGNC:MRPS23
-has_part: HGNC:MRPS24
-has_part: HGNC:MRPS25
-has_part: HGNC:MRPS26
-has_part: HGNC:MRPS27
-has_part: HGNC:MRPS28
-has_part: HGNC:DAP3
-has_part: HGNC:MRPS30
-has_part: HGNC:MRPS31
-has_part: HGNC:MRPS33
-has_part: HGNC:MRPS34
-has_part: HGNC:MRPS35
-has_part: HGNC:MRPS36
+id: FPLX:MKNK
+name: MKNK
+synonym: "Mnk1 and Mnk2" EXACT []
+synonym: "MNK1 and MNK2" EXACT []
+synonym: "MNK1 and MNK2 kinases" EXACT []
+synonym: "Mnk1 and Mnk2 kinases" EXACT []
+synonym: "MNK" EXACT []
+synonym: "Mnk" EXACT []
+is_a: FPLX:root
+inverse_is_a: HGNC:MKNK1
+inverse_is_a: HGNC:MKNK2
+
+[Term]
+id: FPLX:MMP
+name: MMP
+synonym: "MMP" EXACT []
+synonym: "MMPs" EXACT []
+xref: BEL:"MMP Family"
+xref: NCIT:C18164
+is_a: FPLX:root
+inverse_is_a: HGNC:MMP1
+inverse_is_a: HGNC:MMP2
+inverse_is_a: HGNC:MMP3
+inverse_is_a: HGNC:MMP7
+inverse_is_a: HGNC:MMP8
+inverse_is_a: HGNC:MMP9
+inverse_is_a: HGNC:MMP10
+inverse_is_a: HGNC:MMP11
+inverse_is_a: HGNC:MMP12
+inverse_is_a: HGNC:MMP13
+inverse_is_a: HGNC:MMP14
+inverse_is_a: HGNC:MMP15
+inverse_is_a: HGNC:MMP16
+inverse_is_a: HGNC:MMP17
+inverse_is_a: HGNC:MMP19
+inverse_is_a: HGNC:MMP20
+inverse_is_a: HGNC:MMP21
+inverse_is_a: HGNC:MMP23B
+inverse_is_a: HGNC:MMP24
+inverse_is_a: HGNC:MMP25
+inverse_is_a: HGNC:MMP26
+inverse_is_a: HGNC:MMP27
+inverse_is_a: HGNC:MMP28
 
 [Term]
 id: FPLX:MRPL
@@ -4938,63 +5558,44 @@ has_part: HGNC:MRPL55
 has_part: HGNC:MRPL57
 
 [Term]
-id: FPLX:MMP
-name: MMP
-synonym: "MMP" EXACT []
-synonym: "MMPs" EXACT []
-xref: BEL:"MMP Family"
-xref: NCIT:C18164
-is_a: FPLX:root
-inverse_is_a: HGNC:MMP1
-inverse_is_a: HGNC:MMP2
-inverse_is_a: HGNC:MMP3
-inverse_is_a: HGNC:MMP7
-inverse_is_a: HGNC:MMP8
-inverse_is_a: HGNC:MMP9
-inverse_is_a: HGNC:MMP10
-inverse_is_a: HGNC:MMP11
-inverse_is_a: HGNC:MMP12
-inverse_is_a: HGNC:MMP13
-inverse_is_a: HGNC:MMP14
-inverse_is_a: HGNC:MMP15
-inverse_is_a: HGNC:MMP16
-inverse_is_a: HGNC:MMP17
-inverse_is_a: HGNC:MMP19
-inverse_is_a: HGNC:MMP20
-inverse_is_a: HGNC:MMP21
-inverse_is_a: HGNC:MMP23B
-inverse_is_a: HGNC:MMP24
-inverse_is_a: HGNC:MMP25
-inverse_is_a: HGNC:MMP26
-inverse_is_a: HGNC:MMP27
-inverse_is_a: HGNC:MMP28
-
-[Term]
-id: FPLX:Metallothionein
-name: Metallothionein
-synonym: "Metallothionein" EXACT []
-synonym: "metallothionein" EXACT []
-synonym: "MT" EXACT []
-is_a: FPLX:root
-inverse_is_a: HGNC:MT1A
-inverse_is_a: HGNC:MT1B
-inverse_is_a: HGNC:MT1CP
-inverse_is_a: HGNC:MT1DP
-inverse_is_a: HGNC:MT1E
-inverse_is_a: HGNC:MT1F
-inverse_is_a: HGNC:MT1G
-inverse_is_a: HGNC:MT1H
-inverse_is_a: HGNC:MT1HL1
-inverse_is_a: HGNC:MT1IP
-inverse_is_a: HGNC:MT1JP
-inverse_is_a: HGNC:MT1L
-inverse_is_a: HGNC:MT1M
-inverse_is_a: HGNC:MT1P1
-inverse_is_a: HGNC:MT1P3
-inverse_is_a: HGNC:MT1X
-inverse_is_a: HGNC:MT2A
-inverse_is_a: HGNC:MT3
-inverse_is_a: HGNC:MT4
+id: FPLX:MRPS
+name: MRPS
+synonym: "small mitoribosomal subunit" EXACT []
+synonym: "Small Mitoribosomal Subunit" EXACT []
+synonym: "small subunit of the mammalian mitochondrial ribosome" EXACT []
+synonym: "mitochondrial ribosomal small subunit" EXACT []
+xref: GO:0005763
+part_of: FPLX:Mitochondrial_Ribosome
+has_part: HGNC:MRPS2
+has_part: HGNC:MRPS5
+has_part: HGNC:MRPS6
+has_part: HGNC:MRPS7
+has_part: HGNC:MRPS9
+has_part: HGNC:MRPS10
+has_part: HGNC:MRPS11
+has_part: HGNC:MRPS12
+has_part: HGNC:MRPS14
+has_part: HGNC:MRPS15
+has_part: HGNC:MRPS16
+has_part: HGNC:MRPS17
+has_part: HGNC:MRPS18A
+has_part: HGNC:MRPS18B
+has_part: HGNC:MRPS18C
+has_part: HGNC:MRPS21
+has_part: HGNC:MRPS22
+has_part: HGNC:MRPS23
+has_part: HGNC:MRPS24
+has_part: HGNC:MRPS25
+has_part: HGNC:MRPS26
+has_part: HGNC:MRPS27
+has_part: HGNC:MRPS28
+has_part: HGNC:DAP3
+has_part: HGNC:MRPS30
+has_part: HGNC:MRPS31
+has_part: HGNC:MRPS33
+has_part: HGNC:MRPS34
+has_part: HGNC:MRPS35
+has_part: HGNC:MRPS36
 
 [Term]
 id: FPLX:mTORC1
@@ -5519,6 +6120,7 @@ synonym: "P2X receptors" EXACT []
 synonym: "P2X" EXACT []
 xref: BEL:"P2RX Family"
 xref: GO:0004931
+xref: HGNC_GROUP:214
 xref: IP:IPR001429
 xref: IP:IPR027309
 xref: NEXTPROT-FAMILY:02630
@@ -5855,69 +6457,6 @@ inverse_is_a: HGNC:PDGFC
 inverse_is_a: HGNC:PDGFD
 
 [Term]
-id: FPLX:PDGFR
-name: PDGFR
-synonym: "PDGFR" EXACT []
-xref: BEL:"PDGFR Family"
-xref: NCIT:C17322
-xref: RE:R-HSA-186769
-xref: RE:R-HSA-186770
-xref: RE:R-HSA-186791
-xref: RE:R-HSA-186792
-xref: RE:R-HSA-186821
-xref: RE:R-HSA-8864040
-is_a: FPLX:root
-inverse_is_a: HGNC:PDGFRA
-inverse_is_a: HGNC:PDGFRB
-
-[Term]
-id: FPLX:PDGFR_AA
-name: PDGFR-AA
-synonym: "PDGFR-AA" EXACT []
-synonym: "PDGFR-alphaalpha" EXACT []
-synonym: "PDGFR-αα" EXACT []
-synonym: "PDGFRalphaalpha" EXACT []
-synonym: "PDGFRαα" EXACT []
-xref: IP:IPR027290
-xref: RE:R-HSA-186816
-xref: RE:R-HSA-186817
-is_a: FPLX:root
-has_part: HGNC:PDGFRA
-
-[Term]
-id: FPLX:PDGFR_AB
-name: PDGFR-AB
-synonym: "PDGFR-AB" EXACT []
-synonym: "PDGFR-alphabeta" EXACT []
-synonym: "PDGFR-αβ" EXACT []
-synonym: "PDGFRalphabeta" EXACT []
-synonym: "PDGFRαβ" EXACT []
-xref: RE:R-HSA-186769
-xref: RE:R-HSA-186770
-xref: RE:R-HSA-186791
-xref: RE:R-HSA-186792
-xref: RE:R-HSA-186821
-xref: RE:R-HSA-8864040
-is_a: FPLX:root
-has_part: HGNC:PDGFRA
-has_part: HGNC:PDGFRB
-
-[Term]
-id: FPLX:PDGFR_BB
-name: PDGFR-BB
-synonym: "PDGFR-BB" EXACT []
-synonym: "PDGFR-betabeta" EXACT []
-synonym: "PDGFR-ββ" EXACT []
-synonym: "PDGFRbetabeta" EXACT []
-synonym: "PDGFRββ" EXACT []
-xref: IP:IPR027288
-xref: RE:R-HSA-186799
-xref: RE:R-HSA-186805
-xref: RE:R-HSA-8864046
-is_a: FPLX:root
-has_part: HGNC:PDGFRB
-
-[Term]
 id: FPLX:PDGF_AA
 name: PDGF-AA
 synonym: "PDGF-AA" EXACT []
@@ -5983,6 +6522,69 @@ synonym: "PDGF-dd" EXACT []
 xref: RE:R-HSA-381930
 is_a: FPLX:root
 has_part: HGNC:PDGFD
+
+[Term]
+id: FPLX:PDGFR
+name: PDGFR
+synonym: "PDGFR" EXACT []
+xref: BEL:"PDGFR Family"
+xref: NCIT:C17322
+xref: RE:R-HSA-186769
+xref: RE:R-HSA-186770
+xref: RE:R-HSA-186791
+xref: RE:R-HSA-186792
+xref: RE:R-HSA-186821
+xref: RE:R-HSA-8864040
+is_a: FPLX:root
+inverse_is_a: HGNC:PDGFRA
+inverse_is_a: HGNC:PDGFRB
+
+[Term]
+id: FPLX:PDGFR_AA
+name: PDGFR-AA
+synonym: "PDGFR-AA" EXACT []
+synonym: "PDGFR-alphaalpha" EXACT []
+synonym: "PDGFR-αα" EXACT []
+synonym: "PDGFRalphaalpha" EXACT []
+synonym: "PDGFRαα" EXACT []
+xref: IP:IPR027290
+xref: RE:R-HSA-186816
+xref: RE:R-HSA-186817
+is_a: FPLX:root
+has_part: HGNC:PDGFRA
+
+[Term]
+id: FPLX:PDGFR_AB
+name: PDGFR-AB
+synonym: "PDGFR-AB" EXACT []
+synonym: "PDGFR-alphabeta" EXACT []
+synonym: "PDGFR-αβ" EXACT []
+synonym: "PDGFRalphabeta" EXACT []
+synonym: "PDGFRαβ" EXACT []
+xref: RE:R-HSA-186769
+xref: RE:R-HSA-186770
+xref: RE:R-HSA-186791
+xref: RE:R-HSA-186792
+xref: RE:R-HSA-186821
+xref: RE:R-HSA-8864040
+is_a: FPLX:root
+has_part: HGNC:PDGFRA
+has_part: HGNC:PDGFRB
+
+[Term]
+id: FPLX:PDGFR_BB
+name: PDGFR-BB
+synonym: "PDGFR-BB" EXACT []
+synonym: "PDGFR-betabeta" EXACT []
+synonym: "PDGFR-ββ" EXACT []
+synonym: "PDGFRbetabeta" EXACT []
+synonym: "PDGFRββ" EXACT []
+xref: IP:IPR027288
+xref: RE:R-HSA-186799
+xref: RE:R-HSA-186805
+xref: RE:R-HSA-8864046
+is_a: FPLX:root
+has_part: HGNC:PDGFRB
 
 [Term]
 id: FPLX:PDH
@@ -6328,6 +6930,74 @@ inverse_is_a: HGNC:PLD3
 inverse_is_a: HGNC:PLD4
 inverse_is_a: HGNC:PLD5
 inverse_is_a: HGNC:PLD6
+
+[Term]
+id: FPLX:Porins
+name: Porins
+xref: HGNC_GROUP:304
+is_a: FPLX:root
+inverse_is_a: FPLX:AQP
+inverse_is_a: FPLX:VDAC
+
+[Term]
+id: FPLX:Potassium_calcium_activated_channels
+name: Potassium-calcium-activated-channels
+xref: HGNC_GROUP:255
+is_a: FPLX:KCN
+is_a: FPLX:Voltage_gated_ion_channels
+inverse_is_a: HGNC:KCNMA1
+inverse_is_a: HGNC:KCNN1
+inverse_is_a: HGNC:KCNN2
+inverse_is_a: HGNC:KCNN3
+inverse_is_a: HGNC:KCNN4
+inverse_is_a: HGNC:KCNU1
+
+[Term]
+id: FPLX:Potassium_voltage_gated_channels
+name: Potassium-voltage-gated-channels
+xref: HGNC_GROUP:274
+is_a: FPLX:KCN
+is_a: FPLX:Voltage_gated_ion_channels
+inverse_is_a: HGNC:KCNA1
+inverse_is_a: HGNC:KCNA10
+inverse_is_a: HGNC:KCNA2
+inverse_is_a: HGNC:KCNA3
+inverse_is_a: HGNC:KCNA4
+inverse_is_a: HGNC:KCNA5
+inverse_is_a: HGNC:KCNA6
+inverse_is_a: HGNC:KCNA7
+inverse_is_a: HGNC:KCNB1
+inverse_is_a: HGNC:KCNB2
+inverse_is_a: HGNC:KCNC1
+inverse_is_a: HGNC:KCNC2
+inverse_is_a: HGNC:KCNC3
+inverse_is_a: HGNC:KCNC4
+inverse_is_a: HGNC:KCND1
+inverse_is_a: HGNC:KCND2
+inverse_is_a: HGNC:KCND3
+inverse_is_a: HGNC:KCNF1
+inverse_is_a: HGNC:KCNG1
+inverse_is_a: HGNC:KCNG2
+inverse_is_a: HGNC:KCNG3
+inverse_is_a: HGNC:KCNG4
+inverse_is_a: HGNC:KCNH1
+inverse_is_a: HGNC:KCNH2
+inverse_is_a: HGNC:KCNH3
+inverse_is_a: HGNC:KCNH4
+inverse_is_a: HGNC:KCNH5
+inverse_is_a: HGNC:KCNH6
+inverse_is_a: HGNC:KCNH7
+inverse_is_a: HGNC:KCNH8
+inverse_is_a: HGNC:KCNQ1
+inverse_is_a: HGNC:KCNQ2
+inverse_is_a: HGNC:KCNQ3
+inverse_is_a: HGNC:KCNQ4
+inverse_is_a: HGNC:KCNQ5
+inverse_is_a: HGNC:KCNS1
+inverse_is_a: HGNC:KCNS2
+inverse_is_a: HGNC:KCNS3
+inverse_is_a: HGNC:KCNV1
+inverse_is_a: HGNC:KCNV2
 
 [Term]
 id: FPLX:PPAP2
@@ -7213,6 +7883,16 @@ inverse_is_a: HGNC:RXRB
 inverse_is_a: HGNC:RXRG
 
 [Term]
+id: FPLX:RYR
+name: RYR
+xref: HGNC_GROUP:287
+is_a: FPLX:Calcium_channels
+is_a: FPLX:Ligand_gated_ion_channels
+inverse_is_a: HGNC:RYR1
+inverse_is_a: HGNC:RYR2
+inverse_is_a: HGNC:RYR3
+
+[Term]
 id: FPLX:S100
 name: S100
 synonym: "S100" EXACT []
@@ -7294,6 +7974,25 @@ xref: IP:IPR015876
 is_a: FPLX:root
 inverse_is_a: HGNC:SCD
 inverse_is_a: HGNC:SCD5
+
+[Term]
+id: FPLX:SCN
+name: SCN
+xref: HGNC_GROUP:184
+is_a: FPLX:Sodium_channels
+is_a: FPLX:Voltage_gated_ion_channels
+inverse_is_a: FPLX:Sodium_voltage_gated_channel_alpha_subunits
+inverse_is_a: FPLX:Sodium_voltage_gated_channel_beta_subunits
+
+[Term]
+id: FPLX:SCNN
+name: SCNN
+xref: HGNC_GROUP:185
+is_a: FPLX:Sodium_channels
+inverse_is_a: HGNC:SCNN1A
+inverse_is_a: HGNC:SCNN1B
+inverse_is_a: HGNC:SCNN1D
+inverse_is_a: HGNC:SCNN1G
 
 [Term]
 id: FPLX:SERCA
@@ -7541,6 +8240,41 @@ is_a: FPLX:root
 inverse_is_a: HGNC:SOD1
 inverse_is_a: HGNC:SOD2
 inverse_is_a: HGNC:SOD3
+
+[Term]
+id: FPLX:Sodium_channels
+name: Sodium-channels
+xref: HGNC_GROUP:179
+is_a: FPLX:root
+inverse_is_a: FPLX:ASIC
+inverse_is_a: HGNC:NALCN
+inverse_is_a: FPLX:SCN
+inverse_is_a: FPLX:SCNN
+
+[Term]
+id: FPLX:Sodium_voltage_gated_channel_alpha_subunits
+name: Sodium-voltage-gated-channel-alpha-subunits
+xref: HGNC_GROUP:1203
+is_a: FPLX:SCN
+inverse_is_a: HGNC:SCN10A
+inverse_is_a: HGNC:SCN11A
+inverse_is_a: HGNC:SCN1A
+inverse_is_a: HGNC:SCN2A
+inverse_is_a: HGNC:SCN3A
+inverse_is_a: HGNC:SCN4A
+inverse_is_a: HGNC:SCN5A
+inverse_is_a: HGNC:SCN8A
+inverse_is_a: HGNC:SCN9A
+
+[Term]
+id: FPLX:Sodium_voltage_gated_channel_beta_subunits
+name: Sodium-voltage-gated-channel-beta-subunits
+xref: HGNC_GROUP:1204
+is_a: FPLX:SCN
+inverse_is_a: HGNC:SCN1B
+inverse_is_a: HGNC:SCN2B
+inverse_is_a: HGNC:SCN3B
+inverse_is_a: HGNC:SCN4B
 
 [Term]
 id: FPLX:SOS
@@ -8011,6 +8745,15 @@ inverse_is_a: HGNC:TOP2A
 inverse_is_a: HGNC:TOP2B
 
 [Term]
+id: FPLX:TPCN
+name: TPCN
+xref: HGNC_GROUP:247
+is_a: FPLX:Calcium_channels
+is_a: FPLX:Voltage_gated_ion_channels
+inverse_is_a: HGNC:TPCN1
+inverse_is_a: HGNC:TPCN2
+
+[Term]
 id: FPLX:Troponin
 name: Troponin
 synonym: "troponin complex" EXACT []
@@ -8064,6 +8807,40 @@ part_of: FPLX:Troponin
 inverse_is_a: HGNC:TNNT1
 inverse_is_a: HGNC:TNNT2
 inverse_is_a: HGNC:TNNT3
+
+[Term]
+id: FPLX:TRP
+name: TRP
+xref: HGNC_GROUP:249
+is_a: FPLX:Voltage_gated_ion_channels
+inverse_is_a: HGNC:MCOLN1
+inverse_is_a: HGNC:MCOLN2
+inverse_is_a: HGNC:MCOLN3
+inverse_is_a: HGNC:PKD2
+inverse_is_a: HGNC:PKD2L1
+inverse_is_a: HGNC:PKD2L2
+inverse_is_a: HGNC:TRPA1
+inverse_is_a: HGNC:TRPC1
+inverse_is_a: HGNC:TRPC2
+inverse_is_a: HGNC:TRPC3
+inverse_is_a: HGNC:TRPC4
+inverse_is_a: HGNC:TRPC5
+inverse_is_a: HGNC:TRPC6
+inverse_is_a: HGNC:TRPC7
+inverse_is_a: HGNC:TRPM1
+inverse_is_a: HGNC:TRPM2
+inverse_is_a: HGNC:TRPM3
+inverse_is_a: HGNC:TRPM4
+inverse_is_a: HGNC:TRPM5
+inverse_is_a: HGNC:TRPM6
+inverse_is_a: HGNC:TRPM7
+inverse_is_a: HGNC:TRPM8
+inverse_is_a: HGNC:TRPV1
+inverse_is_a: HGNC:TRPV2
+inverse_is_a: HGNC:TRPV3
+inverse_is_a: HGNC:TRPV4
+inverse_is_a: HGNC:TRPV5
+inverse_is_a: HGNC:TRPV6
 
 [Term]
 id: FPLX:Tryptase
@@ -8262,6 +9039,13 @@ is_a: FPLX:Glycosyltransferase
 inverse_is_a: HGNC:UGCG
 
 [Term]
+id: FPLX:UGGT
+name: UGGT
+is_a: FPLX:Glycosyltransferase
+inverse_is_a: HGNC:UGGT1
+inverse_is_a: HGNC:UGGT2
+
+[Term]
 id: FPLX:UGT
 name: UGT
 synonym: "UGT" EXACT []
@@ -8300,13 +9084,6 @@ inverse_is_a: HGNC:UGT3A2
 inverse_is_a: HGNC:UGT8
 
 [Term]
-id: FPLX:UGGT
-name: UGGT
-is_a: FPLX:Glycosyltransferase
-inverse_is_a: HGNC:UGGT1
-inverse_is_a: HGNC:UGGT2
-
-[Term]
 id: FPLX:VAV
 name: VAV
 synonym: "VAV family" EXACT []
@@ -8324,6 +9101,15 @@ is_a: FPLX:root
 inverse_is_a: HGNC:VAV1
 inverse_is_a: HGNC:VAV2
 inverse_is_a: HGNC:VAV3
+
+[Term]
+id: FPLX:VDAC
+name: VDAC
+xref: HGNC_GROUP:306
+is_a: FPLX:Porins
+inverse_is_a: HGNC:VDAC1
+inverse_is_a: HGNC:VDAC2
+inverse_is_a: HGNC:VDAC3
 
 [Term]
 id: FPLX:VEGF
@@ -8356,6 +9142,22 @@ is_a: FPLX:root
 inverse_is_a: HGNC:FLT1
 inverse_is_a: HGNC:FLT4
 inverse_is_a: HGNC:KDR
+
+[Term]
+id: FPLX:Voltage_gated_ion_channels
+name: Voltage-gated-ion-channels
+xref: HGNC_GROUP:178
+is_a: FPLX:root
+inverse_is_a: FPLX:CACN
+inverse_is_a: FPLX:CATSPER
+inverse_is_a: FPLX:CNG
+inverse_is_a: FPLX:HVCN
+inverse_is_a: FPLX:KCNK
+inverse_is_a: FPLX:Potassium_calcium_activated_channels
+inverse_is_a: FPLX:Potassium_voltage_gated_channels
+inverse_is_a: FPLX:SCN
+inverse_is_a: FPLX:TPCN
+inverse_is_a: FPLX:TRP
 
 [Term]
 id: FPLX:Wnt
@@ -8404,820 +9206,6 @@ is_a: FPLX:root
 inverse_is_a: HGNC:YBX1
 inverse_is_a: HGNC:YBX2
 inverse_is_a: HGNC:YBX3
-
-[Term]
-id: FPLX:ETC_complex_I_core
-name: ETC-complex-I-core
-xref: HGNC_GROUP:1149
-part_of: FPLX:ETC_complex_I
-has_part: HGNC:MT-ND1
-has_part: HGNC:MT-ND2
-has_part: HGNC:MT-ND3
-has_part: HGNC:MT-ND4
-has_part: HGNC:MT-ND4L
-has_part: HGNC:MT-ND5
-has_part: HGNC:MT-ND6
-has_part: HGNC:NDUFS1
-has_part: HGNC:NDUFS2
-has_part: HGNC:NDUFS3
-has_part: HGNC:NDUFS7
-has_part: HGNC:NDUFS8
-has_part: HGNC:NDUFV1
-has_part: HGNC:NDUFV2
-
-[Term]
-id: FPLX:ETC_complex_I_supernumerary
-name: ETC-complex-I-supernumerary
-xref: HGNC_GROUP:1150
-part_of: FPLX:ETC_complex_I
-has_part: HGNC:NDUFAB1
-has_part: HGNC:NDUFA1
-has_part: HGNC:NDUFA2
-has_part: HGNC:NDUFA3
-has_part: HGNC:NDUFA5
-has_part: HGNC:NDUFA6
-has_part: HGNC:NDUFA7
-has_part: HGNC:NDUFA8
-has_part: HGNC:NDUFA9
-has_part: HGNC:NDUFA10
-has_part: HGNC:NDUFA11
-has_part: HGNC:NDUFA12
-has_part: HGNC:NDUFA13
-has_part: HGNC:NDUFB1
-has_part: HGNC:NDUFB2
-has_part: HGNC:NDUFB3
-has_part: HGNC:NDUFB4
-has_part: HGNC:NDUFB5
-has_part: HGNC:NDUFB6
-has_part: HGNC:NDUFB7
-has_part: HGNC:NDUFB8
-has_part: HGNC:NDUFB9
-has_part: HGNC:NDUFB10
-has_part: HGNC:NDUFB11
-has_part: HGNC:NDUFC1
-has_part: HGNC:NDUFC2
-has_part: HGNC:NDUFS4
-has_part: HGNC:NDUFS5
-has_part: HGNC:NDUFS6
-has_part: HGNC:NDUFV3
-
-[Term]
-id: FPLX:ETC_complex_I
-name: ETC-complex-I
-xref: COMPLEXPORTAL:CPX-577
-xref: ECCODE:1.6.5.3
-xref: GO:0005747
-xref: HGNC_GROUP:640
-xref: MESH:D042967
-xref: NCIT:C118184
-is_a: FPLX:root
-has_part: FPLX:ETC_complex_I_core
-has_part: FPLX:ETC_complex_I_supernumerary
-
-[Term]
-id: FPLX:ETC_complex_II
-name: ETC-complex-II
-synonym: "complex II" EXACT []
-synonym: "succinate dehydrogenase (ubiquinone)" EXACT []
-synonym: "succinate dehydrogenase" EXACT []
-xref: BEL:"Respiratory Chain Complex II"
-xref: COMPLEXPORTAL:CPX-561
-xref: ECCODE:1.3.5.1
-xref: GO:0005749
-xref: HGNC_GROUP:641
-xref: MESH:D042963
-xref: NCIT:C112049
-xref: RE:R-HSA-165631
-xref: RE:R-HSA-70990
-is_a: FPLX:root
-has_part: HGNC:SDHA
-has_part: HGNC:SDHB
-has_part: HGNC:SDHC
-has_part: HGNC:SDHD
-
-[Term]
-id: FPLX:ETC_complex_III
-name: ETC-complex-III
-synonym: "complex III" EXACT []
-synonym: "cytochrome bc1 complex" EXACT []
-xref: BEL:"Respiratory Chain Complex III"
-xref: COMPLEXPORTAL:CPX-560
-xref: ECCODE:1.10.2.2
-xref: GO:0005750
-xref: GO:0045275
-xref: HGNC_GROUP:642
-xref: MESH:D014450
-is_a: FPLX:root
-has_part: HGNC:CYC1
-has_part: HGNC:MT-CYB
-has_part: HGNC:UQCRB
-has_part: HGNC:UQCRC1
-has_part: HGNC:UQCRC2
-has_part: HGNC:UQCRFS1
-has_part: HGNC:UQCRH
-has_part: HGNC:UQCRQ
-has_part: HGNC:UQCR10
-has_part: HGNC:UQCR11
-
-[Term]
-id: FPLX:ETC_complex_IV
-name: ETC-complex-IV
-xref: ECCODE:1.9.3.1
-xref: GO:0005751
-xref: HGNC_GROUP:643
-xref: MESH:D003576
-xref: NCIT:C26034
-is_a: FPLX:root
-has_part: HGNC:COX4I1
-has_part: HGNC:COX4I2
-has_part: HGNC:COX5A
-has_part: HGNC:COX5B
-has_part: HGNC:COX6A1
-has_part: HGNC:COX6A2
-has_part: HGNC:COX6B1
-has_part: HGNC:COX6B2
-has_part: HGNC:COX6C
-has_part: HGNC:COX7A1
-has_part: HGNC:COX7A2
-has_part: HGNC:COX7B
-has_part: HGNC:COX7B2
-has_part: HGNC:COX7C
-has_part: HGNC:COX8A
-has_part: HGNC:COX8C
-has_part: HGNC:MT-CO1
-has_part: HGNC:MT-CO2
-has_part: HGNC:MT-CO3
-
-[Term]
-id: FPLX:ETC_complex_V
-name: ETC-complex-V
-xref: ECCODE:3.6.3.14
-xref: GO:0005753
-xref: HGNC_GROUP:644
-xref: MESH:D025261
-is_a: FPLX:root
-
-[Term]
-id: FPLX:LXR
-name: LXR
-synonym: "liver X receptors" EXACT []
-synonym: "liver X receptor" EXACT []
-synonym: "Liver X receptors" EXACT []
-synonym: "Liver X receptor" EXACT []
-synonym: "LXRs" EXACT []
-xref: IP:IPR023257
-is_a: FPLX:root
-inverse_is_a: HGNC:NR1H2
-inverse_is_a: HGNC:NR1H3
-
-[Term]
-id: FPLX:MKNK
-name: MKNK
-synonym: "Mnk1 and Mnk2" EXACT []
-synonym: "MNK1 and MNK2" EXACT []
-synonym: "MNK1 and MNK2 kinases" EXACT []
-synonym: "Mnk1 and Mnk2 kinases" EXACT []
-synonym: "MNK" EXACT []
-synonym: "Mnk" EXACT []
-is_a: FPLX:root
-inverse_is_a: HGNC:MKNK1
-inverse_is_a: HGNC:MKNK2
-
-[Term]
-id: FPLX:5_hydroxytryptamine_receptors_ionotropic
-name: 5-hydroxytryptamine-receptors-ionotropic
-xref: HGNC_GROUP:172
-is_a: FPLX:Ligand_gated_ion_channels
-inverse_is_a: HGNC:HTR3A
-inverse_is_a: HGNC:HTR3B
-inverse_is_a: HGNC:HTR3C
-inverse_is_a: HGNC:HTR3D
-inverse_is_a: HGNC:HTR3E
-
-[Term]
-id: FPLX:ANO
-name: ANO
-xref: HGNC_GROUP:865
-is_a: FPLX:Chloride_calcium_activated_channels
-inverse_is_a: HGNC:ANO1
-inverse_is_a: HGNC:ANO10
-inverse_is_a: HGNC:ANO2
-inverse_is_a: HGNC:ANO3
-inverse_is_a: HGNC:ANO4
-inverse_is_a: HGNC:ANO5
-inverse_is_a: HGNC:ANO6
-inverse_is_a: HGNC:ANO7
-inverse_is_a: HGNC:ANO8
-inverse_is_a: HGNC:ANO9
-
-[Term]
-id: FPLX:AQP
-name: AQP
-xref: HGNC_GROUP:305
-is_a: FPLX:Porins
-inverse_is_a: HGNC:AQP1
-inverse_is_a: HGNC:AQP10
-inverse_is_a: HGNC:AQP11
-inverse_is_a: HGNC:AQP12A
-inverse_is_a: HGNC:AQP12B
-inverse_is_a: HGNC:AQP2
-inverse_is_a: HGNC:AQP3
-inverse_is_a: HGNC:AQP4
-inverse_is_a: HGNC:AQP5
-inverse_is_a: HGNC:AQP6
-inverse_is_a: HGNC:AQP7
-inverse_is_a: HGNC:AQP8
-inverse_is_a: HGNC:AQP9
-inverse_is_a: HGNC:MIP
-
-[Term]
-id: FPLX:ASIC
-name: ASIC
-xref: HGNC_GROUP:290
-is_a: FPLX:Sodium_channels
-inverse_is_a: HGNC:ASIC1
-inverse_is_a: HGNC:ASIC2
-inverse_is_a: HGNC:ASIC3
-inverse_is_a: HGNC:ASIC4
-inverse_is_a: HGNC:ASIC5
-
-[Term]
-id: FPLX:BEST
-name: BEST
-xref: HGNC_GROUP:866
-is_a: FPLX:Chloride_calcium_activated_channels
-inverse_is_a: HGNC:BEST1
-inverse_is_a: HGNC:BEST2
-inverse_is_a: HGNC:BEST3
-inverse_is_a: HGNC:BEST4
-
-[Term]
-id: FPLX:CACN
-name: CACN
-xref: HGNC_GROUP:253
-is_a: FPLX:Calcium_channels
-is_a: FPLX:Voltage_gated_ion_channels
-inverse_is_a: FPLX:CACNA1
-inverse_is_a: FPLX:CACNA2D
-inverse_is_a: FPLX:CACNB
-inverse_is_a: FPLX:CACNG
-
-[Term]
-id: FPLX:CACNA1
-name: CACNA1
-xref: HGNC_GROUP:1512
-is_a: FPLX:CACN
-inverse_is_a: HGNC:CACNA1A
-inverse_is_a: HGNC:CACNA1B
-inverse_is_a: HGNC:CACNA1C
-inverse_is_a: HGNC:CACNA1D
-inverse_is_a: HGNC:CACNA1E
-inverse_is_a: HGNC:CACNA1F
-inverse_is_a: HGNC:CACNA1G
-inverse_is_a: HGNC:CACNA1H
-inverse_is_a: HGNC:CACNA1I
-inverse_is_a: HGNC:CACNA1S
-
-[Term]
-id: FPLX:CACNA2D
-name: CACNA2D
-xref: HGNC_GROUP:1514
-is_a: FPLX:CACN
-inverse_is_a: HGNC:CACNA2D1
-inverse_is_a: HGNC:CACNA2D2
-inverse_is_a: HGNC:CACNA2D3
-inverse_is_a: HGNC:CACNA2D4
-
-[Term]
-id: FPLX:CACNB
-name: CACNB
-xref: HGNC_GROUP:1515
-is_a: FPLX:CACN
-inverse_is_a: HGNC:CACNB1
-inverse_is_a: HGNC:CACNB2
-inverse_is_a: HGNC:CACNB3
-inverse_is_a: HGNC:CACNB4
-
-[Term]
-id: FPLX:CACNG
-name: CACNG
-xref: HGNC_GROUP:1511
-is_a: FPLX:CACN
-inverse_is_a: HGNC:CACNG1
-inverse_is_a: HGNC:CACNG2
-inverse_is_a: HGNC:CACNG3
-inverse_is_a: HGNC:CACNG4
-inverse_is_a: HGNC:CACNG5
-inverse_is_a: HGNC:CACNG6
-inverse_is_a: HGNC:CACNG7
-inverse_is_a: HGNC:CACNG8
-
-[Term]
-id: FPLX:CATSPER
-name: CATSPER
-xref: HGNC_GROUP:186
-is_a: FPLX:Calcium_channels
-is_a: FPLX:Voltage_gated_ion_channels
-inverse_is_a: HGNC:CATSPER1
-inverse_is_a: HGNC:CATSPER2
-inverse_is_a: HGNC:CATSPER3
-inverse_is_a: HGNC:CATSPER4
-inverse_is_a: HGNC:CATSPERB
-inverse_is_a: HGNC:CATSPERD
-inverse_is_a: HGNC:CATSPERG
-
-[Term]
-id: FPLX:CFTR
-name: CFTR
-xref: HGNC_GROUP:309
-is_a: FPLX:Chloride_channels
-is_a: FPLX:Ligand_gated_ion_channels
-inverse_is_a: HGNC:CFTR
-
-[Term]
-id: FPLX:CHRN
-name: CHRN
-synonym: "nAChR" EXACT []
-synonym: "nicotine class acetylcholine receptors" EXACT []
-synonym: "nicotinic acetylcholine receptor" EXACT []
-xref: BEL:"CHRN Complex"
-xref: GO:0016904
-xref: HGNC_GROUP:173
-is_a: FPLX:Ligand_gated_ion_channels
-inverse_is_a: HGNC:CHRNA1
-inverse_is_a: HGNC:CHRNA10
-inverse_is_a: HGNC:CHRNA2
-inverse_is_a: HGNC:CHRNA3
-inverse_is_a: HGNC:CHRNA4
-inverse_is_a: HGNC:CHRNA5
-inverse_is_a: HGNC:CHRNA6
-inverse_is_a: HGNC:CHRNA7
-inverse_is_a: HGNC:CHRNA9
-inverse_is_a: HGNC:CHRNB1
-inverse_is_a: HGNC:CHRNB2
-inverse_is_a: HGNC:CHRNB3
-inverse_is_a: HGNC:CHRNB4
-inverse_is_a: HGNC:CHRND
-inverse_is_a: HGNC:CHRNE
-inverse_is_a: HGNC:CHRNG
-
-[Term]
-id: FPLX:CLCN
-name: CLCN
-xref: HGNC_GROUP:302
-is_a: FPLX:Chloride_channels
-inverse_is_a: HGNC:BSND
-inverse_is_a: HGNC:CLCN1
-inverse_is_a: HGNC:CLCN2
-inverse_is_a: HGNC:CLCN3
-inverse_is_a: HGNC:CLCN4
-inverse_is_a: HGNC:CLCN5
-inverse_is_a: HGNC:CLCN6
-inverse_is_a: HGNC:CLCN7
-inverse_is_a: HGNC:CLCNKA
-inverse_is_a: HGNC:CLCNKB
-
-[Term]
-id: FPLX:CLIC
-name: CLIC
-xref: HGNC_GROUP:307
-is_a: FPLX:Chloride_channels
-inverse_is_a: HGNC:CLIC1
-inverse_is_a: HGNC:CLIC2
-inverse_is_a: HGNC:CLIC3
-inverse_is_a: HGNC:CLIC4
-inverse_is_a: HGNC:CLIC5
-inverse_is_a: HGNC:CLIC6
-
-[Term]
-id: FPLX:CNG
-name: CNG
-xref: HGNC_GROUP:250
-is_a: FPLX:Voltage_gated_ion_channels
-inverse_is_a: HGNC:CNGA1
-inverse_is_a: HGNC:CNGA2
-inverse_is_a: HGNC:CNGA3
-inverse_is_a: HGNC:CNGA4
-inverse_is_a: HGNC:CNGB1
-inverse_is_a: HGNC:CNGB3
-inverse_is_a: HGNC:HCN1
-inverse_is_a: HGNC:HCN2
-inverse_is_a: HGNC:HCN3
-inverse_is_a: HGNC:HCN4
-
-[Term]
-id: FPLX:Calcium_channels
-name: Calcium-channels
-xref: HGNC_GROUP:182
-is_a: FPLX:root
-inverse_is_a: FPLX:CACN
-inverse_is_a: FPLX:CATSPER
-inverse_is_a: FPLX:ITPR
-inverse_is_a: FPLX:RYR
-inverse_is_a: FPLX:TPCN
-
-[Term]
-id: FPLX:Chloride_calcium_activated_channels
-name: Chloride-calcium-activated-channels
-xref: HGNC_GROUP:301
-is_a: FPLX:Chloride_channels
-inverse_is_a: FPLX:ANO
-inverse_is_a: FPLX:BEST
-
-[Term]
-id: FPLX:Chloride_channels
-name: Chloride-channels
-xref: HGNC_GROUP:278
-is_a: FPLX:root
-inverse_is_a: FPLX:CFTR
-inverse_is_a: FPLX:CLCN
-inverse_is_a: FPLX:CLIC
-inverse_is_a: FPLX:Chloride_calcium_activated_channels
-inverse_is_a: FPLX:LRRC8
-
-[Term]
-id: FPLX:GJ
-name: GJ
-xref: HGNC_GROUP:314
-is_a: FPLX:root
-inverse_is_a: HGNC:GJA1
-inverse_is_a: HGNC:GJA10
-inverse_is_a: HGNC:GJA3
-inverse_is_a: HGNC:GJA4
-inverse_is_a: HGNC:GJA5
-inverse_is_a: HGNC:GJA6P
-inverse_is_a: HGNC:GJA8
-inverse_is_a: HGNC:GJA9
-inverse_is_a: HGNC:GJB1
-inverse_is_a: HGNC:GJB2
-inverse_is_a: HGNC:GJB3
-inverse_is_a: HGNC:GJB4
-inverse_is_a: HGNC:GJB5
-inverse_is_a: HGNC:GJB6
-inverse_is_a: HGNC:GJB7
-inverse_is_a: HGNC:GJC1
-inverse_is_a: HGNC:GJC2
-inverse_is_a: HGNC:GJC3
-inverse_is_a: HGNC:GJD2
-inverse_is_a: HGNC:GJD3
-inverse_is_a: HGNC:GJD4
-inverse_is_a: HGNC:GJE1
-
-[Term]
-id: FPLX:GLRA_GLRB
-name: GLRA-GLRB
-xref: HGNC_GROUP:868
-is_a: FPLX:Ligand_gated_ion_channels
-inverse_is_a: HGNC:GLRA1
-inverse_is_a: HGNC:GLRA2
-inverse_is_a: HGNC:GLRA3
-inverse_is_a: HGNC:GLRA4
-inverse_is_a: HGNC:GLRB
-
-[Term]
-id: FPLX:GRI
-name: GRI
-xref: HGNC_GROUP:284
-is_a: FPLX:Ligand_gated_ion_channels
-inverse_is_a: FPLX:GRIA
-inverse_is_a: FPLX:GRID
-inverse_is_a: FPLX:Kainate_family
-inverse_is_a: FPLX:GRIN
-
-[Term]
-id: FPLX:GRID
-name: GRID
-xref: HGNC_GROUP:1202
-is_a: FPLX:GRI
-inverse_is_a: HGNC:GRID1
-inverse_is_a: HGNC:GRID2
-
-[Term]
-id: FPLX:GRIN
-name: GRIN
-xref: HGNC_GROUP:1201
-is_a: FPLX:GRI
-inverse_is_a: HGNC:GRIN1
-inverse_is_a: HGNC:GRIN2A
-inverse_is_a: HGNC:GRIN2B
-inverse_is_a: HGNC:GRIN2C
-inverse_is_a: HGNC:GRIN2D
-inverse_is_a: HGNC:GRIN3A
-inverse_is_a: HGNC:GRIN3B
-
-[Term]
-id: FPLX:HVCN
-name: HVCN
-xref: HGNC_GROUP:254
-is_a: FPLX:Voltage_gated_ion_channels
-inverse_is_a: HGNC:HVCN1
-
-[Term]
-id: FPLX:ITPR
-name: ITPR
-xref: HGNC_GROUP:297
-is_a: FPLX:Calcium_channels
-is_a: FPLX:Ligand_gated_ion_channels
-inverse_is_a: HGNC:ITPR1
-inverse_is_a: HGNC:ITPR2
-inverse_is_a: HGNC:ITPR3
-
-[Term]
-id: FPLX:KCN
-name: KCN
-xref: HGNC_GROUP:183
-is_a: FPLX:root
-inverse_is_a: FPLX:KCNJ
-inverse_is_a: FPLX:KCNK
-inverse_is_a: FPLX:KCNT
-inverse_is_a: FPLX:Potassium_calcium_activated_channels
-inverse_is_a: FPLX:Potassium_voltage_gated_channels
-
-[Term]
-id: FPLX:KCNJ
-name: KCNJ
-xref: HGNC_GROUP:276
-is_a: FPLX:KCN
-inverse_is_a: HGNC:KCNJ1
-inverse_is_a: HGNC:KCNJ10
-inverse_is_a: HGNC:KCNJ11
-inverse_is_a: HGNC:KCNJ12
-inverse_is_a: HGNC:KCNJ13
-inverse_is_a: HGNC:KCNJ14
-inverse_is_a: HGNC:KCNJ15
-inverse_is_a: HGNC:KCNJ16
-inverse_is_a: HGNC:KCNJ18
-inverse_is_a: HGNC:KCNJ2
-inverse_is_a: HGNC:KCNJ3
-inverse_is_a: HGNC:KCNJ4
-inverse_is_a: HGNC:KCNJ5
-inverse_is_a: HGNC:KCNJ6
-inverse_is_a: HGNC:KCNJ8
-inverse_is_a: HGNC:KCNJ9
-
-[Term]
-id: FPLX:KCNK
-name: KCNK
-xref: HGNC_GROUP:277
-is_a: FPLX:KCN
-is_a: FPLX:Voltage_gated_ion_channels
-inverse_is_a: HGNC:KCNK1
-inverse_is_a: HGNC:KCNK10
-inverse_is_a: HGNC:KCNK12
-inverse_is_a: HGNC:KCNK13
-inverse_is_a: HGNC:KCNK15
-inverse_is_a: HGNC:KCNK16
-inverse_is_a: HGNC:KCNK17
-inverse_is_a: HGNC:KCNK18
-inverse_is_a: HGNC:KCNK2
-inverse_is_a: HGNC:KCNK3
-inverse_is_a: HGNC:KCNK4
-inverse_is_a: HGNC:KCNK5
-inverse_is_a: HGNC:KCNK6
-inverse_is_a: HGNC:KCNK7
-inverse_is_a: HGNC:KCNK9
-
-[Term]
-id: FPLX:KCNT
-name: KCNT
-xref: HGNC_GROUP:856
-is_a: FPLX:KCN
-inverse_is_a: HGNC:KCNT1
-inverse_is_a: HGNC:KCNT2
-
-[Term]
-id: FPLX:LRRC8
-name: LRRC8
-xref: HGNC_GROUP:1158
-is_a: FPLX:Chloride_channels
-inverse_is_a: HGNC:LRRC8A
-inverse_is_a: HGNC:LRRC8B
-inverse_is_a: HGNC:LRRC8C
-inverse_is_a: HGNC:LRRC8D
-inverse_is_a: HGNC:LRRC8E
-
-[Term]
-id: FPLX:Ligand_gated_ion_channels
-name: Ligand-gated-ion-channels
-xref: HGNC_GROUP:161
-is_a: FPLX:root
-inverse_is_a: FPLX:5_hydroxytryptamine_receptors_ionotropic
-inverse_is_a: FPLX:CFTR
-inverse_is_a: FPLX:CHRN
-inverse_is_a: FPLX:GABR
-inverse_is_a: FPLX:GLRA_GLRB
-inverse_is_a: FPLX:GRI
-inverse_is_a: FPLX:ITPR
-inverse_is_a: FPLX:P2RX
-inverse_is_a: FPLX:RYR
-inverse_is_a: FPLX:ZACN
-
-[Term]
-id: FPLX:NALCN
-name: NALCN
-xref: HGNC_GROUP:283
-is_a: FPLX:Sodium_channels
-inverse_is_a: HGNC:NALCN
-
-[Term]
-id: FPLX:Porins
-name: Porins
-xref: HGNC_GROUP:304
-is_a: FPLX:root
-inverse_is_a: FPLX:AQP
-inverse_is_a: FPLX:VDAC
-
-[Term]
-id: FPLX:Potassium_calcium_activated_channels
-name: Potassium-calcium-activated-channels
-xref: HGNC_GROUP:255
-is_a: FPLX:KCN
-is_a: FPLX:Voltage_gated_ion_channels
-inverse_is_a: HGNC:KCNMA1
-inverse_is_a: HGNC:KCNN1
-inverse_is_a: HGNC:KCNN2
-inverse_is_a: HGNC:KCNN3
-inverse_is_a: HGNC:KCNN4
-inverse_is_a: HGNC:KCNU1
-
-[Term]
-id: FPLX:Potassium_voltage_gated_channels
-name: Potassium-voltage-gated-channels
-xref: HGNC_GROUP:274
-is_a: FPLX:KCN
-is_a: FPLX:Voltage_gated_ion_channels
-inverse_is_a: HGNC:KCNA1
-inverse_is_a: HGNC:KCNA10
-inverse_is_a: HGNC:KCNA2
-inverse_is_a: HGNC:KCNA3
-inverse_is_a: HGNC:KCNA4
-inverse_is_a: HGNC:KCNA5
-inverse_is_a: HGNC:KCNA6
-inverse_is_a: HGNC:KCNA7
-inverse_is_a: HGNC:KCNB1
-inverse_is_a: HGNC:KCNB2
-inverse_is_a: HGNC:KCNC1
-inverse_is_a: HGNC:KCNC2
-inverse_is_a: HGNC:KCNC3
-inverse_is_a: HGNC:KCNC4
-inverse_is_a: HGNC:KCND1
-inverse_is_a: HGNC:KCND2
-inverse_is_a: HGNC:KCND3
-inverse_is_a: HGNC:KCNF1
-inverse_is_a: HGNC:KCNG1
-inverse_is_a: HGNC:KCNG2
-inverse_is_a: HGNC:KCNG3
-inverse_is_a: HGNC:KCNG4
-inverse_is_a: HGNC:KCNH1
-inverse_is_a: HGNC:KCNH2
-inverse_is_a: HGNC:KCNH3
-inverse_is_a: HGNC:KCNH4
-inverse_is_a: HGNC:KCNH5
-inverse_is_a: HGNC:KCNH6
-inverse_is_a: HGNC:KCNH7
-inverse_is_a: HGNC:KCNH8
-inverse_is_a: HGNC:KCNQ1
-inverse_is_a: HGNC:KCNQ2
-inverse_is_a: HGNC:KCNQ3
-inverse_is_a: HGNC:KCNQ4
-inverse_is_a: HGNC:KCNQ5
-inverse_is_a: HGNC:KCNS1
-inverse_is_a: HGNC:KCNS2
-inverse_is_a: HGNC:KCNS3
-inverse_is_a: HGNC:KCNV1
-inverse_is_a: HGNC:KCNV2
-
-[Term]
-id: FPLX:RYR
-name: RYR
-xref: HGNC_GROUP:287
-is_a: FPLX:Calcium_channels
-is_a: FPLX:Ligand_gated_ion_channels
-inverse_is_a: HGNC:RYR1
-inverse_is_a: HGNC:RYR2
-inverse_is_a: HGNC:RYR3
-
-[Term]
-id: FPLX:SCN
-name: SCN
-xref: HGNC_GROUP:184
-is_a: FPLX:Sodium_channels
-is_a: FPLX:Voltage_gated_ion_channels
-inverse_is_a: FPLX:Sodium_voltage_gated_channel_alpha_subunits
-inverse_is_a: FPLX:Sodium_voltage_gated_channel_beta_subunits
-
-[Term]
-id: FPLX:SCNN
-name: SCNN
-xref: HGNC_GROUP:185
-is_a: FPLX:Sodium_channels
-inverse_is_a: HGNC:SCNN1A
-inverse_is_a: HGNC:SCNN1B
-inverse_is_a: HGNC:SCNN1D
-inverse_is_a: HGNC:SCNN1G
-
-[Term]
-id: FPLX:Sodium_channels
-name: Sodium-channels
-xref: HGNC_GROUP:179
-is_a: FPLX:root
-inverse_is_a: FPLX:ASIC
-inverse_is_a: FPLX:NALCN
-inverse_is_a: FPLX:SCN
-inverse_is_a: FPLX:SCNN
-
-[Term]
-id: FPLX:Sodium_voltage_gated_channel_alpha_subunits
-name: Sodium-voltage-gated-channel-alpha-subunits
-xref: HGNC_GROUP:1203
-is_a: FPLX:SCN
-inverse_is_a: HGNC:SCN10A
-inverse_is_a: HGNC:SCN11A
-inverse_is_a: HGNC:SCN1A
-inverse_is_a: HGNC:SCN2A
-inverse_is_a: HGNC:SCN3A
-inverse_is_a: HGNC:SCN4A
-inverse_is_a: HGNC:SCN5A
-inverse_is_a: HGNC:SCN8A
-inverse_is_a: HGNC:SCN9A
-
-[Term]
-id: FPLX:Sodium_voltage_gated_channel_beta_subunits
-name: Sodium-voltage-gated-channel-beta-subunits
-xref: HGNC_GROUP:1204
-is_a: FPLX:SCN
-inverse_is_a: HGNC:SCN1B
-inverse_is_a: HGNC:SCN2B
-inverse_is_a: HGNC:SCN3B
-inverse_is_a: HGNC:SCN4B
-
-[Term]
-id: FPLX:TPCN
-name: TPCN
-xref: HGNC_GROUP:247
-is_a: FPLX:Calcium_channels
-is_a: FPLX:Voltage_gated_ion_channels
-inverse_is_a: HGNC:TPCN1
-inverse_is_a: HGNC:TPCN2
-
-[Term]
-id: FPLX:TRP
-name: TRP
-xref: HGNC_GROUP:249
-is_a: FPLX:Voltage_gated_ion_channels
-inverse_is_a: HGNC:MCOLN1
-inverse_is_a: HGNC:MCOLN2
-inverse_is_a: HGNC:MCOLN3
-inverse_is_a: HGNC:PKD2
-inverse_is_a: HGNC:PKD2L1
-inverse_is_a: HGNC:PKD2L2
-inverse_is_a: HGNC:TRPA1
-inverse_is_a: HGNC:TRPC1
-inverse_is_a: HGNC:TRPC2
-inverse_is_a: HGNC:TRPC3
-inverse_is_a: HGNC:TRPC4
-inverse_is_a: HGNC:TRPC5
-inverse_is_a: HGNC:TRPC6
-inverse_is_a: HGNC:TRPC7
-inverse_is_a: HGNC:TRPM1
-inverse_is_a: HGNC:TRPM2
-inverse_is_a: HGNC:TRPM3
-inverse_is_a: HGNC:TRPM4
-inverse_is_a: HGNC:TRPM5
-inverse_is_a: HGNC:TRPM6
-inverse_is_a: HGNC:TRPM7
-inverse_is_a: HGNC:TRPM8
-inverse_is_a: HGNC:TRPV1
-inverse_is_a: HGNC:TRPV2
-inverse_is_a: HGNC:TRPV3
-inverse_is_a: HGNC:TRPV4
-inverse_is_a: HGNC:TRPV5
-inverse_is_a: HGNC:TRPV6
-
-[Term]
-id: FPLX:VDAC
-name: VDAC
-xref: HGNC_GROUP:306
-is_a: FPLX:Porins
-inverse_is_a: HGNC:VDAC1
-inverse_is_a: HGNC:VDAC2
-inverse_is_a: HGNC:VDAC3
-
-[Term]
-id: FPLX:Voltage_gated_ion_channels
-name: Voltage-gated-ion-channels
-xref: HGNC_GROUP:178
-is_a: FPLX:root
-inverse_is_a: FPLX:CACN
-inverse_is_a: FPLX:CATSPER
-inverse_is_a: FPLX:CNG
-inverse_is_a: FPLX:HVCN
-inverse_is_a: FPLX:KCNK
-inverse_is_a: FPLX:Potassium_calcium_activated_channels
-inverse_is_a: FPLX:Potassium_voltage_gated_channels
-inverse_is_a: FPLX:SCN
-inverse_is_a: FPLX:TPCN
-inverse_is_a: FPLX:TRP
 
 [Term]
 id: FPLX:ZACN
