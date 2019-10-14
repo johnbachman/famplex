@@ -15,6 +15,7 @@ hier_file = 'hierarchy.csv'
 
 
 def read_csv_from_ftp(fname):
+    """Return a generator for a CSV file opened from HGNC's FTP server."""
     url = hgnc_fam_url + fname
     req = urllib.request.Request(url)
     res = urllib.request.urlopen(req)
@@ -24,6 +25,7 @@ def read_csv_from_ftp(fname):
 
 
 def _read_hgnc_family_genes():
+    """Return dicts representing gene/familiy relationships in HGNC."""
     family_to_gene = defaultdict(list)
     gene_to_family = defaultdict(list)
     for gene_id, family_id in read_csv_from_ftp(gene_fam_file):
@@ -33,6 +35,7 @@ def _read_hgnc_family_genes():
 
 
 def _read_family_info():
+    """Return dict representing HGNC family information"""
     families = {}
     for idx, row in enumerate(read_csv_from_ftp(family_file)):
         if idx == 0:
@@ -43,6 +46,7 @@ def _read_family_info():
 
 
 def _read_hierarchy_info():
+    """Return dict representing HGNC family membership information."""
     children = defaultdict(list)
     for idx, (parent, child) in enumerate(read_csv_from_ftp(hier_file)):
         if idx == 0:
@@ -51,12 +55,14 @@ def _read_hierarchy_info():
     return children
 
 
+# Read HGNC resource files
 families = _read_family_info()
 children = _read_hierarchy_info()
 gene_to_family, family_to_gene = _read_hgnc_family_genes()
 
 
 def get_famplex_id(family):
+    """Generate an appropriate FPLX ID for an HGNC family"""
     if family['abbreviation']:
         return family['abbreviation'].strip().replace(', ', '_')
     else:
@@ -68,6 +74,7 @@ def get_famplex_id(family):
 
 
 def get_relations_from_root(root_id, relations=None):
+    """Return a set of relations starting from a given root."""
     if relations is None:
         relations = []
     family_info = families[root_id]
@@ -90,6 +97,7 @@ def get_relations_from_root(root_id, relations=None):
 
 
 def add_relations_to_famplex(relations):
+    """Append a list of relations to relations.csv"""
     rel_file = os.path.join(os.path.dirname(__file__), os.pardir,
                             'relations.csv')
     with open(rel_file, 'a') as fh:
@@ -98,6 +106,7 @@ def add_relations_to_famplex(relations):
 
 
 def add_entities_to_famplex(entities):
+    """Append a list of entities to entities.csv"""
     ents_file = os.path.join(os.path.dirname(__file__), os.pardir,
                              'entities.csv')
     with open(ents_file, 'a') as fh:
@@ -106,6 +115,7 @@ def add_entities_to_famplex(entities):
 
 
 def add_equivalences(relations):
+    """Based on a list of relations, append equivalences to equivalences.csv"""
     hgnc_fam_ids = sorted(list(set(int(r[5]) for r in relations)))
     equivs = []
     for fid in hgnc_fam_ids:
@@ -119,6 +129,7 @@ def add_equivalences(relations):
 
 
 def find_overlaps(relations):
+    """Try to detect overlaps between existing FamPlex and HGNC families."""
     all_gene_names = {r[1]: r[4] for r in relations if r[0] == 'HGNC'}
 
     rel_file = os.path.join(os.path.dirname(__file__), os.pardir,
@@ -166,12 +177,17 @@ def find_overlaps(relations):
 
 
 if __name__ == '__main__':
+    # Start from one or more root family IDs to process from
     relations = get_relations_from_root('292')
     relations += get_relations_from_root('294')
+    # Sort the relations
     relations = sorted(list(set(relations)), key= lambda x: (x[4], x[1]))
+    # Find and eliminate families that are exactly the same as existing ones
     totally_redundant = find_overlaps(relations)
     relations = [r for r in relations if r[4] not in totally_redundant]
+    # Get a flat list of entities
     entities = sorted(list(set(r[4] for r in relations)))
+    # Extend FamPlex resource files with new information
     add_relations_to_famplex(relations)
     add_entities_to_famplex(entities)
     add_equivalences(relations)
