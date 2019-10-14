@@ -2866,7 +2866,6 @@ HGNC,CATSPER4,isa,FPLX,CATSPER
 HGNC,CATSPERB,isa,FPLX,CATSPER
 HGNC,CATSPERD,isa,FPLX,CATSPER
 HGNC,CATSPERG,isa,FPLX,CATSPER
-HGNC,CFTR,isa,FPLX,CFTR
 HGNC,CHRNA1,isa,FPLX,CHRN
 HGNC,CHRNA10,isa,FPLX,CHRN
 HGNC,CHRNA2,isa,FPLX,CHRN
@@ -2916,7 +2915,7 @@ FPLX,RYR,isa,FPLX,Calcium_channels
 FPLX,TPCN,isa,FPLX,Calcium_channels
 FPLX,ANO,isa,FPLX,Chloride_calcium_activated_channels
 FPLX,BEST,isa,FPLX,Chloride_calcium_activated_channels
-FPLX,CFTR,isa,FPLX,Chloride_channels
+HGNC,CFTR,isa,FPLX,Chloride_channels
 FPLX,CLCN,isa,FPLX,Chloride_channels
 FPLX,CLIC,isa,FPLX,Chloride_channels
 FPLX,Chloride_calcium_activated_channels,isa,FPLX,Chloride_channels
@@ -3009,7 +3008,7 @@ HGNC,LRRC8C,isa,FPLX,LRRC8
 HGNC,LRRC8D,isa,FPLX,LRRC8
 HGNC,LRRC8E,isa,FPLX,LRRC8
 FPLX,5_hydroxytryptamine_receptors_ionotropic,isa,FPLX,Ligand_gated_ion_channels
-FPLX,CFTR,isa,FPLX,Ligand_gated_ion_channels
+HGNC,CFTR,isa,FPLX,Ligand_gated_ion_channels
 FPLX,CHRN,isa,FPLX,Ligand_gated_ion_channels
 FPLX,GABR,isa,FPLX,Ligand_gated_ion_channels
 FPLX,GLRA_GLRB,isa,FPLX,Ligand_gated_ion_channels
@@ -3018,7 +3017,6 @@ FPLX,ITPR,isa,FPLX,Ligand_gated_ion_channels
 FPLX,P2RX,isa,FPLX,Ligand_gated_ion_channels
 FPLX,RYR,isa,FPLX,Ligand_gated_ion_channels
 FPLX,ZACN,isa,FPLX,Ligand_gated_ion_channels
-HGNC,NALCN,isa,FPLX,NALCN
 FPLX,AQP,isa,FPLX,Porins
 FPLX,VDAC,isa,FPLX,Porins
 HGNC,KCNMA1,isa,FPLX,Potassium_calcium_activated_channels
@@ -3077,7 +3075,7 @@ HGNC,SCNN1B,isa,FPLX,SCNN
 HGNC,SCNN1D,isa,FPLX,SCNN
 HGNC,SCNN1G,isa,FPLX,SCNN
 FPLX,ASIC,isa,FPLX,Sodium_channels
-FPLX,NALCN,isa,FPLX,Sodium_channels
+HGNC,NALCN,isa,FPLX,Sodium_channels
 FPLX,SCN,isa,FPLX,Sodium_channels
 FPLX,SCNN,isa,FPLX,Sodium_channels
 HGNC,SCN10A,isa,FPLX,Sodium_voltage_gated_channel_alpha_subunits
