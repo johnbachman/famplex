@@ -2,8 +2,8 @@
 Keyword=FPLX
 NameString=FamPlex
 DomainString=Gene and Gene Products
-VersionString=20190919
-CreatedDateTime=2019-09-19T18:52:28
+VersionString=20191014
+CreatedDateTime=2019-10-14T10:01:46
 DescriptionString=FamPlex is a collection of resources for grounding biological entities from text and describing their hierarchical relationships.
 QueryValueURL=http://identifiers.org/fplx/
 [Author]
@@ -17,6 +17,7 @@ CaseSensitiveFlag=yes
 DelimiterString=|
 CacheableFlag=yes
 [Values]
+5_hydroxytryptamine_receptors_ionotropic|GRPC
 9_1_1|GRPC
 A4GALT_family|GRPC
 ABL_family|GRPC
@@ -55,12 +56,15 @@ AMPK_A2B2G3|GRPC
 AMPK_alpha|GRPC
 AMPK_beta|GRPC
 AMPK_gamma|GRPC
+ANO|GRPC
 AP1|GRPC
 AP2A|GRPC
 APC_C|GRPC
 APOA|GRPC
+AQP|GRPC
 ARF_GTPase_family|GRPC
 ARRB|GRPC
+ASIC|GRPC
 ATG4|GRPC
 ATP1A|GRPC
 ATP1B|GRPC
@@ -81,6 +85,7 @@ Arp2_3_protein|GRPC
 Augmin|GRPC
 B3GAT|GRPC
 BCKDC|GRPC
+BEST|GRPC
 BIRC|GRPC
 BMP|GRPC
 BMP_receptor|GRPC
@@ -90,11 +95,17 @@ BRCA|GRPC
 Beta_3_4_GTF|GRPC
 C1|GRPC
 C1q|GRPC
+CACN|GRPC
+CACNA1|GRPC
+CACNA2D|GRPC
+CACNB|GRPC
+CACNG|GRPC
 CALM|GRPC
 CAMK|GRPC
 CAMK2_complex|GRPC
 CAMK2_family|GRPC
 CAPN|GRPC
+CATSPER|GRPC
 CAV|GRPC
 CBF3|GRPC
 CCT_complex|GRPC
@@ -114,6 +125,9 @@ CHEK|GRPC
 CHRM|GRPC
 CHRN|GRPC
 CK2|GRPC
+CLCN|GRPC
+CLIC|GRPC
+CNG|GRPC
 CNKSR|GRPC
 COL1|GRPC
 COL4|GRPC
@@ -138,11 +152,14 @@ CUL|GRPC
 CXCL_ELR_negative|GRPC
 CXCL_ELR_positive|GRPC
 Cadherin|GRPC
+Calcium_channels|GRPC
 Carboxylesterase|GRPC
 Caspase|GRPC
 Caspase_3_7|GRPC
 Chemokine|GRPC
 Chemokine_receptor|GRPC
+Chloride_calcium_activated_channels|GRPC
+Chloride_channels|GRPC
 Cholinesterase|GRPC
 Clathrin|GRPC
 Cofilin|GRPC
@@ -213,11 +230,16 @@ GAS6_receptor|GRPC
 GATA|GRPC
 GCNT|GRPC
 GEF|GRPC
+GJ|GRPC
+GLRA_GLRB|GRPC
 GPCR|GRPC
 GPIT|GRPC
 GPIb_IX_V|GRPC
 GPX|GRPC
+GRI|GRPC
 GRIA|GRPC
+GRID|GRPC
+GRIN|GRPC
 GRK|GRPC
 GRM|GRPC
 GSK3|GRPC
@@ -264,6 +286,7 @@ HSP90A|GRPC
 HSP90AA|GRPC
 HSPA|GRPC
 HSPB|GRPC
+HVCN|GRPC
 Hedgehog|GRPC
 Hemoglobin|GRPC
 Histone|GRPC
@@ -286,6 +309,7 @@ INS|GRPC
 INSR|GRPC
 IRS|GRPC
 IRX|GRPC
+ITPR|GRPC
 Inhibin|GRPC
 Inhibin_A|GRPC
 Inhibin_B|GRPC
@@ -295,6 +319,10 @@ Interferon_gamma_receptor|GRPC
 JAK|GRPC
 JNK|GRPC
 JUN_family|GRPC
+KCN|GRPC
+KCNJ|GRPC
+KCNK|GRPC
+KCNT|GRPC
 KLK|GRPC
 KSR|GRPC
 Kainate_family|GRPC
@@ -302,9 +330,11 @@ Kinetochore|GRPC
 LDH|GRPC
 LH|GRPC
 LPAR|GRPC
+LRRC8|GRPC
 LXR|GRPC
 Laminin_111|GRPC
 Laminin_332|GRPC
+Ligand_gated_ion_channels|GRPC
 MAC|GRPC
 MAF|GRPC
 MAP1LC3|GRPC
@@ -417,6 +447,9 @@ Patched|GRPC
 Pertussis_toxin|GRPC
 PhK|GRPC
 Phosphatase|GRPC
+Porins|GRPC
+Potassium_calcium_activated_channels|GRPC
+Potassium_voltage_gated_channels|GRPC
 Propionyl_CoA_carboxylase|GRPC
 Protease|GRPC
 Proteasome|GRPC
@@ -447,6 +480,7 @@ RPA|GRPC
 RSK|GRPC
 RTK|GRPC
 RXR|GRPC
+RYR|GRPC
 RasGAP|GRPC
 RhoGDI|GRPC
 S100|GRPC
@@ -454,6 +488,8 @@ S100A|GRPC
 S1PR|GRPC
 SAA|GRPC
 SCD|GRPC
+SCN|GRPC
+SCNN|GRPC
 SERCA|GRPC
 SERPINB|GRPC
 SHC|GRPC
@@ -481,6 +517,9 @@ STAT|GRPC
 STAT5|GRPC
 STT3|GRPC
 SWI_SNF|GRPC
+Sodium_channels|GRPC
+Sodium_voltage_gated_channel_alpha_subunits|GRPC
+Sodium_voltage_gated_channel_beta_subunits|GRPC
 Sulfonylurea_receptor|GRPC
 TAOK|GRPC
 TAP|GRPC
@@ -500,6 +539,8 @@ TN|GRPC
 TNF|GRPC
 TNFRSF|GRPC
 TOP2|GRPC
+TPCN|GRPC
+TRP|GRPC
 TSC|GRPC
 TUBA|GRPC
 TUBB|GRPC
@@ -519,10 +560,13 @@ UGGT|GRPC
 UGT|GRPC
 Ubiquitin|GRPC
 VAV|GRPC
+VDAC|GRPC
 VEGF|GRPC
 VEGFR|GRPC
+Voltage_gated_ion_channels|GRPC
 Wnt|GRPC
 YBX|GRPC
+ZACN|GRPC
 hCG|GRPC
 mTORC1|GRPC
 mTORC2|GRPC
