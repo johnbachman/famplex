@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 15:10:2019 22:08
+date: 15:10:2019 22:28
 
 [Term]
 id: FPLX:5_hydroxytryptamine_receptors_ionotropic
@@ -5048,9 +5048,13 @@ inverse_is_a: HGNC:KCNT1
 inverse_is_a: HGNC:KCNT2
 
 [Term]
-id: FPLX:Kinesins
-name: Kinesins
+id: FPLX:Kinesin
+name: Kinesin
+synonym: "kinesin" EXACT []
+synonym: "kinesins" EXACT []
+synonym: "Kinesin" EXACT []
 xref: HGNC_GROUP:622
+xref: XFAM:PF00225
 is_a: FPLX:root
 inverse_is_a: HGNC:CENPE
 inverse_is_a: HGNC:KIF11
