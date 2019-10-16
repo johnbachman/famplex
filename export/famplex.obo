@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 14:10:2019 10:01
+date: 15:10:2019 22:08
 
 [Term]
 id: FPLX:5_hydroxytryptamine_receptors_ionotropic
@@ -5046,6 +5046,56 @@ xref: HGNC_GROUP:856
 is_a: FPLX:KCN
 inverse_is_a: HGNC:KCNT1
 inverse_is_a: HGNC:KCNT2
+
+[Term]
+id: FPLX:Kinesins
+name: Kinesins
+xref: HGNC_GROUP:622
+is_a: FPLX:root
+inverse_is_a: HGNC:CENPE
+inverse_is_a: HGNC:KIF11
+inverse_is_a: HGNC:KIF12
+inverse_is_a: HGNC:KIF13A
+inverse_is_a: HGNC:KIF13B
+inverse_is_a: HGNC:KIF14
+inverse_is_a: HGNC:KIF15
+inverse_is_a: HGNC:KIF16B
+inverse_is_a: HGNC:KIF17
+inverse_is_a: HGNC:KIF18A
+inverse_is_a: HGNC:KIF18B
+inverse_is_a: HGNC:KIF19
+inverse_is_a: HGNC:KIF1A
+inverse_is_a: HGNC:KIF1B
+inverse_is_a: HGNC:KIF1C
+inverse_is_a: HGNC:KIF20A
+inverse_is_a: HGNC:KIF20B
+inverse_is_a: HGNC:KIF21A
+inverse_is_a: HGNC:KIF21B
+inverse_is_a: HGNC:KIF22
+inverse_is_a: HGNC:KIF23
+inverse_is_a: HGNC:KIF24
+inverse_is_a: HGNC:KIF25
+inverse_is_a: HGNC:KIF26A
+inverse_is_a: HGNC:KIF26B
+inverse_is_a: HGNC:KIF27
+inverse_is_a: HGNC:KIF2A
+inverse_is_a: HGNC:KIF2B
+inverse_is_a: HGNC:KIF2C
+inverse_is_a: HGNC:KIF3A
+inverse_is_a: HGNC:KIF3B
+inverse_is_a: HGNC:KIF3C
+inverse_is_a: HGNC:KIF4A
+inverse_is_a: HGNC:KIF4B
+inverse_is_a: HGNC:KIF5A
+inverse_is_a: HGNC:KIF5B
+inverse_is_a: HGNC:KIF5C
+inverse_is_a: HGNC:KIF6
+inverse_is_a: HGNC:KIF7
+inverse_is_a: HGNC:KIF9
+inverse_is_a: HGNC:KIFC1
+inverse_is_a: HGNC:KIFC2
+inverse_is_a: HGNC:KIFC3
+inverse_is_a: HGNC:STARD9
 
 [Term]
 id: FPLX:Kinetochore
