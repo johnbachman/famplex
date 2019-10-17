@@ -2002,6 +2002,9 @@ HGNC,EIF2B2,partof,FPLX,EIF2B
 HGNC,EIF2B3,partof,FPLX,EIF2B
 HGNC,EIF2B4,partof,FPLX,EIF2B
 HGNC,EIF2B5,partof,FPLX,EIF2B
+HGNC,FGA,partof,FPLX,Fibrin
+HGNC,FGB,partof,FPLX,Fibrin
+HGNC,FGG,partof,FPLX,Fibrin
 HGNC,FGA,partof,FPLX,Fibrinogen
 HGNC,FGB,partof,FPLX,Fibrinogen
 HGNC,FGG,partof,FPLX,Fibrinogen
