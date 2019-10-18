@@ -195,6 +195,7 @@ F_actin
 FANC
 FGF
 FGFR
+Fibrin
 Fibrinogen
 FLOT
 FLRT
@@ -341,6 +342,15 @@ MYL
 MYL_alkali
 MYL_regulatory
 MYL_slow
+MYO1
+MYO3
+MYO5
+MYO7
+MYO9
+MYO15
+MYO18
+Myosin_family
+Myosin_complex
 MYST
 NADH_dehydrogenase
 NADPH_oxidase

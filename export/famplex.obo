@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 15:10:2019 22:28
+date: 17:10:2019 23:57
 
 [Term]
 id: FPLX:5_hydroxytryptamine_receptors_ionotropic
@@ -3235,6 +3235,16 @@ inverse_is_a: HGNC:FGFR4
 inverse_is_a: HGNC:FGFRL1
 
 [Term]
+id: FPLX:Fibrin
+name: Fibrin
+synonym: "fibrin" EXACT []
+xref: MESH:D005337
+is_a: FPLX:root
+has_part: HGNC:FGA
+has_part: HGNC:FGB
+has_part: HGNC:FGG
+
+[Term]
 id: FPLX:Fibrinogen
 name: Fibrinogen
 synonym: "fibrinogen" EXACT []
@@ -5689,13 +5699,14 @@ synonym: "Myosin heavy chains" EXACT []
 synonym: "myosin heavy chains" EXACT []
 xref: BEL:"MYH Family"
 xref: MEDSCAN:urn:agi-protfc:myosin%20heavy%20chain
-is_a: FPLX:root
+is_a: FPLX:Myosin_family
 inverse_is_a: HGNC:MYH1
 inverse_is_a: HGNC:MYH10
 inverse_is_a: HGNC:MYH11
 inverse_is_a: HGNC:MYH13
 inverse_is_a: HGNC:MYH14
 inverse_is_a: HGNC:MYH15
+inverse_is_a: HGNC:MYH16
 inverse_is_a: HGNC:MYH2
 inverse_is_a: HGNC:MYH3
 inverse_is_a: HGNC:MYH4
@@ -5704,7 +5715,6 @@ inverse_is_a: HGNC:MYH7
 inverse_is_a: HGNC:MYH7B
 inverse_is_a: HGNC:MYH8
 inverse_is_a: HGNC:MYH9
-inverse_is_a: HGNC:MYO5A
 
 [Term]
 id: FPLX:MYL
@@ -5715,7 +5725,7 @@ synonym: "myosin light chain" EXACT []
 synonym: "myosin light chains" EXACT []
 xref: BEL:"MYL Family"
 xref: MEDSCAN:urn:agi-protfc:myosin%20light%20chain
-is_a: FPLX:root
+part_of: FPLX:Myosin_complex
 inverse_is_a: FPLX:MYL_alkali
 inverse_is_a: FPLX:MYL_regulatory
 inverse_is_a: FPLX:MYL_slow
@@ -5759,6 +5769,87 @@ is_a: FPLX:MYL
 inverse_is_a: HGNC:MYL2
 inverse_is_a: HGNC:MYL3
 inverse_is_a: HGNC:MYL6B
+
+[Term]
+id: FPLX:MYO1
+name: MYO1
+is_a: FPLX:Myosin_family
+inverse_is_a: HGNC:MYO1A
+inverse_is_a: HGNC:MYO1B
+inverse_is_a: HGNC:MYO1C
+inverse_is_a: HGNC:MYO1D
+inverse_is_a: HGNC:MYO1E
+inverse_is_a: HGNC:MYO1F
+inverse_is_a: HGNC:MYO1G
+inverse_is_a: HGNC:MYO1H
+
+[Term]
+id: FPLX:MYO3
+name: MYO3
+is_a: FPLX:Myosin_family
+inverse_is_a: HGNC:MYO3A
+inverse_is_a: HGNC:MYO3B
+
+[Term]
+id: FPLX:MYO5
+name: MYO5
+is_a: FPLX:Myosin_family
+inverse_is_a: HGNC:MYO5A
+inverse_is_a: HGNC:MYO5B
+inverse_is_a: HGNC:MYO5C
+
+[Term]
+id: FPLX:MYO7
+name: MYO7
+is_a: FPLX:Myosin_family
+inverse_is_a: HGNC:MYO7A
+inverse_is_a: HGNC:MYO7B
+
+[Term]
+id: FPLX:MYO9
+name: MYO9
+is_a: FPLX:Myosin_family
+inverse_is_a: HGNC:MYO9A
+inverse_is_a: HGNC:MYO9B
+
+[Term]
+id: FPLX:MYO15
+name: MYO15
+is_a: FPLX:Myosin_family
+inverse_is_a: HGNC:MYO15A
+inverse_is_a: HGNC:MYO15B
+
+[Term]
+id: FPLX:MYO18
+name: MYO18
+is_a: FPLX:Myosin_family
+inverse_is_a: HGNC:MYO18A
+inverse_is_a: HGNC:MYO18B
+
+[Term]
+id: FPLX:Myosin_family
+name: Myosin-family
+part_of: FPLX:Myosin_complex
+inverse_is_a: FPLX:MYH
+inverse_is_a: FPLX:MYO1
+inverse_is_a: FPLX:MYO3
+inverse_is_a: FPLX:MYO5
+inverse_is_a: HGNC:MYO6
+inverse_is_a: FPLX:MYO7
+inverse_is_a: FPLX:MYO9
+inverse_is_a: HGNC:MYO10
+inverse_is_a: FPLX:MYO15
+inverse_is_a: HGNC:MYO16
+inverse_is_a: FPLX:MYO18
+inverse_is_a: HGNC:MYO19
+
+[Term]
+id: FPLX:Myosin_complex
+name: Myosin-complex
+synonym: "myosin" EXACT []
+is_a: FPLX:root
+has_part: FPLX:Myosin_family
+has_part: FPLX:MYL
 
 [Term]
 id: FPLX:MYST
