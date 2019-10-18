@@ -108,9 +108,14 @@ def get_relations_from_root(root_id, relations=None):
             grandchild_ids = children.get(child_id)
             child_gene_members = family_to_gene[child_id]
             if not grandchild_ids and len(child_gene_members) == 1:
-                rel = ('HGNC',
-                       hgnc_client.get_hgnc_name(child_gene_members[0]),
-                       'FPLX', famplex_id)
+                gene_name = hgnc_client.get_hgnc_name(child_gene_members[0])
+                if is_pseudogene(gene_name):
+                    print('Assuming %s is a pseudogene, skipping' % gene_name)
+                    continue
+                print('HGNC family %s has one gene member %s which will be '
+                      'linked directly to %s' % (child_id, gene_name,
+                                                 famplex_id))
+                rel = ('HGNC', gene_name, 'isa', 'FPLX', famplex_id, root_id)
                 relations.append(rel)
             # In this case, the child contains either further families or
             # multiple genes, and we recursively add its relations
@@ -130,7 +135,7 @@ def add_relations_to_famplex(relations):
                             'relations.csv')
     with open(rel_file, 'a') as fh:
         for rel in relations:
-            fh.write(','.join(rel[:-1]) + '\n')
+            fh.write(','.join(rel[:-1]) + '\r\n')
 
 
 def add_entities_to_famplex(entities):
@@ -139,7 +144,7 @@ def add_entities_to_famplex(entities):
                              'entities.csv')
     with open(ents_file, 'a') as fh:
         for ent in entities:
-            fh.write('%s\n' % ent)
+            fh.write('%s\r\n' % ent)
 
 
 def add_equivalences(relations):
@@ -153,7 +158,7 @@ def add_equivalences(relations):
                                'equivalences.csv')
     with open(equivs_file, 'a') as fh:
         for eq in equivs:
-            fh.write('%s\n' % ','.join(eq))
+            fh.write('%s\r\n' % ','.join(eq))
 
 
 def find_overlaps(relations):
