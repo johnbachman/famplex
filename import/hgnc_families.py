@@ -1,5 +1,6 @@
 import io
 import os
+import sys
 import csv
 import urllib
 import itertools
@@ -17,6 +18,7 @@ hier_file = 'hierarchy.csv'
 def read_csv_from_ftp(fname):
     """Return a generator for a CSV file opened from HGNC's FTP server."""
     url = hgnc_fam_url + fname
+    print('Loading %s' % url)
     req = urllib.request.Request(url)
     res = urllib.request.urlopen(req)
     reader = csv.reader(io.TextIOWrapper(res))
@@ -178,10 +180,13 @@ def find_overlaps(relations):
 
 if __name__ == '__main__':
     # Start from one or more root family IDs to process from
-    relations = get_relations_from_root('292')
-    relations += get_relations_from_root('294')
+    hgnc_group_ids = sys.argv[1:]
+    relations = []
+    for hgnc_group_id in hgnc_group_ids:
+        print('Loading relations for HGNC group: %s' % hgnc_group_id)
+        relations += get_relations_from_root(hgnc_group_id)
     # Sort the relations
-    relations = sorted(list(set(relations)), key= lambda x: (x[4], x[1]))
+    relations = sorted(list(set(relations)), key=lambda x: (x[4], x[1]))
     # Find and eliminate families that are exactly the same as existing ones
     totally_redundant = find_overlaps(relations)
     relations = [r for r in relations if r[4] not in totally_redundant]
