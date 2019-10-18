@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 17:10:2019 23:48
+date: 17:10:2019 23:57
 
 [Term]
 id: FPLX:5_hydroxytryptamine_receptors_ionotropic
@@ -5799,12 +5799,6 @@ inverse_is_a: HGNC:MYO5B
 inverse_is_a: HGNC:MYO5C
 
 [Term]
-id: FPLX:MYO6
-name: MYO6
-is_a: FPLX:Myosin_family
-inverse_is_a: HGNC:MYO6
-
-[Term]
 id: FPLX:MYO7
 name: MYO7
 is_a: FPLX:Myosin_family
@@ -5819,23 +5813,11 @@ inverse_is_a: HGNC:MYO9A
 inverse_is_a: HGNC:MYO9B
 
 [Term]
-id: FPLX:MYO10
-name: MYO10
-is_a: FPLX:Myosin_family
-inverse_is_a: HGNC:MYO10
-
-[Term]
 id: FPLX:MYO15
 name: MYO15
 is_a: FPLX:Myosin_family
 inverse_is_a: HGNC:MYO15A
 inverse_is_a: HGNC:MYO15B
-
-[Term]
-id: FPLX:MYO16
-name: MYO16
-is_a: FPLX:Myosin_family
-inverse_is_a: HGNC:MYO16
 
 [Term]
 id: FPLX:MYO18
@@ -5845,12 +5827,6 @@ inverse_is_a: HGNC:MYO18A
 inverse_is_a: HGNC:MYO18B
 
 [Term]
-id: FPLX:MYO19
-name: MYO19
-is_a: FPLX:Myosin_family
-inverse_is_a: HGNC:MYO19
-
-[Term]
 id: FPLX:Myosin_family
 name: Myosin-family
 part_of: FPLX:Myosin_complex
@@ -5858,14 +5834,14 @@ inverse_is_a: FPLX:MYH
 inverse_is_a: FPLX:MYO1
 inverse_is_a: FPLX:MYO3
 inverse_is_a: FPLX:MYO5
-inverse_is_a: FPLX:MYO6
+inverse_is_a: HGNC:MYO6
 inverse_is_a: FPLX:MYO7
 inverse_is_a: FPLX:MYO9
-inverse_is_a: FPLX:MYO10
+inverse_is_a: HGNC:MYO10
 inverse_is_a: FPLX:MYO15
-inverse_is_a: FPLX:MYO16
+inverse_is_a: HGNC:MYO16
 inverse_is_a: FPLX:MYO18
-inverse_is_a: FPLX:MYO19
+inverse_is_a: HGNC:MYO19
 
 [Term]
 id: FPLX:Myosin_complex
