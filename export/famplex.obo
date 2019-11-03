@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 17:10:2019 23:57
+date: 03:11:2019 21:29
 
 [Term]
 id: FPLX:5_hydroxytryptamine_receptors_ionotropic
@@ -9357,6 +9357,31 @@ name: ZACN
 xref: HGNC_GROUP:176
 is_a: FPLX:Ligand_gated_ion_channels
 inverse_is_a: HGNC:ZACN
+
+[Term]
+id: FPLX:GUCY1A
+name: GUCY1A
+part_of: FPLX:SGC
+inverse_is_a: HGNC:GUCY1A2
+inverse_is_a: HGNC:GUCY1A1
+
+[Term]
+id: FPLX:GUCY1B
+name: GUCY1B
+part_of: FPLX:SGC
+inverse_is_a: HGNC:GUCY1B1
+inverse_is_a: HGNC:GUCY1B2
+
+[Term]
+id: FPLX:SGC
+name: SGC
+synonym: "Soluble guanylyl cyclase" EXACT []
+synonym: "Soluble guanylyl/guanylate cyclase" EXACT []
+synonym: "Soluble Guanylate Cyclase" EXACT []
+synonym: "sGC" EXACT []
+is_a: FPLX:root
+has_part: FPLX:GUCY1A
+has_part: FPLX:GUCY1B
 
 [Term]
 id: FPLX:root
