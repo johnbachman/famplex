@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 03:11:2019 21:39
+date: 03:11:2019 22:03
 
 [Term]
 id: FPLX:5_hydroxytryptamine_receptors_ionotropic
@@ -8199,6 +8199,7 @@ synonym: "Soluble guanylyl cyclase" EXACT []
 synonym: "Soluble guanylyl/guanylate cyclase" EXACT []
 synonym: "Soluble Guanylate Cyclase" EXACT []
 synonym: "sGC" EXACT []
+xref: MESH:D000071756
 is_a: FPLX:root
 has_part: FPLX:GUCY1A
 has_part: FPLX:GUCY1B
