@@ -249,6 +249,8 @@ GTF_family_8
 GTF_family_90
 GTPase
 GUCY
+GUCY1A
+GUCY1B
 GYS
 hCG
 HDAC
@@ -490,6 +492,7 @@ SCN
 SCNN
 SERCA
 SERPINB
+SGC
 SHC
 SIK
 SLC2A
@@ -565,6 +568,3 @@ Voltage_gated_ion_channels
 Wnt
 YBX
 ZACN
-GUCY1A
-GUCY1B
-SGC
