@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 17:10:2019 23:57
+date: 03:11:2019 22:03
 
 [Term]
 id: FPLX:5_hydroxytryptamine_receptors_ionotropic
@@ -4165,6 +4165,20 @@ inverse_is_a: HGNC:NPR1
 inverse_is_a: HGNC:NPR2
 
 [Term]
+id: FPLX:GUCY1A
+name: GUCY1A
+part_of: FPLX:SGC
+inverse_is_a: HGNC:GUCY1A2
+inverse_is_a: HGNC:GUCY1A1
+
+[Term]
+id: FPLX:GUCY1B
+name: GUCY1B
+part_of: FPLX:SGC
+inverse_is_a: HGNC:GUCY1B1
+inverse_is_a: HGNC:GUCY1B2
+
+[Term]
 id: FPLX:GYS
 name: GYS
 synonym: "glycogen synthase" EXACT []
@@ -8177,6 +8191,18 @@ inverse_is_a: HGNC:SERPINB10
 inverse_is_a: HGNC:SERPINB11
 inverse_is_a: HGNC:SERPINB12
 inverse_is_a: HGNC:SERPINB13
+
+[Term]
+id: FPLX:SGC
+name: SGC
+synonym: "Soluble guanylyl cyclase" EXACT []
+synonym: "Soluble guanylyl/guanylate cyclase" EXACT []
+synonym: "Soluble Guanylate Cyclase" EXACT []
+synonym: "sGC" EXACT []
+xref: MESH:D000071756
+is_a: FPLX:root
+has_part: FPLX:GUCY1A
+has_part: FPLX:GUCY1B
 
 [Term]
 id: FPLX:SHC
