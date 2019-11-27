@@ -1,5 +1,6 @@
 import io
 import os
+import re
 import sys
 import csv
 import urllib
@@ -75,6 +76,10 @@ def get_famplex_id(family):
         return name
 
 
+def is_pseudogene(gene):
+    return re.match(r'^.*\d+P$', gene) is not None
+
+
 def get_relations_from_root(root_id, relations=None):
     """Return a set of relations starting from a given root."""
     if relations is None:
@@ -82,19 +87,45 @@ def get_relations_from_root(root_id, relations=None):
     family_info = families[root_id]
     child_ids = children.get(root_id)
     famplex_id = get_famplex_id(family_info)
+    # In this case this HGNC family has genes as its children
     if not child_ids:
-        for gene in family_to_gene[root_id]:
+        gene_members = family_to_gene[root_id]
+        for gene in gene_members:
             gene_name = hgnc_client.get_hgnc_name(gene)
+            if is_pseudogene(gene_name):
+                print('Assuming %s is a pseudogene, skipping' % gene_name)
+                continue
             rel = ('HGNC', gene_name, 'isa', 'FPLX', famplex_id, root_id)
             relations.append(rel)
+    # In this case this HGNC family is an intermediate that has further
+    # families as its children
     else:
         for child_id in child_ids:
-            child_info = families[child_id]
-            child_famplex_id = get_famplex_id(child_info)
-            rel = ('FPLX', child_famplex_id, 'isa', 'FPLX', famplex_id,
-                   root_id)
-            relations.append(rel)
-            get_relations_from_root(child_id, relations)
+            # We want to skip families that only consist of a single gene,
+            # and therefore these genes are directly linked to their
+            # "grandparent" without recursively adding the intermediate
+            # family parent.
+            grandchild_ids = children.get(child_id)
+            child_gene_members = family_to_gene[child_id]
+            if not grandchild_ids and len(child_gene_members) == 1:
+                gene_name = hgnc_client.get_hgnc_name(child_gene_members[0])
+                if is_pseudogene(gene_name):
+                    print('Assuming %s is a pseudogene, skipping' % gene_name)
+                    continue
+                print('HGNC family %s has one gene member %s which will be '
+                      'linked directly to %s' % (child_id, gene_name,
+                                                 famplex_id))
+                rel = ('HGNC', gene_name, 'isa', 'FPLX', famplex_id, root_id)
+                relations.append(rel)
+            # In this case, the child contains either further families or
+            # multiple genes, and we recursively add its relations
+            else:
+                child_info = families[child_id]
+                child_famplex_id = get_famplex_id(child_info)
+                rel = ('FPLX', child_famplex_id, 'isa', 'FPLX', famplex_id,
+                       root_id)
+                relations.append(rel)
+                get_relations_from_root(child_id, relations)
     return relations
 
 
@@ -104,7 +135,7 @@ def add_relations_to_famplex(relations):
                             'relations.csv')
     with open(rel_file, 'a') as fh:
         for rel in relations:
-            fh.write(','.join(rel[:-1]) + '\n')
+            fh.write(','.join(rel[:-1]) + '\r\n')
 
 
 def add_entities_to_famplex(entities):
@@ -113,7 +144,7 @@ def add_entities_to_famplex(entities):
                              'entities.csv')
     with open(ents_file, 'a') as fh:
         for ent in entities:
-            fh.write('%s\n' % ent)
+            fh.write('%s\r\n' % ent)
 
 
 def add_equivalences(relations):
@@ -127,7 +158,7 @@ def add_equivalences(relations):
                                'equivalences.csv')
     with open(equivs_file, 'a') as fh:
         for eq in equivs:
-            fh.write('%s\n' % ','.join(eq))
+            fh.write('%s\r\n' % ','.join(eq))
 
 
 def find_overlaps(relations):
