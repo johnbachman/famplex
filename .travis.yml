@@ -19,7 +19,7 @@ script:
   # bel_resources must be installed to generate belns exports
   # generate exports then take git diff and look only at lines that changed
   # lines containing date, timestamp, or version should be ignored
-  - pip install bel_resources
+  - pip install bel_resources==0.0.2
   - python export/obo.py
   - python export/hgnc_ids.py
   - python export/belns.py
@@ -30,5 +30,8 @@ script:
   - export hgnc=$(git diff -U0 export/hgnc_symbol_map.csv | egrep "^[\+-][^\+-]")
   - if [[ ! -z $belns ]] || [[ ! -z $obo ]] || [[ ! -z $hgnc ]]; then
       echo "FAIL exports have not been updated";
+      echo $belns;
+      echo $obo;
+      echo $hgnc;
       exit 1;
     fi
