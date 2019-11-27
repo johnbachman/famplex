@@ -30,5 +30,8 @@ script:
   - export hgnc=$(git diff -U0 export/hgnc_symbol_map.csv | egrep "^[\+-][^\+-]")
   - if [[ ! -z $belns ]] || [[ ! -z $obo ]] || [[ ! -z $hgnc ]]; then
       echo "FAIL exports have not been updated";
+      echo $belns;
+      echo $obo;
+      echo $hgnc;
       exit 1;
     fi
