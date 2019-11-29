@@ -6206,8 +6206,6 @@ id: FPLX:NPBWR
 name: NPBWR
 synonym: "neuropeptides B and W receptor" EXACT []
 synonym: "neuropeptides B and W receptors" EXACT []
-synonym: "neuropeptide FF receptor" EXACT []
-synonym: "neuropeptide FF receptors" EXACT []
 xref: IP:IPR009150
 is_a: FPLX:Neuropeptide_receptor
 inverse_is_a: HGNC:NPBWR1
@@ -6216,6 +6214,8 @@ inverse_is_a: HGNC:NPBWR2
 [Term]
 id: FPLX:NPFFR
 name: NPFFR
+synonym: "neuropeptide FF receptor" EXACT []
+synonym: "neuropeptide FF receptors" EXACT []
 xref: IP:IPR005395
 is_a: FPLX:Neuropeptide_receptor
 inverse_is_a: HGNC:NPFFR1
