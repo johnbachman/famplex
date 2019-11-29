@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 27:11:2019 15:47
+date: 29:11:2019 18:28
 
 [Term]
 id: FPLX:5_hydroxytryptamine_receptors_ionotropic
@@ -1093,6 +1093,16 @@ has_part: HGNC:BCKDHA
 has_part: HGNC:BCKDHB
 has_part: HGNC:DBT
 has_part: HGNC:DLD
+
+[Term]
+id: FPLX:BDKR
+name: BDKR
+synonym: "bradykinin receptor" EXACT []
+synonym: "bradykinin receptors" EXACT []
+xref: MESH:D018002
+is_a: FPLX:root
+inverse_is_a: HGNC:BDKRB1
+inverse_is_a: HGNC:BDKRB2
 
 [Term]
 id: FPLX:BEST
