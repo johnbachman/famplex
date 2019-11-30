@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 30:11:2019 15:37
+date: 30:11:2019 16:11
 
 [Term]
 id: FPLX:5_hydroxytryptamine_receptors_ionotropic
@@ -6190,6 +6190,53 @@ inverse_is_a: HGNC:NOTCH1
 inverse_is_a: HGNC:NOTCH2
 inverse_is_a: HGNC:NOTCH3
 inverse_is_a: HGNC:NOTCH4
+
+[Term]
+id: FPLX:Neuropeptide_receptor
+name: Neuropeptide-receptor
+synonym: "neuropeptide receptor" EXACT []
+synonym: "neuropeptide receptors" EXACT []
+xref: HGNC_GROUP:854
+is_a: FPLX:root
+inverse_is_a: HGNC:NPSR1
+inverse_is_a: FPLX:NPBWR
+inverse_is_a: FPLX:NPFFR
+inverse_is_a: FPLX:NPYR
+
+[Term]
+id: FPLX:NPBWR
+name: NPBWR
+synonym: "neuropeptides B and W receptor" EXACT []
+synonym: "neuropeptides B and W receptors" EXACT []
+xref: IP:IPR009150
+is_a: FPLX:Neuropeptide_receptor
+inverse_is_a: HGNC:NPBWR1
+inverse_is_a: HGNC:NPBWR2
+
+[Term]
+id: FPLX:NPFFR
+name: NPFFR
+synonym: "neuropeptide FF receptor" EXACT []
+synonym: "neuropeptide FF receptors" EXACT []
+xref: IP:IPR005395
+is_a: FPLX:Neuropeptide_receptor
+inverse_is_a: HGNC:NPFFR1
+inverse_is_a: HGNC:NPFFR2
+
+[Term]
+id: FPLX:NPYR
+name: NPYR
+synonym: "neuropeptide Y receptor" EXACT []
+synonym: "neuropeptide Y receptors" EXACT []
+xref: IP:IPR000611
+xref: MESH:D017476
+is_a: FPLX:Neuropeptide_receptor
+inverse_is_a: HGNC:NPY1R
+inverse_is_a: HGNC:NPY2R
+inverse_is_a: HGNC:NPY4R
+inverse_is_a: HGNC:NPY4R2
+inverse_is_a: HGNC:NPY5R
+inverse_is_a: HGNC:NPY6R
 
 [Term]
 id: FPLX:NRG
