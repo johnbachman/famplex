@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 30:11:2019 15:50
+date: 30:11:2019 16:11
 
 [Term]
 id: FPLX:5_hydroxytryptamine_receptors_ionotropic
@@ -6198,9 +6198,9 @@ synonym: "neuropeptide receptor" EXACT []
 synonym: "neuropeptide receptors" EXACT []
 xref: HGNC_GROUP:854
 is_a: FPLX:root
+inverse_is_a: HGNC:NPSR1
 inverse_is_a: FPLX:NPBWR
 inverse_is_a: FPLX:NPFFR
-inverse_is_a: FPLX:NPSR
 inverse_is_a: FPLX:NPYR
 
 [Term]
@@ -6222,15 +6222,6 @@ xref: IP:IPR005395
 is_a: FPLX:Neuropeptide_receptor
 inverse_is_a: HGNC:NPFFR1
 inverse_is_a: HGNC:NPFFR2
-
-[Term]
-id: FPLX:NPSR
-name: NPSR
-synonym: "neuropeptide S receptor" EXACT []
-synonym: "neuropeptide S receptors" EXACT []
-xref: IP:IPR027294
-is_a: FPLX:Neuropeptide_receptor
-inverse_is_a: HGNC:NPSR1
 
 [Term]
 id: FPLX:NPYR
