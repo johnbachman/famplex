@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 29:11:2019 18:32
+date: 30:11:2019 15:37
 
 [Term]
 id: FPLX:5_hydroxytryptamine_receptors_ionotropic
@@ -1099,6 +1099,7 @@ id: FPLX:BDKR
 name: BDKR
 synonym: "bradykinin receptor" EXACT []
 synonym: "bradykinin receptors" EXACT []
+xref: HGNC_GROUP:223
 xref: IP:IPR000496
 xref: MESH:D018002
 is_a: FPLX:root
