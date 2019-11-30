@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 30:11:2019 15:37
+date: 30:11:2019 15:50
 
 [Term]
 id: FPLX:5_hydroxytryptamine_receptors_ionotropic
@@ -6194,6 +6194,8 @@ inverse_is_a: HGNC:NOTCH4
 [Term]
 id: FPLX:Neuropeptide_receptor
 name: Neuropeptide-receptor
+synonym: "neuropeptide receptor" EXACT []
+synonym: "neuropeptide receptors" EXACT []
 xref: HGNC_GROUP:854
 is_a: FPLX:root
 inverse_is_a: FPLX:NPBWR
