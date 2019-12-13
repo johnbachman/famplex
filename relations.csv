@@ -3673,5 +3673,5 @@ HGNC,ADORA3,isa,FPLX,ADORA
 FPLX,P2R,isa,FPLX,Purinergic_receptors
 FPLX,ADORA,isa,FPLX,Purinergic_receptors
 FPLX,Calcium_channels,isa,FPLX,Cation_channels
-FPLX,Potassium_channels,isa,FPLX,Cation_channels
+FPLX,KCN,isa,FPLX,Cation_channels
 FPLX,Sodium_channels,isa,FPLX,Cation_channels
