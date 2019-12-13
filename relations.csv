@@ -3664,3 +3664,12 @@ HGNC,NPY6R,isa,FPLX,NPYR
 FPLX,NPBWR,isa,FPLX,Neuropeptide_receptor
 FPLX,NPFFR,isa,FPLX,Neuropeptide_receptor
 FPLX,NPYR,isa,FPLX,Neuropeptide_receptor
+FPLX,P2RX,isa,FPLX,P2R
+FFLX,P2RY,isa,FPLX,P2R
+HGNC,ADORA1,isa,FPLX,ADORA
+HGNC,ADORA2A,isa,FPLX,ADORA
+HGNC,ADORA2B,isa,FPLX,ADORA
+HGNC,ADORA3,isa,FPLX,ADORA
+FPLX,Calcium_channels,isa,FPLX,Cation_channels
+FPLX,Potassium_channels,isa,FPLX,Cation_channels
+FPLX,Sodium_channels,isa,FPLX,Cation_channels
