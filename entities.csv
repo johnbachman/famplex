@@ -17,6 +17,7 @@ Adaptor_protein_II
 Adaptor_protein_III
 ADCY
 ADH
+ADORA
 ADRA
 ADRA2
 ADRB
@@ -92,6 +93,7 @@ CAPN
 Carboxylesterase
 Caspase
 Caspase_3_7
+Cation_channels
 CATSPER
 CAV
 CBF3
@@ -400,6 +402,7 @@ OR7
 OR8
 OR9
 p14_3_3
+P2R
 P2RX
 P2RY
 p38
