@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 30:11:2019 16:11
+date: 18:12:2019 17:23
 
 [Term]
 id: FPLX:5_hydroxytryptamine_receptors_ionotropic
@@ -286,6 +286,15 @@ inverse_is_a: HGNC:ADH5
 inverse_is_a: HGNC:ADH6
 inverse_is_a: HGNC:ADH7
 inverse_is_a: HGNC:ADHFE1
+
+[Term]
+id: FPLX:ADORA
+name: ADORA
+is_a: FPLX:Purinergic_receptors
+inverse_is_a: HGNC:ADORA1
+inverse_is_a: HGNC:ADORA2A
+inverse_is_a: HGNC:ADORA2B
+inverse_is_a: HGNC:ADORA3
 
 [Term]
 id: FPLX:ADRA
@@ -1380,8 +1389,12 @@ inverse_is_a: HGNC:CDH9
 [Term]
 id: FPLX:Calcium_channels
 name: Calcium-channels
+synonym: "Calcium channel" EXACT []
+synonym: "Calcium channels" EXACT []
+synonym: "calcium channel" EXACT []
+synonym: "calcium channels" EXACT []
 xref: HGNC_GROUP:182
-is_a: FPLX:root
+is_a: FPLX:Cation_channels
 inverse_is_a: FPLX:CACN
 inverse_is_a: FPLX:CATSPER
 inverse_is_a: FPLX:ITPR
@@ -1536,6 +1549,18 @@ inverse_is_a: HGNC:CASP3
 inverse_is_a: HGNC:CASP7
 
 [Term]
+id: FPLX:Cation_channels
+name: Cation-channels
+synonym: "Cation channel" EXACT []
+synonym: "Cation channels" EXACT []
+synonym: "cation channel" EXACT []
+synonym: "cation channels" EXACT []
+is_a: FPLX:root
+inverse_is_a: FPLX:Calcium_channels
+inverse_is_a: FPLX:KCN
+inverse_is_a: FPLX:Sodium_channels
+
+[Term]
 id: FPLX:CATSPER
 name: CATSPER
 xref: HGNC_GROUP:186
@@ -1577,6 +1602,53 @@ xref: IP:IPR016072
 xref: IP:IPR016897
 is_a: FPLX:root
 has_part: HGNC:SKP1
+
+[Term]
+id: FPLX:CCL
+name: CCL
+is_a: FPLX:root
+inverse_is_a: HGNC:CCL1
+inverse_is_a: HGNC:CCL2
+inverse_is_a: FPLX:Macrophage_inflammatory_proteins
+inverse_is_a: HGNC:CCL3L1
+inverse_is_a: HGNC:CCL3L3
+inverse_is_a: HGNC:CCL4L1
+inverse_is_a: HGNC:CCL4L2
+inverse_is_a: HGNC:CCL5
+inverse_is_a: HGNC:CCL7
+inverse_is_a: HGNC:CCL8
+inverse_is_a: HGNC:CCL11
+inverse_is_a: HGNC:CCL13
+inverse_is_a: HGNC:CCL14
+inverse_is_a: HGNC:CCL15
+inverse_is_a: HGNC:CCL16
+inverse_is_a: HGNC:CCL17
+inverse_is_a: HGNC:CCL18
+inverse_is_a: HGNC:CCL19
+inverse_is_a: HGNC:CCL20
+inverse_is_a: HGNC:CCL21
+inverse_is_a: HGNC:CCL22
+inverse_is_a: HGNC:CCL24
+inverse_is_a: HGNC:CCL25
+inverse_is_a: HGNC:CCL26
+inverse_is_a: HGNC:CCL27
+inverse_is_a: HGNC:CCL28
+inverse_is_a: HGNC:CXCL1
+inverse_is_a: HGNC:CXCL2
+inverse_is_a: HGNC:CXCL3
+inverse_is_a: HGNC:CXCL5
+inverse_is_a: HGNC:CXCL6
+inverse_is_a: HGNC:CXCL8
+inverse_is_a: HGNC:CXCL9
+inverse_is_a: HGNC:CXCL10
+inverse_is_a: HGNC:CXCL11
+inverse_is_a: HGNC:CXCL12
+inverse_is_a: HGNC:CXCL13
+inverse_is_a: HGNC:CXCL14
+inverse_is_a: HGNC:CXCL16
+inverse_is_a: HGNC:CXCL17
+inverse_is_a: HGNC:XCL1
+inverse_is_a: HGNC:XCL2
 
 [Term]
 id: FPLX:CCT_complex
@@ -3526,6 +3598,15 @@ xref: NCIT:C17298
 is_a: FPLX:root
 
 [Term]
+id: FPLX:GARP
+name: GARP
+is_a: FPLX:root
+has_part: HGNC:VPS51
+has_part: HGNC:VPS52
+has_part: HGNC:VPS53
+has_part: HGNC:VPS54
+
+[Term]
 id: FPLX:GAS6_receptor
 name: GAS6-receptor
 synonym: "Gas6 receptors" EXACT []
@@ -3677,6 +3758,10 @@ inverse_is_a: HGNC:GNAZ
 [Term]
 id: FPLX:GJ
 name: GJ
+synonym: "Connexin" EXACT []
+synonym: "Connexins" EXACT []
+synonym: "connexin" EXACT []
+synonym: "connexins" EXACT []
 xref: HGNC_GROUP:314
 is_a: FPLX:root
 inverse_is_a: HGNC:GJA1
@@ -5023,8 +5108,12 @@ inverse_is_a: HGNC:GRIK5
 [Term]
 id: FPLX:KCN
 name: KCN
+synonym: "Potassium channel" EXACT []
+synonym: "Potassium channels" EXACT []
+synonym: "potassium channel" EXACT []
+synonym: "potassium channels" EXACT []
 xref: HGNC_GROUP:183
-is_a: FPLX:root
+is_a: FPLX:Cation_channels
 inverse_is_a: FPLX:KCNJ
 inverse_is_a: FPLX:KCNK
 inverse_is_a: FPLX:KCNT
@@ -5032,8 +5121,22 @@ inverse_is_a: FPLX:Potassium_calcium_activated_channels
 inverse_is_a: FPLX:Potassium_voltage_gated_channels
 
 [Term]
+id: FPLX:KCNH
+name: KCNH
+is_a: FPLX:Potassium_voltage_gated_channels
+inverse_is_a: HGNC:KCNH1
+inverse_is_a: HGNC:KCNH2
+inverse_is_a: HGNC:KCNH3
+inverse_is_a: HGNC:KCNH4
+inverse_is_a: HGNC:KCNH5
+inverse_is_a: HGNC:KCNH6
+inverse_is_a: HGNC:KCNH7
+inverse_is_a: HGNC:KCNH8
+
+[Term]
 id: FPLX:KCNJ
 name: KCNJ
+synonym: "IK1" EXACT []
 xref: HGNC_GROUP:276
 is_a: FPLX:KCN
 inverse_is_a: HGNC:KCNJ1
@@ -5265,6 +5368,10 @@ has_part: HGNC:LHB
 [Term]
 id: FPLX:Ligand_gated_ion_channels
 name: Ligand-gated-ion-channels
+synonym: "Ligand-gated ion channel" EXACT []
+synonym: "Ligand-gated ion channels" EXACT []
+synonym: "ligand-gated ion channel" EXACT []
+synonym: "ligand-gated ion channels" EXACT []
 xref: HGNC_GROUP:161
 is_a: FPLX:root
 inverse_is_a: FPLX:5_hydroxytryptamine_receptors_ionotropic
@@ -5329,6 +5436,13 @@ has_part: HGNC:C8A
 has_part: HGNC:C8B
 has_part: HGNC:C8G
 has_part: HGNC:C9
+
+[Term]
+id: FPLX:Macrophage_inflammatory_proteins
+name: Macrophage-inflammatory-proteins
+is_a: FPLX:CCL
+inverse_is_a: HGNC:CCL3
+inverse_is_a: HGNC:CCL4
 
 [Term]
 id: FPLX:MAF
@@ -6864,6 +6978,15 @@ inverse_is_a: HGNC:YWHAQ
 inverse_is_a: HGNC:YWHAZ
 
 [Term]
+id: FPLX:P2R
+name: P2R
+synonym: "ATP receptor" EXACT []
+synonym: "ATP receptors" EXACT []
+is_a: FPLX:Purinergic_receptors
+inverse_is_a: FPLX:P2RX
+inverse_is_a: FPLX:P2RY
+
+[Term]
 id: FPLX:P2RX
 name: P2RX
 synonym: "P2X purinoreceptor" EXACT []
@@ -6881,6 +7004,7 @@ xref: XFAM:PF00864
 xref: RE:R-HSA-139848
 xref: RE:R-HSA-8861873
 is_a: FPLX:Ligand_gated_ion_channels
+is_a: FPLX:P2R
 inverse_is_a: HGNC:P2RX1
 inverse_is_a: HGNC:P2RX2
 inverse_is_a: HGNC:P2RX3
@@ -6895,7 +7019,7 @@ name: P2RY
 synonym: "P2Y receptor" EXACT []
 xref: BEL:"P2RY Family"
 xref: MEDSCAN:urn:agi-protfc:p2y%20receptor
-is_a: FPLX:root
+is_a: FPLX:P2R
 inverse_is_a: HGNC:P2RY1
 inverse_is_a: HGNC:P2RY2
 inverse_is_a: HGNC:P2RY4
@@ -7687,6 +7811,9 @@ inverse_is_a: HGNC:PLD6
 [Term]
 id: FPLX:Porins
 name: Porins
+synonym: "Porin" EXACT []
+synonym: "porin" EXACT []
+synonym: "porins" EXACT []
 xref: HGNC_GROUP:304
 is_a: FPLX:root
 inverse_is_a: FPLX:AQP
@@ -7733,14 +7860,7 @@ inverse_is_a: HGNC:KCNG1
 inverse_is_a: HGNC:KCNG2
 inverse_is_a: HGNC:KCNG3
 inverse_is_a: HGNC:KCNG4
-inverse_is_a: HGNC:KCNH1
-inverse_is_a: HGNC:KCNH2
-inverse_is_a: HGNC:KCNH3
-inverse_is_a: HGNC:KCNH4
-inverse_is_a: HGNC:KCNH5
-inverse_is_a: HGNC:KCNH6
-inverse_is_a: HGNC:KCNH7
-inverse_is_a: HGNC:KCNH8
+inverse_is_a: FPLX:KCNH
 inverse_is_a: HGNC:KCNQ1
 inverse_is_a: HGNC:KCNQ2
 inverse_is_a: HGNC:KCNQ3
@@ -8158,6 +8278,16 @@ inverse_is_a: HGNC:PTGER1
 inverse_is_a: HGNC:PTGER2
 inverse_is_a: HGNC:PTGER3
 inverse_is_a: HGNC:PTGER4
+
+[Term]
+id: FPLX:Purinergic_receptors
+name: Purinergic-receptors
+synonym: "Purinergic receptor" EXACT []
+synonym: "purinergic receptor" EXACT []
+synonym: "purinergic receptors" EXACT []
+is_a: FPLX:root
+inverse_is_a: FPLX:P2R
+inverse_is_a: FPLX:ADORA
 
 [Term]
 id: FPLX:PYG
@@ -9009,8 +9139,12 @@ inverse_is_a: HGNC:SOD3
 [Term]
 id: FPLX:Sodium_channels
 name: Sodium-channels
+synonym: "Sodium channel" EXACT []
+synonym: "Sodium channels" EXACT []
+synonym: "sodium channel" EXACT []
+synonym: "sodium channels" EXACT []
 xref: HGNC_GROUP:179
-is_a: FPLX:root
+is_a: FPLX:Cation_channels
 inverse_is_a: FPLX:ASIC
 inverse_is_a: HGNC:NALCN
 inverse_is_a: FPLX:SCN
@@ -9911,6 +10045,8 @@ inverse_is_a: HGNC:KDR
 [Term]
 id: FPLX:Voltage_gated_ion_channels
 name: Voltage-gated-ion-channels
+synonym: "voltage gated" EXACT []
+synonym: "voltage-gated" EXACT []
 xref: HGNC_GROUP:178
 is_a: FPLX:root
 inverse_is_a: FPLX:CACN

@@ -17,6 +17,7 @@ Adaptor_protein_II
 Adaptor_protein_III
 ADCY
 ADH
+ADORA
 ADRA
 ADRA2
 ADRB
@@ -92,9 +93,11 @@ CAPN
 Carboxylesterase
 Caspase
 Caspase_3_7
+Cation_channels
 CATSPER
 CAV
 CBF3
+CCL
 CCT_complex
 CD16
 CD3
@@ -213,6 +216,7 @@ GALNT
 G_alpha
 Gamma_secretase
 GAP
+GARP
 GAS6_receptor
 GATA
 G_beta
@@ -307,6 +311,7 @@ JNK
 JUN_family
 Kainate_family
 KCN
+KCNH
 KCNJ
 KCNK
 KCNT
@@ -323,6 +328,7 @@ LPAR
 LRRC8
 LXR
 MAC
+Macrophage_inflammatory_proteins
 MAF
 MAP1LC3
 MAP2K
@@ -400,6 +406,7 @@ OR7
 OR8
 OR9
 p14_3_3
+P2R
 P2RX
 P2RY
 p38
@@ -475,6 +482,7 @@ Propionyl_CoA_carboxylase
 Protease
 Proteasome
 PTGER
+Purinergic_receptors
 PYG
 RAB
 RAC
