@@ -2,8 +2,8 @@
 Keyword=FPLX
 NameString=FamPlex
 DomainString=Gene and Gene Products
-VersionString=20191130
-CreatedDateTime=2019-11-30T16:33:32
+VersionString=20191218
+CreatedDateTime=2019-12-18T17:23:55
 DescriptionString=FamPlex is a collection of resources for grounding biological entities from text and describing their hierarchical relationships.
 QueryValueURL=http://identifiers.org/fplx/
 [Author]
@@ -28,6 +28,7 @@ ACSL|GRPC
 ACTN|GRPC
 ADCY|GRPC
 ADH|GRPC
+ADORA|GRPC
 ADRA|GRPC
 ADRA2|GRPC
 ADRB|GRPC
@@ -109,6 +110,7 @@ CAPN|GRPC
 CATSPER|GRPC
 CAV|GRPC
 CBF3|GRPC
+CCL|GRPC
 CCT_complex|GRPC
 CD16|GRPC
 CD3|GRPC
@@ -157,6 +159,7 @@ Calcium_channels|GRPC
 Carboxylesterase|GRPC
 Caspase|GRPC
 Caspase_3_7|GRPC
+Cation_channels|GRPC
 Chemokine|GRPC
 Chemokine_receptor|GRPC
 Chloride_calcium_activated_channels|GRPC
@@ -228,6 +231,7 @@ Fibrinogen|GRPC
 GABR|GRPC
 GALNT|GRPC
 GAP|GRPC
+GARP|GRPC
 GAS6_receptor|GRPC
 GATA|GRPC
 GCNT|GRPC
@@ -324,6 +328,7 @@ JAK|GRPC
 JNK|GRPC
 JUN_family|GRPC
 KCN|GRPC
+KCNH|GRPC
 KCNJ|GRPC
 KCNK|GRPC
 KCNT|GRPC
@@ -367,6 +372,7 @@ MYO5|GRPC
 MYO7|GRPC
 MYO9|GRPC
 MYST|GRPC
+Macrophage_inflammatory_proteins|GRPC
 Metallothionein|GRPC
 Mitochondrial_Ribosome|GRPC
 Myosin_complex|GRPC
@@ -415,6 +421,7 @@ OR6|GRPC
 OR7|GRPC
 OR8|GRPC
 OR9|GRPC
+P2R|GRPC
 P2RX|GRPC
 P2RY|GRPC
 P70S6K|GRPC
@@ -489,6 +496,7 @@ Potassium_voltage_gated_channels|GRPC
 Propionyl_CoA_carboxylase|GRPC
 Protease|GRPC
 Proteasome|GRPC
+Purinergic_receptors|GRPC
 RAB|GRPC
 RAC|GRPC
 RAF|GRPC
