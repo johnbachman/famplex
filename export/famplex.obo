@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 18:12:2019 17:23
+date: 20:01:2020 17:58
 
 [Term]
 id: FPLX:5_hydroxytryptamine_receptors_ionotropic
@@ -10083,8 +10083,7 @@ inverse_is_a: HGNC:WNT2B
 inverse_is_a: HGNC:WNT3
 inverse_is_a: HGNC:WNT3A
 inverse_is_a: HGNC:WNT4
-inverse_is_a: HGNC:WNT5A
-inverse_is_a: HGNC:WNT5B
+inverse_is_a: FPLX:Wnt5
 inverse_is_a: HGNC:WNT6
 inverse_is_a: HGNC:WNT7A
 inverse_is_a: HGNC:WNT7B
@@ -10096,6 +10095,16 @@ inverse_is_a: HGNC:WNT10A
 inverse_is_a: HGNC:WNT10B
 inverse_is_a: HGNC:WNT11
 inverse_is_a: HGNC:WNT16
+
+[Term]
+id: FPLX:Wnt5
+name: Wnt5
+synonym: "Wnt5" EXACT []
+synonym: "WNT5" EXACT []
+synonym: "Wnt-5" EXACT []
+is_a: FPLX:Wnt
+inverse_is_a: HGNC:WNT5A
+inverse_is_a: HGNC:WNT5B
 
 [Term]
 id: FPLX:YBX
