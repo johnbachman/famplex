@@ -3774,3 +3774,9 @@ HGNC,BMPR2,isa,FPLX,RSTK2
 HGNC,TGFBR2,isa,FPLX,RSTK2
 HGNC,CDK9,partof,FPLX,TAT_associated_kinase
 HGNC,CCNT1,partof,FPLX,TAT_associated_kinase
+HGNC,CKB,isa,FPLX,Creatine_kinase
+HGNC,CKBE,isa,FPLX,Creatine_kinase
+HGNC,CKM,isa,FPLX,Creatine_kinase
+HGNC,CKMT1A,isa,FPLX,Creatine_kinase
+HGNC,CKMT1B,isa,FPLX,Creatine_kinase
+HGNC,CKMT2,isa,FPLX,Creatine_kinase
