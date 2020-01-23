@@ -3893,3 +3893,5 @@ HGNC,DGUOK,isa,FPLX,Deoxyribonucleoside_kinases
 FPLX,TK,isa,FPLX,Deoxyribonucleoside_kinases
 HGNC,TK1,isa,FPLX,Deoxyribonucleoside_kinases
 HGNC,TK2,isa,FPLX,Deoxyribonucleoside_kinases
+HGNC,RIPK1,isa,FPLX,RIPK
+HGNC,RIPK2,isa,FPLX,RIPK
