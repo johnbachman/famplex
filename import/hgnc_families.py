@@ -88,18 +88,17 @@ def get_relations_from_root(root_id, relations=None):
     child_ids = children.get(root_id)
     famplex_id = get_famplex_id(family_info)
     # In this case this HGNC family has genes as its children
-    if not child_ids:
-        gene_members = family_to_gene[root_id]
-        for gene in gene_members:
-            gene_name = hgnc_client.get_hgnc_name(gene)
-            if is_pseudogene(gene_name):
-                print('Assuming %s is a pseudogene, skipping' % gene_name)
-                continue
-            rel = ('HGNC', gene_name, 'isa', 'FPLX', famplex_id, root_id)
-            relations.append(rel)
+    gene_members = family_to_gene[root_id]
+    for gene in gene_members:
+        gene_name = hgnc_client.get_hgnc_name(gene)
+        if is_pseudogene(gene_name):
+            print('Assuming %s is a pseudogene, skipping' % gene_name)
+            continue
+        rel = ('HGNC', gene_name, 'isa', 'FPLX', famplex_id, root_id)
+        relations.append(rel)
     # In this case this HGNC family is an intermediate that has further
     # families as its children
-    else:
+    if child_ids is not None:
         for child_id in child_ids:
             # We want to skip families that only consist of a single gene,
             # and therefore these genes are directly linked to their
