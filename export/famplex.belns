@@ -2,8 +2,8 @@
 Keyword=FPLX
 NameString=FamPlex
 DomainString=Gene and Gene Products
-VersionString=20200121
-CreatedDateTime=2020-01-21T09:07:57
+VersionString=20200123
+CreatedDateTime=2020-01-23T22:36:43
 DescriptionString=FamPlex is a collection of resources for grounding biological entities from text and describing their hierarchical relationships.
 QueryValueURL=http://identifiers.org/fplx/
 
@@ -93,6 +93,7 @@ BCKDC|CGPR
 BDKR|CGPR
 BEST|CGPR
 BIRC|CGPR
+BLVR|CGPR
 BMP|CGPR
 BMP_receptor|CGPR
 BMP_receptor_type_I|CGPR
@@ -129,11 +130,13 @@ CDKN1|CGPR
 CDKN2|CGPR
 CEBP|CGPR
 CHEK|CGPR
+CHK|CGPR
 CHRM|CGPR
 CHRN|CGPR
 CK2|CGPR
 CLCN|CGPR
 CLIC|CGPR
+CLK|CGPR
 CNG|CGPR
 CNKSR|CGPR
 COL1|CGPR
@@ -172,12 +175,14 @@ Cholinesterase|CGPR
 Clathrin|CGPR
 Cofilin|CGPR
 Cohesin|CGPR
+Creatine_kinase|CGPR
 Cyclin|CGPR
 Cyclin_A|CGPR
 Cyclin_D|CGPR
 Cyclin_E|CGPR
 Cyclophilin|CGPR
 Cytoplasmic_dynein|CGPR
+DAPK|CGPR
 DDR|CGPR
 DGC|CGPR
 DGK|CGPR
@@ -188,10 +193,12 @@ DUSP|CGPR
 DVL|CGPR
 DYRK|CGPR
 Death_receptor|CGPR
+Deoxyribonucleoside_kinases|CGPR
 Desmoglein|CGPR
 E2F|CGPR
 E3_Ub_ligase|CGPR
 EDN|CGPR
+EFN|CGPR
 EGFR_ligand|CGPR
 EGR|CGPR
 EIF2B|CGPR
@@ -202,6 +209,8 @@ EIF4EBP|CGPR
 EIF4G|CGPR
 ELA|CGPR
 ENO|CGPR
+EPHA|CGPR
+EPHB|CGPR
 EPN|CGPR
 ERBB|CGPR
 ERK|CGPR
@@ -213,6 +222,7 @@ ETC_complex_IV|CGPR
 ETC_complex_I_core|CGPR
 ETC_complex_I_supernumerary|CGPR
 ETC_complex_V|CGPR
+ETNK|CGPR
 ETS|CGPR
 EXOC|CGPR
 EXT|CGPR
@@ -356,11 +366,13 @@ MAP2K|CGPR
 MAP3K|CGPR
 MAPK|CGPR
 MCM|CGPR
+MED|CGPR
 MEF2|CGPR
 MEK|CGPR
 MGAT|CGPR
 MKNK|CGPR
 MMP|CGPR
+MOB|CGPR
 MRPL|CGPR
 MRPS|CGPR
 MYH|CGPR
@@ -405,6 +417,7 @@ Na_K_ATPase|CGPR
 Natriuretic_peptide|CGPR
 Neurexins|CGPR
 Neuropeptide_receptor|CGPR
+Neuropeptides|CGPR
 Notch|CGPR
 OGT_family|CGPR
 OR|CGPR
@@ -457,6 +470,7 @@ PFN|CGPR
 PI3K|CGPR
 PI3K_p110|CGPR
 PI3K_p85|CGPR
+PI4K|CGPR
 PIK3R_I|CGPR
 PIM|CGPR
 PKA|CGPR
@@ -518,6 +532,7 @@ RFC|CGPR
 RFX|CGPR
 RGL|CGPR
 RHO|CGPR
+RIPK|CGPR
 RLR|CGPR
 RNApo_I|CGPR
 RNApo_II|CGPR
@@ -526,6 +541,9 @@ ROCK|CGPR
 ROR|CGPR
 RPA|CGPR
 RSK|CGPR
+RSTK|CGPR
+RSTK1|CGPR
+RSTK2|CGPR
 RTK|CGPR
 RXR|CGPR
 RYR|CGPR
@@ -558,6 +576,7 @@ SMURF|CGPR
 SNAI|CGPR
 SOD|CGPR
 SOS|CGPR
+SPHK|CGPR
 SPRED|CGPR
 SPRY|CGPR
 SRC|CGPR
@@ -570,8 +589,10 @@ Sodium_channels|CGPR
 Sodium_voltage_gated_channel_alpha_subunits|CGPR
 Sodium_voltage_gated_channel_beta_subunits|CGPR
 Sulfonylurea_receptor|CGPR
+TAC|CGPR
 TAOK|CGPR
 TAP|CGPR
+TAT_associated_kinase|CGPR
 TCF_LEF|CGPR
 TCR|CGPR
 TEAD|CGPR
@@ -583,10 +604,12 @@ THBS|CGPR
 THR|CGPR
 TIAM|CGPR
 TIF_IB|CGPR
+TK|CGPR
 TLR|CGPR
 TN|CGPR
 TNF|CGPR
 TNFRSF|CGPR
+TOP|CGPR
 TOP2|CGPR
 TPCN|CGPR
 TRP|CGPR

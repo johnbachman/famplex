@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 20:01:2020 17:58
+date: 23:01:2020 22:36
 
 [Term]
 id: FPLX:5_hydroxytryptamine_receptors_ionotropic
@@ -505,6 +505,7 @@ inverse_is_a: HGNC:ALG8
 id: FPLX:AMPK
 name: AMPK
 synonym: "AMPK" EXACT []
+synonym: "AMP-activated" EXACT []
 xref: BEL:"AMP Activated Protein Kinase Complex"
 xref: ECCODE:2.7.11.31
 xref: MEDSCAN:urn:agi-protfc:AMPK
@@ -1192,6 +1193,14 @@ inverse_is_a: HGNC:NAIP
 inverse_is_a: HGNC:XIAP
 
 [Term]
+id: FPLX:BLVR
+name: BLVR
+synonym: "BVR" EXACT []
+is_a: FPLX:root
+inverse_is_a: HGNC:BLVRA
+inverse_is_a: HGNC:BLVRB
+
+[Term]
 id: FPLX:BMP
 name: BMP
 synonym: "BMP" EXACT []
@@ -1422,6 +1431,7 @@ id: FPLX:CAMK
 name: CAMK
 synonym: "CaMK family" EXACT []
 synonym: "CaMK" EXACT []
+synonym: "CAMK" EXACT []
 xref: BEL:"CAMK Family"
 xref: ECCODE:2.7.11.17
 xref: NEXTPROT-FAMILY:03072
@@ -1437,9 +1447,19 @@ id: FPLX:CAMK2_complex
 name: CAMK2-complex
 synonym: "Ca(2+)-calmodulin-dependent protein kinase II" EXACT []
 synonym: "Ca(2+)/calmodulin-dependent kinase II" EXACT []
+synonym: "calmodulindependent kinase II" EXACT []
 synonym: "CaM kinase II" EXACT []
 synonym: "CaMK II" EXACT []
+synonym: "CAMK2" EXACT []
+synonym: "CaMK2" EXACT []
 synonym: "CaMKII" EXACT []
+synonym: "CAMKII" EXACT []
+synonym: "CaM serine/threonine kinase II" EXACT []
+synonym: "CAMK-II" EXACT []
+synonym: "CaMKII protein" EXACT []
+synonym: "CAM-KII" EXACT []
+synonym: "p-CaMKII" EXACT []
+synonym: "CaMK-II" EXACT []
 xref: BEL:"CAMK2 Complex"
 xref: IP:IPR013543
 xref: MEDSCAN:urn:agi-complex:CaM%20kinase%20II
@@ -1456,11 +1476,6 @@ has_part: HGNC:CAMK2G
 [Term]
 id: FPLX:CAMK2_family
 name: CAMK2-family
-synonym: "calmodulindependent kinase II" EXACT []
-synonym: "CAMK2" EXACT []
-synonym: "CaMK2" EXACT []
-synonym: "CAMKII" EXACT []
-synonym: "CaM serine/threonine kinase II" EXACT []
 xref: BEL:"CAMK2 Family"
 xref: IP:IPR013543
 xref: RE:R-HSA-417004
@@ -1801,10 +1816,10 @@ inverse_is_a: HGNC:CDK2
 id: FPLX:CDKN
 name: CDKN
 synonym: "CDKN" EXACT []
-synonym: "CKI" EXACT []
 synonym: "cyclin dependent kinase inhibitors" EXACT []
 synonym: "cyclin-dependent kinase inhibitor" EXACT []
 synonym: "cyclin-dependent protein kinase inhibitors" EXACT []
+synonym: "CKIs" EXACT []
 xref: NCIT:C18492
 xref: XFAM:PF02234
 is_a: FPLX:root
@@ -1816,6 +1831,7 @@ inverse_is_a: HGNC:CDKN3
 id: FPLX:CDKN1
 name: CDKN1
 synonym: "CDKN1" EXACT []
+synonym: "Cdkn1" EXACT []
 xref: IP:IPR003175
 xref: RE:R-HSA-8941923
 xref: RE:R-HSA-8942604
@@ -1933,6 +1949,16 @@ inverse_is_a: HGNC:ACHE
 inverse_is_a: HGNC:BCHE
 
 [Term]
+id: FPLX:CHK
+name: CHK
+synonym: "chk" EXACT []
+synonym: "ethanolamine kinase" EXACT []
+synonym: "choline kinase" EXACT []
+is_a: FPLX:root
+inverse_is_a: HGNC:CHKA
+inverse_is_a: HGNC:CHKB
+
+[Term]
 id: FPLX:CHRM
 name: CHRM
 synonym: "acetylcholine receptor" EXACT []
@@ -2032,6 +2058,16 @@ inverse_is_a: HGNC:CLIC3
 inverse_is_a: HGNC:CLIC4
 inverse_is_a: HGNC:CLIC5
 inverse_is_a: HGNC:CLIC6
+
+[Term]
+id: FPLX:CLK
+name: CLK
+xref: HGNC_GROUP:480
+is_a: FPLX:root
+inverse_is_a: HGNC:CLK1
+inverse_is_a: HGNC:CLK2
+inverse_is_a: HGNC:CLK3
+inverse_is_a: HGNC:CLK4
 
 [Term]
 id: FPLX:CNG
@@ -2331,6 +2367,7 @@ synonym: "Casein kinase 1" EXACT []
 synonym: "casein kinase 1" EXACT []
 synonym: "casein kinase I" EXACT []
 synonym: "CSNK1" EXACT []
+synonym: "CK-I" EXACT []
 xref: BEL:"CSNK1 Family"
 xref: MEDSCAN:urn:agi-protfc:casein%20kinase%20I
 xref: NEXTPROT-FAMILY:03083
@@ -2424,6 +2461,18 @@ inverse_is_a: HGNC:CXCL5
 inverse_is_a: HGNC:CXCL6
 inverse_is_a: HGNC:CXCL8
 inverse_is_a: HGNC:PPBP
+
+[Term]
+id: FPLX:Creatine_kinase
+name: Creatine-kinase
+synonym: "creatine kinase" EXACT []
+is_a: FPLX:root
+inverse_is_a: HGNC:CKB
+inverse_is_a: HGNC:CKBE
+inverse_is_a: HGNC:CKM
+inverse_is_a: HGNC:CKMT1A
+inverse_is_a: HGNC:CKMT1B
+inverse_is_a: HGNC:CKMT2
 
 [Term]
 id: FPLX:Cyclin
@@ -2552,6 +2601,19 @@ has_part: HGNC:DYNLRB1
 has_part: HGNC:DYNLRB2
 
 [Term]
+id: FPLX:DAPK
+name: DAPK
+synonym: "DAPK" EXACT []
+synonym: "DAPk" EXACT []
+xref: HGNC_GROUP:1021
+is_a: FPLX:root
+inverse_is_a: HGNC:DAPK1
+inverse_is_a: HGNC:DAPK2
+inverse_is_a: HGNC:DAPK3
+inverse_is_a: HGNC:STK17A
+inverse_is_a: HGNC:STK17B
+
+[Term]
 id: FPLX:DDR
 name: DDR
 synonym: "discoidin domain receptor family" EXACT []
@@ -2578,6 +2640,17 @@ inverse_is_a: HGNC:TNFRSF10B
 inverse_is_a: HGNC:TNFRSF10C
 inverse_is_a: HGNC:TNFRSF10D
 inverse_is_a: HGNC:FAS
+
+[Term]
+id: FPLX:Deoxyribonucleoside_kinases
+name: Deoxyribonucleoside-kinases
+xref: HGNC_GROUP:1699
+is_a: FPLX:root
+inverse_is_a: HGNC:DCK
+inverse_is_a: HGNC:DGUOK
+inverse_is_a: FPLX:TK
+inverse_is_a: HGNC:TK1
+inverse_is_a: HGNC:TK2
 
 [Term]
 id: FPLX:Desmoglein
@@ -2630,6 +2703,7 @@ synonym: "DAG kinase" EXACT []
 synonym: "DGK" EXACT []
 synonym: "diacyl glycerol kinase" EXACT []
 synonym: "diacylglycerol kinase" EXACT []
+synonym: "Dgk" EXACT []
 xref: BEL:"DGK Family"
 xref: ECCODE:2.7.1.107
 xref: IP:IPR000756
@@ -2774,16 +2848,33 @@ name: EDN
 synonym: "endothelin" EXACT []
 synonym: "endothelins" EXACT []
 xref: BEL:"EDN Family"
+xref: HGNC_GROUP:1908
 xref: IP:IPR001928
 xref: IP:IPR019764
 xref: IP:IPR020475
 xref: MEDSCAN:urn:agi-protfc:endothelin
 xref: XFAM:PF00322
 xref: RE:R-HSA-388544
-is_a: FPLX:root
+is_a: FPLX:Neuropeptides
 inverse_is_a: HGNC:EDN1
 inverse_is_a: HGNC:EDN2
 inverse_is_a: HGNC:EDN3
+
+[Term]
+id: FPLX:EFN
+name: EFN
+synonym: "ephrin" EXACT []
+synonym: "ephrins" EXACT []
+xref: HGNC_GROUP:546
+is_a: FPLX:root
+inverse_is_a: HGNC:EFNA1
+inverse_is_a: HGNC:EFNA2
+inverse_is_a: HGNC:EFNA3
+inverse_is_a: HGNC:EFNA4
+inverse_is_a: HGNC:EFNA5
+inverse_is_a: HGNC:EFNB1
+inverse_is_a: HGNC:EFNB2
+inverse_is_a: HGNC:EFNB3
 
 [Term]
 id: FPLX:EGFR_ligand
@@ -2924,6 +3015,31 @@ inverse_is_a: HGNC:CCL24
 inverse_is_a: HGNC:CCL26
 
 [Term]
+id: FPLX:EPHA
+name: EPHA
+is_a: FPLX:Ephrin_receptor
+inverse_is_a: HGNC:EPHA1
+inverse_is_a: HGNC:EPHA2
+inverse_is_a: HGNC:EPHA3
+inverse_is_a: HGNC:EPHA4
+inverse_is_a: HGNC:EPHA5
+inverse_is_a: HGNC:EPHA6
+inverse_is_a: HGNC:EPHA7
+inverse_is_a: HGNC:EPHA8
+inverse_is_a: HGNC:EPHA10
+
+[Term]
+id: FPLX:EPHB
+name: EPHB
+synonym: "EphB receptor" EXACT []
+is_a: FPLX:Ephrin_receptor
+inverse_is_a: HGNC:EPHB1
+inverse_is_a: HGNC:EPHB2
+inverse_is_a: HGNC:EPHB3
+inverse_is_a: HGNC:EPHB4
+inverse_is_a: HGNC:EPHB6
+
+[Term]
 id: FPLX:Ephrin_receptor
 name: Ephrin-receptor
 synonym: "Eph receptor" EXACT []
@@ -2937,20 +3053,8 @@ xref: IP:IPR027936
 xref: NCIT:C18606
 xref: NEXTPROT-FAMILY:03124
 is_a: FPLX:root
-inverse_is_a: HGNC:EPHA1
-inverse_is_a: HGNC:EPHA2
-inverse_is_a: HGNC:EPHA3
-inverse_is_a: HGNC:EPHA4
-inverse_is_a: HGNC:EPHA5
-inverse_is_a: HGNC:EPHA6
-inverse_is_a: HGNC:EPHA7
-inverse_is_a: HGNC:EPHA8
-inverse_is_a: HGNC:EPHB1
-inverse_is_a: HGNC:EPHB2
-inverse_is_a: HGNC:EPHB3
-inverse_is_a: HGNC:EPHB4
-inverse_is_a: HGNC:EPHB6
-inverse_is_a: HGNC:EPHA10
+inverse_is_a: FPLX:EPHA
+inverse_is_a: FPLX:EPHB
 
 [Term]
 id: FPLX:EPN
@@ -2994,7 +3098,6 @@ synonym: "Erk1/2" EXACT []
 synonym: "ERKs" EXACT []
 synonym: "Extracellular Signal Regulated Kinase" EXACT []
 synonym: "extracellular signal-regulated kinase" EXACT []
-synonym: "MAPK" EXACT []
 synonym: "phospho-ERK1/2" EXACT []
 synonym: "p44 and p42" EXACT []
 synonym: "p42 and p44" EXACT []
@@ -3004,6 +3107,7 @@ synonym: "p42(mapk) and p44(mapk)" EXACT []
 synonym: "p42 and p38 MAPK" EXACT []
 synonym: "p42 and p38 MAP kinases" EXACT []
 synonym: "p42 and p38 MAPKs" EXACT []
+synonym: "p42/44" EXACT []
 xref: BEL:"MAPK Erk1/2 Family"
 xref: BEL:"MAPK Erk1/3 Family"
 xref: IP:IPR008349
@@ -3031,6 +3135,7 @@ id: FPLX:ESR
 name: ESR
 synonym: "ER" EXACT []
 synonym: "ESR" EXACT []
+synonym: "hER" EXACT []
 xref: BEL:"ESR Family"
 is_a: FPLX:root
 inverse_is_a: HGNC:ESR1
@@ -3187,6 +3292,13 @@ xref: GO:0005753
 xref: HGNC_GROUP:644
 xref: MESH:D025261
 is_a: FPLX:root
+
+[Term]
+id: FPLX:ETNK
+name: ETNK
+is_a: FPLX:root
+inverse_is_a: HGNC:ETNK1
+inverse_is_a: HGNC:ETNK2
 
 [Term]
 id: FPLX:ETS
@@ -4805,7 +4917,10 @@ is_a: FPLX:root
 [Term]
 id: FPLX:IKK_complex
 name: IKK-complex
+synonym: "IkappaB kinase" EXACT []
 synonym: "IKK complex" EXACT []
+synonym: "IKK" EXACT []
+synonym: "IκB kinase" EXACT []
 xref: BEL:"IkappaB Kinase Complex"
 xref: MEDSCAN:urn:agi-complex:IKK%20complex
 xref: RE:R-HSA-1168621
@@ -4823,9 +4938,6 @@ has_part: HGNC:IKBKG
 [Term]
 id: FPLX:IKK_family
 name: IKK-family
-synonym: "IkappaB kinase" EXACT []
-synonym: "IKK" EXACT []
-synonym: "IκB kinase" EXACT []
 xref: BEL:"IkappaB Kinase Family"
 xref: NCIT:C104199
 xref: NEXTPROT-FAMILY:03104
@@ -5067,6 +5179,7 @@ synonym: "JNK MAPK" EXACT []
 synonym: "JNK" EXACT []
 synonym: "JNK1/2" EXACT []
 synonym: "JNKs" EXACT []
+synonym: "SAPK" EXACT []
 xref: BEL:"MAPK JNK Family"
 xref: IP:IPR008351
 xref: MEDSCAN:urn:agi-aopfc:0000473
@@ -5523,6 +5636,7 @@ id: FPLX:MAPK
 name: MAPK
 synonym: "MAP kinase" EXACT []
 synonym: "MAP kinases" EXACT []
+synonym: "MAPK" EXACT []
 synonym: "MAPKs" EXACT []
 synonym: "mitogen activated protein kinase" EXACT []
 synonym: "mitogen activated protein kinases" EXACT []
@@ -5559,6 +5673,44 @@ inverse_is_a: HGNC:MCM7
 inverse_is_a: HGNC:MCM8
 inverse_is_a: HGNC:MCM9
 inverse_is_a: HGNC:MCMDC2
+
+[Term]
+id: FPLX:MED
+name: MED
+is_a: FPLX:root
+has_part: HGNC:CCNC
+has_part: HGNC:CDK8
+has_part: HGNC:CDK19
+has_part: HGNC:MED1
+has_part: HGNC:MED29
+has_part: HGNC:MED27
+has_part: HGNC:MED4
+has_part: HGNC:MED24
+has_part: HGNC:MED6
+has_part: HGNC:MED7
+has_part: HGNC:MED8
+has_part: HGNC:MED9
+has_part: HGNC:MED10
+has_part: HGNC:MED11
+has_part: HGNC:MED12
+has_part: HGNC:MED12L
+has_part: HGNC:MED13
+has_part: HGNC:MED13L
+has_part: HGNC:MED14
+has_part: HGNC:MED15
+has_part: HGNC:MED16
+has_part: HGNC:MED17
+has_part: HGNC:MED18
+has_part: HGNC:MED19
+has_part: HGNC:MED20
+has_part: HGNC:MED21
+has_part: HGNC:MED22
+has_part: HGNC:MED23
+has_part: HGNC:MED25
+has_part: HGNC:MED26
+has_part: HGNC:MED28
+has_part: HGNC:MED30
+has_part: HGNC:MED31
 
 [Term]
 id: FPLX:MEF2
@@ -5703,6 +5855,19 @@ inverse_is_a: HGNC:MMP27
 inverse_is_a: HGNC:MMP28
 
 [Term]
+id: FPLX:MOB
+name: MOB
+xref: HGNC_GROUP:647
+is_a: FPLX:root
+inverse_is_a: HGNC:MOB1A
+inverse_is_a: HGNC:MOB1B
+inverse_is_a: HGNC:MOB2
+inverse_is_a: HGNC:MOB3A
+inverse_is_a: HGNC:MOB3B
+inverse_is_a: HGNC:MOB3C
+inverse_is_a: HGNC:MOB4
+
+[Term]
 id: FPLX:MRPL
 name: MRPL
 synonym: "large mitoribosomal subunit" EXACT []
@@ -5837,6 +6002,7 @@ synonym: "Myosin heavy chain" EXACT []
 synonym: "myosin heavy chain" EXACT []
 synonym: "Myosin heavy chains" EXACT []
 synonym: "myosin heavy chains" EXACT []
+synonym: "Mhc" EXACT []
 xref: BEL:"MYH Family"
 xref: MEDSCAN:urn:agi-protfc:myosin%20heavy%20chain
 is_a: FPLX:Myosin_family
@@ -6068,7 +6234,7 @@ synonym: "natriuretic peptide" EXACT []
 synonym: "Natriuretic Peptides" EXACT []
 synonym: "Natriuretic peptides" EXACT []
 synonym: "natriuretic peptides" EXACT []
-is_a: FPLX:root
+is_a: FPLX:Neuropeptides
 inverse_is_a: HGNC:NPPA
 inverse_is_a: HGNC:NPPB
 inverse_is_a: HGNC:NPPC
@@ -6125,6 +6291,76 @@ is_a: FPLX:root
 inverse_is_a: HGNC:NRXN1
 inverse_is_a: HGNC:NRXN2
 inverse_is_a: HGNC:NRXN3
+
+[Term]
+id: FPLX:Neuropeptides
+name: Neuropeptides
+xref: HGNC_GROUP:1902
+is_a: FPLX:root
+inverse_is_a: HGNC:ADCYAP1
+inverse_is_a: HGNC:ADM
+inverse_is_a: HGNC:ADM2
+inverse_is_a: HGNC:AGRP
+inverse_is_a: HGNC:AGT
+inverse_is_a: HGNC:APLN
+inverse_is_a: HGNC:AVP
+inverse_is_a: HGNC:CALCA
+inverse_is_a: HGNC:CALCB
+inverse_is_a: HGNC:CCK
+inverse_is_a: HGNC:CHGA
+inverse_is_a: HGNC:CRH
+inverse_is_a: FPLX:EDN
+inverse_is_a: HGNC:GAL
+inverse_is_a: HGNC:GALP
+inverse_is_a: HGNC:GAST
+inverse_is_a: HGNC:GHRH
+inverse_is_a: HGNC:GHRL
+inverse_is_a: HGNC:GIP
+inverse_is_a: HGNC:GNRH1
+inverse_is_a: HGNC:GNRH2
+inverse_is_a: HGNC:GRP
+inverse_is_a: HGNC:HCRT
+inverse_is_a: HGNC:IAPP
+inverse_is_a: HGNC:IGF1
+inverse_is_a: HGNC:IGF2
+inverse_is_a: HGNC:INS
+inverse_is_a: HGNC:KISS1
+inverse_is_a: HGNC:KNG1
+inverse_is_a: HGNC:LEP
+inverse_is_a: HGNC:MLN
+inverse_is_a: HGNC:NMS
+inverse_is_a: HGNC:NMU
+inverse_is_a: HGNC:NPB
+inverse_is_a: HGNC:NPFF
+inverse_is_a: HGNC:NPS
+inverse_is_a: HGNC:NPVF
+inverse_is_a: HGNC:NPW
+inverse_is_a: HGNC:NPY
+inverse_is_a: HGNC:NTS
+inverse_is_a: HGNC:OXT
+inverse_is_a: HGNC:PDYN
+inverse_is_a: HGNC:PENK
+inverse_is_a: HGNC:PMCH
+inverse_is_a: HGNC:PNOC
+inverse_is_a: HGNC:POMC
+inverse_is_a: HGNC:PPY
+inverse_is_a: HGNC:PRL
+inverse_is_a: HGNC:PRLH
+inverse_is_a: HGNC:PTHLH
+inverse_is_a: HGNC:PYY
+inverse_is_a: HGNC:RLN1
+inverse_is_a: HGNC:RLN2
+inverse_is_a: HGNC:RLN3
+inverse_is_a: HGNC:SCT
+inverse_is_a: HGNC:SST
+inverse_is_a: FPLX:TAC
+inverse_is_a: FPLX:Natriuretic_peptide
+inverse_is_a: HGNC:TRH
+inverse_is_a: HGNC:UCN
+inverse_is_a: HGNC:UCN2
+inverse_is_a: HGNC:UCN3
+inverse_is_a: HGNC:UTS2
+inverse_is_a: HGNC:VIP
 
 [Term]
 id: FPLX:NFAT
@@ -7043,6 +7279,8 @@ synonym: "p38 MAPKs" EXACT []
 synonym: "p38" EXACT []
 synonym: "p38-MAPK" EXACT []
 synonym: "p38MAPK" EXACT []
+synonym: "p-38" EXACT []
+synonym: "p38 SAPK" EXACT []
 xref: BEL:"MAPK p38 Family"
 xref: IP:IPR008352
 xref: MEDSCAN:urn:agi-aopfc:0000477
@@ -7084,6 +7322,7 @@ synonym: "P70RSK" EXACT []
 synonym: "p70RSK" EXACT []
 synonym: "P70S6K" EXACT []
 synonym: "S6K" EXACT []
+synonym: "s6k" EXACT []
 xref: BEL:"RPS6KB Family"
 xref: MEDSCAN:urn:agi-protfc:p70rsk
 is_a: FPLX:RSK
@@ -7404,6 +7643,8 @@ has_part: HGNC:PDGFD
 id: FPLX:PDGFR
 name: PDGFR
 synonym: "PDGFR" EXACT []
+synonym: "derived growth factor" EXACT []
+synonym: "PDGF receptors" EXACT []
 xref: BEL:"PDGFR Family"
 xref: NCIT:C17322
 xref: RE:R-HSA-186769
@@ -7559,6 +7800,9 @@ synonym: "PI 3-kinases" EXACT []
 synonym: "PI3-kinase" EXACT []
 synonym: "PI3K" EXACT []
 synonym: "PI3Kinase" EXACT []
+synonym: "phosphoinositide 3-kinase" EXACT []
+synonym: "phosphoinositide-3 kinase" EXACT []
+synonym: "Phosphoinositide 3-kinase" EXACT []
 xref: BEL:"p85/p110 PI3Kinase Complex"
 xref: MEDSCAN:urn:agi-aopfc:0000447
 xref: MEDSCAN:urn:agi-complex:prophash-285b9ff3749679e4d6266406a20973aa
@@ -7589,6 +7833,15 @@ xref: RE:R-HSA-74688
 is_a: FPLX:PIK3R_I
 inverse_is_a: HGNC:PIK3R1
 inverse_is_a: HGNC:PIK3R2
+
+[Term]
+id: FPLX:PI4K
+name: PI4K
+synonym: "phosphatidylinositol 4-kinase" EXACT []
+synonym: "PI4K" EXACT []
+is_a: FPLX:root
+inverse_is_a: HGNC:PI4KA
+inverse_is_a: HGNC:PI4KB
 
 [Term]
 id: FPLX:PIK3R_I
@@ -8137,6 +8390,8 @@ synonym: "Protein kinase A catalytic subunit" EXACT []
 synonym: "protein kinase A catalytic subunit" EXACT []
 synonym: "Protein kinase A catalytic subunits" EXACT []
 synonym: "protein kinase A catalytic subunits" EXACT []
+synonym: "cAK" EXACT []
+synonym: "PKA C-alpha" EXACT []
 xref: BEL:"PRKA Family"
 xref: SIGNOR:SIGNOR-PF17
 part_of: FPLX:PKA
@@ -8390,6 +8645,8 @@ inverse_is_a: HGNC:IFT22
 id: FPLX:RAC
 name: RAC
 synonym: "RAC" EXACT []
+synonym: "rac" EXACT []
+synonym: "Rac" EXACT []
 xref: BEL:"RAC Family"
 xref: NEXTPROT-FAMILY:03066
 is_a: FPLX:root
@@ -8403,6 +8660,7 @@ id: FPLX:RAF
 name: RAF
 synonym: "RAF" EXACT []
 synonym: "Raf" EXACT []
+synonym: "raf protein" EXACT []
 xref: BEL:"RAF Family"
 xref: NEXTPROT-FAMILY:03114
 xref: RE:R-HSA-5672708
@@ -8636,6 +8894,14 @@ inverse_is_a: HGNC:ARHGDIB
 inverse_is_a: HGNC:ARHGDIG
 
 [Term]
+id: FPLX:RIPK
+name: RIPK
+synonym: "RIPK" EXACT []
+is_a: FPLX:root
+inverse_is_a: HGNC:RIPK1
+inverse_is_a: HGNC:RIPK2
+
+[Term]
 id: FPLX:RLR
 name: RLR
 synonym: "RLRs" EXACT []
@@ -8742,6 +9008,35 @@ synonym: "RSK" EXACT []
 is_a: FPLX:root
 inverse_is_a: FPLX:P90RSK
 inverse_is_a: FPLX:P70S6K
+
+[Term]
+id: FPLX:RSTK
+name: RSTK
+is_a: FPLX:root
+inverse_is_a: FPLX:RSTK1
+inverse_is_a: FPLX:RSTK2
+
+[Term]
+id: FPLX:RSTK1
+name: RSTK1
+is_a: FPLX:RSTK
+inverse_is_a: HGNC:ACVRL1
+inverse_is_a: HGNC:ACVR1
+inverse_is_a: HGNC:ACVR1B
+inverse_is_a: HGNC:ACVR1C
+inverse_is_a: HGNC:BMPR1A
+inverse_is_a: HGNC:BMPR1B
+inverse_is_a: HGNC:TGFBR1
+
+[Term]
+id: FPLX:RSTK2
+name: RSTK2
+is_a: FPLX:RSTK
+inverse_is_a: HGNC:ACVR2A
+inverse_is_a: HGNC:ACVR2B
+inverse_is_a: HGNC:AMHR2
+inverse_is_a: HGNC:BMPR2
+inverse_is_a: HGNC:TGFBR2
 
 [Term]
 id: FPLX:RTK
@@ -9186,6 +9481,16 @@ inverse_is_a: HGNC:SOS1
 inverse_is_a: HGNC:SOS2
 
 [Term]
+id: FPLX:SPHK
+name: SPHK
+synonym: "Sphingosine kinase" EXACT []
+synonym: "sphingosine kinase" EXACT []
+synonym: "SphK" EXACT []
+is_a: FPLX:root
+inverse_is_a: HGNC:SPHK1
+inverse_is_a: HGNC:SPHK2
+
+[Term]
 id: FPLX:SPRED
 name: SPRED
 synonym: "SPRED" EXACT []
@@ -9210,6 +9515,7 @@ inverse_is_a: HGNC:SPRY4
 id: FPLX:SRC
 name: SRC
 synonym: "SFK" EXACT []
+synonym: "SFKs" EXACT []
 synonym: "Src family kinase" EXACT []
 synonym: "Src family" EXACT []
 synonym: "src kinases" EXACT []
@@ -9337,6 +9643,15 @@ has_part: HGNC:ACTL6B
 has_part: HGNC:HLTF
 
 [Term]
+id: FPLX:TAC
+name: TAC
+xref: HGNC_GROUP:1901
+is_a: FPLX:Neuropeptides
+inverse_is_a: HGNC:TAC1
+inverse_is_a: HGNC:TAC3
+inverse_is_a: HGNC:TAC4
+
+[Term]
 id: FPLX:TAOK
 name: TAOK
 xref: SIGNOR:SIGNOR-PF21
@@ -9356,6 +9671,13 @@ is_a: FPLX:root
 inverse_is_a: HGNC:TAP1
 inverse_is_a: HGNC:TAP2
 inverse_is_a: HGNC:ABCB9
+
+[Term]
+id: FPLX:TAT_associated_kinase
+name: TAT-associated-kinase
+is_a: FPLX:root
+has_part: HGNC:CDK9
+has_part: HGNC:CCNT1
 
 [Term]
 id: FPLX:TCF_LEF
@@ -9545,6 +9867,12 @@ has_part: HGNC:TAF1C
 has_part: HGNC:TBP
 
 [Term]
+id: FPLX:TK
+name: TK
+synonym: "dTK" EXACT []
+is_a: FPLX:Deoxyribonucleoside_kinases
+
+[Term]
 id: FPLX:TLR
 name: TLR
 synonym: "TLR" EXACT []
@@ -9621,6 +9949,18 @@ inverse_is_a: HGNC:TNFRSF21
 inverse_is_a: HGNC:TNFRSF25
 
 [Term]
+id: FPLX:TOP
+name: TOP
+synonym: "topoisomerase" EXACT []
+xref: HGNC_GROUP:1050
+is_a: FPLX:root
+inverse_is_a: HGNC:TOP1
+inverse_is_a: HGNC:TOP1MT
+inverse_is_a: FPLX:TOP2
+inverse_is_a: HGNC:TOP3A
+inverse_is_a: HGNC:TOP3B
+
+[Term]
 id: FPLX:TOP2
 name: TOP2
 synonym: "topoisomerase II" EXACT []
@@ -9639,7 +9979,7 @@ xref: IP:IPR024946
 xref: IP:IPR031660
 xref: IP:IPR034157
 xref: NCIT:C18434
-is_a: FPLX:root
+is_a: FPLX:TOP
 inverse_is_a: HGNC:TOP2A
 inverse_is_a: HGNC:TOP2B
 
