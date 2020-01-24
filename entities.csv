@@ -162,6 +162,7 @@ Cytoplasmic_dynein
 DAPK
 DDR
 Death_receptor
+Deoxyribonucleoside_kinases
 Desmoglein
 DGC
 DGK
@@ -516,6 +517,7 @@ RFX
 RGL
 RHO
 RhoGDI
+RIPK
 RLR
 RNApo_I
 RNApo_II
@@ -586,6 +588,7 @@ THR
 Thrombin_antithrombin
 TIAM
 TIF_IB
+TK
 TLR
 TN
 TNF
@@ -620,6 +623,3 @@ Wnt
 Wnt5
 YBX
 ZACN
-Deoxyribonucleoside_kinases
-TK
-RIPK
