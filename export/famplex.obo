@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 23:01:2020 22:36
+date: 27:01:2020 14:12
 
 [Term]
 id: FPLX:5_hydroxytryptamine_receptors_ionotropic
@@ -7919,6 +7919,14 @@ inverse_is_a: HGNC:PKIB
 inverse_is_a: HGNC:PKIG
 
 [Term]
+id: FPLX:PKN
+name: PKN
+is_a: FPLX:root
+inverse_is_a: HGNC:PKN1
+inverse_is_a: HGNC:PKN2
+inverse_is_a: HGNC:PKN3
+
+[Term]
 id: FPLX:PLA2
 name: PLA2
 synonym: "cPLA2" EXACT []
@@ -10463,6 +10471,15 @@ name: ZACN
 xref: HGNC_GROUP:176
 is_a: FPLX:Ligand_gated_ion_channels
 inverse_is_a: HGNC:ZACN
+
+[Term]
+id: FPLX:FPR
+name: FPR
+xref: HGNC_GROUP:198
+is_a: FPLX:root
+inverse_is_a: HGNC:FPR1
+inverse_is_a: HGNC:FPR2
+inverse_is_a: HGNC:FPR3
 
 [Term]
 id: FPLX:root
