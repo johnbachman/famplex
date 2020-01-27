@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 27:01:2020 14:12
+date: 27:01:2020 14:34
 
 [Term]
 id: FPLX:5_hydroxytryptamine_receptors_ionotropic
@@ -3524,6 +3524,15 @@ inverse_is_a: HGNC:FOXO1
 inverse_is_a: HGNC:FOXO3
 inverse_is_a: HGNC:FOXO4
 inverse_is_a: HGNC:FOXO6
+
+[Term]
+id: FPLX:FPR
+name: FPR
+xref: HGNC_GROUP:198
+is_a: FPLX:root
+inverse_is_a: HGNC:FPR1
+inverse_is_a: HGNC:FPR2
+inverse_is_a: HGNC:FPR3
 
 [Term]
 id: FPLX:FSH
@@ -10471,15 +10480,6 @@ name: ZACN
 xref: HGNC_GROUP:176
 is_a: FPLX:Ligand_gated_ion_channels
 inverse_is_a: HGNC:ZACN
-
-[Term]
-id: FPLX:FPR
-name: FPR
-xref: HGNC_GROUP:198
-is_a: FPLX:root
-inverse_is_a: HGNC:FPR1
-inverse_is_a: HGNC:FPR2
-inverse_is_a: HGNC:FPR3
 
 [Term]
 id: FPLX:root
