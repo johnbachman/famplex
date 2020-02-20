@@ -1,5 +1,6 @@
 import os
 import csv
+from collections import Counter
 from indra.databases import hgnc_client
 
 
@@ -8,13 +9,10 @@ entities_file = os.path.join(path_this, os.pardir, 'entities.csv')
 groundings_file = os.path.join(path_this, os.pardir, 'grounding_map.csv')
 
 
-def _get_entities():
-    with open(entities_file, 'r') as fh:
-        return {l.strip(): 'FamilyOrComplex' for l in fh.readlines()}
-
-
 def _get_groundings():
     groundings = []
+    fplx_groundings = []
+    text_appearances = []
     with open(groundings_file, 'r') as f:
         csvreader = csv.reader(f, delimiter=str(u','),
                                lineterminator='\r\n',
@@ -22,10 +20,12 @@ def _get_groundings():
                                quotechar=str(u'"'))
         for row in csvreader:
             txt = row[0]
+            text_appearances.append(txt)
             grounding_dict = {ns: id for ns, id in zip(row[1::2], row[2::2])}
             if 'FPLX' in grounding_dict:
                 groundings.append((txt, grounding_dict['FPLX'], 'fplx',
                                    'FamilyOrComplex'))
+                fplx_groundings.append((txt, grounding_dict['FPLX']))
             elif 'UP' in grounding_dict:
                 groundings.append((txt, grounding_dict['UP'], 'uniprot',
                                    'Gene_or_gene_product'))
@@ -51,22 +51,23 @@ def _get_groundings():
                 for ns, type in mappings.items():
                     if ns in grounding_dict:
                         groundings.append((txt, grounding_dict[ns],
-                                           ns.lower(), 'Simple_chemical'))
+                                           ns.lower(), type))
                         break
                 else:
                     print(txt, grounding_dict)
-        groundings = sorted(groundings)
-        return groundings
+    cnt = Counter(text_appearances)
+    ambiguous_txts = {t for t, c in cnt.items() if c >= 2}
+    groundings = [g for g in sorted(groundings) if g[0] not in ambiguous_txts]
+    return groundings
 
 
 if __name__ == '__main__':
-    entities = _get_entities()
+    groundings = _get_groundings()
     entities_export = os.path.join(path_this, 'famplex.tsv')
     with open(entities_export, 'w') as fh:
-        fh.write('\n'.join([('%s\t%s' % (e, t))
-                            for e, t in entities.items()]))
+        fh.write('\n'.join([('%s\t%s' % (text, id))
+                            for text, id, db, type in groundings]))
 
-    groundings = _get_groundings()
     groundings_export = os.path.join(path_this, 'famplex_groundings.tsv')
     with open(groundings_export, 'w') as fh:
         fh.write('\n'.join(['\t'.join(entries) for entries in groundings]))

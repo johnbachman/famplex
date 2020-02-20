@@ -17,8 +17,6 @@ A2t	Annexin_II_heterotetramer	fplx	FamilyOrComplex
 ABA	CHEBI:2365	chebi	Simple_chemical
 ABL	ABL_family	fplx	FamilyOrComplex
 ABL family	ABL_family	fplx	FamilyOrComplex
-AC	D000230	mesh	Simple_chemical
-AC	Q08828	uniprot	Gene_or_gene_product
 ACAD	ACAD	fplx	FamilyOrComplex
 ACC	ACC	fplx	FamilyOrComplex
 ACCs	ACC	fplx	FamilyOrComplex
@@ -38,8 +36,6 @@ ALG10	ALG10	fplx	FamilyOrComplex
 ALIX	Q8WUM4	uniprot	Gene_or_gene_product
 ALK	Q9UM73	uniprot	Gene_or_gene_product
 ALS	P35858	uniprot	Gene_or_gene_product
-AM	D000650	mesh	Simple_chemical
-AM	P35318	uniprot	Gene_or_gene_product
 AMG655	C554537	mesh	Simple_chemical
 AMLC	MYL_alkali	fplx	FamilyOrComplex
 AMP	CHEBI:16027	chebi	Simple_chemical
@@ -148,8 +144,6 @@ APC	P25054	uniprot	Gene_or_gene_product
 APC/C	APC_C	fplx	FamilyOrComplex
 AQP9	AQP9	hgnc	Gene_or_gene_product
 AR	P10275	uniprot	Gene_or_gene_product
-ARF	ARF_GTPase_family	fplx	FamilyOrComplex
-ARF	Q8N726	uniprot	Gene_or_gene_product
 ASK1	Q99683	uniprot	Gene_or_gene_product
 ASPP1	Q96KQ4	uniprot	Gene_or_gene_product
 ASPP2	Q13625	uniprot	Gene_or_gene_product
@@ -211,8 +205,6 @@ Autophagy	GO:0006914	go	Simple_chemical
 Axin	AXIN	fplx	FamilyOrComplex
 Aβ	P05067	uniprot	Gene_or_gene_product
 B-Raf	P15056	uniprot	Gene_or_gene_product
-B1	O43157	uniprot	Gene_or_gene_product
-B1	P14635	uniprot	Gene_or_gene_product
 B3GAT	B3GAT	fplx	FamilyOrComplex
 BAD	Q92934	uniprot	Gene_or_gene_product
 BARK	ADRBK	fplx	FamilyOrComplex
@@ -482,8 +474,6 @@ Doxorubicin	CHEBI:28748	chebi	Simple_chemical
 Drp-1	DNM1L	hgnc	Gene_or_gene_product
 Dvl	DVL	fplx	FamilyOrComplex
 E-cadherin	P12830	uniprot	Gene_or_gene_product
-E2	P27958	uniprot	Gene_or_gene_product
-E2	UBE2	fplx	FamilyOrComplex
 E2 enzyme	UBE2	fplx	FamilyOrComplex
 E2 ubiquitin-conjugating enzyme	UBE2	fplx	FamilyOrComplex
 E2F	E2F	fplx	FamilyOrComplex
@@ -513,9 +503,6 @@ ELR-negative CXC family	CXCL_ELR_negative	fplx	FamilyOrComplex
 ELR-positive CXC chemokine	CXCL_ELR_positive	fplx	FamilyOrComplex
 ELR-positive CXC family	CXCL_ELR_positive	fplx	FamilyOrComplex
 EMT	GO:0001837	go	Simple_chemical
-ER	ESR	fplx	FamilyOrComplex
-ER	GO:0005783	go	Simple_chemical
-ER	P03372	uniprot	Gene_or_gene_product
 ERBB2	P04626	uniprot	Gene_or_gene_product
 ERK	ERK	fplx	FamilyOrComplex
 ERK 1/2	ERK	fplx	FamilyOrComplex
@@ -831,12 +818,8 @@ IFI16	Q16666	uniprot	Gene_or_gene_product
 IFN	Interferon	fplx	FamilyOrComplex
 IFN-a	IFNA	fplx	FamilyOrComplex
 IFN-alpha	IFNA	fplx	FamilyOrComplex
-IFN-beta	IFNB	fplx	FamilyOrComplex
-IFN-beta	P01574	uniprot	Gene_or_gene_product
 IFN-gamma	P01579	uniprot	Gene_or_gene_product
 IFN-α	IFNA	fplx	FamilyOrComplex
-IFN-β	IFNB	fplx	FamilyOrComplex
-IFN-β	P01574	uniprot	Gene_or_gene_product
 IFN-γ	P01579	uniprot	Gene_or_gene_product
 IFNGR	Interferon_gamma_receptor	fplx	FamilyOrComplex
 IFNalpha	IFNA	fplx	FamilyOrComplex
@@ -879,8 +862,6 @@ IL-8	P10145	uniprot	Gene_or_gene_product
 IL1 family	IL1	fplx	FamilyOrComplex
 IL12	IL12	fplx	FamilyOrComplex
 IQGAP1	P46940	uniprot	Gene_or_gene_product
-IR	D011839	mesh	Simple_chemical
-IR	P06213	uniprot	Gene_or_gene_product
 IRF3	Q14653	uniprot	Gene_or_gene_product
 IRS	IRS	fplx	FamilyOrComplex
 IRS family	IRS	fplx	FamilyOrComplex
@@ -955,13 +936,8 @@ Liver X receptor	LXR	fplx	FamilyOrComplex
 Liver X receptors	LXR	fplx	FamilyOrComplex
 Luteinizing hormone	LH	fplx	FamilyOrComplex
 Ly49D	Q60651	uniprot	Gene_or_gene_product
-MA	CHEBI:66682	chebi	Simple_chemical
-MA	CHEBI:6809	chebi	Simple_chemical
-MA	P04591	uniprot	Gene_or_gene_product
 MAC	MAC	fplx	FamilyOrComplex
 MAC-1 (integrin)	Integrins	fplx	FamilyOrComplex
-MAF	MAF	fplx	FamilyOrComplex
-MAF	O75444	uniprot	Gene_or_gene_product
 MAP kinase	MAPK	fplx	FamilyOrComplex
 MAP kinases	MAPK	fplx	FamilyOrComplex
 MAP2K1	Q02750	uniprot	Gene_or_gene_product
@@ -1009,8 +985,6 @@ MMP-2	P08253	uniprot	Gene_or_gene_product
 MMP-9	P14780	uniprot	Gene_or_gene_product
 MMP9	P14780	uniprot	Gene_or_gene_product
 MMPs	MMP	fplx	FamilyOrComplex
-MNK	ATP7A	hgnc	Gene_or_gene_product
-MNK	MKNK	fplx	FamilyOrComplex
 MNK1 and MNK2	MKNK	fplx	FamilyOrComplex
 MNK1 and MNK2 kinases	MKNK	fplx	FamilyOrComplex
 MST1	Q13043	uniprot	Gene_or_gene_product
@@ -1025,8 +999,6 @@ MYST family	MYST	fplx	FamilyOrComplex
 MYST histone acetylase	MYST	fplx	FamilyOrComplex
 MYST proteins	MYST	fplx	FamilyOrComplex
 Mad2	Q13257	uniprot	Gene_or_gene_product
-Maf	MAF	fplx	FamilyOrComplex
-Maf	O75444	uniprot	Gene_or_gene_product
 Maf subfamily	MAF	fplx	FamilyOrComplex
 Mcl-1	Q07820	uniprot	Gene_or_gene_product
 Mdm2	Q00987	uniprot	Gene_or_gene_product
@@ -1042,8 +1014,6 @@ Mitochondrial ribosomes	Mitochondrial_Ribosome	fplx	FamilyOrComplex
 Mitoribosome	Mitochondrial_Ribosome	fplx	FamilyOrComplex
 Miz1	Q13105	uniprot	Gene_or_gene_product
 Mn	CHEBI:29035	chebi	Simple_chemical
-Mnk	ATP7A	hgnc	Gene_or_gene_product
-Mnk	MKNK	fplx	FamilyOrComplex
 Mnk1 and Mnk2	MKNK	fplx	FamilyOrComplex
 Mnk1 and Mnk2 kinases	MKNK	fplx	FamilyOrComplex
 Mu-A	375150	pubchem	Simple_chemical
@@ -1191,8 +1161,6 @@ Nuclear Receptor Co-Repressor	NCOR	fplx	FamilyOrComplex
 Nuclear factor erythroid 2-related factor	NFE	fplx	FamilyOrComplex
 Nuclear receptor corepressor	NCOR	fplx	FamilyOrComplex
 Nutlin-3	CHEBI:46742	chebi	Simple_chemical
-OA	CHEBI:37659	chebi	Simple_chemical
-OA	CHEBI:44658	chebi	Simple_chemical
 OPG	O00300	uniprot	Gene_or_gene_product
 OPN	P10451	uniprot	Gene_or_gene_product
 P-REX1	Q8TCU6	uniprot	Gene_or_gene_product
@@ -1223,8 +1191,6 @@ PBXs	PBX	fplx	FamilyOrComplex
 PCNA	P12004	uniprot	Gene_or_gene_product
 PCTAIRE	CDK16	hgnc	Gene_or_gene_product
 PD	D010300	mesh	Simple_chemical
-PD-1	PDCD1	hgnc	Gene_or_gene_product
-PD-1	Q15116	uniprot	Gene_or_gene_product
 PD98509	CHEBI:79091	chebi	Simple_chemical
 PDE	PDE	fplx	FamilyOrComplex
 PDE 2	PDE2A	hgnc	Gene_or_gene_product
@@ -1280,8 +1246,6 @@ PDGFRαβ	PDGFR_AB	fplx	FamilyOrComplex
 PDGFRβ	P09619	uniprot	Gene_or_gene_product
 PDGFRββ	PDGFR_BB	fplx	FamilyOrComplex
 PDH	PDH	fplx	FamilyOrComplex
-PDK	O15530	uniprot	Gene_or_gene_product
-PDK	PDK	fplx	FamilyOrComplex
 PDK1	O15530	uniprot	Gene_or_gene_product
 PDKs	PDK	fplx	FamilyOrComplex
 PDPK1	O15530	uniprot	Gene_or_gene_product
@@ -1355,8 +1319,6 @@ PP1C	PPP1C	fplx	FamilyOrComplex
 PP1R	PPP1R	fplx	FamilyOrComplex
 PP1c	PPP1C	fplx	FamilyOrComplex
 PP1r	PPP1R	fplx	FamilyOrComplex
-PP2	CHEBI:78331	chebi	Simple_chemical
-PP2	PPP2	fplx	FamilyOrComplex
 PP2 phosphatases	PPP2	fplx	FamilyOrComplex
 PP242	CHEBI:90679	chebi	Simple_chemical
 PP2A	PPP2	fplx	FamilyOrComplex
@@ -1376,8 +1338,6 @@ PPP1	PPP1	fplx	FamilyOrComplex
 PPP1C	PPP1C	fplx	FamilyOrComplex
 PR	P06401	uniprot	Gene_or_gene_product
 PRAS40	Q96B36	uniprot	Gene_or_gene_product
-PRC1	O43663	uniprot	Gene_or_gene_product
-PRC1	PRC1_complex	fplx	FamilyOrComplex
 PRC2	PRC2_complex	fplx	FamilyOrComplex
 PRKAA	AMPK_alpha	fplx	FamilyOrComplex
 PRKAB	AMPK_beta	fplx	FamilyOrComplex
@@ -1488,8 +1448,6 @@ RAD51	Q06609	uniprot	Gene_or_gene_product
 RAF	RAF	fplx	FamilyOrComplex
 RAF inhibitors	CHEBI:75047	chebi	Simple_chemical
 RAGE	Q15109	uniprot	Gene_or_gene_product
-RAL	RAL	fplx	FamilyOrComplex
-RAL	RALA	hgnc	Gene_or_gene_product
 RAL family	RAL	fplx	FamilyOrComplex
 RAL guanine nucleotide dissociation stimulator like	RGL	fplx	FamilyOrComplex
 RAL isoforms	RAL	fplx	FamilyOrComplex
@@ -1537,8 +1495,6 @@ ROCK1	Q13464	uniprot	Gene_or_gene_product
 ROCK2	O75116	uniprot	Gene_or_gene_product
 ROR	ROR	fplx	FamilyOrComplex
 RORs	ROR	fplx	FamilyOrComplex
-ROS	D017382	mesh	Simple_chemical
-ROS	P08922	uniprot	Gene_or_gene_product
 RP-1	RP1	hgnc	Gene_or_gene_product
 RP1	RP1	hgnc	Gene_or_gene_product
 RPA	RPA	fplx	FamilyOrComplex
@@ -1553,8 +1509,6 @@ Rab	RAB	fplx	FamilyOrComplex
 Rab GTPase	RAB	fplx	FamilyOrComplex
 Rab GTPases	RAB	fplx	FamilyOrComplex
 Rabs	RAB	fplx	FamilyOrComplex
-Rac	P63000	uniprot	Gene_or_gene_product
-Rac	RAC	fplx	FamilyOrComplex
 Rac1	P63000	uniprot	Gene_or_gene_product
 Rad51	Q06609	uniprot	Gene_or_gene_product
 Rad52	P43351	uniprot	Gene_or_gene_product
@@ -1640,8 +1594,6 @@ SOD	SOD	fplx	FamilyOrComplex
 SOS	SOS	fplx	FamilyOrComplex
 SOS1	Q07889	uniprot	Gene_or_gene_product
 SOX2	P48431	uniprot	Gene_or_gene_product
-SP600125	CHEBI:90695	chebi	Simple_chemical
-SP600125	CHEBI:90695	chebi	Simple_chemical
 SPC	CHEBI:17689	chebi	Simple_chemical
 SPRED	SPRED	fplx	FamilyOrComplex
 SPRY	SPRY	fplx	FamilyOrComplex
@@ -1661,8 +1613,6 @@ STAT5	STAT5	fplx	FamilyOrComplex
 STATs	STAT	fplx	FamilyOrComplex
 STING	Q86WV6	uniprot	Gene_or_gene_product
 STT3	STT3	fplx	FamilyOrComplex
-STZ	29327	pubchem	Simple_chemical
-STZ	Q11206	uniprot	Gene_or_gene_product
 SUR	Sulfonylurea_receptor	fplx	FamilyOrComplex
 SWI and SNF complex	SWI_SNF	fplx	FamilyOrComplex
 SWI/SNF	SWI_SNF	fplx	FamilyOrComplex
@@ -1706,8 +1656,6 @@ Src kinase	P12931	uniprot	Gene_or_gene_product
 Src-1	NCOA1	hgnc	Gene_or_gene_product
 Src-homology	D018909	mesh	Simple_chemical
 Src-kinases	SRC	fplx	FamilyOrComplex
-StAR	P49675	uniprot	Gene_or_gene_product
-StAR	STAR	hgnc	Gene_or_gene_product
 StaR	STAR	hgnc	Gene_or_gene_product
 Star	STAR	hgnc	Gene_or_gene_product
 Stat3	P40763	uniprot	Gene_or_gene_product
@@ -1815,7 +1763,6 @@ Tcf/Lef	TCF_LEF	fplx	FamilyOrComplex
 Temozolomide	CHEBI:72564	chebi	Simple_chemical
 Tenascin	TN	fplx	FamilyOrComplex
 Thiazolidinediones	CHEBI:50990	chebi	Simple_chemical
-Thioredoxin	P10599	uniprot	Gene_or_gene_product
 Thioredoxin	TXN	fplx	FamilyOrComplex
 Thioredoxin reductase	TXNRD	fplx	FamilyOrComplex
 Thrombospondin	THBS	fplx	FamilyOrComplex
@@ -2088,10 +2035,6 @@ cell adhesion	GO:0007155	go	Simple_chemical
 cell cycle	GO:0007049	go	Simple_chemical
 cell death	GO:0008219	go	Simple_chemical
 cell growth	GO:0016049	go	Simple_chemical
-cell migration	GO:0016477	go	Simple_chemical
-cell migration	GO:0016477	go	Simple_chemical
-cell motility	GO:0016477	go	Simple_chemical
-cell motility	GO:0048870	go	Simple_chemical
 cell proliferation	GO:0008283	go	Simple_chemical
 cell survival	D002470	mesh	Simple_chemical
 cell viability	D002470	mesh	Simple_chemical
@@ -2417,8 +2360,6 @@ mTOR inhibitor	CHEBI:68481	chebi	Simple_chemical
 mTOR inhibitors	CHEBI:68481	chebi	Simple_chemical
 mTORC1	mTORC1	fplx	FamilyOrComplex
 mTORC2	mTORC2	fplx	FamilyOrComplex
-maf	MAF	fplx	FamilyOrComplex
-maf	O75444	uniprot	Gene_or_gene_product
 mammalian mitochondrial ribosome	Mitochondrial_Ribosome	fplx	FamilyOrComplex
 mammalian target of rapamycin	P42345	uniprot	Gene_or_gene_product
 mangiferin	CHEBI:6682	chebi	Simple_chemical
@@ -2531,8 +2472,6 @@ p38-MAPK	p38	fplx	FamilyOrComplex
 p38MAPK	p38	fplx	FamilyOrComplex
 p38b	MAPK11	hgnc	Gene_or_gene_product
 p40 phox	Q15080	uniprot	Gene_or_gene_product
-p42	P28482	uniprot	Gene_or_gene_product
-p42	Q9UQ80	uniprot	Gene_or_gene_product
 p42 and p38 MAP kinases	ERK	fplx	FamilyOrComplex
 p42 and p38 MAPK	ERK	fplx	FamilyOrComplex
 p42 and p38 MAPKs	ERK	fplx	FamilyOrComplex
@@ -2743,8 +2682,6 @@ temozolomide	CHEBI:72564	chebi	Simple_chemical
 tenascin	TN	fplx	FamilyOrComplex
 thapsigargin	CHEBI:9516	chebi	Simple_chemical
 thiazolidinediones	CHEBI:50990	chebi	Simple_chemical
-thiazolidinediones	CHEBI:50990	chebi	Simple_chemical
-thioredoxin	P10599	uniprot	Gene_or_gene_product
 thioredoxin	TXN	fplx	FamilyOrComplex
 thioredoxin reductase	TXNRD	fplx	FamilyOrComplex
 thioredoxins	TXN	fplx	FamilyOrComplex
