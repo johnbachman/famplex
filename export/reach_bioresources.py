@@ -37,22 +37,24 @@ def _get_groundings():
                 else:
                     groundings.append((txt, grounding_dict['HGNC'], 'hgnc',
                                        'Gene_or_gene_product'))
-            elif 'CHEBI' in grounding_dict:
-                groundings.append((txt, grounding_dict['CHEBI'], 'chebi',
-                                   'Simple_chemical'))
-            elif 'PUBCHEM' in grounding_dict:
-                groundings.append((txt, grounding_dict['PUBCHEM'], 'pubchem',
-                                   'Simple_chemical'))
-            elif 'GO' in grounding_dict:
-                # TODO: should some GO mappings have a different type based
-                # on the domain of GO they appear in?
-                groundings.append((txt, grounding_dict['GO'], 'go',
-                                   'BioProcess'))
-            elif 'MESH' in grounding_dict:
-                groundings.append((txt, grounding_dict['MESH'], 'mesh',
-                                   'BioProcess'))
+            elif 'IP' in grounding_dict:
+                groundings.append((txt, grounding_dict['IP'],
+                                   'interpro', 'FamilyOrComplex'))
             else:
-                print(txt, grounding_dict)
+                mappings = {'CHEBI': 'Simple_chemical',
+                            'PUBCHEM': 'Simple_chemical',
+                            'CHEMBL': 'Simple_chemical',
+                            'HMDB': 'Simple_chemical',
+                            'GO': 'BioProcess',
+                            'MESH': 'BioProcess',
+                            'NCIT': 'BioProcess'}
+                for ns, type in mappings.items():
+                    if ns in grounding_dict:
+                        groundings.append((txt, grounding_dict[ns],
+                                           ns.lower(), 'Simple_chemical'))
+                        break
+                else:
+                    print(txt, grounding_dict)
         return groundings
 
 
