@@ -24,7 +24,7 @@ def _get_groundings():
             txt = row[0]
             grounding_dict = {ns: id for ns, id in zip(row[1::2], row[2::2])}
             if 'FPLX' in grounding_dict:
-                groundings.append((txt, grounding_dict['FPLX'], 'FPLX',
+                groundings.append((txt, grounding_dict['FPLX'], 'fplx',
                                    'FamilyOrComplex'))
             elif 'UP' in grounding_dict:
                 groundings.append((txt, grounding_dict['UP'], 'uniprot',
