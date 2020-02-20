@@ -11,7 +11,6 @@ groundings_file = os.path.join(path_this, os.pardir, 'grounding_map.csv')
 
 def _get_groundings():
     groundings = []
-    fplx_groundings = []
     text_appearances = []
     with open(groundings_file, 'r') as f:
         csvreader = csv.reader(f, delimiter=str(u','),
@@ -25,7 +24,6 @@ def _get_groundings():
             if 'FPLX' in grounding_dict:
                 groundings.append((txt, grounding_dict['FPLX'], 'fplx',
                                    'FamilyOrComplex'))
-                fplx_groundings.append((txt, grounding_dict['FPLX']))
             elif 'UP' in grounding_dict:
                 groundings.append((txt, grounding_dict['UP'], 'uniprot',
                                    'Gene_or_gene_product'))
@@ -66,7 +64,8 @@ if __name__ == '__main__':
     entities_export = os.path.join(path_this, 'famplex.tsv')
     with open(entities_export, 'w') as fh:
         fh.write('\n'.join([('%s\t%s' % (text, id))
-                            for text, id, db, type in groundings]))
+                            for text, id, db, type in groundings
+                            if db == 'fplx']))
 
     groundings_export = os.path.join(path_this, 'famplex_groundings.tsv')
     with open(groundings_export, 'w') as fh:
