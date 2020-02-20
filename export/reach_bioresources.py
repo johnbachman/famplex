@@ -55,6 +55,7 @@ def _get_groundings():
                         break
                 else:
                     print(txt, grounding_dict)
+        groundings = sorted(groundings)
         return groundings
 
 
