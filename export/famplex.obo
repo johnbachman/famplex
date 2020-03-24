@@ -1608,6 +1608,7 @@ inverse_is_a: HGNC:CAV3
 [Term]
 id: FPLX:CBF3
 name: CBF3
+def: "SKP1 (together with SKP2) was identified as an essential component of the cyclin A-CDK2 S phase kinase complex" [interpro:IPR016072]
 synonym: "CBF3 complex" EXACT []
 synonym: "CBF3" EXACT []
 synonym: "kinetochore centromere binding factor 3" EXACT []
