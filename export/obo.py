@@ -14,7 +14,8 @@ Synonym = collections.namedtuple('Synonym', ['name', 'status'])
 
 
 class OboTerm(object):
-    def __init__(self, term_id, name, rels, synonyms=None, xrefs=None, description=None, provenance=None):
+    def __init__(self, term_id, name, rels, synonyms=None, xrefs=None,
+                 description=None, provenance=None):
         self.term_id = term_id
         self.name = name
         self.description = description
