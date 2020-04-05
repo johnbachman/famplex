@@ -182,3 +182,7 @@ To preserve correct newlines, take the following steps:
 
 3. If editing the files on Linux, post-process files using ```unix2dos``` or a
    similar program.
+
+When you're done, run `tox` to verify the integrity of the updates you've
+made and to generate new exports of the HGNC identifier map, OBO, and a BEL
+namespace.
