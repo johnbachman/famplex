@@ -5,11 +5,10 @@ from indra.databases import hgnc_client
 
 
 path_this = os.path.dirname(os.path.abspath(__file__))
-entities_file = os.path.join(path_this, os.pardir, 'entities.csv')
 groundings_file = os.path.join(path_this, os.pardir, 'grounding_map.csv')
 
 
-def _get_groundings():
+def get_groundings():
     groundings = []
     text_appearances = []
     with open(groundings_file, 'r') as f:
@@ -60,13 +59,15 @@ def _get_groundings():
 
 
 if __name__ == '__main__':
-    groundings = _get_groundings()
-    entities_export = os.path.join(path_this, 'famplex.tsv')
-    with open(entities_export, 'w') as fh:
+    groundings = get_groundings()
+    famplex_grounding_export = os.path.join(path_this,
+                                            'famplex_groundings.tsv')
+    with open(famplex_grounding_export, 'w') as fh:
         fh.write('\n'.join([('%s\t%s' % (text, id))
                             for text, id, db, type in groundings
                             if db == 'fplx']))
 
-    groundings_export = os.path.join(path_this, 'famplex_groundings.tsv')
-    with open(groundings_export, 'w') as fh:
+    grounding_overrides_export = os.path.join(path_this,
+        'famplex_grounding_overrides.tsv')
+    with open(grounding_overrides_export, 'w') as fh:
         fh.write('\n'.join(['\t'.join(entries) for entries in groundings]))
