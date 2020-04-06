@@ -23,15 +23,18 @@ script:
   - python export/obo.py
   - python export/hgnc_ids.py
   - python export/belns.py
+  - python export/reach_bioresources.py
   - export belns_diff=$(git diff -U0 export/famplex.belns | egrep "^[\+-][^\+-]")
   - export belns=$(echo "$belns_diff" | egrep -v "^[\+-](VersionString|CreatedDateTime)")
   - export obo_diff=$(git diff -U0 export/famplex.obo | egrep "^[\+-][^\+-]")
   - export obo=$(echo "$obo_diff" | egrep -v "^[\+-]date")
   - export hgnc=$(git diff -U0 export/hgnc_symbol_map.csv | egrep "^[\+-][^\+-]")
-  - if [[ ! -z $belns ]] || [[ ! -z $obo ]] || [[ ! -z $hgnc ]]; then
+  - export reach=$(git diff -U0 export/famplex_groundings.tsv | egrep "^[\+-][^\+-]")
+  - if [[ ! -z $belns ]] || [[ ! -z $obo ]] || [[ ! -z $hgnc ]] || [[ ! -z $reach ]]; then
       echo "FAIL exports have not been updated";
       echo $belns;
       echo $obo;
       echo $hgnc;
+      echo $reach
       exit 1;
     fi
