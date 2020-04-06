@@ -22,7 +22,8 @@ def get_groundings():
             grounding_dict = {ns: id for ns, id in zip(row[1::2], row[2::2])}
             if 'FPLX' in grounding_dict:
                 groundings.append((txt, grounding_dict['FPLX'], 'fplx',
-                                   'FamilyOrComplex'))
+                                   #'FamilyOrComplex'))
+                                   'Family'))
             elif 'UP' in grounding_dict:
                 groundings.append((txt, grounding_dict['UP'], 'uniprot',
                                    'Gene_or_gene_product'))
@@ -60,14 +61,7 @@ def get_groundings():
 
 if __name__ == '__main__':
     groundings = get_groundings()
-    famplex_grounding_export = os.path.join(path_this,
-                                            'famplex_groundings.tsv')
-    with open(famplex_grounding_export, 'w') as fh:
-        fh.write('\n'.join([('%s\t%s' % (text, id))
-                            for text, id, db, type in groundings
-                            if db == 'fplx']))
-
-    grounding_overrides_export = os.path.join(path_this,
-        'famplex_grounding_overrides.tsv')
-    with open(grounding_overrides_export, 'w') as fh:
+    grounding_export = os.path.join(path_this,
+        'famplex_groundings.tsv')
+    with open(grounding_export, 'w') as fh:
         fh.write('\n'.join(['\t'.join(entries) for entries in groundings]))
