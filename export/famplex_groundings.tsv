@@ -1151,6 +1151,7 @@ Net1	Q7Z628	uniprot	Gene_or_gene_product
 Neuregulin	NRG	fplx	Family
 Neuregulins	NRG	fplx	Family
 Neurexins	Neurexins	fplx	Family
+Neuroregulin	NRG	fplx	Family
 Neutrophils	D009504	mesh	BioProcess
 Notch	Notch	fplx	Family
 Notch1	P46531	uniprot	Gene_or_gene_product
@@ -2429,6 +2430,7 @@ neuropeptide receptor	Neuropeptide_receptor	fplx	Family
 neuropeptide receptors	Neuropeptide_receptor	fplx	Family
 neuropeptides B and W receptor	NPBWR	fplx	Family
 neuropeptides B and W receptors	NPBWR	fplx	Family
+neuroregulin	NRG	fplx	Family
 neutrophils	D009504	mesh	BioProcess
 nicotine class acetylcholine receptors	CHRN	fplx	Family
 nicotinic acetylcholine receptor	CHRN	fplx	Family

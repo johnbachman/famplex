@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 27:01:2020 14:34
+date: 11:04:2020 00:32
 
 [Term]
 id: FPLX:5_hydroxytryptamine_receptors_ionotropic
@@ -6605,6 +6605,8 @@ synonym: "Neuregulin" EXACT []
 synonym: "neuregulin" EXACT []
 synonym: "Neuregulins" EXACT []
 synonym: "neuregulins" EXACT []
+synonym: "neuroregulin" EXACT []
+synonym: "Neuroregulin" EXACT []
 synonym: "NRGs" EXACT []
 xref: MEDSCAN:urn:agi-protfc:neuregulin%20family
 xref: XFAM:PF02158
