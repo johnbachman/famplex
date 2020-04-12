@@ -1310,7 +1310,6 @@ HGNC,IKBKG,isa,FPLX,IKK_family
 HGNC,IKBKE,isa,FPLX,IKK_family
 HGNC,TBK1,isa,FPLX,IKK_family
 HGNC,IGF1R,isa,FPLX,INSR
-HGNC,INS,isa,FPLX,INS
 HGNC,INSR,isa,FPLX,INSR
 HGNC,INSRR,isa,FPLX,INSR
 HGNC,IRS1,isa,FPLX,IRS
@@ -2587,7 +2586,7 @@ FPLX,MGAT,isa,FPLX,Glycosyltransferase
 FPLX,OGT_family,isa,FPLX,Glycosyltransferase
 FPLX,PYG,isa,FPLX,Glycosyltransferase
 FPLX,STT3,isa,FPLX,Glycosyltransferase
-FPLX,UGCG,isa,FPLX,Glycosyltransferase
+HGNC,UGCG,isa,FPLX,Glycosyltransferase
 FPLX,UGT,isa,FPLX,Glycosyltransferase
 FPLX,UGGT,isa,FPLX,Glycosyltransferase
 HGNC,ALG10,isa,FPLX,ALG10
@@ -2763,7 +2762,6 @@ HGNC,ST8SIA5,isa,FPLX,GTF_family_29
 HGNC,ST8SIA6,isa,FPLX,GTF_family_29
 HGNC,STT3A,isa,FPLX,STT3
 HGNC,STT3B,isa,FPLX,STT3
-HGNC,UGCG,isa,FPLX,UGCG
 HGNC,UGGT1,isa,FPLX,UGGT
 HGNC,UGGT2,isa,FPLX,UGGT
 HGNC,UGT1A,isa,FPLX,UGT
@@ -3055,7 +3053,7 @@ FPLX,GRI,isa,FPLX,Ligand_gated_ion_channels
 FPLX,ITPR,isa,FPLX,Ligand_gated_ion_channels
 FPLX,P2RX,isa,FPLX,Ligand_gated_ion_channels
 FPLX,RYR,isa,FPLX,Ligand_gated_ion_channels
-FPLX,ZACN,isa,FPLX,Ligand_gated_ion_channels
+HGNC,ZACN,isa,FPLX,Ligand_gated_ion_channels
 FPLX,AQP,isa,FPLX,Porins
 FPLX,VDAC,isa,FPLX,Porins
 HGNC,KCNMA1,isa,FPLX,Potassium_calcium_activated_channels
@@ -3174,7 +3172,6 @@ FPLX,Potassium_voltage_gated_channels,isa,FPLX,Voltage_gated_ion_channels
 FPLX,SCN,isa,FPLX,Voltage_gated_ion_channels
 FPLX,TPCN,isa,FPLX,Voltage_gated_ion_channels
 FPLX,TRP,isa,FPLX,Voltage_gated_ion_channels
-HGNC,ZACN,isa,FPLX,ZACN
 HGNC,CENPE,isa,FPLX,Kinesin
 HGNC,KIF11,isa,FPLX,Kinesin
 HGNC,KIF12,isa,FPLX,Kinesin

@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 11:04:2020 00:32
+date: 12:04:2020 01:22
 
 [Term]
 id: FPLX:5_hydroxytryptamine_receptors_ionotropic
@@ -3684,8 +3684,12 @@ inverse_is_a: HGNC:GALNT17
 [Term]
 id: FPLX:G_alpha
 name: G-alpha
-synonym: "G_alpha" EXACT []
-synonym: "G_α" EXACT []
+synonym: "G-alpha" EXACT []
+synonym: "G-α" EXACT []
+synonym: "G protein alpha" EXACT []
+synonym: "G-protein alpha" EXACT []
+synonym: "Galpha" EXACT []
+synonym: "G alpha" EXACT []
 xref: XFAM:PF00503
 is_a: FPLX:root
 inverse_is_a: FPLX:G_i_alpha
@@ -3945,7 +3949,7 @@ inverse_is_a: FPLX:MGAT
 inverse_is_a: FPLX:OGT_family
 inverse_is_a: FPLX:PYG
 inverse_is_a: FPLX:STT3
-inverse_is_a: FPLX:UGCG
+inverse_is_a: HGNC:UGCG
 inverse_is_a: FPLX:UGT
 inverse_is_a: FPLX:UGGT
 
@@ -5045,22 +5049,6 @@ has_part: HGNC:INHA
 has_part: HGNC:INHBB
 
 [Term]
-id: FPLX:INS
-name: INS
-synonym: "insulin family" EXACT []
-xref: BEL:"INS Family"
-xref: NEXTPROT-FAMILY:01869
-xref: RE:R-HSA-429349
-xref: RE:R-HSA-429352
-xref: RE:R-HSA-429384
-xref: RE:R-HSA-429407
-xref: RE:R-HSA-429472
-xref: RE:R-HSA-74674
-xref: RE:R-HSA-77385
-is_a: FPLX:root
-inverse_is_a: HGNC:INS
-
-[Term]
 id: FPLX:INSR
 name: INSR
 synonym: "Insulin receptor family" EXACT []
@@ -5505,7 +5493,7 @@ inverse_is_a: FPLX:GRI
 inverse_is_a: FPLX:ITPR
 inverse_is_a: FPLX:P2RX
 inverse_is_a: FPLX:RYR
-inverse_is_a: FPLX:ZACN
+inverse_is_a: HGNC:ZACN
 
 [Term]
 id: FPLX:LPAR
@@ -6530,6 +6518,7 @@ inverse_is_a: HGNC:NOS3
 id: FPLX:Notch
 name: Notch
 synonym: "Notch" EXACT []
+synonym: "NOTCH" EXACT []
 xref: BEL:"NOTCH Family"
 xref: IP:IPR008297
 xref: IP:IPR010660
@@ -10291,12 +10280,6 @@ xref: NEXTPROT-FAMILY:04276
 is_a: FPLX:root
 
 [Term]
-id: FPLX:UGCG
-name: UGCG
-is_a: FPLX:Glycosyltransferase
-inverse_is_a: HGNC:UGCG
-
-[Term]
 id: FPLX:UGGT
 name: UGGT
 is_a: FPLX:Glycosyltransferase
@@ -10475,13 +10458,6 @@ is_a: FPLX:root
 inverse_is_a: HGNC:YBX1
 inverse_is_a: HGNC:YBX2
 inverse_is_a: HGNC:YBX3
-
-[Term]
-id: FPLX:ZACN
-name: ZACN
-xref: HGNC_GROUP:176
-is_a: FPLX:Ligand_gated_ion_channels
-inverse_is_a: HGNC:ZACN
 
 [Term]
 id: FPLX:root

@@ -2,8 +2,8 @@
 Keyword=FPLX
 NameString=FamPlex
 DomainString=Gene and Gene Products
-VersionString=20200127
-CreatedDateTime=2020-01-27T14:12:38
+VersionString=20200412
+CreatedDateTime=2020-04-12T01:22:52
 DescriptionString=FamPlex is a collection of resources for grounding biological entities from text and describing their hierarchical relationships.
 QueryValueURL=http://identifiers.org/fplx/
 
@@ -328,7 +328,6 @@ IL1|CGPR
 IL12|CGPR
 IL15R|CGPR
 IL2R|CGPR
-INS|CGPR
 INSR|CGPR
 IRS|CGPR
 IRX|CGPR
@@ -629,7 +628,6 @@ Troponin_T|CGPR
 Tryptase|CGPR
 Tubulin|CGPR
 UBE2|CGPR
-UGCG|CGPR
 UGGT|CGPR
 UGT|CGPR
 Ubiquitin|CGPR
@@ -641,7 +639,6 @@ Voltage_gated_ion_channels|CGPR
 Wnt|CGPR
 Wnt5|CGPR
 YBX|CGPR
-ZACN|CGPR
 hCG|CGPR
 mTORC1|CGPR
 mTORC2|CGPR
