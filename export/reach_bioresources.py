@@ -29,7 +29,8 @@ def get_groundings():
                 groundings.append((txt, grounding_dict['UP'], 'uniprot',
                                    'Gene_or_gene_product'))
             elif 'HGNC' in grounding_dict:
-                up_id = hgnc_client.get_uniprot_id(grounding_dict['HGNC'])
+                hgnc_id = hgnc_client.get_hgnc_id(grounding_dict['HGNC'])
+                up_id = hgnc_client.get_uniprot_id(hgnc_id)
                 if up_id:
                     groundings.append((txt, up_id, 'uniprot',
                                       'Gene_or_gene_product'))

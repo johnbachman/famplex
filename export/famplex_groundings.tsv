@@ -39,7 +39,7 @@ ADRB	ADRB	fplx	Family
 ADRBK	ADRBK	fplx	Family
 AHR	P35869	uniprot	Gene_or_gene_product
 AICAR	CHEBI:18406	chebi	Simple_chemical
-AIM1	CRYBG1	hgnc	Gene_or_gene_product
+AIM1	Q9Y4K1	uniprot	Gene_or_gene_product
 AKT	AKT	fplx	Family
 AKT family	AKT	fplx	Family
 AKT1	P31749	uniprot	Gene_or_gene_product
@@ -180,7 +180,7 @@ APC-C	APC_C	fplx	Family
 APC/C	APC_C	fplx	Family
 APOA	APOA	fplx	Family
 AQP	AQP	fplx	Family
-AQP9	AQP9	hgnc	Gene_or_gene_product
+AQP9	O43315	uniprot	Gene_or_gene_product
 AR	P10275	uniprot	Gene_or_gene_product
 ARF-GTPase-family	ARF_GTPase_family	fplx	Family
 ARRB	ARRB	fplx	Family
@@ -302,7 +302,7 @@ Bam32	Q9UN19	uniprot	Gene_or_gene_product
 Bax	Q07812	uniprot	Gene_or_gene_product
 BcR	D011947	mesh	BioProcess
 Bcl-2	P10415	uniprot	Gene_or_gene_product
-Bcl-3	BCL3	hgnc	Gene_or_gene_product
+Bcl-3	P20749	uniprot	Gene_or_gene_product
 Bcl-xL	Q07817	uniprot	Gene_or_gene_product
 Bcl2	P10415	uniprot	Gene_or_gene_product
 Beclin-1	Q14457	uniprot	Gene_or_gene_product
@@ -503,7 +503,7 @@ Chemokine-receptor	Chemokine_receptor	fplx	Family
 Chk1	O14757	uniprot	Gene_or_gene_product
 Chk1/2	CHEK	fplx	Family
 Chk2	O96017	uniprot	Gene_or_gene_product
-Chkl	CHEK1	hgnc	Gene_or_gene_product
+Chkl	O14757	uniprot	Gene_or_gene_product
 Chloride-calcium-activated-channels	Chloride_calcium_activated_channels	fplx	Family
 Chloride-channels	Chloride_channels	fplx	Family
 Cholinesterase	Cholinesterase	fplx	Family
@@ -522,7 +522,7 @@ Class II NF-κBs	NFkappaB_2	fplx	Family
 Class III HDACs	HDAC_III	fplx	Family
 Class IV HDACs	HDAC_IV	fplx	Family
 Clathrin	Clathrin	fplx	Family
-Clk	CLOCK	hgnc	Gene_or_gene_product
+Clk	O15516	uniprot	Gene_or_gene_product
 Cofilin	Cofilin	fplx	Family
 Cohesin	Cohesin	fplx	Family
 Col4	COL4	fplx	Family
@@ -545,8 +545,8 @@ Crk	P46108	uniprot	Gene_or_gene_product
 CsA	CHEBI:4031	chebi	Simple_chemical
 CtIP	Q99708	uniprot	Gene_or_gene_product
 Curcumin	CHEBI:3962	chebi	Simple_chemical
-CycK	CCNK	hgnc	Gene_or_gene_product
-CycK1	CCNK	hgnc	Gene_or_gene_product
+CycK	O75909	uniprot	Gene_or_gene_product
+CycK1	O75909	uniprot	Gene_or_gene_product
 Cyclin	Cyclin	fplx	Family
 Cyclin A	Cyclin_A	fplx	Family
 Cyclin D	Cyclin_D	fplx	Family
@@ -595,7 +595,7 @@ Dinaciclib	CHEBI:95060	chebi	Simple_chemical
 Dok1	Q99704	uniprot	Gene_or_gene_product
 Dok2	O60496	uniprot	Gene_or_gene_product
 Doxorubicin	CHEBI:28748	chebi	Simple_chemical
-Drp-1	DNM1L	hgnc	Gene_or_gene_product
+Drp-1	O00429	uniprot	Gene_or_gene_product
 Dvl	DVL	fplx	Family
 E-cadherin	P12830	uniprot	Gene_or_gene_product
 E2 enzyme	UBE2	fplx	Family
@@ -609,7 +609,7 @@ E3-Ub-ligase	E3_Ub_ligase	fplx	Family
 E6	P03126	uniprot	Gene_or_gene_product
 E7	P03129	uniprot	Gene_or_gene_product
 EBNA3C	I1YP21	uniprot	Gene_or_gene_product
-EBP1	PA2G4	hgnc	Gene_or_gene_product
+EBP1	Q9UQ80	uniprot	Gene_or_gene_product
 ECM	GO:0031012	go	BioProcess
 EDN	EDN	fplx	Family
 EFN	EFN	fplx	Family
@@ -653,7 +653,7 @@ ERK1	P27361	uniprot	Gene_or_gene_product
 ERK1/2	ERK	fplx	Family
 ERK1/2 MAPK	ERK	fplx	Family
 ERK2	P28482	uniprot	Gene_or_gene_product
-ERK4	MAPK4	hgnc	Gene_or_gene_product
+ERK4	P31152	uniprot	Gene_or_gene_product
 ERK5	Q13164	uniprot	Gene_or_gene_product
 ERKs	ERK	fplx	Family
 ERalpha	P03372	uniprot	Gene_or_gene_product
@@ -674,7 +674,7 @@ ETS1	P14921	uniprot	Gene_or_gene_product
 EXOC	EXOC	fplx	Family
 EXT	EXT	fplx	Family
 EZH2	Q15910	uniprot	Gene_or_gene_product
-Ebp1	PA2G4	hgnc	Gene_or_gene_product
+Ebp1	Q9UQ80	uniprot	Gene_or_gene_product
 Ect2	Q9H8V3	uniprot	Gene_or_gene_product
 Elk	P19419	uniprot	Gene_or_gene_product
 Elk-1	P19419	uniprot	Gene_or_gene_product
@@ -741,7 +741,7 @@ FZD	FZD	fplx	Family
 Fas	P25445	uniprot	Gene_or_gene_product
 FasL	P48023	uniprot	Gene_or_gene_product
 Fer-1	4068248	pubchem	Simple_chemical
-Fes	FES	hgnc	Gene_or_gene_product
+Fes	P07332	uniprot	Gene_or_gene_product
 Fibrin	Fibrin	fplx	Family
 Fibrinogen	Fibrinogen	fplx	Family
 Flip	O15519	uniprot	Gene_or_gene_product
@@ -935,7 +935,7 @@ H2AX	P16104	uniprot	Gene_or_gene_product
 H2B	Histone_H2B	fplx	Family
 H3	Histone_H3	fplx	Family
 H4	Histone_H4	fplx	Family
-HARP	SMARCAD1	hgnc	Gene_or_gene_product
+HARP	Q9H4L7	uniprot	Gene_or_gene_product
 HAUS	Augmin	fplx	Family
 HAUS complex	Augmin	fplx	Family
 HB-EGF	Q99075	uniprot	Gene_or_gene_product
@@ -978,7 +978,7 @@ HIFs	HIF	fplx	Family
 HIFα	HIF_alpha	fplx	Family
 HIFβ	HIF_beta	fplx	Family
 HIPK2	Q9H2X6	uniprot	Gene_or_gene_product
-HK2	HK2	hgnc	Gene_or_gene_product
+HK2	P52789	uniprot	Gene_or_gene_product
 HLA-DR	HLA_DR	fplx	Family
 HLA-DR	HLA_DR	fplx	Family
 HMGB1	P09429	uniprot	Gene_or_gene_product
@@ -1098,7 +1098,7 @@ IRX	IRX	fplx	Family
 ITPR	ITPR	fplx	Family
 IkappaB	IKB	fplx	Family
 IkappaB kinase	IKK_complex	fplx	Family
-IkappaB-alpha	NFKBIA	hgnc	Gene_or_gene_product
+IkappaB-alpha	P25963	uniprot	Gene_or_gene_product
 IkappaBalpha	P25963	uniprot	Gene_or_gene_product
 Inhibin	Inhibin	fplx	Family
 Inhibin-A	Inhibin_A	fplx	Family
@@ -1118,7 +1118,7 @@ Ischemia-reperfusion	D015427	mesh	BioProcess
 Iterative reconstruction	C94918	ncit	BioProcess
 IκB	IKB	fplx	Family
 IκB kinase	IKK_complex	fplx	Family
-IκB-α	NFKBIA	hgnc	Gene_or_gene_product
+IκB-α	P25963	uniprot	Gene_or_gene_product
 IκBα	P25963	uniprot	Gene_or_gene_product
 JAK	JAK	fplx	Family
 JAK2	O60674	uniprot	Gene_or_gene_product
@@ -1147,8 +1147,8 @@ KSR	KSR	fplx	Family
 Kainate receptors	Kainate_family	fplx	Family
 Kainate-family	Kainate_family	fplx	Family
 Keap1	Q14145	uniprot	Gene_or_gene_product
-Ki-67	MKI67	hgnc	Gene_or_gene_product
-Ki67	MKI67	hgnc	Gene_or_gene_product
+Ki-67	P46013	uniprot	Gene_or_gene_product
+Ki67	P46013	uniprot	Gene_or_gene_product
 Kinesin	Kinesin	fplx	Family
 Kinetochore	Kinetochore	fplx	Family
 Klf5	Q13887	uniprot	Gene_or_gene_product
@@ -1298,7 +1298,7 @@ N-Ras	P01111	uniprot	Gene_or_gene_product
 N-cadherin	P19022	uniprot	Gene_or_gene_product
 N-myc downstream regulated gene family	NDRG	fplx	Family
 NAC	CHEBI:7421	chebi	Simple_chemical
-NAC1	NACC1	hgnc	Gene_or_gene_product
+NAC1	Q96RE7	uniprot	Gene_or_gene_product
 NAD(P)H oxidase	NADPH_oxidase	fplx	Family
 NAD(P)H-oxidase	NADPH_oxidase	fplx	Family
 NADH dehydrogenase	NADH_dehydrogenase	fplx	Family
@@ -1314,7 +1314,7 @@ NDR family	NDRG	fplx	Family
 NDR-family	NDRG	fplx	Family
 NDRG	NDRG	fplx	Family
 NDRG2	Q9UN36	uniprot	Gene_or_gene_product
-NEK8	NEK8	hgnc	Gene_or_gene_product
+NEK8	Q86SG6	uniprot	Gene_or_gene_product
 NEMO	Q9Y6K9	uniprot	Gene_or_gene_product
 NF-E2	NFE	fplx	Family
 NF-E2-related factor	NFE	fplx	Family
@@ -1335,14 +1335,14 @@ NF-kappaB complexes	NFkappaB	fplx	Family
 NF-kappaB dimers	NFkappaB	fplx	Family
 NF-kappaB factors	NFkappaB	fplx	Family
 NF-kappaB genes	NFkappaB	fplx	Family
-NF-kappaB p50	NFKB1	hgnc	Gene_or_gene_product
+NF-kappaB p50	P19838	uniprot	Gene_or_gene_product
 NF-kappaB p65	Q04206	uniprot	Gene_or_gene_product
 NF-kappaB subunits	NFkappaB	fplx	Family
-NF-kappaB-inducing kinase	MAP3K14	hgnc	Gene_or_gene_product
-NF-kappaB1	NFKB1	hgnc	Gene_or_gene_product
-NF-kappaB2	NFKB2	hgnc	Gene_or_gene_product
-NF-kappaBp50	NFKB1	hgnc	Gene_or_gene_product
-NF-kappaBp65	RELA	hgnc	Gene_or_gene_product
+NF-kappaB-inducing kinase	Q99558	uniprot	Gene_or_gene_product
+NF-kappaB1	P19838	uniprot	Gene_or_gene_product
+NF-kappaB2	Q00653	uniprot	Gene_or_gene_product
+NF-kappaBp50	P19838	uniprot	Gene_or_gene_product
+NF-kappaBp65	Q04206	uniprot	Gene_or_gene_product
 NF-kappaBs	NFkappaB	fplx	Family
 NF-kappabeta	NFkappaB	fplx	Family
 NF-κB	NFkappaB	fplx	Family
@@ -1360,13 +1360,13 @@ NF-κB complexes	NFkappaB	fplx	Family
 NF-κB dimers	NFkappaB	fplx	Family
 NF-κB factors	NFkappaB	fplx	Family
 NF-κB genes	NFkappaB	fplx	Family
-NF-κB p50	NFKB1	hgnc	Gene_or_gene_product
+NF-κB p50	P19838	uniprot	Gene_or_gene_product
 NF-κB p65	Q04206	uniprot	Gene_or_gene_product
 NF-κB subunits	NFkappaB	fplx	Family
-NF-κB1	NFKB1	hgnc	Gene_or_gene_product
-NF-κB2	NFKB2	hgnc	Gene_or_gene_product
-NF-κBp50	NFKB1	hgnc	Gene_or_gene_product
-NF-κBp65	RELA	hgnc	Gene_or_gene_product
+NF-κB1	P19838	uniprot	Gene_or_gene_product
+NF-κB2	Q00653	uniprot	Gene_or_gene_product
+NF-κBp50	P19838	uniprot	Gene_or_gene_product
+NF-κBp65	Q04206	uniprot	Gene_or_gene_product
 NF-κBs	NFkappaB	fplx	Family
 NF-κβ	NFkappaB	fplx	Family
 NFAT	NFAT	fplx	Family
@@ -1374,18 +1374,18 @@ NFE	NFE	fplx	Family
 NFY	NFY	fplx	Family
 NFkappaB	NFkappaB	fplx	Family
 NFkappaB complexes	NFkappaB	fplx	Family
-NFkappaB p50	NFKB1	hgnc	Gene_or_gene_product
-NFkappaB p65	RELA	hgnc	Gene_or_gene_product
+NFkappaB p50	P19838	uniprot	Gene_or_gene_product
+NFkappaB p65	Q04206	uniprot	Gene_or_gene_product
 NFkappaB-1	NFkappaB_1	fplx	Family
 NFkappaB-2	NFkappaB_2	fplx	Family
-NFkappaBp65	RELA	hgnc	Gene_or_gene_product
+NFkappaBp65	Q04206	uniprot	Gene_or_gene_product
 NFκB	NFkappaB	fplx	Family
 NFκB complexes	NFkappaB	fplx	Family
-NFκB p50	NFKB1	hgnc	Gene_or_gene_product
-NFκB p65	RELA	hgnc	Gene_or_gene_product
-NFκBp65	RELA	hgnc	Gene_or_gene_product
+NFκB p50	P19838	uniprot	Gene_or_gene_product
+NFκB p65	Q04206	uniprot	Gene_or_gene_product
+NFκBp65	Q04206	uniprot	Gene_or_gene_product
 NGF	P01138	uniprot	Gene_or_gene_product
-NIK	MAP3K14	hgnc	Gene_or_gene_product
+NIK	Q99558	uniprot	Gene_or_gene_product
 NKD	NKD	fplx	Family
 NLE	CHEBI:38473	chebi	Simple_chemical
 NO	CHEBI:16480	chebi	Simple_chemical
@@ -1427,7 +1427,7 @@ Na/K ATPase alpha	ATP1A	fplx	Family
 Na/K ATPase α	ATP1A	fplx	Family
 Na/K-ATPase	Na_K_ATPase	fplx	Family
 NaC1	CHEBI:26710	chebi	Simple_chemical
-Nac1	NACC1	hgnc	Gene_or_gene_product
+Nac1	Q96RE7	uniprot	Gene_or_gene_product
 Nak	Q9U485	uniprot	Gene_or_gene_product
 Natriuretic Peptide	Natriuretic_peptide	fplx	Family
 Natriuretic Peptides	Natriuretic_peptide	fplx	Family
@@ -1435,7 +1435,7 @@ Natriuretic peptide	Natriuretic_peptide	fplx	Family
 Natriuretic peptides	Natriuretic_peptide	fplx	Family
 Natriuretic-peptide	Natriuretic_peptide	fplx	Family
 Nef	P03406	uniprot	Gene_or_gene_product
-Nek8	NEK8	hgnc	Gene_or_gene_product
+Nek8	Q86SG6	uniprot	Gene_or_gene_product
 Net1	Q7Z628	uniprot	Gene_or_gene_product
 Neuregulin	NRG	fplx	Family
 Neuregulins	NRG	fplx	Family
@@ -1505,12 +1505,12 @@ PATCHED	Patched	fplx	Family
 PBX	PBX	fplx	Family
 PBXs	PBX	fplx	Family
 PCNA	P12004	uniprot	Gene_or_gene_product
-PCTAIRE	CDK16	hgnc	Gene_or_gene_product
+PCTAIRE	Q00536	uniprot	Gene_or_gene_product
 PD	D010300	mesh	BioProcess
 PD-1	Q15116	uniprot	Gene_or_gene_product
 PD98509	CHEBI:79091	chebi	Simple_chemical
 PDE	PDE	fplx	Family
-PDE 2	PDE2A	hgnc	Gene_or_gene_product
+PDE 2	O00408	uniprot	Gene_or_gene_product
 PDE 3	PDE3	fplx	Family
 PDE1	PDE1	fplx	Family
 PDE1 family	PDE1	fplx	Family
@@ -1519,7 +1519,7 @@ PDE3 family	PDE3	fplx	Family
 PDE4	PDE4	fplx	Family
 PDE4 family	PDE4	fplx	Family
 PDE4 isoforms	PDE4	fplx	Family
-PDE5	PDE5A	hgnc	Gene_or_gene_product
+PDE5	O76074	uniprot	Gene_or_gene_product
 PDE6	PDE6	fplx	Family
 PDE6 family	PDE6	fplx	Family
 PDE7	PDE7	fplx	Family
@@ -1720,18 +1720,18 @@ PhK	PhK	fplx	Family
 Phosphatase	Phosphatase	fplx	Family
 Phosphodiesterase	PDE	fplx	Family
 Phosphodiesterase 1	PDE1	fplx	Family
-Phosphodiesterase 2	PDE2A	hgnc	Gene_or_gene_product
+Phosphodiesterase 2	O00408	uniprot	Gene_or_gene_product
 Phosphodiesterase 3	PDE3	fplx	Family
 Phosphodiesterase 4	PDE4	fplx	Family
-Phosphodiesterase 5	PDE5A	hgnc	Gene_or_gene_product
+Phosphodiesterase 5	O76074	uniprot	Gene_or_gene_product
 Phosphodiesterase 6	PDE6	fplx	Family
 Phosphodiesterase 7	PDE7	fplx	Family
 Phosphodiesterase 8	PDE8	fplx	Family
 Phosphodiesterase-1	PDE1	fplx	Family
-Phosphodiesterase-2	PDE2A	hgnc	Gene_or_gene_product
+Phosphodiesterase-2	O00408	uniprot	Gene_or_gene_product
 Phosphodiesterase-3	PDE3	fplx	Family
 Phosphodiesterase-4	PDE4	fplx	Family
-Phosphodiesterase-5	PDE5A	hgnc	Gene_or_gene_product
+Phosphodiesterase-5	O76074	uniprot	Gene_or_gene_product
 Phosphodiesterase-6	PDE6	fplx	Family
 Phosphodiesterase-7	PDE7	fplx	Family
 Phosphodiesterase-8	PDE8	fplx	Family
@@ -1861,8 +1861,8 @@ ROCK1	Q13464	uniprot	Gene_or_gene_product
 ROCK2	O75116	uniprot	Gene_or_gene_product
 ROR	ROR	fplx	Family
 RORs	ROR	fplx	Family
-RP-1	RP1	hgnc	Gene_or_gene_product
-RP1	RP1	hgnc	Gene_or_gene_product
+RP-1	P56715	uniprot	Gene_or_gene_product
+RP1	P56715	uniprot	Gene_or_gene_product
 RPA	RPA	fplx	Family
 RPS6KA	P90RSK	fplx	Family
 RSK	RSK	fplx	Family
@@ -1918,7 +1918,7 @@ RhoC	P08134	uniprot	Gene_or_gene_product
 RhoGDI	RhoGDI	fplx	Family
 RhoGDIs	RhoGDI	fplx	Family
 Rictor	Q6R327	uniprot	Gene_or_gene_product
-Rp1	RP1	hgnc	Gene_or_gene_product
+Rp1	P56715	uniprot	Gene_or_gene_product
 S100	S100	fplx	Family
 S100A	S100A	fplx	Family
 S100a	S100A	fplx	Family
@@ -1938,7 +1938,7 @@ SCD	SCD	fplx	Family
 SCF	P21583	uniprot	Gene_or_gene_product
 SCN	SCN	fplx	Family
 SCNN	SCNN	fplx	Family
-SEK	MAP2K4	hgnc	Gene_or_gene_product
+SEK	P45985	uniprot	Gene_or_gene_product
 SERCA	SERCA	fplx	Family
 SERCAs	SERCA	fplx	Family
 SERPINB	SERPINB	fplx	Family
@@ -1951,8 +1951,8 @@ SHP-2	Q06124	uniprot	Gene_or_gene_product
 SHP2	Q06124	uniprot	Gene_or_gene_product
 SIK	SIK	fplx	Family
 SIRT1	Q96EB6	uniprot	Gene_or_gene_product
-SK1	SPHK1	hgnc	Gene_or_gene_product
-SK2	KCNN2	hgnc	Gene_or_gene_product
+SK1	Q9NYA1	uniprot	Gene_or_gene_product
+SK2	Q9H2S1	uniprot	Gene_or_gene_product
 SLC2	SLC2A	fplx	Family
 SLC2A	SLC2A	fplx	Family
 SLE	D008180	mesh	BioProcess
@@ -1986,13 +1986,13 @@ SPRED	SPRED	fplx	Family
 SPRY	SPRY	fplx	Family
 SR Ca(2+)-ATPase	SERCA	fplx	Family
 SRC	P12931	uniprot	Gene_or_gene_product
-SRC-1	NCOA1	hgnc	Gene_or_gene_product
+SRC-1	Q15788	uniprot	Gene_or_gene_product
 SRC-family kinases	SRC	fplx	Family
-SRC1	NCOA1	hgnc	Gene_or_gene_product
+SRC1	Q15788	uniprot	Gene_or_gene_product
 SREBF	SREBF	fplx	Family
 SREBF family	SREBF	fplx	Family
 SRF	P11831	uniprot	Gene_or_gene_product
-STAR	STAR	hgnc	Gene_or_gene_product
+STAR	P49675	uniprot	Gene_or_gene_product
 STAT	STAT	fplx	Family
 STAT1	P42224	uniprot	Gene_or_gene_product
 STAT3	P40763	uniprot	Gene_or_gene_product
@@ -2044,17 +2044,17 @@ Src	P12931	uniprot	Gene_or_gene_product
 Src family	SRC	fplx	Family
 Src family kinase	SRC	fplx	Family
 Src kinase	P12931	uniprot	Gene_or_gene_product
-Src-1	NCOA1	hgnc	Gene_or_gene_product
+Src-1	Q15788	uniprot	Gene_or_gene_product
 Src-homology	D018909	mesh	BioProcess
 Src-kinases	SRC	fplx	Family
 StAR	P49675	uniprot	Gene_or_gene_product
-StaR	STAR	hgnc	Gene_or_gene_product
-Star	STAR	hgnc	Gene_or_gene_product
+StaR	P49675	uniprot	Gene_or_gene_product
+Star	P49675	uniprot	Gene_or_gene_product
 Stat3	P40763	uniprot	Gene_or_gene_product
 Stat5	STAT5	fplx	Family
 Staurosporine	CHEBI:15738	chebi	Simple_chemical
 Ste20	Q03497	uniprot	Gene_or_gene_product
-Ste20-like kinase	SLK	hgnc	Gene_or_gene_product
+Ste20-like kinase	Q9H2G2	uniprot	Gene_or_gene_product
 Stearoyl-CoA desaturase	SCD	fplx	Family
 Sulfonylurea Receptor	Sulfonylurea_receptor	fplx	Family
 Sulfonylurea-receptor	Sulfonylurea_receptor	fplx	Family
@@ -2071,8 +2071,8 @@ TAS-116	67501411	pubchem	Simple_chemical
 TAT-associated-kinase	TAT_associated_kinase	fplx	Family
 TAp73	O15350	uniprot	Gene_or_gene_product
 TBK1	Q9UHD2	uniprot	Gene_or_gene_product
-TC-1	TCIM	hgnc	Gene_or_gene_product
-TC1	TCIM	hgnc	Gene_or_gene_product
+TC-1	Q9NR00	uniprot	Gene_or_gene_product
+TC1	Q9NR00	uniprot	Gene_or_gene_product
 TCF	TCF_LEF	fplx	Family
 TCF-LEF	TCF_LEF	fplx	Family
 TCR	TCR	fplx	Family
@@ -2169,7 +2169,7 @@ TXN	TXN	fplx	Family
 TXNRD	TXNRD	fplx	Family
 Tat	P04608	uniprot	Gene_or_gene_product
 Tax	P03409	uniprot	Gene_or_gene_product
-Tc1	TCIM	hgnc	Gene_or_gene_product
+Tc1	Q9NR00	uniprot	Gene_or_gene_product
 Tcf	TCF_LEF	fplx	Family
 Tcf/Lef	TCF_LEF	fplx	Family
 Temozolomide	CHEBI:72564	chebi	Simple_chemical
@@ -2183,7 +2183,7 @@ Thrombospondins	THBS	fplx	Family
 Tiam1	Q13009	uniprot	Gene_or_gene_product
 Tiam2	Q8IVF5	uniprot	Gene_or_gene_product
 TnC	Troponin_C	fplx	Family
-Tpl2	MAP3K8	hgnc	Gene_or_gene_product
+Tpl2	P41279	uniprot	Gene_or_gene_product
 TraD	P09130	uniprot	Gene_or_gene_product
 Transcription factor AP-2	TFAP2	fplx	Family
 Trk receptor	NTRK	fplx	Family
@@ -2245,7 +2245,7 @@ YAP1	P46937	uniprot	Gene_or_gene_product
 YBX	YBX	fplx	Family
 YBX protein family	YBX	fplx	Family
 ZACN	ZACN	fplx	Family
-ZAP-70	ZAP70	hgnc	Gene_or_gene_product
+ZAP-70	P43403	uniprot	Gene_or_gene_product
 ZEB1	P37275	uniprot	Gene_or_gene_product
 Zeb1	P37275	uniprot	Gene_or_gene_product
 a-adrenoreceptor	ADRA	fplx	Family
@@ -2388,23 +2388,23 @@ c-Jun	P05412	uniprot	Gene_or_gene_product
 c-Jun N-terminal kinase	JNK	fplx	Family
 c-Jun NH2-terminal kinase	JNK	fplx	Family
 c-MAF	O75444	uniprot	Gene_or_gene_product
-c-MET	MET	hgnc	Gene_or_gene_product
+c-MET	P08581	uniprot	Gene_or_gene_product
 c-MYC	P01106	uniprot	Gene_or_gene_product
 c-Maf	O75444	uniprot	Gene_or_gene_product
 c-Met	P08581	uniprot	Gene_or_gene_product
 c-Myb	P10242	uniprot	Gene_or_gene_product
 c-Myc	P01106	uniprot	Gene_or_gene_product
 c-Raf	P04049	uniprot	Gene_or_gene_product
-c-Rel	REL	hgnc	Gene_or_gene_product
+c-Rel	Q04864	uniprot	Gene_or_gene_product
 c-Src	P12931	uniprot	Gene_or_gene_product
 c-fos	P01100	uniprot	Gene_or_gene_product
 c-jun	P05412	uniprot	Gene_or_gene_product
 c-maf	O75444	uniprot	Gene_or_gene_product
-c-met	MET	hgnc	Gene_or_gene_product
+c-met	P08581	uniprot	Gene_or_gene_product
 c-myc	P01106	uniprot	Gene_or_gene_product
 c-myc oncogene	P01106	uniprot	Gene_or_gene_product
 c-myc proteins	P01106	uniprot	Gene_or_gene_product
-c-src	SRC	hgnc	Gene_or_gene_product
+c-src	P12931	uniprot	Gene_or_gene_product
 c1 complex	C1	fplx	Family
 cAK	PRKAC	fplx	Family
 cAMP	CHEBI:17489	chebi	Simple_chemical
@@ -2566,7 +2566,7 @@ dasatinib	CHEBI:49375	chebi	Simple_chemical
 death	GO:0008219	go	BioProcess
 death receptor	Death_receptor	fplx	Family
 death receptors	Death_receptor	fplx	Family
-delta-tubulin	TUBD1	hgnc	Gene_or_gene_product
+delta-tubulin	Q9UJT1	uniprot	Gene_or_gene_product
 deoxycytidine	CHEBI:15698	chebi	Simple_chemical
 derived growth factor	PDGFR	fplx	Family
 desmoglein	Desmoglein	fplx	Family
@@ -2617,7 +2617,7 @@ ephrin receptor	Ephrin_receptor	fplx	Family
 ephrins	EFN	fplx	Family
 epidermal growth factor	P01133	uniprot	Gene_or_gene_product
 epidermal growth factor receptor	P00533	uniprot	Gene_or_gene_product
-epsilon-tubulin	TUBE1	hgnc	Gene_or_gene_product
+epsilon-tubulin	Q9UJT0	uniprot	Gene_or_gene_product
 epsin	EPN	fplx	Family
 epsins	EPN	fplx	Family
 erbB	ERBB	fplx	Family
@@ -2691,8 +2691,8 @@ h9-1-1 complex	9_1_1	fplx	Family
 hAxin	AXIN	fplx	Family
 hCG	hCG	fplx	Family
 hER	ESR	fplx	Family
-hK4	KLK4	hgnc	Gene_or_gene_product
-hRI	RNH1	hgnc	Gene_or_gene_product
+hK4	Q9Y5K2	uniprot	Gene_or_gene_product
+hRI	P13489	uniprot	Gene_or_gene_product
 hTERT	O14746	uniprot	Gene_or_gene_product
 haem oxygenase	HMOX	fplx	Family
 heat shock protein family B	HSPB	fplx	Family
@@ -2874,8 +2874,8 @@ oxidant	D016877	mesh	BioProcess
 oxygen	CHEBI:15379	chebi	Simple_chemical
 p-38	p38	fplx	Family
 p-CaMKII	CAMK2_complex	fplx	Family
-p100	NFKB2	hgnc	Gene_or_gene_product
-p105	NFKB1	hgnc	Gene_or_gene_product
+p100	Q00653	uniprot	Gene_or_gene_product
+p105	P19838	uniprot	Gene_or_gene_product
 p110	PI3K_p110	fplx	Family
 p110alpha	P42336	uniprot	Gene_or_gene_product
 p110beta	P42338	uniprot	Gene_or_gene_product
@@ -2899,7 +2899,7 @@ p38 MAPKs	p38	fplx	Family
 p38 SAPK	p38	fplx	Family
 p38-MAPK	p38	fplx	Family
 p38MAPK	p38	fplx	Family
-p38b	MAPK11	hgnc	Gene_or_gene_product
+p38b	Q15759	uniprot	Gene_or_gene_product
 p40 phox	Q15080	uniprot	Gene_or_gene_product
 p42 and p38 MAP kinases	ERK	fplx	Family
 p42 and p38 MAPK	ERK	fplx	Family
@@ -2912,13 +2912,13 @@ p42/44	ERK	fplx	Family
 p44 and p42	ERK	fplx	Family
 p47 phox	P14598	uniprot	Gene_or_gene_product
 p50	P19838	uniprot	Gene_or_gene_product
-p52	NFKB2	hgnc	Gene_or_gene_product
+p52	Q00653	uniprot	Gene_or_gene_product
 p53	P04637	uniprot	Gene_or_gene_product
 p53 Family	p53_family	fplx	Family
 p53 family	p53_family	fplx	Family
 p53-family	p53_family	fplx	Family
 p53/p63/p73 family	p53_family	fplx	Family
-p56	LCK	hgnc	Gene_or_gene_product
+p56	P06239	uniprot	Gene_or_gene_product
 p62	Q13501	uniprot	Gene_or_gene_product
 p63	Q9H3D4	uniprot	Gene_or_gene_product
 p65	Q04206	uniprot	Gene_or_gene_product
@@ -2934,8 +2934,8 @@ p85	PI3K_p85	fplx	Family
 p85alpha	P27986	uniprot	Gene_or_gene_product
 p85α	P27986	uniprot	Gene_or_gene_product
 p90RSK	P90RSK	fplx	Family
-p94	CAPN3	hgnc	Gene_or_gene_product
-pEK	PENK	hgnc	Gene_or_gene_product
+p94	P20807	uniprot	Gene_or_gene_product
+pEK	P01210	uniprot	Gene_or_gene_product
 pLK	CHEBI:53412	chebi	Simple_chemical
 pRB	P06400	uniprot	Gene_or_gene_product
 pRb	P06400	uniprot	Gene_or_gene_product
@@ -2958,18 +2958,18 @@ phosphatidylinositol 4-kinase	PI4K	fplx	Family
 phospho-ERK1/2	ERK	fplx	Family
 phosphodiesterase	PDE	fplx	Family
 phosphodiesterase 1	PDE1	fplx	Family
-phosphodiesterase 2	PDE2A	hgnc	Gene_or_gene_product
+phosphodiesterase 2	O00408	uniprot	Gene_or_gene_product
 phosphodiesterase 3	PDE3	fplx	Family
 phosphodiesterase 4	PDE4	fplx	Family
-phosphodiesterase 5	PDE5A	hgnc	Gene_or_gene_product
+phosphodiesterase 5	O76074	uniprot	Gene_or_gene_product
 phosphodiesterase 6	PDE6	fplx	Family
 phosphodiesterase 7	PDE7	fplx	Family
 phosphodiesterase 8	PDE8	fplx	Family
 phosphodiesterase-1	PDE1	fplx	Family
-phosphodiesterase-2	PDE2A	hgnc	Gene_or_gene_product
+phosphodiesterase-2	O00408	uniprot	Gene_or_gene_product
 phosphodiesterase-3	PDE3	fplx	Family
 phosphodiesterase-4	PDE4	fplx	Family
-phosphodiesterase-5	PDE5A	hgnc	Gene_or_gene_product
+phosphodiesterase-5	O76074	uniprot	Gene_or_gene_product
 phosphodiesterase-6	PDE6	fplx	Family
 phosphodiesterase-7	PDE7	fplx	Family
 phosphodiesterase-8	PDE8	fplx	Family
@@ -3030,10 +3030,10 @@ purinergic receptors	Purinergic_receptors	fplx	Family
 pyruvate dehydrogenase (acetyl-transferring)	PDH	fplx	Family
 pyruvate dehydrogenase kinase	PDK	fplx	Family
 quercetin	CHEBI:16243	chebi	Simple_chemical
-rIPK	THAP12	hgnc	Gene_or_gene_product
+rIPK	O43422	uniprot	Gene_or_gene_product
 rPKA	PRKAR	fplx	Family
-rSK1	KCNN1	hgnc	Gene_or_gene_product
-rSK2	KCNN2	hgnc	Gene_or_gene_product
+rSK1	Q92952	uniprot	Gene_or_gene_product
+rSK2	Q9H2S1	uniprot	Gene_or_gene_product
 rab	RAB	fplx	Family
 rab GTPases	RAB	fplx	Family
 rab proteins	RAB	fplx	Family
@@ -3158,15 +3158,15 @@ tubulin	Tubulin	fplx	Family
 tubulin alpha chain	TUBA	fplx	Family
 tubulin beta	TUBB	fplx	Family
 tubulin beta chain	TUBB	fplx	Family
-tubulin delta	TUBD1	hgnc	Gene_or_gene_product
-tubulin epsilon	TUBE1	hgnc	Gene_or_gene_product
+tubulin delta	Q9UJT1	uniprot	Gene_or_gene_product
+tubulin epsilon	Q9UJT0	uniprot	Gene_or_gene_product
 tubulin gamma	TUBG	fplx	Family
 tubulin α chain	TUBA	fplx	Family
 tubulin β	TUBB	fplx	Family
 tubulin β chain	TUBB	fplx	Family
 tubulin γ	TUBG	fplx	Family
-tubulin δ	TUBD1	hgnc	Gene_or_gene_product
-tubulin ε	TUBE1	hgnc	Gene_or_gene_product
+tubulin δ	Q9UJT1	uniprot	Gene_or_gene_product
+tubulin ε	Q9UJT0	uniprot	Gene_or_gene_product
 tumor necrosis factor	P01375	uniprot	Gene_or_gene_product
 tumorigenesis	D063646	mesh	BioProcess
 tunicamycin	CHEBI:29699	chebi	Simple_chemical
@@ -3226,5 +3226,5 @@ xylosyltransferases	GCNT	fplx	Family
 γ tubulin	TUBG	fplx	Family
 γ-aminobutyric-acid A receptor	GABR	fplx	Family
 γ-tubulin	TUBG	fplx	Family
-δ-tubulin	TUBD1	hgnc	Gene_or_gene_product
-ε-tubulin	TUBE1	hgnc	Gene_or_gene_product
+δ-tubulin	Q9UJT1	uniprot	Gene_or_gene_product
+ε-tubulin	Q9UJT0	uniprot	Gene_or_gene_product
