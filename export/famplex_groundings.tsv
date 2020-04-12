@@ -759,11 +759,13 @@ Fz	FZD	fplx	Family
 G 1	GO:0051318	go	BioProcess
 G 2	D016195	mesh	BioProcess
 G S protein	G_s	fplx	Family
+G alpha	G_alpha	fplx	Family
 G alphaS	G_s_alpha	fplx	Family
 G alphai	G_i_alpha	fplx	Family
 G alphaq	G_q_alpha	fplx	Family
 G protein	G_protein	fplx	Family
 G protein Gs	G_s	fplx	Family
+G protein alpha	G_alpha	fplx	Family
 G protein beta	G_beta	fplx	Family
 G protein gamma	G_gamma	fplx	Family
 G protein gamma subunit	G_gamma	fplx	Family
@@ -787,12 +789,15 @@ G-Protein alpha-s	G_s_alpha	fplx	Family
 G-Protein α-i	G_i_alpha	fplx	Family
 G-Protein α-q	G_q_alpha	fplx	Family
 G-Protein α-s	G_s_alpha	fplx	Family
+G-alpha	G_alpha	fplx	Family
+G-alpha	G_alpha	fplx	Family
 G-alpha(s)	G_s_alpha	fplx	Family
 G-beta	G_beta	fplx	Family
 G-gamma	G_gamma	fplx	Family
 G-i	G_i	fplx	Family
 G-i-alpha	G_i_alpha	fplx	Family
 G-protein	G_protein	fplx	Family
+G-protein alpha	G_alpha	fplx	Family
 G-protein alpha-12	G_12_alpha	fplx	Family
 G-protein beta	G_beta	fplx	Family
 G-protein α-12	G_12_alpha	fplx	Family
@@ -801,6 +806,7 @@ G-q	G_q	fplx	Family
 G-q-alpha	G_q_alpha	fplx	Family
 G-s	G_s	fplx	Family
 G-s-alpha	G_s_alpha	fplx	Family
+G-α	G_alpha	fplx	Family
 G-α(s)	G_s_alpha	fplx	Family
 G-αS	G_s_alpha	fplx	Family
 G12	G_12	fplx	Family
@@ -875,11 +881,10 @@ GUCY	GUCY	fplx	Family
 GUCY1A	GUCY1A	fplx	Family
 GUCY1B	GUCY1B	fplx	Family
 GYS	GYS	fplx	Family
-G_alpha	G_alpha	fplx	Family
-G_α	G_alpha	fplx	Family
 Ga12	G_12_alpha	fplx	Family
 Gab1	Q13480	uniprot	Gene_or_gene_product
 Gab2	Q9UQC2	uniprot	Gene_or_gene_product
+Galpha	G_alpha	fplx	Family
 Galpha12	G_12_alpha	fplx	Family
 GalphaS	G_s_alpha	fplx	Family
 Galphai	G_i_alpha	fplx	Family
@@ -1385,6 +1390,7 @@ NKD	NKD	fplx	Family
 NLE	CHEBI:38473	chebi	Simple_chemical
 NO	CHEBI:16480	chebi	Simple_chemical
 NOS	NOS	fplx	Family
+NOTCH	Notch	fplx	Family
 NOX1	Q9Y5S8	uniprot	Gene_or_gene_product
 NOX2	P04839	uniprot	Gene_or_gene_product
 NOX3	Q9HBY0	uniprot	Gene_or_gene_product
