@@ -68,8 +68,12 @@ def get_groundings():
         for row in csvreader:
             entity = row[0]
             entity_txt = entity.replace('_', '-')
+            # If it isn't already a synonym
             if entity not in cnt:
-                groundings.append((entity_txt, entity, 'fplx', 'Family'))
+                # If the name of the family happens to be a gene symbol
+                # we don't add it
+                if not hgnc_client.get_hgnc_id(entity):
+                    groundings.append((entity_txt, entity, 'fplx', 'Family'))
 
     ambiguous_txts = {t for t, c in cnt.items() if c >= 2}
     groundings = [g for g in sorted(groundings) if g[0] not in ambiguous_txts]

@@ -426,7 +426,6 @@ COX4	COX4	fplx	Family
 COX6A	COX6A	fplx	Family
 COX6B	COX6B	fplx	Family
 COX7A	COX7A	fplx	Family
-COX7B	COX7B	fplx	Family
 COX8	COX8	fplx	Family
 CRAF	P04049	uniprot	Gene_or_gene_product
 CREB	CREB	fplx	Family
@@ -623,9 +622,7 @@ EGFR-ligand	EGFR_ligand	fplx	Family
 EGFRvIII	P00533	uniprot	Gene_or_gene_product
 EGR	EGR	fplx	Family
 EIF2B	EIF2B	fplx	Family
-EIF4	EIF4	fplx	Family
 EIF4A	EIF4A	fplx	Family
-EIF4E	EIF4E	fplx	Family
 EIF4EBP	EIF4EBP	fplx	Family
 EIF4G	EIF4G	fplx	Family
 ELA	ELA	fplx	Family
@@ -899,7 +896,7 @@ Gi alpha subunit	G_i_alpha	fplx	Family
 Gi protein	G_i	fplx	Family
 Gi α	G_i_alpha	fplx	Family
 Gi α subunit	G_i_alpha	fplx	Family
-Glucose	HMDB00122	hmdb	Simple_chemical
+Glucose	CHEBI:17234	chebi	Simple_chemical
 Glutamate receptors, ionotropic, kainate	Kainate_family	fplx	Family
 Glycogen phosphorylase	PYG	fplx	Family
 Glycogen phosphorylases	PYG	fplx	Family
@@ -957,7 +954,7 @@ HER2	P04626	uniprot	Gene_or_gene_product
 HER2 receptor	P04626	uniprot	Gene_or_gene_product
 HER3	P21860	uniprot	Gene_or_gene_product
 HES	HES	fplx	Family
-HG	HMDB00122	hmdb	Simple_chemical
+HG	CHEBI:17234	chebi	Simple_chemical
 HGF	P14210	uniprot	Gene_or_gene_product
 HIF	HIF	fplx	Family
 HIF-1	HIF1	fplx	Family
@@ -1084,8 +1081,6 @@ IL1 family	IL1	fplx	Family
 IL12	IL12	fplx	Family
 IL15R	IL15R	fplx	Family
 IL2R	IL2R	fplx	Family
-INS	INS	fplx	Family
-INSR	INSR	fplx	Family
 IQGAP1	P46940	uniprot	Gene_or_gene_product
 IRF3	Q14653	uniprot	Gene_or_gene_product
 IRS	IRS	fplx	Family
@@ -1239,7 +1234,6 @@ MMPs	MMP	fplx	Family
 MNK1 and MNK2	MKNK	fplx	Family
 MNK1 and MNK2 kinases	MKNK	fplx	Family
 MOB	MOB	fplx	Family
-MRPL	MRPL	fplx	Family
 MRPS	MRPS	fplx	Family
 MST1	Q13043	uniprot	Gene_or_gene_product
 MST2	Q13188	uniprot	Gene_or_gene_product
@@ -1934,7 +1928,6 @@ SAHA	CHEBI:45716	chebi	Simple_chemical
 SAPK	JNK	fplx	Family
 SAT	D050151	mesh	BioProcess
 SB203580	CHEBI:90705	chebi	Simple_chemical
-SCD	SCD	fplx	Family
 SCF	P21583	uniprot	Gene_or_gene_product
 SCN	SCN	fplx	Family
 SCNN	SCNN	fplx	Family
@@ -2165,7 +2158,6 @@ TSC2	P49815	uniprot	Gene_or_gene_product
 TUBA	TUBA	fplx	Family
 TUBB	TUBB	fplx	Family
 TUBG	TUBG	fplx	Family
-TXN	TXN	fplx	Family
 TXNRD	TXNRD	fplx	Family
 Tat	P04608	uniprot	Gene_or_gene_product
 Tax	P03409	uniprot	Gene_or_gene_product
@@ -2200,7 +2192,6 @@ Tubulin	Tubulin	fplx	Family
 Type I collagen	COL1	fplx	Family
 U0126	CHEBI:90693	chebi	Simple_chemical
 UBE2	UBE2	fplx	Family
-UGCG	UGCG	fplx	Family
 UGGT	UGGT	fplx	Family
 UGT	UGT	fplx	Family
 Ub	Ubiquitin	fplx	Family
@@ -2244,7 +2235,6 @@ YAP	P46937	uniprot	Gene_or_gene_product
 YAP1	P46937	uniprot	Gene_or_gene_product
 YBX	YBX	fplx	Family
 YBX protein family	YBX	fplx	Family
-ZACN	ZACN	fplx	Family
 ZAP-70	P43403	uniprot	Gene_or_gene_product
 ZEB1	P37275	uniprot	Gene_or_gene_product
 Zeb1	P37275	uniprot	Gene_or_gene_product
@@ -2659,7 +2649,7 @@ gefitinib	CHEBI:49668	chebi	Simple_chemical
 general transcription factor II E	GTF2E	fplx	Family
 general transcription factor II F	GTF2F	fplx	Family
 genistein	CHEBI:28088	chebi	Simple_chemical
-glucose	HMDB00122	hmdb	Simple_chemical
+glucose	CHEBI:17234	chebi	Simple_chemical
 glucose transporter	SLC2A	fplx	Family
 glucose transporters	SLC2A	fplx	Family
 glutamate metabotropic receptors	GRM	fplx	Family
