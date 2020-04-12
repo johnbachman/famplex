@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 11:04:2020 00:32
+date: 12:04:2020 01:03
 
 [Term]
 id: FPLX:5_hydroxytryptamine_receptors_ionotropic
@@ -3684,8 +3684,12 @@ inverse_is_a: HGNC:GALNT17
 [Term]
 id: FPLX:G_alpha
 name: G-alpha
-synonym: "G_alpha" EXACT []
-synonym: "G_α" EXACT []
+synonym: "G-alpha" EXACT []
+synonym: "G-α" EXACT []
+synonym: "G protein alpha" EXACT []
+synonym: "G-protein alpha" EXACT []
+synonym: "Galpha" EXACT []
+synonym: "G alpha" EXACT []
 xref: XFAM:PF00503
 is_a: FPLX:root
 inverse_is_a: FPLX:G_i_alpha
@@ -6530,6 +6534,7 @@ inverse_is_a: HGNC:NOS3
 id: FPLX:Notch
 name: Notch
 synonym: "Notch" EXACT []
+synonym: "NOTCH" EXACT []
 xref: BEL:"NOTCH Family"
 xref: IP:IPR008297
 xref: IP:IPR010660
