@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 16:04:2020 14:55
+date: 16:04:2020 15:01
 
 [Term]
 id: FPLX:5_hydroxytryptamine_receptors_ionotropic
@@ -3623,7 +3623,6 @@ name: FOXK
 synonym: "Foxk" EXACT []
 synonym: "FoxK" EXACT []
 synonym: "FOXK" EXACT []
-synonym: "Foxk" EXACT []
 synonym: "Foxk proteins" EXACT []
 synonym: "FOXK proteins" EXACT []
 synonym: "FOXKs" EXACT []
