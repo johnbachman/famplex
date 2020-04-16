@@ -184,5 +184,4 @@ To preserve correct newlines, take the following steps:
    similar program.
 
 When you're done, run `tox` to verify the integrity of the updates you've
-made and to generate new exports of the HGNC identifier map, OBO, and a BEL
-namespace.
+made and to generate new exports.
