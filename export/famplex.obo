@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 16:04:2020 11:48
+date: 16:04:2020 14:55
 
 [Term]
 id: FPLX:5_hydroxytryptamine_receptors_ionotropic
@@ -3523,6 +3523,134 @@ inverse_is_a: HGNC:FOSL1
 inverse_is_a: HGNC:FOSL2
 
 [Term]
+id: FPLX:FOXA
+name: FOXA
+synonym: "FOXA" EXACT []
+synonym: "foxA" EXACT []
+synonym: "FoxA" EXACT []
+synonym: "FOX-A" EXACT []
+is_a: FPLX:FOX
+inverse_is_a: HGNC:FOXA1
+inverse_is_a: HGNC:FOXA2
+inverse_is_a: HGNC:FOXA3
+
+[Term]
+id: FPLX:FOXB
+name: FOXB
+synonym: "Foxb" EXACT []
+synonym: "FoxB" EXACT []
+is_a: FPLX:FOX
+inverse_is_a: HGNC:FOXB1
+inverse_is_a: HGNC:FOXB2
+
+[Term]
+id: FPLX:FOXC
+name: FOXC
+synonym: "Foxc" EXACT []
+synonym: "FoxC" EXACT []
+is_a: FPLX:FOX
+inverse_is_a: HGNC:FOXC1
+inverse_is_a: HGNC:FOXC2
+
+[Term]
+id: FPLX:FOXD
+name: FOXD
+synonym: "FoxD" EXACT []
+synonym: "foxD" EXACT []
+synonym: "FOXD" EXACT []
+synonym: "Foxd" EXACT []
+is_a: FPLX:FOX
+inverse_is_a: HGNC:FOXD1
+inverse_is_a: HGNC:FOXD2
+inverse_is_a: HGNC:FOXD3
+inverse_is_a: HGNC:FOXD4
+inverse_is_a: FPLX:FOXD4L
+
+[Term]
+id: FPLX:FOXD4L
+name: FOXD4L
+synonym: "FOXD4L" EXACT []
+is_a: FPLX:FOXD
+inverse_is_a: HGNC:FOXD4L1
+inverse_is_a: HGNC:FOXD4L3
+inverse_is_a: HGNC:FOXD4L4
+inverse_is_a: HGNC:FOXD4L5
+inverse_is_a: HGNC:FOXD4L6
+
+[Term]
+id: FPLX:FOXE
+name: FOXE
+synonym: "FOXE" EXACT []
+is_a: FPLX:FOX
+inverse_is_a: HGNC:FOXE1
+inverse_is_a: HGNC:FOXE3
+
+[Term]
+id: FPLX:FOXF
+name: FOXF
+synonym: "FOXF" EXACT []
+synonym: "Foxf" EXACT []
+synonym: "FoxF" EXACT []
+synonym: "Foxf family" EXACT []
+synonym: "Foxf genes" EXACT []
+synonym: "FoxF proteins" EXACT []
+synonym: "FOXF proteins" EXACT []
+is_a: FPLX:FOX
+inverse_is_a: HGNC:FOXF1
+inverse_is_a: HGNC:FOXF2
+
+[Term]
+id: FPLX:FOXI
+name: FOXI
+synonym: "FOXI" EXACT []
+is_a: FPLX:FOX
+inverse_is_a: HGNC:FOXI1
+inverse_is_a: HGNC:FOXI2
+inverse_is_a: HGNC:FOXI3
+
+[Term]
+id: FPLX:FOXJ
+name: FOXJ
+synonym: "FOXJ" EXACT []
+is_a: FPLX:FOX
+inverse_is_a: HGNC:FOXJ1
+inverse_is_a: HGNC:FOXJ2
+inverse_is_a: HGNC:FOXJ3
+
+[Term]
+id: FPLX:FOXK
+name: FOXK
+synonym: "Foxk" EXACT []
+synonym: "FoxK" EXACT []
+synonym: "FOXK" EXACT []
+synonym: "Foxk" EXACT []
+synonym: "Foxk proteins" EXACT []
+synonym: "FOXK proteins" EXACT []
+synonym: "FOXKs" EXACT []
+is_a: FPLX:FOX
+inverse_is_a: HGNC:FOXK1
+inverse_is_a: HGNC:FOXK2
+
+[Term]
+id: FPLX:FOXL
+name: FOXL
+synonym: "FoxL" EXACT []
+synonym: "FOXL" EXACT []
+is_a: FPLX:FOX
+inverse_is_a: HGNC:FOXL1
+inverse_is_a: HGNC:FOXL2
+
+[Term]
+id: FPLX:FOXN
+name: FOXN
+synonym: "FOXN" EXACT []
+is_a: FPLX:FOX
+inverse_is_a: HGNC:FOXN1
+inverse_is_a: HGNC:FOXN2
+inverse_is_a: HGNC:FOXN3
+inverse_is_a: HGNC:FOXN4
+
+[Term]
 id: FPLX:FOXO
 name: FOXO
 synonym: "FOXO" EXACT []
@@ -3531,11 +3659,59 @@ xref: BEL:"FOXO Family"
 xref: IP:IPR032067
 xref: NCIT:C118892
 xref: SIGNOR:SIGNOR-PF27
-is_a: FPLX:root
+is_a: FPLX:FOX
 inverse_is_a: HGNC:FOXO1
 inverse_is_a: HGNC:FOXO3
 inverse_is_a: HGNC:FOXO4
 inverse_is_a: HGNC:FOXO6
+
+[Term]
+id: FPLX:FOXP
+name: FOXP
+synonym: "Foxp" EXACT []
+synonym: "FoxP" EXACT []
+synonym: "FOXP" EXACT []
+synonym: "Foxp proteins" EXACT []
+synonym: "FoxP proteins" EXACT []
+synonym: "FOXP proteins" EXACT []
+is_a: FPLX:FOX
+inverse_is_a: HGNC:FOXP1
+inverse_is_a: HGNC:FOXP2
+inverse_is_a: HGNC:FOXP3
+inverse_is_a: HGNC:FOXP4
+
+[Term]
+id: FPLX:FOXR
+name: FOXR
+synonym: "FOXR" EXACT []
+synonym: "FoxR" EXACT []
+is_a: FPLX:FOX
+inverse_is_a: HGNC:FOXR1
+inverse_is_a: HGNC:FOXR2
+
+[Term]
+id: FPLX:FOX
+name: FOX
+is_a: FPLX:root
+inverse_is_a: FPLX:FOXA
+inverse_is_a: FPLX:FOXB
+inverse_is_a: FPLX:FOXC
+inverse_is_a: FPLX:FOXD
+inverse_is_a: FPLX:FOXE
+inverse_is_a: FPLX:FOXF
+inverse_is_a: HGNC:FOXG1
+inverse_is_a: HGNC:FOXH1
+inverse_is_a: FPLX:FOXI
+inverse_is_a: FPLX:FOXJ
+inverse_is_a: FPLX:FOXK
+inverse_is_a: FPLX:FOXL
+inverse_is_a: HGNC:FOXM1
+inverse_is_a: FPLX:FOXN
+inverse_is_a: FPLX:FOXO
+inverse_is_a: FPLX:FOXP
+inverse_is_a: HGNC:FOXQ1
+inverse_is_a: FPLX:FOXR
+inverse_is_a: HGNC:FOXS1
 
 [Term]
 id: FPLX:FPR
