@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 16:04:2020 10:56
+date: 16:04:2020 11:48
 
 [Term]
 id: FPLX:5_hydroxytryptamine_receptors_ionotropic
@@ -2859,6 +2859,17 @@ is_a: FPLX:Neuropeptides
 inverse_is_a: HGNC:EDN1
 inverse_is_a: HGNC:EDN2
 inverse_is_a: HGNC:EDN3
+
+[Term]
+id: FPLX:EDNR
+name: EDNR
+synonym: "endothelin receptor" EXACT []
+synonym: "endothelin receptors" EXACT []
+synonym: "endothelin-1 receptor" EXACT []
+synonym: "endothelin-1 receptors" EXACT []
+is_a: FPLX:root
+inverse_is_a: HGNC:EDNRA
+inverse_is_a: HGNC:EDNRB
 
 [Term]
 id: FPLX:EFN

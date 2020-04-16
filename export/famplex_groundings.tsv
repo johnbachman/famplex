@@ -611,6 +611,7 @@ EBNA3C	I1YP21	uniprot	Gene_or_gene_product
 EBP1	Q9UQ80	uniprot	Gene_or_gene_product
 ECM	GO:0031012	go	BioProcess
 EDN	EDN	fplx	Family
+EDNR	EDNR	fplx	Family
 EFN	EFN	fplx	Family
 EGCG	CHEBI:4806	chebi	Simple_chemical
 EGF	P01133	uniprot	Gene_or_gene_product
@@ -2602,6 +2603,10 @@ emodin	CHEBI:42223	chebi	Simple_chemical
 endocytosis	GO:0006897	go	BioProcess
 endoribonuclease	C25959	ncit	BioProcess
 endothelin	EDN	fplx	Family
+endothelin receptor	EDNR	fplx	Family
+endothelin receptors	EDNR	fplx	Family
+endothelin-1 receptor	EDNR	fplx	Family
+endothelin-1 receptors	EDNR	fplx	Family
 endothelins	EDN	fplx	Family
 enolase	ENO	fplx	Family
 eotaxin	Eotaxin	fplx	Family
