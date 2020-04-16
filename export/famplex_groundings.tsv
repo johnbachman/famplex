@@ -2054,8 +2054,12 @@ Sulfonylurea-receptor	Sulfonylurea_receptor	fplx	Family
 Survivin	O15392	uniprot	Gene_or_gene_product
 Syk	P43405	uniprot	Gene_or_gene_product
 T-cell factor (TCF)/lymphoid enhancer factor	TCF_LEF	fplx	Family
+TAB	TAB	fplx	Family
 TAC	TAC	fplx	Family
+TAK-1 binding protein	TAB	fplx	Family
 TAK1	O43318	uniprot	Gene_or_gene_product
+TAK1 binding protein	TAB	fplx	Family
+TAK1-binding protein	TAB	fplx	Family
 TAK165	6444692	pubchem	Simple_chemical
 TAOK	TAOK	fplx	Family
 TAP	TAP	fplx	Family
@@ -2720,7 +2724,6 @@ inhibin-a	Inhibin_A	fplx	Family
 inhibin-b	Inhibin_B	fplx	Family
 initiation factor 4E binding proteins	EIF4EBP	fplx	Family
 insulin	P01308	uniprot	Gene_or_gene_product
-insulin family	INS	fplx	Family
 insulin receptor	P06213	uniprot	Gene_or_gene_product
 insulin receptor family	INSR	fplx	Family
 insulin receptor substrate	IRS	fplx	Family

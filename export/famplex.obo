@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 12:04:2020 01:22
+date: 16:04:2020 10:56
 
 [Term]
 id: FPLX:5_hydroxytryptamine_receptors_ionotropic
@@ -9649,6 +9649,18 @@ has_part: HGNC:SMARCE1
 has_part: HGNC:ACTL6A
 has_part: HGNC:ACTL6B
 has_part: HGNC:HLTF
+
+[Term]
+id: FPLX:TAB
+name: TAB
+synonym: "TAB" EXACT []
+synonym: "TAK1-binding protein" EXACT []
+synonym: "TAK-1 binding protein" EXACT []
+synonym: "TAK1 binding protein" EXACT []
+is_a: FPLX:root
+inverse_is_a: HGNC:TAB1
+inverse_is_a: HGNC:TAB2
+inverse_is_a: HGNC:TAB3
 
 [Term]
 id: FPLX:TAC
