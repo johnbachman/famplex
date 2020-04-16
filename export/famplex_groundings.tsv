@@ -723,11 +723,31 @@ FN	P02751	uniprot	Gene_or_gene_product
 FNT	FNT	fplx	Family
 FOS	FOS_family	fplx	Family
 FOS-family	FOS_family	fplx	Family
+FOX	FOX	fplx	Family
+FOX-A	FOXA	fplx	Family
+FOXA	FOXA	fplx	Family
+FOXB	FOXB	fplx	Family
+FOXC	FOXC	fplx	Family
+FOXD	FOXD	fplx	Family
+FOXD4L	FOXD4L	fplx	Family
+FOXE	FOXE	fplx	Family
+FOXF	FOXF	fplx	Family
+FOXF proteins	FOXF	fplx	Family
+FOXI	FOXI	fplx	Family
+FOXJ	FOXJ	fplx	Family
+FOXK	FOXK	fplx	Family
+FOXK proteins	FOXK	fplx	Family
+FOXKs	FOXK	fplx	Family
+FOXL	FOXL	fplx	Family
 FOXM1	Q08050	uniprot	Gene_or_gene_product
+FOXN	FOXN	fplx	Family
 FOXO	FOXO	fplx	Family
 FOXO1	Q12778	uniprot	Gene_or_gene_product
 FOXO3	O43524	uniprot	Gene_or_gene_product
 FOXO3a	O43524	uniprot	Gene_or_gene_product
+FOXP	FOXP	fplx	Family
+FOXP proteins	FOXP	fplx	Family
+FOXR	FOXR	fplx	Family
 FPR	FPR	fplx	Family
 FRK	P42685	uniprot	Gene_or_gene_product
 FRP-1	D027261	mesh	BioProcess
@@ -745,9 +765,30 @@ Fibrinogen	Fibrinogen	fplx	Family
 Flip	O15519	uniprot	Gene_or_gene_product
 Flrt family	FLRT	fplx	Family
 Fos	FOS_family	fplx	Family
+FoxA	FOXA	fplx	Family
+FoxB	FOXB	fplx	Family
+FoxC	FOXC	fplx	Family
+FoxD	FOXD	fplx	Family
+FoxF	FOXF	fplx	Family
+FoxF proteins	FOXF	fplx	Family
+FoxK	FOXK	fplx	Family
+FoxL	FOXL	fplx	Family
 FoxO	FOXO	fplx	Family
 FoxO1	Q12778	uniprot	Gene_or_gene_product
 FoxO3a	O43524	uniprot	Gene_or_gene_product
+FoxP	FOXP	fplx	Family
+FoxP proteins	FOXP	fplx	Family
+FoxR	FOXR	fplx	Family
+Foxb	FOXB	fplx	Family
+Foxc	FOXC	fplx	Family
+Foxd	FOXD	fplx	Family
+Foxf	FOXF	fplx	Family
+Foxf family	FOXF	fplx	Family
+Foxf genes	FOXF	fplx	Family
+Foxk	FOXK	fplx	Family
+Foxk proteins	FOXK	fplx	Family
+Foxp	FOXP	fplx	Family
+Foxp proteins	FOXP	fplx	Family
 Frp1	Q6B957	uniprot	Gene_or_gene_product
 Fu	P23647	uniprot	Gene_or_gene_product
 Fucosyltransferase	FUT	fplx	Family
@@ -2642,6 +2683,8 @@ fibronectin	P02751	uniprot	Gene_or_gene_product
 fisetin	CHEBI:42567	chebi	Simple_chemical
 flotillin	FLOT	fplx	Family
 follicle-stimulating hormone	FSH	fplx	Family
+foxA	FOXA	fplx	Family
+foxD	FOXD	fplx	Family
 fructose-bisphosphate aldolase	ALDO	fplx	Family
 fucosyltransferase	FUT	fplx	Family
 fucosyltransferases	FUT	fplx	Family
