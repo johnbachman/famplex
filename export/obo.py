@@ -14,10 +14,16 @@ Synonym = collections.namedtuple('Synonym', ['name', 'status'])
 
 
 class OboTerm(object):
-    def __init__(self, term_id, name, rels, synonyms=None, xrefs=None):
+    def __init__(self, term_id, name, rels, synonyms=None, xrefs=None,
+                 description=None, provenance=None):
         self.term_id = term_id
         self.name = name
+        self.description = description
         self.synonyms = synonyms
+        if provenance is None:
+            self.provenance = []
+        else:
+            self.provenance = provenance
         if xrefs is not None:
             self.xrefs = xrefs
         else:
@@ -28,6 +34,8 @@ class OboTerm(object):
         obo_str = '[Term]\n'
         obo_str += 'id: %s:%s\n' % (self.term_id.ns, self.term_id.id)
         obo_str += 'name: %s\n' % self.name
+        if self.description is not None:
+            obo_str += 'def: "%s" [%s]\n' % (self.description, ','.join(self.provenance))
         for synonym in self.synonyms:
             obo_str += 'synonym: "%s" %s []\n' % (synonym.name, synonym.status)
         for xref in self.xrefs:
@@ -55,11 +63,19 @@ def get_obo_terms():
     obo_terms = []
     path_this = os.path.dirname(os.path.abspath(__file__))
     entities_file = os.path.join(path_this, os.pardir, 'entities.csv')
+    descriptions_file = os.path.join(path_this, os.pardir, 'descriptions.csv')
     grounding_file = os.path.join(path_this, os.pardir, 'grounding_map.csv')
     equiv_file = os.path.join(path_this, os.pardir, 'equivalences.csv')
     rel_file = os.path.join(path_this, os.pardir, 'relations.csv')
     with open(entities_file, 'r') as fh:
         entities = [l.strip() for l in fh.readlines()]
+    with open(descriptions_file, 'r') as fh:
+        entity_decriptions = {}
+        csvreader = csv.reader(fh, delimiter=str(u','), lineterminator='\r\n',
+                               quoting=csv.QUOTE_MINIMAL,
+                               quotechar=str(u'"'))
+        for fplx_id, references, description in csvreader:
+            entity_decriptions[fplx_id] = (references.split('|'), description)
     with open(equiv_file, 'r') as fh:
         csvreader = csv.reader(fh, delimiter=str(u','), lineterminator='\r\n',
                                quoting=csv.QUOTE_MINIMAL,
@@ -122,7 +138,11 @@ def get_obo_terms():
         # If the entity has no isa relations, connect it to the root
         if not rels[entity]['is_a'] and not rels[entity]['part_of']:
             rels[entity]['is_a'].append(Reference('FPLX', 'root'))
-        term = OboTerm(entity_id, name, rels[entity], synonyms, xrefs)
+
+        provenance, description = \
+            entity_decriptions.get(entity_id.id, (None, None))
+        term = OboTerm(entity_id, name, rels[entity], synonyms, xrefs,
+                       description=description, provenance=provenance)
         obo_terms.append(term)
     obo_terms.append(OboTerm(Reference('FPLX', 'root'),
                              'PROTEIN-FAMILY-OR-COMPLEX',
