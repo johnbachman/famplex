@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 16:04:2020 15:01
+date: 22:04:2020 12:22
 
 [Term]
 id: FPLX:5_hydroxytryptamine_receptors_ionotropic
@@ -5259,9 +5259,7 @@ synonym: "integrins" EXACT []
 synonym: "LFA-1 (integrin)" EXACT []
 synonym: "MAC-1 (integrin)" EXACT []
 synonym: "vitronectin receptor (integrin)" EXACT []
-xref: GO:0034666
-xref: GO:0034683
-xref: GO:0034687
+xref: GO:0008305
 xref: MEDSCAN:urn:agi-complex:MAC-1%20(integrin)
 xref: NCIT:C16748
 is_a: FPLX:root
@@ -5394,7 +5392,7 @@ name: Kainate-family
 synonym: "Glutamate receptors, ionotropic, kainate" EXACT []
 synonym: "Kainate receptors" EXACT []
 synonym: "KARs" EXACT []
-xref: GFAM:1199
+xref: HGNC_GROUP:1199
 is_a: FPLX:GRI
 inverse_is_a: HGNC:GRIK1
 inverse_is_a: HGNC:GRIK2
@@ -6470,7 +6468,7 @@ id: FPLX:Neurexins
 name: Neurexins
 synonym: "Neurexins" EXACT []
 synonym: "NRXN" EXACT []
-xref: GFAM:1582
+xref: HGNC_GROUP:1582
 is_a: FPLX:root
 inverse_is_a: HGNC:NRXN1
 inverse_is_a: HGNC:NRXN2
