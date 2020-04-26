@@ -1115,6 +1115,7 @@ IL-1beta	P01584	uniprot	Gene_or_gene_product
 IL-1β	P01584	uniprot	Gene_or_gene_product
 IL-2	P60568	uniprot	Gene_or_gene_product
 IL-2 receptor	IL2R	fplx	Family
+IL-23	IL23	fplx	Family
 IL-2R	IL2R	fplx	Family
 IL-4	P05112	uniprot	Gene_or_gene_product
 IL-6	P05231	uniprot	Gene_or_gene_product
@@ -1123,6 +1124,7 @@ IL1	IL1	fplx	Family
 IL1 family	IL1	fplx	Family
 IL12	IL12	fplx	Family
 IL15R	IL15R	fplx	Family
+IL23	IL23	fplx	Family
 IL2R	IL2R	fplx	Family
 IQGAP1	P46940	uniprot	Gene_or_gene_product
 IRF3	Q14653	uniprot	Gene_or_gene_product
@@ -1139,6 +1141,7 @@ IkappaB	IKB	fplx	Family
 IkappaB kinase	IKK_complex	fplx	Family
 IkappaB-alpha	P25963	uniprot	Gene_or_gene_product
 IkappaBalpha	P25963	uniprot	Gene_or_gene_product
+Il23	IL23	fplx	Family
 Inhibin	Inhibin	fplx	Family
 Inhibin-A	Inhibin_A	fplx	Family
 Inhibin-B	Inhibin_B	fplx	Family
@@ -1150,6 +1153,7 @@ Interferon beta	IFNB	fplx	Family
 Interferon β	IFNB	fplx	Family
 Interferon-alpha/beta receptor	IFNAR	fplx	Family
 Interferon-gamma-receptor	Interferon_gamma_receptor	fplx	Family
+Interleukin-23	IL23	fplx	Family
 Ir	CHEBI:49666	chebi	Simple_chemical
 Iroquois family	IRX	fplx	Family
 Iroquois proteins	IRX	fplx	Family
@@ -2761,6 +2765,7 @@ homeodomain iroquois proteins	IRX	fplx	Family
 hydrogen peroxide	CHEBI:16240	chebi	Simple_chemical
 hypoxia-inducible factors	HIF	fplx	Family
 iNOS	P35228	uniprot	Gene_or_gene_product
+il23	IL23	fplx	Family
 imatinib	CHEBI:45783	chebi	Simple_chemical
 immune response	GO:0006955	go	BioProcess
 infiltration	D009361	mesh	BioProcess
@@ -2790,6 +2795,8 @@ interferon γ receptor	Interferon_gamma_receptor	fplx	Family
 interferon-gamma receptor	Interferon_gamma_receptor	fplx	Family
 interferon-α/β receptor	IFNAR	fplx	Family
 interferon-γ receptor	Interferon_gamma_receptor	fplx	Family
+interleukin 23	IL23	fplx	Family
+interleukin-23	IL23	fplx	Family
 invasion	D009361	mesh	BioProcess
 invasiveness	D009361	mesh	BioProcess
 iron	CHEBI:18248	chebi	Simple_chemical

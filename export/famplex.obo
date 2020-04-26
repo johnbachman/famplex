@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 26:04:2020 11:03
+date: 26:04:2020 11:26
 
 [Term]
 id: FPLX:5_hydroxytryptamine_receptors_ionotropic
@@ -5210,6 +5210,22 @@ is_a: FPLX:root
 has_part: HGNC:IL2RA
 has_part: HGNC:IL2RB
 has_part: HGNC:IL2RG
+
+[Term]
+id: FPLX:IL23
+name: IL23
+synonym: "IL-23" EXACT []
+synonym: "IL23" EXACT []
+synonym: "Il23" EXACT []
+synonym: "il23" EXACT []
+synonym: "interleukin 23" EXACT []
+synonym: "interleukin-23" EXACT []
+synonym: "Interleukin-23" EXACT []
+xref: MESH:D053759
+xref: NCIT:C147535
+is_a: FPLX:root
+has_part: HGNC:IL12B
+has_part: HGNC:IL23A
 
 [Term]
 id: FPLX:Inhibin
