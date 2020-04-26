@@ -3889,8 +3889,7 @@ HGNC,GAST,isa,FPLX,Neuropeptides
 HGNC,GHRH,isa,FPLX,Neuropeptides
 HGNC,GHRL,isa,FPLX,Neuropeptides
 HGNC,GIP,isa,FPLX,Neuropeptides
-HGNC,GNRH1,isa,FPLX,Neuropeptides
-HGNC,GNRH2,isa,FPLX,Neuropeptides
+FPLX,GNRH,isa,FPLX,Neuropeptides
 HGNC,GRP,isa,FPLX,Neuropeptides
 HGNC,HCRT,isa,FPLX,Neuropeptides
 HGNC,IAPP,isa,FPLX,Neuropeptides
@@ -3967,3 +3966,5 @@ HGNC,IFNAR1,isa,FPLX,IFNAR
 HGNC,IFNAR2,isa,FPLX,IFNAR
 HGNC,IL12B,partof,FPLX,IL23
 HGNC,IL23A,partof,FPLX,IL23
+HGNC,GNRH1,isa,FPLX,GNRH
+HGNC,GNRH2,isa,FPLX,GNRH
