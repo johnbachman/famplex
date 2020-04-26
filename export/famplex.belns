@@ -3,7 +3,7 @@ Keyword=FPLX
 NameString=FamPlex
 DomainString=Gene and Gene Products
 VersionString=20200426
-CreatedDateTime=2020-04-26T11:03:20
+CreatedDateTime=2020-04-26T11:24:52
 DescriptionString=FamPlex is a collection of resources for grounding biological entities from text and describing their hierarchical relationships.
 QueryValueURL=http://identifiers.org/fplx/
 
@@ -344,6 +344,7 @@ IKK_family|CGPR
 IL1|CGPR
 IL12|CGPR
 IL15R|CGPR
+IL23|CGPR
 IL2R|CGPR
 INSR|CGPR
 IRS|CGPR
