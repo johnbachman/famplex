@@ -874,6 +874,7 @@ GIIPLA2	PLA2G2	fplx	Family
 GJ	GJ	fplx	Family
 GLRA-GLRB	GLRA_GLRB	fplx	Family
 GLUT	SLC2A	fplx	Family
+GNRH	GNRH	fplx	Family
 GPCR	GPCR	fplx	Family
 GPCR kinases	GRK	fplx	Family
 GPCRs	GPCR	fplx	Family
@@ -950,6 +951,11 @@ Glycosyltransferase family 29	GTF_family_29	fplx	Family
 Glycosyltransferase family 6	GTF_family_6	fplx	Family
 Glycosyltransferase family 8	GTF_family_8	fplx	Family
 Glycosyltransferase family 90	GTF_family_90	fplx	Family
+GnRH	GNRH	fplx	Family
+GnRh	GNRH	fplx	Family
+Gnrh	GNRH	fplx	Family
+Gonadotropin releasing hormone	GNRH	fplx	Family
+Gonadotropin-releasing hormone	GNRH	fplx	Family
 GpIb-V-IX	GPIb_IX_V	fplx	Family
 Gq alpha	G_q_alpha	fplx	Family
 Gq alpha subunit	G_q_alpha	fplx	Family
@@ -2727,6 +2733,8 @@ glycosyltransferase family 29	GTF_family_29	fplx	Family
 glycosyltransferase family 6	GTF_family_6	fplx	Family
 glycosyltransferase family 8	GTF_family_8	fplx	Family
 glycosyltransferase family 90	GTF_family_90	fplx	Family
+gonadotropin releasing hormone	GNRH	fplx	Family
+gonadotropin-releasing hormone	GNRH	fplx	Family
 gp120	P04578	uniprot	Gene_or_gene_product
 gp47 phox	P14598	uniprot	Gene_or_gene_product
 gp91 phox	P04839	uniprot	Gene_or_gene_product

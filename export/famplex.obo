@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 26:04:2020 11:26
+date: 26:04:2020 11:42
 
 [Term]
 id: FPLX:5_hydroxytryptamine_receptors_ionotropic
@@ -4141,6 +4141,23 @@ inverse_is_a: FPLX:UGT
 inverse_is_a: FPLX:UGGT
 
 [Term]
+id: FPLX:GNRH
+name: GNRH
+synonym: "GnRH" EXACT []
+synonym: "GnRh" EXACT []
+synonym: "Gnrh" EXACT []
+synonym: "GNRH" EXACT []
+synonym: "gonadotropin-releasing hormone" EXACT []
+synonym: "gonadotropin releasing hormone" EXACT []
+synonym: "Gonadotropin-releasing hormone" EXACT []
+synonym: "Gonadotropin releasing hormone" EXACT []
+xref: MESH:D007987
+xref: NCIT:C2270
+is_a: FPLX:Neuropeptides
+inverse_is_a: HGNC:GNRH1
+inverse_is_a: HGNC:GNRH2
+
+[Term]
 id: FPLX:GPCR
 name: GPCR
 synonym: "Class C GPCR" EXACT []
@@ -6525,8 +6542,7 @@ inverse_is_a: HGNC:GAST
 inverse_is_a: HGNC:GHRH
 inverse_is_a: HGNC:GHRL
 inverse_is_a: HGNC:GIP
-inverse_is_a: HGNC:GNRH1
-inverse_is_a: HGNC:GNRH2
+inverse_is_a: FPLX:GNRH
 inverse_is_a: HGNC:GRP
 inverse_is_a: HGNC:HCRT
 inverse_is_a: HGNC:IAPP
