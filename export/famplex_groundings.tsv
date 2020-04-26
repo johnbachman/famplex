@@ -1076,6 +1076,7 @@ IFN-gamma	P01579	uniprot	Gene_or_gene_product
 IFN-α	IFNA	fplx	Family
 IFN-γ	P01579	uniprot	Gene_or_gene_product
 IFNA	IFNA	fplx	Family
+IFNAR	IFNAR	fplx	Family
 IFNB	IFNB	fplx	Family
 IFNGR	Interferon_gamma_receptor	fplx	Family
 IFNalpha	IFNA	fplx	Family
@@ -1133,6 +1134,7 @@ IRS1	P35568	uniprot	Gene_or_gene_product
 IRS2	Q9Y4H2	uniprot	Gene_or_gene_product
 IRX	IRX	fplx	Family
 ITPR	ITPR	fplx	Family
+Ifnar	IFNAR	fplx	Family
 IkappaB	IKB	fplx	Family
 IkappaB kinase	IKK_complex	fplx	Family
 IkappaB-alpha	P25963	uniprot	Gene_or_gene_product
@@ -1146,6 +1148,7 @@ Integrins	Integrins	fplx	Family
 Interferon	Interferon	fplx	Family
 Interferon beta	IFNB	fplx	Family
 Interferon β	IFNB	fplx	Family
+Interferon-alpha/beta receptor	IFNAR	fplx	Family
 Interferon-gamma-receptor	Interferon_gamma_receptor	fplx	Family
 Ir	CHEBI:49666	chebi	Simple_chemical
 Iroquois family	IRX	fplx	Family
@@ -2785,6 +2788,7 @@ interferon gamma receptor	Interferon_gamma_receptor	fplx	Family
 interferon β	IFNB	fplx	Family
 interferon γ receptor	Interferon_gamma_receptor	fplx	Family
 interferon-gamma receptor	Interferon_gamma_receptor	fplx	Family
+interferon-α/β receptor	IFNAR	fplx	Family
 interferon-γ receptor	Interferon_gamma_receptor	fplx	Family
 invasion	D009361	mesh	BioProcess
 invasiveness	D009361	mesh	BioProcess
@@ -2849,7 +2853,7 @@ miR-7	MIR7-1	hgnc	Gene_or_gene_product
 mini-chromosome maintenance complex	MCM	fplx	Family
 minichromosome maintenance complex	MCM	fplx	Family
 minichromosome maintenance protein complex	MCM	fplx	Family
-mitochondrial membrane potential	D053078	mesh	BioProcess
+mitochondrial membrane potential	GO:0051881	go	BioProcess
 mitochondrial ribosomal large subunit	MRPL	fplx	Family
 mitochondrial ribosomal small subunit	MRPS	fplx	Family
 mitochondrial ribosomes	Mitochondrial_Ribosome	fplx	Family

@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 22:04:2020 12:22
+date: 26:04:2020 11:03
 
 [Term]
 id: FPLX:5_hydroxytryptamine_receptors_ionotropic
@@ -5070,6 +5070,17 @@ inverse_is_a: HGNC:IFNA14
 inverse_is_a: HGNC:IFNA16
 inverse_is_a: HGNC:IFNA17
 inverse_is_a: HGNC:IFNA21
+
+[Term]
+id: FPLX:IFNAR
+name: IFNAR
+synonym: "IFNAR" EXACT []
+synonym: "Ifnar" EXACT []
+synonym: "Interferon-alpha/beta receptor" EXACT []
+synonym: "interferon-α/β receptor" EXACT []
+is_a: FPLX:root
+inverse_is_a: HGNC:IFNAR1
+inverse_is_a: HGNC:IFNAR2
 
 [Term]
 id: FPLX:IFNB
