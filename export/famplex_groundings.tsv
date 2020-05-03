@@ -477,6 +477,7 @@ Casein kinase 1	CSNK1	fplx	Family
 Caspase	Caspase	fplx	Family
 Caspase-3	P42574	uniprot	Gene_or_gene_product
 Caspase-3-7	Caspase_3_7	fplx	Family
+Cathepsin	Cathepsin	fplx	Family
 Cation channel	Cation_channels	fplx	Family
 Cation channels	Cation_channels	fplx	Family
 Cation-channels	Cation_channels	fplx	Family
@@ -2498,6 +2499,8 @@ catalase	P04040	uniprot	Gene_or_gene_product
 catalytic subunit of calcineurin	PPP3C	fplx	Family
 catenin alpha	CTNNA	fplx	Family
 catenin α	CTNNA	fplx	Family
+cathepsin	Cathepsin	fplx	Family
+cathepsins	Cathepsin	fplx	Family
 cation channel	Cation_channels	fplx	Family
 cation channels	Cation_channels	fplx	Family
 caveolin	CAV	fplx	Family
