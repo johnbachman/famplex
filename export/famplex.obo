@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 26:04:2020 11:42
+date: 03:05:2020 00:20
 
 [Term]
 id: FPLX:5_hydroxytryptamine_receptors_ionotropic
@@ -1562,6 +1562,30 @@ xref: RE:R-HSA-202877
 is_a: FPLX:Caspase
 inverse_is_a: HGNC:CASP3
 inverse_is_a: HGNC:CASP7
+
+[Term]
+id: FPLX:Cathepsin
+name: Cathepsin
+synonym: "cathepsin" EXACT []
+synonym: "cathepsins" EXACT []
+xref: HGNC_GROUP:470
+xref: MESH:D002403
+is_a: FPLX:root
+inverse_is_a: HGNC:CTSA
+inverse_is_a: HGNC:CTSB
+inverse_is_a: HGNC:CTSC
+inverse_is_a: HGNC:CTSD
+inverse_is_a: HGNC:CTSE
+inverse_is_a: HGNC:CTSF
+inverse_is_a: HGNC:CTSG
+inverse_is_a: HGNC:CTSH
+inverse_is_a: HGNC:CTSK
+inverse_is_a: HGNC:CTSL
+inverse_is_a: HGNC:CTSO
+inverse_is_a: HGNC:CTSS
+inverse_is_a: HGNC:CTSV
+inverse_is_a: HGNC:CTSW
+inverse_is_a: HGNC:CTSZ
 
 [Term]
 id: FPLX:Cation_channels
