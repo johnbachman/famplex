@@ -1233,6 +1233,9 @@ Laminin-332	Laminin_332	fplx	Family
 Laminin-5	Laminin_332	fplx	Family
 Large Mitoribosomal Subunit	MRPL	fplx	Family
 Lck	P06239	uniprot	Gene_or_gene_product
+Let-7	MIRLET7	fplx	Family
+Let-7a	MIRLET7A	fplx	Family
+Let-7f	MIRLET7F	fplx	Family
 Ligand-gated ion channel	Ligand_gated_ion_channels	fplx	Family
 Ligand-gated ion channels	Ligand_gated_ion_channels	fplx	Family
 Ligand-gated-ion-channels	Ligand_gated_ion_channels	fplx	Family
@@ -1280,6 +1283,9 @@ MET	P08581	uniprot	Gene_or_gene_product
 MG132	CHEBI:75142	chebi	Simple_chemical
 MGAT	MGAT	fplx	Family
 MIF	P14174	uniprot	Gene_or_gene_product
+MIRLET7	MIRLET7	fplx	Family
+MIRLET7A	MIRLET7A	fplx	Family
+MIRLET7F	MIRLET7F	fplx	Family
 MITF	O75030	uniprot	Gene_or_gene_product
 MKK4	P45985	uniprot	Gene_or_gene_product
 MKNK	MKNK	fplx	Family
