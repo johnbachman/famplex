@@ -2179,8 +2179,11 @@ TMZ	CHEBI:72564	chebi	Simple_chemical
 TN	TN	fplx	Family
 TN-C	Troponin_C	fplx	Family
 TNF	P01375	uniprot	Gene_or_gene_product
+TNF receptor associated factors	TRAF	fplx	Family
+TNF receptor-associated factors	TRAF	fplx	Family
 TNF-R superfamily	TNFRSF	fplx	Family
 TNF-alpha	P01375	uniprot	Gene_or_gene_product
+TNF-receptor associated factors	TRAF	fplx	Family
 TNF-receptor family	TNFRSF	fplx	Family
 TNF-α	P01375	uniprot	Gene_or_gene_product
 TNFR	TNFRSF	fplx	Family
@@ -2203,9 +2206,11 @@ TPCN	TPCN	fplx	Family
 TPNI	Troponin_I	fplx	Family
 TPNT	Troponin_T	fplx	Family
 TQ	CHEBI:113532	chebi	Simple_chemical
+TRAF	TRAF	fplx	Family
 TRAF2	Q12933	uniprot	Gene_or_gene_product
 TRAF3	Q13114	uniprot	Gene_or_gene_product
 TRAF6	Q9Y4K3	uniprot	Gene_or_gene_product
+TRAFs	TRAF	fplx	Family
 TRAIL	P50591	uniprot	Gene_or_gene_product
 TRAP	P16893	uniprot	Gene_or_gene_product
 TRIM	Q6PIZ9	uniprot	Gene_or_gene_product
@@ -2237,6 +2242,7 @@ Tiam2	Q8IVF5	uniprot	Gene_or_gene_product
 TnC	Troponin_C	fplx	Family
 Tpl2	P41279	uniprot	Gene_or_gene_product
 TraD	P09130	uniprot	Gene_or_gene_product
+Traf	TRAF	fplx	Family
 Transcription factor AP-2	TFAP2	fplx	Family
 Trk receptor	NTRK	fplx	Family
 Trk receptors	NTRK	fplx	Family
@@ -2465,7 +2471,7 @@ cPARP	P09874	uniprot	Gene_or_gene_product
 cPLA2	PLA2	fplx	Family
 cSBP	D001794	mesh	BioProcess
 cTnC	Troponin_C	fplx	Family
-cTnI	Troponin_C	fplx	Family
+cTnI	Troponin_I	fplx	Family
 cTnT	Troponin_T	fplx	Family
 cadherin	Cadherin	fplx	Family
 caffeine	CHEBI:27732	chebi	Simple_chemical
