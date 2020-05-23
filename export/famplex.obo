@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 03:05:2020 00:20
+date: 22:05:2020 21:46
 
 [Term]
 id: FPLX:5_hydroxytryptamine_receptors_ionotropic
@@ -10265,6 +10265,25 @@ inverse_is_a: HGNC:TPCN1
 inverse_is_a: HGNC:TPCN2
 
 [Term]
+id: FPLX:TRAF
+name: TRAF
+synonym: "TRAF" EXACT []
+synonym: "TRAFs" EXACT []
+synonym: "Traf" EXACT []
+synonym: "TNF receptor associated factors" EXACT []
+synonym: "TNF receptor-associated factors" EXACT []
+synonym: "TNF-receptor associated factors" EXACT []
+xref: HGNC_GROUP:1056
+is_a: FPLX:root
+inverse_is_a: HGNC:TRAF1
+inverse_is_a: HGNC:TRAF2
+inverse_is_a: HGNC:TRAF3
+inverse_is_a: HGNC:TRAF4
+inverse_is_a: HGNC:TRAF5
+inverse_is_a: HGNC:TRAF6
+inverse_is_a: HGNC:TRAF7
+
+[Term]
 id: FPLX:Troponin
 name: Troponin
 synonym: "troponin complex" EXACT []
@@ -10283,7 +10302,6 @@ has_part: FPLX:Troponin_T
 id: FPLX:Troponin_C
 name: Troponin-C
 synonym: "cTnC" EXACT []
-synonym: "cTnI" EXACT []
 synonym: "TN-C" EXACT []
 synonym: "TnC" EXACT []
 synonym: "troponin C" EXACT []
@@ -10296,6 +10314,7 @@ inverse_is_a: HGNC:TNNC2
 [Term]
 id: FPLX:Troponin_I
 name: Troponin-I
+synonym: "cTnI" EXACT []
 synonym: "TPNI" EXACT []
 synonym: "troponin I" EXACT []
 xref: NCIT:C17343
