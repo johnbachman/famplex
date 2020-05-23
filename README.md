@@ -1,6 +1,6 @@
 # FamPlex [![Build Status](https://travis-ci.org/sorgerlab/famplex.svg?branch=master)](https://travis-ci.org/sorgerlab/famplex)
 
-*FamPlex* is a collection of resources for grounding biological entities
+*FamPlex* is a collection of resources for grounding protein families and complexes
 from text and describing their hierarchical relationships. Resources were
 developed by manual curation for use by natural language processing and
 biological modeling teams in the [DARPA Big
