@@ -1,24 +1,8 @@
 from __future__ import print_function, unicode_literals
-import csv
 import sys
 from collections import Counter
 
-
-def read_csv(fh, delimiter, quotechar):
-    if sys.version_info.major < 3:
-        csvreader = csv.reader(fh, delimiter=bytes(delimiter),
-                               quotechar=bytes(quotechar))
-        rows = [[cell.decode('utf-8') for cell in row] for row in csvreader]
-    else:
-        csvreader = csv.reader(fh, delimiter=delimiter, quotechar=quotechar)
-        rows = [row for row in csvreader]
-    return rows
-
-
-def load_csv(filename):
-    with open(filename) as f:
-        rows = read_csv(f, ',', '"')
-    return rows
+from famplex.util import load_csv
 
 
 def load_grounding_map(filename):
@@ -45,8 +29,7 @@ def load_grounding_map(filename):
 
 
 def check_file_rows(filename, row_length):
-    with open(filename) as f:
-        rows = read_csv(f, ',', '"')
+    rows = load_csv(filename)
     check_rows(rows, row_length, filename)
 
 
@@ -58,8 +41,7 @@ def check_rows(rows, row_length, filename):
 
 
 def load_entity_list(filename):
-    with open(filename) as f:
-        rows = read_csv(f, ',', '"')
+    rows = load_csv(filename)
     check_rows(rows, 1, filename)
     entities = [row[0] for row in rows]
     return entities
@@ -67,8 +49,7 @@ def load_entity_list(filename):
 
 def load_relationships(filename):
     relationships = []
-    with open(filename) as f:
-        rows = read_csv(f, ',', '"')
+    rows = load_csv(filename)
     check_rows(rows, 5, filename)
     for row in rows:
         relationships.append(((row[0], row[1]), row[2], (row[3], row[4])))
@@ -77,8 +58,7 @@ def load_relationships(filename):
 
 def load_equivalences(filename):
     equivalences = []
-    with open(filename) as f:
-        rows = read_csv(f, ',', '"')
+    rows = load_csv(filename)
     check_rows(rows, 3, filename)
     for row in rows:
         equivalences.append((row[0], row[1], row[2]))
@@ -230,7 +210,7 @@ if __name__ == '__main__':
                         hgnc_id = hgnc_client.get_hgnc_id(db_id)
                         if not hgnc_id:
                             print("ERROR: Symbol %s in grounding map is "
-                                   "not a valid HGNC Symbol." % db_id)
+                                  "not a valid HGNC Symbol." % db_id)
                             signal_error = True
     except ImportError as e:
         print('HGNC check could not be performed because of import error')
