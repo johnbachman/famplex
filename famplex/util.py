@@ -57,3 +57,41 @@ def construct_grounding_map(rows):
         db_refs.update({ns: id_ for ns, id_ in zip(row[1::2], row[2::2])})
         gmap[text] = db_refs if len(db_refs) > 1 else None
     return gmap
+
+
+def update_id_prefixes(filename):
+    """Return list of rows in grounding map with IDs corrected
+
+    Parameters
+    ----------
+    filename : str
+        Location of a grounding map csv file
+
+    Returns
+    -------
+    list
+        List of rows from input with GO, CHEBI, and CHEMBL IDs
+        corrected to be prefixed with the namespace.
+    """
+    gm_rows = load_csv(filename)
+    updated_rows = []
+    for row in gm_rows:
+        key = row[0]
+        keys = [entry for entry in row[1::2]]
+        values = [entry for entry in row[2::2]]
+        if 'GO' in keys:
+            go_ix = keys.index('GO')
+            values[go_ix] = 'GO:%s' % values[go_ix]
+        if 'CHEBI' in keys:
+            chebi_ix = keys.index('CHEBI')
+            values[chebi_ix] = 'CHEBI:%s' % values[chebi_ix]
+        if 'CHEMBL' in keys:
+            chembl_ix = keys.index('CHEMBL')
+            values[chembl_ix] = 'CHEMBL%s' % values[chembl_ix]
+        updated_row = [key]
+        for pair in zip(keys, values):
+            updated_row += pair
+        updated_rows.append(updated_row)
+    return updated_rows
+
+
