@@ -2,8 +2,8 @@
 Keyword=FPLX
 NameString=FamPlex
 DomainString=Gene and Gene Products
-VersionString=20200522
-CreatedDateTime=2020-05-22T21:46:29
+VersionString=20200601
+CreatedDateTime=2020-06-01T15:34:15
 DescriptionString=FamPlex is a collection of resources for grounding biological entities from text and describing their hierarchical relationships.
 QueryValueURL=http://identifiers.org/fplx/
 
@@ -297,6 +297,7 @@ GUCY1B|CGPR
 GYS|CGPR
 G_12|CGPR
 G_12_alpha|CGPR
+G_actin|CGPR
 G_alpha|CGPR
 G_beta|CGPR
 G_gamma|CGPR

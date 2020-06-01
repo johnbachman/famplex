@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 22:05:2020 21:46
+date: 01:06:2020 15:34
 
 [Term]
 id: FPLX:5_hydroxytryptamine_receptors_ionotropic
@@ -143,13 +143,8 @@ xref: NCIT:C16258
 xref: NEXTPROT-FAMILY:00078
 xref: XFAM:PF00022
 is_a: FPLX:root
-inverse_is_a: HGNC:ACTA1
-inverse_is_a: HGNC:ACTA2
-inverse_is_a: HGNC:ACTB
-inverse_is_a: HGNC:ACTC1
-inverse_is_a: HGNC:ACTG1
-inverse_is_a: HGNC:ACTG2
 inverse_is_a: FPLX:F_actin
+inverse_is_a: FPLX:G_actin
 
 [Term]
 id: FPLX:Activin
@@ -2674,8 +2669,6 @@ is_a: FPLX:root
 inverse_is_a: HGNC:DCK
 inverse_is_a: HGNC:DGUOK
 inverse_is_a: FPLX:TK
-inverse_is_a: HGNC:TK1
-inverse_is_a: HGNC:TK2
 
 [Term]
 id: FPLX:Desmoglein
@@ -3389,6 +3382,12 @@ synonym: "F-actin" EXACT []
 xref: GO:0031941
 xref: MEDSCAN:urn:agi-protfc:F-actin-binding%20protein
 is_a: FPLX:Actin
+has_part: HGNC:ACTA1
+has_part: HGNC:ACTA2
+has_part: HGNC:ACTB
+has_part: HGNC:ACTC1
+has_part: HGNC:ACTG1
+has_part: HGNC:ACTG2
 
 [Term]
 id: FPLX:FANC
@@ -3891,6 +3890,19 @@ inverse_is_a: HGNC:GALNT15
 inverse_is_a: HGNC:GALNT16
 inverse_is_a: HGNC:GALNT18
 inverse_is_a: HGNC:GALNT17
+
+[Term]
+id: FPLX:G_actin
+name: G-actin
+synonym: "G-actin" EXACT []
+synonym: "G-actins" EXACT []
+is_a: FPLX:Actin
+has_part: HGNC:ACTA1
+has_part: HGNC:ACTA2
+has_part: HGNC:ACTB
+has_part: HGNC:ACTC1
+has_part: HGNC:ACTG1
+has_part: HGNC:ACTG2
 
 [Term]
 id: FPLX:G_alpha
@@ -10143,6 +10155,8 @@ id: FPLX:TK
 name: TK
 synonym: "dTK" EXACT []
 is_a: FPLX:Deoxyribonucleoside_kinases
+inverse_is_a: HGNC:TK1
+inverse_is_a: HGNC:TK2
 
 [Term]
 id: FPLX:TLR
