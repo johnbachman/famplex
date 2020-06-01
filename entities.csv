@@ -336,6 +336,8 @@ Interferon
 Interferon_gamma_receptor
 IRS
 IRX
+ITGA
+ITGB
 ITPR
 JAK
 JNK
@@ -645,3 +647,4 @@ Voltage_gated_ion_channels
 Wnt
 Wnt5
 YBX
+
