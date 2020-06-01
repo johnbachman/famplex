@@ -3954,8 +3954,8 @@ HGNC,BLVRB,isa,FPLX,BLVR
 HGNC,DCK,isa,FPLX,Deoxyribonucleoside_kinases
 HGNC,DGUOK,isa,FPLX,Deoxyribonucleoside_kinases
 FPLX,TK,isa,FPLX,Deoxyribonucleoside_kinases
-HGNC,TK1,isa,FPLX,Deoxyribonucleoside_kinases
-HGNC,TK2,isa,FPLX,Deoxyribonucleoside_kinases
+HGNC,TK1,isa,FPLX,TK
+HGNC,TK2,isa,FPLX,TK
 HGNC,RIPK1,isa,FPLX,RIPK
 HGNC,RIPK2,isa,FPLX,RIPK
 HGNC,PKN1,isa,FPLX,PKN
