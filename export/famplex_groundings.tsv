@@ -470,6 +470,7 @@ Calcineurin regulatory subunit	PPP3R	fplx	Family
 Calcium channel	Calcium_channels	fplx	Family
 Calcium channels	Calcium_channels	fplx	Family
 Calcium-channels	Calcium_channels	fplx	Family
+Calcium-sensing-receptors	Calcium_sensing_receptors	fplx	Family
 Calmodulin	CALM	fplx	Family
 Carboxylesterase	Carboxylesterase	fplx	Family
 Cas	P56945	uniprot	Gene_or_gene_product
@@ -513,7 +514,7 @@ Class 1 NF-kappaBs	NFkappaB_1	fplx	Family
 Class 1 NF-κBs	NFkappaB_1	fplx	Family
 Class 2 NF-kappaBs	NFkappaB_2	fplx	Family
 Class 2 NF-κBs	NFkappaB_2	fplx	Family
-Class C GPCR	GPCR	fplx	Family
+Class C GPCR	GPCR_C	fplx	Family
 Class I HDACs	HDAC_I	fplx	Family
 Class I NF-kappaBs	NFkappaB_1	fplx	Family
 Class I NF-κBs	NFkappaB_1	fplx	Family
@@ -860,6 +861,7 @@ GA	CHEBI:30778	chebi	Simple_chemical
 GABA receptor	GABR	fplx	Family
 GABA receptors	GABR	fplx	Family
 GABA-A receptor	GABR	fplx	Family
+GABBR	GABBR	fplx	Family
 GABR	GABR	fplx	Family
 GALNT	GALNT	fplx	Family
 GAP	GAP	fplx	Family
@@ -882,6 +884,8 @@ GLUT	SLC2A	fplx	Family
 GNRH	GNRH	fplx	Family
 GPCR	GPCR	fplx	Family
 GPCR kinases	GRK	fplx	Family
+GPCR-C	GPCR_C	fplx	Family
+GPCR-C-orphans	GPCR_C_orphans	fplx	Family
 GPCRs	GPCR	fplx	Family
 GPI transamidase complex	GPIT	fplx	Family
 GPIT	GPIT	fplx	Family

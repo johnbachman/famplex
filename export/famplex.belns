@@ -2,8 +2,8 @@
 Keyword=FPLX
 NameString=FamPlex
 DomainString=Gene and Gene Products
-VersionString=20200601
-CreatedDateTime=2020-06-01T22:31:54
+VersionString=20200602
+CreatedDateTime=2020-06-02T10:28:57
 DescriptionString=FamPlex is a collection of resources for grounding biological entities from text and describing their hierarchical relationships.
 QueryValueURL=http://identifiers.org/fplx/
 
@@ -163,6 +163,7 @@ CXCL_ELR_negative|CGPR
 CXCL_ELR_positive|CGPR
 Cadherin|CGPR
 Calcium_channels|CGPR
+Calcium_sensing_receptors|CGPR
 Carboxylesterase|CGPR
 Caspase|CGPR
 Caspase_3_7|CGPR
@@ -261,6 +262,7 @@ FZD|CGPR
 F_actin|CGPR
 Fibrin|CGPR
 Fibrinogen|CGPR
+GABBR|CGPR
 GABR|CGPR
 GALNT|CGPR
 GAP|CGPR
@@ -273,6 +275,8 @@ GJ|CGPR
 GLRA_GLRB|CGPR
 GNRH|CGPR
 GPCR|CGPR
+GPCR_C|CGPR
+GPCR_C_orphans|CGPR
 GPIT|CGPR
 GPIb_IX_V|CGPR
 GPX|CGPR
