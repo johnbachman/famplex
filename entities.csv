@@ -215,6 +215,7 @@ Fibrin
 Fibrinogen
 FLOT
 FLRT
+FNR
 FNT
 FOS_family
 FOXA
@@ -355,12 +356,14 @@ KSR
 Laminin_111
 Laminin_332
 LDH
+LFA_1
 LH
 Ligand_gated_ion_channels
 LPAR
 LRRC8
 LXR
 MAC
+MAC_1
 Macrophage_inflammatory_proteins
 MAF
 MAP1LC3
@@ -644,6 +647,7 @@ VDAC
 VEGF
 VEGFR
 Voltage_gated_ion_channels
+VTNR
 Wnt
 Wnt5
 YBX
