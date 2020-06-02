@@ -4031,7 +4031,7 @@ HGNC,ITGB1,partof,FPLX,FNR
 HGNC,ITGA5,partof,FPLX,VTNR
 HGNC,ITGB3,partof,FPLX,VTNR
 FPLX,FNR,isa,FPLX,Integrins
-FPLX,VNR,isa,FPLX,Integrins
+FPLX,VTNR,isa,FPLX,Integrins
 HGNC,ITGAL,partof,FPLX,
 HGNC,ITGB2,partof,FPLX,LFA_1
 FPLX,LFA_1,isa,FPLX,Integrins
