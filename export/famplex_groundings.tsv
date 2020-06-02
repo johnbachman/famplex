@@ -721,6 +721,7 @@ FLRT family	FLRT	fplx	Family
 FLRT proteins	FLRT	fplx	Family
 FLT3	P36888	uniprot	Gene_or_gene_product
 FN	P02751	uniprot	Gene_or_gene_product
+FNR	FNR	fplx	Family
 FNT	FNT	fplx	Family
 FOS	FOS_family	fplx	Family
 FOS-family	FOS_family	fplx	Family
@@ -1145,6 +1146,10 @@ IRS-2	Q9Y4H2	uniprot	Gene_or_gene_product
 IRS1	P35568	uniprot	Gene_or_gene_product
 IRS2	Q9Y4H2	uniprot	Gene_or_gene_product
 IRX	IRX	fplx	Family
+ITGA	ITGA	fplx	Family
+ITGA2B1	ITGA2B1	fplx	Family
+ITGA2B3	ITGA2B3	fplx	Family
+ITGB	ITGB	fplx	Family
 ITPR	ITPR	fplx	Family
 Ifnar	IFNAR	fplx	Family
 IkappaB	IKB	fplx	Family
@@ -1211,7 +1216,8 @@ LA	CHEBI:30314	chebi	Simple_chemical
 LAT	O43561	uniprot	Gene_or_gene_product
 LC3	MAP1LC3	fplx	Family
 LDH	LDH	fplx	Family
-LFA-1 (integrin)	Integrins	fplx	Family
+LFA-1	LFA_1	fplx	Family
+LFA-1	LFA_1	fplx	Family
 LH	LH	fplx	Family
 LIF	P15018	uniprot	Gene_or_gene_product
 LKB1	Q15831	uniprot	Gene_or_gene_product
@@ -1238,7 +1244,8 @@ Liver X receptors	LXR	fplx	Family
 Luteinizing hormone	LH	fplx	Family
 Ly49D	Q60651	uniprot	Gene_or_gene_product
 MAC	MAC	fplx	Family
-MAC-1 (integrin)	Integrins	fplx	Family
+MAC-1	MAC_1	fplx	Family
+MAC-1	MAC_1	fplx	Family
 MAP kinase	MAPK	fplx	Family
 MAP kinases	MAPK	fplx	Family
 MAP1LC3	MAP1LC3	fplx	Family
@@ -2275,12 +2282,12 @@ VEGF receptor	VEGFR	fplx	Family
 VEGF receptors	VEGFR	fplx	Family
 VEGF-A	P15692	uniprot	Gene_or_gene_product
 VEGFR	VEGFR	fplx	Family
-VEGFR ligand	VEGFR	fplx	Family
 VEGFR-2	P35968	uniprot	Gene_or_gene_product
 VEGFR2	P35968	uniprot	Gene_or_gene_product
 VEGFRs	VEGFR	fplx	Family
 VLDL	CHEBI:39027	chebi	Simple_chemical
 VPA	CHEBI:39867	chebi	Simple_chemical
+VTNR	VTNR	fplx	Family
 Vav	VAV	fplx	Family
 Vav1	P15498	uniprot	Gene_or_gene_product
 Vemurafenib	CHEBI:63637	chebi	Simple_chemical
@@ -2316,7 +2323,7 @@ acetyl-CoA synthetase	Acetyl_CoA_synthetase	fplx	Family
 acetyl-coenzyme A synthase	Acetyl_CoA_synthetase	fplx	Family
 acetylcholine receptor	CHRM	fplx	Family
 actin	Actin	fplx	Family
-actin filament	Actin	fplx	Family
+actin filament	F_actin	fplx	Family
 actinin	ACTN	fplx	Family
 actins	Actin	fplx	Family
 activin	Activin	fplx	Family
@@ -2366,11 +2373,15 @@ alpha1beta2gamma1	AMPK_A1B2G1	fplx	Family
 alpha1beta2gamma2	AMPK_A1B2G2	fplx	Family
 alpha2 adrenoceptor	ADRA2	fplx	Family
 alpha2-AR	ADRA2	fplx	Family
-alpha2beta1 integrin	Integrins	fplx	Family
+alpha2beta1 integrin	ITGA2B1	fplx	Family
 alpha2beta1gamma1	AMPK_A2B1G1	fplx	Family
 alpha2beta2gamma1	AMPK_A2B2G1	fplx	Family
 alpha2beta2gamma2	AMPK_A2B2G2	fplx	Family
 alpha2beta2gamma3	AMPK_A2B2G3	fplx	Family
+alpha5beta1 integrins	FNR	fplx	Family
+alpha5beta1-integrin	FNR	fplx	Family
+alphavbeta3 integrins	VTNR	fplx	Family
+alphavbeta3-integrin	VTNR	fplx	Family
 amyloid beta	P05067	uniprot	Gene_or_gene_product
 amyloid β	P05067	uniprot	Gene_or_gene_product
 angiogenesis	GO:0001525	go	BioProcess
@@ -2705,6 +2716,7 @@ farnesyltransferase	FNT	fplx	Family
 fibrin	Fibrin	fplx	Family
 fibrinogen	Fibrinogen	fplx	Family
 fibronectin	P02751	uniprot	Gene_or_gene_product
+fibronectin receptor	FNR	fplx	Family
 fisetin	CHEBI:42567	chebi	Simple_chemical
 flotillin	FLOT	fplx	Family
 follicle-stimulating hormone	FSH	fplx	Family
@@ -2806,7 +2818,12 @@ insulin receptor substrate	IRS	fplx	Family
 insulin receptor/insulin-like growth factor receptor family	INSR	fplx	Family
 insulin-like growth factor binding proteins	IGFBP	fplx	Family
 integrin	Integrins	fplx	Family
+integrin alpha	ITGA	fplx	Family
+integrin receptors	Integrins	fplx	Family
+integrin α5β1	FNR	fplx	Family
+integrin αIIbβ3	ITGA2B3	fplx	Family
 integrins	Integrins	fplx	Family
+integrins alphavbeta3	VTNR	fplx	Family
 interferon	Interferon	fplx	Family
 interferon beta	IFNB	fplx	Family
 interferon gamma receptor	Interferon_gamma_receptor	fplx	Family
@@ -3260,7 +3277,7 @@ ubiquitin-conjugating enzymes	UBE2	fplx	Family
 uridine	CHEBI:16704	chebi	Simple_chemical
 vascular endothelial growth factor	VEGF	fplx	Family
 vemurafenib	CHEBI:63637	chebi	Simple_chemical
-vitronectin receptor (integrin)	Integrins	fplx	Family
+vitronectin receptor	VTNR	fplx	Family
 voltage gated	Voltage_gated_ion_channels	fplx	Family
 voltage-gated	Voltage_gated_ion_channels	fplx	Family
 vorinostat	CHEBI:45716	chebi	Simple_chemical
@@ -3286,6 +3303,8 @@ xylosyltransferases	GCNT	fplx	Family
 α2β2γ1	AMPK_A2B2G1	fplx	Family
 α2β2γ2	AMPK_A2B2G2	fplx	Family
 α2β2γ3	AMPK_A2B2G3	fplx	Family
+α5β1 integrin	FNR	fplx	Family
+αvβ3 integrin	VTNR	fplx	Family
 β adrenergic receptor kinase	ADRBK	fplx	Family
 β interferons	IFNB	fplx	Family
 β-TrCP	Q9Y297	uniprot	Gene_or_gene_product

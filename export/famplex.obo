@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 01:06:2020 15:34
+date: 01:06:2020 22:31
 
 [Term]
 id: FPLX:5_hydroxytryptamine_receptors_ionotropic
@@ -131,7 +131,6 @@ inverse_is_a: HGNC:ACSL6
 [Term]
 id: FPLX:Actin
 name: Actin
-synonym: "actin filament" EXACT []
 synonym: "actin" EXACT []
 synonym: "actins" EXACT []
 xref: BEL:"ACT Family"
@@ -3378,6 +3377,7 @@ inverse_is_a: HGNC:EXT2
 [Term]
 id: FPLX:F_actin
 name: F-actin
+synonym: "actin filament" EXACT []
 synonym: "F-actin" EXACT []
 xref: GO:0031941
 xref: MEDSCAN:urn:agi-protfc:F-actin-binding%20protein
@@ -3520,6 +3520,18 @@ is_a: FPLX:root
 inverse_is_a: HGNC:FLRT1
 inverse_is_a: HGNC:FLRT2
 inverse_is_a: HGNC:FLRT3
+
+[Term]
+id: FPLX:FNR
+name: FNR
+synonym: "alpha5beta1 integrins" EXACT []
+synonym: "alpha5beta1-integrin" EXACT []
+synonym: "fibronectin receptor" EXACT []
+synonym: "integrin α5β1" EXACT []
+synonym: "α5β1 integrin" EXACT []
+is_a: FPLX:Integrins
+has_part: HGNC:ITGA5
+has_part: HGNC:ITGB1
 
 [Term]
 id: FPLX:FNT
@@ -5333,16 +5345,22 @@ inverse_is_a: HGNC:INSRR
 [Term]
 id: FPLX:Integrins
 name: Integrins
-synonym: "alpha2beta1 integrin" EXACT []
 synonym: "integrin" EXACT []
+synonym: "integrin receptors" EXACT []
 synonym: "integrins" EXACT []
-synonym: "LFA-1 (integrin)" EXACT []
-synonym: "MAC-1 (integrin)" EXACT []
-synonym: "vitronectin receptor (integrin)" EXACT []
 xref: GO:0008305
 xref: MEDSCAN:urn:agi-complex:MAC-1%20(integrin)
 xref: NCIT:C16748
+xref: HGNC_GROUP:597
 is_a: FPLX:root
+inverse_is_a: FPLX:ITGA
+inverse_is_a: FPLX:ITGB
+inverse_is_a: FPLX:FNR
+inverse_is_a: FPLX:VTNR
+inverse_is_a: FPLX:LFA_1
+inverse_is_a: FPLX:MAC_1
+inverse_is_a: FPLX:ITGA2B1
+inverse_is_a: FPLX:ITGA2B3
 
 [Term]
 id: FPLX:Interferon
@@ -5404,6 +5422,62 @@ inverse_is_a: HGNC:IRX4
 inverse_is_a: HGNC:IRX5
 inverse_is_a: HGNC:IRX6
 inverse_is_a: HGNC:MKX
+
+[Term]
+id: FPLX:ITGA
+name: ITGA
+synonym: "integrin alpha" EXACT []
+xref: HGNC_GROUP:1160
+is_a: FPLX:Integrins
+inverse_is_a: HGNC:ITGA1
+inverse_is_a: HGNC:ITGA10
+inverse_is_a: HGNC:ITGA11
+inverse_is_a: HGNC:ITGA2
+inverse_is_a: HGNC:ITGA2B
+inverse_is_a: HGNC:ITGA3
+inverse_is_a: HGNC:ITGA4
+inverse_is_a: HGNC:ITGA5
+inverse_is_a: HGNC:ITGA6
+inverse_is_a: HGNC:ITGA7
+inverse_is_a: HGNC:ITGA8
+inverse_is_a: HGNC:ITGA9
+inverse_is_a: HGNC:ITGAD
+inverse_is_a: HGNC:ITGAE
+inverse_is_a: HGNC:ITGAL
+inverse_is_a: HGNC:ITGAM
+inverse_is_a: HGNC:ITGAV
+inverse_is_a: HGNC:ITGAX
+
+[Term]
+id: FPLX:ITGA2B1
+name: ITGA2B1
+synonym: "alpha2beta1 integrin" EXACT []
+is_a: FPLX:Integrins
+has_part: HGNC:ITGA2
+has_part: HGNC:ITGB1
+
+[Term]
+id: FPLX:ITGA2B3
+name: ITGA2B3
+synonym: "integrin αIIbβ3" EXACT []
+is_a: FPLX:Integrins
+has_part: HGNC:ITGA2
+has_part: HGNC:ITGB3
+
+[Term]
+id: FPLX:ITGB
+name: ITGB
+xref: HGNC_GROUP:1159
+is_a: FPLX:Integrins
+inverse_is_a: HGNC:ITGB1
+inverse_is_a: HGNC:ITGB2
+inverse_is_a: HGNC:ITGB3
+inverse_is_a: HGNC:ITGB4
+inverse_is_a: HGNC:ITGB5
+inverse_is_a: HGNC:ITGB6
+inverse_is_a: HGNC:ITGB7
+inverse_is_a: HGNC:ITGB8
+inverse_is_a: HGNC:ITGBL1
 
 [Term]
 id: FPLX:ITPR
@@ -5725,6 +5799,14 @@ inverse_is_a: HGNC:LDHB
 inverse_is_a: HGNC:LDHC
 
 [Term]
+id: FPLX:LFA_1
+name: LFA-1
+synonym: "LFA-1" EXACT []
+is_a: FPLX:Integrins
+has_part: HGNC:ITGAL
+has_part: HGNC:ITGB2
+
+[Term]
 id: FPLX:LH
 name: LH
 synonym: "LH" EXACT []
@@ -5811,6 +5893,14 @@ has_part: HGNC:C8A
 has_part: HGNC:C8B
 has_part: HGNC:C8G
 has_part: HGNC:C9
+
+[Term]
+id: FPLX:MAC_1
+name: MAC-1
+synonym: "MAC-1" EXACT []
+is_a: FPLX:Integrins
+has_part: HGNC:ITGAM
+has_part: HGNC:ITGB2
 
 [Term]
 id: FPLX:Macrophage_inflammatory_proteins
@@ -10670,7 +10760,6 @@ id: FPLX:VEGFR
 name: VEGFR
 synonym: "VEGF receptor" EXACT []
 synonym: "VEGF receptors" EXACT []
-synonym: "VEGFR ligand" EXACT []
 synonym: "VEGFR" EXACT []
 synonym: "VEGFRs" EXACT []
 xref: BEL:"VEGFR Family"
@@ -10698,6 +10787,18 @@ inverse_is_a: FPLX:Potassium_voltage_gated_channels
 inverse_is_a: FPLX:SCN
 inverse_is_a: FPLX:TPCN
 inverse_is_a: FPLX:TRP
+
+[Term]
+id: FPLX:VTNR
+name: VTNR
+synonym: "alphavbeta3 integrins" EXACT []
+synonym: "alphavbeta3-integrin" EXACT []
+synonym: "integrins alphavbeta3" EXACT []
+synonym: "vitronectin receptor" EXACT []
+synonym: "αvβ3 integrin" EXACT []
+is_a: FPLX:Integrins
+has_part: HGNC:ITGA5
+has_part: HGNC:ITGB3
 
 [Term]
 id: FPLX:Wnt

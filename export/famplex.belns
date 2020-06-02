@@ -3,7 +3,7 @@ Keyword=FPLX
 NameString=FamPlex
 DomainString=Gene and Gene Products
 VersionString=20200601
-CreatedDateTime=2020-06-01T15:34:15
+CreatedDateTime=2020-06-01T22:31:54
 DescriptionString=FamPlex is a collection of resources for grounding biological entities from text and describing their hierarchical relationships.
 QueryValueURL=http://identifiers.org/fplx/
 
@@ -235,6 +235,7 @@ FGF|CGPR
 FGFR|CGPR
 FLOT|CGPR
 FLRT|CGPR
+FNR|CGPR
 FNT|CGPR
 FOS_family|CGPR
 FOX|CGPR
@@ -352,6 +353,10 @@ IL2R|CGPR
 INSR|CGPR
 IRS|CGPR
 IRX|CGPR
+ITGA|CGPR
+ITGA2B1|CGPR
+ITGA2B3|CGPR
+ITGB|CGPR
 ITPR|CGPR
 Inhibin|CGPR
 Inhibin_A|CGPR
@@ -373,6 +378,7 @@ Kainate_family|CGPR
 Kinesin|CGPR
 Kinetochore|CGPR
 LDH|CGPR
+LFA_1|CGPR
 LH|CGPR
 LPAR|CGPR
 LRRC8|CGPR
@@ -381,6 +387,7 @@ Laminin_111|CGPR
 Laminin_332|CGPR
 Ligand_gated_ion_channels|CGPR
 MAC|CGPR
+MAC_1|CGPR
 MAF|CGPR
 MAP1LC3|CGPR
 MAP2K|CGPR
@@ -658,6 +665,7 @@ VAV|CGPR
 VDAC|CGPR
 VEGF|CGPR
 VEGFR|CGPR
+VTNR|CGPR
 Voltage_gated_ion_channels|CGPR
 Wnt|CGPR
 Wnt5|CGPR
