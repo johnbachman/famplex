@@ -69,7 +69,7 @@ def get_groundings():
             entity = row[0]
             entity_txt = entity.replace('_', '-')
             # If it isn't already a synonym
-            if entity not in cnt:
+            if entity_txt not in cnt:
                 # If the name of the family happens to be a gene symbol
                 # we don't add it
                 if not hgnc_client.get_hgnc_id(entity):

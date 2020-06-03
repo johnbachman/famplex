@@ -13,7 +13,6 @@
 55s Mitoribosome	Mitochondrial_Ribosome	fplx	Family
 55s mitoribosome	Mitochondrial_Ribosome	fplx	Family
 9-1-1	9_1_1	fplx	Family
-9-1-1	9_1_1	fplx	Family
 9-1-1 complex	9_1_1	fplx	Family
 A2t	Annexin_II_heterotetramer	fplx	Family
 A4GALT-family	A4GALT_family	fplx	Family
@@ -553,7 +552,6 @@ Cyclin A	Cyclin_A	fplx	Family
 Cyclin D	Cyclin_D	fplx	Family
 Cyclin D2	P30279	uniprot	Gene_or_gene_product
 Cyclin-A	Cyclin_A	fplx	Family
-Cyclin-A	Cyclin_A	fplx	Family
 Cyclin-D	Cyclin_D	fplx	Family
 Cyclin-E	Cyclin_E	fplx	Family
 Cyclophilin	Cyclophilin	fplx	Family
@@ -700,7 +698,6 @@ Everolimus	CHEBI:68478	chebi	Simple_chemical
 Exostosin glycosyltransferase family	EXT	fplx	Family
 Extracellular Signal Regulated Kinase	ERK	fplx	Family
 F-actin	F_actin	fplx	Family
-F-actin	F_actin	fplx	Family
 FADD	Q13158	uniprot	Gene_or_gene_product
 FAK	Q05397	uniprot	Gene_or_gene_product
 FAM83B	Q5T0W9	uniprot	Gene_or_gene_product
@@ -832,9 +829,7 @@ G-Protein α-i	G_i_alpha	fplx	Family
 G-Protein α-q	G_q_alpha	fplx	Family
 G-Protein α-s	G_s_alpha	fplx	Family
 G-actin	G_actin	fplx	Family
-G-actin	G_actin	fplx	Family
 G-actins	G_actin	fplx	Family
-G-alpha	G_alpha	fplx	Family
 G-alpha	G_alpha	fplx	Family
 G-alpha(s)	G_s_alpha	fplx	Family
 G-beta	G_beta	fplx	Family
@@ -890,7 +885,6 @@ GPCRs	GPCR	fplx	Family
 GPI transamidase complex	GPIT	fplx	Family
 GPIT	GPIT	fplx	Family
 GPIT complex	GPIT	fplx	Family
-GPIb-IX-V	GPIb_IX_V	fplx	Family
 GPIb-IX-V	GPIb_IX_V	fplx	Family
 GPIb-IX-V complex	GPIb_IX_V	fplx	Family
 GPR	IPR000965	interpro	Family
@@ -1033,7 +1027,6 @@ HIFα	HIF_alpha	fplx	Family
 HIFβ	HIF_beta	fplx	Family
 HIPK2	Q9H2X6	uniprot	Gene_or_gene_product
 HK2	P52789	uniprot	Gene_or_gene_product
-HLA-DR	HLA_DR	fplx	Family
 HLA-DR	HLA_DR	fplx	Family
 HMGB1	P09429	uniprot	Gene_or_gene_product
 HMOX	HMOX	fplx	Family
@@ -1221,7 +1214,6 @@ LAT	O43561	uniprot	Gene_or_gene_product
 LC3	MAP1LC3	fplx	Family
 LDH	LDH	fplx	Family
 LFA-1	LFA_1	fplx	Family
-LFA-1	LFA_1	fplx	Family
 LH	LH	fplx	Family
 LIF	P15018	uniprot	Gene_or_gene_product
 LKB1	Q15831	uniprot	Gene_or_gene_product
@@ -1248,7 +1240,6 @@ Liver X receptors	LXR	fplx	Family
 Luteinizing hormone	LH	fplx	Family
 Ly49D	Q60651	uniprot	Gene_or_gene_product
 MAC	MAC	fplx	Family
-MAC-1	MAC_1	fplx	Family
 MAC-1	MAC_1	fplx	Family
 MAP kinase	MAPK	fplx	Family
 MAP kinases	MAPK	fplx	Family
@@ -1594,14 +1585,9 @@ PDGF CC	PDGF_CC	fplx	Family
 PDGF DD	PDGF_DD	fplx	Family
 PDGF receptors	PDGFR	fplx	Family
 PDGF-AA	PDGF_AA	fplx	Family
-PDGF-AA	PDGF_AA	fplx	Family
-PDGF-AB	PDGF_AB	fplx	Family
 PDGF-AB	PDGF_AB	fplx	Family
 PDGF-BB	PDGF_BB	fplx	Family
-PDGF-BB	PDGF_BB	fplx	Family
 PDGF-CC	PDGF_CC	fplx	Family
-PDGF-CC	PDGF_CC	fplx	Family
-PDGF-DD	PDGF_DD	fplx	Family
 PDGF-DD	PDGF_DD	fplx	Family
 PDGF-aa	PDGF_AA	fplx	Family
 PDGF-ab	PDGF_AB	fplx	Family
@@ -1613,10 +1599,7 @@ PDGFAB	PDGF_AB	fplx	Family
 PDGFBB	PDGF_BB	fplx	Family
 PDGFR	PDGFR	fplx	Family
 PDGFR-AA	PDGFR_AA	fplx	Family
-PDGFR-AA	PDGFR_AA	fplx	Family
 PDGFR-AB	PDGFR_AB	fplx	Family
-PDGFR-AB	PDGFR_AB	fplx	Family
-PDGFR-BB	PDGFR_BB	fplx	Family
 PDGFR-BB	PDGFR_BB	fplx	Family
 PDGFR-alphaalpha	PDGFR_AA	fplx	Family
 PDGFR-alphabeta	PDGFR_AB	fplx	Family
@@ -2183,7 +2166,6 @@ THZ531	CHEBI:143122	chebi	Simple_chemical
 TIAM	TIAM	fplx	Family
 TIAM1	Q13009	uniprot	Gene_or_gene_product
 TIAM2	Q8IVF5	uniprot	Gene_or_gene_product
-TIF-IB	TIF_IB	fplx	Family
 TIF-IB	TIF_IB	fplx	Family
 TK	TK	fplx	Family
 TLR	TLR	fplx	Family
