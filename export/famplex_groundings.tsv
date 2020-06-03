@@ -557,6 +557,7 @@ Cyclin-E	Cyclin_E	fplx	Family
 Cyclophilin	Cyclophilin	fplx	Family
 Cytochrome c oxidase subunit 6a	COX6A	fplx	Family
 Cytoplasmic-dynein	Cytoplasmic_dynein	fplx	Family
+D-type cyclins	Cyclin_D	fplx	Family
 DA	CHEBI:18243	chebi	Simple_chemical
 DAG	CHEBI:85682	chebi	Simple_chemical
 DAG kinase	DGK	fplx	Family

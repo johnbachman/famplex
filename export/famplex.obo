@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 02:06:2020 10:29
+date: 02:06:2020 20:51
 
 [Term]
 id: FPLX:5_hydroxytryptamine_receptors_ionotropic
@@ -2557,6 +2557,7 @@ inverse_is_a: HGNC:CCNA2
 id: FPLX:Cyclin_D
 name: Cyclin-D
 synonym: "Cyclin D" EXACT []
+synonym: "D-type cyclins" EXACT []
 xref: BEL:"CCND Family"
 xref: IP:IPR015451
 xref: NCIT:C104194
@@ -3211,42 +3212,6 @@ has_part: HGNC:NDUFV1
 has_part: HGNC:NDUFV2
 
 [Term]
-id: FPLX:ETC_complex_I_supernumerary
-name: ETC-complex-I-supernumerary
-xref: HGNC_GROUP:1150
-part_of: FPLX:ETC_complex_I
-has_part: HGNC:NDUFAB1
-has_part: HGNC:NDUFA1
-has_part: HGNC:NDUFA2
-has_part: HGNC:NDUFA3
-has_part: HGNC:NDUFA5
-has_part: HGNC:NDUFA6
-has_part: HGNC:NDUFA7
-has_part: HGNC:NDUFA8
-has_part: HGNC:NDUFA9
-has_part: HGNC:NDUFA10
-has_part: HGNC:NDUFA11
-has_part: HGNC:NDUFA12
-has_part: HGNC:NDUFA13
-has_part: HGNC:NDUFB1
-has_part: HGNC:NDUFB2
-has_part: HGNC:NDUFB3
-has_part: HGNC:NDUFB4
-has_part: HGNC:NDUFB5
-has_part: HGNC:NDUFB6
-has_part: HGNC:NDUFB7
-has_part: HGNC:NDUFB8
-has_part: HGNC:NDUFB9
-has_part: HGNC:NDUFB10
-has_part: HGNC:NDUFB11
-has_part: HGNC:NDUFC1
-has_part: HGNC:NDUFC2
-has_part: HGNC:NDUFS4
-has_part: HGNC:NDUFS5
-has_part: HGNC:NDUFS6
-has_part: HGNC:NDUFV3
-
-[Term]
 id: FPLX:ETC_complex_II
 name: ETC-complex-II
 synonym: "complex II" EXACT []
@@ -3290,6 +3255,42 @@ has_part: HGNC:UQCRH
 has_part: HGNC:UQCRQ
 has_part: HGNC:UQCR10
 has_part: HGNC:UQCR11
+
+[Term]
+id: FPLX:ETC_complex_I_supernumerary
+name: ETC-complex-I-supernumerary
+xref: HGNC_GROUP:1150
+part_of: FPLX:ETC_complex_I
+has_part: HGNC:NDUFAB1
+has_part: HGNC:NDUFA1
+has_part: HGNC:NDUFA2
+has_part: HGNC:NDUFA3
+has_part: HGNC:NDUFA5
+has_part: HGNC:NDUFA6
+has_part: HGNC:NDUFA7
+has_part: HGNC:NDUFA8
+has_part: HGNC:NDUFA9
+has_part: HGNC:NDUFA10
+has_part: HGNC:NDUFA11
+has_part: HGNC:NDUFA12
+has_part: HGNC:NDUFA13
+has_part: HGNC:NDUFB1
+has_part: HGNC:NDUFB2
+has_part: HGNC:NDUFB3
+has_part: HGNC:NDUFB4
+has_part: HGNC:NDUFB5
+has_part: HGNC:NDUFB6
+has_part: HGNC:NDUFB7
+has_part: HGNC:NDUFB8
+has_part: HGNC:NDUFB9
+has_part: HGNC:NDUFB10
+has_part: HGNC:NDUFB11
+has_part: HGNC:NDUFC1
+has_part: HGNC:NDUFC2
+has_part: HGNC:NDUFS4
+has_part: HGNC:NDUFS5
+has_part: HGNC:NDUFS6
+has_part: HGNC:NDUFV3
 
 [Term]
 id: FPLX:ETC_complex_IV
@@ -3854,6 +3855,46 @@ inverse_is_a: HGNC:GNA12
 inverse_is_a: HGNC:GNA13
 
 [Term]
+id: FPLX:GABBR
+name: GABBR
+xref: HGNC_GROUP:280
+is_a: FPLX:GPCR_C
+inverse_is_a: HGNC:GABBR1
+inverse_is_a: HGNC:GABBR2
+
+[Term]
+id: FPLX:GABR
+name: GABR
+synonym: "GABA receptor" EXACT []
+synonym: "GABA receptors" EXACT []
+synonym: "GABA-A receptor" EXACT []
+synonym: "gamma-aminobutyric-acid A receptor" EXACT []
+synonym: "γ-aminobutyric-acid A receptor" EXACT []
+xref: BEL:"GABR Family"
+xref: GO:0004890
+xref: HGNC_GROUP:563
+is_a: FPLX:Ligand_gated_ion_channels
+inverse_is_a: HGNC:GABRA1
+inverse_is_a: HGNC:GABRA2
+inverse_is_a: HGNC:GABRA3
+inverse_is_a: HGNC:GABRA4
+inverse_is_a: HGNC:GABRA5
+inverse_is_a: HGNC:GABRA6
+inverse_is_a: HGNC:GABRB1
+inverse_is_a: HGNC:GABRB2
+inverse_is_a: HGNC:GABRB3
+inverse_is_a: HGNC:GABRD
+inverse_is_a: HGNC:GABRE
+inverse_is_a: HGNC:GABRG1
+inverse_is_a: HGNC:GABRG2
+inverse_is_a: HGNC:GABRG3
+inverse_is_a: HGNC:GABRP
+inverse_is_a: HGNC:GABRQ
+inverse_is_a: HGNC:GABRR1
+inverse_is_a: HGNC:GABRR2
+inverse_is_a: HGNC:GABRR3
+
+[Term]
 id: FPLX:G_actin
 name: G-actin
 synonym: "G-actin" EXACT []
@@ -3865,6 +3906,32 @@ has_part: HGNC:ACTB
 has_part: HGNC:ACTC1
 has_part: HGNC:ACTG1
 has_part: HGNC:ACTG2
+
+[Term]
+id: FPLX:GALNT
+name: GALNT
+synonym: "GALNT" EXACT []
+is_a: FPLX:Glycosyltransferase
+inverse_is_a: HGNC:GALNTL5
+inverse_is_a: HGNC:GALNTL6
+inverse_is_a: HGNC:GALNT1
+inverse_is_a: HGNC:GALNT2
+inverse_is_a: HGNC:GALNT3
+inverse_is_a: HGNC:GALNT4
+inverse_is_a: HGNC:GALNT5
+inverse_is_a: HGNC:GALNT6
+inverse_is_a: HGNC:GALNT7
+inverse_is_a: HGNC:GALNT8
+inverse_is_a: HGNC:GALNT9
+inverse_is_a: HGNC:GALNT10
+inverse_is_a: HGNC:GALNT11
+inverse_is_a: HGNC:GALNT12
+inverse_is_a: HGNC:GALNT13
+inverse_is_a: HGNC:GALNT14
+inverse_is_a: HGNC:GALNT15
+inverse_is_a: HGNC:GALNT16
+inverse_is_a: HGNC:GALNT18
+inverse_is_a: HGNC:GALNT17
 
 [Term]
 id: FPLX:G_alpha
@@ -3881,6 +3948,67 @@ inverse_is_a: FPLX:G_i_alpha
 inverse_is_a: FPLX:G_s_alpha
 inverse_is_a: FPLX:G_q_alpha
 inverse_is_a: FPLX:G_12_alpha
+
+[Term]
+id: FPLX:Gamma_secretase
+name: Gamma-secretase
+synonym: "gamma secretase" EXACT []
+synonym: "gamma-secretase" EXACT []
+synonym: "γ secretase" EXACT []
+xref: BEL:"gamma Secretase Complex"
+xref: GO:0070765
+xref: NCIT:C95114
+is_a: FPLX:root
+has_part: HGNC:APH1A
+has_part: HGNC:PSEN1
+has_part: HGNC:PSENEN
+
+[Term]
+id: FPLX:GAP
+name: GAP
+synonym: "GAP" EXACT []
+synonym: "GTPase-activating proteins" EXACT []
+synonym: "GTPase-activating protein" EXACT []
+synonym: "GTPase activating protein" EXACT []
+xref: GO:0005096
+xref: NCIT:C17298
+is_a: FPLX:root
+
+[Term]
+id: FPLX:GARP
+name: GARP
+is_a: FPLX:root
+has_part: HGNC:VPS51
+has_part: HGNC:VPS52
+has_part: HGNC:VPS53
+has_part: HGNC:VPS54
+
+[Term]
+id: FPLX:GAS6_receptor
+name: GAS6-receptor
+synonym: "Gas6 receptors" EXACT []
+xref: BEL:"GAS6 Receptor Family"
+is_a: FPLX:root
+inverse_is_a: HGNC:AXL
+inverse_is_a: HGNC:MERTK
+inverse_is_a: HGNC:TYRO3
+
+[Term]
+id: FPLX:GATA
+name: GATA
+synonym: "GATA family" EXACT []
+synonym: "GATA" EXACT []
+xref: BEL:"GATA Family"
+xref: MEDSCAN:urn:agi-aopfc:0000105
+xref: XFAM:PF00320
+xref: RE:R-HSA-996770
+is_a: FPLX:root
+inverse_is_a: HGNC:GATA1
+inverse_is_a: HGNC:GATA2
+inverse_is_a: HGNC:GATA3
+inverse_is_a: HGNC:GATA4
+inverse_is_a: HGNC:GATA5
+inverse_is_a: HGNC:GATA6
 
 [Term]
 id: FPLX:G_beta
@@ -3905,6 +4033,33 @@ inverse_is_a: HGNC:GNB2
 inverse_is_a: HGNC:GNB3
 inverse_is_a: HGNC:GNB4
 inverse_is_a: HGNC:GNB5
+
+[Term]
+id: FPLX:GCNT
+name: GCNT
+synonym: "GCNT" EXACT []
+synonym: "XYLT" EXACT []
+synonym: "Xylosyltransferase" EXACT []
+synonym: "Xylosyltransferases" EXACT []
+synonym: "xylosyltransferase" EXACT []
+synonym: "xylosyltransferases" EXACT []
+is_a: FPLX:Glycosyltransferase
+inverse_is_a: HGNC:GCNT1
+inverse_is_a: HGNC:GCNT2
+inverse_is_a: HGNC:GCNT3
+inverse_is_a: HGNC:GCNT4
+inverse_is_a: HGNC:GCNT7
+inverse_is_a: HGNC:XYLT1
+inverse_is_a: HGNC:XYLT2
+
+[Term]
+id: FPLX:GEF
+name: GEF
+synonym: "GEF" EXACT []
+synonym: "GEFs" EXACT []
+xref: GO:0008433
+xref: NCIT:C17494
+is_a: FPLX:root
 
 [Term]
 id: FPLX:G_gamma
@@ -3976,253 +4131,6 @@ inverse_is_a: HGNC:GNAT1
 inverse_is_a: HGNC:GNAT2
 inverse_is_a: HGNC:GNAT3
 inverse_is_a: HGNC:GNAZ
-
-[Term]
-id: FPLX:G_protein
-name: G-protein
-synonym: "G protein" EXACT []
-synonym: "G proteins" EXACT []
-xref: NCIT:C17458
-is_a: FPLX:root
-inverse_is_a: FPLX:G_i
-inverse_is_a: FPLX:G_s
-inverse_is_a: FPLX:G_q
-inverse_is_a: FPLX:G_12
-
-[Term]
-id: FPLX:G_q
-name: G-q
-synonym: "G(q/11)" EXACT []
-synonym: "Gq/11" EXACT []
-xref: BEL:"GNA Gq Family"
-xref: IP:IPR000654
-xref: RE:R-HSA-114534
-xref: RE:R-HSA-114556
-xref: RE:R-HSA-374848
-xref: RE:R-HSA-399987
-xref: RE:R-HSA-399992
-xref: RE:R-HSA-400000
-xref: RE:R-HSA-400008
-xref: RE:R-HSA-749499
-is_a: FPLX:G_protein
-has_part: FPLX:G_q_alpha
-
-[Term]
-id: FPLX:G_q_alpha
-name: G-q-alpha
-synonym: "G alphaq" EXACT []
-synonym: "G αq" EXACT []
-synonym: "G-Protein alpha-q" EXACT []
-synonym: "G-Protein α-q" EXACT []
-synonym: "Galphaq" EXACT []
-synonym: "Gq alpha subunit" EXACT []
-synonym: "Gq alpha" EXACT []
-synonym: "Gq α subunit" EXACT []
-synonym: "Gq α" EXACT []
-synonym: "Gαq" EXACT []
-xref: IP:IPR000654
-xref: RE:R-HSA-114534
-xref: RE:R-HSA-114556
-xref: RE:R-HSA-374848
-xref: RE:R-HSA-399987
-xref: RE:R-HSA-399992
-xref: RE:R-HSA-400000
-xref: RE:R-HSA-400008
-xref: RE:R-HSA-749499
-is_a: FPLX:G_alpha
-part_of: FPLX:G_q
-inverse_is_a: HGNC:GNAQ
-inverse_is_a: HGNC:GNA11
-inverse_is_a: HGNC:GNA14
-inverse_is_a: HGNC:GNA15
-
-[Term]
-id: FPLX:G_s
-name: G-s
-synonym: "G protein Gs" EXACT []
-synonym: "G protein(s)" EXACT []
-synonym: "G S protein" EXACT []
-synonym: "Gs family" EXACT []
-synonym: "Gs protein" EXACT []
-xref: BEL:"GNA Gs Family"
-is_a: FPLX:G_protein
-has_part: FPLX:G_s_alpha
-
-[Term]
-id: FPLX:G_s_alpha
-name: G-s-alpha
-synonym: "G alphaS" EXACT []
-synonym: "G αS" EXACT []
-synonym: "G-alpha(s)" EXACT []
-synonym: "G-AlphaS" EXACT []
-synonym: "G-Protein alpha-s" EXACT []
-synonym: "G-Protein α-s" EXACT []
-synonym: "G-α(s)" EXACT []
-synonym: "G-αS" EXACT []
-synonym: "GalphaS" EXACT []
-synonym: "Gs alpha subunit" EXACT []
-synonym: "Gs alpha" EXACT []
-synonym: "Gs α subunit" EXACT []
-synonym: "Gs α" EXACT []
-synonym: "GαS" EXACT []
-is_a: FPLX:G_alpha
-part_of: FPLX:G_s
-inverse_is_a: HGNC:GNAS
-inverse_is_a: HGNC:GNAL
-
-[Term]
-id: FPLX:GABBR
-name: GABBR
-xref: HGNC_GROUP:280
-is_a: FPLX:GPCR_C
-inverse_is_a: HGNC:GABBR1
-inverse_is_a: HGNC:GABBR2
-
-[Term]
-id: FPLX:GABR
-name: GABR
-synonym: "GABA receptor" EXACT []
-synonym: "GABA receptors" EXACT []
-synonym: "GABA-A receptor" EXACT []
-synonym: "gamma-aminobutyric-acid A receptor" EXACT []
-synonym: "γ-aminobutyric-acid A receptor" EXACT []
-xref: BEL:"GABR Family"
-xref: GO:0004890
-xref: HGNC_GROUP:563
-is_a: FPLX:Ligand_gated_ion_channels
-inverse_is_a: HGNC:GABRA1
-inverse_is_a: HGNC:GABRA2
-inverse_is_a: HGNC:GABRA3
-inverse_is_a: HGNC:GABRA4
-inverse_is_a: HGNC:GABRA5
-inverse_is_a: HGNC:GABRA6
-inverse_is_a: HGNC:GABRB1
-inverse_is_a: HGNC:GABRB2
-inverse_is_a: HGNC:GABRB3
-inverse_is_a: HGNC:GABRD
-inverse_is_a: HGNC:GABRE
-inverse_is_a: HGNC:GABRG1
-inverse_is_a: HGNC:GABRG2
-inverse_is_a: HGNC:GABRG3
-inverse_is_a: HGNC:GABRP
-inverse_is_a: HGNC:GABRQ
-inverse_is_a: HGNC:GABRR1
-inverse_is_a: HGNC:GABRR2
-inverse_is_a: HGNC:GABRR3
-
-[Term]
-id: FPLX:GALNT
-name: GALNT
-synonym: "GALNT" EXACT []
-is_a: FPLX:Glycosyltransferase
-inverse_is_a: HGNC:GALNTL5
-inverse_is_a: HGNC:GALNTL6
-inverse_is_a: HGNC:GALNT1
-inverse_is_a: HGNC:GALNT2
-inverse_is_a: HGNC:GALNT3
-inverse_is_a: HGNC:GALNT4
-inverse_is_a: HGNC:GALNT5
-inverse_is_a: HGNC:GALNT6
-inverse_is_a: HGNC:GALNT7
-inverse_is_a: HGNC:GALNT8
-inverse_is_a: HGNC:GALNT9
-inverse_is_a: HGNC:GALNT10
-inverse_is_a: HGNC:GALNT11
-inverse_is_a: HGNC:GALNT12
-inverse_is_a: HGNC:GALNT13
-inverse_is_a: HGNC:GALNT14
-inverse_is_a: HGNC:GALNT15
-inverse_is_a: HGNC:GALNT16
-inverse_is_a: HGNC:GALNT18
-inverse_is_a: HGNC:GALNT17
-
-[Term]
-id: FPLX:Gamma_secretase
-name: Gamma-secretase
-synonym: "gamma secretase" EXACT []
-synonym: "gamma-secretase" EXACT []
-synonym: "γ secretase" EXACT []
-xref: BEL:"gamma Secretase Complex"
-xref: GO:0070765
-xref: NCIT:C95114
-is_a: FPLX:root
-has_part: HGNC:APH1A
-has_part: HGNC:PSEN1
-has_part: HGNC:PSENEN
-
-[Term]
-id: FPLX:GAP
-name: GAP
-synonym: "GAP" EXACT []
-synonym: "GTPase-activating proteins" EXACT []
-synonym: "GTPase-activating protein" EXACT []
-synonym: "GTPase activating protein" EXACT []
-xref: GO:0005096
-xref: NCIT:C17298
-is_a: FPLX:root
-
-[Term]
-id: FPLX:GARP
-name: GARP
-is_a: FPLX:root
-has_part: HGNC:VPS51
-has_part: HGNC:VPS52
-has_part: HGNC:VPS53
-has_part: HGNC:VPS54
-
-[Term]
-id: FPLX:GAS6_receptor
-name: GAS6-receptor
-synonym: "Gas6 receptors" EXACT []
-xref: BEL:"GAS6 Receptor Family"
-is_a: FPLX:root
-inverse_is_a: HGNC:AXL
-inverse_is_a: HGNC:MERTK
-inverse_is_a: HGNC:TYRO3
-
-[Term]
-id: FPLX:GATA
-name: GATA
-synonym: "GATA family" EXACT []
-synonym: "GATA" EXACT []
-xref: BEL:"GATA Family"
-xref: MEDSCAN:urn:agi-aopfc:0000105
-xref: XFAM:PF00320
-xref: RE:R-HSA-996770
-is_a: FPLX:root
-inverse_is_a: HGNC:GATA1
-inverse_is_a: HGNC:GATA2
-inverse_is_a: HGNC:GATA3
-inverse_is_a: HGNC:GATA4
-inverse_is_a: HGNC:GATA5
-inverse_is_a: HGNC:GATA6
-
-[Term]
-id: FPLX:GCNT
-name: GCNT
-synonym: "GCNT" EXACT []
-synonym: "XYLT" EXACT []
-synonym: "Xylosyltransferase" EXACT []
-synonym: "Xylosyltransferases" EXACT []
-synonym: "xylosyltransferase" EXACT []
-synonym: "xylosyltransferases" EXACT []
-is_a: FPLX:Glycosyltransferase
-inverse_is_a: HGNC:GCNT1
-inverse_is_a: HGNC:GCNT2
-inverse_is_a: HGNC:GCNT3
-inverse_is_a: HGNC:GCNT4
-inverse_is_a: HGNC:GCNT7
-inverse_is_a: HGNC:XYLT1
-inverse_is_a: HGNC:XYLT2
-
-[Term]
-id: FPLX:GEF
-name: GEF
-synonym: "GEF" EXACT []
-synonym: "GEFs" EXACT []
-xref: GO:0008433
-xref: NCIT:C17494
-is_a: FPLX:root
 
 [Term]
 id: FPLX:GJ
@@ -4387,6 +4295,18 @@ has_part: HGNC:PIGT
 has_part: HGNC:PIGU
 
 [Term]
+id: FPLX:G_protein
+name: G-protein
+synonym: "G protein" EXACT []
+synonym: "G proteins" EXACT []
+xref: NCIT:C17458
+is_a: FPLX:root
+inverse_is_a: FPLX:G_i
+inverse_is_a: FPLX:G_s
+inverse_is_a: FPLX:G_q
+inverse_is_a: FPLX:G_12
+
+[Term]
 id: FPLX:GPX
 name: GPX
 synonym: "glutathione peroxidase" EXACT []
@@ -4405,6 +4325,53 @@ inverse_is_a: HGNC:GPX5
 inverse_is_a: HGNC:GPX6
 inverse_is_a: HGNC:GPX7
 inverse_is_a: HGNC:GPX8
+
+[Term]
+id: FPLX:G_q
+name: G-q
+synonym: "G(q/11)" EXACT []
+synonym: "Gq/11" EXACT []
+xref: BEL:"GNA Gq Family"
+xref: IP:IPR000654
+xref: RE:R-HSA-114534
+xref: RE:R-HSA-114556
+xref: RE:R-HSA-374848
+xref: RE:R-HSA-399987
+xref: RE:R-HSA-399992
+xref: RE:R-HSA-400000
+xref: RE:R-HSA-400008
+xref: RE:R-HSA-749499
+is_a: FPLX:G_protein
+has_part: FPLX:G_q_alpha
+
+[Term]
+id: FPLX:G_q_alpha
+name: G-q-alpha
+synonym: "G alphaq" EXACT []
+synonym: "G αq" EXACT []
+synonym: "G-Protein alpha-q" EXACT []
+synonym: "G-Protein α-q" EXACT []
+synonym: "Galphaq" EXACT []
+synonym: "Gq alpha subunit" EXACT []
+synonym: "Gq alpha" EXACT []
+synonym: "Gq α subunit" EXACT []
+synonym: "Gq α" EXACT []
+synonym: "Gαq" EXACT []
+xref: IP:IPR000654
+xref: RE:R-HSA-114534
+xref: RE:R-HSA-114556
+xref: RE:R-HSA-374848
+xref: RE:R-HSA-399987
+xref: RE:R-HSA-399992
+xref: RE:R-HSA-400000
+xref: RE:R-HSA-400008
+xref: RE:R-HSA-749499
+is_a: FPLX:G_alpha
+part_of: FPLX:G_q
+inverse_is_a: HGNC:GNAQ
+inverse_is_a: HGNC:GNA11
+inverse_is_a: HGNC:GNA14
+inverse_is_a: HGNC:GNA15
 
 [Term]
 id: FPLX:GRI
@@ -4499,6 +4466,40 @@ inverse_is_a: HGNC:GRM5
 inverse_is_a: HGNC:GRM6
 inverse_is_a: HGNC:GRM7
 inverse_is_a: HGNC:GRM8
+
+[Term]
+id: FPLX:G_s
+name: G-s
+synonym: "G protein Gs" EXACT []
+synonym: "G protein(s)" EXACT []
+synonym: "G S protein" EXACT []
+synonym: "Gs family" EXACT []
+synonym: "Gs protein" EXACT []
+xref: BEL:"GNA Gs Family"
+is_a: FPLX:G_protein
+has_part: FPLX:G_s_alpha
+
+[Term]
+id: FPLX:G_s_alpha
+name: G-s-alpha
+synonym: "G alphaS" EXACT []
+synonym: "G αS" EXACT []
+synonym: "G-alpha(s)" EXACT []
+synonym: "G-AlphaS" EXACT []
+synonym: "G-Protein alpha-s" EXACT []
+synonym: "G-Protein α-s" EXACT []
+synonym: "G-α(s)" EXACT []
+synonym: "G-αS" EXACT []
+synonym: "GalphaS" EXACT []
+synonym: "Gs alpha subunit" EXACT []
+synonym: "Gs alpha" EXACT []
+synonym: "Gs α subunit" EXACT []
+synonym: "Gs α" EXACT []
+synonym: "GαS" EXACT []
+is_a: FPLX:G_alpha
+part_of: FPLX:G_s
+inverse_is_a: HGNC:GNAS
+inverse_is_a: HGNC:GNAL
 
 [Term]
 id: FPLX:GSK3
@@ -5389,9 +5390,9 @@ synonym: "integrin" EXACT []
 synonym: "integrin receptors" EXACT []
 synonym: "integrins" EXACT []
 xref: GO:0008305
+xref: HGNC_GROUP:597
 xref: MEDSCAN:urn:agi-complex:MAC-1%20(integrin)
 xref: NCIT:C16748
-xref: HGNC_GROUP:597
 is_a: FPLX:root
 inverse_is_a: FPLX:ITGA
 inverse_is_a: FPLX:ITGB
@@ -6565,20 +6566,6 @@ inverse_is_a: HGNC:KAT6B
 inverse_is_a: HGNC:KAT5
 
 [Term]
-id: FPLX:Na_K_ATPase
-name: Na-K-ATPase
-synonym: "Na(+),K(+)-ATPase" EXACT []
-synonym: "Na,K-ATPase" EXACT []
-synonym: "Na+/K+-exchanging ATPase" EXACT []
-synonym: "Na+/K+ATPase" EXACT []
-synonym: "Na/K-ATPase" EXACT []
-xref: BEL:"Na/K Exchanging ATPase Complex"
-xref: ECCODE:3.6.3.9
-is_a: FPLX:root
-has_part: FPLX:ATP1A
-has_part: FPLX:ATP1B
-
-[Term]
 id: FPLX:NADH_dehydrogenase
 name: NADH-dehydrogenase
 synonym: "NADH dehydrogenase (ubiquinone)" EXACT []
@@ -6616,6 +6603,20 @@ has_part: HGNC:NOX3
 has_part: HGNC:NOX4
 has_part: HGNC:NOX5
 has_part: HGNC:RAC1
+
+[Term]
+id: FPLX:Na_K_ATPase
+name: Na-K-ATPase
+synonym: "Na(+),K(+)-ATPase" EXACT []
+synonym: "Na,K-ATPase" EXACT []
+synonym: "Na+/K+-exchanging ATPase" EXACT []
+synonym: "Na+/K+ATPase" EXACT []
+synonym: "Na/K-ATPase" EXACT []
+xref: BEL:"Na/K Exchanging ATPase Complex"
+xref: ECCODE:3.6.3.9
+is_a: FPLX:root
+has_part: FPLX:ATP1A
+has_part: FPLX:ATP1B
 
 [Term]
 id: FPLX:Natriuretic_peptide
