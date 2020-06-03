@@ -2,8 +2,8 @@
 Keyword=FPLX
 NameString=FamPlex
 DomainString=Gene and Gene Products
-VersionString=20200522
-CreatedDateTime=2020-05-22T21:46:29
+VersionString=20200602
+CreatedDateTime=2020-06-02T10:28:57
 DescriptionString=FamPlex is a collection of resources for grounding biological entities from text and describing their hierarchical relationships.
 QueryValueURL=http://identifiers.org/fplx/
 
@@ -163,6 +163,7 @@ CXCL_ELR_negative|CGPR
 CXCL_ELR_positive|CGPR
 Cadherin|CGPR
 Calcium_channels|CGPR
+Calcium_sensing_receptors|CGPR
 Carboxylesterase|CGPR
 Caspase|CGPR
 Caspase_3_7|CGPR
@@ -235,6 +236,7 @@ FGF|CGPR
 FGFR|CGPR
 FLOT|CGPR
 FLRT|CGPR
+FNR|CGPR
 FNT|CGPR
 FOS_family|CGPR
 FOX|CGPR
@@ -260,6 +262,7 @@ FZD|CGPR
 F_actin|CGPR
 Fibrin|CGPR
 Fibrinogen|CGPR
+GABBR|CGPR
 GABR|CGPR
 GALNT|CGPR
 GAP|CGPR
@@ -272,6 +275,8 @@ GJ|CGPR
 GLRA_GLRB|CGPR
 GNRH|CGPR
 GPCR|CGPR
+GPCR_C|CGPR
+GPCR_C_orphans|CGPR
 GPIT|CGPR
 GPIb_IX_V|CGPR
 GPX|CGPR
@@ -297,6 +302,7 @@ GUCY1B|CGPR
 GYS|CGPR
 G_12|CGPR
 G_12_alpha|CGPR
+G_actin|CGPR
 G_alpha|CGPR
 G_beta|CGPR
 G_gamma|CGPR
@@ -351,6 +357,10 @@ IL2R|CGPR
 INSR|CGPR
 IRS|CGPR
 IRX|CGPR
+ITGA|CGPR
+ITGA2B1|CGPR
+ITGA2B3|CGPR
+ITGB|CGPR
 ITPR|CGPR
 Inhibin|CGPR
 Inhibin_A|CGPR
@@ -372,6 +382,7 @@ Kainate_family|CGPR
 Kinesin|CGPR
 Kinetochore|CGPR
 LDH|CGPR
+LFA_1|CGPR
 LH|CGPR
 LPAR|CGPR
 LRRC8|CGPR
@@ -380,6 +391,7 @@ Laminin_111|CGPR
 Laminin_332|CGPR
 Ligand_gated_ion_channels|CGPR
 MAC|CGPR
+MAC_1|CGPR
 MAF|CGPR
 MAP1LC3|CGPR
 MAP2K|CGPR
@@ -657,6 +669,7 @@ VAV|CGPR
 VDAC|CGPR
 VEGF|CGPR
 VEGFR|CGPR
+VTNR|CGPR
 Voltage_gated_ion_channels|CGPR
 Wnt|CGPR
 Wnt5|CGPR
