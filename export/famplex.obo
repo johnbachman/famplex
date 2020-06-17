@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 02:06:2020 20:51
+date: 17:06:2020 23:54
 
 [Term]
 id: FPLX:5_hydroxytryptamine_receptors_ionotropic
@@ -6180,6 +6180,33 @@ inverse_is_a: HGNC:MGAT4C
 inverse_is_a: HGNC:MGAT4D
 inverse_is_a: HGNC:MGAT5
 inverse_is_a: HGNC:MGAT5B
+
+[Term]
+id: FPLX:MIRLET7
+name: MIRLET7
+synonym: "Let-7" EXACT []
+xref: HGNC_GROUP:1697
+xref: MIRBASE_FAMILY:MIPF0000002
+is_a: FPLX:root
+inverse_is_a: FPLX:MIRLET7A
+inverse_is_a: FPLX:MIRLET7F
+
+[Term]
+id: FPLX:MIRLET7A
+name: MIRLET7A
+synonym: "Let-7a" EXACT []
+is_a: FPLX:MIRLET7
+inverse_is_a: HGNC:MIRLET7A1
+inverse_is_a: HGNC:MIRLET7A2
+inverse_is_a: HGNC:MIRLET7A3
+
+[Term]
+id: FPLX:MIRLET7F
+name: MIRLET7F
+synonym: "Let-7f" EXACT []
+is_a: FPLX:MIRLET7
+inverse_is_a: HGNC:MIRLET7F1
+inverse_is_a: HGNC:MIRLET7F2
 
 [Term]
 id: FPLX:Mitochondrial_Ribosome
