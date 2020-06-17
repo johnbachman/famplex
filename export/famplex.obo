@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 02:06:2020 21:08
+date: 17:06:2020 23:54
 
 [Term]
 id: FPLX:5_hydroxytryptamine_receptors_ionotropic
@@ -6186,6 +6186,7 @@ id: FPLX:MIRLET7
 name: MIRLET7
 synonym: "Let-7" EXACT []
 xref: HGNC_GROUP:1697
+xref: MIRBASE_FAMILY:MIPF0000002
 is_a: FPLX:root
 inverse_is_a: FPLX:MIRLET7A
 inverse_is_a: FPLX:MIRLET7F
