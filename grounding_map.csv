@@ -2988,4 +2988,5 @@ CYP3A protein,FPLX,CYP3,,,,
 Cyp3a,FPLX,CYP3,,,,
 CYP4,FPLX,CYP4,,,,
 Cyp26,FPLX,CYP26,,,,
-
+CYP epoxygenase,FPLX,CYP_epoxygenases,,,,
+CYP epoxygenases,FPLX,CYP_epoxygenases,,,,
