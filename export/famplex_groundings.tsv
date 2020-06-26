@@ -2,10 +2,13 @@
 14-3-3	p14_3_3	fplx	Family
 14-3-3 proteins	p14_3_3	fplx	Family
 14-3-3zeta	P63104	uniprot	Gene_or_gene_product
+17β-Estradiol	CHEBI:16469	chebi	Simple_chemical
+17β-estradiol	CHEBI:16469	chebi	Simple_chemical
 4E-BP1	Q13541	uniprot	Gene_or_gene_product
 4EBP	EIF4EBP	fplx	Family
 4EBP1	Q13541	uniprot	Gene_or_gene_product
 5-HT	5-HT	fplx	Family
+5-hydroxytryptamine-receptors-G-protein-coupled	5_hydroxytryptamine_receptors_G_protein_coupled	fplx	Family
 5-hydroxytryptamine-receptors-ionotropic	5_hydroxytryptamine_receptors_ionotropic	fplx	Family
 53BP1	Q12888	uniprot	Gene_or_gene_product
 55S Mitoribosome	Mitochondrial_Ribosome	fplx	Family
@@ -452,13 +455,31 @@ CXCR2	P25025	uniprot	Gene_or_gene_product
 CXCR4	P61073	uniprot	Gene_or_gene_product
 CYLD	Q9NQC7	uniprot	Gene_or_gene_product
 CYP	CYP	fplx	Family
+CYP enzyme	CYP	fplx	Family
+CYP enzymes	CYP	fplx	Family
+CYP epoxygenase	CYP_epoxygenases	fplx	Family
+CYP epoxygenases	CYP_epoxygenases	fplx	Family
+CYP gene	CYP	fplx	Family
+CYP genes	CYP	fplx	Family
+CYP isoforms	CYP	fplx	Family
+CYP isozymes	CYP	fplx	Family
+CYP-epoxygenases	CYP_epoxygenases	fplx	Family
 CYP1	CYP1	fplx	Family
 CYP11	CYP11	fplx	Family
+CYP1s	CYP1	fplx	Family
 CYP2	CYP2	fplx	Family
+CYP26	CYP26	fplx	Family
+CYP27	CYP27	fplx	Family
 CYP3	CYP3	fplx	Family
+CYP3A enzymes	CYP3	fplx	Family
+CYP3A protein	CYP3	fplx	Family
 CYP4	CYP4	fplx	Family
+CYP450	CYP	fplx	Family
+CYP450 enzyme	CYP	fplx	Family
+CYP450 enzymes	CYP	fplx	Family
 CYP7	CYP7	fplx	Family
 CYP8	CYP8	fplx	Family
+CYPs	CYP	fplx	Family
 Ca	CHEBI:29108	chebi	Simple_chemical
 Ca(2+)-calmodulin-dependent protein kinase II	CAMK2_complex	fplx	Family
 Ca(2+)/calmodulin-dependent kinase II	CAMK2_complex	fplx	Family
@@ -565,7 +586,13 @@ Cyclin-A	Cyclin_A	fplx	Family
 Cyclin-D	Cyclin_D	fplx	Family
 Cyclin-E	Cyclin_E	fplx	Family
 Cyclophilin	Cyclophilin	fplx	Family
+Cyp1	CYP1	fplx	Family
+Cyp26	CYP26	fplx	Family
+Cyp3a	CYP3	fplx	Family
+Cytochrome P-450	CYP	fplx	Family
+Cytochrome P450	CYP	fplx	Family
 Cytochrome c oxidase subunit 6a	COX6A	fplx	Family
+Cytochrome p450	CYP	fplx	Family
 Cytoplasmic-dynein	Cytoplasmic_dynein	fplx	Family
 D-type cyclins	Cyclin_D	fplx	Family
 DA	CHEBI:18243	chebi	Simple_chemical
@@ -1058,7 +1085,6 @@ HSPB	HSPB	fplx	Family
 HSPB proteins	HSPB	fplx	Family
 HTR1	HTR1	fplx	Family
 HTR2	HTR2	fplx	Family
-HTR3	HTR3	fplx	Family
 HTR5	HTR5	fplx	Family
 HVCN	HVCN	fplx	Family
 Heat Shock Protein 70	HSPA	fplx	Family
@@ -1561,6 +1587,8 @@ P2X receptor	P2RX	fplx	Family
 P2X receptors	P2RX	fplx	Family
 P2Y receptor	P2RY	fplx	Family
 P38 MAPK	p38	fplx	Family
+P450	CYP	fplx	Family
+P450s	CYP	fplx	Family
 P53	P04637	uniprot	Gene_or_gene_product
 P53 family	p53_family	fplx	Family
 P70RSK	P70S6K	fplx	Family
@@ -2626,10 +2654,18 @@ cypermethrin	CHEBI:4042	chebi	Simple_chemical
 cysteine rich secretory proteins	CRISP	fplx	Family
 cysteine-rich secretory proteins	CRISP	fplx	Family
 cytochrome C	P99999	uniprot	Gene_or_gene_product
+cytochrome P-450	CYP	fplx	Family
+cytochrome P-450 enzyme	CYP	fplx	Family
+cytochrome P-450 enzymes	CYP	fplx	Family
+cytochrome P-450 isozymes	CYP	fplx	Family
+cytochrome P450	CYP	fplx	Family
+cytochrome P450s	CYP	fplx	Family
 cytochrome bc1 complex	ETC_complex_III	fplx	Family
 cytochrome c	P99999	uniprot	Gene_or_gene_product
 cytochrome c oxidase	COX	fplx	Family
 cytochrome c oxidase subunit VIII	COX8	fplx	Family
+cytochrome p450	CYP	fplx	Family
+cytochromes P-450	CYP	fplx	Family
 cytokine production	GO:0001816	go	BioProcess
 cytoplasmic dynein	Cytoplasmic_dynein	fplx	Family
 cytosolic PLA2	PLA2	fplx	Family
@@ -3006,6 +3042,7 @@ p42 and p44MAP kinase	ERK	fplx	Family
 p42(mapk) and p44(mapk)	ERK	fplx	Family
 p42/44	ERK	fplx	Family
 p44 and p42	ERK	fplx	Family
+p450	CYP	fplx	Family
 p47 phox	P14598	uniprot	Gene_or_gene_product
 p50	P19838	uniprot	Gene_or_gene_product
 p52	Q00653	uniprot	Gene_or_gene_product
