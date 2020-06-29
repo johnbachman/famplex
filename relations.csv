@@ -4070,7 +4070,6 @@ HGNC,MIRLET7F1,isa,FPLX,MIRLET7F
 HGNC,MIRLET7F2,isa,FPLX,MIRLET7F
 FPLX,HTR1,isa,FPLX,5_hydroxytryptamine_receptors_G_protein_coupled
 FPLX,HTR2,isa,FPLX,5_hydroxytryptamine_receptors_G_protein_coupled
-FPLX,HTR5,isa,FPLX,5_hydroxytryptamine_receptors_G_protein_coupled
 HGNC,HTR4,isa,FPLX,5_hydroxytryptamine_receptors_G_protein_coupled
 HGNC,HTR6,isa,FPLX,5_hydroxytryptamine_receptors_G_protein_coupled
 HGNC,HTR7,isa,FPLX,5_hydroxytryptamine_receptors_G_protein_coupled
@@ -4082,7 +4081,6 @@ HGNC,HTR1E,isa,FPLX,HTR1
 HGNC,HTR2A,isa,FPLX,HTR2
 HGNC,HTR2B,isa,FPLX,HTR2
 HGNC,HTR2C,isa,FPLX,HTR2
-HGNC,HTR5A,isa,FPLX,HTR5
 HGNC,AGTR1,isa,FPLX,AGTR
 HGNC,AGTR2,isa,FPLX,AGTR
 FPLX,CYP1,isa,FPLX,CYP
