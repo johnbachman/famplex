@@ -1,19 +1,11 @@
 format-version: 1.2
-date: 29:06:2020 12:28
-
-[Term]
-id: FPLX:5_HT
-name: 5-HT
-xref: HGNC_GROUP:171
-is_a: FPLX:root
-inverse_is_a: FPLX:5_hydroxytryptamine_receptors_ionotropic
-inverse_is_a: FPLX:5_hydroxytryptamine_receptors_G_protein_coupled
+date: 29:06:2020 13:24
 
 [Term]
 id: FPLX:5_hydroxytryptamine_receptors_G_protein_coupled
 name: 5-hydroxytryptamine-receptors-G-protein-coupled
 xref: HGNC_GROUP:170
-is_a: FPLX:5_HT
+is_a: FPLX:HTR
 inverse_is_a: FPLX:HTR1
 inverse_is_a: FPLX:HTR2
 inverse_is_a: HGNC:HTR4
@@ -24,7 +16,7 @@ inverse_is_a: HGNC:HTR7
 id: FPLX:5_hydroxytryptamine_receptors_ionotropic
 name: 5-hydroxytryptamine-receptors-ionotropic
 xref: HGNC_GROUP:172
-is_a: FPLX:5_HT
+is_a: FPLX:HTR
 is_a: FPLX:Ligand_gated_ion_channels
 inverse_is_a: HGNC:HTR3A
 inverse_is_a: HGNC:HTR3B
@@ -5362,6 +5354,14 @@ is_a: FPLX:root
 inverse_is_a: HGNC:HSPB1
 inverse_is_a: HGNC:HSPB2
 inverse_is_a: HGNC:HSPB8
+
+[Term]
+id: FPLX:HTR
+name: HTR
+xref: HGNC_GROUP:171
+is_a: FPLX:root
+inverse_is_a: FPLX:5_hydroxytryptamine_receptors_ionotropic
+inverse_is_a: FPLX:5_hydroxytryptamine_receptors_G_protein_coupled
 
 [Term]
 id: FPLX:HTR1

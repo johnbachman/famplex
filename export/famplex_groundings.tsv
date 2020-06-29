@@ -7,7 +7,6 @@
 4E-BP1	Q13541	uniprot	Gene_or_gene_product
 4EBP	EIF4EBP	fplx	Family
 4EBP1	Q13541	uniprot	Gene_or_gene_product
-5-HT	5_HT	fplx	Family
 5-hydroxytryptamine-receptors-G-protein-coupled	5_hydroxytryptamine_receptors_G_protein_coupled	fplx	Family
 5-hydroxytryptamine-receptors-ionotropic	5_hydroxytryptamine_receptors_ionotropic	fplx	Family
 53BP1	Q12888	uniprot	Gene_or_gene_product
@@ -1085,6 +1084,7 @@ HSP90AA	HSP90AA	fplx	Family
 HSPA	HSPA	fplx	Family
 HSPB	HSPB	fplx	Family
 HSPB proteins	HSPB	fplx	Family
+HTR	HTR	fplx	Family
 HTR1	HTR1	fplx	Family
 HTR2	HTR2	fplx	Family
 HVCN	HVCN	fplx	Family
