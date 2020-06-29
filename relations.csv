@@ -2901,7 +2901,7 @@ HGNC,HTR3B,isa,FPLX,5_hydroxytryptamine_receptors_ionotropic
 HGNC,HTR3C,isa,FPLX,5_hydroxytryptamine_receptors_ionotropic
 HGNC,HTR3D,isa,FPLX,5_hydroxytryptamine_receptors_ionotropic
 HGNC,HTR3E,isa,FPLX,5_hydroxytryptamine_receptors_ionotropic
-FPLX,5_hydroxytryptamine_receptors_ionotropic,isa,FPLX,5-HT
+FPLX,5_hydroxytryptamine_receptors_ionotropic,isa,FPLX,5_HT
 HGNC,ANO1,isa,FPLX,ANO
 HGNC,ANO10,isa,FPLX,ANO
 HGNC,ANO2,isa,FPLX,ANO
@@ -4074,7 +4074,7 @@ FPLX,HTR5,isa,FPLX,5_hydroxytryptamine_receptors_G_protein_coupled
 HGNC,HTR4,isa,FPLX,5_hydroxytryptamine_receptors_G_protein_coupled
 HGNC,HTR6,isa,FPLX,5_hydroxytryptamine_receptors_G_protein_coupled
 HGNC,HTR7,isa,FPLX,5_hydroxytryptamine_receptors_G_protein_coupled
-FPLX,5_hydroxytryptamine_receptors_G_protein_coupled,isa,FPLX,5-HT
+FPLX,5_hydroxytryptamine_receptors_G_protein_coupled,isa,FPLX,5_HT
 HGNC,HTR1A,isa,FPLX,HTR1
 HGNC,HTR1B,isa,FPLX,HTR1
 HGNC,HTR1D,isa,FPLX,HTR1
