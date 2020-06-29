@@ -2,8 +2,8 @@
 Keyword=FPLX
 NameString=FamPlex
 DomainString=Gene and Gene Products
-VersionString=20200625
-CreatedDateTime=2020-06-25T22:27:31
+VersionString=20200629
+CreatedDateTime=2020-06-29T12:28:35
 DescriptionString=FamPlex is a collection of resources for grounding biological entities from text and describing their hierarchical relationships.
 QueryValueURL=http://identifiers.org/fplx/
 
@@ -21,7 +21,7 @@ DelimiterString=|
 CacheableFlag=yes
 
 [Values]
-5-HT|CGPR
+5_HT|CGPR
 5_hydroxytryptamine_receptors_G_protein_coupled|CGPR
 5_hydroxytryptamine_receptors_ionotropic|CGPR
 9_1_1|CGPR
@@ -349,7 +349,6 @@ HSPA|CGPR
 HSPB|CGPR
 HTR1|CGPR
 HTR2|CGPR
-HTR5|CGPR
 HVCN|CGPR
 Hedgehog|CGPR
 Hemoglobin|CGPR
