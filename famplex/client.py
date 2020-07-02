@@ -17,13 +17,12 @@ class FamplexGraph(object):
                 append((namespace1, id1, relation))
             left_set.add((namespace1, id1))
             right_set.add((namespace2, id2))
-        top_level_mapping = defaultdict(dict)
+        top_level_mapping = {}
         top_level = right_set - left_set
         for entry in top_level:
-            for ns, id_, depth in self._traverse(reverse_graph, entry,
-                                                 ['isa', 'partof']):
-                node = ns, id_
-                top_level_mapping[node][entry] = depth
+            for node in self._traverse(reverse_graph, entry,
+                                       ['isa', 'partof']):
+                top_level_mapping[node] = entry
         self._top_level = dict(top_level_mapping)
         self._graph = dict(graph)
         self._reverse_graph = dict(reverse_graph)
@@ -39,13 +38,13 @@ class FamplexGraph(object):
         return [node for node in self._top_level[(namespace, id_)]]
 
     def get_ancestors(self, namespace, id_):
-        for ns, i, _ in self._traverse(self._graph, (namespace, id_),
-                                       ['isa', 'partof']):
+        for ns, i in self._traverse(self._graph, (namespace, id_),
+                                    ['isa', 'partof']):
             yield (ns, i)
 
     def get_descendants(self, namespace, id_):
-        for ns, i, _ in self._traverse(self._reverse_graph, (namespace, id_),
-                                       ['isa', 'partof']):
+        for ns, i in self._traverse(self._reverse_graph, (namespace, id_),
+                                    ['isa', 'partof']):
             yield (ns, i)
 
     def get_leaves(self, namespace, id_):
@@ -69,33 +68,27 @@ class FamplexGraph(object):
         if not common_roots:
             return False
         root = common_roots.pop()
-        depth1 = roots1[root]
-        depth2 = roots2[root]
         node1, node2 = (namespace1, id1), (namespace2, id2)
-        if depth1 < depth2:
-            node1, node2 = node2, node1
-        for ns, id_, _ in self._traverse(self._graph, node1,
-                                         relation_types):
-            node = (ns, id_)
+        for node in self._traverse(self._graph, node1,
+                                   relation_types):
             if node2 == node:
                 return True
         return False
 
     def _traverse(self, graph, source, relation_types):
         visited = {source}
-        queue = deque([source + (0,)])
+        queue = deque([source])
         while queue:
-            ns, id_, depth = queue.pop()
-            node = (ns, id_)
+            node = queue.pop()
             try:
                 children = graph[node]
             except KeyError:
                 children = []
             for ns, id_, rel in children:
                 if (ns, id_) not in visited and rel in relation_types:
-                    queue.appendleft((ns, id_, depth+1))
+                    queue.appendleft((ns, id_))
                     visited.add((ns, id_))
-            yield node + (depth, )
+            yield node
 
 
 def load_grounding_map():
