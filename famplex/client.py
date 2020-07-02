@@ -17,39 +17,39 @@ class FamplexGraph(object):
                 append((namespace1, id1, relation))
             left_set.add((namespace1, id1))
             right_set.add((namespace2, id2))
-        top_level_mapping = {}
-        top_level = right_set - left_set
-        for entry in top_level:
+        root_class_mapping = {}
+        root_classes = right_set - left_set
+        for entry in root_classes:
             for node in self._traverse(reverse_graph, entry,
                                        ['isa', 'partof']):
-                top_level_mapping[node] = entry
-        self.roots = top_level
-        self._top_level = dict(top_level_mapping)
+                root_class_mapping[node] = entry
+        self.root_classes = root_classes
+        self._root_class_mapping = dict(root_class_mapping)
         self._graph = dict(graph)
         self._reverse_graph = dict(reverse_graph)
 
-    def get_parents(self, namespace, id_):
+    def parent_terms(self, namespace, id_):
         return [(ns, id2) for ns, id2, _ in self._graph[(namespace, id_)]]
 
-    def get_children(self, namespace, id_):
+    def child_terms(self, namespace, id_):
         return [(ns, id2) for ns, id2, _ in
                 self._reverse_graph[(namespace, id_)]]
 
-    def get_progenitors(self, namespace, id_):
-        return [node for node in self._top_level[(namespace, id_)]]
+    def root_terms(self, namespace, id_):
+        return [node for node in self._root_class_mapping[(namespace, id_)]]
 
-    def get_ancestors(self, namespace, id_):
+    def ancestral_terms(self, namespace, id_):
         for ns, i in self._traverse(self._graph, (namespace, id_),
                                     ['isa', 'partof']):
             yield (ns, i)
 
-    def get_descendants(self, namespace, id_):
+    def descendant_terms(self, namespace, id_):
         for ns, i in self._traverse(self._reverse_graph, (namespace, id_),
                                     ['isa', 'partof']):
             yield (ns, i)
 
-    def get_leaves(self, namespace, id_):
-        for ns, id_ in self.get_descendants(namespace, id_):
+    def individual_members(self, namespace, id_):
+        for ns, id_ in self.descendant_terms(namespace, id_):
             if ns != 'FPLX':
                 yield (ns, id_)
 
@@ -62,7 +62,7 @@ class FamplexGraph(object):
     def refinement_of(self, namespace, id1, namespace2, id2):
         return self._rel(namespace, id1, namespace2, id2, ['isa', 'partof'])
 
-    def get_type(self, namespace, id_):
+    def category(self, namespace, id_):
         edges = self._reverse_graph.get((namespace, id_))
         if edges is None:
             raise ValueError(f'{namespace}:{id_} is not in the'
@@ -79,17 +79,14 @@ class FamplexGraph(object):
         return output
 
     def _rel(self, namespace1, id1, namespace2, id2, relation_types):
-        roots1 = self._top_level[(namespace1, id1)]
-        roots2 = self._top_level[(namespace2, id2)]
-        common_roots = roots1.keys() & roots2.keys()
-        if not common_roots:
-            return False
-        root = common_roots.pop()
-        node1, node2 = (namespace1, id1), (namespace2, id2)
-        for node in self._traverse(self._graph, node1,
-                                   relation_types):
-            if node2 == node:
-                return True
+        roots1 = self._root_class_mapping[(namespace1, id1)]
+        roots2 = self._root_class_mapping[(namespace2, id2)]
+        if roots1.keys() & roots2.keys():
+            node1, node2 = (namespace1, id1), (namespace2, id2)
+            for node in self._traverse(self._graph, node1,
+                                       relation_types):
+                if node2 == node:
+                    return True
         return False
 
     def _traverse(self, graph, source, relation_types):
