@@ -23,6 +23,7 @@ class FamplexGraph(object):
             for node in self._traverse(reverse_graph, entry,
                                        ['isa', 'partof']):
                 top_level_mapping[node] = entry
+        self.roots = top_level
         self._top_level = dict(top_level_mapping)
         self._graph = dict(graph)
         self._reverse_graph = dict(reverse_graph)
@@ -76,6 +77,7 @@ class FamplexGraph(object):
         else:
             output = None
         return output
+
     def _rel(self, namespace1, id1, namespace2, id2, relation_types):
         roots1 = self._top_level[(namespace1, id1)]
         roots2 = self._top_level[(namespace2, id2)]
