@@ -61,6 +61,21 @@ class FamplexGraph(object):
     def refinement_of(self, namespace, id1, namespace2, id2):
         return self._rel(namespace, id1, namespace2, id2, ['isa', 'partof'])
 
+    def get_type(self, namespace, id_):
+        edges = self._reverse_graph.get((namespace, id_))
+        if edges is None:
+            raise ValueError(f'{namespace}:{id_} is not in the'
+                             ' FamPlex ontology')
+        edge_types = set([edge[-1] for edge in edges])
+        if not edge_types:
+            output = 'gene/protein'
+        elif 'partof' in edge_types:
+            output = 'complex'
+        elif edge_types == set(['isa']):
+            output = 'family'
+        else:
+            output = None
+        return output
     def _rel(self, namespace1, id1, namespace2, id2, relation_types):
         roots1 = self._top_level[(namespace1, id1)]
         roots2 = self._top_level[(namespace2, id2)]
