@@ -28,12 +28,18 @@ class FamplexGraph(object):
         self._graph = dict(graph)
         self._reverse_graph = dict(reverse_graph)
 
-    def parent_terms(self, namespace, id_):
-        return [(ns, id2) for ns, id2, _ in self._graph[(namespace, id_)]]
+    def parent_terms(self, namespace, id_, relation_types=None):
+        if relation_types is None:
+            relation_types = ['isa', 'partof']
+        return [(ns2, id2) for ns2, id2, rel in self._graph[(namespace, id_)]
+                if rel in relation_types]
 
-    def child_terms(self, namespace, id_):
-        return [(ns, id2) for ns, id2, _ in
-                self._reverse_graph[(namespace, id_)]]
+    def child_terms(self, namespace, id_, relation_types=None):
+        if relation_types is None:
+            relation_types = ['isa', 'partof']
+        return [(ns2, id2) for ns2, id2, rel in
+                self._reverse_graph[(namespace, id_)]
+                if rel in relation_types]
 
     def root_terms(self, namespace, id_):
         return [node for node in self._root_class_mapping[(namespace, id_)]]
