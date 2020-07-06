@@ -96,6 +96,20 @@ class FamplexGraph(object):
             output = None
         return output
 
+    def dict_representation(self, namespace, id_):
+        out = {(namespace, id_): []}
+        edges = self._reverse_graph.get((namespace, id_))
+        if edges is None:
+            raise ValueError(f'{namespace}:{id_} is not in the FamPlex'
+                             ' ontology')
+        if not edges:
+            return out
+        for namespace2, id2, relation in edges:
+            out[(namespace, id_)].\
+                append((self.dict_representation(namespace2, id2),
+                        relation))
+        return out
+
     def _rel(self, namespace1, id1, namespace2, id2, relation_types):
         roots1 = self._root_class_mapping[(namespace1, id1)]
         roots2 = self._root_class_mapping[(namespace2, id2)]
