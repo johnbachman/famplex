@@ -1,10 +1,22 @@
 format-version: 1.2
-date: 17:06:2020 23:54
+date: 29:06:2020 13:24
+
+[Term]
+id: FPLX:5_hydroxytryptamine_receptors_G_protein_coupled
+name: 5-hydroxytryptamine-receptors-G-protein-coupled
+xref: HGNC_GROUP:170
+is_a: FPLX:HTR
+inverse_is_a: FPLX:HTR1
+inverse_is_a: FPLX:HTR2
+inverse_is_a: HGNC:HTR4
+inverse_is_a: HGNC:HTR6
+inverse_is_a: HGNC:HTR7
 
 [Term]
 id: FPLX:5_hydroxytryptamine_receptors_ionotropic
 name: 5-hydroxytryptamine-receptors-ionotropic
 xref: HGNC_GROUP:172
+is_a: FPLX:HTR
 is_a: FPLX:Ligand_gated_ion_channels
 inverse_is_a: HGNC:HTR3A
 inverse_is_a: HGNC:HTR3B
@@ -367,6 +379,19 @@ xref: RE:R-HSA-8866229
 is_a: FPLX:GRK
 inverse_is_a: HGNC:GRK2
 inverse_is_a: HGNC:GRK3
+
+[Term]
+id: FPLX:AGTR
+name: AGTR
+synonym: "angiotensin receptor" EXACT []
+synonym: "angiotensin receptors" EXACT []
+synonym: "angiotensin-receptor" EXACT []
+synonym: "Angiotensin receptor" EXACT []
+synonym: "Angiotensin receptors" EXACT []
+xref: HGNC_GROUP:221
+is_a: FPLX:root
+inverse_is_a: HGNC:AGTR1
+inverse_is_a: HGNC:AGTR2
 
 [Term]
 id: FPLX:AKT
@@ -2611,6 +2636,191 @@ inverse_is_a: HGNC:PPWD1
 inverse_is_a: HGNC:PPIAL4A
 inverse_is_a: HGNC:PPIAL4C
 inverse_is_a: HGNC:PPIAL4G
+
+[Term]
+id: FPLX:CYP
+name: CYP
+synonym: "cytochrome P450" EXACT []
+synonym: "cytochrome p450" EXACT []
+synonym: "Cytochrome P450" EXACT []
+synonym: "Cytochrome p450" EXACT []
+synonym: "cytochrome P-450" EXACT []
+synonym: "Cytochrome P-450" EXACT []
+synonym: "cytochromes P-450" EXACT []
+synonym: "cytochrome P450s" EXACT []
+synonym: "cytochrome P-450 enzymes" EXACT []
+synonym: "cytochrome P-450 isozymes" EXACT []
+synonym: "cytochrome P-450 enzyme" EXACT []
+synonym: "CYP450" EXACT []
+synonym: "p450" EXACT []
+synonym: "P450" EXACT []
+synonym: "P450s" EXACT []
+synonym: "CYP" EXACT []
+synonym: "CYPs" EXACT []
+synonym: "CYP enzyme" EXACT []
+synonym: "CYP enzymes" EXACT []
+synonym: "CYP gene" EXACT []
+synonym: "CYP genes" EXACT []
+synonym: "CYP450 enzyme" EXACT []
+synonym: "CYP450 enzymes" EXACT []
+synonym: "CYP isoforms" EXACT []
+synonym: "CYP isozymes" EXACT []
+xref: HGNC_GROUP:862
+is_a: FPLX:root
+inverse_is_a: FPLX:CYP1
+inverse_is_a: FPLX:CYP11
+inverse_is_a: HGNC:CYP17A1
+inverse_is_a: HGNC:CYP19A1
+inverse_is_a: FPLX:CYP2
+inverse_is_a: HGNC:CYP20A1
+inverse_is_a: HGNC:CYP21A2
+inverse_is_a: HGNC:CYP24A1
+inverse_is_a: FPLX:CYP26
+inverse_is_a: FPLX:CYP27
+inverse_is_a: FPLX:CYP3
+inverse_is_a: HGNC:CYP39A1
+inverse_is_a: FPLX:CYP4
+inverse_is_a: FPLX:CYP7
+inverse_is_a: FPLX:CYP8
+inverse_is_a: HGNC:TBXAS1
+inverse_is_a: HGNC:CYP46A1
+inverse_is_a: HGNC:CYP51A1
+inverse_is_a: FPLX:CYP_epoxygenases
+
+[Term]
+id: FPLX:CYP1
+name: CYP1
+synonym: "CYP1" EXACT []
+synonym: "CYP1s" EXACT []
+synonym: "Cyp1" EXACT []
+xref: HGNC_GROUP:1000
+is_a: FPLX:CYP
+inverse_is_a: HGNC:CYP1A1
+inverse_is_a: HGNC:CYP1A2
+inverse_is_a: HGNC:CYP1B1
+
+[Term]
+id: FPLX:CYP11
+name: CYP11
+xref: HGNC_GROUP:1007
+is_a: FPLX:CYP
+inverse_is_a: HGNC:CYP11A1
+inverse_is_a: HGNC:CYP11B1
+inverse_is_a: HGNC:CYP11B2
+
+[Term]
+id: FPLX:CYP2
+name: CYP2
+synonym: "CYP2" EXACT []
+xref: HGNC_GROUP:1001
+is_a: FPLX:CYP
+inverse_is_a: HGNC:CYP2A13
+inverse_is_a: HGNC:CYP2A6
+inverse_is_a: HGNC:CYP2A7
+inverse_is_a: HGNC:CYP2B6
+inverse_is_a: HGNC:CYP2C18
+inverse_is_a: HGNC:CYP2C19
+inverse_is_a: HGNC:CYP2C8
+inverse_is_a: HGNC:CYP2C9
+inverse_is_a: HGNC:CYP2D6
+inverse_is_a: HGNC:CYP2D7
+inverse_is_a: HGNC:CYP2E1
+inverse_is_a: HGNC:CYP2F1
+inverse_is_a: HGNC:CYP2J2
+inverse_is_a: HGNC:CYP2R1
+inverse_is_a: HGNC:CYP2S1
+inverse_is_a: HGNC:CYP2U1
+inverse_is_a: HGNC:CYP2W1
+
+[Term]
+id: FPLX:CYP26
+name: CYP26
+synonym: "Cyp26" EXACT []
+xref: HGNC_GROUP:1013
+is_a: FPLX:CYP
+inverse_is_a: HGNC:CYP26A1
+inverse_is_a: HGNC:CYP26B1
+inverse_is_a: HGNC:CYP26C1
+
+[Term]
+id: FPLX:CYP27
+name: CYP27
+xref: HGNC_GROUP:1014
+is_a: FPLX:CYP
+inverse_is_a: HGNC:CYP27A1
+inverse_is_a: HGNC:CYP27B1
+inverse_is_a: HGNC:CYP27C1
+
+[Term]
+id: FPLX:CYP3
+name: CYP3
+synonym: "CYP3" EXACT []
+synonym: "CYP3A enzymes" EXACT []
+synonym: "CYP3A protein" EXACT []
+synonym: "Cyp3a" EXACT []
+xref: HGNC_GROUP:1002
+is_a: FPLX:CYP
+inverse_is_a: HGNC:CYP3A4
+inverse_is_a: HGNC:CYP3A43
+inverse_is_a: HGNC:CYP3A5
+inverse_is_a: HGNC:CYP3A7
+
+[Term]
+id: FPLX:CYP4
+name: CYP4
+synonym: "CYP4" EXACT []
+xref: HGNC_GROUP:1003
+is_a: FPLX:CYP
+inverse_is_a: HGNC:CYP4A11
+inverse_is_a: HGNC:CYP4A22
+inverse_is_a: HGNC:CYP4B1
+inverse_is_a: HGNC:CYP4F11
+inverse_is_a: HGNC:CYP4F12
+inverse_is_a: HGNC:CYP4F2
+inverse_is_a: HGNC:CYP4F22
+inverse_is_a: HGNC:CYP4F3
+inverse_is_a: HGNC:CYP4F8
+inverse_is_a: HGNC:CYP4V2
+inverse_is_a: HGNC:CYP4X1
+inverse_is_a: HGNC:CYP4Z1
+
+[Term]
+id: FPLX:CYP7
+name: CYP7
+xref: HGNC_GROUP:1005
+is_a: FPLX:CYP
+inverse_is_a: HGNC:CYP7A1
+inverse_is_a: HGNC:CYP7B1
+
+[Term]
+id: FPLX:CYP8
+name: CYP8
+xref: HGNC_GROUP:1006
+is_a: FPLX:CYP
+inverse_is_a: HGNC:CYP8B1
+inverse_is_a: HGNC:PTGIS
+
+[Term]
+id: FPLX:CYP_epoxygenases
+name: CYP-epoxygenases
+synonym: "CYP epoxygenase" EXACT []
+synonym: "CYP epoxygenases" EXACT []
+is_a: FPLX:CYP
+inverse_is_a: HGNC:CYP1A1
+inverse_is_a: HGNC:CYP1A2
+inverse_is_a: HGNC:CYP2C8
+inverse_is_a: HGNC:CYP2C9
+inverse_is_a: HGNC:CYP2C18
+inverse_is_a: HGNC:CYP2C19
+inverse_is_a: HGNC:CYP2E1
+inverse_is_a: HGNC:CYP2J2
+inverse_is_a: HGNC:CYP2S1
+inverse_is_a: HGNC:CYP3A4
+inverse_is_a: HGNC:CYP4F2
+inverse_is_a: HGNC:CYP4F3
+inverse_is_a: HGNC:CYP4A11
+inverse_is_a: HGNC:CYP4F8
+inverse_is_a: HGNC:CYP4F12
 
 [Term]
 id: FPLX:Cytoplasmic_dynein
@@ -5144,6 +5354,31 @@ is_a: FPLX:root
 inverse_is_a: HGNC:HSPB1
 inverse_is_a: HGNC:HSPB2
 inverse_is_a: HGNC:HSPB8
+
+[Term]
+id: FPLX:HTR
+name: HTR
+xref: HGNC_GROUP:171
+is_a: FPLX:root
+inverse_is_a: FPLX:5_hydroxytryptamine_receptors_ionotropic
+inverse_is_a: FPLX:5_hydroxytryptamine_receptors_G_protein_coupled
+
+[Term]
+id: FPLX:HTR1
+name: HTR1
+is_a: FPLX:5_hydroxytryptamine_receptors_G_protein_coupled
+inverse_is_a: HGNC:HTR1A
+inverse_is_a: HGNC:HTR1B
+inverse_is_a: HGNC:HTR1D
+inverse_is_a: HGNC:HTR1E
+
+[Term]
+id: FPLX:HTR2
+name: HTR2
+is_a: FPLX:5_hydroxytryptamine_receptors_G_protein_coupled
+inverse_is_a: HGNC:HTR2A
+inverse_is_a: HGNC:HTR2B
+inverse_is_a: HGNC:HTR2C
 
 [Term]
 id: FPLX:HVCN

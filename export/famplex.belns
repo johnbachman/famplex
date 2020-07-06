@@ -2,8 +2,8 @@
 Keyword=FPLX
 NameString=FamPlex
 DomainString=Gene and Gene Products
-VersionString=20200617
-CreatedDateTime=2020-06-17T23:54:13
+VersionString=20200629
+CreatedDateTime=2020-06-29T13:24:18
 DescriptionString=FamPlex is a collection of resources for grounding biological entities from text and describing their hierarchical relationships.
 QueryValueURL=http://identifiers.org/fplx/
 
@@ -21,6 +21,7 @@ DelimiterString=|
 CacheableFlag=yes
 
 [Values]
+5_hydroxytryptamine_receptors_G_protein_coupled|CGPR
 5_hydroxytryptamine_receptors_ionotropic|CGPR
 9_1_1|CGPR
 A4GALT_family|CGPR
@@ -37,6 +38,7 @@ ADRA|CGPR
 ADRA2|CGPR
 ADRB|CGPR
 ADRBK|CGPR
+AGTR|CGPR
 AKT|CGPR
 ALDH|CGPR
 ALDO|CGPR
@@ -161,6 +163,17 @@ CTNNA|CGPR
 CUL|CGPR
 CXCL_ELR_negative|CGPR
 CXCL_ELR_positive|CGPR
+CYP|CGPR
+CYP1|CGPR
+CYP11|CGPR
+CYP2|CGPR
+CYP26|CGPR
+CYP27|CGPR
+CYP3|CGPR
+CYP4|CGPR
+CYP7|CGPR
+CYP8|CGPR
+CYP_epoxygenases|CGPR
 Cadherin|CGPR
 Calcium_channels|CGPR
 Calcium_sensing_receptors|CGPR
@@ -333,6 +346,9 @@ HSP90A|CGPR
 HSP90AA|CGPR
 HSPA|CGPR
 HSPB|CGPR
+HTR|CGPR
+HTR1|CGPR
+HTR2|CGPR
 HVCN|CGPR
 Hedgehog|CGPR
 Hemoglobin|CGPR

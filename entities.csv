@@ -1,3 +1,4 @@
+5_hydroxytryptamine_receptors_G_protein_coupled
 5_hydroxytryptamine_receptors_ionotropic
 9_1_1
 A4GALT_family
@@ -22,6 +23,7 @@ ADRA
 ADRA2
 ADRB
 ADRBK
+AGTR
 AKT
 ALDH
 ALDO
@@ -160,6 +162,17 @@ Cyclin_A
 Cyclin_D
 Cyclin_E
 Cyclophilin
+CYP
+CYP1
+CYP11
+CYP2
+CYP26
+CYP27
+CYP3
+CYP4
+CYP7
+CYP8
+CYP_epoxygenases
 Cytoplasmic_dynein
 DAPK
 DDR
@@ -319,6 +332,9 @@ HSP90A
 HSP90AA
 HSPA
 HSPB
+HTR
+HTR1
+HTR2
 HVCN
 IFNA
 IFNAR
