@@ -44,15 +44,23 @@ class FamplexGraph(object):
     def root_terms(self, namespace, id_):
         return [node for node in self._root_class_mapping[(namespace, id_)]]
 
-    def ancestral_terms(self, namespace, id_):
-        for ns, i in self._traverse(self._graph, (namespace, id_),
-                                    ['isa', 'partof']):
-            yield (ns, i)
+    def ancestral_terms(self, namespace, id_, relation_types=None):
+        if relation_types is None:
+            relation_types = ['isa', 'partof']
+        output = []
+        for ns2, id2 in self._traverse(self._graph, (namespace, id_),
+                                       relation_types):
+            output.append((ns2, id2))
+        return output[1:]
 
-    def descendant_terms(self, namespace, id_):
-        for ns, i in self._traverse(self._reverse_graph, (namespace, id_),
-                                    ['isa', 'partof']):
-            yield (ns, i)
+    def descendant_terms(self, namespace, id_, relation_types=None):
+        if relation_types is None:
+            relation_types = ['isa', 'partof']
+        output = []
+        for ns2, id2 in self._traverse(self._reverse_graph, (namespace, id_),
+                                       relation_types):
+            output.append((ns2, id2))
+        return output[1:]
 
     def individual_members(self, namespace, id_):
         for ns, id_ in self.descendant_terms(namespace, id_):
