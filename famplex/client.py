@@ -111,8 +111,10 @@ class FamplexGraph(object):
         return out
 
     def _rel(self, namespace1, id1, namespace2, id2, relation_types):
-        roots1 = self._root_class_mapping[(namespace1, id1)]
-        roots2 = self._root_class_mapping[(namespace2, id2)]
+        roots1 = self._root_class_mapping.get((namespace1, id1))
+        roots2 = self._root_class_mapping.get((namespace2, id2))
+        if roots1 is None or roots2 is None:
+            return False
         if roots1.keys() & roots2.keys():
             node1, node2 = (namespace1, id1), (namespace2, id2)
             for node in self._traverse(self._graph, node1,
