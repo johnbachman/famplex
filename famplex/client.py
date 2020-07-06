@@ -62,10 +62,14 @@ class FamplexGraph(object):
             output.append((ns2, id2))
         return output[1:]
 
-    def individual_members(self, namespace, id_):
-        for ns, id_ in self.descendant_terms(namespace, id_):
-            if ns != 'FPLX':
-                yield (ns, id_)
+    def individual_members(self, namespace, id_, relation_types=None):
+        if relation_types is None:
+            relation_types = ['isa', 'partof']
+        output = []
+        for ns2, id2 in self.descendant_terms(namespace, id_):
+            if ns2 != 'FPLX':
+                output.append[(ns2, id2)]
+        return output
 
     def isa(self, namespace1, id1, namespace2, id2):
         return self._rel(namespace1, id1, namespace2, id2, ['isa'])
