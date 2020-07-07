@@ -29,12 +29,57 @@ class FamplexGraph(object):
         self._reverse_graph = dict(reverse_graph)
 
     def parent_terms(self, namespace, id_, relation_types=None):
+        """Returns terms immediately above a given term in the FamPlex ontology
+
+        Parameters
+        ----------
+        namespace : str
+            Namespace for a term. For the FamPlex ontology this should be one
+            of HGNC, FPLX, or UP
+        id_ : str
+            Unique identifier for term in namespace. HGNC unique ID, FPLX ID
+            or Uniprot ID.
+        relation_types : Optional[list]
+            Set of relation types that input term can have with returned
+            parent terms. The valid relation types are 'isa' and 'partof'.
+            If argument is None then there are no restrictions on relation
+            type.
+            Default: None
+
+        Returns
+        -------
+        list
+            List of tuples of the form (namespace, id) specifying parent terms
+            of the input term.
+        """
         if relation_types is None:
             relation_types = ['isa', 'partof']
         return [(ns2, id2) for ns2, id2, rel in self._graph[(namespace, id_)]
                 if rel in relation_types]
 
     def child_terms(self, namespace, id_, relation_types=None):
+        """Returns terms immediately below a given term in the FamPlex ontology
+
+        Parameters
+        ----------
+        namespace : str
+            Namespace for a term. For the FamPlex ontology this should be one
+            of HGNC, FPLX, or UP
+        id_ : str
+            Unique identifier for term in namespace. HGNC unique ID, FPLX ID
+            or Uniprot ID.
+        relation_types : Optional[list]
+            Restrict edges to relation types in this list. The valid relation
+            types are the strings 'isa' and 'partof'.
+            If argument is None then both isa and partof relations are
+            included. Default: None
+
+        Returns
+        -------
+        list
+            List of tuples of the form (namespace, id) specifying child terms
+            of the input term..
+        """
         if relation_types is None:
             relation_types = ['isa', 'partof']
         return [(ns2, id2) for ns2, id2, rel in
@@ -42,9 +87,49 @@ class FamplexGraph(object):
                 if rel in relation_types]
 
     def root_terms(self, namespace, id_):
+        """Returns top level terms associated with input term
+
+        Parameters
+        ----------
+        namespace : str
+            Namespace for a term. For the FamPlex ontology this should be one
+            of HGNC, FPLX, or UP
+        id_ : str
+            Unique identifier for term in namespace. HGNC unique ID, FPLX ID
+            or Uniprot ID.
+
+        Returns
+        -------
+        list
+            List of terms above the input that are top level families and/or
+            complexes within the FamPlex ontology.
+        """
         return [node for node in self._root_class_mapping[(namespace, id_)]]
 
     def ancestral_terms(self, namespace, id_, relation_types=None):
+        """
+        Return list of all prior terms in the FamPlex Ontology
+
+        Parameters
+        ----------
+        namespace : str
+            Namespace for a term. For the FamPlex ontology this should be one
+            of HGNC, FPLX, or UP
+        id_ : str
+            Unique identifier for term in namespace. HGNC unique ID, FPLX ID
+            or Uniprot ID.
+        relation_types : Optional[list]
+            Restrict edges to relation types in this list. The valid relation
+            types are the strings 'isa' and 'partof'.
+            If argument is None then both isa and partof relations are
+            included. Default: None
+
+        Returns
+        -------
+        list
+           List of terms are returned in breadth first order following
+           relations upward from bottom to top in the ontology.
+        """
         if relation_types is None:
             relation_types = ['isa', 'partof']
         output = []
@@ -54,6 +139,29 @@ class FamplexGraph(object):
         return output[1:]
 
     def descendant_terms(self, namespace, id_, relation_types=None):
+        """
+        Return list of all following terms in the FamPlex Ontology
+
+        Parameters
+        ----------
+        namespace : str
+            Namespace for a term. For the FamPlex ontology this should be one
+            of HGNC, FPLX, or UP
+        id_ : str
+            Unique identifier for term in namespace. HGNC unique ID, FPLX ID
+            or Uniprot ID.
+        relation_types : Optional[list]
+            Restrict edges to relation types in this list. The valid relation
+            types are the strings 'isa' and 'partof'.
+            If argument is None then both isa and partof relations are
+            included. Default: None
+
+        Returns
+        -------
+        list
+           List of terms are returned in breadth first order following
+           relations backwards from top to bottom in the ontology.
+        """
         if relation_types is None:
             relation_types = ['isa', 'partof']
         output = []
@@ -63,24 +171,125 @@ class FamplexGraph(object):
         return output[1:]
 
     def individual_members(self, namespace, id_, relation_types=None):
+        """Return terms beneath a given term that are not families or complexes
+
+        Parameters
+        ----------
+        namespace : str
+            Namespace for a term. For the FamPlex ontology this should be one
+            of HGNC, FPLX, or UP
+        id_ : str
+            Unique identifier for term in namespace. HGNC unique ID, FPLX ID
+            or Uniprot ID.
+        relation_types : list
+            Restrict edges to relation types in this list. The valid relation
+            types are the strings 'isa' and 'partof'.
+            If argument is None then both isa and partof relations are
+            included. Default: None
+
+        Returns
+        -------
+        list
+            List of terms beneath the input term that have no children
+            themselves. If relation_types includes only 'isa', then these will
+            be the individual genes within a family. If only 'partof' relations
+            are included then these will be the individual members of a
+            complex.  There are some terms that are families of
+            complexes. These have both partof and isa relationships. In these
+            cases the returned list can contain families or complexes
+            if partof or isa relationships are excluded respectively.
+        """
         if relation_types is None:
             relation_types = ['isa', 'partof']
         output = []
-        for ns2, id2 in self.descendant_terms(namespace, id_):
-            if ns2 != 'FPLX':
+        for ns2, id2 in self.descendant_terms(namespace, id_,
+                                              relation_types):
+            if not (ns2, id2) in self._reverse_graph:
                 output.append[(ns2, id2)]
         return output
 
     def isa(self, namespace1, id1, namespace2, id2):
+        """Return true if one term has an isa relationship with another
+
+        Parameters
+        ----------
+        namespace1 : str
+            Namespace of first term
+        id1 : str
+            Identifier of first term
+        namespace2 : str
+            Namespace of second term
+        id2 : str
+            Identifier of second term
+        
+        Returns
+        -------
+        bool
+            True if the term given by (namespace1, id1) has an isa relationship
+            with the term given by (namespace2, id2).
+        """
         return self._rel(namespace1, id1, namespace2, id2, ['isa'])
 
     def partof(self, namespace1, id1, namespace2, id2):
+        """Return true if one term has a partof relationship with another
+
+        Parameters
+        ----------
+        namespace1 : str
+            Namespace of first term
+        id1 : str
+            Identifier of first term
+        namespace2 : str
+            Namespace of second term
+        id2 : str
+            Identifier of second term
+        
+        Returns
+        -------
+        bool
+            True if the term given by (namespace1, id1) has a partof
+            relationship with the term given by (namespace2, id2).
+        """
         return self._rel(namespace1, id1, namespace2, id2, ['partof'])
 
     def refinement_of(self, namespace, id1, namespace2, id2):
+        """Return true if one term either isa or partof holds
+
+        Parameters
+        ----------
+        namespace1 : str
+            Namespace of first term
+        id1 : str
+            Identifier of first term
+        namespace2 : str
+            Namespace of second term
+        id2 : str
+            Identifier of second term
+        
+        Returns
+        -------
+        bool
+            True if the term given by (namespace1, id1) has either an isa
+            or partof relationship with the term given by (namespace2, id2).
+        """
         return self._rel(namespace, id1, namespace2, id2, ['isa', 'partof'])
 
     def category(self, namespace, id_):
+        """Returns 
+
+        Parameters
+        ----------
+        namespace : str
+        id_ : str
+        
+        Returns
+        -------
+        str
+            One of 'family', 'complex', or 'gene/protein'. A family has only
+            isa relationships as inbound edges. A complex has at least one
+            inbound partof relationship (So families of complexes count as
+            complexes). All other terms have category gene/protein.
+        """
         edges = self._reverse_graph.get((namespace, id_))
         if edges is None:
             raise ValueError(f'{namespace}:{id_} is not in the'
@@ -92,11 +301,27 @@ class FamplexGraph(object):
             output = 'complex'
         elif edge_types == set(['isa']):
             output = 'family'
-        else:
-            output = None
         return output
 
     def dict_representation(self, namespace, id_):
+        """Return a nested dictionary representation of a FamPlex term
+
+        Parameters
+        ----------
+        namespace : str
+        id_ : str
+
+        Returns
+        -------
+        dict
+            Nested dictionary representing structure of a FamPlex term.
+            Keys are tuples with namespace, id pairs. Values are lists of
+            tuples of nested dictionary representations and relationships,
+            as in the example below.
+
+            {('FPLX': 'ESR'): [({('HGNC', 'ESR1'): []}, 'isa'),
+                               ({('HGNC', 'ESR2'): []}, 'isa')]}
+        """
         out = {(namespace, id_): []}
         edges = self._reverse_graph.get((namespace, id_))
         if edges is None:
