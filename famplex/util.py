@@ -40,14 +40,15 @@ def construct_grounding_map(rows):
     ----------
     rows : list
         List of rows from a grounding map csv file. File should contain seven
-        columns, the first of which is a Famplex ID. The remaining columns
+        columns, the first of which is an agent text. The remaining columns
         contain namespace, id pairs, each pair occupying two columns. Some
-        columns may be blank but file must be padded out with commas.
+        columns may be blank but in this case the row must be padded out with
+        commas.
 
     Returns
     -------
     gmap : dict
-        Dictionary mapping Famplex IDs to INDRA style db_refs dicts. Each
+        Dictionary mapping agent texts to INDRA style db_refs dicts. Each
         db_refs dict maps namespaces to ids.
     """
     gmap = {}
