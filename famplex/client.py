@@ -274,35 +274,6 @@ class FamplexGraph(object):
         """
         return self._rel(namespace, id1, namespace2, id2, ['isa', 'partof'])
 
-    def category(self, namespace, id_):
-        """Returns 
-
-        Parameters
-        ----------
-        namespace : str
-        id_ : str
-        
-        Returns
-        -------
-        str
-            One of 'family', 'complex', or 'gene/protein'. A family has only
-            isa relationships as inbound edges. A complex has at least one
-            inbound partof relationship (So families of complexes count as
-            complexes). All other terms have category gene/protein.
-        """
-        edges = self._reverse_graph.get((namespace, id_))
-        if edges is None:
-            raise ValueError(f'{namespace}:{id_} is not in the'
-                             ' FamPlex ontology')
-        edge_types = set([edge[-1] for edge in edges])
-        if not edge_types:
-            output = 'gene/protein'
-        elif 'partof' in edge_types:
-            output = 'complex'
-        elif edge_types == set(['isa']):
-            output = 'family'
-        return output
-
     def dict_representation(self, namespace, id_):
         """Return a nested dictionary representation of a FamPlex term
 
