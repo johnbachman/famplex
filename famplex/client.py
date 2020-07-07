@@ -33,10 +33,21 @@ class FamplexGraph(object):
         Set of top level families and complexes in the FamPlex ontology
     """
     def __init__(self):
+        # Graphs are stored internally as a dictionary mapping tuples of
+        # the form (namespace, id) to a list of tuples of the form
+        # (namespace, id, relation_type). This is a variant of the adjacency
+        # list representation of a graph but allowing for multiple edge types.
+
+        # Contains forward isa and partof relationships between terms
         graph = defaultdict(list)
+        # Contains reversed isa and partof relationships
         reverse_graph = defaultdict(list)
         relations = load_csv(RELATIONS_PATH)
         left_set, right_set = set(), set()
+        # Loop through table populating edges of the above graphs.
+        # By looking at the set of all terms that appear on the right in the
+        # relations.csv table which do not appear on the left we can identify
+        # the top level families and complexes within famplex.
         for namespace1, id1, relation, namespace2, id2 in relations:
             graph[(namespace1, id1)].append((namespace2, id2, relation))
             reverse_graph[(namespace2, id2)].\
@@ -45,6 +56,9 @@ class FamplexGraph(object):
             right_set.add((namespace2, id2))
         root_class_mapping = {}
         root_classes = right_set - left_set
+        # Build up an dictionary mapping terms to the top level families
+        # or complexes to which they belong. Families and complexes can overlap
+        # so there can be multiple top level terms above a given term.
         for entry in root_classes:
             for node in self._traverse(reverse_graph, entry,
                                        ['isa', 'partof']):
