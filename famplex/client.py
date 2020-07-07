@@ -6,6 +6,32 @@ from famplex.locations import ENTITIES_PATH, EQUIVALENCES_PATH, \
 
 
 class FamplexGraph(object):
+    """Provides methods for working with graph of FamPlex entities and relations
+
+    FamPlex is an ontology of protein families and complexes. Individual terms
+    are genes/proteins. There are  higher level terms for families and
+    complexes. Terms can be connected by isa or partof relationships.
+    X isa Y expressing that X is a member of the Y family; Z partof W
+    expressing that Z is a constituent of the W complex. The FamPlex graph is
+    a Directed Acyclic Graph (DAG) with top level families and complexes as
+    sinks and individual proteins/genes as sources.
+
+    If X isa Y or X partof Y we say that X is a child of Y and Y is a parent of
+    X. This is contrary to the terminology used within graph theory for trees
+    where X is a child of Y if there is an edge from Y to X. However, this is
+    consistent with how these terms are often used in the hierarchical
+    relationships of ontologies.
+
+    We say Y is above X in the FamPlex ontology if there is a path of isa and
+    partof edges from X to Y. We also say that Y is an ancestor of X.
+    X is then below Y in the FamPlex ontology and we also say X is a descendant
+    of Y.
+
+    Attributes
+    ----------
+    root_classes : set
+        Set of top level families and complexes in the FamPlex ontology
+    """
     def __init__(self):
         graph = defaultdict(list)
         reverse_graph = defaultdict(list)
