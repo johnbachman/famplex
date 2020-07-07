@@ -113,7 +113,7 @@ class FamplexGraph(object):
                 if rel in relation_types]
 
     def root_terms(self, namespace, id_):
-        """Returns top level terms associated with input term
+        """Returns top level terms above the input term
 
         Parameters
         ----------
@@ -134,7 +134,7 @@ class FamplexGraph(object):
 
     def ancestral_terms(self, namespace, id_, relation_types=None):
         """
-        Return list of all prior terms in the FamPlex Ontology
+        Return list of all terms above a given term in the FamPlex Ontology
 
         Parameters
         ----------
@@ -166,7 +166,7 @@ class FamplexGraph(object):
 
     def descendant_terms(self, namespace, id_, relation_types=None):
         """
-        Return list of all following terms in the FamPlex Ontology
+        Return list of all terms below a given term in the FamPlex Ontology
 
         Parameters
         ----------
