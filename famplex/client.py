@@ -47,7 +47,7 @@ class FamplexGraph(object):
         graph = defaultdict(list)
         # Contains reversed isa and partof relationships
         reverse_graph = defaultdict(list)
-        relations = load_csv(RELATIONS_PATH)
+        relations = load_relations()
         left_set, right_set = set(), set()
         # Loop through table populating edges of the above graphs.
         # By looking at the set of all terms that appear on the right in the
@@ -69,7 +69,7 @@ class FamplexGraph(object):
                                        ['isa', 'partof']):
                 root_class_mapping[node] = entry
         equivalences = defaultdict(list)
-        for ns, id_, fplx_id in load_csv(EQUIVALENCES_PATH):
+        for ns, id_, fplx_id in load_equivalences():
             equivalences[fplx_id].append((ns, id_))
         self.root_classes = root_classes
         self._root_class_mapping = dict(root_class_mapping)
@@ -481,25 +481,66 @@ class FamplexGraph(object):
 
 
 def load_grounding_map():
+    """Returns the FamPlex grounding map in dictionary form
+
+    Returns
+    -------
+    dict
+        A dictionary mapping agent texts to INDRA style db_refs dictionaries.
+    """
     rows = load_csv(GROUNDING_MAP_PATH)
     return construct_grounding_map(rows)
 
 
 def load_equivalences():
+    """Returns FamPlex equivalences as a list of rows.
+    
+    Returns
+    -------
+    list
+        List of lists corresponding to rows from equivalences.csv. Each row
+        contains three entries. A namespace, an ID, and a FamPlex ID. For
+        example ['BEL', 'AMP Activated Protein Kinase Complex', 'AMPK'].
+    """
     return load_csv(EQUIVALENCES_PATH)
 
 
 def load_entitites():
+    """Returns list of FamPlex entities
+
+    Returns
+    -------
+    list
+        A list of all FamPlex unique IDs sorted in Unix standard sorted order.
+    """
     return load_csv(ENTITIES_PATH)
 
 
 def load_relations():
+    """Returns FamPlex relations as a list of rows
+
+    Returns
+    -------
+    list
+        List of lists corresponding to rows in relations.csv. Each row has
+        five columns of the form [namespace1, id1, relation, namespace2, id2].
+        For example ['FPLX', 'AMPK_alpha', 'partof', 'FPLX', 'AMPK'].
+    """
     return load_csv(RELATIONS_PATH)
 
 
 def load_gene_prefixes():
+    """Returns FamPlex gene prefixes as a list of rows
+
+    Returns
+    -------
+    list
+        List of lists corresponding to rows in gene_prefixes.csv. Each row has
+        three columns [Pattern, Category, Notes].
+    """
     return load_csv(GENE_PREFIXES_PATH)
 
 
 def load_descriptions():
+    """Returns FamPlex descriptions as a list of rows"""
     return load_csv(DESCRIPTIONS_PATH)
