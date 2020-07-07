@@ -63,10 +63,14 @@ class FamplexGraph(object):
             for node in self._traverse(reverse_graph, entry,
                                        ['isa', 'partof']):
                 root_class_mapping[node] = entry
+        equivalences = defaultdict(list)
+        for ns, id_, fplx_id in load_csv(EQUIVALENCES_PATH):
+            equivalences[fplx_id].append((ns, id_))
         self.root_classes = root_classes
         self._root_class_mapping = dict(root_class_mapping)
         self._graph = dict(graph)
         self._reverse_graph = dict(reverse_graph)
+        self._equivalences = dict(equivalences)
 
     def parent_terms(self, namespace, id_, relation_types=None):
         """Returns terms immediately above a given term in the FamPlex ontology
@@ -345,6 +349,30 @@ class FamplexGraph(object):
                 append((self.dict_representation(namespace2, id2),
                         relation))
         return out
+
+    def equivalences(self, fplx_id):
+        """Return list of equivalent terms from other namespaces
+
+        Parameters
+        ----------
+        fplx_id : str
+            A valid Famplex ID
+
+        Returns
+        -------
+        list
+            List of tuples of the form (namespace, id) of equivalent terms
+            from other namespaces.
+
+        Raises
+        ------
+        ValueError
+            If fplx_id is not a valid ID in the FamPlex ontology.
+        """
+        equiv = self._equivalences.get(fplx_id)
+        if equiv is None:
+            raise ValueError(f'{fplx_id} is not a valid Famplex ID')
+        return equiv
 
     def _rel(self, namespace1, id1, namespace2, id2, relation_types):
         roots1 = self._root_class_mapping.get((namespace1, id1))
