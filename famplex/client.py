@@ -12,15 +12,20 @@ class FamplexGraph(object):
     are genes/proteins. There are  higher level terms for families and
     complexes. Terms can be connected by isa or partof relationships.
     X isa Y expressing that X is a member of the Y family; Z partof W
-    expressing that Z is a constituent of the W complex. The FamPlex graph is
-    a Directed Acyclic Graph (DAG) with top level families and complexes as
-    sinks and individual proteins/genes as sources.
+    expressing that Z is a constituent of the W complex.
+
+    Each term in the FamPlex ontology exists within a namespace and has an
+    identifier which is unique within that namespace. Individual genes and
+    proteins have either HGNC or Uniprot as a namespace. FamPlex has its own
+    namespace for families and complexes and the unique identifiers are
+    designed to be human readable. Identifiers for Uniprot are simply Uniprot
+    IDs. For HGNC the HGNC Symbol is used instead of the HGNC unique ID.
 
     If X isa Y or X partof Y we say that X is a child of Y and Y is a parent of
     X. This is contrary to the terminology used within graph theory for trees
     where X is a child of Y if there is an edge from Y to X. However, this is
-    consistent with how these terms are often used in the hierarchical
-    relationships of ontologies.
+    consistent with how these terms are often used for the hierarchical
+    relationships within ontologies.
 
     We say Y is above X in the FamPlex ontology if there is a path of isa and
     partof edges from X to Y. We also say that Y is an ancestor of X.
@@ -78,7 +83,11 @@ class FamplexGraph(object):
         Parameters
         ----------
         namespace : str
+            Namespace for a term. This should be one of 'HGNC', 'FPLX' for
+            FamPlex, or 'UP' for Uniprot.
         id_ : str
+            Identifier for a term within namespace. See the FamplexGraph
+            class Docstring for more info.
 
         Returns
         -------
@@ -92,11 +101,11 @@ class FamplexGraph(object):
         Parameters
         ----------
         namespace : str
-            Namespace for a term. For the FamPlex ontology this should be one
-            of HGNC, FPLX, or UP
+            Namespace for a term. This should be one of 'HGNC', 'FPLX' for
+            FamPlex, or 'UP' for Uniprot.
         id_ : str
-            Unique identifier for term in namespace. HGNC unique ID, FPLX ID
-            or Uniprot ID.
+            Identifier for a term within namespace. See the FamplexGraph
+            class Docstring for more info.
         relation_types : Optional[list]
             Set of relation types that input term can have with returned
             parent terms. The valid relation types are 'isa' and 'partof'.
@@ -129,11 +138,11 @@ class FamplexGraph(object):
         Parameters
         ----------
         namespace : str
-            Namespace for a term. For the FamPlex ontology this should be one
-            of HGNC, FPLX, or UP
+            Namespace for a term. This should be one of 'HGNC', 'FPLX' for
+            FamPlex, or 'UP' for Uniprot.
         id_ : str
-            Unique identifier for term in namespace. HGNC unique ID, FPLX ID
-            or Uniprot ID.
+            Identifier for a term within namespace. See the FamplexGraph
+            class Docstring for more info.
         relation_types : Optional[list]
             Restrict edges to relation types in this list. The valid relation
             types are the strings 'isa' and 'partof'.
@@ -165,11 +174,11 @@ class FamplexGraph(object):
         Parameters
         ----------
         namespace : str
-            Namespace for a term. For the FamPlex ontology this should be one
-            of HGNC, FPLX, or UP
+            Namespace for a term. This should be one of 'HGNC', 'FPLX' for
+            FamPlex, or 'UP' for Uniprot.
         id_ : str
-            Unique identifier for term in namespace. HGNC unique ID, FPLX ID
-            or Uniprot ID.
+            Identifier for a term within namespace. See the FamplexGraph
+            class Docstring for more info.
 
         Returns
         -------
@@ -195,11 +204,11 @@ class FamplexGraph(object):
         Parameters
         ----------
         namespace : str
-            Namespace for a term. For the FamPlex ontology this should be one
-            of HGNC, FPLX, or UP
+            Namespace for a term. This should be one of 'HGNC', 'FPLX' for
+            FamPlex, or 'UP' for Uniprot.
         id_ : str
-            Unique identifier for term in namespace. HGNC unique ID, FPLX ID
-            or Uniprot ID.
+            Identifier for a term within namespace. See the FamplexGraph
+            class Docstring for more info.
         relation_types : Optional[list]
             Restrict edges to relation types in this list. The valid relation
             types are the strings 'isa' and 'partof'.
@@ -227,11 +236,11 @@ class FamplexGraph(object):
         Parameters
         ----------
         namespace : str
-            Namespace for a term. For the FamPlex ontology this should be one
-            of HGNC, FPLX, or UP
+            Namespace for a term. This should be one of 'HGNC', 'FPLX' for
+            FamPlex, or 'UP' for Uniprot.
         id_ : str
-            Unique identifier for term in namespace. HGNC unique ID, FPLX ID
-            or Uniprot ID.
+            Identifier for a term within namespace. See the FamplexGraph class
+            Docstring for more info.
         relation_types : Optional[list]
             Restrict edges to relation types in this list. The valid relation
             types are the strings 'isa' and 'partof'.
@@ -258,11 +267,11 @@ class FamplexGraph(object):
         Parameters
         ----------
         namespace : str
-            Namespace for a term. For the FamPlex ontology this should be one
-            of HGNC, FPLX, or UP
+            Namespace for a term. This should be one of 'HGNC', 'FPLX' for
+            FamPlex, or 'UP' for Uniprot.
         id_ : str
-            Unique identifier for term in namespace. HGNC unique ID, FPLX ID
-            or Uniprot ID.
+            Identifier for a term within namespace. See the Famplexgraph class
+            Docstring for more info.
         relation_types : list
             Restrict edges to relation types in this list. The valid relation
             types are the strings 'isa' and 'partof'.
@@ -293,16 +302,21 @@ class FamplexGraph(object):
     def isa(self, namespace1, id1, namespace2, id2):
         """Return true if one term has an isa relationship with another
 
+        See the FamplexGraph class Docstring for more info on namespaces and
+        IDs.
+
         Parameters
         ----------
         namespace1 : str
-            Namespace of first term
+            Namespace of first term. This should be one of 'HGNC', 'FPLX' for
+            FamPlex, or 'UP' for Uniprot.
         id1 : str
-            Identifier of first term
+            Identifier of first term.
         namespace2 : str
-            Namespace of second term
+            Namespace of second term. This should be one of 'HGNC', 'FPLX' for
+            FamPlex, or 'UP' for Uniprot.
         id2 : str
-            Identifier of second term
+            Identifier of second term.
 
         Returns
         -------
@@ -317,16 +331,21 @@ class FamplexGraph(object):
     def partof(self, namespace1, id1, namespace2, id2):
         """Return true if one term has a partof relationship with another
 
+        See the FamplexGraph class Docstring for more info on namespaces and
+        IDs.
+
         Parameters
         ----------
         namespace1 : str
-            Namespace of first term
+            Namespace of first term. This should be one of 'HGNC', 'FPLX' for
+            FamPlex, or 'UP' for Uniprot.
         id1 : str
-            Identifier of first term
+            Identifier of first term.
         namespace2 : str
-            Namespace of second term
+            Namespace of second term. This should be one of 'HGNC', 'FPLX' for
+            FamPlex, or 'UP' for Uniprot.
         id2 : str
-            Identifier of second term
+            Identifier of second term.
 
         Returns
         -------
@@ -341,16 +360,21 @@ class FamplexGraph(object):
     def refinement_of(self, namespace, id1, namespace2, id2):
         """Return true if one term either isa or partof holds
 
+        See the FamplexGraph class Docstring for more info on namepaces and
+        IDs.
+
         Parameters
         ----------
         namespace1 : str
-            Namespace of first term
+            Namespace of first term. This should be one of 'HGNC', 'FPLX' for
+            FamPlex, or 'UP' for Uniprot.
         id1 : str
-            Identifier of first term
+            Identifier of first term.
         namespace2 : str
-            Namespace of second term
+            Namespace of second term. This should be one of 'HGNC', 'FPLX' for
+            FamPlex, or 'UP' for Uniprot.
         id2 : str
-            Identifier of second term
+            Identifier of second term.
 
         Returns
         -------
@@ -368,7 +392,11 @@ class FamplexGraph(object):
         Parameters
         ----------
         namespace : str
+            Namespace for a term. This should be one of 'HGNC', 'FPLX' for
+            FamPlex, or 'UP' for Uniprot.
         id_ : str
+            Identifier for a term within namespace. See the Famplexgraph class
+            Docstring for more info.
 
         Returns
         -------
@@ -400,7 +428,7 @@ class FamplexGraph(object):
         return out
 
     def equivalences(self, fplx_id):
-        """Return list of equivalent terms from other namespaces
+        """Return list of equivalent terms from other namespaces.
 
         Parameters
         ----------
