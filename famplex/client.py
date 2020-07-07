@@ -72,6 +72,20 @@ class FamplexGraph(object):
         self._reverse_graph = dict(reverse_graph)
         self._equivalences = dict(equivalences)
 
+    def in_famplex(self, namespace, id_):
+        """Returns True if input term is a member of the FamPlex ontology.
+
+        Parameters
+        ----------
+        namespace : str
+        id_ : str
+
+        Returns
+        -------
+        bool
+        """
+        return (namespace, id_) in self._root_class_mapping
+
     def parent_terms(self, namespace, id_, relation_types=None):
         """Returns terms immediately above a given term in the FamPlex ontology
 
