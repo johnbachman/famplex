@@ -289,12 +289,14 @@ class FamplexGraph(object):
             Namespace of second term
         id2 : str
             Identifier of second term
-        
+
         Returns
         -------
         bool
             True if the term given by (namespace1, id1) has an isa relationship
-            with the term given by (namespace2, id2).
+            with the term given by (namespace2, id2). Will return False if
+            either of (namespace1, id1) or (namespace2, id2) is not in the
+            FamPlex ontology.
         """
         return self._rel(namespace1, id1, namespace2, id2, ['isa'])
 
@@ -311,12 +313,14 @@ class FamplexGraph(object):
             Namespace of second term
         id2 : str
             Identifier of second term
-        
+
         Returns
         -------
         bool
             True if the term given by (namespace1, id1) has a partof
-            relationship with the term given by (namespace2, id2).
+            relationship with the term given by (namespace2, id2). Will return
+            False if either of (namespace1, id1) or (namespace2, id2) is not in
+            the FamPlex ontology.
         """
         return self._rel(namespace1, id1, namespace2, id2, ['partof'])
 
@@ -333,12 +337,14 @@ class FamplexGraph(object):
             Namespace of second term
         id2 : str
             Identifier of second term
-        
+
         Returns
         -------
         bool
-            True if the term given by (namespace1, id1) has either an isa
-            or partof relationship with the term given by (namespace2, id2).
+            True if the term given by (namespace1, id1) has either an isa or
+            partof relationship with the term given by (namespace2, id2). Will
+            return False if either of (namespace1, id1) or (namespace2, id2) is
+            not in the FamPlex ontology.
         """
         return self._rel(namespace, id1, namespace2, id2, ['isa', 'partof'])
 
@@ -360,6 +366,11 @@ class FamplexGraph(object):
 
             {('FPLX': 'ESR'): [({('HGNC', 'ESR1'): []}, 'isa'),
                                ({('HGNC', 'ESR2'): []}, 'isa')]}
+
+        Raises
+        ------
+        ValueError
+            If (namespace, id_) does not correspond to a term in FamPlex.
         """
         out = {(namespace, id_): []}
         edges = self._reverse_graph.get((namespace, id_))
@@ -450,4 +461,3 @@ def load_gene_prefixes():
 
 def load_descriptions():
     return load_csv(DESCRIPTIONS_PATH)
-
