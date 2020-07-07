@@ -95,11 +95,19 @@ class FamplexGraph(object):
         list
             List of tuples of the form (namespace, id) specifying parent terms
             of the input term.
+
+        Raises
+        ------
+        ValueError
+            If (namespace, id_) does not correspond to a term in FamPlex.
         """
         if relation_types is None:
             relation_types = ['isa', 'partof']
-        return [(ns2, id2) for ns2, id2, rel in self._graph[(namespace, id_)]
-                if rel in relation_types]
+        edges = self._graph.get((namespace, id_))
+        if edges is None:
+            raise ValueError(f'{namespace}:{id_} is not in the FamPlex'
+                             ' ontology')
+        return [(ns2, id2) for ns2, id2, rel in edges if rel in relation_types]
 
     def child_terms(self, namespace, id_, relation_types=None):
         """Returns terms immediately below a given term in the FamPlex ontology
@@ -122,13 +130,20 @@ class FamplexGraph(object):
         -------
         list
             List of tuples of the form (namespace, id) specifying child terms
-            of the input term..
+            of the input term.
+
+        Raises
+        ------
+        ValueError
+            If (namespace, id_) does not correspond to a term in FamPlex.
         """
         if relation_types is None:
             relation_types = ['isa', 'partof']
-        return [(ns2, id2) for ns2, id2, rel in
-                self._reverse_graph[(namespace, id_)]
-                if rel in relation_types]
+            edges = self._reverse_graph.get((namespace, id_))
+        if edges is None:
+            raise ValueError(f'{namespace}:{id_} is not in the FamPlex'
+                             ' ontology')
+        return [(ns2, id2) for ns2, id2, rel in edges if rel in relation_types]
 
     def root_terms(self, namespace, id_):
         """Returns top level terms above the input term
@@ -147,8 +162,17 @@ class FamplexGraph(object):
         list
             List of terms above the input that are top level families and/or
             complexes within the FamPlex ontology.
+
+        Raises
+        ------
+        ValueError
+            If (namespace, id_) does not correspond to a term in FamPlex.
         """
-        return [node for node in self._root_class_mapping[(namespace, id_)]]
+        roots = self._root_class_mapping.get((namespace, id_))
+        if roots is None:
+            raise ValueError(f'{namespace}:{id_} is not in the FamPlex'
+                             ' ontology')
+        return roots
 
     def ancestral_terms(self, namespace, id_, relation_types=None):
         """
