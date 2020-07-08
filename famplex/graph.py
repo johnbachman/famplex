@@ -126,6 +126,8 @@ class FamplexGraph(object):
             relation_types = ['isa', 'partof']
         edges = self._graph.get((namespace, id_))
         if edges is None:
+            if (namespace, id_) in self.root_classes:
+                return []
             raise ValueError(f'{namespace}:{id_} is not in the FamPlex'
                              ' ontology')
         return [(ns2, id2) for ns2, id2, rel in edges if rel in relation_types]
@@ -160,8 +162,10 @@ class FamplexGraph(object):
         """
         if relation_types is None:
             relation_types = ['isa', 'partof']
-            edges = self._reverse_graph.get((namespace, id_))
+        edges = self._reverse_graph.get((namespace, id_))
         if edges is None:
+            if (namespace, id_) in self._graph:
+                return []
             raise ValueError(f'{namespace}:{id_} is not in the FamPlex'
                              ' ontology')
         return [(ns2, id2) for ns2, id2, rel in edges if rel in relation_types]
