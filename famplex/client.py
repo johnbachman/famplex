@@ -59,15 +59,15 @@ class FamplexGraph(object):
                 append((namespace1, id1, relation))
             left_set.add((namespace1, id1))
             right_set.add((namespace2, id2))
-        root_class_mapping = {}
-        root_classes = right_set - left_set
+        root_class_mapping = defaultdict(list)
+        root_classes = sorted(right_set - left_set, key=lambda x: x[1].lower())
         # Build up an dictionary mapping terms to the top level families
         # or complexes to which they belong. Families and complexes can overlap
         # so there can be multiple top level terms above a given term.
         for entry in root_classes:
             for node in self._traverse(reverse_graph, entry,
                                        ['isa', 'partof']):
-                root_class_mapping[node] = entry
+                root_class_mapping[node].append(entry)
         equivalences = defaultdict(list)
         for ns, id_, fplx_id in load_equivalences():
             equivalences[fplx_id].append((ns, id_))
@@ -456,7 +456,7 @@ class FamplexGraph(object):
         roots2 = self._root_class_mapping.get((namespace2, id2))
         if roots1 is None or roots2 is None:
             return False
-        if roots1.keys() & roots2.keys():
+        if set(roots1) & set(roots2):
             node1, node2 = (namespace1, id1), (namespace2, id2)
             for node in self._traverse(self._graph, node1,
                                        relation_types):
