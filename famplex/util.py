@@ -59,8 +59,9 @@ def update_id_prefixes(filename):
     Returns
     -------
     list
-        List of rows from input with GO, CHEBI, and CHEMBL IDs
-        corrected to be prefixed with the namespace.
+        List of rows from grounding_map with GO, CHEBI, and CHEMBL IDs
+        correctly prefixed with these respective namespaces. Leaves already
+        correct IDs unchanged.
     """
     gm_rows = load_csv(filename)
     updated_rows = []
