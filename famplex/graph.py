@@ -57,6 +57,11 @@ class FamplexGraph(object):
                 append((namespace1, id1, relation))
             left_set.add((namespace1, id1))
             right_set.add((namespace2, id2))
+        # Sort edges in adjaceny lists by alphabetical order
+        for edges in graph.values():
+            edges = sorted(edges, key=lambda x: (x[0], x[1].lower()))
+        for edges in reverse_graph.values():
+            edges = sorted(edges, key=lambda x: (x[0], x[1].lower()))
         root_class_mapping = defaultdict(list)
         root_classes = sorted(right_set - left_set, key=lambda x: x[1].lower())
         # Build up an dictionary mapping terms to the top level families
