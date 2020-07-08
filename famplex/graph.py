@@ -1,8 +1,6 @@
 from collections import defaultdict, deque
 
-from famplex.util import load_csv, construct_grounding_map
-from famplex.locations import ENTITIES_PATH, EQUIVALENCES_PATH, \
-    GROUNDING_MAP_PATH, RELATIONS_PATH, GENE_PREFIXES_PATH, DESCRIPTIONS_PATH
+from famplex.util import load_equivalences, load_relations
 
 
 class FamplexGraph(object):
@@ -478,69 +476,3 @@ class FamplexGraph(object):
                     queue.appendleft((ns, id_))
                     visited.add((ns, id_))
             yield node
-
-
-def load_grounding_map():
-    """Returns the FamPlex grounding map in dictionary form
-
-    Returns
-    -------
-    dict
-        A dictionary mapping agent texts to INDRA style db_refs dictionaries.
-    """
-    rows = load_csv(GROUNDING_MAP_PATH)
-    return construct_grounding_map(rows)
-
-
-def load_equivalences():
-    """Returns FamPlex equivalences as a list of rows.
-    
-    Returns
-    -------
-    list
-        List of lists corresponding to rows from equivalences.csv. Each row
-        contains three entries. A namespace, an ID, and a FamPlex ID. For
-        example ['BEL', 'AMP Activated Protein Kinase Complex', 'AMPK'].
-    """
-    return load_csv(EQUIVALENCES_PATH)
-
-
-def load_entitites():
-    """Returns list of FamPlex entities
-
-    Returns
-    -------
-    list
-        A list of all FamPlex unique IDs sorted in Unix standard sorted order.
-    """
-    return load_csv(ENTITIES_PATH)
-
-
-def load_relations():
-    """Returns FamPlex relations as a list of rows
-
-    Returns
-    -------
-    list
-        List of lists corresponding to rows in relations.csv. Each row has
-        five columns of the form [namespace1, id1, relation, namespace2, id2].
-        For example ['FPLX', 'AMPK_alpha', 'partof', 'FPLX', 'AMPK'].
-    """
-    return load_csv(RELATIONS_PATH)
-
-
-def load_gene_prefixes():
-    """Returns FamPlex gene prefixes as a list of rows
-
-    Returns
-    -------
-    list
-        List of lists corresponding to rows in gene_prefixes.csv. Each row has
-        three columns [Pattern, Category, Notes].
-    """
-    return load_csv(GENE_PREFIXES_PATH)
-
-
-def load_descriptions():
-    """Returns FamPlex descriptions as a list of rows"""
-    return load_csv(DESCRIPTIONS_PATH)
