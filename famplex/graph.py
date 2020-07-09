@@ -1,3 +1,4 @@
+from typing import Optional
 from collections import defaultdict, deque
 
 from famplex.util import load_equivalences, load_relations
@@ -81,7 +82,7 @@ class FamplexGraph(object):
         self._equivalences = dict(equivalences)
         self.__error_message = 'Given input is not in the FamPlex ontology.'
 
-    def in_famplex(self, namespace, id_):
+    def in_famplex(self, namespace: str, id_: str) -> bool:
         """Returns True if input term is a member of the FamPlex ontology.
 
         Parameters
@@ -99,7 +100,9 @@ class FamplexGraph(object):
         """
         return (namespace, id_) in self._root_class_mapping
 
-    def parent_terms(self, namespace, id_, relation_types=None):
+    def parent_terms(self, namespace: str,
+                     id_: str,
+                     relation_types: Optional[list]=None) -> list:
         """Returns terms immediately above a given term in the FamPlex ontology
 
         Parameters
@@ -137,7 +140,8 @@ class FamplexGraph(object):
             raise ValueError(self.__error_message)
         return [(ns2, id2) for ns2, id2, rel in edges if rel in relation_types]
 
-    def child_terms(self, namespace, id_, relation_types=None):
+    def child_terms(self, namespace: str, id_: str,
+                    relation_types: Optional[list]=None) -> list:
         """Returns terms immediately below a given term in the FamPlex ontology
 
         Parameters
@@ -174,7 +178,7 @@ class FamplexGraph(object):
             raise ValueError(self.__error_message)
         return [(ns2, id2) for ns2, id2, rel in edges if rel in relation_types]
 
-    def root_terms(self, namespace, id_):
+    def root_terms(self, namespace: str, id_: str) -> list:
         """Returns top level terms above the input term
 
         Parameters
@@ -202,7 +206,8 @@ class FamplexGraph(object):
             raise ValueError(self.__error_message)
         return roots
 
-    def ancestral_terms(self, namespace, id_, relation_types=None):
+    def ancestral_terms(self, namespace: str, id_: str,
+                        relation_types: Optional[list]=None) -> list:
         """
         Return list of all terms above a given term in the FamPlex Ontology
 
@@ -236,7 +241,8 @@ class FamplexGraph(object):
             output.append((ns2, id2))
         return output[1:]
 
-    def descendant_terms(self, namespace, id_, relation_types=None):
+    def descendant_terms(self, namespace: str, id_: str,
+                         relation_types: Optional[list]=None) -> list:
         """
         Return list of all terms below a given term in the FamPlex Ontology
 
@@ -270,7 +276,8 @@ class FamplexGraph(object):
             output.append((ns2, id2))
         return output[1:]
 
-    def individual_members(self, namespace, id_, relation_types=None):
+    def individual_members(self, namespace: str, id_: str,
+                           relation_types: Optional[list]=None) -> list:
         """Return terms beneath a given term that are not families or complexes
 
         Parameters
@@ -308,7 +315,8 @@ class FamplexGraph(object):
                 output.append[(ns2, id2)]
         return output
 
-    def isa(self, namespace1, id1, namespace2, id2):
+    def isa(self, namespace1: str, id1: str,
+            namespace2: str, id2: str) -> bool:
         """Return true if one term has an isa relationship with another
 
         See the FamplexGraph class Docstring for more info on namespaces and
@@ -337,7 +345,8 @@ class FamplexGraph(object):
         """
         return self._rel(namespace1, id1, namespace2, id2, ['isa'])
 
-    def partof(self, namespace1, id1, namespace2, id2):
+    def partof(self, namespace1: str, id1: str,
+               namespace2: str, id2: str) -> bool:
         """Return true if one term has a partof relationship with another
 
         See the FamplexGraph class Docstring for more info on namespaces and
@@ -366,7 +375,8 @@ class FamplexGraph(object):
         """
         return self._rel(namespace1, id1, namespace2, id2, ['partof'])
 
-    def refinement_of(self, namespace, id1, namespace2, id2):
+    def refinement_of(self, namespace: str, id1: str,
+                      namespace2: str, id2: str) -> bool:
         """Return true if one term either isa or partof holds
 
         See the FamplexGraph class Docstring for more info on namepaces and
@@ -395,7 +405,7 @@ class FamplexGraph(object):
         """
         return self._rel(namespace, id1, namespace2, id2, ['isa', 'partof'])
 
-    def dict_representation(self, namespace, id_):
+    def dict_representation(self, namespace: str, id_: str) -> dict:
         """Return a nested dictionary representation of a FamPlex term
 
         Parameters
@@ -435,7 +445,7 @@ class FamplexGraph(object):
                         relation))
         return out
 
-    def equivalences(self, fplx_id):
+    def equivalences(self, fplx_id: str) -> list:
         """Return list of equivalent terms from other namespaces.
 
         Parameters
@@ -459,7 +469,8 @@ class FamplexGraph(object):
             raise ValueError('Input ID does not exist in FamPlex.')
         return equiv
 
-    def _rel(self, namespace1, id1, namespace2, id2, relation_types):
+    def _rel(self, namespace1: str, id1: str,
+             namespace2: str, id2: str, relation_types: list) -> bool:
         roots1 = self._root_class_mapping.get((namespace1, id1))
         roots2 = self._root_class_mapping.get((namespace2, id2))
         if roots1 is None or roots2 is None:
