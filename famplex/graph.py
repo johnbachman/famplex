@@ -1,4 +1,4 @@
-from typing import Optional
+from typing import List, Optional
 from collections import defaultdict, deque
 
 from famplex.util import load_equivalences, load_relations
@@ -102,7 +102,7 @@ class FamplexGraph(object):
 
     def parent_terms(self, namespace: str,
                      id_: str,
-                     relation_types: Optional[list]=None) -> list:
+                     relation_types: Optional[List[str]]=None) -> list:
         """Returns terms immediately above a given term in the FamPlex ontology
 
         Parameters
@@ -141,7 +141,7 @@ class FamplexGraph(object):
         return [(ns2, id2) for ns2, id2, rel in edges if rel in relation_types]
 
     def child_terms(self, namespace: str, id_: str,
-                    relation_types: Optional[list]=None) -> list:
+                    relation_types: Optional[List[str]]=None) -> list:
         """Returns terms immediately below a given term in the FamPlex ontology
 
         Parameters
@@ -207,7 +207,7 @@ class FamplexGraph(object):
         return roots
 
     def ancestral_terms(self, namespace: str, id_: str,
-                        relation_types: Optional[list]=None) -> list:
+                        relation_types: Optional[List[str]]=None) -> list:
         """
         Return list of all terms above a given term in the FamPlex Ontology
 
@@ -242,7 +242,7 @@ class FamplexGraph(object):
         return output[1:]
 
     def descendant_terms(self, namespace: str, id_: str,
-                         relation_types: Optional[list]=None) -> list:
+                         relation_types: Optional[List[str]]=None) -> list:
         """
         Return list of all terms below a given term in the FamPlex Ontology
 
@@ -277,7 +277,7 @@ class FamplexGraph(object):
         return output[1:]
 
     def individual_members(self, namespace: str, id_: str,
-                           relation_types: Optional[list]=None) -> list:
+                           relation_types: Optional[List[str]]=None) -> list:
         """Return terms beneath a given term that are not families or complexes
 
         Parameters
