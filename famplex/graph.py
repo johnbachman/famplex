@@ -58,6 +58,8 @@ class FamplexGraph(object):
                 append((namespace1, id1, relation))
             left_set.add((namespace1, id1))
             right_set.add((namespace2, id2))
+        graph = dict(graph)
+        reverse_graph = dict(reverse_graph)
         # Sort edges in adjaceny lists by alphabetical order
         for edges in graph.values():
             edges = sorted(edges, key=lambda x: (x[0], x[1].lower()))
@@ -72,14 +74,16 @@ class FamplexGraph(object):
             for node in self._traverse(reverse_graph, entry,
                                        ['isa', 'partof']):
                 root_class_mapping[node].append(entry)
+        root_class_mapping = dict(root_class_mapping)
         equivalences = defaultdict(list)
         for ns, id_, fplx_id in load_equivalences():
             equivalences[fplx_id].append((ns, id_))
+        equivalences = dict(equivalences)
         self.root_classes = root_classes
-        self._root_class_mapping = dict(root_class_mapping)
-        self._graph = dict(graph)
-        self._reverse_graph = dict(reverse_graph)
-        self._equivalences = dict(equivalences)
+        self._root_class_mapping = root_class_mapping
+        self._graph = graph
+        self._reverse_graph = reverse_graph
+        self._equivalences = equivalences
         self.__error_message = 'Given input is not in the FamPlex ontology.'
 
     def in_famplex(self, namespace: str, id_: str) -> bool:
