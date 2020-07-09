@@ -79,6 +79,7 @@ class FamplexGraph(object):
         self._graph = dict(graph)
         self._reverse_graph = dict(reverse_graph)
         self._equivalences = dict(equivalences)
+        self.__error_message = 'Given input is not in the FamPlex ontology.'
 
     def in_famplex(self, namespace, id_):
         """Returns True if input term is a member of the FamPlex ontology.
@@ -133,8 +134,7 @@ class FamplexGraph(object):
         if edges is None:
             if (namespace, id_) in self.root_classes:
                 return []
-            raise ValueError(f'{namespace}:{id_} is not in the FamPlex'
-                             ' ontology')
+            raise ValueError(self.__error_message)
         return [(ns2, id2) for ns2, id2, rel in edges if rel in relation_types]
 
     def child_terms(self, namespace, id_, relation_types=None):
@@ -171,8 +171,7 @@ class FamplexGraph(object):
         if edges is None:
             if (namespace, id_) in self._graph:
                 return []
-            raise ValueError(f'{namespace}:{id_} is not in the FamPlex'
-                             ' ontology')
+            raise ValueError(self.__error_message)
         return [(ns2, id2) for ns2, id2, rel in edges if rel in relation_types]
 
     def root_terms(self, namespace, id_):
@@ -200,8 +199,7 @@ class FamplexGraph(object):
         """
         roots = self._root_class_mapping.get((namespace, id_))
         if roots is None:
-            raise ValueError(f'{namespace}:{id_} is not in the FamPlex'
-                             ' ontology')
+            raise ValueError(self.__error_message)
         return roots
 
     def ancestral_terms(self, namespace, id_, relation_types=None):
@@ -424,8 +422,7 @@ class FamplexGraph(object):
         out = {(namespace, id_): []}
         edges = self._reverse_graph.get((namespace, id_))
         if edges is None:
-            raise ValueError(f'{namespace}:{id_} is not in the FamPlex'
-                             ' ontology')
+            raise ValueError(self.__error_message)
         if not edges:
             return out
         for namespace2, id2, relation in edges:
