@@ -322,8 +322,6 @@ class FamplexGraph(object):
         for ns2, id2 in self.descendant_terms(namespace, id_,
                                               relation_types):
             if not (ns2, id2) in self._reverse_graph:
-                output.append[(ns2, id2)]
-        return output
 
     def isa(self, namespace1: str, id1: str,
             namespace2: str, id2: str) -> bool:
