@@ -452,11 +452,11 @@ class FamplexGraph(object):
         Raises
         ------
         ValueError
-            If fplx_id is not a valid ID in the FamPlex ontology.
+            If fplx_id an ID in the FamPlex ontology.
         """
         equiv = self._equivalences.get(fplx_id)
         if equiv is None:
-            raise ValueError(f'{fplx_id} is not a valid Famplex ID')
+            raise ValueError('Input ID does not exist in FamPlex.')
         return equiv
 
     def _rel(self, namespace1, id1, namespace2, id2, relation_types):
