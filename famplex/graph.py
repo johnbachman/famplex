@@ -1,4 +1,4 @@
-from typing import Container, Generator, Optional
+from typing import Container, Dict, Generator, List, Optional, Tuple
 from collections import defaultdict, deque
 
 from famplex.util import load_equivalences, load_relations
@@ -102,7 +102,8 @@ class FamplexGraph(object):
 
     def parent_terms(self, namespace: str,
                      id_: str,
-                     relation_types: Optional[Container[str]]=None) -> list:
+                     relation_types:
+                     Optional[Container[str]] = None) -> List[Tuple[str]]:
         """Returns terms immediately above a given term in the FamPlex ontology
 
         Parameters
@@ -141,7 +142,8 @@ class FamplexGraph(object):
         return [(ns2, id2) for ns2, id2, rel in edges if rel in relation_types]
 
     def child_terms(self, namespace: str, id_: str,
-                    relation_types: Optional[Container[str]]=None) -> list:
+                    relation_types:
+                    Optional[Container[str]] = None) -> List[Tuple[str]]:
         """Returns terms immediately below a given term in the FamPlex ontology
 
         Parameters
@@ -178,7 +180,7 @@ class FamplexGraph(object):
             raise ValueError(self.__error_message)
         return [(ns2, id2) for ns2, id2, rel in edges if rel in relation_types]
 
-    def root_terms(self, namespace: str, id_: str) -> list:
+    def root_terms(self, namespace: str, id_: str) -> List[Tuple[str]]:
         """Returns top level terms above the input term
 
         Parameters
@@ -207,7 +209,8 @@ class FamplexGraph(object):
         return roots
 
     def ancestral_terms(self, namespace: str, id_: str,
-                        relation_types: Optional[Container[str]]=None) -> list:
+                        relation_types:
+                        Optional[Container[str]] = None) -> List[Tuple[str]]:
         """
         Return list of all terms above a given term in the FamPlex Ontology
 
@@ -242,7 +245,8 @@ class FamplexGraph(object):
         return output[1:]
 
     def descendant_terms(self, namespace: str, id_: str,
-                         relation_types: Optional[Container[str]]=None) -> list:
+                         relation_types:
+                         Optional[Container[str]] = None) -> List[Tuple[str]]:
         """
         Return list of all terms below a given term in the FamPlex Ontology
 
@@ -278,7 +282,8 @@ class FamplexGraph(object):
 
     def individual_members(self, namespace: str, id_: str,
                            relation_types:
-                           Optional[Container[str]]=None) -> list:
+                           Optional[Container[str]] = None) -> \
+            List[Tuple[str]]:
         """Return terms beneath a given term that are not families or complexes
 
         Parameters
@@ -406,7 +411,8 @@ class FamplexGraph(object):
         """
         return self._rel(namespace, id1, namespace2, id2, ['isa', 'partof'])
 
-    def dict_representation(self, namespace: str, id_: str) -> dict:
+    def dict_representation(self, namespace: str,
+                            id_: str) -> Dict[Tuple[str], List[tuple]]:
         """Return a nested dictionary representation of a FamPlex term
 
         Parameters
@@ -426,7 +432,7 @@ class FamplexGraph(object):
             tuples of nested dictionary representations and relationships,
             as in the example below.
 
-            {('FPLX': 'ESR'): [({('HGNC', 'ESR1'): []}, 'isa'),
+            {('FPLX', 'ESR'): [({('HGNC', 'ESR1'): []}, 'isa'),
                                ({('HGNC', 'ESR2'): []}, 'isa')]}
 
         Raises
@@ -471,7 +477,8 @@ class FamplexGraph(object):
         return equiv
 
     def _rel(self, namespace1: str, id1: str,
-             namespace2: str, id2: str, relation_types: Container[str]) -> bool:
+             namespace2: str, id2: str,
+             relation_types: Container[str]) -> bool:
         roots1 = self._root_class_mapping.get((namespace1, id1))
         roots2 = self._root_class_mapping.get((namespace2, id2))
         if roots1 is None or roots2 is None:
@@ -484,9 +491,10 @@ class FamplexGraph(object):
                     return True
         return False
 
-    def _traverse(self, graph: dict, source: tuple,
+    def _traverse(self, graph: Dict[Tuple[str], List[Tuple[str]]],
+                  source: tuple,
                   relation_types:
-                  Container[str]) -> Generator[tuple, None, None]:
+                  Container[str]) -> Generator[Tuple[str], None, None]:
         visited = {source}
         queue = deque([source])
         while queue:
