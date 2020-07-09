@@ -226,6 +226,8 @@ class FamplexGraph(object):
            List of terms are returned in breadth first order following
            relations upward from bottom to top in the ontology.
         """
+        if not self.in_famplex(namespace, id_):
+            raise ValueError(self.__error_message)
         if relation_types is None:
             relation_types = ['isa', 'partof']
         output = []
@@ -258,6 +260,8 @@ class FamplexGraph(object):
            List of terms are returned in breadth first order following
            relations backwards from top to bottom in the ontology.
         """
+        if not self.in_famplex(namespace, id_):
+            raise ValueError(self.__error_message)
         if relation_types is None:
             relation_types = ['isa', 'partof']
         output = []
