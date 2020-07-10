@@ -149,7 +149,8 @@ class FamplexGraph(object):
         -------
         list
             List of tuples of the form (namespace, id) specifying parent terms
-            of the input term.
+            of the input term. Values are sorted in case insensitive
+            alphabetical order, first by namespace and then by id.
 
         Raises
         ------
@@ -189,7 +190,8 @@ class FamplexGraph(object):
         -------
         list
             List of tuples of the form (namespace, id) specifying child terms
-            of the input term.
+            of the input term. Values are sorted in case insensitive
+            alphabetical order, first by namespace and then by id.
 
         Raises
         ------
@@ -221,7 +223,8 @@ class FamplexGraph(object):
         -------
         list
             List of terms above the input that are top level families and/or
-            complexes within the FamPlex ontology.
+            complexes within the FamPlex ontology. Values are sorted in case
+            insensitive alphabetical order, first by namespace and then by id.
 
         Raises
         ------
@@ -259,6 +262,9 @@ class FamplexGraph(object):
         list
            List of terms are returned in breadth first order following
            relations upward from bottom to top in the ontology.
+           Edges from the same node are traversed in case insensitive
+           alphabetical order, sorted first by namespace and then by id
+           of the target node.
         """
         if not self.in_famplex(namespace, id_):
             raise ValueError(self.__error_message)
@@ -296,6 +302,9 @@ class FamplexGraph(object):
         list
            List of terms are returned in breadth first order following
            relations backwards from top to bottom in the ontology.
+           Edges from the same node are traversed in case insensitive
+           alphabetical order, sorted first by namespace and then by id
+           of the target node.
         """
         if not self.in_famplex(namespace, id_):
             raise ValueError(self.__error_message)
@@ -338,6 +347,8 @@ class FamplexGraph(object):
             complexes. These have both partof and isa relationships. In these
             cases the returned list can contain families or complexes
             if partof or isa relationships are excluded respectively.
+            Values are sorted in case insensitive alphabetical order, first by
+            namespace and then by id.
         """
         if relation_types is None:
             relation_types = ['isa', 'partof']
@@ -458,7 +469,9 @@ class FamplexGraph(object):
             Nested dictionary representing structure of a FamPlex term.
             Keys are tuples with namespace, id pairs. Values are lists of
             tuples of nested dictionary representations and relationships,
-            as in the example below.
+            as in the example below. Edges are sorted in case insensitive
+            alphabetical order, first by namespace and then by id of the
+            target node.
 
             {('FPLX', 'ESR'): [({('HGNC', 'ESR1'): []}, 'isa'),
                                ({('HGNC', 'ESR2'): []}, 'isa')]}
