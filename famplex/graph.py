@@ -65,10 +65,12 @@ class FamplexGraph(object):
         reverse_graph = dict(reverse_graph)
         # Sort edges in adjaceny lists by alphabetical order
         for node, edges in graph.items():
-            graph[node] = sorted(edges, key=lambda x: (x[0], x[1].lower()))
+            graph[node] = sorted(edges, key=lambda x: (x[0].lower(),
+                                                       x[1].lower()))
         for node, edges in reverse_graph.items():
             reverse_graph[node] = sorted(edges,
-                                         key=lambda x: (x[0], x[1].lower()))
+                                         key=lambda x: (x[0].lower(),
+                                                        x[1].lower()))
         root_class_mapping = defaultdict(list)
         root_classes = sorted(right_set - left_set, key=lambda x: x[1].lower())
         # Build up an dictionary mapping terms to the top level families
@@ -81,7 +83,7 @@ class FamplexGraph(object):
         root_class_mapping = dict(root_class_mapping)
         for node, roots in root_class_mapping.items():
             root_class_mapping[node] = sorted(roots,
-                                              key=lambda x: (x[0],
+                                              key=lambda x: (x[0].lower(),
                                                              x[1].lower()))
         equivalences = defaultdict(list)
         for ns, id_, fplx_id in load_equivalences():
@@ -344,7 +346,7 @@ class FamplexGraph(object):
                                               relation_types):
             if not self.child_terms(ns2, id2, relation_types=relation_types):
                 output.append((ns2, id2))
-        return sorted(output)
+        return sorted(output, key=lambda x: (x[0].lower(), x[1].lower()))
 
     def isa(self, namespace1: str, id1: str,
             namespace2: str, id2: str) -> bool:
