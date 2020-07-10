@@ -50,6 +50,11 @@ def test_parent_terms(famplex_graph, test_input, rel_types, expected):
                                       relation_types=rel_types) == expected
 
 
+def test_parent_terms_raises(famplex_graph):
+    with pytest.raises(ValueError):
+        famplex_graph.parent_terms('HGNC', 'GENE')
+
+
 @pytest.mark.parametrize('test_input,rel_types,expected',
                          [(('HGNC', 'TRPA1'), None, []),
                           (('FPLX', 'ESR'), None,
@@ -92,6 +97,10 @@ def test_child_terms(famplex_graph, test_input, rel_types, expected):
                                      relation_types=rel_types) == expected
 
 
+def test_child_terms_raises(famplex_graph):
+    with pytest.raises(ValueError):
+        famplex_graph.child_terms('FPLX', 'Complex')
+
 @pytest.mark.parametrize('test_input,expected',
                          [(('HGNC', 'ESR1'), [('FPLX', 'ESR')]),
                           (('FPLX', 'ESR'), [('FPLX', 'ESR')]),
@@ -100,6 +109,11 @@ def test_child_terms(famplex_graph, test_input, rel_types, expected):
                             ('FPLX', 'Voltage_gated_ion_channels')])])
 def test_root_terms(famplex_graph, test_input, expected):
     assert famplex_graph.root_terms(*test_input) == expected
+
+
+def test_root_terms_raises(famplex_graph):
+    with pytest.raises(ValueError):
+        famplex_graph.root_terms('HGNC', 'Gene')
 
 
 @pytest.mark.parametrize('test_input,rel_types,expected',
@@ -134,6 +148,11 @@ def test_ancestral_terms(famplex_graph, test_input, rel_types, expected):
                                          relation_types=rel_types) == expected
 
 
+def test_ancestral_terms_raises(famplex_graph):
+    with pytest.raises(ValueError):
+        famplex_graph.ancestral_terms('HGNC', 'GENE')
+
+
 @pytest.mark.parametrize('test_input,rel_types,expected',
                          [(('HGNC', 'ESR1'), None, []),
                           (('FPLX', 'AMPK'), None,
@@ -160,18 +179,18 @@ def test_ancestral_terms(famplex_graph, test_input, rel_types, expected):
                             ('HGNC', 'PRKAB2'),
                             ('HGNC', 'PRKAA2')]),
                           (('FPLX', 'AMPK'), ['isa'],
-                            [('FPLX', 'AMPK_A1B1G1'),
-                             ('FPLX', 'AMPK_A1B1G2'),
-                             ('FPLX', 'AMPK_A1B1G3'),
-                             ('FPLX', 'AMPK_A1B2G1'),
-                             ('FPLX', 'AMPK_A1B2G2'),
-                             ('FPLX', 'AMPK_A1B2G3'),
-                             ('FPLX', 'AMPK_A2B1G1'),
-                             ('FPLX', 'AMPK_A2B1G2'),
-                             ('FPLX', 'AMPK_A2B1G3'),
-                             ('FPLX', 'AMPK_A2B2G1'),
-                             ('FPLX', 'AMPK_A2B2G2'),
-                             ('FPLX', 'AMPK_A2B2G3')]),
+                           [('FPLX', 'AMPK_A1B1G1'),
+                            ('FPLX', 'AMPK_A1B1G2'),
+                            ('FPLX', 'AMPK_A1B1G3'),
+                            ('FPLX', 'AMPK_A1B2G1'),
+                            ('FPLX', 'AMPK_A1B2G2'),
+                            ('FPLX', 'AMPK_A1B2G3'),
+                            ('FPLX', 'AMPK_A2B1G1'),
+                            ('FPLX', 'AMPK_A2B1G2'),
+                            ('FPLX', 'AMPK_A2B1G3'),
+                            ('FPLX', 'AMPK_A2B2G1'),
+                            ('FPLX', 'AMPK_A2B2G2'),
+                            ('FPLX', 'AMPK_A2B2G3')]),
                           (('FPLX', 'AMPK'), ['partof'],
                            [('FPLX', 'AMPK_alpha'),
                             ('FPLX', 'AMPK_beta'),
@@ -179,6 +198,11 @@ def test_ancestral_terms(famplex_graph, test_input, rel_types, expected):
 def test_descendant_terms(famplex_graph, test_input, rel_types, expected):
     assert famplex_graph.descendant_terms(*test_input,
                                           relation_types=rel_types) == expected
+
+
+def test_descendant_terms_raises(famplex_graph):
+    with pytest.raises(ValueError):
+        famplex_graph.descendant_terms('FPLX', 'Complex')
 
 
 @pytest.mark.parametrize('test_input,rel_types,expected',
@@ -206,13 +230,18 @@ def test_descendant_terms(famplex_graph, test_input, rel_types, expected):
                             ('FPLX', 'AMPK_A2B2G2'),
                             ('FPLX', 'AMPK_A2B2G3')]),
                           (('FPLX', 'AMPK'), ['partof'],
-                            [('FPLX', 'AMPK_alpha'),
-                             ('FPLX', 'AMPK_beta'),
-                             ('FPLX', 'AMPK_gamma')])])
+                           [('FPLX', 'AMPK_alpha'),
+                            ('FPLX', 'AMPK_beta'),
+                            ('FPLX', 'AMPK_gamma')])])
 def test_individual_members(famplex_graph, test_input, rel_types, expected):
     assert famplex_graph.\
         individual_members(*test_input,
                            relation_types=rel_types) == expected
+
+
+def test_individual_members_raises(famplex_graph):
+    with pytest.raises(ValueError):
+        famplex_graph.individual_members('FPLX', 'Complex')
 
 
 @pytest.mark.parametrize('test_input,expected',
@@ -291,6 +320,16 @@ def test_dict_representation(famplex_graph, test_input, expected):
     assert famplex_graph.dict_representation(*test_input) == expected
 
 
+def test_dict_representation_raises(famplex_graph):
+    with pytest.raises(ValueError):
+        famplex_graph.dict_representation('FPLX', 'Complex')
+
+
 def test_equivalences(famplex_graph):
     assert set([('BEL', 'ESR Family')]) <= \
         set(famplex_graph.equivalences('ESR'))
+
+
+def test_equivalences_raises(famplex_graph):
+    with pytest.raises(ValueError):
+        famplex_graph.equivalences('Complex')
