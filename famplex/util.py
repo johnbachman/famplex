@@ -1,4 +1,5 @@
 import csv
+from typing import Dict, List, Optional, Tuple
 from famplex.locations import ENTITIES_PATH, EQUIVALENCES_PATH, \
     GROUNDING_MAP_PATH, RELATIONS_PATH, GENE_PREFIXES_PATH, DESCRIPTIONS_PATH
 
@@ -50,8 +51,7 @@ def construct_grounding_map(rows):
     return gmap
 
 
-
-def load_grounding_map():
+def load_grounding_map() -> Dict[str, Optional[Dict[str, str]]]:
     """Returns the FamPlex grounding map in dictionary form
 
     Returns
@@ -59,13 +59,13 @@ def load_grounding_map():
     dict
         A dictionary mapping agent texts to INDRA style db_refs dictionaries.
     """
-    rows = load_csv(GROUNDING_MAP_PATH)
-    return construct_grounding_map(rows)
+    rows = _load_csv(GROUNDING_MAP_PATH)
+    return _construct_grounding_map(rows)
 
 
-def load_equivalences():
+def load_equivalences() -> List[Tuple[str, str, str]]:
     """Returns FamPlex equivalences as a list of rows.
-    
+
     Returns
     -------
     list
@@ -73,10 +73,10 @@ def load_equivalences():
         contains three entries. A namespace, an ID, and a FamPlex ID. For
         example ['BEL', 'AMP Activated Protein Kinase Complex', 'AMPK'].
     """
-    return load_csv(EQUIVALENCES_PATH)
+    return _load_csv(EQUIVALENCES_PATH)
 
 
-def load_entitites():
+def load_entitites() -> List[str]:
     """Returns list of FamPlex entities
 
     Returns
@@ -84,10 +84,11 @@ def load_entitites():
     list
         A list of all FamPlex unique IDs sorted in Unix standard sorted order.
     """
-    return load_csv(ENTITIES_PATH)
+    rows = _load_csv(ENTITIES_PATH)
+    return [row[0] for row in rows]
 
 
-def load_relations():
+def load_relations() -> List[Tuple[str, str, str, str, str]]:
     """Returns FamPlex relations as a list of rows
 
     Returns
@@ -97,10 +98,10 @@ def load_relations():
         five columns of the form [namespace1, id1, relation, namespace2, id2].
         For example ['FPLX', 'AMPK_alpha', 'partof', 'FPLX', 'AMPK'].
     """
-    return load_csv(RELATIONS_PATH)
+    return _load_csv(RELATIONS_PATH)
 
 
-def load_gene_prefixes():
+def load_gene_prefixes() -> List[Tuple[str, str, str]]:
     """Returns FamPlex gene prefixes as a list of rows
 
     Returns
@@ -109,9 +110,9 @@ def load_gene_prefixes():
         List of lists corresponding to rows in gene_prefixes.csv. Each row has
         three columns [Pattern, Category, Notes].
     """
-    return load_csv(GENE_PREFIXES_PATH)
+    return _load_csv(GENE_PREFIXES_PATH)
 
 
-def load_descriptions():
+def load_descriptions() -> List[Tuple[str, str, str]]:
     """Returns FamPlex descriptions as a list of rows"""
-    return load_csv(DESCRIPTIONS_PATH)
+    return _load_csv(DESCRIPTIONS_PATH)
