@@ -74,13 +74,19 @@ def update_id_prefixes(filename):
         values = [entry for entry in row[2::2]]
         if 'GO' in keys:
             go_ix = keys.index('GO')
-            values[go_ix] = 'GO:%s' % values[go_ix]
+            id_ = values[go_ix]
+            if not id_.startswith('GO'):
+                values[go_ix] = 'GO:%s' % id_
         if 'CHEBI' in keys:
             chebi_ix = keys.index('CHEBI')
-            values[chebi_ix] = 'CHEBI:%s' % values[chebi_ix]
+            id_ = values[chebi_ix]
+            if not id_.startswith('CHEBI'):
+                values[chebi_ix] = 'CHEBI:%s' % id_
         if 'CHEMBL' in keys:
             chembl_ix = keys.index('CHEMBL')
-            values[chembl_ix] = 'CHEMBL%s' % values[chembl_ix]
+            id_ = values[chembl_ix]
+            if not id_.startswith('CHEMBL'):
+                values[chembl_ix] = 'CHEMBL%s' % id_
         updated_row = [key]
         for pair in zip(keys, values):
             updated_row += pair
