@@ -1,4 +1,4 @@
-"""This module contains paths to famplexes resource and export files"""
+"""This module contains paths to famplexes resource and export files."""
 import os
 
 FPLX_PATH = os.path.dirname(os.path.abspath(__file__))

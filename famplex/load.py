@@ -1,3 +1,4 @@
+"""Implements functions for loading resource files into datastructures."""
 import csv
 from typing import Dict, List, Optional, Tuple
 from famplex.locations import ENTITIES_PATH, EQUIVALENCES_PATH, \

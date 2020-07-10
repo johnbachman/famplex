@@ -1,3 +1,4 @@
+"""Work with the graph of FamPlex entities and relations."""
 from typing import Container, Dict, Generator, List, Optional, Tuple
 
 from collections import defaultdict, deque
