@@ -1,4 +1,5 @@
 from typing import Container, Dict, Generator, List, Optional, Tuple
+
 from collections import defaultdict, deque
 
 from famplex.util import load_equivalences, load_relations
@@ -47,7 +48,8 @@ class FamplexGraph(object):
         # Contains reversed isa and partof relationships
         reverse_graph = defaultdict(list)
         relations = load_relations()
-        left_set, right_set = set(), set()
+        left_set = set()
+        right_set = set()
         # Loop through table populating edges of the above graphs.
         # By looking at the set of all terms that appear on the right in the
         # relations.csv table which do not appear on the left we can identify
@@ -79,11 +81,14 @@ class FamplexGraph(object):
         for ns, id_, fplx_id in load_equivalences():
             equivalences[fplx_id].append((ns, id_))
         equivalences = dict(equivalences)
-        self.root_classes = root_classes
-        self._root_class_mapping = root_class_mapping
-        self._graph = graph
-        self._reverse_graph = reverse_graph
-        self._equivalences = equivalences
+        self.root_classes: List[Tuple[str, str]] = root_classes
+        self._root_class_mapping: Dict[Tuple[str, str],
+                                       List[Tuple[str, str]]] = \
+            root_class_mapping
+        self._graph: Dict[Tuple[str, str], List[Tuple[str, str, str]]] = graph
+        self._reverse_graph: Dict[Tuple[str, str],
+                                  List[Tuple[str, str, str]]] = reverse_graph
+        self._equivalences: Dict[str, List[Tuple[str, str]]] = equivalences
         self.__error_message = 'Given input is not in the FamPlex ontology.'
 
     def in_famplex(self, namespace: str, id_: str) -> bool:
@@ -107,7 +112,8 @@ class FamplexGraph(object):
     def parent_terms(self, namespace: str,
                      id_: str,
                      relation_types:
-                     Optional[Container[str]] = None) -> List[Tuple[str]]:
+                     Optional[Container[str]] = None) -> \
+            List[Tuple[str, str]]:
         """Returns terms immediately above a given term in the FamPlex ontology
 
         Parameters
@@ -147,7 +153,8 @@ class FamplexGraph(object):
 
     def child_terms(self, namespace: str, id_: str,
                     relation_types:
-                    Optional[Container[str]] = None) -> List[Tuple[str]]:
+                    Optional[Container[str]] = None) -> \
+            List[Tuple[str, str]]:
         """Returns terms immediately below a given term in the FamPlex ontology
 
         Parameters
@@ -184,7 +191,7 @@ class FamplexGraph(object):
             raise ValueError(self.__error_message)
         return [(ns2, id2) for ns2, id2, rel in edges if rel in relation_types]
 
-    def root_terms(self, namespace: str, id_: str) -> List[Tuple[str]]:
+    def root_terms(self, namespace: str, id_: str) -> List[Tuple[str, str]]:
         """Returns top level terms above the input term
 
         Parameters
@@ -214,7 +221,8 @@ class FamplexGraph(object):
 
     def ancestral_terms(self, namespace: str, id_: str,
                         relation_types:
-                        Optional[Container[str]] = None) -> List[Tuple[str]]:
+                        Optional[Container[str]] = None) -> \
+            List[Tuple[str, str]]:
         """
         Return list of all terms above a given term in the FamPlex Ontology
 
@@ -250,7 +258,8 @@ class FamplexGraph(object):
 
     def descendant_terms(self, namespace: str, id_: str,
                          relation_types:
-                         Optional[Container[str]] = None) -> List[Tuple[str]]:
+                         Optional[Container[str]] = None) -> \
+            List[Tuple[str, str]]:
         """
         Return list of all terms below a given term in the FamPlex Ontology
 
@@ -287,7 +296,7 @@ class FamplexGraph(object):
     def individual_members(self, namespace: str, id_: str,
                            relation_types:
                            Optional[Container[str]] = None) -> \
-            List[Tuple[str]]:
+            List[Tuple[str, str]]:
         """Return terms beneath a given term that are not families or complexes
 
         Parameters
@@ -416,7 +425,8 @@ class FamplexGraph(object):
         return self._rel(namespace, id1, namespace2, id2, ['isa', 'partof'])
 
     def dict_representation(self, namespace: str,
-                            id_: str) -> Dict[Tuple[str], List[tuple]]:
+                            id_: str) -> Dict[Tuple[str, str],
+                                              List[Tuple[dict, str]]]:
         """Return a nested dictionary representation of a FamPlex term
 
         Parameters
@@ -444,7 +454,8 @@ class FamplexGraph(object):
         ValueError
             If (namespace, id_) does not correspond to a term in FamPlex.
         """
-        out = {(namespace, id_): []}
+        out: Dict[Tuple[str, str], List[Tuple[dict, str]]] = \
+            {(namespace, id_): []}
         edges = self._reverse_graph.get((namespace, id_))
         if not edges:
             if (namespace, id_) in self._graph:
@@ -456,7 +467,7 @@ class FamplexGraph(object):
                         relation))
         return out
 
-    def equivalences(self, fplx_id: str) -> list:
+    def equivalences(self, fplx_id: str) -> List[Tuple[str, str]]:
         """Return list of equivalent terms from other namespaces.
 
         Parameters
@@ -495,10 +506,11 @@ class FamplexGraph(object):
                     return True
         return False
 
-    def _traverse(self, graph: Dict[Tuple[str], List[Tuple[str]]],
-                  source: tuple,
+    def _traverse(self, graph: Dict[Tuple[str, str],
+                                    List[Tuple[str, str, str]]],
+                  source: Tuple[str, str],
                   relation_types:
-                  Container[str]) -> Generator[Tuple[str], None, None]:
+                  Container[str]) -> Generator[Tuple[str, str], None, None]:
         visited = {source}
         queue = deque([source])
         while queue:
