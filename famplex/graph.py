@@ -446,10 +446,10 @@ class FamplexGraph(object):
         """
         out = {(namespace, id_): []}
         edges = self._reverse_graph.get((namespace, id_))
-        if edges is None:
-            raise ValueError(self.__error_message)
         if not edges:
-            return out
+            if (namespace, id_) in self._graph:
+                return out
+            raise ValueError(self.__error_message)
         for namespace2, id2, relation in edges:
             out[(namespace, id_)].\
                 append((self.dict_representation(namespace2, id2),
