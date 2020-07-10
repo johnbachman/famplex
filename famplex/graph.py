@@ -64,10 +64,11 @@ class FamplexGraph(object):
         graph = dict(graph)
         reverse_graph = dict(reverse_graph)
         # Sort edges in adjaceny lists by alphabetical order
-        for edges in graph.values():
-            edges = sorted(edges, key=lambda x: (x[0], x[1].lower()))
-        for edges in reverse_graph.values():
-            edges = sorted(edges, key=lambda x: (x[0], x[1].lower()))
+        for node, edges in graph.items():
+            graph[node] = sorted(edges, key=lambda x: (x[0], x[1].lower()))
+        for node, edges in reverse_graph.items():
+            reverse_graph[node] = sorted(edges,
+                                         key=lambda x: (x[0], x[1].lower()))
         root_class_mapping = defaultdict(list)
         root_classes = sorted(right_set - left_set, key=lambda x: x[1].lower())
         # Build up an dictionary mapping terms to the top level families
@@ -78,6 +79,10 @@ class FamplexGraph(object):
                                        ['isa', 'partof']):
                 root_class_mapping[node].append(entry)
         root_class_mapping = dict(root_class_mapping)
+        for node, roots in root_class_mapping.items():
+            root_class_mapping[node] = sorted(roots,
+                                              key=lambda x: (x[0],
+                                                             x[1].lower()))
         equivalences = defaultdict(list)
         for ns, id_, fplx_id in load_equivalences():
             equivalences[fplx_id].append((ns, id_))
