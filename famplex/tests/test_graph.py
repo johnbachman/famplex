@@ -138,15 +138,20 @@ def test_refinement_of(famplex_graph, test_input, expected):
                           # MAP2K
                           (('FPLX', 'MAP2K'),
                            # expected
-                          {('FPLX', 'MAP2K'):
-                           [({('FPLX', 'MEK'):
-                              [({('HGNC', 'MAP2K1'): []}, 'isa'),
-                               ({('HGNC', 'MAP2K2'): []}, 'isa')]},
-                             'isa'),
-                            ({('HGNC', 'MAP2K3'): []}, 'isa'),
-                            ({('HGNC', 'MAP2K4'): []}, 'isa'),
-                            ({('HGNC', 'MAP2K5'): []}, 'isa'),
-                            ({('HGNC', 'MAP2K6'): []}, 'isa'),
-                            ({('HGNC', 'MAP2K7'): []}, 'isa')]})])
+                           {('FPLX', 'MAP2K'):
+                            [({('FPLX', 'MEK'):
+                               [({('HGNC', 'MAP2K1'): []}, 'isa'),
+                                ({('HGNC', 'MAP2K2'): []}, 'isa')]},
+                              'isa'),
+                             ({('HGNC', 'MAP2K3'): []}, 'isa'),
+                             ({('HGNC', 'MAP2K4'): []}, 'isa'),
+                             ({('HGNC', 'MAP2K5'): []}, 'isa'),
+                             ({('HGNC', 'MAP2K6'): []}, 'isa'),
+                             ({('HGNC', 'MAP2K7'): []}, 'isa')]})])
 def test_dict_representation(famplex_graph, test_input, expected):
     assert famplex_graph.dict_representation(*test_input) == expected
+
+
+def test_equivalences(famplex_graph):
+    assert set([('BEL', 'ESR Family')]) <= \
+        set(famplex_graph.equivalences('ESR'))
