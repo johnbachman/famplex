@@ -20,24 +20,76 @@ def test_in_famplex(famplex_graph, test_input, expected):
     assert famplex_graph.in_famplex(*test_input) == expected
 
 
-@pytest.mark.parametrize('test_input,expected',
-                         [(('FPLX', 'Voltage_gated_ion_channels'), []),
-                          (('FPLX', 'SCN'),
+@pytest.mark.parametrize('test_input,rel_types,expected',
+                         [(('FPLX', 'Voltage_gated_ion_channels'), None, []),
+                          (('FPLX', 'SCN'), None,
                            [('FPLX', 'Sodium_channels'),
                             ('FPLX', 'Voltage_gated_ion_channels')]),
-                          (('FPLX', 'TRP'),
+                          (('FPLX', 'TRP'), None,
                            [('FPLX', 'Voltage_gated_ion_channels')]),
-                          (('HGNC', 'TRPA1'), [('FPLX', 'TRP')])])
-def test_parent_terms(famplex_graph, test_input, expected):
-    assert famplex_graph.parent_terms(*test_input) == expected
+                          (('HGNC', 'TRPA1'), None, [('FPLX', 'TRP')]),
+                          (('HGNC', 'PRKAA1'), None,
+                           [('FPLX', 'AMPK_A1B1G1'),
+                            ('FPLX', 'AMPK_A1B1G2'),
+                            ('FPLX', 'AMPK_A1B1G3'),
+                            ('FPLX', 'AMPK_A1B2G1'),
+                            ('FPLX', 'AMPK_A1B2G2'),
+                            ('FPLX', 'AMPK_A1B2G3'),
+                            ('FPLX', 'AMPK_alpha')]),
+                          (('HGNC', 'PRKAA1'), ['isa'],
+                           [('FPLX', 'AMPK_alpha')]),
+                          (('HGNC', 'PRKAA1'), ['partof'],
+                           [('FPLX', 'AMPK_A1B1G1'),
+                            ('FPLX', 'AMPK_A1B1G2'),
+                            ('FPLX', 'AMPK_A1B1G3'),
+                            ('FPLX', 'AMPK_A1B2G1'),
+                            ('FPLX', 'AMPK_A1B2G2'),
+                            ('FPLX', 'AMPK_A1B2G3')])])
+def test_parent_terms(famplex_graph, test_input, rel_types, expected):
+    assert famplex_graph.parent_terms(*test_input,
+                                      relation_types=rel_types) == expected
 
 
-@pytest.mark.parametrize('test_input,expected',
-                         [(('HGNC', 'TRPA1'), []),
-                          (('FPLX', 'ESR'),
-                           [('HGNC', 'ESR1'), ('HGNC', 'ESR2')])])
-def test_child_terms(famplex_graph, test_input, expected):
-    assert famplex_graph.child_terms(*test_input) == expected
+@pytest.mark.parametrize('test_input,rel_types,expected',
+                         [(('HGNC', 'TRPA1'), None, []),
+                          (('FPLX', 'ESR'), None,
+                           [('HGNC', 'ESR1'), ('HGNC', 'ESR2')]),
+                          (('FPLX', 'AMPK'), None,
+                           [('FPLX', 'AMPK_A1B1G1'),
+                            ('FPLX', 'AMPK_A1B1G2'),
+                            ('FPLX', 'AMPK_A1B1G3'),
+                            ('FPLX', 'AMPK_A1B2G1'),
+                            ('FPLX', 'AMPK_A1B2G2'),
+                            ('FPLX', 'AMPK_A1B2G3'),
+                            ('FPLX', 'AMPK_A2B1G1'),
+                            ('FPLX', 'AMPK_A2B1G2'),
+                            ('FPLX', 'AMPK_A2B1G3'),
+                            ('FPLX', 'AMPK_A2B2G1'),
+                            ('FPLX', 'AMPK_A2B2G2'),
+                            ('FPLX', 'AMPK_A2B2G3'),
+                            ('FPLX', 'AMPK_alpha'),
+                            ('FPLX', 'AMPK_beta'),
+                            ('FPLX', 'AMPK_gamma')]),
+                          (('FPLX', 'AMPK'), ['isa'],
+                          [('FPLX', 'AMPK_A1B1G1'),
+                           ('FPLX', 'AMPK_A1B1G2'),
+                           ('FPLX', 'AMPK_A1B1G3'),
+                           ('FPLX', 'AMPK_A1B2G1'),
+                           ('FPLX', 'AMPK_A1B2G2'),
+                           ('FPLX', 'AMPK_A1B2G3'),
+                           ('FPLX', 'AMPK_A2B1G1'),
+                           ('FPLX', 'AMPK_A2B1G2'),
+                           ('FPLX', 'AMPK_A2B1G3'),
+                           ('FPLX', 'AMPK_A2B2G1'),
+                           ('FPLX', 'AMPK_A2B2G2'),
+                           ('FPLX', 'AMPK_A2B2G3')]),
+                          (('FPLX', 'AMPK'), ['partof'],
+                          [('FPLX', 'AMPK_alpha'),
+                           ('FPLX', 'AMPK_beta'),
+                           ('FPLX', 'AMPK_gamma')])])
+def test_child_terms(famplex_graph, test_input, rel_types, expected):
+    assert famplex_graph.child_terms(*test_input,
+                                     relation_types=rel_types) == expected
 
 
 @pytest.mark.parametrize('test_input,expected',
@@ -50,30 +102,34 @@ def test_root_terms(famplex_graph, test_input, expected):
     assert famplex_graph.root_terms(*test_input) == expected
 
 
-@pytest.mark.parametrize('test_input,expected',
-                         [(('FPLX', 'ESR'), []),
-                          (('HGNC', 'ESR1'), [('FPLX', 'ESR')]),
-                          (('HGNC', 'SCN8A'),
+@pytest.mark.parametrize('test_input,rel_types,expected',
+                         [(('FPLX', 'ESR'), None, []),
+                          (('HGNC', 'ESR1'), None, [('FPLX', 'ESR')]),
+                          (('HGNC', 'SCN8A'), None,
                           [('FPLX',
                             'Sodium_voltage_gated_channel_alpha_subunits'),
                            ('FPLX', 'SCN'), ('FPLX', 'Sodium_channels'),
                            ('FPLX', 'Voltage_gated_ion_channels'),
                            ('FPLX', 'Cation_channels')])])
-def test_ancestral_terms(famplex_graph, test_input, expected):
-    assert famplex_graph.ancestral_terms(*test_input) == expected
+def test_ancestral_terms(famplex_graph, test_input, rel_types, expected):
+    assert famplex_graph.ancestral_terms(*test_input,
+                                         relation_types=rel_types) == expected
 
 
-@pytest.mark.parametrize('test_input,expected',
-                         [(('HGNC', 'ESR1'), [])])
-def test_descendant_terms(famplex_graph, test_input, expected):
-    assert famplex_graph.descendant_terms(*test_input) == expected
+@pytest.mark.parametrize('test_input,rel_types,expected',
+                         [(('HGNC', 'ESR1'), None, [])])
+def test_descendant_terms(famplex_graph, test_input, rel_types, expected):
+    assert famplex_graph.descendant_terms(*test_input,
+                                          relation_types=rel_types) == expected
 
 
-@pytest.mark.parametrize('test_input,expected',
-                         [(('FPLX', 'ESR'),
+@pytest.mark.parametrize('test_input,rel_types,expected',
+                         [(('FPLX', 'ESR'), None,
                            [('HGNC', 'ESR1'), ('HGNC', 'ESR2')])])
-def test_individual_members(famplex_graph, test_input, expected):
-    assert famplex_graph.individual_members(*test_input) == expected
+def test_individual_members(famplex_graph, test_input, rel_types, expected):
+    assert famplex_graph.\
+        individual_members(*test_input,
+                           relation_types=rel_types) == expected
 
 
 @pytest.mark.parametrize('test_input,expected',
