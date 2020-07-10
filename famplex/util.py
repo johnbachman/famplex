@@ -50,48 +50,6 @@ def construct_grounding_map(rows):
     return gmap
 
 
-def update_id_prefixes(filename):
-    """Return list of rows in grounding map with IDs corrected
-
-    Parameters
-    ----------
-    filename : str
-        Location of a grounding map csv file
-
-    Returns
-    -------
-    list
-        List of rows from grounding_map with GO, CHEBI, and CHEMBL IDs
-        correctly prefixed with these respective namespaces. Leaves already
-        correct IDs unchanged.
-    """
-    gm_rows = load_csv(filename)
-    updated_rows = []
-    for row in gm_rows:
-        key = row[0]
-        keys = [entry for entry in row[1::2]]
-        values = [entry for entry in row[2::2]]
-        if 'GO' in keys:
-            go_ix = keys.index('GO')
-            id_ = values[go_ix]
-            if not id_.startswith('GO:'):
-                values[go_ix] = 'GO:%s' % id_
-        if 'CHEBI' in keys:
-            chebi_ix = keys.index('CHEBI')
-            id_ = values[chebi_ix]
-            if not id_.startswith('CHEBI:'):
-                values[chebi_ix] = 'CHEBI:%s' % id_
-        if 'CHEMBL' in keys:
-            chembl_ix = keys.index('CHEMBL')
-            id_ = values[chembl_ix]
-            if not id_.startswith('CHEMBL'):
-                values[chembl_ix] = 'CHEMBL%s' % id_
-        updated_row = [key]
-        for pair in zip(keys, values):
-            updated_row += pair
-        updated_rows.append(updated_row)
-    return updated_rows
-
 
 def load_grounding_map():
     """Returns the FamPlex grounding map in dictionary form
