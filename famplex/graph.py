@@ -81,14 +81,20 @@ class FamplexGraph(object):
         for ns, id_, fplx_id in load_equivalences():
             equivalences[fplx_id].append((ns, id_))
         equivalences = dict(equivalences)
+        # Blank lines are to aid in reading of type hints
         self.root_classes: List[Tuple[str, str]] = root_classes
+
         self._root_class_mapping: Dict[Tuple[str, str],
                                        List[Tuple[str, str]]] = \
             root_class_mapping
+
         self._graph: Dict[Tuple[str, str], List[Tuple[str, str, str]]] = graph
+
         self._reverse_graph: Dict[Tuple[str, str],
                                   List[Tuple[str, str, str]]] = reverse_graph
+
         self._equivalences: Dict[str, List[Tuple[str, str]]] = equivalences
+
         self.__error_message = 'Given input is not in the FamPlex ontology.'
 
     def in_famplex(self, namespace: str, id_: str) -> bool:
