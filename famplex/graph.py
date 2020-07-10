@@ -342,7 +342,7 @@ class FamplexGraph(object):
         output = []
         for ns2, id2 in self.descendant_terms(namespace, id_,
                                               relation_types):
-            if not (ns2, id2) in self._reverse_graph:
+            if not self.child_terms(ns2, id2, relation_types=relation_types):
                 output.append((ns2, id2))
         return sorted(output)
 
