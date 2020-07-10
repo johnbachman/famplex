@@ -2,11 +2,11 @@ from __future__ import print_function, unicode_literals
 import sys
 from collections import Counter
 
-from famplex.util import load_csv
+from famplex.load import _load_csv
 
 
 def load_grounding_map(filename):
-    gm_rows = load_csv(filename)
+    gm_rows = _load_csv(filename)
     gm_tuples = []
     check_rows(gm_rows, 7, filename)
     g_map = {}
@@ -29,7 +29,7 @@ def load_grounding_map(filename):
 
 
 def check_file_rows(filename, row_length):
-    rows = load_csv(filename)
+    rows = _load_csv(filename)
     check_rows(rows, row_length, filename)
 
 
@@ -41,7 +41,7 @@ def check_rows(rows, row_length, filename):
 
 
 def load_entity_list(filename):
-    rows = load_csv(filename)
+    rows = _load_csv(filename)
     check_rows(rows, 1, filename)
     entities = [row[0] for row in rows]
     return entities
@@ -49,7 +49,7 @@ def load_entity_list(filename):
 
 def load_relationships(filename):
     relationships = []
-    rows = load_csv(filename)
+    rows = _load_csv(filename)
     check_rows(rows, 5, filename)
     for row in rows:
         relationships.append(((row[0], row[1]), row[2], (row[3], row[4])))
@@ -58,7 +58,7 @@ def load_relationships(filename):
 
 def load_equivalences(filename):
     equivalences = []
-    rows = load_csv(filename)
+    rows = _load_csv(filename)
     check_rows(rows, 3, filename)
     for row in rows:
         equivalences.append((row[0], row[1], row[2]))
@@ -66,7 +66,7 @@ def load_equivalences(filename):
 
 
 def update_id_prefixes(filename):
-    gm_rows = load_csv(filename)
+    gm_rows = _load_csv(filename)
     updated_rows = []
     for row in gm_rows:
         key = row[0]

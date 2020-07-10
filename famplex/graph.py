@@ -2,7 +2,7 @@ from typing import Container, Dict, Generator, List, Optional, Tuple
 
 from collections import defaultdict, deque
 
-from famplex.util import load_equivalences, load_relations
+from famplex.load import load_equivalences, load_relations
 
 
 class FamplexGraph(object):

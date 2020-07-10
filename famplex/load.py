@@ -4,7 +4,7 @@ from famplex.locations import ENTITIES_PATH, EQUIVALENCES_PATH, \
     GROUNDING_MAP_PATH, RELATIONS_PATH, GENE_PREFIXES_PATH, DESCRIPTIONS_PATH
 
 
-def load_csv(filename):
+def _load_csv(filename):
     """Load famplex csv file as list of rows
 
     Parameters
@@ -24,7 +24,7 @@ def load_csv(filename):
     return rows
 
 
-def construct_grounding_map(rows):
+def _construct_grounding_map(rows):
     """Construct grounding map from rows in a grounding_map csv file
 
     Parameters
