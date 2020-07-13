@@ -21,9 +21,11 @@ setup(name='famplex',
       classifiers=[
           'Development Status :: 4 - Beta',
           'Programming Language :: Python :: 3.5',
-          'Programming Language :: Python :: 3.6'
-          'Programming Language :: Python :: 3.7'],
+          'Programming Language :: Python :: 3.6',
+          'Programming Language :: Python :: 3.7'
+          'Programming Language :: Python :: 3.8'],
       packages=find_packages(),
+      extras_require={'test': ['pytest']},
       package_data={'': ['entities.csv', 'equivalences.csv',
                          'grounding_map.csv', 'relations.csv',
                          'gene_prefixes.csv', 'descriptions.csv',

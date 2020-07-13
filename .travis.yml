@@ -8,13 +8,18 @@ before_install:
   - if [[ "$TRAVIS_PYTHON_VERSION" == "2.7" ]]; then
       pip install functools32;
     fi
-  - git clone https://github.com/sorgerlab/indra.git
+  - git clone https://github.com/sorgerlab/indra.git $HOME/indra
+install:
+  # Install test/Travis-specific dependencies not covered elsewhere
+  - pip install mypy pytest-cov
+  - pip install .[all]
 script:
   - pwd
   - echo $TRAVIS_BUILD_DIR
-  - export PYTHONPATH=$PYTHONPATH:$TRAVIS_BUILD_DIR/indra
+  - export PYTHONPATH=$PYTHONPATH:$HOME/indra
   - python check_references.py
   - python export/relations_graph.py
+  - echo $PYTHONPATH
   # test if exports have been updated
   # bel_resources must be installed to generate belns exports
   # generate exports then take git diff and look only at lines that changed
@@ -38,3 +43,6 @@ script:
       echo $reach
       exit 1;
     fi
+  - mypy famplex/graph.py famplex/load.py
+  - cd $HOME
+  - pytest --cov=famplex --pyargs famplex.tests
