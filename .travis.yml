@@ -43,6 +43,6 @@ script:
       echo $reach
       exit 1;
     fi
-  - mypy famplex/graph.py famplex/load.py
+  - mypy famplex/api.py famplex/graph.py famplex/load.py
   - cd $HOME
   - pytest --cov=famplex --pyargs famplex.tests

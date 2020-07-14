@@ -71,14 +71,18 @@ class FamplexGraph(object):
             reverse_graph[node] = sorted(edges,
                                          key=lambda x: (x[0].lower(),
                                                         x[1].lower()))
+        self._graph: Dict[Tuple[str, str], List[Tuple[str, str, str]]] = graph
+
+        self._reverse_graph: Dict[Tuple[str, str],
+                                  List[Tuple[str, str, str]]] = reverse_graph
         root_class_mapping = defaultdict(list)
         root_classes = sorted(right_set - left_set, key=lambda x: x[1].lower())
         # Build up an dictionary mapping terms to the top level families
         # or complexes to which they belong. Families and complexes can overlap
         # so there can be multiple top level terms above a given term.
         for entry in root_classes:
-            for node in self._traverse(reverse_graph, entry,
-                                       ['isa', 'partof']):
+            for node in self.traverse(entry, ['isa', 'partof'],
+                                      direction='down'):
                 root_class_mapping[node].append(entry)
         root_class_mapping = dict(root_class_mapping)
         for node, roots in root_class_mapping.items():
@@ -95,11 +99,6 @@ class FamplexGraph(object):
         self._root_class_mapping: Dict[Tuple[str, str],
                                        List[Tuple[str, str]]] = \
             root_class_mapping
-
-        self._graph: Dict[Tuple[str, str], List[Tuple[str, str, str]]] = graph
-
-        self._reverse_graph: Dict[Tuple[str, str],
-                                  List[Tuple[str, str, str]]] = reverse_graph
 
         self._equivalences: Dict[str, List[Tuple[str, str]]] = equivalences
 
@@ -123,89 +122,26 @@ class FamplexGraph(object):
         """
         return (namespace, id_) in self._root_class_mapping
 
-    def parent_terms(self, namespace: str,
-                     id_: str,
-                     relation_types:
-                     Optional[Container[str]] = None) -> \
-            List[Tuple[str, str]]:
-        """Returns terms immediately above a given term in the FamPlex ontology
+    def raise_value_error_if_not_in_famplex(self, namespace: str,
+                                            id_: str) -> None:
+        if not self.in_famplex(namespace, id_):
+            raise ValueError(self.__error_message)
 
-        Parameters
-        ----------
-        namespace : str
-            Namespace for a term. This should be one of 'HGNC', 'FPLX' for
-            FamPlex, or 'UP' for Uniprot.
-        id_ : str
-            Identifier for a term within namespace. See the FamplexGraph
-            class Docstring for more info.
-        relation_types : Optional[list]
-            Set of relation types that input term can have with returned
-            parent terms. The valid relation types are 'isa' and 'partof'.
-            If argument is None then there are no restrictions on relation
-            type.
-            Default: None
-
-        Returns
-        -------
-        list
-            List of tuples of the form (namespace, id) specifying parent terms
-            of the input term. Values are sorted in case insensitive
-            alphabetical order, first by namespace and then by id.
-
-        Raises
-        ------
-        ValueError
-            If (namespace, id_) does not correspond to a term in FamPlex.
-        """
-        if relation_types is None:
-            relation_types = ['isa', 'partof']
+    def parent_edges(self, namespace: str,
+                     id_: str) -> List[Tuple[str, str, str]]:
         edges = self._graph.get((namespace, id_))
         if edges is None:
-            if (namespace, id_) in self.root_classes:
-                return []
-            raise ValueError(self.__error_message)
-        return [(ns2, id2) for ns2, id2, rel in edges if rel in relation_types]
+            self.raise_value_error_if_not_in_famplex(namespace, id_)
+            return []
+        return edges
 
-    def child_terms(self, namespace: str, id_: str,
-                    relation_types:
-                    Optional[Container[str]] = None) -> \
-            List[Tuple[str, str]]:
-        """Returns terms immediately below a given term in the FamPlex ontology
-
-        Parameters
-        ----------
-        namespace : str
-            Namespace for a term. This should be one of 'HGNC', 'FPLX' for
-            FamPlex, or 'UP' for Uniprot.
-        id_ : str
-            Identifier for a term within namespace. See the FamplexGraph
-            class Docstring for more info.
-        relation_types : Optional[list]
-            Restrict edges to relation types in this list. The valid relation
-            types are the strings 'isa' and 'partof'.
-            If argument is None then both isa and partof relations are
-            included. Default: None
-
-        Returns
-        -------
-        list
-            List of tuples of the form (namespace, id) specifying child terms
-            of the input term. Values are sorted in case insensitive
-            alphabetical order, first by namespace and then by id.
-
-        Raises
-        ------
-        ValueError
-            If (namespace, id_) does not correspond to a term in FamPlex.
-        """
-        if relation_types is None:
-            relation_types = ['isa', 'partof']
+    def child_edges(self, namespace: str,
+                    id_: str) -> List[Tuple[str, str, str]]:
         edges = self._reverse_graph.get((namespace, id_))
         if edges is None:
-            if (namespace, id_) in self._graph:
-                return []
-            raise ValueError(self.__error_message)
-        return [(ns2, id2) for ns2, id2, rel in edges if rel in relation_types]
+            self.raise_value_error_if_not_in_famplex(namespace, id_)
+            return []
+        return edges
 
     def root_terms(self, namespace: str, id_: str) -> List[Tuple[str, str]]:
         """Returns top level terms above the input term
@@ -236,264 +172,6 @@ class FamplexGraph(object):
             raise ValueError(self.__error_message)
         return roots
 
-    def ancestral_terms(self, namespace: str, id_: str,
-                        relation_types:
-                        Optional[Container[str]] = None) -> \
-            List[Tuple[str, str]]:
-        """
-        Return list of all terms above a given term in the FamPlex Ontology
-
-        Parameters
-        ----------
-        namespace : str
-            Namespace for a term. This should be one of 'HGNC', 'FPLX' for
-            FamPlex, or 'UP' for Uniprot.
-        id_ : str
-            Identifier for a term within namespace. See the FamplexGraph
-            class Docstring for more info.
-        relation_types : Optional[list]
-            Restrict edges to relation types in this list. The valid relation
-            types are the strings 'isa' and 'partof'.
-            If argument is None then both isa and partof relations are
-            included. Default: None
-
-        Returns
-        -------
-        list
-           List of terms are returned in breadth first order following
-           relations upward from bottom to top in the ontology.
-           Edges from the same node are traversed in case insensitive
-           alphabetical order, sorted first by namespace and then by id
-           of the target node.
-        """
-        if not self.in_famplex(namespace, id_):
-            raise ValueError(self.__error_message)
-        if relation_types is None:
-            relation_types = ['isa', 'partof']
-        output = []
-        for ns2, id2 in self._traverse(self._graph, (namespace, id_),
-                                       relation_types):
-            output.append((ns2, id2))
-        return output[1:]
-
-    def descendant_terms(self, namespace: str, id_: str,
-                         relation_types:
-                         Optional[Container[str]] = None) -> \
-            List[Tuple[str, str]]:
-        """
-        Return list of all terms below a given term in the FamPlex Ontology
-
-        Parameters
-        ----------
-        namespace : str
-            Namespace for a term. This should be one of 'HGNC', 'FPLX' for
-            FamPlex, or 'UP' for Uniprot.
-        id_ : str
-            Identifier for a term within namespace. See the FamplexGraph class
-            Docstring for more info.
-        relation_types : Optional[list]
-            Restrict edges to relation types in this list. The valid relation
-            types are the strings 'isa' and 'partof'.
-            If argument is None then both isa and partof relations are
-            included. Default: None
-
-        Returns
-        -------
-        list
-           List of terms are returned in breadth first order following
-           relations backwards from top to bottom in the ontology.
-           Edges from the same node are traversed in case insensitive
-           alphabetical order, sorted first by namespace and then by id
-           of the target node.
-        """
-        if not self.in_famplex(namespace, id_):
-            raise ValueError(self.__error_message)
-        if relation_types is None:
-            relation_types = ['isa', 'partof']
-        output = []
-        for ns2, id2 in self._traverse(self._reverse_graph, (namespace, id_),
-                                       relation_types):
-            output.append((ns2, id2))
-        return output[1:]
-
-    def individual_members(self, namespace: str, id_: str,
-                           relation_types:
-                           Optional[Container[str]] = None) -> \
-            List[Tuple[str, str]]:
-        """Return terms beneath a given term that are not families or complexes
-
-        Parameters
-        ----------
-        namespace : str
-            Namespace for a term. This should be one of 'HGNC', 'FPLX' for
-            FamPlex, or 'UP' for Uniprot.
-        id_ : str
-            Identifier for a term within namespace. See the Famplexgraph class
-            Docstring for more info.
-        relation_types : list
-            Restrict edges to relation types in this list. The valid relation
-            types are the strings 'isa' and 'partof'.
-            If argument is None then both isa and partof relations are
-            included. Default: None
-
-        Returns
-        -------
-        list
-            List of terms beneath the input term that have no children
-            themselves. If relation_types includes only 'isa', then these will
-            be the individual genes within a family. If only 'partof' relations
-            are included then these will be the individual members of a
-            complex.  There are some terms that are families of
-            complexes. These have both partof and isa relationships. In these
-            cases the returned list can contain families or complexes
-            if partof or isa relationships are excluded respectively.
-            Values are sorted in case insensitive alphabetical order, first by
-            namespace and then by id.
-        """
-        if relation_types is None:
-            relation_types = ['isa', 'partof']
-        output = []
-        for ns2, id2 in self.descendant_terms(namespace, id_,
-                                              relation_types):
-            if not self.child_terms(ns2, id2, relation_types=relation_types):
-                output.append((ns2, id2))
-        return sorted(output, key=lambda x: (x[0].lower(), x[1].lower()))
-
-    def isa(self, namespace1: str, id1: str,
-            namespace2: str, id2: str) -> bool:
-        """Return true if one term has an isa relationship with another
-
-        See the FamplexGraph class Docstring for more info on namespaces and
-        IDs.
-
-        Parameters
-        ----------
-        namespace1 : str
-            Namespace of first term. This should be one of 'HGNC', 'FPLX' for
-            FamPlex, or 'UP' for Uniprot.
-        id1 : str
-            Identifier of first term.
-        namespace2 : str
-            Namespace of second term. This should be one of 'HGNC', 'FPLX' for
-            FamPlex, or 'UP' for Uniprot.
-        id2 : str
-            Identifier of second term.
-
-        Returns
-        -------
-        bool
-            True if the term given by (namespace1, id1) has an isa relationship
-            with the term given by (namespace2, id2). Will return False if
-            either of (namespace1, id1) or (namespace2, id2) is not in the
-            FamPlex ontology.
-        """
-        return self._rel(namespace1, id1, namespace2, id2, ['isa'])
-
-    def partof(self, namespace1: str, id1: str,
-               namespace2: str, id2: str) -> bool:
-        """Return true if one term has a partof relationship with another
-
-        See the FamplexGraph class Docstring for more info on namespaces and
-        IDs.
-
-        Parameters
-        ----------
-        namespace1 : str
-            Namespace of first term. This should be one of 'HGNC', 'FPLX' for
-            FamPlex, or 'UP' for Uniprot.
-        id1 : str
-            Identifier of first term.
-        namespace2 : str
-            Namespace of second term. This should be one of 'HGNC', 'FPLX' for
-            FamPlex, or 'UP' for Uniprot.
-        id2 : str
-            Identifier of second term.
-
-        Returns
-        -------
-        bool
-            True if the term given by (namespace1, id1) has a partof
-            relationship with the term given by (namespace2, id2). Will return
-            False if either of (namespace1, id1) or (namespace2, id2) is not in
-            the FamPlex ontology.
-        """
-        return self._rel(namespace1, id1, namespace2, id2, ['partof'])
-
-    def refinement_of(self, namespace: str, id1: str,
-                      namespace2: str, id2: str) -> bool:
-        """Return true if one term either isa or partof holds
-
-        See the FamplexGraph class Docstring for more info on namepaces and
-        IDs.
-
-        Parameters
-        ----------
-        namespace1 : str
-            Namespace of first term. This should be one of 'HGNC', 'FPLX' for
-            FamPlex, or 'UP' for Uniprot.
-        id1 : str
-            Identifier of first term.
-        namespace2 : str
-            Namespace of second term. This should be one of 'HGNC', 'FPLX' for
-            FamPlex, or 'UP' for Uniprot.
-        id2 : str
-            Identifier of second term.
-
-        Returns
-        -------
-        bool
-            True if the term given by (namespace1, id1) has either an isa or
-            partof relationship with the term given by (namespace2, id2). Will
-            return False if either of (namespace1, id1) or (namespace2, id2) is
-            not in the FamPlex ontology.
-        """
-        return self._rel(namespace, id1, namespace2, id2, ['isa', 'partof'])
-
-    def dict_representation(self, namespace: str,
-                            id_: str) -> Dict[Tuple[str, str],
-                                              List[Tuple[dict, str]]]:
-        """Return a nested dictionary representation of a FamPlex term
-
-        Parameters
-        ----------
-        namespace : str
-            Namespace for a term. This should be one of 'HGNC', 'FPLX' for
-            FamPlex, or 'UP' for Uniprot.
-        id_ : str
-            Identifier for a term within namespace. See the Famplexgraph class
-            Docstring for more info.
-
-        Returns
-        -------
-        dict
-            Nested dictionary representing structure of a FamPlex term.
-            Keys are tuples with namespace, id pairs. Values are lists of
-            tuples of nested dictionary representations and relationships,
-            as in the example below. Edges are sorted in case insensitive
-            alphabetical order, first by namespace and then by id of the
-            target node.
-
-            {('FPLX', 'ESR'): [({('HGNC', 'ESR1'): []}, 'isa'),
-                               ({('HGNC', 'ESR2'): []}, 'isa')]}
-
-        Raises
-        ------
-        ValueError
-            If (namespace, id_) does not correspond to a term in FamPlex.
-        """
-        out: Dict[Tuple[str, str], List[Tuple[dict, str]]] = \
-            {(namespace, id_): []}
-        edges = self._reverse_graph.get((namespace, id_))
-        if not edges:
-            if (namespace, id_) in self._graph:
-                return out
-            raise ValueError(self.__error_message)
-        for namespace2, id2, relation in edges:
-            out[(namespace, id_)].\
-                append((self.dict_representation(namespace2, id2),
-                        relation))
-        return out
-
     def equivalences(self, fplx_id: str) -> List[Tuple[str, str]]:
         """Return list of equivalent terms from other namespaces.
 
@@ -518,26 +196,30 @@ class FamplexGraph(object):
             raise ValueError('Input ID does not exist in FamPlex.')
         return equiv
 
-    def _rel(self, namespace1: str, id1: str,
-             namespace2: str, id2: str,
-             relation_types: Container[str]) -> bool:
+    def relation(self, namespace1: str, id1: str,
+                 namespace2: str, id2: str,
+                 relation_types: Container[str]) -> bool:
         roots1 = self._root_class_mapping.get((namespace1, id1))
         roots2 = self._root_class_mapping.get((namespace2, id2))
         if roots1 is None or roots2 is None:
             return False
         if set(roots1) & set(roots2):
             node1, node2 = (namespace1, id1), (namespace2, id2)
-            for node in self._traverse(self._graph, node1,
-                                       relation_types):
+            for node in self.traverse(node1, relation_types,
+                                      direction='up'):
                 if node2 == node:
                     return True
         return False
 
-    def _traverse(self, graph: Dict[Tuple[str, str],
-                                    List[Tuple[str, str, str]]],
-                  source: Tuple[str, str],
-                  relation_types:
-                  Container[str]) -> Generator[Tuple[str, str], None, None]:
+    def traverse(self, source: Tuple[str, str],
+                 relation_types: Container[str],
+                 direction: str) -> Generator[Tuple[str, str], None, None]:
+        if direction == 'down':
+            graph = self._reverse_graph
+        elif direction == 'up':
+            graph = self._graph
+        else:
+            raise ValueError
         visited = {source}
         queue = deque([source])
         while queue:
