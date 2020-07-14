@@ -1,8 +1,27 @@
 from __future__ import print_function, unicode_literals
+import csv
 import sys
 from collections import Counter
 
-from famplex.load import _load_csv
+
+def _load_csv(filename):
+    """Load famplex csv file as list of rows
+
+    Parameters
+    ----------
+    filename : str
+
+    Returns
+    -------
+    rows : list
+    """
+    with open(filename) as f:
+        csvreader = csv.reader(f, delimiter=str(u','),
+                               lineterminator='\r\n',
+                               quoting=csv.QUOTE_MINIMAL,
+                               quotechar=str(u'"'))
+        rows = [row for row in csvreader]
+    return rows
 
 
 def load_grounding_map(filename):
