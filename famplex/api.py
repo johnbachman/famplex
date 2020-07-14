@@ -1,7 +1,31 @@
-from collections import defaultdict
+"""Provides utilities for working with FampPlex entities and relations
+
+FamPlex is an ontology of protein families and complexes. Individual terms
+are genes/proteins. There are  higher level terms for families and
+complexes. Terms can be connected by isa or partof relationships.
+X isa Y expressing that X is a member of the Y family; Z partof W
+expressing that Z is a constituent of the W complex.
+
+Each term in the FamPlex ontology exists within a namespace and has an
+identifier which is unique within that namespace. Individual genes and
+proteins have either HGNC or Uniprot as a namespace. FamPlex has its own
+namespace for families and complexes and the unique identifiers are
+designed to be human readable. Identifiers for Uniprot are simply Uniprot
+IDs. For HGNC the HGNC Symbol is used instead of the HGNC unique ID.
+
+If X isa Y or X partof Y we say that X is a child of Y and Y is a parent of
+X. We say Y is above X in the FamPlex ontology if there is a path of isa and
+partof edges from X to Y. We also say that Y is an ancestor of X.
+X is then below Y in the FamPlex ontology and we also say X is a descendant
+of Y.
+"""
 from typing import Container, Dict, List, Optional, Tuple
 
 from famplex.graph import FamplexGraph
+
+__all__ = ['in_famplex', 'parent_terms', 'child_terms', 'root_terms',
+           'ancestral_terms', 'descendant_terms', 'individual_members', 'isa',
+           'partof', 'refinement_of', 'dict_representation', 'equivalences']
 
 _famplex_graph = FamplexGraph()
 
@@ -15,8 +39,7 @@ def in_famplex(self, namespace: str, id_: str) -> bool:
         Namespace for a term. This should be one of 'HGNC', 'FPLX' for
         FamPlex, or 'UP' for Uniprot.
     id_ : str
-        Identifier for a term within namespace. See the FamplexGraph
-        class Docstring for more info.
+        Identifier for a term within namespace.
 
     Returns
     -------
@@ -36,8 +59,7 @@ def parent_terms(namespace: str, id_: str,
         Namespace for a term. This should be one of 'HGNC', 'FPLX' for
         FamPlex, or 'UP' for Uniprot.
     id_ : str
-        Identifier for a term within namespace. See the FamplexGraph
-        class Docstring for more info.
+        Identifier for a term within namespace.
     relation_types : Optional[list]
         Set of relation types that input term can have with returned
         parent terms. The valid relation types are 'isa' and 'partof'.
@@ -75,8 +97,7 @@ def child_terms(namespace: str, id_: str,
         Namespace for a term. This should be one of 'HGNC', 'FPLX' for
         FamPlex, or 'UP' for Uniprot.
     id_ : str
-        Identifier for a term within namespace. See the FamplexGraph
-        class Docstring for more info.
+        Identifier for a term within namespace.
     relation_types : Optional[list]
         Restrict edges to relation types in this list. The valid relation
         types are the strings 'isa' and 'partof'.
@@ -157,6 +178,11 @@ def ancestral_terms(namespace: str, id_: str,
        Edges from the same node are traversed in case insensitive
        alphabetical order, sorted first by namespace and then by id
        of the target node.
+
+    Raises
+    ------
+    ValueError
+        If (namespace, id_) does not correspond to a term in FamPlex.
     """
     _famplex_graph.raise_value_error_if_not_in_famplex(namespace, id_)
     if relation_types is None:
@@ -197,6 +223,11 @@ def descendant_terms(namespace: str, id_: str,
        Edges from the same node are traversed in case insensitive
        alphabetical order, sorted first by namespace and then by id
        of the target node.
+
+    Raises
+    ------
+    ValueError
+        If (namespace, id_) does not correspond to a term in FamPlex.
     """
     _famplex_graph.raise_value_error_if_not_in_famplex(namespace, id_)
     if relation_types is None:
@@ -241,6 +272,11 @@ def individual_members(namespace: str, id_: str,
         if partof or isa relationships are excluded respectively.
         Values are sorted in case insensitive alphabetical order, first by
         namespace and then by id.
+
+    Raises
+    ------
+    ValueError
+        If (namespace, id_) does not correspond to a term in FamPlex.    Raises
     """
     if relation_types is None:
         relation_types = ['isa', 'partof']
@@ -253,9 +289,6 @@ def individual_members(namespace: str, id_: str,
 
 def isa(namespace1: str, id1: str, namespace2: str, id2: str) -> bool:
     """Return true if one term has an isa relationship with another
-
-    See the FamplexGraph class Docstring for more info on namespaces and
-    IDs.
 
     Parameters
     ----------
@@ -284,9 +317,6 @@ def isa(namespace1: str, id1: str, namespace2: str, id2: str) -> bool:
 def partof(namespace1: str, id1: str, namespace2: str, id2: str) -> bool:
     """Return true if one term has a partof relationship with another
 
-    See the FamplexGraph class Docstring for more info on namespaces and
-    IDs.
-
     Parameters
     ----------
     namespace1 : str
@@ -313,9 +343,6 @@ def partof(namespace1: str, id1: str, namespace2: str, id2: str) -> bool:
 
 def refinement_of(namespace: str, id1: str, namespace2: str, id2: str) -> bool:
     """Return true if one term either isa or partof holds
-
-    See the FamplexGraph class Docstring for more info on namepaces and
-    IDs.
 
     Parameters
     ----------
@@ -353,8 +380,7 @@ def dict_representation(namespace: str,
         Namespace for a term. This should be one of 'HGNC', 'FPLX' for
         FamPlex, or 'UP' for Uniprot.
     id_ : str
-        Identifier for a term within namespace. See the Famplexgraph class
-        Docstring for more info.
+        Identifier for a term within namespace.
 
     Returns
     -------
@@ -392,7 +418,7 @@ def equivalences(fplx_id: str) -> List[Tuple[str, str]]:
     ----------
     fplx_id : str
         A valid Famplex ID
-    
+
     Returns
     -------
     list

@@ -1,1 +1,1 @@
-from famplex.graph import FamplexGraph
+from famplex.api import *

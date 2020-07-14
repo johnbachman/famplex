@@ -1,5 +1,5 @@
 """Work with the graph of FamPlex entities and relations."""
-from typing import Container, Dict, Generator, List, Optional, Tuple
+from typing import Container, Dict, Generator, List, Tuple
 
 from collections import defaultdict, deque
 
@@ -124,11 +124,55 @@ class FamplexGraph(object):
 
     def raise_value_error_if_not_in_famplex(self, namespace: str,
                                             id_: str) -> None:
+        """Raise a value error if input is not in FamPlex ontology
+
+        This can be used in functions where we desire an exception to be
+        raised when the input is not in the FamPlex ontology but the 
+        most natural way of writing the function will not lead to any
+        exceptions being raised.
+
+        Parameters
+        ----------
+        namespace : str
+            Namespace for a term. This should be one of 'HGNC', 'FPLX' for
+            FamPlex, or 'UP' for Uniprot.
+        id_ : str
+            Identifier for a term within namespace. See the FamplexGraph
+            class Docstring for more info.
+
+        Raises
+        ------
+        ValueError
+        If (namespace, id_) does not correspond to a term in FamPlex.
+        """
         if not self.in_famplex(namespace, id_):
             raise ValueError(self.__error_message)
 
     def parent_edges(self, namespace: str,
                      id_: str) -> List[Tuple[str, str, str]]:
+        """Returns node and relation type for all parents of input
+
+        Parameters
+        ----------
+        namespace : str
+            Namespace for a term. This should be one of 'HGNC', 'FPLX' for
+            FamPlex, or 'UP' for Uniprot.
+        id_ : str
+            Identifier for a term within namespace. See the FamplexGraph
+            class Docstring for more info.
+
+        Returns
+        -------
+        list
+            List of all tuples of the form (namespace, id, relation_type) where
+            (namespace, id) is a parent of the input and relation_type is the
+            type of relation connecting them.
+
+        Raises
+        ------
+        ValueError
+        If (namespace, id_) does not correspond to a term in FamPlex.
+        """
         edges = self._graph.get((namespace, id_))
         if edges is None:
             self.raise_value_error_if_not_in_famplex(namespace, id_)
@@ -137,6 +181,29 @@ class FamplexGraph(object):
 
     def child_edges(self, namespace: str,
                     id_: str) -> List[Tuple[str, str, str]]:
+        """Returns node and relation type for all children of input
+
+        Parameters
+        ----------
+        namespace : str
+            Namespace for a term. This should be one of 'HGNC', 'FPLX' for
+            FamPlex, or 'UP' for Uniprot.
+        id_ : str
+            Identifier for a term within namespace. See the FamplexGraph
+            class Docstring for more info.
+
+        Returns
+        -------
+        list
+            List of all tuples of the form (namespace, id, relation_type) where
+            (namespace, id) is a child of the input and relation_type is the
+            type of relation connecting them.
+
+        Raises
+        ------
+        ValueError
+        If (namespace, id_) does not correspond to a term in FamPlex.
+        """
         edges = self._reverse_graph.get((namespace, id_))
         if edges is None:
             self.raise_value_error_if_not_in_famplex(namespace, id_)
@@ -199,6 +266,33 @@ class FamplexGraph(object):
     def relation(self, namespace1: str, id1: str,
                  namespace2: str, id2: str,
                  relation_types: Container[str]) -> bool:
+        """General function for determining if two entities are related
+
+        Parameters
+        ----------
+        namespace1 : str
+            Namespace of first term. This should be one of 'HGNC', 'FPLX' for
+            FamPlex, or 'UP' for Uniprot.
+        id1 : str
+            Identifier of first term.
+        namespace2 : str
+            Namespace of second term. This should be one of 'HGNC', 'FPLX' for
+            FamPlex, or 'UP' for Uniprot.
+        id2 : str
+            Identifier of second term.
+        relation_types : container
+            Function returns True if the first term is connected to the second
+            by one of the relations in this container. Valid relations are
+            'isa', and 'partof'.
+
+        Returns
+        -------
+        bool
+            True if the term given by (namespace1, id1) has one of the
+            specified relations with the term given by (namespace2, id2). Will
+            return False if either of (namespace1, id1) or (namespace2, id2) is
+            not in the FamPlex ontology.
+        """
         roots1 = self._root_class_mapping.get((namespace1, id1))
         roots2 = self._root_class_mapping.get((namespace2, id2))
         if roots1 is None or roots2 is None:
@@ -214,6 +308,29 @@ class FamplexGraph(object):
     def traverse(self, source: Tuple[str, str],
                  relation_types: Container[str],
                  direction: str) -> Generator[Tuple[str, str], None, None]:
+        """Function for traversing FampPlex graph in breadth first order
+
+        Parameters
+        ----------
+        source : tuple
+            Tuple of the form (namespace, id) specifying where traversal is to
+            begin.
+
+        relation_types : container
+            Traversal will follow edges from these specified relation_types.
+            Valid relation types are isa and partof.
+
+        direction : str
+            One of 'up' or 'down'. If 'up' traversal will follow isa and partof
+            edges in breadth first order to nodes above the source. If 'down'
+            traversal will follow reversed edges to nodes below the source.
+
+        Returns
+        -------
+        generator
+            Generator iterating through nodes in the traversal. The source node
+            is included in the traversal.
+        """
         if direction == 'down':
             graph = self._reverse_graph
         elif direction == 'up':

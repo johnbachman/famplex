@@ -1,6 +1,6 @@
 import pytest
 
-from famplex.api import child_terms, parent_terms, ancestral_terms, \
+from famplex import child_terms, parent_terms, ancestral_terms, \
     descendant_terms, individual_members, isa, partof, refinement_of, \
     dict_representation, equivalences
 

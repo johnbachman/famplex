@@ -3,7 +3,7 @@ import pytest
 
 @pytest.fixture
 def famplex_graph():
-    from famplex import FamplexGraph
+    from famplex.graph import FamplexGraph
     return FamplexGraph()
 
 
