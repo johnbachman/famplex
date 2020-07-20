@@ -258,9 +258,10 @@ class FamplexGraph(object):
         ValueError
             If fplx_id an ID in the FamPlex ontology.
         """
+        self.raise_value_error_if_not_in_famplex('FPLX', fplx_id)
         equiv = self._equivalences.get(fplx_id)
         if equiv is None:
-            raise ValueError('Input ID does not exist in FamPlex.')
+            return []
         return equiv
 
     def relation(self, namespace1: str, id1: str,
