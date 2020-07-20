@@ -293,8 +293,10 @@ def test_dict_representation_raises():
         dict_representation('FPLX', 'Complex')
 
 
-def test_equivalences():
-    assert set([('BEL', 'ESR Family')]) <= set(equivalences('ESR'))
+@pytest.mark.parametrize('test_input,expected',
+                         [('ESR', [('BEL', 'ESR Family')])])
+def test_equivalences(test_input, expected):
+    assert set(expected) <= set(equivalences(test_input))
 
 
 def test_equivalences_raises():
