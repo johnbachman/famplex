@@ -850,11 +850,7 @@ HGNC,ACADSB,isa,FPLX,ACAD
 HGNC,GCDH,isa,FPLX,ACAD
 HGNC,IVD,isa,FPLX,ACAD
 HGNC,SLC27A2,isa,FPLX,Acetyl_CoA_synthetase
-HGNC,ACSL1,isa,FPLX,Acetyl_CoA_synthetase
-HGNC,ACSL3,isa,FPLX,Acetyl_CoA_synthetase
-HGNC,ACSL4,isa,FPLX,Acetyl_CoA_synthetase
-HGNC,ACSL5,isa,FPLX,Acetyl_CoA_synthetase
-HGNC,ACSL6,isa,FPLX,Acetyl_CoA_synthetase
+FPLX,ACSL,isa,FPLX,Acetyl_CoA_synthetase
 HGNC,ACOX1,isa,FPLX,ACOX
 HGNC,ACOX2,isa,FPLX,ACOX
 HGNC,ACOX3,isa,FPLX,ACOX
