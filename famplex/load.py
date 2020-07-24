@@ -5,6 +5,10 @@ from famplex.locations import ENTITIES_PATH, EQUIVALENCES_PATH, \
     GROUNDING_MAP_PATH, RELATIONS_PATH, GENE_PREFIXES_PATH, DESCRIPTIONS_PATH
 
 
+__all__ = ['load_grounding_map', 'load_equivalences', 'load_entitites',
+           'load_relations', 'load_gene_prefixes', 'load_descriptions']
+
+
 def _load_csv(filename):
     """Load famplex csv file as list of rows
 
