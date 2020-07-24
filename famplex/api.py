@@ -25,7 +25,8 @@ from famplex.graph import FamplexGraph
 
 __all__ = ['in_famplex', 'parent_terms', 'child_terms', 'root_terms',
            'ancestral_terms', 'descendant_terms', 'individual_members', 'isa',
-           'partof', 'refinement_of', 'dict_representation', 'equivalences']
+           'partof', 'refinement_of', 'dict_representation', 'equivalences',
+           'all_root_terms']
 
 _famplex_graph = FamplexGraph()
 
@@ -431,3 +432,16 @@ def equivalences(fplx_id: str) -> List[Tuple[str, str]]:
         If fplx_id an ID in the FamPlex ontology.
     """
     return _famplex_graph.equivalences(fplx_id)
+
+
+def all_root_terms() -> List[Tuple[str, str]]:
+    """Returns all top level families and complexes in FamPlex
+
+    Returns
+    -------
+    list
+        List of tuples of the form ('FPLX', id) where id runs over all
+        top level families and complexes in FamPlex. List is in alphabetical
+        order by id.
+    """
+    return _famplex_graph.root_classes
