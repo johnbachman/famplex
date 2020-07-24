@@ -26,7 +26,7 @@ from famplex.graph import FamplexGraph
 __all__ = ['in_famplex', 'parent_terms', 'child_terms', 'root_terms',
            'ancestral_terms', 'descendant_terms', 'individual_members', 'isa',
            'partof', 'refinement_of', 'dict_representation', 'equivalences',
-           'all_root_terms']
+           'reverse_equivalences', 'all_root_terms']
 
 _famplex_graph = FamplexGraph()
 
@@ -444,6 +444,25 @@ def equivalences(fplx_id: str,
         equivs = [(namespace, id_) for namespace, id_ in equivs
                   if namespace in namespaces]
     return equivs
+
+
+def reverse_equivalences(namespace: str, id_: str) -> List[str]:
+    """Get equivalent FamPlex terms to a given term from another namespace
+
+    Parameters
+    ----------
+    namespace : str
+        Namespace of a term
+    id_ : str
+        id_ of a term
+
+    Returns
+    -------
+    list
+        List of FamPlex IDs for families or complexes equivalent to the
+        term given by (namespace, id_)
+    """
+    return _famplex_graph.reverse_equivalences(namespace, id_)
 
 
 def all_root_terms() -> List[Tuple[str, str]]:

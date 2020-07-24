@@ -90,9 +90,12 @@ class FamplexGraph(object):
                                               key=lambda x: (x[0].lower(),
                                                              x[1].lower()))
         equivalences = defaultdict(list)
+        reverse_equivalences = defaultdict(list)
         for ns, id_, fplx_id in load_equivalences():
             equivalences[fplx_id].append((ns, id_))
+            reverse_equivalences[(ns, id_)].append(fplx_id)
         equivalences = dict(equivalences)
+        reverse_equivalences = dict(reverse_equivalences)
         # Blank lines are to aid in reading of type hints
         self.root_classes: List[Tuple[str, str]] = root_classes
 
@@ -101,7 +104,8 @@ class FamplexGraph(object):
             root_class_mapping
 
         self._equivalences: Dict[str, List[Tuple[str, str]]] = equivalences
-
+        self._reverse_equivalences: Dict[Tuple[str, str], List[str]] = \
+            reverse_equivalences
         self.__error_message = 'Given input is not in the FamPlex ontology.'
 
     def in_famplex(self, namespace: str, id_: str) -> bool:
@@ -262,6 +266,26 @@ class FamplexGraph(object):
         equiv = self._equivalences.get(fplx_id)
         if equiv is None:
             return []
+        return equiv
+
+    def reverse_equivalences(self, namespace: str, id_: str) -> List[str]:
+        """Get equivalent FamPlex terms to a given term from another namespace
+
+        Parameters
+        ----------
+        namespace : str
+            Namespace of a term
+        id_ : str
+            id_ of a term
+
+        Returns
+        -------
+        list
+            List of FamPlex IDs for families or complexes equivalent to the
+            term given by (namespace, id_)
+        """
+        equiv = self._reverse_equivalences.get((namespace, id_))
+        equiv = [] if equiv is None else equiv
         return equiv
 
     def relation(self, namespace1: str, id1: str,

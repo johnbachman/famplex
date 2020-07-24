@@ -2,7 +2,7 @@ import pytest
 
 from famplex import child_terms, parent_terms, ancestral_terms, \
     descendant_terms, individual_members, isa, partof, refinement_of, \
-    dict_representation, equivalences
+    dict_representation, equivalences, reverse_equivalences
 
 
 @pytest.mark.parametrize('test_input,rel_types,expected',
@@ -303,3 +303,11 @@ def test_equivalences():
 def test_equivalences_raises():
     with pytest.raises(ValueError):
         equivalences('Complex')
+
+
+@pytest.mark.parametrize('test_input,expected',
+                         [(('MESH', 'D011948'), ['TCR']),
+                          (('NCIT', 'C17065'), ['TCR']),
+                          (('MESH', 'D000067496'), [])])
+def test_reverse_equivalences(test_input, expected):
+    assert reverse_equivalences(*test_input) == expected
