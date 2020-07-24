@@ -294,10 +294,10 @@ def test_dict_representation_raises():
 
 
 def test_equivalences():
-    expected = [('BEL', 'ESR Family'), ('MESH', 'D011960')]
-    assert set(expected) <= set(equivalences('ESR'))
-    expected = [('MESH', 'D011960')]
-    assert expected == equivalences('ESR', namespaces=['MESH'])
+    expected = [('MESH', 'D011948'), ('NCIT', 'C17065')]
+    assert set(expected) <= set(equivalences('TCR'))
+    expected = [('MESH', 'D011948')]
+    assert expected == equivalences('TCR', namespaces=['MESH'])
 
 
 def test_equivalences_raises():
