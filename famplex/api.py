@@ -339,7 +339,8 @@ def partof(namespace1: str, id1: str, namespace2: str, id2: str) -> bool:
         False if either of (namespace1, id1) or (namespace2, id2) is not in
         the FamPlex ontology.
     """
-    return _famplex_graph.relation(namespace1, id1, namespace2, id2, ['partof'])
+    return _famplex_graph.relation(namespace1, id1,
+                                   namespace2, id2, ['partof'])
 
 
 def refinement_of(namespace: str, id1: str, namespace2: str, id2: str) -> bool:
@@ -412,13 +413,20 @@ def dict_representation(namespace: str,
     return out
 
 
-def equivalences(fplx_id: str) -> List[Tuple[str, str]]:
+def equivalences(fplx_id: str,
+                 namespaces: Optional[Container[str]] = None) -> \
+                 List[Tuple[str, str]]:
     """Return list of equivalent terms from other namespaces.
 
     Parameters
     ----------
     fplx_id : str
         A valid Famplex ID
+
+    namespaces : Optional[container]
+        List of namespaces returned equivalences to which returned
+        equivalences will be restricted. Can be used if one is interested
+        in a particular type of equivalences.
 
     Returns
     -------
@@ -431,7 +439,11 @@ def equivalences(fplx_id: str) -> List[Tuple[str, str]]:
     ValueError
         If fplx_id an ID in the FamPlex ontology.
     """
-    return _famplex_graph.equivalences(fplx_id)
+    equivs = _famplex_graph.equivalences(fplx_id)
+    if namespaces is not None:
+        equivs = [(namespace, id_) for namespace, id_ in equivs
+                  if namespace in namespaces]
+    return equivs
 
 
 def all_root_terms() -> List[Tuple[str, str]]:
