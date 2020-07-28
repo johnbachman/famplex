@@ -158,6 +158,24 @@ be incorporated by a parser. The categories are as follows:
   sentence "DUSP6 silencing leads to MAPK1 phosphorylation" indicates that DUSP6
   **inhibits** MAPK1 phosphorylation. **Must be captured by the parser.**
 
+## Python Package
+
+FamPlex is available as a Python package on PyPi and can be installed with
+the command
+
+    $ pip install famplex
+
+The package provides utilities for loading resource files and working with the
+graph of FamPlex relations. If the famplex repository has been cloned instead of
+pip installed, resource files will not be directly available to the package.
+Running the command
+
+    $ python update_resources.py
+
+at the top level of the repo will copy the files to where they are needed. This
+should be run anytime the user has made changes to the top level resource files
+that they would like to be available in the package.
+
 ## Contributing
 
 Contributions are welcome! Please submit pull requests via the main

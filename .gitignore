@@ -1,1 +1,7 @@
 .tox
+
+# Keep package resources and exports out of version control
+/famplex/resources/**
+/famplex/export/**
+!/famplex/resources/.gitkeep
+!/famplex/exports/.gitkeep

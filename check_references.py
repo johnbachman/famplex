@@ -4,25 +4,28 @@ import sys
 from collections import Counter
 
 
-def read_csv(fh, delimiter, quotechar):
-    if sys.version_info.major < 3:
-        csvreader = csv.reader(fh, delimiter=bytes(delimiter),
-                               quotechar=bytes(quotechar))
-        rows = [[cell.decode('utf-8') for cell in row] for row in csvreader]
-    else:
-        csvreader = csv.reader(fh, delimiter=delimiter, quotechar=quotechar)
+def _load_csv(filename):
+    """Load famplex csv file as list of rows
+
+    Parameters
+    ----------
+    filename : str
+
+    Returns
+    -------
+    rows : list
+    """
+    with open(filename) as f:
+        csvreader = csv.reader(f, delimiter=str(u','),
+                               lineterminator='\r\n',
+                               quoting=csv.QUOTE_MINIMAL,
+                               quotechar=str(u'"'))
         rows = [row for row in csvreader]
     return rows
 
 
-def load_csv(filename):
-    with open(filename) as f:
-        rows = read_csv(f, ',', '"')
-    return rows
-
-
 def load_grounding_map(filename):
-    gm_rows = load_csv(filename)
+    gm_rows = _load_csv(filename)
     gm_tuples = []
     check_rows(gm_rows, 7, filename)
     g_map = {}
@@ -45,8 +48,7 @@ def load_grounding_map(filename):
 
 
 def check_file_rows(filename, row_length):
-    with open(filename) as f:
-        rows = read_csv(f, ',', '"')
+    rows = _load_csv(filename)
     check_rows(rows, row_length, filename)
 
 
@@ -58,8 +60,7 @@ def check_rows(rows, row_length, filename):
 
 
 def load_entity_list(filename):
-    with open(filename) as f:
-        rows = read_csv(f, ',', '"')
+    rows = _load_csv(filename)
     check_rows(rows, 1, filename)
     entities = [row[0] for row in rows]
     return entities
@@ -67,8 +68,7 @@ def load_entity_list(filename):
 
 def load_relationships(filename):
     relationships = []
-    with open(filename) as f:
-        rows = read_csv(f, ',', '"')
+    rows = _load_csv(filename)
     check_rows(rows, 5, filename)
     for row in rows:
         relationships.append(((row[0], row[1]), row[2], (row[3], row[4])))
@@ -77,8 +77,7 @@ def load_relationships(filename):
 
 def load_equivalences(filename):
     equivalences = []
-    with open(filename) as f:
-        rows = read_csv(f, ',', '"')
+    rows = _load_csv(filename)
     check_rows(rows, 3, filename)
     for row in rows:
         equivalences.append((row[0], row[1], row[2]))
@@ -86,7 +85,7 @@ def load_equivalences(filename):
 
 
 def update_id_prefixes(filename):
-    gm_rows = load_csv(filename)
+    gm_rows = _load_csv(filename)
     updated_rows = []
     for row in gm_rows:
         key = row[0]
@@ -94,13 +93,19 @@ def update_id_prefixes(filename):
         values = [entry for entry in row[2::2]]
         if 'GO' in keys:
             go_ix = keys.index('GO')
-            values[go_ix] = 'GO:%s' % values[go_ix]
+            id_ = values[go_ix]
+            if not id_.startswith('GO'):
+                values[go_ix] = 'GO:%s' % id_
         if 'CHEBI' in keys:
             chebi_ix = keys.index('CHEBI')
-            values[chebi_ix] = 'CHEBI:%s' % values[chebi_ix]
+            id_ = values[chebi_ix]
+            if not id_.startswith('CHEBI'):
+                values[chebi_ix] = 'CHEBI:%s' % id_
         if 'CHEMBL' in keys:
             chembl_ix = keys.index('CHEMBL')
-            values[chembl_ix] = 'CHEMBL%s' % values[chembl_ix]
+            id_ = values[chembl_ix]
+            if not id_.startswith('CHEMBL'):
+                values[chembl_ix] = 'CHEMBL%s' % id_
         updated_row = [key]
         for pair in zip(keys, values):
             updated_row += pair
@@ -230,7 +235,7 @@ if __name__ == '__main__':
                         hgnc_id = hgnc_client.get_hgnc_id(db_id)
                         if not hgnc_id:
                             print("ERROR: Symbol %s in grounding map is "
-                                   "not a valid HGNC Symbol." % db_id)
+                                  "not a valid HGNC Symbol." % db_id)
                             signal_error = True
     except ImportError as e:
         print('HGNC check could not be performed because of import error')

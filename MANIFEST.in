@@ -1,0 +1,10 @@
+include entities.csv
+include equivalences.csv
+include relations.csv
+include gene_prefixes.csv
+include descriptions.csv
+graft export
+include export/famplex.belns
+include export/famplex_groundings.tsv
+include export/famplex.obo
+include export/hgnc_symbol_map.csv
