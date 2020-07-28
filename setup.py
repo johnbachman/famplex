@@ -8,7 +8,9 @@ here = os.path.abspath(os.path.dirname(__file__))
 with open(os.path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
-relative_site_packages = get_python_lib().split(sys.prefix+os.sep)[1]
+relative_site_packages = get_python_lib().\
+    split(os.path.realpath(sys.prefix) + os.sep)[1]
+
 package_relative_path = os.path.join(relative_site_packages,
                                      'famplex')
 setup(name='famplex',
