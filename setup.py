@@ -18,6 +18,7 @@ setup(name='famplex',
       description="Resources for grounding protein complexes and families"
       " from text and describing their hierarchical relationships.",
       long_description=long_description,
+      long_description_content_type='text/markdown',
       url='https://github.com/sorgerlab/famplex',
       author='Famplex Developers, Harvard Medical School',
       classifiers=[
