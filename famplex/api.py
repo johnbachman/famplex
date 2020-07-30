@@ -19,6 +19,7 @@ partof edges from X to Y. We also say that Y is an ancestor of X.
 X is then below Y in the FamPlex ontology and we also say X is a descendant
 of Y.
 """
+import warnings
 from typing import Container, Dict, List, Optional, Tuple
 
 from famplex.graph import FamplexGraph
@@ -28,7 +29,15 @@ __all__ = ['in_famplex', 'parent_terms', 'child_terms', 'root_terms',
            'partof', 'refinement_of', 'dict_representation', 'equivalences',
            'reverse_equivalences', 'all_root_terms']
 
-_famplex_graph = FamplexGraph()
+
+try:
+    _famplex_graph = FamplexGraph()
+except FileNotFoundError:
+    warnings.warn(
+        "Resource files are unavailable. If you've cloned this repository, "
+        "run the script \"update_resources.py\" at the top level to move the "
+        "resources into the package. See the README for more info.",
+        Warning)
 
 
 def in_famplex(self, namespace: str, id_: str) -> bool:
