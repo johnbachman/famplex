@@ -14,7 +14,7 @@ import warnings
 
 # A warning will be issued if anything from famplex is imported while the
 # resource files are unavailable. We supress this warning here so that it
-# appear the first time this script is used to move the resources into the
+# won't appear the first time this script is used to move the resources into the
 # package.
 warnings.simplefilter('ignore')
 import famplex.locations as loc
