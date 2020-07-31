@@ -3,7 +3,7 @@ from typing import Container, Dict, Generator, List, Tuple
 
 from collections import defaultdict, deque
 
-from famplex.load import load_equivalences, load_relations
+from famplex.load import load_entities, load_equivalences, load_relations
 
 
 class FamplexGraph(object):
@@ -85,10 +85,16 @@ class FamplexGraph(object):
                                       direction='down'):
                 root_class_mapping[node].append(entry)
         root_class_mapping = dict(root_class_mapping)
+        entities = load_entities()
+        for entity in entities:
+            entry = ('FPLX', entity)
+            if entry not in root_class_mapping:
+                root_class_mapping[entry] = [entry]
         for node, roots in root_class_mapping.items():
             root_class_mapping[node] = sorted(roots,
                                               key=lambda x: (x[0].lower(),
                                                              x[1].lower()))
+
         equivalences = defaultdict(list)
         reverse_equivalences = defaultdict(list)
         for ns, id_, fplx_id in load_equivalences():
