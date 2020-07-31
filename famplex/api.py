@@ -40,7 +40,7 @@ except FileNotFoundError:
         Warning)
 
 
-def in_famplex(self, namespace: str, id_: str) -> bool:
+def in_famplex(namespace: str, id_: str) -> bool:
     """Returns True if input term is a member of the FamPlex ontology.
 
     Parameters
@@ -132,7 +132,7 @@ def child_terms(namespace: str, id_: str,
     return [(ns2, id2) for ns2, id2, rel in edges if rel in relation_types]
 
 
-def root_terms(self, namespace: str, id_: str) -> List[Tuple[str, str]]:
+def root_terms(namespace: str, id_: str) -> List[Tuple[str, str]]:
     """Returns top level terms above the input term
 
     Parameters
