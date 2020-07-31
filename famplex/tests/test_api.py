@@ -2,7 +2,38 @@ import pytest
 
 from famplex import child_terms, parent_terms, ancestral_terms, \
     descendant_terms, individual_members, isa, partof, refinement_of, \
-    dict_representation, equivalences, reverse_equivalences
+    dict_representation, equivalences, reverse_equivalences, in_famplex, \
+    root_terms
+
+
+@pytest.mark.parametrize('test_input,expected',
+                         [(('FPLX', 'AMPK'), True),
+                          (('FPLX', 'AKT'), True),
+                          (('HGNC', 'AKT1'), True),
+                          (('FPLX',
+                            'If_this_is_ever_a_real_family_then_we'
+                            '_need_to_talk_to_the_biologists_who_named_it'),
+                           False),
+                          (('HGNC', 'GENE'), False),
+                          (('FPLX', 'Protease'), True)])
+def test_in_famplex(test_input, expected):
+    assert in_famplex(*test_input) == expected
+
+
+@pytest.mark.parametrize('test_input,expected',
+                         [(('HGNC', 'ESR1'), [('FPLX', 'ESR')]),
+                          (('FPLX', 'ESR'), [('FPLX', 'ESR')]),
+                          (('HGNC', 'SCN8A'),
+                           [('FPLX', 'Cation_channels'),
+                            ('FPLX', 'Voltage_gated_ion_channels')]),
+                          (('FPLX', 'Protease'), [('FPLX', 'Protease')])])
+def test_root_terms(test_input, expected):
+    assert root_terms(*test_input) == expected
+
+
+def test_root_terms_raises():
+    with pytest.raises(ValueError):
+        root_terms('HGNC', 'Gene')
 
 
 @pytest.mark.parametrize('test_input,rel_types,expected',

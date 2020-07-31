@@ -5,7 +5,7 @@ from famplex.locations import ENTITIES_PATH, EQUIVALENCES_PATH, \
     GROUNDING_MAP_PATH, RELATIONS_PATH, GENE_PREFIXES_PATH, DESCRIPTIONS_PATH
 
 
-__all__ = ['load_grounding_map', 'load_equivalences', 'load_entitites',
+__all__ = ['load_grounding_map', 'load_equivalences', 'load_entities',
            'load_relations', 'load_gene_prefixes', 'load_descriptions']
 
 
@@ -81,7 +81,7 @@ def load_equivalences() -> List[Tuple[str, str, str]]:
     return _load_csv(EQUIVALENCES_PATH)
 
 
-def load_entitites() -> List[str]:
+def load_entities() -> List[str]:
     """Returns list of FamPlex entities
 
     Returns
