@@ -14,7 +14,8 @@ from famplex import child_terms, parent_terms, ancestral_terms, \
                             'If_this_is_ever_a_real_family_then_we'
                             '_need_to_talk_to_the_biologists_who_named_it'),
                            False),
-                          (('HGNC', 'GENE'), False)])
+                          (('HGNC', 'GENE'), False),
+                          (('FPLX', 'Protease'), True)])
 def test_in_famplex(test_input, expected):
     assert in_famplex(*test_input) == expected
 
@@ -24,7 +25,8 @@ def test_in_famplex(test_input, expected):
                           (('FPLX', 'ESR'), [('FPLX', 'ESR')]),
                           (('HGNC', 'SCN8A'),
                            [('FPLX', 'Cation_channels'),
-                            ('FPLX', 'Voltage_gated_ion_channels')])])
+                            ('FPLX', 'Voltage_gated_ion_channels')]),
+                          (('FPLX', 'Protease'), [('FPLX', 'Protease')])])
 def test_root_terms(test_input, expected):
     assert root_terms(*test_input) == expected
 
