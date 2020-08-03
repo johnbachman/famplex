@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 29:06:2020 13:24
+date: 28:07:2020 16:43
 
 [Term]
 id: FPLX:5_hydroxytryptamine_receptors_G_protein_coupled
@@ -16,6 +16,7 @@ inverse_is_a: HGNC:HTR7
 id: FPLX:5_hydroxytryptamine_receptors_ionotropic
 name: 5-hydroxytryptamine-receptors-ionotropic
 xref: HGNC_GROUP:172
+xref: MESH:D044406
 is_a: FPLX:HTR
 is_a: FPLX:Ligand_gated_ion_channels
 inverse_is_a: HGNC:HTR3A
@@ -51,6 +52,7 @@ synonym: "ABL family" EXACT []
 synonym: "ABL" EXACT []
 xref: IP:IPR015015
 xref: MEDSCAN:urn:agi-aopfc:0000567
+xref: MESH:D016313
 xref: RE:R-HSA-376002
 is_a: FPLX:root
 inverse_is_a: HGNC:ABL1
@@ -64,6 +66,7 @@ synonym: "acyl CoA dehydrogenase" EXACT []
 synonym: "acyl-CoA dehydrogenase" EXACT []
 xref: BEL:"ACAD Family"
 xref: ECCODE:1.3.8.7
+xref: MESH:D042964
 xref: NEXTPROT-FAMILY:00093
 is_a: FPLX:root
 inverse_is_a: HGNC:ACAD8
@@ -89,6 +92,7 @@ synonym: "acetyl-CoA carboxylase" EXACT []
 xref: BEL:"Acetyl CoA Carboxylase Complex"
 xref: ECCODE:6.4.1.2
 xref: IP:IPR013537
+xref: MESH:D000103
 xref: RE:R-HSA-200563
 is_a: FPLX:root
 has_part: HGNC:ACACA
@@ -105,13 +109,10 @@ synonym: "acetyl-CoA synthetase" EXACT []
 synonym: "acetyl-coenzyme A synthase" EXACT []
 synonym: "ACS" EXACT []
 xref: BEL:"Acetyl-CoA Synthetase Family"
+xref: MESH:D000106
 is_a: FPLX:root
 inverse_is_a: HGNC:SLC27A2
-inverse_is_a: HGNC:ACSL1
-inverse_is_a: HGNC:ACSL3
-inverse_is_a: HGNC:ACSL4
-inverse_is_a: HGNC:ACSL5
-inverse_is_a: HGNC:ACSL6
+inverse_is_a: FPLX:ACSL
 
 [Term]
 id: FPLX:ACOX
@@ -120,6 +121,7 @@ synonym: "Acyl-CoA Oxidase" EXACT []
 synonym: "acyl-CoA oxidases" EXACT []
 xref: BEL:"ACOX Family"
 xref: IP:IPR002655
+xref: MESH:D042962
 xref: XFAM:PF01756
 is_a: FPLX:root
 inverse_is_a: HGNC:ACOX1
@@ -133,7 +135,7 @@ name: ACSL
 synonym: "Acsl" EXACT []
 synonym: "long-chain acyl-CoA synthetase" EXACT []
 xref: BEL:"ACSL Family"
-is_a: FPLX:root
+is_a: FPLX:Acetyl_CoA_synthetase
 inverse_is_a: HGNC:ACSL1
 inverse_is_a: HGNC:ACSL3
 inverse_is_a: HGNC:ACSL4
@@ -165,6 +167,7 @@ synonym: "Activin" EXACT []
 synonym: "activin" EXACT []
 synonym: "activins" EXACT []
 xref: GO:0048180
+xref: MESH:D028341
 xref: NCIT:C20456
 xref: RE:R-HSA-2470478
 xref: RE:R-HSA-2470491
@@ -214,6 +217,7 @@ id: FPLX:ACTN
 name: ACTN
 synonym: "actinin" EXACT []
 xref: BEL:"ACTN Family"
+xref: MESH:D000185
 xref: RE:R-HSA-451402
 is_a: FPLX:root
 inverse_is_a: HGNC:ACTN1
@@ -235,6 +239,7 @@ synonym: "AP2 complex" EXACT []
 synonym: "AP2" EXACT []
 xref: BEL:"Adaptor Protein II Complex"
 xref: GO:0030122
+xref: MESH:D033962
 is_a: FPLX:root
 has_part: HGNC:AP2B1
 has_part: HGNC:AP2M1
@@ -248,6 +253,7 @@ synonym: "adaptor protein complex 3" EXACT []
 synonym: "AP-3" EXACT []
 synonym: "AP3" EXACT []
 xref: BEL:"Adaptor Protein III Complex"
+xref: MESH:D033963
 is_a: FPLX:root
 has_part: HGNC:AP3B1
 has_part: HGNC:AP3D1
@@ -260,6 +266,7 @@ name: ADCY
 synonym: "adenylate cyclase" EXACT []
 synonym: "adenylyl cyclase" EXACT []
 xref: BEL:"ADCY Family"
+xref: MESH:D000262
 xref: NCIT:C16264
 xref: RE:R-HSA-5610577
 xref: RE:R-HSA-5610578
@@ -281,6 +288,7 @@ name: ADH
 synonym: "alcohol dehydrogenase" EXACT []
 xref: BEL:"ADH Family"
 xref: ECCODE:1.1.1.1
+xref: MESH:D000426
 xref: NCIT:C16272
 xref: XFAM:PF00465
 is_a: FPLX:root
@@ -317,6 +325,7 @@ synonym: "α-adrenoreceptors" EXACT []
 xref: BEL:"ADRA Family"
 xref: GO:0004936
 xref: GO:0004937
+xref: MESH:D011941
 is_a: FPLX:root
 inverse_is_a: HGNC:ADRA1A
 inverse_is_a: HGNC:ADRA1B
@@ -358,6 +367,7 @@ synonym: "β-adrenergic receptor" EXACT []
 synonym: "β-adrenoreceptor" EXACT []
 synonym: "βAR" EXACT []
 xref: BEL:"ADRB Family"
+xref: MESH:D011943
 xref: NCIT:C17062
 xref: RE:R-HSA-390643
 xref: RE:R-HSA-390670
@@ -375,6 +385,7 @@ synonym: "betaARK" EXACT []
 synonym: "β adrenergic receptor kinase" EXACT []
 synonym: "βARK" EXACT []
 xref: BEL:"ADRBK Family"
+xref: MESH:D051552
 xref: RE:R-HSA-8866229
 is_a: FPLX:GRK
 inverse_is_a: HGNC:GRK2
@@ -389,6 +400,7 @@ synonym: "angiotensin-receptor" EXACT []
 synonym: "Angiotensin receptor" EXACT []
 synonym: "Angiotensin receptors" EXACT []
 xref: HGNC_GROUP:221
+xref: MESH:D044139
 is_a: FPLX:root
 inverse_is_a: HGNC:AGTR1
 inverse_is_a: HGNC:AGTR2
@@ -404,6 +416,7 @@ synonym: "PKB-Akt" EXACT []
 synonym: "PKB/Akt" EXACT []
 xref: BEL:"AKT Family"
 xref: MEDSCAN:urn:agi-aopfc:0000439
+xref: MESH:D051057
 xref: NCIT:C41625
 xref: RE:R-HSA-202052
 xref: RE:R-HSA-202072
@@ -429,6 +442,7 @@ synonym: "aldehyde dehydrogenase" EXACT []
 synonym: "ALDH" EXACT []
 xref: BEL:"ALDH Family"
 xref: ECCODE:1.2.1.3
+xref: MESH:D000444
 xref: NCIT:C118481
 is_a: FPLX:root
 inverse_is_a: HGNC:ALDH1A1
@@ -451,6 +465,7 @@ xref: BEL:"ALDO Family"
 xref: ECCODE:4.1.2.13
 xref: IP:IPR000741
 xref: IP:IPR029768
+xref: MESH:D005634
 xref: RE:R-HSA-179508
 is_a: FPLX:root
 inverse_is_a: HGNC:ALDOA
@@ -528,6 +543,7 @@ synonym: "AMP-activated" EXACT []
 xref: BEL:"AMP Activated Protein Kinase Complex"
 xref: ECCODE:2.7.11.31
 xref: MEDSCAN:urn:agi-protfc:AMPK
+xref: MESH:D055372
 xref: NCIT:C94701
 xref: NEXTPROT-FAMILY:03071
 xref: RE:R-HSA-380931
@@ -798,6 +814,7 @@ has_part: HGNC:S100A10
 id: FPLX:ANO
 name: ANO
 xref: HGNC_GROUP:865
+xref: MESH:D000075368
 is_a: FPLX:Chloride_calcium_activated_channels
 inverse_is_a: HGNC:ANO1
 inverse_is_a: HGNC:ANO10
@@ -826,6 +843,7 @@ has_part: FPLX:JUN_family
 id: FPLX:AP2A
 name: AP2A
 xref: IP:IPR017104
+xref: MESH:D033965
 part_of: FPLX:Adaptor_protein_II
 inverse_is_a: HGNC:AP2A1
 inverse_is_a: HGNC:AP2A2
@@ -837,6 +855,7 @@ synonym: "APC/C" EXACT []
 xref: GO:0005680
 xref: MEDSCAN:urn:agi-aopfc:0000571
 xref: MEDSCAN:urn:agi-complex:prophash-dd63d0a558770b12c9149b4955828f35
+xref: MESH:D064173
 is_a: FPLX:root
 has_part: HGNC:ANAPC2
 has_part: HGNC:ANAPC11
@@ -863,6 +882,7 @@ synonym: "apolipoprotein A" EXACT []
 synonym: "apolipoprotein(A)" EXACT []
 synonym: "apolipoprotein(a)" EXACT []
 xref: BEL:"APOA Family"
+xref: MESH:D001054
 xref: NCIT:C105952
 is_a: FPLX:Apolipoprotein
 inverse_is_a: HGNC:APOA1
@@ -878,6 +898,7 @@ synonym: "apolipoprotein" EXACT []
 synonym: "apolipoproteins" EXACT []
 xref: IP:IPR000074
 xref: MEDSCAN:urn:agi-protfc:apolipoprotein
+xref: MESH:D001053
 xref: XFAM:PF01442
 is_a: FPLX:root
 inverse_is_a: FPLX:APOA
@@ -887,6 +908,7 @@ inverse_is_a: HGNC:APOE
 id: FPLX:AQP
 name: AQP
 xref: HGNC_GROUP:305
+xref: MESH:D020346
 is_a: FPLX:Porins
 inverse_is_a: HGNC:AQP1
 inverse_is_a: HGNC:AQP10
@@ -908,6 +930,7 @@ id: FPLX:ARF_GTPase_family
 name: ARF-GTPase-family
 synonym: "ADP ribosylation factor" EXACT []
 synonym: "ARF" EXACT []
+xref: MESH:D020727
 is_a: FPLX:root
 inverse_is_a: HGNC:TRIM23
 inverse_is_a: HGNC:ARF1
@@ -946,6 +969,7 @@ id: FPLX:Arp2_3_protein
 name: Arp2-3-protein
 synonym: "Arp2/3" EXACT []
 xref: BEL:"Arp2/3 Protein Complex"
+xref: MESH:D051376
 is_a: FPLX:root
 has_part: HGNC:ARPC1A
 has_part: HGNC:ARPC1B
@@ -961,6 +985,7 @@ name: ARRB
 synonym: "b-arrestin" EXACT []
 synonym: "barrestins" EXACT []
 xref: BEL:"ARRB Family"
+xref: MESH:D000071557
 xref: RE:R-HSA-1911410
 is_a: FPLX:root
 inverse_is_a: HGNC:ARRB1
@@ -970,6 +995,7 @@ inverse_is_a: HGNC:ARRB2
 id: FPLX:ASIC
 name: ASIC
 xref: HGNC_GROUP:290
+xref: MESH:D062565
 is_a: FPLX:Sodium_channels
 inverse_is_a: HGNC:ASIC1
 inverse_is_a: HGNC:ASIC2
@@ -1036,6 +1062,7 @@ id: FPLX:ATP_synthase
 name: ATP-synthase
 synonym: "ATP synthase" EXACT []
 xref: BEL:"Proton Transporting ATP Synthase Complex"
+xref: MESH:D025181
 is_a: FPLX:root
 has_part: HGNC:ATP5F1A
 has_part: HGNC:ATP5F1B
@@ -1064,6 +1091,7 @@ synonym: "HAUS" EXACT []
 synonym: "HAUS complex" EXACT []
 xref: GO:0070652
 xref: HGNC_GROUP:581
+xref: MESH:C000612281
 xref: RE:R-HSA-8855211
 is_a: FPLX:root
 has_part: HGNC:HAUS1
@@ -1083,6 +1111,7 @@ synonym: "hAxin" EXACT []
 xref: BEL:"AXIN Family"
 xref: IP:IPR014936
 xref: IP:IPR032101
+xref: MESH:D060466
 xref: RE:R-HSA-3640819
 xref: RE:R-HSA-3640863
 xref: RE:R-HSA-3772502
@@ -1139,6 +1168,7 @@ inverse_is_a: HGNC:BDKRB2
 id: FPLX:BEST
 name: BEST
 xref: HGNC_GROUP:866
+xref: MESH:D000075002
 is_a: FPLX:Chloride_calcium_activated_channels
 inverse_is_a: HGNC:BEST1
 inverse_is_a: HGNC:BEST2
@@ -1201,6 +1231,7 @@ name: BIRC
 synonym: "BIRs" EXACT []
 xref: BEL:"BIRC Family"
 xref: IP:IPR001370
+xref: MESH:D051034
 is_a: FPLX:root
 inverse_is_a: HGNC:BIRC2
 inverse_is_a: HGNC:BIRC3
@@ -1215,6 +1246,7 @@ inverse_is_a: HGNC:XIAP
 id: FPLX:BLVR
 name: BLVR
 synonym: "BVR" EXACT []
+xref: MESH:C019789
 is_a: FPLX:root
 inverse_is_a: HGNC:BLVRA
 inverse_is_a: HGNC:BLVRB
@@ -1224,6 +1256,7 @@ id: FPLX:BMP
 name: BMP
 synonym: "BMP" EXACT []
 xref: BEL:"BMP Family"
+xref: MESH:D019485
 xref: NCIT:C17274
 xref: XFAM:PF02608
 is_a: FPLX:root
@@ -1248,6 +1281,7 @@ inverse_is_a: HGNC:GDF7
 [Term]
 id: FPLX:BMP_receptor
 name: BMP-receptor
+xref: MESH:D052004
 xref: SIGNOR:SIGNOR-PF9
 is_a: FPLX:root
 inverse_is_a: FPLX:BMP_receptor_type_I
@@ -1265,6 +1299,7 @@ synonym: "bone morphogenetic protein type I receptors" EXACT []
 synonym: "BRI" EXACT []
 xref: BEL:"BMP Receptor Type I Family"
 xref: MEDSCAN:urn:agi-protfc:bone%20morphogenetic%20protein%20I%20receptor
+xref: MESH:D052005
 is_a: FPLX:BMP_receptor
 inverse_is_a: HGNC:ACVR1
 inverse_is_a: HGNC:BMPR1A
@@ -1280,6 +1315,7 @@ synonym: "bone morphogenetic protein receptor type II" EXACT []
 synonym: "bone morphogenetic protein type II receptors" EXACT []
 synonym: "BRII" EXACT []
 xref: BEL:"BMP Receptor Type II Family"
+xref: MESH:D052006
 xref: RE:R-HSA-201465
 xref: RE:R-HSA-201804
 is_a: FPLX:BMP_receptor
@@ -1302,6 +1338,7 @@ synonym: "c1 complex" EXACT []
 synonym: "C1" EXACT []
 synonym: "C1-complex" EXACT []
 xref: BEL:"C1 Complex"
+xref: MESH:D003172
 xref: RE:R-HSA-173584
 xref: RE:R-HSA-173615
 xref: RE:R-HSA-173617
@@ -1317,6 +1354,7 @@ id: FPLX:C1q
 name: C1q
 synonym: "C1q" EXACT []
 xref: BEL:"C1q Complex"
+xref: MESH:D015922
 is_a: FPLX:root
 has_part: HGNC:C1QA
 has_part: HGNC:C1QB
@@ -1389,6 +1427,7 @@ synonym: "cadherin" EXACT []
 xref: BEL:"CDH Family"
 xref: MEDSCAN:urn:agi-complex:prophash-8a9e47ee0ee03d8d8b6e029e2fba6896
 xref: MEDSCAN:urn:agi-protfc:cadherin
+xref: MESH:D015820
 xref: NCIT:C16373
 xref: XFAM:PF00028
 is_a: FPLX:root
@@ -1422,6 +1461,7 @@ synonym: "Calcium channels" EXACT []
 synonym: "calcium channel" EXACT []
 synonym: "calcium channels" EXACT []
 xref: HGNC_GROUP:182
+xref: MESH:D015220
 is_a: FPLX:Cation_channels
 inverse_is_a: FPLX:CACN
 inverse_is_a: FPLX:CATSPER
@@ -1433,6 +1473,7 @@ inverse_is_a: FPLX:TPCN
 id: FPLX:Calcium_sensing_receptors
 name: Calcium-sensing-receptors
 xref: HGNC_GROUP:279
+xref: MESH:D044169
 is_a: FPLX:GPCR_C
 inverse_is_a: HGNC:CASR
 inverse_is_a: HGNC:GPRC6A
@@ -1446,6 +1487,7 @@ synonym: "CaM" EXACT []
 xref: BEL:"CALM Family"
 xref: MEDSCAN:urn:agi-aopfc:0000452
 xref: MEDSCAN:urn:agi-complex:prophash-f7e292d6e30998b81cf5f772ab430f11
+xref: MESH:D002147
 xref: NCIT:C16375
 xref: NEXTPROT-FAMILY:00440
 is_a: FPLX:root
@@ -1461,6 +1503,7 @@ synonym: "CaMK" EXACT []
 synonym: "CAMK" EXACT []
 xref: BEL:"CAMK Family"
 xref: ECCODE:2.7.11.17
+xref: MESH:D017871
 xref: NEXTPROT-FAMILY:03072
 is_a: FPLX:root
 inverse_is_a: HGNC:CAMK1
@@ -1490,6 +1533,7 @@ synonym: "CaMK-II" EXACT []
 xref: BEL:"CAMK2 Complex"
 xref: IP:IPR013543
 xref: MEDSCAN:urn:agi-complex:CaM%20kinase%20II
+xref: MESH:D054732
 xref: RE:R-HSA-417004
 xref: RE:R-HSA-432792
 xref: RE:R-HSA-444796
@@ -1522,6 +1566,7 @@ synonym: "calpain" EXACT []
 xref: BEL:"CAPN Family"
 xref: GO:0004198
 xref: IP:IPR022684
+xref: MESH:D002154
 xref: NCIT:C16377
 xref: RE:R-HSA-8848649
 xref: RE:R-HSA-8848668
@@ -1548,6 +1593,7 @@ synonym: "carboxylesterase" EXACT []
 synonym: "carboxylesterases" EXACT []
 xref: BEL:"Carboxylesterase Family"
 xref: ECCODE:3.1.1.1
+xref: MESH:D043182
 xref: NCIT:C112051
 is_a: FPLX:root
 inverse_is_a: HGNC:CES1
@@ -1673,6 +1719,7 @@ has_part: HGNC:SKP1
 [Term]
 id: FPLX:CCL
 name: CCL
+xref: MESH:D019742
 is_a: FPLX:root
 inverse_is_a: HGNC:CCL1
 inverse_is_a: HGNC:CCL2
@@ -1731,6 +1778,7 @@ xref: BEL:"CCT Complex"
 xref: GO:0005832
 xref: IP:IPR002194
 xref: MEDSCAN:urn:agi-complex:prophash-cd6413d79122d5489ee4b4e339245b61
+xref: MESH:D056404
 xref: RE:R-HSA-390455
 xref: RE:R-HSA-390474
 is_a: FPLX:root
@@ -1760,6 +1808,7 @@ name: CD3
 synonym: "CD3" EXACT []
 xref: BEL:"CD3 Complex"
 xref: MEDSCAN:urn:agi-complex:CD3%20complex
+xref: MESH:D017252
 xref: NCIT:C38897
 is_a: FPLX:root
 has_part: HGNC:CD247
@@ -1795,6 +1844,7 @@ id: FPLX:CD8
 name: CD8
 synonym: "CD8" EXACT []
 xref: MEDSCAN:urn:agi-complex:CD8
+xref: MESH:D016827
 xref: RE:R-HSA-198899
 is_a: FPLX:root
 inverse_is_a: HGNC:CD8A
@@ -1810,6 +1860,7 @@ synonym: "Cdc25" EXACT []
 xref: BEL:"CDC25 Family"
 xref: IP:IPR000751
 xref: MEDSCAN:urn:agi-aopfc:0000551
+xref: MESH:D020687
 xref: RE:R-HSA-170108
 xref: RE:R-HSA-69261
 is_a: FPLX:root
@@ -1872,6 +1923,7 @@ synonym: "cyclin dependent kinase inhibitors" EXACT []
 synonym: "cyclin-dependent kinase inhibitor" EXACT []
 synonym: "cyclin-dependent protein kinase inhibitors" EXACT []
 synonym: "CKIs" EXACT []
+xref: MESH:D050756
 xref: NCIT:C18492
 xref: XFAM:PF02234
 is_a: FPLX:root
@@ -1909,6 +1961,7 @@ name: CEBP
 synonym: "C/EBP" EXACT []
 synonym: "CCAAT/enhancer binding protein" EXACT []
 xref: BEL:"CEBP Family"
+xref: MESH:D022762
 xref: NEXTPROT-FAMILY:00406
 is_a: FPLX:root
 inverse_is_a: HGNC:CEBPA
@@ -1933,6 +1986,7 @@ name: Chemokine
 synonym: "chemokine" EXACT []
 synonym: "chemokines" EXACT []
 xref: MEDSCAN:urn:agi-aopfc:0000391
+xref: MESH:D018925
 xref: NCIT:C20466
 is_a: FPLX:root
 inverse_is_a: FPLX:CXCL_ELR_negative
@@ -1943,6 +1997,7 @@ id: FPLX:Chemokine_receptor
 name: Chemokine-receptor
 synonym: "chemoattractant receptor" EXACT []
 xref: BEL:"Chemokine Receptor Family"
+xref: MESH:D019707
 is_a: FPLX:root
 inverse_is_a: HGNC:ACKR2
 inverse_is_a: HGNC:CCR1
@@ -1973,6 +2028,7 @@ name: CHK
 synonym: "chk" EXACT []
 synonym: "ethanolamine kinase" EXACT []
 synonym: "choline kinase" EXACT []
+xref: MESH:D002797
 is_a: FPLX:root
 inverse_is_a: HGNC:CHKA
 inverse_is_a: HGNC:CHKB
@@ -1989,6 +2045,7 @@ inverse_is_a: FPLX:BEST
 id: FPLX:Chloride_channels
 name: Chloride-channels
 xref: HGNC_GROUP:278
+xref: MESH:D018118
 is_a: FPLX:root
 inverse_is_a: HGNC:CFTR
 inverse_is_a: FPLX:CLCN
@@ -2004,6 +2061,7 @@ synonym: "cholinesterase" EXACT []
 xref: BEL:"Cholinesterase Family"
 xref: IP:IPR000997
 xref: IP:IPR014788
+xref: MESH:D002802
 xref: RE:R-HSA-2990868
 xref: RE:R-HSA-3640837
 is_a: FPLX:root
@@ -2016,6 +2074,7 @@ name: CHRM
 synonym: "acetylcholine receptor" EXACT []
 xref: BEL:"CHRM Family"
 xref: IP:IPR000995
+xref: MESH:D011976
 is_a: FPLX:root
 inverse_is_a: HGNC:CHRM1
 inverse_is_a: HGNC:CHRM2
@@ -2032,6 +2091,7 @@ synonym: "nicotinic acetylcholine receptor" EXACT []
 xref: BEL:"CHRN Complex"
 xref: GO:0016904
 xref: HGNC_GROUP:173
+xref: MESH:D011978
 is_a: FPLX:Ligand_gated_ion_channels
 inverse_is_a: HGNC:CHRNA1
 inverse_is_a: HGNC:CHRNA10
@@ -2059,6 +2119,7 @@ synonym: "casein kinase II" EXACT []
 synonym: "CK2" EXACT []
 xref: BEL:"CK II Complex"
 xref: GO:0005956
+xref: MESH:D047390
 xref: NCIT:C107559
 xref: NEXTPROT-FAMILY:03101
 xref: RE:R-HSA-201711
@@ -2075,6 +2136,7 @@ synonym: "clathrin coat" EXACT []
 synonym: "clathrin" EXACT []
 xref: BEL:"Clathrin Complex"
 xref: GO:0016190
+xref: MESH:D002966
 xref: RE:R-HSA-5138439
 xref: RE:R-HSA-5138447
 xref: RE:R-HSA-5333713
@@ -2115,6 +2177,7 @@ inverse_is_a: HGNC:CLIC6
 id: FPLX:CLK
 name: CLK
 xref: HGNC_GROUP:480
+xref: MESH:C066780
 is_a: FPLX:root
 inverse_is_a: HGNC:CLK1
 inverse_is_a: HGNC:CLK2
@@ -2125,6 +2188,7 @@ inverse_is_a: HGNC:CLK4
 id: FPLX:CNG
 name: CNG
 xref: HGNC_GROUP:250
+xref: MESH:D054815
 is_a: FPLX:Voltage_gated_ion_channels
 inverse_is_a: HGNC:CNGA1
 inverse_is_a: HGNC:CNGA2
@@ -2152,6 +2216,7 @@ id: FPLX:Cofilin
 name: Cofilin
 synonym: "cofilin" EXACT []
 xref: IP:IPR017904
+xref: MESH:D051339
 is_a: FPLX:root
 inverse_is_a: HGNC:CFL1
 inverse_is_a: HGNC:CFL2
@@ -2165,6 +2230,7 @@ synonym: "cohesin" EXACT []
 xref: BEL:"Cohesin Complex"
 xref: GO:0008278
 xref: GO:0008279
+xref: MESH:C118077
 xref: XFAM:PF00963
 is_a: FPLX:root
 has_part: HGNC:RAD21
@@ -2178,6 +2244,7 @@ synonym: "Type I collagen" EXACT []
 synonym: "type I collagen" EXACT []
 xref: BEL:"COL1 Family"
 xref: GO:0005584
+xref: MESH:D024042
 xref: NCIT:C124129
 xref: RE:R-HSA-2089970
 xref: RE:R-HSA-2396039
@@ -2207,6 +2274,7 @@ synonym: "collagen type IV" EXACT []
 xref: BEL:"COL4 Family"
 xref: GO:0005587
 xref: IP:IPR001442
+xref: MESH:D024141
 xref: NCIT:C16448
 xref: RE:R-HSA-2127389
 is_a: FPLX:root
@@ -2225,6 +2293,7 @@ synonym: "type V collagen" EXACT []
 synonym: "type-V collagen" EXACT []
 xref: BEL:"COL5 Family"
 xref: GO:0005588
+xref: MESH:D024062
 xref: RE:R-HSA-2127310
 xref: RE:R-HSA-2127422
 is_a: FPLX:root
@@ -2252,19 +2321,24 @@ synonym: "cytochrome c oxidase" EXACT []
 xref: BEL:"Cytochrome C Oxidase Complex Muscle"
 xref: BEL:"Cytochrome C Oxidase Complex Non Muscle"
 xref: ECCODE:1.9.3.1
+xref: GO:0005751
+xref: HGNC_GROUP:643
+xref: MESH:D003576
+xref: NCIT:C26034
 is_a: FPLX:root
 has_part: HGNC:COX5A
 has_part: HGNC:COX5B
+has_part: HGNC:COX6C
+has_part: HGNC:COX7C
 has_part: FPLX:COX4
 has_part: FPLX:COX6A
 has_part: FPLX:COX6B
 has_part: FPLX:COX7A
 has_part: FPLX:COX7B
 has_part: FPLX:COX8
-has_part: HGNC:COX10
-has_part: HGNC:COX11
-has_part: HGNC:COX15
-has_part: HGNC:COX17
+has_part: HGNC:MT-CO1
+has_part: HGNC:MT-CO2
+has_part: HGNC:MT-CO3
 
 [Term]
 id: FPLX:COX4
@@ -2341,6 +2415,7 @@ inverse_is_a: HGNC:COX8C
 id: FPLX:Creatine_kinase
 name: Creatine-kinase
 synonym: "creatine kinase" EXACT []
+xref: MESH:D003402
 is_a: FPLX:root
 inverse_is_a: HGNC:CKB
 inverse_is_a: HGNC:CKBE
@@ -2356,6 +2431,7 @@ synonym: "CREB family" EXACT []
 synonym: "CREB" EXACT []
 xref: BEL:"CREB Family"
 xref: MEDSCAN:urn:agi-aopfc:0000094
+xref: MESH:D017362
 xref: NCIT:C17286
 is_a: FPLX:root
 inverse_is_a: HGNC:CREB1
@@ -2393,6 +2469,7 @@ synonym: "CRSP" EXACT []
 synonym: "CRSP/Med complex" EXACT []
 synonym: "transcriptional cofactor complex CRSP" EXACT []
 xref: BEL:"CRSP Complex"
+xref: MESH:C117286
 xref: NCIT:C28687
 is_a: FPLX:root
 has_part: HGNC:MED1
@@ -2416,6 +2493,7 @@ inverse_is_a: HGNC:CRTC3
 id: FPLX:CSNK
 name: CSNK
 synonym: "casein kinase" EXACT []
+xref: MESH:D047388
 is_a: FPLX:root
 inverse_is_a: FPLX:CSNK1
 inverse_is_a: FPLX:CK2
@@ -2434,6 +2512,7 @@ synonym: "CSNK1" EXACT []
 synonym: "CK-I" EXACT []
 xref: BEL:"CSNK1 Family"
 xref: MEDSCAN:urn:agi-protfc:casein%20kinase%20I
+xref: MESH:D047389
 xref: NEXTPROT-FAMILY:03083
 is_a: FPLX:CSNK
 inverse_is_a: HGNC:CSNK1A1
@@ -2468,6 +2547,7 @@ synonym: "catenin α" EXACT []
 synonym: "α catenin" EXACT []
 synonym: "α-catenin" EXACT []
 xref: BEL:"CTNNA Family"
+xref: MESH:D051178
 is_a: FPLX:root
 inverse_is_a: HGNC:CTNNA1
 inverse_is_a: HGNC:CTNNA2
@@ -2482,6 +2562,7 @@ synonym: "cullins" EXACT []
 xref: BEL:"CUL Family"
 xref: MEDSCAN:urn:agi-complex:prophash-c3bac0781a4430da4cf6721b8f7537d9
 xref: MEDSCAN:urn:agi-protfc:cullin
+xref: MESH:D044842
 xref: NEXTPROT-FAMILY:00787
 xref: XFAM:PF00888
 is_a: FPLX:root
@@ -2534,6 +2615,7 @@ synonym: "Cyclin" EXACT []
 synonym: "cyclin" EXACT []
 synonym: "cyclins" EXACT []
 xref: MEDSCAN:urn:agi-protfc:cyclin
+xref: MESH:D016213
 xref: NCIT:C17349
 xref: NEXTPROT-FAMILY:00815
 is_a: FPLX:root
@@ -2569,6 +2651,7 @@ synonym: "Cyclin A" EXACT []
 synonym: "cyclin A" EXACT []
 synonym: "Cyclin-A" EXACT []
 xref: BEL:"CCNA Family"
+xref: MESH:D019925
 xref: RE:R-HSA-170089
 xref: RE:R-HSA-174074
 xref: RE:R-HSA-5696998
@@ -2585,6 +2668,7 @@ synonym: "Cyclin D" EXACT []
 synonym: "D-type cyclins" EXACT []
 xref: BEL:"CCND Family"
 xref: IP:IPR015451
+xref: MESH:D056741
 xref: NCIT:C104194
 xref: NEXTPROT-FAMILY:00818
 xref: RE:R-HSA-182582
@@ -2601,6 +2685,7 @@ name: Cyclin-E
 synonym: "cyclin E" EXACT []
 xref: BEL:"CCNE Family"
 xref: IP:IPR028858
+xref: MESH:D019927
 xref: NCIT:C104197
 xref: NEXTPROT-FAMILY:00819
 xref: RE:R-HSA-157462
@@ -2618,6 +2703,7 @@ synonym: "cyclophilin" EXACT []
 synonym: "cyclophilins" EXACT []
 xref: BEL:"Cyclophilin Family"
 xref: MEDSCAN:urn:agi-protfc:cyclophilins
+xref: MESH:D021983
 is_a: FPLX:root
 inverse_is_a: HGNC:CWC27
 inverse_is_a: HGNC:PPIA
@@ -2666,6 +2752,7 @@ synonym: "CYP450 enzymes" EXACT []
 synonym: "CYP isoforms" EXACT []
 synonym: "CYP isozymes" EXACT []
 xref: HGNC_GROUP:862
+xref: MESH:D003577
 is_a: FPLX:root
 inverse_is_a: FPLX:CYP1
 inverse_is_a: FPLX:CYP11
@@ -2694,6 +2781,7 @@ synonym: "CYP1" EXACT []
 synonym: "CYP1s" EXACT []
 synonym: "Cyp1" EXACT []
 xref: HGNC_GROUP:1000
+xref: MESH:D000072461
 is_a: FPLX:CYP
 inverse_is_a: HGNC:CYP1A1
 inverse_is_a: HGNC:CYP1A2
@@ -2703,6 +2791,7 @@ inverse_is_a: HGNC:CYP1B1
 id: FPLX:CYP11
 name: CYP11
 xref: HGNC_GROUP:1007
+xref: MESH:D000072476
 is_a: FPLX:CYP
 inverse_is_a: HGNC:CYP11A1
 inverse_is_a: HGNC:CYP11B1
@@ -2713,6 +2802,7 @@ id: FPLX:CYP2
 name: CYP2
 synonym: "CYP2" EXACT []
 xref: HGNC_GROUP:1001
+xref: MESH:D000072467
 is_a: FPLX:CYP
 inverse_is_a: HGNC:CYP2A13
 inverse_is_a: HGNC:CYP2A6
@@ -2737,6 +2827,7 @@ id: FPLX:CYP26
 name: CYP26
 synonym: "Cyp26" EXACT []
 xref: HGNC_GROUP:1013
+xref: MESH:D000072500
 is_a: FPLX:CYP
 inverse_is_a: HGNC:CYP26A1
 inverse_is_a: HGNC:CYP26B1
@@ -2746,6 +2837,7 @@ inverse_is_a: HGNC:CYP26C1
 id: FPLX:CYP27
 name: CYP27
 xref: HGNC_GROUP:1014
+xref: MESH:D000072501
 is_a: FPLX:CYP
 inverse_is_a: HGNC:CYP27A1
 inverse_is_a: HGNC:CYP27B1
@@ -2759,6 +2851,7 @@ synonym: "CYP3A enzymes" EXACT []
 synonym: "CYP3A protein" EXACT []
 synonym: "Cyp3a" EXACT []
 xref: HGNC_GROUP:1002
+xref: MESH:D000072469
 is_a: FPLX:CYP
 inverse_is_a: HGNC:CYP3A4
 inverse_is_a: HGNC:CYP3A43
@@ -2770,6 +2863,7 @@ id: FPLX:CYP4
 name: CYP4
 synonym: "CYP4" EXACT []
 xref: HGNC_GROUP:1003
+xref: MESH:D000072470
 is_a: FPLX:CYP
 inverse_is_a: HGNC:CYP4A11
 inverse_is_a: HGNC:CYP4A22
@@ -2788,6 +2882,7 @@ inverse_is_a: HGNC:CYP4Z1
 id: FPLX:CYP7
 name: CYP7
 xref: HGNC_GROUP:1005
+xref: MESH:D000072474
 is_a: FPLX:CYP
 inverse_is_a: HGNC:CYP7A1
 inverse_is_a: HGNC:CYP7B1
@@ -2796,6 +2891,7 @@ inverse_is_a: HGNC:CYP7B1
 id: FPLX:CYP8
 name: CYP8
 xref: HGNC_GROUP:1006
+xref: MESH:D000072475
 is_a: FPLX:CYP
 inverse_is_a: HGNC:CYP8B1
 inverse_is_a: HGNC:PTGIS
@@ -2828,6 +2924,7 @@ name: Cytoplasmic-dynein
 synonym: "cytoplasmic dynein" EXACT []
 xref: BEL:"Cytoplasmic Dynein Complex"
 xref: GO:0005868
+xref: MESH:D056445
 is_a: FPLX:root
 has_part: HGNC:DYNC1H1
 has_part: HGNC:DYNC1I1
@@ -2844,6 +2941,7 @@ name: DAPK
 synonym: "DAPK" EXACT []
 synonym: "DAPk" EXACT []
 xref: HGNC_GROUP:1021
+xref: MESH:D064550
 is_a: FPLX:root
 inverse_is_a: HGNC:DAPK1
 inverse_is_a: HGNC:DAPK2
@@ -2859,6 +2957,7 @@ synonym: "discoidin domain receptors" EXACT []
 synonym: "discoidin domain-containing receptor" EXACT []
 xref: BEL:"DDR Family"
 xref: MEDSCAN:urn:agi-aopfc:0000252
+xref: MESH:D000070818
 xref: XFAM:PF08841
 is_a: FPLX:root
 inverse_is_a: HGNC:DDR1
@@ -2870,6 +2969,7 @@ name: Death-receptor
 synonym: "death receptor" EXACT []
 synonym: "death receptors" EXACT []
 xref: GO:0005035
+xref: MESH:D053218
 is_a: FPLX:root
 inverse_is_a: HGNC:TNFRSF1A
 inverse_is_a: HGNC:TNFRSF1B
@@ -2883,6 +2983,7 @@ inverse_is_a: HGNC:FAS
 id: FPLX:Deoxyribonucleoside_kinases
 name: Deoxyribonucleoside-kinases
 xref: HGNC_GROUP:1699
+xref: MESH:C020018
 is_a: FPLX:root
 inverse_is_a: HGNC:DCK
 inverse_is_a: HGNC:DGUOK
@@ -2896,6 +2997,7 @@ synonym: "desmogleins" EXACT []
 xref: BEL:"Desmoglein Family"
 xref: IP:IPR009123
 xref: MEDSCAN:urn:agi-protfc:desmoglein
+xref: MESH:D051182
 xref: RE:R-HSA-6814694
 xref: RE:R-HSA-8847714
 is_a: FPLX:root
@@ -2943,6 +3045,7 @@ synonym: "Dgk" EXACT []
 xref: BEL:"DGK Family"
 xref: ECCODE:2.7.1.107
 xref: IP:IPR000756
+xref: MESH:D019852
 xref: RE:R-HSA-426070
 is_a: FPLX:root
 inverse_is_a: HGNC:DGKA
@@ -2967,6 +3070,7 @@ synonym: "Pol δ" EXACT []
 synonym: "pol δ" EXACT []
 xref: BEL:"DNA Polymerase delta Complex"
 xref: GO:0043625
+xref: MESH:D004258
 xref: NCIT:C16511
 xref: RE:R-HSA-68450
 is_a: FPLX:root
@@ -2981,6 +3085,7 @@ name: DNM
 synonym: "dynamin family" EXACT []
 synonym: "dynamin" EXACT []
 xref: BEL:"DNM Family"
+xref: MESH:D034281
 xref: RE:R-HSA-2213185
 xref: RE:R-HSA-446847
 xref: RE:R-HSA-8868235
@@ -2998,6 +3103,7 @@ synonym: "dopamine receptors" EXACT []
 xref: BEL:"DRD Family"
 xref: GO:0004952
 xref: IP:IPR000929
+xref: MESH:D011954
 xref: NCIT:C17066
 is_a: FPLX:root
 inverse_is_a: HGNC:DRD1
@@ -3010,6 +3116,7 @@ inverse_is_a: HGNC:DRD5
 id: FPLX:DUSP
 name: DUSP
 synonym: "DUSP" EXACT []
+xref: MESH:D054637
 is_a: FPLX:root
 inverse_is_a: HGNC:DUSP1
 inverse_is_a: HGNC:DUSP2
@@ -3024,6 +3131,7 @@ name: DVL
 synonym: "dishevelled" EXACT []
 synonym: "Dvl" EXACT []
 xref: BEL:"DVL Family"
+xref: MESH:D000072261
 xref: XFAM:PF02377
 xref: XFAM:PF08137
 xref: RE:R-HSA-1504201
@@ -3059,6 +3167,7 @@ xref: BEL:"E2F Family"
 xref: IP:IPR015633
 xref: MEDSCAN:urn:agi-aopfc:0000099
 xref: MEDSCAN:urn:agi-complex:prophash-40bc2e4348830d6f7bdacd573fd7c388
+xref: MESH:D050684
 is_a: FPLX:root
 inverse_is_a: HGNC:E2F1
 inverse_is_a: HGNC:E2F2
@@ -3074,6 +3183,7 @@ id: FPLX:E3_Ub_ligase
 name: E3-Ub-ligase
 synonym: "E3 ubiquitin ligase" EXACT []
 synonym: "E3" EXACT []
+xref: MESH:D044767
 xref: XFAM:PF12483
 xref: RE:R-HSA-976075
 is_a: FPLX:root
@@ -3089,6 +3199,7 @@ xref: IP:IPR001928
 xref: IP:IPR019764
 xref: IP:IPR020475
 xref: MEDSCAN:urn:agi-protfc:endothelin
+xref: MESH:D016232
 xref: XFAM:PF00322
 xref: RE:R-HSA-388544
 is_a: FPLX:Neuropeptides
@@ -3103,6 +3214,7 @@ synonym: "endothelin receptor" EXACT []
 synonym: "endothelin receptors" EXACT []
 synonym: "endothelin-1 receptor" EXACT []
 synonym: "endothelin-1 receptors" EXACT []
+xref: MESH:D017466
 is_a: FPLX:root
 inverse_is_a: HGNC:EDNRA
 inverse_is_a: HGNC:EDNRB
@@ -3113,6 +3225,7 @@ name: EFN
 synonym: "ephrin" EXACT []
 synonym: "ephrins" EXACT []
 xref: HGNC_GROUP:546
+xref: MESH:D036342
 is_a: FPLX:root
 inverse_is_a: HGNC:EFNA1
 inverse_is_a: HGNC:EFNA2
@@ -3130,6 +3243,7 @@ synonym: "EGFR ligand" EXACT []
 synonym: "EGFR ligands" EXACT []
 xref: BEL:"EGFR Ligand Family"
 xref: GO:0005154
+xref: MESH:D066255
 is_a: FPLX:root
 inverse_is_a: HGNC:AREG
 inverse_is_a: HGNC:EGF
@@ -3145,6 +3259,7 @@ name: EGR
 synonym: "early growth response proteins" EXACT []
 synonym: "EGR" EXACT []
 xref: BEL:"EGR Family"
+xref: MESH:D051765
 is_a: FPLX:root
 inverse_is_a: HGNC:EGR1
 inverse_is_a: HGNC:EGR2
@@ -3157,6 +3272,7 @@ name: EIF2B
 synonym: "EIF2B" EXACT []
 synonym: "eIF2B" EXACT []
 xref: BEL:"EIF2B Complex"
+xref: MESH:D020717
 xref: NCIT:C18162
 xref: RE:R-HSA-72526
 is_a: FPLX:root
@@ -3169,6 +3285,7 @@ has_part: HGNC:EIF2B5
 [Term]
 id: FPLX:EIF4
 name: EIF4
+xref: MESH:D039562
 is_a: FPLX:root
 has_part: FPLX:EIF4A
 has_part: FPLX:EIF4E
@@ -3180,6 +3297,7 @@ name: EIF4A
 synonym: "eIF4A" EXACT []
 synonym: "eukaryotic initiation factor-4A" EXACT []
 xref: BEL:"EIF4A Family"
+xref: MESH:D039601
 xref: NEXTPROT-FAMILY:00921
 xref: RE:R-HSA-429842
 part_of: FPLX:EIF4
@@ -3190,6 +3308,7 @@ inverse_is_a: HGNC:EIF4A3
 [Term]
 id: FPLX:EIF4E
 name: EIF4E
+xref: MESH:D039561
 part_of: FPLX:EIF4
 inverse_is_a: HGNC:EIF4E
 inverse_is_a: HGNC:EIF4E2
@@ -3212,6 +3331,7 @@ inverse_is_a: HGNC:EIF4EBP3
 id: FPLX:EIF4G
 name: EIF4G
 synonym: "eIF4G" EXACT []
+xref: MESH:D039603
 xref: XFAM:PF02854
 xref: RE:R-HSA-1678828
 part_of: FPLX:EIF4
@@ -3244,6 +3364,7 @@ xref: BEL:"ENO Family"
 xref: IP:IPR000941
 xref: IP:IPR020810
 xref: IP:IPR020811
+xref: MESH:D010751
 xref: NEXTPROT-FAMILY:01112
 is_a: FPLX:root
 inverse_is_a: HGNC:ENO1
@@ -3297,6 +3418,7 @@ xref: IP:IPR001090
 xref: IP:IPR001426
 xref: IP:IPR016257
 xref: IP:IPR027936
+xref: MESH:D036081
 xref: NCIT:C18606
 xref: NEXTPROT-FAMILY:03124
 is_a: FPLX:root
@@ -3323,6 +3445,7 @@ synonym: "ErbB" EXACT []
 synonym: "erbB" EXACT []
 xref: BEL:"EGFR/ERBB Family"
 xref: IP:IPR016245
+xref: MESH:D066246
 xref: NCIT:C17763
 is_a: FPLX:root
 inverse_is_a: HGNC:EGFR
@@ -3359,6 +3482,7 @@ xref: BEL:"MAPK Erk1/2 Family"
 xref: BEL:"MAPK Erk1/3 Family"
 xref: IP:IPR008349
 xref: MEDSCAN:urn:agi-aopfc:0000458
+xref: MESH:D048049
 xref: NCIT:C16376
 xref: NCIT:C26360
 xref: RE:R-HSA-1268261
@@ -3384,6 +3508,7 @@ synonym: "ER" EXACT []
 synonym: "ESR" EXACT []
 synonym: "hER" EXACT []
 xref: BEL:"ESR Family"
+xref: MESH:D011960
 is_a: FPLX:root
 inverse_is_a: HGNC:ESR1
 inverse_is_a: HGNC:ESR2
@@ -3503,35 +3628,6 @@ has_part: HGNC:NDUFS6
 has_part: HGNC:NDUFV3
 
 [Term]
-id: FPLX:ETC_complex_IV
-name: ETC-complex-IV
-xref: ECCODE:1.9.3.1
-xref: GO:0005751
-xref: HGNC_GROUP:643
-xref: MESH:D003576
-xref: NCIT:C26034
-is_a: FPLX:root
-has_part: HGNC:COX4I1
-has_part: HGNC:COX4I2
-has_part: HGNC:COX5A
-has_part: HGNC:COX5B
-has_part: HGNC:COX6A1
-has_part: HGNC:COX6A2
-has_part: HGNC:COX6B1
-has_part: HGNC:COX6B2
-has_part: HGNC:COX6C
-has_part: HGNC:COX7A1
-has_part: HGNC:COX7A2
-has_part: HGNC:COX7B
-has_part: HGNC:COX7B2
-has_part: HGNC:COX7C
-has_part: HGNC:COX8A
-has_part: HGNC:COX8C
-has_part: HGNC:MT-CO1
-has_part: HGNC:MT-CO2
-has_part: HGNC:MT-CO3
-
-[Term]
 id: FPLX:ETC_complex_V
 name: ETC-complex-V
 xref: ECCODE:3.6.3.14
@@ -3543,6 +3639,7 @@ is_a: FPLX:root
 [Term]
 id: FPLX:ETNK
 name: ETNK
+xref: MESH:C020125
 is_a: FPLX:root
 inverse_is_a: HGNC:ETNK1
 inverse_is_a: HGNC:ETNK2
@@ -3553,6 +3650,7 @@ name: ETS
 synonym: "ETS" EXACT []
 xref: BEL:"ETS Family"
 xref: IP:IPR016311
+xref: MESH:D050783
 xref: XFAM:PF00178
 xref: RE:R-HSA-3132719
 xref: RE:R-HSA-3132724
@@ -3613,6 +3711,7 @@ id: FPLX:FANC
 name: FANC
 synonym: "FANC proteins" EXACT []
 synonym: "FANC" EXACT []
+xref: MESH:D051856
 is_a: FPLX:root
 inverse_is_a: HGNC:FANCA
 inverse_is_a: HGNC:FANCB
@@ -3642,6 +3741,7 @@ synonym: "FGF" EXACT []
 xref: BEL:"FGF Family"
 xref: GO:0005162
 xref: IP:IPR002209
+xref: MESH:D005346
 xref: XFAM:PF00167
 xref: SIGNOR:SIGNOR-PF8
 is_a: FPLX:root
@@ -3675,6 +3775,7 @@ synonym: "FGFR" EXACT []
 xref: BEL:"FGFR Family"
 xref: GO:0005007
 xref: IP:IPR016248
+xref: MESH:D017468
 xref: NCIT:C17297
 xref: SIGNOR:SIGNOR-PF23
 is_a: FPLX:root
@@ -3701,6 +3802,7 @@ synonym: "fibrinogen" EXACT []
 xref: BEL:"Fibrinogen Complex"
 xref: GO:0005577
 xref: IP:IPR012290
+xref: MESH:D005340
 xref: RE:R-HSA-114617
 xref: RE:R-HSA-114618
 xref: RE:R-HSA-139933
@@ -3721,6 +3823,7 @@ xref: BEL:"FLOT Family"
 xref: IP:IPR027705
 xref: IP:IPR031905
 xref: MEDSCAN:urn:agi-protfc:flotillin
+xref: MESH:C106354
 xref: XFAM:PF15975
 xref: RE:R-HSA-8849894
 is_a: FPLX:root
@@ -3748,6 +3851,7 @@ synonym: "alpha5beta1-integrin" EXACT []
 synonym: "fibronectin receptor" EXACT []
 synonym: "integrin α5β1" EXACT []
 synonym: "α5β1 integrin" EXACT []
+xref: MESH:D039081
 is_a: FPLX:Integrins
 has_part: HGNC:ITGA5
 has_part: HGNC:ITGB1
@@ -3759,6 +3863,7 @@ synonym: "farnesyltransferase" EXACT []
 synonym: "FTase" EXACT []
 synonym: "protein farnesyltransferase" EXACT []
 xref: ECCODE:2.5.1.58
+xref: MESH:D051231
 xref: RE:R-HSA-2530496
 is_a: FPLX:root
 has_part: HGNC:FNTA
@@ -3779,6 +3884,7 @@ inverse_is_a: HGNC:FOSL2
 [Term]
 id: FPLX:FOX
 name: FOX
+xref: MESH:D051858
 is_a: FPLX:root
 inverse_is_a: FPLX:FOXA
 inverse_is_a: FPLX:FOXB
@@ -3970,6 +4076,7 @@ inverse_is_a: HGNC:FOXR2
 id: FPLX:FPR
 name: FPR
 xref: HGNC_GROUP:198
+xref: MESH:D044042
 is_a: FPLX:root
 inverse_is_a: HGNC:FPR1
 inverse_is_a: HGNC:FPR2
@@ -3982,6 +4089,7 @@ synonym: "follicle-stimulating hormone" EXACT []
 synonym: "FSH" EXACT []
 xref: BEL:"Follicle Stimulating Hormone Complex"
 xref: GO:0016914
+xref: MESH:D043373
 xref: RE:R-HSA-378947
 is_a: FPLX:root
 has_part: HGNC:CGA
@@ -3995,6 +4103,7 @@ synonym: "Fucosyltransferases" EXACT []
 synonym: "fucosyltransferase" EXACT []
 synonym: "fucosyltransferases" EXACT []
 synonym: "FUT" EXACT []
+xref: MESH:D005647
 is_a: FPLX:Glycosyltransferase
 inverse_is_a: HGNC:FUT1
 inverse_is_a: HGNC:FUT2
@@ -4018,6 +4127,7 @@ synonym: "FZD" EXACT []
 xref: BEL:"FZD Family"
 xref: MEDSCAN:urn:agi-aopfc:0000197
 xref: MEDSCAN:urn:agi-complex:prophash-047b61fab6d7e7445346cc84dafcb267
+xref: MESH:D051157
 xref: XFAM:PF01534
 xref: RE:R-HSA-517388
 xref: SIGNOR:SIGNOR-PF11
@@ -4056,6 +4166,7 @@ synonym: "Ga12" EXACT []
 synonym: "Galpha12" EXACT []
 synonym: "Gα12" EXACT []
 xref: IP:IPR000469
+xref: MESH:D044365
 xref: RE:R-HSA-114525
 xref: RE:R-HSA-418570
 xref: RE:R-HSA-418572
@@ -4068,6 +4179,7 @@ inverse_is_a: HGNC:GNA13
 id: FPLX:GABBR
 name: GABBR
 xref: HGNC_GROUP:280
+xref: MESH:D018080
 is_a: FPLX:GPCR_C
 inverse_is_a: HGNC:GABBR1
 inverse_is_a: HGNC:GABBR2
@@ -4083,6 +4195,7 @@ synonym: "γ-aminobutyric-acid A receptor" EXACT []
 xref: BEL:"GABR Family"
 xref: GO:0004890
 xref: HGNC_GROUP:563
+xref: MESH:D011963
 is_a: FPLX:Ligand_gated_ion_channels
 inverse_is_a: HGNC:GABRA1
 inverse_is_a: HGNC:GABRA2
@@ -4152,6 +4265,7 @@ synonym: "G protein alpha" EXACT []
 synonym: "G-protein alpha" EXACT []
 synonym: "Galpha" EXACT []
 synonym: "G alpha" EXACT []
+xref: MESH:D044385
 xref: XFAM:PF00503
 is_a: FPLX:root
 inverse_is_a: FPLX:G_i_alpha
@@ -4181,6 +4295,7 @@ synonym: "GTPase-activating proteins" EXACT []
 synonym: "GTPase-activating protein" EXACT []
 synonym: "GTPase activating protein" EXACT []
 xref: GO:0005096
+xref: MESH:D020690
 xref: NCIT:C17298
 is_a: FPLX:root
 
@@ -4210,6 +4325,7 @@ synonym: "GATA family" EXACT []
 synonym: "GATA" EXACT []
 xref: BEL:"GATA Family"
 xref: MEDSCAN:urn:agi-aopfc:0000105
+xref: MESH:D050980
 xref: XFAM:PF00320
 xref: RE:R-HSA-996770
 is_a: FPLX:root
@@ -4231,6 +4347,7 @@ synonym: "Gbeta" EXACT []
 synonym: "Gβ" EXACT []
 xref: BEL:"GNB Family"
 xref: IP:IPR016346
+xref: MESH:D044387
 xref: RE:R-HSA-167409
 xref: RE:R-HSA-400093
 xref: RE:R-HSA-6814207
@@ -4280,6 +4397,7 @@ synonym: "G protein γ subunit" EXACT []
 synonym: "G protein γ" EXACT []
 xref: BEL:"GNG Family"
 xref: IP:IPR001770
+xref: MESH:D044388
 xref: NEXTPROT-FAMILY:01400
 xref: RE:R-HSA-167442
 xref: RE:R-HSA-400062
@@ -4326,6 +4444,7 @@ synonym: "Gi α subunit" EXACT []
 synonym: "Gi α" EXACT []
 synonym: "Gαi" EXACT []
 xref: IP:IPR001408
+xref: MESH:D019206
 xref: NCIT:C19275
 xref: RE:R-HSA-111864
 xref: RE:R-HSA-167410
@@ -4350,6 +4469,7 @@ synonym: "Connexins" EXACT []
 synonym: "connexin" EXACT []
 synonym: "connexins" EXACT []
 xref: HGNC_GROUP:314
+xref: MESH:D017630
 is_a: FPLX:root
 inverse_is_a: HGNC:GJA1
 inverse_is_a: HGNC:GJA10
@@ -4377,6 +4497,7 @@ inverse_is_a: HGNC:GJE1
 id: FPLX:GLRA_GLRB
 name: GLRA-GLRB
 xref: HGNC_GROUP:868
+xref: MESH:D018009
 is_a: FPLX:Ligand_gated_ion_channels
 inverse_is_a: HGNC:GLRA1
 inverse_is_a: HGNC:GLRA2
@@ -4440,6 +4561,7 @@ synonym: "GPCRs" EXACT []
 xref: MEDSCAN:urn:agi-aopfc:0000311
 xref: MEDSCAN:urn:agi-complex:prophash-763d31b31e177311583df0ac1ea015da
 xref: MEDSCAN:urn:agi-protfc:class%20c%20orphan%20receptor
+xref: MESH:D043562
 xref: NCIT:C18239
 xref: SIGNOR:SIGNOR-PF33
 is_a: FPLX:root
@@ -4480,6 +4602,7 @@ synonym: "GPIb-IX-V" EXACT []
 synonym: "GpIb-V-IX" EXACT []
 xref: BEL:"Ib-V-IX Complex"
 xref: GO:1990779
+xref: MESH:D019038
 xref: NCIT:C126122
 xref: RE:R-HSA-114668
 is_a: FPLX:root
@@ -4509,6 +4632,7 @@ id: FPLX:G_protein
 name: G-protein
 synonym: "G protein" EXACT []
 synonym: "G proteins" EXACT []
+xref: MESH:D019204
 xref: NCIT:C17458
 is_a: FPLX:root
 inverse_is_a: FPLX:G_i
@@ -4524,6 +4648,7 @@ xref: BEL:"GPX Family"
 xref: ECCODE:1.11.1.9
 xref: IP:IPR000889
 xref: IP:IPR029760
+xref: MESH:D005979
 xref: NEXTPROT-FAMILY:01553
 xref: XFAM:PF00255
 is_a: FPLX:root
@@ -4568,6 +4693,7 @@ synonym: "Gq α subunit" EXACT []
 synonym: "Gq α" EXACT []
 synonym: "Gαq" EXACT []
 xref: IP:IPR000654
+xref: MESH:D043802
 xref: RE:R-HSA-114534
 xref: RE:R-HSA-114556
 xref: RE:R-HSA-374848
@@ -4587,6 +4713,7 @@ inverse_is_a: HGNC:GNA15
 id: FPLX:GRI
 name: GRI
 xref: HGNC_GROUP:284
+xref: MESH:D058468
 is_a: FPLX:Ligand_gated_ion_channels
 inverse_is_a: FPLX:GRIA
 inverse_is_a: FPLX:GRID
@@ -4605,6 +4732,7 @@ synonym: "AMPARs" EXACT []
 xref: BEL:"GRIA Family"
 xref: GO:0032281
 xref: HGNC_GROUP:1200
+xref: MESH:D018091
 xref: RE:R-HSA-399713
 xref: RE:R-HSA-416323
 xref: RE:R-HSA-420974
@@ -4627,6 +4755,7 @@ inverse_is_a: HGNC:GRID2
 id: FPLX:GRIN
 name: GRIN
 xref: HGNC_GROUP:1201
+xref: MESH:D016194
 is_a: FPLX:GRI
 inverse_is_a: HGNC:GRIN1
 inverse_is_a: HGNC:GRIN2A
@@ -4646,6 +4775,7 @@ synonym: "GRKs" EXACT []
 xref: BEL:"GRK Family"
 xref: ECCODE:2.7.11.16
 xref: IP:IPR000239
+xref: MESH:D054768
 xref: NCIT:C26233
 is_a: FPLX:root
 inverse_is_a: FPLX:ADRBK
@@ -4665,6 +4795,7 @@ synonym: "mGluRs" EXACT []
 xref: BEL:"GRM Family"
 xref: IP:IPR000162
 xref: MEDSCAN:urn:agi-protfc:mglur
+xref: MESH:D018094
 xref: RE:R-HSA-420516
 xref: RE:R-HSA-420519
 is_a: FPLX:GPCR_C
@@ -4706,6 +4837,7 @@ synonym: "Gs alpha" EXACT []
 synonym: "Gs α subunit" EXACT []
 synonym: "Gs α" EXACT []
 synonym: "GαS" EXACT []
+xref: MESH:D019205
 is_a: FPLX:G_alpha
 part_of: FPLX:G_s
 inverse_is_a: HGNC:GNAS
@@ -4718,6 +4850,7 @@ synonym: "GSK-3" EXACT []
 synonym: "GSK3" EXACT []
 xref: BEL:"GSK3 Family"
 xref: MEDSCAN:urn:agi-aopfc:0000434
+xref: MESH:D038362
 xref: NEXTPROT-FAMILY:03087
 xref: RE:R-HSA-198358
 xref: RE:R-HSA-198373
@@ -4732,6 +4865,7 @@ synonym: "glutathione S-transferase" EXACT []
 synonym: "GST" EXACT []
 synonym: "GSTs" EXACT []
 xref: BEL:"GST Family"
+xref: MESH:D005982
 xref: NCIT:C16641
 xref: NEXTPROT-FAMILY:01669
 is_a: FPLX:root
@@ -4805,6 +4939,7 @@ synonym: "Sialytransferase" EXACT []
 synonym: "Sialytransferases" EXACT []
 synonym: "sialytransferase" EXACT []
 synonym: "sialytransferases" EXACT []
+xref: MESH:D012799
 is_a: FPLX:Glycosyltransferase
 inverse_is_a: HGNC:ST3GAL1
 inverse_is_a: HGNC:ST3GAL2
@@ -4871,6 +5006,7 @@ name: GTPase
 synonym: "GTPase" EXACT []
 xref: ECCODE:3.6.5.-
 xref: MEDSCAN:urn:agi-complex:prophash-e9fbfd73e486bda4d99b348f72bb4196
+xref: MESH:D020558
 xref: NCIT:C16650
 is_a: FPLX:root
 
@@ -4881,6 +5017,7 @@ synonym: "guanylate cyclase" EXACT []
 synonym: "guanylyl cyclase" EXACT []
 xref: BEL:"GUCY Family"
 xref: ECCODE:4.6.1.2
+xref: MESH:D006162
 xref: NCIT:C16653
 is_a: FPLX:root
 inverse_is_a: HGNC:GUCY2C
@@ -4909,6 +5046,7 @@ name: GYS
 synonym: "glycogen synthase" EXACT []
 xref: BEL:"GYS Family"
 xref: IP:IPR008631
+xref: MESH:D006006
 is_a: FPLX:root
 inverse_is_a: HGNC:GYS1
 inverse_is_a: HGNC:GYS2
@@ -4917,6 +5055,7 @@ inverse_is_a: HGNC:GYS2
 id: FPLX:hCG
 name: hCG
 synonym: "hCG" EXACT []
+xref: MESH:D006063
 xref: NCIT:C2275
 xref: RE:R-HSA-378941
 is_a: FPLX:root
@@ -4933,6 +5072,7 @@ xref: BEL:"HDAC Family"
 xref: ECCODE:3.5.1.98
 xref: IP:IPR003084
 xref: MEDSCAN:urn:agi-complex:prophash-7e8823afb9ca7870b95633dcb782500b
+xref: MESH:D006655
 xref: NCIT:C16682
 is_a: FPLX:root
 inverse_is_a: FPLX:HDAC_I
@@ -4976,6 +5116,7 @@ synonym: "class III HDACs" EXACT []
 synonym: "class III histone deacetylases" EXACT []
 xref: IP:IPR003000
 xref: IP:IPR026590
+xref: MESH:D056545
 is_a: FPLX:HDAC
 inverse_is_a: HGNC:SIRT1
 inverse_is_a: HGNC:SIRT2
@@ -5001,6 +5142,7 @@ synonym: "HDL" EXACT []
 synonym: "High-density lipoproteins" EXACT []
 xref: BEL:"HDL Complex"
 xref: GO:0034364
+xref: MESH:D008075
 xref: NCIT:C25186
 is_a: FPLX:root
 has_part: HGNC:ALB
@@ -5026,6 +5168,7 @@ xref: IP:IPR003587
 xref: IP:IPR009045
 xref: IP:IPR028992
 xref: MEDSCAN:urn:agi-aopfc:0000587
+xref: MESH:D053823
 xref: NCIT:C120493
 xref: NEXTPROT-FAMILY:01729
 xref: RE:R-HSA-5358286
@@ -5044,6 +5187,7 @@ name: Hemoglobin
 synonym: "hemoglobin" EXACT []
 xref: BEL:"Hemoglobin Complex"
 xref: MEDSCAN:urn:agi-protfc:hemoglobin
+xref: MESH:D006454
 xref: NCIT:C16676
 is_a: FPLX:root
 has_part: HGNC:HBA1
@@ -5092,6 +5236,7 @@ name: HIF1
 synonym: "HIF-1" EXACT []
 xref: MEDSCAN:urn:agi-complex:HIF-1
 xref: MEDSCAN:urn:agi-complex:prophash-44f61960049704dc2afb23ff7c324b85
+xref: MESH:D051793
 xref: NCIT:C17690
 xref: XFAM:PF11413
 is_a: FPLX:root
@@ -5257,6 +5402,7 @@ id: FPLX:HLA_DR
 name: HLA-DR
 synonym: "HLA-DR" EXACT []
 xref: BEL:"HLA-DR Family"
+xref: MESH:D006684
 xref: NCIT:C16692
 is_a: FPLX:root
 inverse_is_a: HGNC:HLA-DRA
@@ -5276,6 +5422,7 @@ xref: IP:IPR002051
 xref: IP:IPR016053
 xref: IP:IPR016084
 xref: IP:IPR018207
+xref: MESH:D006419
 xref: RE:R-HSA-189382
 is_a: FPLX:root
 inverse_is_a: HGNC:HMOX1
@@ -5287,6 +5434,7 @@ name: HSP90
 synonym: "HSP90" EXACT []
 synonym: "Hsp90" EXACT []
 xref: BEL:"HSP90 Family"
+xref: MESH:D018841
 xref: NCIT:C17766
 xref: XFAM:PF00183
 is_a: FPLX:root
@@ -5323,6 +5471,7 @@ synonym: "Heat Shock Protein 70" EXACT []
 synonym: "HSP70" EXACT []
 synonym: "Hsp70" EXACT []
 xref: BEL:"HSPA Family"
+xref: MESH:D018840
 xref: XFAM:PF00012
 is_a: FPLX:root
 inverse_is_a: HGNC:HSPA12A
@@ -5359,6 +5508,7 @@ inverse_is_a: HGNC:HSPB8
 id: FPLX:HTR
 name: HTR
 xref: HGNC_GROUP:171
+xref: MESH:D011985
 is_a: FPLX:root
 inverse_is_a: FPLX:5_hydroxytryptamine_receptors_ionotropic
 inverse_is_a: FPLX:5_hydroxytryptamine_receptors_G_protein_coupled
@@ -5366,6 +5516,7 @@ inverse_is_a: FPLX:5_hydroxytryptamine_receptors_G_protein_coupled
 [Term]
 id: FPLX:HTR1
 name: HTR1
+xref: MESH:D044263
 is_a: FPLX:5_hydroxytryptamine_receptors_G_protein_coupled
 inverse_is_a: HGNC:HTR1A
 inverse_is_a: HGNC:HTR1B
@@ -5375,6 +5526,7 @@ inverse_is_a: HGNC:HTR1E
 [Term]
 id: FPLX:HTR2
 name: HTR2
+xref: MESH:D044348
 is_a: FPLX:5_hydroxytryptamine_receptors_G_protein_coupled
 inverse_is_a: HGNC:HTR2A
 inverse_is_a: HGNC:HTR2B
@@ -5396,6 +5548,7 @@ synonym: "IFN-α" EXACT []
 synonym: "IFNalpha" EXACT []
 synonym: "IFNα" EXACT []
 xref: BEL:"IFNA Family"
+xref: MESH:D016898
 xref: RE:R-HSA-909688
 is_a: FPLX:Interferon
 inverse_is_a: HGNC:IFNA1
@@ -5419,6 +5572,7 @@ synonym: "IFNAR" EXACT []
 synonym: "Ifnar" EXACT []
 synonym: "Interferon-alpha/beta receptor" EXACT []
 synonym: "interferon-α/β receptor" EXACT []
+xref: MESH:D053633
 is_a: FPLX:root
 inverse_is_a: HGNC:IFNAR1
 inverse_is_a: HGNC:IFNAR2
@@ -5435,6 +5589,7 @@ synonym: "Interferon β" EXACT []
 synonym: "interferon β" EXACT []
 synonym: "β interferons" EXACT []
 xref: IP:IPR015588
+xref: MESH:D016899
 xref: NCIT:C20495
 is_a: FPLX:Interferon
 inverse_is_a: HGNC:IFNB1
@@ -5448,6 +5603,7 @@ synonym: "IGFBPs" EXACT []
 synonym: "insulin-like growth factor binding proteins" EXACT []
 xref: BEL:"IGFBP Family"
 xref: MEDSCAN:urn:agi-aopfc:0000586
+xref: MESH:D018969
 xref: XFAM:PF00219
 is_a: FPLX:root
 inverse_is_a: HGNC:IGFBP1
@@ -5475,6 +5631,7 @@ synonym: "IKK" EXACT []
 synonym: "IκB kinase" EXACT []
 xref: BEL:"IkappaB Kinase Complex"
 xref: MEDSCAN:urn:agi-complex:IKK%20complex
+xref: MESH:D051550
 xref: RE:R-HSA-1168621
 xref: RE:R-HSA-168113
 xref: RE:R-HSA-177663
@@ -5491,6 +5648,7 @@ has_part: HGNC:IKBKG
 id: FPLX:IKK_family
 name: IKK-family
 xref: BEL:"IkappaB Kinase Family"
+xref: MESH:D020672
 xref: NCIT:C104199
 xref: NEXTPROT-FAMILY:03104
 is_a: FPLX:root
@@ -5508,6 +5666,7 @@ synonym: "IL1 family" EXACT []
 xref: BEL:"IL1 Family"
 xref: IP:IPR003502
 xref: MEDSCAN:urn:agi-aopfc:0000615
+xref: MESH:D007375
 xref: NCIT:C20506
 xref: NEXTPROT-FAMILY:01820
 xref: XFAM:PF00340
@@ -5522,6 +5681,7 @@ name: IL12
 synonym: "IL-12" EXACT []
 synonym: "IL12" EXACT []
 xref: MEDSCAN:urn:agi-complex:IL12
+xref: MESH:D018664
 xref: NCIT:C20514
 xref: XFAM:PF03039
 xref: RE:R-HSA-447102
@@ -5537,6 +5697,7 @@ id: FPLX:IL15R
 name: IL15R
 synonym: "IL-15 receptor" EXACT []
 synonym: "IL-15R" EXACT []
+xref: MESH:D053647
 is_a: FPLX:root
 has_part: HGNC:IL15RA
 has_part: HGNC:IL2RB
@@ -5563,6 +5724,7 @@ id: FPLX:IL2R
 name: IL2R
 synonym: "IL-2 receptor" EXACT []
 synonym: "IL-2R" EXACT []
+xref: MESH:D015375
 is_a: FPLX:root
 has_part: HGNC:IL2RA
 has_part: HGNC:IL2RB
@@ -5574,6 +5736,7 @@ name: Inhibin
 synonym: "Inhibin" EXACT []
 synonym: "inhibin" EXACT []
 xref: GO:0043511
+xref: MESH:D007265
 xref: NCIT:C2276
 xref: RE:R-HSA-1449688
 is_a: FPLX:root
@@ -5598,6 +5761,7 @@ name: Inhibin-B
 synonym: "inhibin B" EXACT []
 synonym: "inhibin-B" EXACT []
 synonym: "inhibin-b" EXACT []
+xref: MESH:D028322
 xref: NCIT:C2278
 is_a: FPLX:Inhibin
 has_part: HGNC:INHA
@@ -5627,6 +5791,7 @@ synonym: "integrins" EXACT []
 xref: GO:0008305
 xref: HGNC_GROUP:597
 xref: MEDSCAN:urn:agi-complex:MAC-1%20(integrin)
+xref: MESH:D016023
 xref: NCIT:C16748
 is_a: FPLX:root
 inverse_is_a: FPLX:ITGA
@@ -5644,6 +5809,7 @@ name: Interferon
 synonym: "IFN" EXACT []
 synonym: "interferon" EXACT []
 xref: MEDSCAN:urn:agi-protfc:interferon
+xref: MESH:D007372
 xref: NCIT:C20493
 xref: XFAM:PF00143
 is_a: FPLX:root
@@ -5662,6 +5828,7 @@ synonym: "interferon-gamma receptor" EXACT []
 synonym: "interferon-γ receptor" EXACT []
 xref: BEL:"Interferon Gamma Receptor Complex"
 xref: MEDSCAN:urn:agi-complex:IFNGR
+xref: MESH:C078577
 is_a: FPLX:root
 has_part: HGNC:IFNGR1
 has_part: HGNC:IFNGR2
@@ -5674,6 +5841,7 @@ synonym: "IRS family" EXACT []
 synonym: "IRS" EXACT []
 xref: BEL:"IRS Family"
 xref: MEDSCAN:urn:agi-aopfc:0000585
+xref: MESH:D055504
 xref: XFAM:PF02174
 xref: RE:R-HSA-2445131
 xref: RE:R-HSA-2445139
@@ -5704,6 +5872,7 @@ id: FPLX:ITGA
 name: ITGA
 synonym: "integrin alpha" EXACT []
 xref: HGNC_GROUP:1160
+xref: MESH:D039001
 is_a: FPLX:Integrins
 inverse_is_a: HGNC:ITGA1
 inverse_is_a: HGNC:ITGA10
@@ -5728,6 +5897,7 @@ inverse_is_a: HGNC:ITGAX
 id: FPLX:ITGA2B1
 name: ITGA2B1
 synonym: "alpha2beta1 integrin" EXACT []
+xref: MESH:D038982
 is_a: FPLX:Integrins
 has_part: HGNC:ITGA2
 has_part: HGNC:ITGB1
@@ -5744,6 +5914,7 @@ has_part: HGNC:ITGB3
 id: FPLX:ITGB
 name: ITGB
 xref: HGNC_GROUP:1159
+xref: MESH:D039641
 is_a: FPLX:Integrins
 inverse_is_a: HGNC:ITGB1
 inverse_is_a: HGNC:ITGB2
@@ -5759,6 +5930,7 @@ inverse_is_a: HGNC:ITGBL1
 id: FPLX:ITPR
 name: ITPR
 xref: HGNC_GROUP:297
+xref: MESH:D053496
 is_a: FPLX:Calcium_channels
 is_a: FPLX:Ligand_gated_ion_channels
 inverse_is_a: HGNC:ITPR1
@@ -5774,6 +5946,7 @@ synonym: "JAKs" EXACT []
 xref: BEL:"JAK Family"
 xref: IP:IPR016251
 xref: MEDSCAN:urn:agi-aopfc:0000464
+xref: MESH:D053612
 xref: NEXTPROT-FAMILY:03129
 is_a: FPLX:root
 inverse_is_a: HGNC:JAK1
@@ -5795,6 +5968,7 @@ synonym: "SAPK" EXACT []
 xref: BEL:"MAPK JNK Family"
 xref: IP:IPR008351
 xref: MEDSCAN:urn:agi-aopfc:0000473
+xref: MESH:D048031
 xref: RE:R-HSA-450226
 xref: RE:R-HSA-450253
 xref: RE:R-HSA-450289
@@ -5823,6 +5997,7 @@ synonym: "Glutamate receptors, ionotropic, kainate" EXACT []
 synonym: "Kainate receptors" EXACT []
 synonym: "KARs" EXACT []
 xref: HGNC_GROUP:1199
+xref: MESH:D018092
 is_a: FPLX:GRI
 inverse_is_a: HGNC:GRIK1
 inverse_is_a: HGNC:GRIK2
@@ -5838,6 +6013,7 @@ synonym: "Potassium channels" EXACT []
 synonym: "potassium channel" EXACT []
 synonym: "potassium channels" EXACT []
 xref: HGNC_GROUP:183
+xref: MESH:D015221
 is_a: FPLX:Cation_channels
 inverse_is_a: FPLX:KCNJ
 inverse_is_a: FPLX:KCNK
@@ -5848,6 +6024,7 @@ inverse_is_a: FPLX:Potassium_voltage_gated_channels
 [Term]
 id: FPLX:KCNH
 name: KCNH
+xref: MESH:D051638
 is_a: FPLX:Potassium_voltage_gated_channels
 inverse_is_a: HGNC:KCNH1
 inverse_is_a: HGNC:KCNH2
@@ -5863,6 +6040,7 @@ id: FPLX:KCNJ
 name: KCNJ
 synonym: "IK1" EXACT []
 xref: HGNC_GROUP:276
+xref: MESH:D024661
 is_a: FPLX:KCN
 inverse_is_a: HGNC:KCNJ1
 inverse_is_a: HGNC:KCNJ10
@@ -5885,6 +6063,7 @@ inverse_is_a: HGNC:KCNJ9
 id: FPLX:KCNK
 name: KCNK
 xref: HGNC_GROUP:277
+xref: MESH:D024683
 is_a: FPLX:KCN
 is_a: FPLX:Voltage_gated_ion_channels
 inverse_is_a: HGNC:KCNK1
@@ -5907,6 +6086,7 @@ inverse_is_a: HGNC:KCNK9
 id: FPLX:KCNT
 name: KCNT
 xref: HGNC_GROUP:856
+xref: MESH:D000081033
 is_a: FPLX:KCN
 inverse_is_a: HGNC:KCNT1
 inverse_is_a: HGNC:KCNT2
@@ -5918,6 +6098,7 @@ synonym: "kinesin" EXACT []
 synonym: "kinesins" EXACT []
 synonym: "Kinesin" EXACT []
 xref: HGNC_GROUP:622
+xref: MESH:D016547
 xref: XFAM:PF00225
 is_a: FPLX:root
 inverse_is_a: HGNC:CENPE
@@ -5973,6 +6154,7 @@ synonym: "kinetochore" EXACT []
 synonym: "kinetochores" EXACT []
 xref: BEL:"Kinetochore Complex"
 xref: GO:0000776
+xref: MESH:D018386
 is_a: FPLX:root
 has_part: HGNC:BUB1
 has_part: HGNC:BUB1B
@@ -6003,6 +6185,7 @@ synonym: "tissue kallikreins" EXACT []
 xref: BEL:"KLK Family"
 xref: ECCODE:3.4.21.35
 xref: MEDSCAN:urn:agi-protfc:kallikrein
+xref: MESH:D007610
 is_a: FPLX:root
 inverse_is_a: HGNC:KLK1
 inverse_is_a: HGNC:KLK10
@@ -6067,6 +6250,7 @@ id: FPLX:LDH
 name: LDH
 synonym: "LDH" EXACT []
 xref: BEL:"LDH Family"
+xref: MESH:D045022
 xref: NCIT:C25184
 xref: NEXTPROT-FAMILY:02022
 is_a: FPLX:root
@@ -6078,6 +6262,7 @@ inverse_is_a: HGNC:LDHC
 id: FPLX:LFA_1
 name: LFA-1
 synonym: "LFA-1" EXACT []
+xref: MESH:D016169
 is_a: FPLX:Integrins
 has_part: HGNC:ITGAL
 has_part: HGNC:ITGB2
@@ -6091,6 +6276,7 @@ synonym: "luteinizing hormone" EXACT []
 synonym: "luteinizing-hormone" EXACT []
 xref: BEL:"Luteinizing Hormone Complex"
 xref: MEDSCAN:urn:agi-complex:Luteinizing%20hormone
+xref: MESH:D007986
 xref: RE:R-HSA-378969
 xref: RE:R-HSA-6793931
 xref: RE:R-HSA-6793934
@@ -6106,6 +6292,7 @@ synonym: "Ligand-gated ion channels" EXACT []
 synonym: "ligand-gated ion channel" EXACT []
 synonym: "ligand-gated ion channels" EXACT []
 xref: HGNC_GROUP:161
+xref: MESH:D058446
 is_a: FPLX:root
 inverse_is_a: FPLX:5_hydroxytryptamine_receptors_ionotropic
 inverse_is_a: HGNC:CFTR
@@ -6121,6 +6308,7 @@ inverse_is_a: HGNC:ZACN
 [Term]
 id: FPLX:LPAR
 name: LPAR
+xref: MESH:D049368
 xref: SIGNOR:SIGNOR-PF2
 is_a: FPLX:root
 inverse_is_a: HGNC:LPAR1
@@ -6147,6 +6335,7 @@ synonym: "Liver X receptors" EXACT []
 synonym: "Liver X receptor" EXACT []
 synonym: "LXRs" EXACT []
 xref: IP:IPR023257
+xref: MESH:D000071518
 is_a: FPLX:root
 inverse_is_a: HGNC:NR1H2
 inverse_is_a: HGNC:NR1H3
@@ -6159,6 +6348,7 @@ synonym: "membrane attack complex" EXACT []
 synonym: "membrane attack" EXACT []
 xref: BEL:"Membrane Attack Complex"
 xref: GO:0005579
+xref: MESH:D015938
 xref: RE:R-HSA-173728
 xref: RE:R-HSA-8852568
 is_a: FPLX:root
@@ -6174,6 +6364,7 @@ has_part: HGNC:C9
 id: FPLX:MAC_1
 name: MAC-1
 synonym: "MAC-1" EXACT []
+xref: MESH:D016177
 is_a: FPLX:Integrins
 has_part: HGNC:ITGAM
 has_part: HGNC:ITGB2
@@ -6181,6 +6372,7 @@ has_part: HGNC:ITGB2
 [Term]
 id: FPLX:Macrophage_inflammatory_proteins
 name: Macrophage-inflammatory-proteins
+xref: MESH:D019402
 is_a: FPLX:CCL
 inverse_is_a: HGNC:CCL3
 inverse_is_a: HGNC:CCL4
@@ -6195,6 +6387,7 @@ synonym: "maf" EXACT []
 xref: BEL:"MAF Family"
 xref: IP:IPR004826
 xref: MEDSCAN:urn:agi-aopfc:0000142
+xref: MESH:D050977
 xref: XFAM:PF02545
 is_a: FPLX:root
 inverse_is_a: HGNC:MAF
@@ -6220,6 +6413,7 @@ id: FPLX:MAP2K
 name: MAP2K
 synonym: "MAPK kinase" EXACT []
 synonym: "mitogen-activated protein kinase kinase" EXACT []
+xref: MESH:D020929
 xref: NCIT:C105947
 is_a: FPLX:root
 inverse_is_a: FPLX:MEK
@@ -6237,6 +6431,7 @@ synonym: "MAPK kinase kinase" EXACT []
 synonym: "MAPKK kinases" EXACT []
 synonym: "MAPKKK" EXACT []
 xref: ECCODE:2.7.11.25
+xref: MESH:D020930
 is_a: FPLX:root
 inverse_is_a: FPLX:RAF
 inverse_is_a: HGNC:MAP3K1
@@ -6272,6 +6467,7 @@ synonym: "mitogen-activated protein kinase" EXACT []
 synonym: "mitogen-activated protein kinases" EXACT []
 xref: ECCODE:2.7.11.24
 xref: ECCODE:2.7.12.2
+xref: MESH:D020928
 xref: NCIT:C16376
 is_a: FPLX:root
 inverse_is_a: FPLX:ERK
@@ -6289,6 +6485,7 @@ xref: GO:0042555
 xref: IP:IPR001208
 xref: IP:IPR031327
 xref: MEDSCAN:urn:agi-complex:prophash-e6be10f6a8e79aed1daa4ec2ac191db1
+xref: MESH:D064110
 xref: NEXTPROT-FAMILY:02187
 xref: XFAM:PF00493
 is_a: FPLX:root
@@ -6305,6 +6502,7 @@ inverse_is_a: HGNC:MCMDC2
 [Term]
 id: FPLX:MED
 name: MED
+xref: MESH:D056892
 is_a: FPLX:root
 has_part: HGNC:CCNC
 has_part: HGNC:CDK8
@@ -6348,6 +6546,7 @@ synonym: "MEF2" EXACT []
 xref: BEL:"MEF2 Family"
 xref: IP:IPR033896
 xref: MEDSCAN:urn:agi-aopfc:0000143
+xref: MESH:D064326
 xref: RE:R-HSA-448866
 xref: RE:R-HSA-448868
 is_a: FPLX:root
@@ -6380,6 +6579,7 @@ name: Metallothionein
 synonym: "Metallothionein" EXACT []
 synonym: "metallothionein" EXACT []
 synonym: "MT" EXACT []
+xref: MESH:D008668
 is_a: FPLX:root
 inverse_is_a: HGNC:MT1A
 inverse_is_a: HGNC:MT1B
@@ -6460,6 +6660,7 @@ synonym: "55s mitoribosome" EXACT []
 synonym: "55S Mitoribosome" EXACT []
 synonym: "55s Mitoribosome" EXACT []
 xref: GO:0005761
+xref: MESH:D000069396
 is_a: FPLX:root
 has_part: FPLX:MRPS
 has_part: FPLX:MRPL
@@ -6483,6 +6684,7 @@ name: MMP
 synonym: "MMP" EXACT []
 synonym: "MMPs" EXACT []
 xref: BEL:"MMP Family"
+xref: MESH:D020782
 xref: NCIT:C18164
 is_a: FPLX:root
 inverse_is_a: HGNC:MMP1
@@ -6628,6 +6830,7 @@ synonym: "TORC1" EXACT []
 xref: BEL:"TORC1 Complex"
 xref: GO:0031931
 xref: MEDSCAN:urn:agi-complex:prophash-f472fef3f59301aee0b776702a30f03e
+xref: MESH:D000076222
 xref: NCIT:C96314
 is_a: FPLX:root
 has_part: HGNC:MTOR
@@ -6640,6 +6843,7 @@ synonym: "mTORC2" EXACT []
 synonym: "TORC2" EXACT []
 xref: BEL:"TORC2 Complex"
 xref: MEDSCAN:urn:agi-complex:prophash-0d528c29d63997f87f62e4fbd9f0b168
+xref: MESH:D000076225
 xref: NCIT:C96315
 is_a: FPLX:root
 has_part: HGNC:MAPKAP1
@@ -6660,6 +6864,7 @@ synonym: "myosin heavy chains" EXACT []
 synonym: "Mhc" EXACT []
 xref: BEL:"MYH Family"
 xref: MEDSCAN:urn:agi-protfc:myosin%20heavy%20chain
+xref: MESH:D018995
 is_a: FPLX:Myosin_family
 inverse_is_a: HGNC:MYH1
 inverse_is_a: HGNC:MYH10
@@ -6686,6 +6891,7 @@ synonym: "myosin light chain" EXACT []
 synonym: "myosin light chains" EXACT []
 xref: BEL:"MYL Family"
 xref: MEDSCAN:urn:agi-protfc:myosin%20light%20chain
+xref: MESH:D018994
 part_of: FPLX:Myosin_complex
 inverse_is_a: FPLX:MYL_alkali
 inverse_is_a: FPLX:MYL_regulatory
@@ -6734,6 +6940,7 @@ inverse_is_a: HGNC:MYL6B
 [Term]
 id: FPLX:MYO1
 name: MYO1
+xref: MESH:D024461
 is_a: FPLX:Myosin_family
 inverse_is_a: HGNC:MYO1A
 inverse_is_a: HGNC:MYO1B
@@ -6761,6 +6968,7 @@ inverse_is_a: HGNC:MYO18B
 [Term]
 id: FPLX:MYO3
 name: MYO3
+xref: MESH:D025102
 is_a: FPLX:Myosin_family
 inverse_is_a: HGNC:MYO3A
 inverse_is_a: HGNC:MYO3B
@@ -6768,6 +6976,7 @@ inverse_is_a: HGNC:MYO3B
 [Term]
 id: FPLX:MYO5
 name: MYO5
+xref: MESH:D024701
 is_a: FPLX:Myosin_family
 inverse_is_a: HGNC:MYO5A
 inverse_is_a: HGNC:MYO5B
@@ -6791,6 +7000,7 @@ inverse_is_a: HGNC:MYO9B
 id: FPLX:Myosin_complex
 name: Myosin-complex
 synonym: "myosin" EXACT []
+xref: MESH:D009218
 is_a: FPLX:root
 has_part: FPLX:Myosin_family
 has_part: FPLX:MYL
@@ -6834,6 +7044,7 @@ synonym: "NADH dehydrogenase (ubiquinone)" EXACT []
 synonym: "NADH dehydrogenase" EXACT []
 xref: BEL:"NADH Dehydrogenase Complex"
 xref: ECCODE:1.6.5.3
+xref: MESH:D009245
 xref: XFAM:PF00146
 is_a: FPLX:root
 has_part: HGNC:MT-ND1
@@ -6852,6 +7063,7 @@ synonym: "NAD(P)H-oxidase" EXACT []
 synonym: "NADPH oxidase" EXACT []
 xref: BEL:"NADPH Oxidase Complex"
 xref: MEDSCAN:urn:agi-aopfc:0000479
+xref: MESH:D019255
 is_a: FPLX:root
 has_part: HGNC:CYBA
 has_part: HGNC:CYBB
@@ -6876,6 +7088,7 @@ synonym: "Na+/K+ATPase" EXACT []
 synonym: "Na/K-ATPase" EXACT []
 xref: BEL:"Na/K Exchanging ATPase Complex"
 xref: ECCODE:3.6.3.9
+xref: MESH:D000254
 is_a: FPLX:root
 has_part: FPLX:ATP1A
 has_part: FPLX:ATP1B
@@ -6889,6 +7102,7 @@ synonym: "natriuretic peptide" EXACT []
 synonym: "Natriuretic Peptides" EXACT []
 synonym: "Natriuretic peptides" EXACT []
 synonym: "natriuretic peptides" EXACT []
+xref: MESH:D045265
 is_a: FPLX:Neuropeptides
 inverse_is_a: HGNC:NPPA
 inverse_is_a: HGNC:NPPB
@@ -6903,6 +7117,7 @@ xref: IP:IPR010011
 xref: IP:IPR014920
 xref: IP:IPR014935
 xref: IP:IPR017426
+xref: MESH:D056918
 is_a: FPLX:root
 inverse_is_a: HGNC:NCOA1
 inverse_is_a: HGNC:NCOA2
@@ -6953,6 +7168,7 @@ name: Neuropeptide-receptor
 synonym: "neuropeptide receptor" EXACT []
 synonym: "neuropeptide receptors" EXACT []
 xref: HGNC_GROUP:854
+xref: MESH:D018013
 is_a: FPLX:root
 inverse_is_a: HGNC:NPSR1
 inverse_is_a: FPLX:NPBWR
@@ -6963,6 +7179,7 @@ inverse_is_a: FPLX:NPYR
 id: FPLX:Neuropeptides
 name: Neuropeptides
 xref: HGNC_GROUP:1902
+xref: MESH:D009479
 is_a: FPLX:root
 inverse_is_a: HGNC:ADCYAP1
 inverse_is_a: HGNC:ADM
@@ -7034,6 +7251,7 @@ name: NFAT
 synonym: "NFAT" EXACT []
 xref: BEL:"NFAT Family"
 xref: IP:IPR008366
+xref: MESH:D050778
 xref: NCIT:C17903
 is_a: FPLX:root
 inverse_is_a: HGNC:NFATC1
@@ -7089,6 +7307,7 @@ xref: IP:IPR030492
 xref: IP:IPR033926
 xref: MEDSCAN:urn:agi-aopfc:0000156
 xref: MEDSCAN:urn:agi-complex:prophash-8cfce9bfac3857e6f068d517deadfeaa
+xref: MESH:D016328
 xref: NCIT:C17380
 xref: SIGNOR:SIGNOR-PF12
 is_a: FPLX:root
@@ -7152,6 +7371,7 @@ synonym: "NFY" EXACT []
 synonym: "nuclear factor Y" EXACT []
 synonym: "nuclear factor-Y" EXACT []
 xref: BEL:"Nfy Complex"
+xref: MESH:D023081
 xref: RE:R-HSA-2426131
 xref: RE:R-HSA-381204
 is_a: FPLX:root
@@ -7176,6 +7396,7 @@ xref: BEL:"NOS Family"
 xref: IP:IPR004030
 xref: IP:IPR012144
 xref: MEDSCAN:urn:agi-aopfc:0000494
+xref: MESH:D019001
 xref: NEXTPROT-FAMILY:02504
 xref: RE:R-HSA-419294
 is_a: FPLX:root
@@ -7193,6 +7414,7 @@ xref: IP:IPR008297
 xref: IP:IPR010660
 xref: IP:IPR011656
 xref: MEDSCAN:urn:agi-aopfc:0000279
+xref: MESH:D051880
 xref: NEXTPROT-FAMILY:02506
 xref: XFAM:PF00066
 xref: RE:R-HSA-1911440
@@ -7255,6 +7477,7 @@ synonym: "neuroregulin" EXACT []
 synonym: "Neuroregulin" EXACT []
 synonym: "NRGs" EXACT []
 xref: MEDSCAN:urn:agi-protfc:neuregulin%20family
+xref: MESH:D020880
 xref: XFAM:PF02158
 xref: RE:R-HSA-1227957
 is_a: FPLX:root
@@ -7317,6 +7540,7 @@ name: OR
 synonym: "olfactory receptor" EXACT []
 synonym: "olfactory receptors" EXACT []
 xref: HGNC_GROUP:141
+xref: MESH:D018035
 is_a: FPLX:root
 inverse_is_a: FPLX:OR1
 inverse_is_a: FPLX:OR10
@@ -7857,6 +8081,7 @@ xref: IP:IPR000308
 xref: IP:IPR023409
 xref: IP:IPR023410
 xref: MEDSCAN:urn:agi-protfc:14-3-3
+xref: MESH:D048948
 xref: XFAM:PF00244
 xref: RE:R-HSA-1445138
 xref: RE:R-HSA-2457842
@@ -7875,6 +8100,7 @@ id: FPLX:P2R
 name: P2R
 synonym: "ATP receptor" EXACT []
 synonym: "ATP receptors" EXACT []
+xref: MESH:D018048
 is_a: FPLX:Purinergic_receptors
 inverse_is_a: FPLX:P2RX
 inverse_is_a: FPLX:P2RY
@@ -7892,6 +8118,7 @@ xref: GO:0004931
 xref: HGNC_GROUP:214
 xref: IP:IPR001429
 xref: IP:IPR027309
+xref: MESH:D058469
 xref: NEXTPROT-FAMILY:02630
 xref: XFAM:PF00864
 xref: RE:R-HSA-139848
@@ -7912,6 +8139,7 @@ name: P2RY
 synonym: "P2Y receptor" EXACT []
 xref: BEL:"P2RY Family"
 xref: MEDSCAN:urn:agi-protfc:p2y%20receptor
+xref: MESH:D058470
 is_a: FPLX:P2R
 inverse_is_a: HGNC:P2RY1
 inverse_is_a: HGNC:P2RY2
@@ -7941,6 +8169,7 @@ synonym: "p38 SAPK" EXACT []
 xref: BEL:"MAPK p38 Family"
 xref: IP:IPR008352
 xref: MEDSCAN:urn:agi-aopfc:0000477
+xref: MESH:D048051
 xref: RE:R-HSA-1250100
 xref: RE:R-HSA-1250102
 xref: RE:R-HSA-171016
@@ -7962,6 +8191,7 @@ synonym: "p53/p63/p73 family" EXACT []
 xref: IP:IPR002117
 xref: IP:IPR010991
 xref: IP:IPR011615
+xref: MESH:D016158
 xref: NEXTPROT-FAMILY:02632
 xref: XFAM:PF00870
 xref: RE:R-HSA-6798076
@@ -7982,6 +8212,7 @@ synonym: "S6K" EXACT []
 synonym: "s6k" EXACT []
 xref: BEL:"RPS6KB Family"
 xref: MEDSCAN:urn:agi-protfc:p70rsk
+xref: MESH:D038762
 is_a: FPLX:RSK
 inverse_is_a: HGNC:RPS6KB1
 inverse_is_a: HGNC:RPS6KB2
@@ -7994,6 +8225,7 @@ synonym: "RPS6KA" EXACT []
 xref: BEL:"RPS6KA Family"
 xref: IP:IPR016239
 xref: MEDSCAN:urn:agi-protfc:p90rsk
+xref: MESH:D038744
 xref: RE:R-HSA-446849
 xref: SIGNOR:SIGNOR-PF26
 is_a: FPLX:RSK
@@ -8012,6 +8244,7 @@ synonym: "Pak" EXACT []
 xref: BEL:"PAK Family"
 xref: IP:IPR033923
 xref: MEDSCAN:urn:agi-aopfc:0000468
+xref: MESH:D054462
 xref: RE:R-HSA-428475
 xref: SIGNOR:SIGNOR-PF13
 is_a: FPLX:root
@@ -8029,6 +8262,7 @@ synonym: "PARP genes" EXACT []
 synonym: "PARPs" EXACT []
 synonym: "Poly(ADP-ribose) polymerase" EXACT []
 synonym: "Poly(ADP-ribose) polymerases" EXACT []
+xref: MESH:D011065
 xref: XFAM:PF00644
 is_a: FPLX:root
 inverse_is_a: HGNC:PARP1
@@ -8070,6 +8304,7 @@ synonym: "PATCHED" EXACT []
 synonym: "Patched" EXACT []
 xref: IP:IPR004766
 xref: MEDSCAN:urn:agi-aopfc:0000281
+xref: MESH:D000072079
 xref: XFAM:PF02460
 xref: RE:R-HSA-445134
 is_a: FPLX:root
@@ -8102,6 +8337,7 @@ synonym: "Phosphodiesterases" EXACT []
 synonym: "phosphodiesterases" EXACT []
 xref: BEL:"PDE Family"
 xref: ECCODE:3.1.4.-
+xref: MESH:D010727
 is_a: FPLX:root
 inverse_is_a: HGNC:PDE2A
 inverse_is_a: HGNC:PDE9A
@@ -8126,6 +8362,7 @@ synonym: "phosphodiesterase-1" EXACT []
 xref: BEL:"PDE1 Family"
 xref: GO:0004117
 xref: IP:IPR013706
+xref: MESH:D054677
 xref: RE:R-HSA-111952
 xref: RE:R-HSA-111953
 is_a: FPLX:PDE
@@ -8145,6 +8382,7 @@ synonym: "Phosphodiesterase-3" EXACT []
 synonym: "phosphodiesterase-3" EXACT []
 xref: BEL:"PDE3 Family"
 xref: MEDSCAN:urn:agi-protfc:phosphodiesterase%20III
+xref: MESH:D054684
 xref: NEXTPROT-FAMILY:00803
 is_a: FPLX:PDE
 inverse_is_a: HGNC:PDE3A
@@ -8163,6 +8401,7 @@ synonym: "phosphodiesterase-4" EXACT []
 synonym: "type 4 cyclic nucleotide phosphodiesterase" EXACT []
 xref: BEL:"PDE4 Family"
 xref: MEDSCAN:urn:agi-protfc:PDE4%20subfamily
+xref: MESH:D054703
 xref: NCIT:C107433
 xref: NEXTPROT-FAMILY:00804
 xref: RE:R-HSA-111960
@@ -8183,6 +8422,7 @@ synonym: "Phosphodiesterase-6" EXACT []
 synonym: "phosphodiesterase-6" EXACT []
 xref: BEL:"PDE6 Family"
 xref: MEDSCAN:urn:agi-aopfc:0000704
+xref: MESH:D054707
 is_a: FPLX:PDE
 inverse_is_a: HGNC:PDE6A
 inverse_is_a: HGNC:PDE6B
@@ -8196,6 +8436,7 @@ synonym: "Phosphodiesterase 7" EXACT []
 synonym: "phosphodiesterase 7" EXACT []
 synonym: "Phosphodiesterase-7" EXACT []
 synonym: "phosphodiesterase-7" EXACT []
+xref: MESH:D054708
 xref: RE:R-HSA-418540
 is_a: FPLX:PDE
 inverse_is_a: HGNC:PDE7A
@@ -8220,6 +8461,7 @@ name: PDGF
 synonym: "PDGF" EXACT []
 xref: BEL:"PDGF Family"
 xref: GO:0005161
+xref: MESH:D010982
 xref: NCIT:C20448
 xref: RE:R-HSA-381926
 xref: RE:R-HSA-381936
@@ -8260,7 +8502,7 @@ synonym: "PDGF-bb" EXACT []
 synonym: "PDGFBB" EXACT []
 xref: IP:IPR015583
 xref: MEDSCAN:urn:agi-complex:platelet%20derived%20growth%20factor%20BB
-xref: MESH:C072194
+xref: MESH:D000077214
 xref: RE:R-HSA-184196
 xref: RE:R-HSA-184198
 xref: RE:R-HSA-184204
@@ -8303,6 +8545,7 @@ synonym: "PDGFR" EXACT []
 synonym: "derived growth factor" EXACT []
 synonym: "PDGF receptors" EXACT []
 xref: BEL:"PDGFR Family"
+xref: MESH:D017479
 xref: NCIT:C17322
 xref: RE:R-HSA-186769
 xref: RE:R-HSA-186770
@@ -8367,6 +8610,7 @@ name: PDH
 synonym: "PDH" EXACT []
 synonym: "pyruvate dehydrogenase (acetyl-transferring)" EXACT []
 xref: BEL:"Pyruvate Dehydrogenase Complex"
+xref: MESH:D011768
 is_a: FPLX:root
 has_part: HGNC:DLAT
 has_part: HGNC:DLD
@@ -8384,6 +8628,7 @@ synonym: "Pyruvate dehydrogenase kinase" EXACT []
 synonym: "pyruvate dehydrogenase kinase" EXACT []
 xref: BEL:"PDK Family"
 xref: ECCODE:1.2.4.1
+xref: MESH:D000081382
 xref: RE:R-HSA-203947
 is_a: FPLX:root
 inverse_is_a: HGNC:PDK1
@@ -8410,6 +8655,7 @@ synonym: "profilins" EXACT []
 xref: BEL:"PFN Family"
 xref: IP:IPR005455
 xref: MEDSCAN:urn:agi-protfc:profilin
+xref: MESH:D051304
 xref: XFAM:PF00235
 is_a: FPLX:root
 inverse_is_a: HGNC:PFN1
@@ -8425,6 +8671,7 @@ synonym: "Phosphorylase kinase" EXACT []
 synonym: "phosphorylase kinase" EXACT []
 xref: BEL:"Phosphorylase B Kinase Complex"
 xref: ECCODE:2.7.11.19
+xref: MESH:D010764
 is_a: FPLX:root
 has_part: HGNC:CALM1
 has_part: HGNC:PHKA1
@@ -8463,6 +8710,7 @@ synonym: "Phosphoinositide 3-kinase" EXACT []
 xref: BEL:"p85/p110 PI3Kinase Complex"
 xref: MEDSCAN:urn:agi-aopfc:0000447
 xref: MEDSCAN:urn:agi-complex:prophash-285b9ff3749679e4d6266406a20973aa
+xref: MESH:D019869
 xref: NCIT:C17270
 is_a: FPLX:root
 has_part: FPLX:PI3K_p110
@@ -8496,6 +8744,7 @@ id: FPLX:PI4K
 name: PI4K
 synonym: "phosphatidylinositol 4-kinase" EXACT []
 synonym: "PI4K" EXACT []
+xref: MESH:D019870
 is_a: FPLX:root
 inverse_is_a: HGNC:PI4KA
 inverse_is_a: HGNC:PI4KB
@@ -8535,6 +8784,7 @@ synonym: "PK-A" EXACT []
 synonym: "PKA" EXACT []
 synonym: "protein kinase A" EXACT []
 xref: ECCODE:2.7.11.11
+xref: MESH:D017868
 xref: NCIT:C16479
 is_a: FPLX:root
 has_part: FPLX:PRKAR
@@ -8578,6 +8828,7 @@ inverse_is_a: HGNC:PKIG
 [Term]
 id: FPLX:PKN
 name: PKN
+xref: MESH:C061570
 is_a: FPLX:root
 inverse_is_a: HGNC:PKN1
 inverse_is_a: HGNC:PKN2
@@ -8595,6 +8846,7 @@ xref: BEL:"PLA2 Family"
 xref: ECCODE:3.1.1.4
 xref: MEDSCAN:urn:agi-aopfc:0000455
 xref: MEDSCAN:urn:agi-protfc:cytosolic%20phospholipase%20a2
+xref: MESH:D054467
 xref: NCIT:C16979
 xref: NEXTPROT-FAMILY:02840
 is_a: FPLX:root
@@ -8648,6 +8900,7 @@ synonym: "Phospholipase-C" EXACT []
 synonym: "phospholipase-C" EXACT []
 synonym: "PLC" EXACT []
 xref: BEL:"PLC Family"
+xref: MESH:D010738
 is_a: FPLX:root
 inverse_is_a: HGNC:PLCE1
 inverse_is_a: HGNC:PLCZ1
@@ -8668,6 +8921,7 @@ synonym: "Phospholipase Cβ" EXACT []
 synonym: "phospholipase Cβ" EXACT []
 xref: BEL:"PLCB Family"
 xref: IP:IPR016280
+xref: MESH:D054799
 xref: RE:R-HSA-111854
 is_a: FPLX:PLC
 inverse_is_a: HGNC:PLCB1
@@ -8686,6 +8940,7 @@ synonym: "Phospholipase Cdelta" EXACT []
 synonym: "phospholipase Cdelta" EXACT []
 synonym: "Phospholipase Cδ" EXACT []
 synonym: "phospholipase Cδ" EXACT []
+xref: MESH:D054803
 is_a: FPLX:PLC
 inverse_is_a: HGNC:PLCD1
 inverse_is_a: HGNC:PLCD3
@@ -8700,6 +8955,7 @@ xref: BEL:"PLCG Family"
 xref: IP:IPR016279
 xref: IP:IPR035023
 xref: IP:IPR035024
+xref: MESH:D051966
 xref: NCIT:C126114
 xref: RE:R-HSA-1168365
 xref: RE:R-HSA-1169086
@@ -8718,6 +8974,7 @@ synonym: "phospholipase D" EXACT []
 xref: BEL:"PLD Family"
 xref: ECCODE:3.1.4.4
 xref: IP:IPR015679
+xref: MESH:D010739
 is_a: FPLX:root
 inverse_is_a: HGNC:PLD1
 inverse_is_a: HGNC:PLD2
@@ -8733,6 +8990,7 @@ synonym: "Porin" EXACT []
 synonym: "porin" EXACT []
 synonym: "porins" EXACT []
 xref: HGNC_GROUP:304
+xref: MESH:D018272
 is_a: FPLX:root
 inverse_is_a: FPLX:AQP
 inverse_is_a: FPLX:VDAC
@@ -8741,6 +8999,7 @@ inverse_is_a: FPLX:VDAC
 id: FPLX:Potassium_calcium_activated_channels
 name: Potassium-calcium-activated-channels
 xref: HGNC_GROUP:255
+xref: MESH:D024681
 is_a: FPLX:KCN
 is_a: FPLX:Voltage_gated_ion_channels
 inverse_is_a: HGNC:KCNMA1
@@ -8754,6 +9013,7 @@ inverse_is_a: HGNC:KCNU1
 id: FPLX:Potassium_voltage_gated_channels
 name: Potassium-voltage-gated-channels
 xref: HGNC_GROUP:274
+xref: MESH:D024642
 is_a: FPLX:KCN
 is_a: FPLX:Voltage_gated_ion_channels
 inverse_is_a: HGNC:KCNA1
@@ -8798,6 +9058,7 @@ synonym: "type 2 phosphatidic acid phosphatases" EXACT []
 synonym: "type II phosphatidic acid phosphatase" EXACT []
 synonym: "type II phosphatidic acid phosphatases" EXACT []
 xref: BEL:"PPAP2 Family"
+xref: MESH:C406242
 xref: RE:R-HSA-428110
 is_a: FPLX:root
 inverse_is_a: HGNC:PLPP1
@@ -8811,6 +9072,7 @@ synonym: "PPAR" EXACT []
 xref: BEL:"PPAR Family"
 xref: IP:IPR003074
 xref: MEDSCAN:urn:agi-protfc:ppar
+xref: MESH:D047492
 is_a: FPLX:root
 inverse_is_a: HGNC:PPARA
 inverse_is_a: HGNC:PPARD
@@ -8825,6 +9087,7 @@ synonym: "PPP1" EXACT []
 xref: GO:0008599
 xref: MEDSCAN:urn:agi-complex:prophash-d39afef40daf23ad8376b53904c7092c
 xref: MEDSCAN:urn:agi-complex:protein%20phosphatase%20type%201%20complex
+xref: MESH:D054645
 xref: NEXTPROT-FAMILY:03001
 is_a: FPLX:root
 has_part: FPLX:PPP1C
@@ -8889,6 +9152,7 @@ synonym: "phosphatase PP2A" EXACT []
 synonym: "protein phosphatase 2" EXACT []
 xref: MEDSCAN:urn:agi-complex:prophash-f2e03d3bf1f747adab17ce77b9b5e5b3
 xref: MEDSCAN:urn:agi-complex:protein%20phosphatase%20type%202A%20complex
+xref: MESH:D054648
 xref: RE:R-HSA-196206
 is_a: FPLX:root
 has_part: FPLX:PPP2C
@@ -8902,6 +9166,7 @@ synonym: "PP2A catalytic C subunit" EXACT []
 synonym: "PP2A-C" EXACT []
 synonym: "PP2Ac" EXACT []
 xref: BEL:"PPP2C Family"
+xref: MESH:D000071636
 part_of: FPLX:PPP2
 inverse_is_a: HGNC:PPM1J
 inverse_is_a: HGNC:PPP2CA
@@ -8949,6 +9214,7 @@ synonym: "protein phosphatase 2B" EXACT []
 xref: BEL:"Calcineurin Complex"
 xref: BEL:"PPP3 Family"
 xref: MEDSCAN:urn:agi-complex:protein%20phosphatase%203
+xref: MESH:D019703
 is_a: FPLX:root
 has_part: FPLX:PPP3C
 has_part: FPLX:PPP3R
@@ -8993,6 +9259,7 @@ synonym: "PRC1" EXACT []
 xref: BEL:"PRC1 Maintenance Complex"
 xref: GO:0035102
 xref: MEDSCAN:urn:agi-complex:prophash-aba0c4130764ae7a26054736114e65cd
+xref: MESH:D063150
 xref: NCIT:C19866
 is_a: FPLX:root
 has_part: HGNC:BMI1
@@ -9023,6 +9290,7 @@ synonym: "PRC2" EXACT []
 xref: BEL:"PRC2 Initiation Complex"
 xref: GO:0035098
 xref: MEDSCAN:urn:agi-complex:prophash-2b612daa76feb2db86ff39e70449df6b
+xref: MESH:D063151
 is_a: FPLX:root
 has_part: HGNC:EED
 has_part: HGNC:EZH1
@@ -9038,6 +9306,7 @@ synonym: "Peroxiredoxins" EXACT []
 synonym: "peroxiredoxins" EXACT []
 xref: BEL:"PRDX Family"
 xref: ECCODE:1.11.1.15
+xref: MESH:D054464
 is_a: FPLX:root
 inverse_is_a: HGNC:PRDX1
 inverse_is_a: HGNC:PRDX2
@@ -9095,6 +9364,7 @@ xref: BEL:"PRKG Family"
 xref: ECCODE:2.7.11.12
 xref: IP:IPR002374
 xref: IP:IPR035014
+xref: MESH:D017869
 xref: RE:R-HSA-418379
 xref: RE:R-HSA-4551456
 xref: RE:R-HSA-4551462
@@ -9109,6 +9379,7 @@ synonym: "Propionyl-CoA carboxylase" EXACT []
 synonym: "propionyl-CoA carboxylase" EXACT []
 xref: BEL:"Propionyl CoA Carboxylase Complex"
 xref: ECCODE:6.4.1.3
+xref: MESH:C022458
 xref: RE:R-HSA-2993807
 xref: RE:R-HSA-2993809
 xref: RE:R-HSA-3323122
@@ -9130,6 +9401,7 @@ synonym: "Protease" EXACT []
 synonym: "Proteases" EXACT []
 synonym: "Proteinase" EXACT []
 synonym: "Proteinases" EXACT []
+xref: MESH:D010447
 xref: NCIT:C16965
 is_a: FPLX:root
 
@@ -9193,6 +9465,7 @@ id: FPLX:PTGER
 name: PTGER
 synonym: "prostaglandin E receptor" EXACT []
 xref: BEL:"PTGER Family"
+xref: MESH:D018078
 is_a: FPLX:root
 inverse_is_a: HGNC:PTGER1
 inverse_is_a: HGNC:PTGER2
@@ -9205,6 +9478,7 @@ name: Purinergic-receptors
 synonym: "Purinergic receptor" EXACT []
 synonym: "purinergic receptor" EXACT []
 synonym: "purinergic receptors" EXACT []
+xref: MESH:D011983
 is_a: FPLX:root
 inverse_is_a: FPLX:P2R
 inverse_is_a: FPLX:ADORA
@@ -9217,6 +9491,7 @@ synonym: "Glycogen phosphorylases" EXACT []
 synonym: "glycogen phosphorylase" EXACT []
 synonym: "glycogen phosphorylases" EXACT []
 synonym: "PYG" EXACT []
+xref: MESH:D024981
 is_a: FPLX:Glycosyltransferase
 inverse_is_a: HGNC:PYGB
 inverse_is_a: HGNC:PYGL
@@ -9235,6 +9510,7 @@ synonym: "rab" EXACT []
 synonym: "Rabs" EXACT []
 xref: BEL:"RAB Family"
 xref: MEDSCAN:urn:agi-protfc:rab
+xref: MESH:D020691
 xref: NEXTPROT-FAMILY:03661
 is_a: FPLX:root
 inverse_is_a: HGNC:RAB10
@@ -9313,6 +9589,7 @@ synonym: "RAC" EXACT []
 synonym: "rac" EXACT []
 synonym: "Rac" EXACT []
 xref: BEL:"RAC Family"
+xref: MESH:D020744
 xref: NEXTPROT-FAMILY:03066
 is_a: FPLX:root
 inverse_is_a: HGNC:RAC1
@@ -9327,6 +9604,7 @@ synonym: "RAF" EXACT []
 synonym: "Raf" EXACT []
 synonym: "raf protein" EXACT []
 xref: BEL:"RAF Family"
+xref: MESH:D048490
 xref: NEXTPROT-FAMILY:03114
 xref: RE:R-HSA-5672708
 xref: RE:R-HSA-5672726
@@ -9379,6 +9657,7 @@ name: RAR
 synonym: "RAR" EXACT []
 synonym: "retinoic acid receptors" EXACT []
 xref: BEL:"RAR Family"
+xref: MESH:D018168
 xref: NCIT:C17532
 is_a: FPLX:root
 inverse_is_a: HGNC:RARA
@@ -9393,6 +9672,8 @@ synonym: "RAS" EXACT []
 synonym: "Ras" EXACT []
 xref: BEL:"RAS Family"
 xref: MEDSCAN:urn:agi-aopfc:0000465
+xref: MESH:D011905
+xref: MESH:D018631
 xref: NCIT:C17061
 xref: NEXTPROT-FAMILY:03663
 xref: XFAM:PF00071
@@ -9430,6 +9711,7 @@ id: FPLX:RasGAP
 name: RasGAP
 synonym: "RasGAP" EXACT []
 synonym: "RasGAPs" EXACT []
+xref: MESH:D020703
 xref: XFAM:PF00616
 xref: RE:R-HSA-5658216
 is_a: FPLX:root
@@ -9438,6 +9720,7 @@ is_a: FPLX:root
 id: FPLX:RASGRF
 name: RASGRF
 synonym: "RASGRF" EXACT []
+xref: MESH:D020663
 xref: RE:R-HSA-442734
 is_a: FPLX:root
 inverse_is_a: HGNC:RASGRF1
@@ -9486,6 +9769,7 @@ synonym: "RFC" EXACT []
 xref: BEL:"RFC Complex"
 xref: GO:0005663
 xref: MEDSCAN:urn:agi-complex:prophash-7629c2cdfdf4908b72f13917a7c1551e
+xref: MESH:D051818
 xref: RE:R-HSA-174454
 xref: RE:R-HSA-68436
 is_a: FPLX:root
@@ -9505,6 +9789,7 @@ synonym: "RFX proteins" EXACT []
 synonym: "RFX" EXACT []
 xref: BEL:"RFX Family"
 xref: MEDSCAN:urn:agi-aopfc:0000157
+xref: MESH:D000071701
 is_a: FPLX:root
 inverse_is_a: HGNC:RFX1
 inverse_is_a: HGNC:RFX2
@@ -9534,6 +9819,7 @@ synonym: "Rho family" EXACT []
 synonym: "RHO" EXACT []
 xref: BEL:"RHO Family"
 xref: MEDSCAN:urn:agi-aopfc:0000499
+xref: MESH:D020741
 xref: NEXTPROT-FAMILY:03668
 xref: RE:R-HSA-419160
 xref: RE:R-HSA-419161
@@ -9553,6 +9839,7 @@ synonym: "rhoGDI" EXACT []
 synonym: "RhoGDIs" EXACT []
 xref: GO:0005094
 xref: IP:IPR000406
+xref: MESH:D062947
 is_a: FPLX:root
 inverse_is_a: HGNC:ARHGDIA
 inverse_is_a: HGNC:ARHGDIB
@@ -9562,6 +9849,7 @@ inverse_is_a: HGNC:ARHGDIG
 id: FPLX:RIPK
 name: RIPK
 synonym: "RIPK" EXACT []
+xref: MESH:D053422
 is_a: FPLX:root
 inverse_is_a: HGNC:RIPK1
 inverse_is_a: HGNC:RIPK2
@@ -9585,6 +9873,7 @@ synonym: "RNA polymerase 1" EXACT []
 synonym: "RNA polymerase I" EXACT []
 xref: BEL:"RNApo I Complex"
 xref: GO:0005736
+xref: MESH:D012318
 xref: NCIT:C95947
 is_a: FPLX:root
 has_part: HGNC:POLR1A
@@ -9600,6 +9889,7 @@ synonym: "RNAP II" EXACT []
 xref: BEL:"RNApo II Complex"
 xref: GO:0005665
 xref: MEDSCAN:urn:agi-complex:prophash-d9fbae788d60df23b6be4a3ead2cbab4
+xref: MESH:D012319
 xref: NCIT:C95948
 is_a: FPLX:root
 has_part: HGNC:POLR2A
@@ -9633,6 +9923,7 @@ synonym: "Rho kinase" EXACT []
 xref: BEL:"ROCK Family"
 xref: IP:IPR015008
 xref: IP:IPR020684
+xref: MESH:D054460
 xref: RE:R-HSA-419057
 xref: RE:R-HSA-4687776
 is_a: FPLX:root
@@ -9649,6 +9940,7 @@ synonym: "RORs" EXACT []
 xref: BEL:"ROR Family"
 xref: IP:IPR016247
 xref: MEDSCAN:urn:agi-aopfc:0000286
+xref: MESH:D057050
 xref: NEXTPROT-FAMILY:03130
 is_a: FPLX:root
 inverse_is_a: HGNC:ROR1
@@ -9660,6 +9952,7 @@ name: RPA
 synonym: "Replication protein A" EXACT []
 synonym: "replication protein A" EXACT []
 synonym: "RPA" EXACT []
+xref: MESH:D051716
 xref: RE:R-HSA-68462
 is_a: FPLX:root
 has_part: HGNC:RPA1
@@ -9670,6 +9963,7 @@ has_part: HGNC:RPA3
 id: FPLX:RSK
 name: RSK
 synonym: "RSK" EXACT []
+xref: MESH:D019893
 is_a: FPLX:root
 inverse_is_a: FPLX:P90RSK
 inverse_is_a: FPLX:P70S6K
@@ -9719,6 +10013,7 @@ synonym: "RXR" EXACT []
 xref: BEL:"RXR Family"
 xref: GO:0004886
 xref: MEDSCAN:urn:agi-complex:prophash-bd459ca2937257c9e3f2b75abf22f422
+xref: MESH:D047488
 xref: NCIT:C17534
 is_a: FPLX:root
 inverse_is_a: HGNC:RXRA
@@ -9729,6 +10024,7 @@ inverse_is_a: HGNC:RXRG
 id: FPLX:RYR
 name: RYR
 xref: HGNC_GROUP:287
+xref: MESH:D019837
 is_a: FPLX:Calcium_channels
 is_a: FPLX:Ligand_gated_ion_channels
 inverse_is_a: HGNC:RYR1
@@ -9739,6 +10035,7 @@ inverse_is_a: HGNC:RYR3
 id: FPLX:S100
 name: S100
 synonym: "S100" EXACT []
+xref: MESH:D009418
 is_a: FPLX:root
 inverse_is_a: FPLX:S100A
 inverse_is_a: HGNC:S100B
@@ -9782,6 +10079,7 @@ synonym: "sphingosine-1-phosphate receptors" EXACT []
 xref: BEL:"S1PR Family"
 xref: GO:0038036
 xref: IP:IPR004061
+xref: MESH:D000081025
 xref: RE:R-HSA-419346
 xref: RE:R-HSA-419401
 is_a: FPLX:root
@@ -9797,6 +10095,7 @@ name: SAA
 synonym: "SAA" EXACT []
 xref: BEL:"SAA Family"
 xref: IP:IPR000096
+xref: MESH:D000685
 xref: NEXTPROT-FAMILY:03483
 xref: XFAM:PF00277
 is_a: FPLX:root
@@ -9814,6 +10113,7 @@ xref: BEL:"SCD Family"
 xref: ECCODE:1.14.19.1
 xref: IP:IPR001522
 xref: IP:IPR015876
+xref: MESH:D013230
 is_a: FPLX:root
 inverse_is_a: HGNC:SCD
 inverse_is_a: HGNC:SCD5
@@ -9822,6 +10122,7 @@ inverse_is_a: HGNC:SCD5
 id: FPLX:SCN
 name: SCN
 xref: HGNC_GROUP:184
+xref: MESH:D061566
 is_a: FPLX:Sodium_channels
 is_a: FPLX:Voltage_gated_ion_channels
 inverse_is_a: FPLX:Sodium_voltage_gated_channel_alpha_subunits
@@ -9831,6 +10132,7 @@ inverse_is_a: FPLX:Sodium_voltage_gated_channel_beta_subunits
 id: FPLX:SCNN
 name: SCNN
 xref: HGNC_GROUP:185
+xref: MESH:D053503
 is_a: FPLX:Sodium_channels
 inverse_is_a: HGNC:SCNN1A
 inverse_is_a: HGNC:SCNN1B
@@ -9847,6 +10149,7 @@ synonym: "SR Ca(2+)-ATPase" EXACT []
 xref: BEL:"ATP2A Family"
 xref: IP:IPR005782
 xref: MEDSCAN:urn:agi-protfc:sarcoplasmic%20reticulum%20calcium%20transporting%20adenosine%20triphosphatase
+xref: MESH:D053498
 xref: RE:R-HSA-418312
 xref: RE:R-HSA-427905
 is_a: FPLX:root
@@ -9897,6 +10200,7 @@ synonym: "SHC" EXACT []
 synonym: "Shc" EXACT []
 xref: IP:IPR006019
 xref: MEDSCAN:urn:agi-protfc:shc%20protein
+xref: MESH:D055765
 xref: RE:R-HSA-167023
 is_a: FPLX:root
 inverse_is_a: HGNC:SHC1
@@ -9923,6 +10227,7 @@ synonym: "GLUT" EXACT []
 synonym: "SLC2" EXACT []
 xref: BEL:"SLC2A Family"
 xref: GO:0005355
+xref: MESH:D051246
 xref: NEXTPROT-FAMILY:02159
 is_a: FPLX:root
 inverse_is_a: HGNC:SLC2A1
@@ -9952,6 +10257,7 @@ synonym: "small leucine rich proteoglycans" EXACT []
 synonym: "small leucine-rich proteoglycan family" EXACT []
 synonym: "small leucine-rich proteoglycan" EXACT []
 synonym: "small leucine-rich proteoglycans" EXACT []
+xref: MESH:D000071232
 xref: NEXTPROT-FAMILY:03672
 xref: SIGNOR:SIGNOR-PF31
 is_a: FPLX:root
@@ -10020,6 +10326,7 @@ xref: IP:IPR013019
 xref: IP:IPR013790
 xref: MEDSCAN:urn:agi-aopfc:0000159
 xref: MEDSCAN:urn:agi-complex:prophash-72ef5fc0ab431a39e0e2915bf55b6e28
+xref: MESH:D051785
 is_a: FPLX:root
 inverse_is_a: HGNC:SMAD1
 inverse_is_a: HGNC:SMAD4
@@ -10081,6 +10388,7 @@ name: SNAI
 synonym: "SNAI family" EXACT []
 synonym: "SNAI" EXACT []
 xref: BEL:"SNAI Family"
+xref: MESH:D000071250
 is_a: FPLX:root
 inverse_is_a: HGNC:SNAI1
 inverse_is_a: HGNC:SNAI2
@@ -10091,6 +10399,7 @@ id: FPLX:SOD
 name: SOD
 synonym: "SOD" EXACT []
 xref: BEL:"Cu-Zn SOD Family"
+xref: MESH:D013482
 is_a: FPLX:root
 inverse_is_a: HGNC:SOD1
 inverse_is_a: HGNC:SOD2
@@ -10104,6 +10413,7 @@ synonym: "Sodium channels" EXACT []
 synonym: "sodium channel" EXACT []
 synonym: "sodium channels" EXACT []
 xref: HGNC_GROUP:179
+xref: MESH:D015222
 is_a: FPLX:Cation_channels
 inverse_is_a: FPLX:ASIC
 inverse_is_a: HGNC:NALCN
@@ -10129,6 +10439,7 @@ inverse_is_a: HGNC:SCN9A
 id: FPLX:Sodium_voltage_gated_channel_beta_subunits
 name: Sodium-voltage-gated-channel-beta-subunits
 xref: HGNC_GROUP:1204
+xref: MESH:D062546
 is_a: FPLX:SCN
 inverse_is_a: HGNC:SCN1B
 inverse_is_a: HGNC:SCN2B
@@ -10140,6 +10451,7 @@ id: FPLX:SOS
 name: SOS
 synonym: "SOS" EXACT []
 xref: BEL:"SOS Family"
+xref: MESH:D020664
 xref: RE:R-HSA-167215
 is_a: FPLX:root
 inverse_is_a: HGNC:SOS1
@@ -10151,6 +10463,7 @@ name: SPHK
 synonym: "Sphingosine kinase" EXACT []
 synonym: "sphingosine kinase" EXACT []
 synonym: "SphK" EXACT []
+xref: MESH:C022648
 is_a: FPLX:root
 inverse_is_a: HGNC:SPHK1
 inverse_is_a: HGNC:SPHK2
@@ -10188,6 +10501,7 @@ synonym: "SRC-family kinases" EXACT []
 synonym: "Src-kinases" EXACT []
 xref: BEL:"SRC Family"
 xref: MEDSCAN:urn:agi-aopfc:0000509
+xref: MESH:D019061
 xref: NEXTPROT-FAMILY:03131
 xref: SIGNOR:SIGNOR-PF32
 is_a: FPLX:root
@@ -10205,6 +10519,7 @@ synonym: "sterol regulatory element binding protein" EXACT []
 synonym: "sterol regulatory element-binding factor" EXACT []
 xref: BEL:"SREBF Family"
 xref: MEDSCAN:urn:agi-protfc:sterol%20regulatory%20element%20binding%20protein
+xref: MESH:D051779
 xref: RE:R-HSA-1655720
 xref: RE:R-HSA-1655725
 xref: RE:R-HSA-1655726
@@ -10229,6 +10544,7 @@ xref: IP:IPR013801
 xref: IP:IPR015988
 xref: MEDSCAN:urn:agi-aopfc:0000163
 xref: MEDSCAN:urn:agi-complex:prophash-2de597c3f4a807f3caeaf02e5f93ce15
+xref: MESH:D050791
 xref: NCIT:C19618
 is_a: FPLX:root
 inverse_is_a: HGNC:STAT1
@@ -10245,6 +10561,7 @@ synonym: "STAT5" EXACT []
 synonym: "Stat5" EXACT []
 xref: BEL:"STAT5 Family"
 xref: MEDSCAN:urn:agi-protfc:STAT5%20protein
+xref: MESH:D050799
 xref: RE:R-HSA-1469978
 xref: RE:R-HSA-452094
 xref: RE:R-HSA-507919
@@ -10273,6 +10590,7 @@ synonym: "SUR" EXACT []
 xref: BEL:"Sulfonylurea Receptor Family"
 xref: GO:0008281
 xref: IP:IPR000388
+xref: MESH:D064233
 is_a: FPLX:root
 inverse_is_a: HGNC:ABCC8
 inverse_is_a: HGNC:ABCC9
@@ -10344,6 +10662,7 @@ synonym: "TAP transporter" EXACT []
 synonym: "TAP" EXACT []
 xref: BEL:"TAP Family"
 xref: GO:0042825
+xref: MESH:D018435
 is_a: FPLX:root
 inverse_is_a: HGNC:TAP1
 inverse_is_a: HGNC:TAP2
@@ -10352,6 +10671,7 @@ inverse_is_a: HGNC:ABCB9
 [Term]
 id: FPLX:TAT_associated_kinase
 name: TAT-associated-kinase
+xref: MESH:D042925
 is_a: FPLX:root
 has_part: HGNC:CDK9
 has_part: HGNC:CCNT1
@@ -10366,6 +10686,7 @@ synonym: "Tcf/Lef" EXACT []
 xref: BEL:"TCF/LEF Family"
 xref: IP:IPR013558
 xref: IP:IPR024940
+xref: MESH:D051820
 xref: NEXTPROT-FAMILY:03943
 xref: RE:R-HSA-3299546
 xref: RE:R-HSA-5323539
@@ -10408,6 +10729,7 @@ synonym: "transcription factor AP-2" EXACT []
 xref: BEL:"TFAP2 Family"
 xref: IP:IPR004979
 xref: IP:IPR013854
+xref: MESH:D050656
 xref: NEXTPROT-FAMILY:00209
 xref: RE:R-HSA-8864283
 xref: RE:R-HSA-8864286
@@ -10451,6 +10773,7 @@ xref: BEL:"TGFB Family"
 xref: IP:IPR015615
 xref: IP:IPR016319
 xref: MEDSCAN:urn:agi-aopfc:0000423
+xref: MESH:D016212
 xref: NEXTPROT-FAMILY:03989
 xref: RE:R-HSA-114657
 xref: RE:R-HSA-2395330
@@ -10475,6 +10798,7 @@ synonym: "TGFβ receptor" EXACT []
 synonym: "TGFβ receptors" EXACT []
 xref: MEDSCAN:urn:agi-aopfc:0000294
 xref: MEDSCAN:urn:agi-complex:prophash-9e456bf1de2c5eb1107156c96a1450e6
+xref: MESH:D018125
 is_a: FPLX:root
 inverse_is_a: HGNC:TGFBR1
 inverse_is_a: HGNC:TGFBR2
@@ -10494,6 +10818,7 @@ xref: IP:IPR008859
 xref: IP:IPR017897
 xref: IP:IPR028974
 xref: MEDSCAN:urn:agi-protfc:thrombospondins
+xref: MESH:D019699
 is_a: FPLX:root
 inverse_is_a: HGNC:THBS1
 inverse_is_a: HGNC:THBS2
@@ -10506,6 +10831,7 @@ id: FPLX:THR
 name: THR
 synonym: "thyroid hormone receptor" EXACT []
 xref: BEL:"THR Family"
+xref: MESH:D011988
 xref: NCIT:C17078
 is_a: FPLX:root
 inverse_is_a: HGNC:THRA
@@ -10516,6 +10842,7 @@ id: FPLX:Thrombin_antithrombin
 name: Thrombin-antithrombin
 synonym: "thrombin-anti-thrombin III complexes" EXACT []
 xref: BEL:"Thrombin Antithrombin Complex"
+xref: MESH:C046193
 xref: RE:R-HSA-140812
 xref: RE:R-HSA-140871
 xref: RE:R-HSA-140874
@@ -10537,6 +10864,7 @@ id: FPLX:TIF_IB
 name: TIF-IB
 synonym: "TIF-IB" EXACT []
 xref: BEL:"TIF IB Complex"
+xref: MESH:C063660
 is_a: FPLX:root
 has_part: HGNC:TAF1A
 has_part: HGNC:TAF1B
@@ -10547,6 +10875,7 @@ has_part: HGNC:TBP
 id: FPLX:TK
 name: TK
 synonym: "dTK" EXACT []
+xref: MESH:D013937
 is_a: FPLX:Deoxyribonucleoside_kinases
 inverse_is_a: HGNC:TK1
 inverse_is_a: HGNC:TK2
@@ -10556,6 +10885,7 @@ id: FPLX:TLR
 name: TLR
 synonym: "TLR" EXACT []
 xref: MEDSCAN:urn:agi-aopfc:0000296
+xref: MESH:D051193
 xref: SIGNOR:SIGNOR-PF20
 is_a: FPLX:root
 inverse_is_a: HGNC:TLR1
@@ -10575,6 +10905,7 @@ name: TN
 synonym: "Tenascin" EXACT []
 synonym: "tenascin" EXACT []
 xref: BEL:"TN Family"
+xref: MESH:D019063
 xref: NCIT:C104676
 xref: NEXTPROT-FAMILY:03964
 xref: RE:R-HSA-2672035
@@ -10605,6 +10936,7 @@ synonym: "TNFR superfamily" EXACT []
 synonym: "TNFR" EXACT []
 xref: BEL:"TNFRSF Family"
 xref: MEDSCAN:urn:agi-aopfc:0000295
+xref: MESH:D018124
 is_a: FPLX:root
 inverse_is_a: HGNC:TNFRSF1A
 inverse_is_a: HGNC:TNFRSF1B
@@ -10632,6 +10964,7 @@ id: FPLX:TOP
 name: TOP
 synonym: "topoisomerase" EXACT []
 xref: HGNC_GROUP:1050
+xref: MESH:D026942
 is_a: FPLX:root
 inverse_is_a: HGNC:TOP1
 inverse_is_a: HGNC:TOP1MT
@@ -10657,6 +10990,7 @@ xref: IP:IPR018522
 xref: IP:IPR024946
 xref: IP:IPR031660
 xref: IP:IPR034157
+xref: MESH:D004250
 xref: NCIT:C18434
 is_a: FPLX:TOP
 inverse_is_a: HGNC:TOP2A
@@ -10681,6 +11015,7 @@ synonym: "TNF receptor associated factors" EXACT []
 synonym: "TNF receptor-associated factors" EXACT []
 synonym: "TNF-receptor associated factors" EXACT []
 xref: HGNC_GROUP:1056
+xref: MESH:D047988
 is_a: FPLX:root
 inverse_is_a: HGNC:TRAF1
 inverse_is_a: HGNC:TRAF2
@@ -10698,6 +11033,7 @@ synonym: "troponin" EXACT []
 synonym: "troponins" EXACT []
 xref: GO:0005861
 xref: MEDSCAN:urn:agi-complex:prophash-e4ec238e69c3d3292966ac97dbc11086
+xref: MESH:D014336
 xref: RE:R-HSA-390583
 xref: RE:R-HSA-390585
 is_a: FPLX:root
@@ -10712,6 +11048,7 @@ synonym: "cTnC" EXACT []
 synonym: "TN-C" EXACT []
 synonym: "TnC" EXACT []
 synonym: "troponin C" EXACT []
+xref: MESH:D019209
 xref: RE:R-HSA-390532
 xref: RE:R-HSA-390587
 part_of: FPLX:Troponin
@@ -10724,6 +11061,7 @@ name: Troponin-I
 synonym: "cTnI" EXACT []
 synonym: "TPNI" EXACT []
 synonym: "troponin I" EXACT []
+xref: MESH:D019210
 xref: NCIT:C17343
 xref: RE:R-HSA-390541
 part_of: FPLX:Troponin
@@ -10738,6 +11076,7 @@ synonym: "cTnT" EXACT []
 synonym: "TPNT" EXACT []
 synonym: "troponin T" EXACT []
 xref: IP:IPR027707
+xref: MESH:D020107
 xref: NCIT:C38041
 xref: RE:R-HSA-390546
 part_of: FPLX:Troponin
@@ -10749,6 +11088,7 @@ inverse_is_a: HGNC:TNNT3
 id: FPLX:TRP
 name: TRP
 xref: HGNC_GROUP:249
+xref: MESH:D050051
 is_a: FPLX:Voltage_gated_ion_channels
 inverse_is_a: HGNC:MCOLN1
 inverse_is_a: HGNC:MCOLN2
@@ -10787,6 +11127,7 @@ synonym: "tryptase" EXACT []
 synonym: "tryptases" EXACT []
 xref: BEL:"Tryptase Family"
 xref: ECCODE:3.4.21.59
+xref: MESH:D053802
 xref: NCIT:C120030
 xref: NEXTPROT-FAMILY:02767
 is_a: FPLX:root
@@ -10878,6 +11219,7 @@ name: Tubulin
 synonym: "tubulin" EXACT []
 xref: MEDSCAN:urn:agi-complex:prophash-90a087d4e73b3992c65edfd9f71c6802
 xref: MEDSCAN:urn:agi-protfc:tubulin
+xref: MESH:D014404
 xref: NCIT:C17219
 xref: NEXTPROT-FAMILY:04239
 is_a: FPLX:root
@@ -10895,6 +11237,7 @@ synonym: "thioredoxin" EXACT []
 synonym: "thioredoxins" EXACT []
 xref: BEL:"TXN Family"
 xref: MEDSCAN:urn:agi-protfc:thioredoxin
+xref: MESH:D013879
 xref: NEXTPROT-FAMILY:04000
 is_a: FPLX:root
 inverse_is_a: HGNC:TXN
@@ -10907,6 +11250,7 @@ synonym: "Thioredoxin reductase" EXACT []
 synonym: "thioredoxin reductase" EXACT []
 xref: BEL:"TXNRD Family"
 xref: IP:IPR006338
+xref: MESH:D013880
 is_a: FPLX:root
 inverse_is_a: HGNC:TXNRD1
 inverse_is_a: HGNC:TXNRD2
@@ -10924,6 +11268,7 @@ synonym: "ubiquitin-conjugating enzymes" EXACT []
 xref: BEL:"UBE2 Family"
 xref: ECCODE:2.3.2.23
 xref: GO:0019787
+xref: MESH:D044763
 xref: NEXTPROT-FAMILY:04282
 is_a: FPLX:root
 inverse_is_a: HGNC:CDC34
@@ -10965,6 +11310,7 @@ synonym: "Ubiquitin" EXACT []
 synonym: "ubiquitin" EXACT []
 xref: MEDSCAN:urn:agi-complex:prophash-50bd08479c3770278693a51fe379babd
 xref: MEDSCAN:urn:agi-protfc:ubiquitin
+xref: MESH:D025801
 xref: NCIT:C17227
 xref: NEXTPROT-FAMILY:04276
 is_a: FPLX:root
@@ -11021,6 +11367,7 @@ synonym: "VAV family" EXACT []
 synonym: "Vav" EXACT []
 xref: BEL:"VAV Family"
 xref: MEDSCAN:urn:agi-aopfc:0000504
+xref: MESH:D051567
 xref: RE:R-HSA-2029115
 xref: RE:R-HSA-430172
 xref: RE:R-HSA-434632
@@ -11037,6 +11384,7 @@ inverse_is_a: HGNC:VAV3
 id: FPLX:VDAC
 name: VDAC
 xref: HGNC_GROUP:306
+xref: MESH:D050994
 is_a: FPLX:Porins
 inverse_is_a: HGNC:VDAC1
 inverse_is_a: HGNC:VDAC2
@@ -11048,6 +11396,7 @@ name: VEGF
 synonym: "vascular endothelial growth factor" EXACT []
 synonym: "VEGF" EXACT []
 xref: BEL:"VEGF Family"
+xref: MESH:D041442
 xref: NCIT:C129646
 xref: RE:R-HSA-195361
 xref: RE:R-HSA-195376
@@ -11067,6 +11416,7 @@ synonym: "VEGFR" EXACT []
 synonym: "VEGFRs" EXACT []
 xref: BEL:"VEGFR Family"
 xref: GO:0005172
+xref: MESH:D040262
 xref: NCIT:C17293
 is_a: FPLX:root
 inverse_is_a: HGNC:FLT1
@@ -11099,6 +11449,7 @@ synonym: "alphavbeta3-integrin" EXACT []
 synonym: "integrins alphavbeta3" EXACT []
 synonym: "vitronectin receptor" EXACT []
 synonym: "αvβ3 integrin" EXACT []
+xref: MESH:D039302
 is_a: FPLX:Integrins
 has_part: HGNC:ITGA5
 has_part: HGNC:ITGB3
@@ -11112,6 +11463,7 @@ xref: BEL:"WNT Family"
 xref: IP:IPR005817
 xref: IP:IPR018161
 xref: MEDSCAN:urn:agi-aopfc:0000426
+xref: MESH:D051153
 xref: NEXTPROT-FAMILY:04686
 xref: XFAM:PF00110
 xref: RE:R-HSA-3238268
