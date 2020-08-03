@@ -261,6 +261,9 @@ Atg4	ATG4	fplx	Family
 Augmin	Augmin	fplx	Family
 Autophagy	GO:0006914	go	BioProcess
 Axin	AXIN	fplx	Family
+Axonemal-dynein	Axonemal_dynein	fplx	Family
+Axonemal-dynein-IDA	Axonemal_dynein_IDA	fplx	Family
+Axonemal-dynein-ODA	Axonemal_dynein_ODA	fplx	Family
 Aβ	P05067	uniprot	Gene_or_gene_product
 B-Raf	P15056	uniprot	Gene_or_gene_product
 B3GAT	B3GAT	fplx	Family
@@ -623,6 +626,8 @@ DSB	D053903	mesh	BioProcess
 DUSP	DUSP	fplx	Family
 DUSP1	P28562	uniprot	Gene_or_gene_product
 DVL	DVL	fplx	Family
+DYNC1	DYNC1	fplx	Family
+DYNC2	DYNC2	fplx	Family
 DYRK	DYRK	fplx	Family
 Danusertib	CHEBI:94490	chebi	Simple_chemical
 Death-receptor	Death_receptor	fplx	Family
@@ -635,6 +640,8 @@ Dok2	O60496	uniprot	Gene_or_gene_product
 Doxorubicin	CHEBI:28748	chebi	Simple_chemical
 Drp-1	O00429	uniprot	Gene_or_gene_product
 Dvl	DVL	fplx	Family
+Dynein	Dynein	fplx	Family
+Dyneins	Dynein	fplx	Family
 E-cadherin	P12830	uniprot	Gene_or_gene_product
 E2 enzyme	UBE2	fplx	Family
 E2 ubiquitin-conjugating enzyme	UBE2	fplx	Family
@@ -2442,6 +2449,7 @@ aspirin	CHEBI:15365	chebi	Simple_chemical
 aura	D020325	mesh	BioProcess
 autophagic cell death	GO:0048102	go	BioProcess
 autophagy	GO:0006914	go	BioProcess
+axonemal dynein	Axonemal_dynein	fplx	Family
 b-adrenergic receptor	ADRB	fplx	Family
 b-arrestin	ARRB	fplx	Family
 b-receptors	ADRB	fplx	Family
@@ -2707,6 +2715,8 @@ doxorubicin	CHEBI:28748	chebi	Simple_chemical
 doxycycline	CHEBI:50845	chebi	Simple_chemical
 dynamin	DNM	fplx	Family
 dynamin family	DNM	fplx	Family
+dynein	Dynein	fplx	Family
+dyneins	Dynein	fplx	Family
 dystrophin glycoprotein	DGC	fplx	Family
 dystrophin glycoprotein complex	DGC	fplx	Family
 dystrophin-associated glycoprotein complex	DGC	fplx	Family
@@ -2953,6 +2963,7 @@ mitogen-activated protein kinase	MAPK	fplx	Family
 mitogen-activated protein kinase kinase	MAP2K	fplx	Family
 mitogen-activated protein kinases	MAPK	fplx	Family
 mitoribosome	Mitochondrial_Ribosome	fplx	Family
+motor protein dynein	Dynein	fplx	Family
 mutp53	P04637	uniprot	Gene_or_gene_product
 myoblast	D032446	mesh	BioProcess
 myoblasts	D032446	mesh	BioProcess

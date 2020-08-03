@@ -2,8 +2,8 @@
 Keyword=FPLX
 NameString=FamPlex
 DomainString=Gene and Gene Products
-VersionString=20200728
-CreatedDateTime=2020-07-28T16:43:05
+VersionString=20200803
+CreatedDateTime=2020-08-03T11:41:51
 DescriptionString=FamPlex is a collection of resources for grounding biological entities from text and describing their hierarchical relationships.
 QueryValueURL=http://identifiers.org/fplx/
 
@@ -90,6 +90,9 @@ Annexin_II_heterotetramer|CGPR
 Apolipoprotein|CGPR
 Arp2_3_protein|CGPR
 Augmin|CGPR
+Axonemal_dynein|CGPR
+Axonemal_dynein_IDA|CGPR
+Axonemal_dynein_ODA|CGPR
 B3GAT|CGPR
 BCKDC|CGPR
 BDKR|CGPR
@@ -206,10 +209,13 @@ DNM|CGPR
 DRD|CGPR
 DUSP|CGPR
 DVL|CGPR
+DYNC1|CGPR
+DYNC2|CGPR
 DYRK|CGPR
 Death_receptor|CGPR
 Deoxyribonucleoside_kinases|CGPR
 Desmoglein|CGPR
+Dynein|CGPR
 E2F|CGPR
 E3_Ub_ligase|CGPR
 EDN|CGPR
