@@ -67,6 +67,9 @@ ATP5G
 ATP_synthase
 Augmin
 AXIN
+Axonemal_dynein
+Axonemal_dynein_IDA
+Axonemal_dynein_ODA
 B3GAT
 BCKDC
 BDKR
@@ -186,6 +189,9 @@ DNM
 DRD
 DUSP
 DVL
+DYNC1
+DYNC2
+Dynein
 DYRK
 E2F
 E3_Ub_ligase

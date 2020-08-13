@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 28:07:2020 16:43
+date: 12:08:2020 16:17
 
 [Term]
 id: FPLX:5_hydroxytryptamine_receptors_G_protein_coupled
@@ -1119,6 +1119,60 @@ xref: RE:R-HSA-4641132
 is_a: FPLX:root
 inverse_is_a: HGNC:AXIN1
 inverse_is_a: HGNC:AXIN2
+
+[Term]
+id: FPLX:Axonemal_dynein
+name: Axonemal-dynein
+synonym: "axonemal dynein" EXACT []
+xref: HGNC_GROUP:536
+xref: MESH:D056444
+is_a: FPLX:Dynein
+inverse_is_a: FPLX:Axonemal_dynein_IDA
+inverse_is_a: FPLX:Axonemal_dynein_ODA
+
+[Term]
+id: FPLX:Axonemal_dynein_IDA
+name: Axonemal-dynein-IDA
+xref: HGNC_GROUP:2032
+is_a: FPLX:Axonemal_dynein
+has_part: HGNC:CASC1
+has_part: HGNC:DNAH1
+has_part: HGNC:DNAH10
+has_part: HGNC:DNAH12
+has_part: HGNC:DNAH14
+has_part: HGNC:DNAH2
+has_part: HGNC:DNAH3
+has_part: HGNC:DNAH6
+has_part: HGNC:DNAH7
+has_part: HGNC:DYNLL1
+has_part: HGNC:DYNLL2
+has_part: HGNC:DYNLRB1
+has_part: HGNC:DYNLRB2
+has_part: HGNC:DYNLT3
+has_part: HGNC:TCTEX1D2
+has_part: HGNC:WDR63
+has_part: HGNC:WDR78
+
+[Term]
+id: FPLX:Axonemal_dynein_ODA
+name: Axonemal-dynein-ODA
+synonym: "outer dynein" EXACT []
+xref: HGNC_GROUP:2031
+is_a: FPLX:Axonemal_dynein
+has_part: HGNC:DNAH11
+has_part: HGNC:DNAH17
+has_part: HGNC:DNAH5
+has_part: HGNC:DNAH8
+has_part: HGNC:DNAH9
+has_part: HGNC:DNAI1
+has_part: HGNC:DNAI2
+has_part: HGNC:DNAL1
+has_part: HGNC:DNAL4
+has_part: HGNC:DYNLL1
+has_part: HGNC:DYNLRB1
+has_part: HGNC:DYNLRB2
+has_part: HGNC:DYNLT1
+has_part: HGNC:TCTE3
 
 [Term]
 id: FPLX:B3GAT
@@ -2922,18 +2976,15 @@ inverse_is_a: HGNC:CYP4F12
 id: FPLX:Cytoplasmic_dynein
 name: Cytoplasmic-dynein
 synonym: "cytoplasmic dynein" EXACT []
+synonym: "Cytoplasmic dynein" EXACT []
+synonym: "microtubule motor cytoplasmic dynein" EXACT []
 xref: BEL:"Cytoplasmic Dynein Complex"
 xref: GO:0005868
+xref: HGNC_GROUP:538
 xref: MESH:D056445
-is_a: FPLX:root
-has_part: HGNC:DYNC1H1
-has_part: HGNC:DYNC1I1
-has_part: HGNC:DYNC1I2
-has_part: HGNC:DYNC1LI1
-has_part: HGNC:DYNC1LI2
-has_part: HGNC:DYNLL1
-has_part: HGNC:DYNLRB1
-has_part: HGNC:DYNLRB2
+is_a: FPLX:Dynein
+inverse_is_a: FPLX:DYNC1
+inverse_is_a: FPLX:DYNC2
 
 [Term]
 id: FPLX:DAPK
@@ -3146,6 +3197,60 @@ is_a: FPLX:root
 inverse_is_a: HGNC:DVL1
 inverse_is_a: HGNC:DVL2
 inverse_is_a: HGNC:DVL3
+
+[Term]
+id: FPLX:DYNC1
+name: DYNC1
+xref: HGNC_GROUP:2028
+is_a: FPLX:Cytoplasmic_dynein
+has_part: HGNC:DYNC1H1
+has_part: HGNC:DYNC1I1
+has_part: HGNC:DYNC1I2
+has_part: HGNC:DYNC1LI1
+has_part: HGNC:DYNC1LI2
+has_part: HGNC:DYNLL1
+has_part: HGNC:DYNLL2
+has_part: HGNC:DYNLRB1
+has_part: HGNC:DYNLRB2
+has_part: HGNC:DYNLT1
+has_part: HGNC:DYNLT3
+
+[Term]
+id: FPLX:DYNC2
+name: DYNC2
+xref: HGNC_GROUP:2029
+is_a: FPLX:Cytoplasmic_dynein
+has_part: HGNC:DYNC2H1
+has_part: HGNC:DYNC2LI1
+has_part: HGNC:DYNLL1
+has_part: HGNC:DYNLL2
+has_part: HGNC:DYNLRB1
+has_part: HGNC:DYNLRB2
+has_part: HGNC:DYNLT1
+has_part: HGNC:DYNLT3
+has_part: HGNC:TCTEX1D2
+has_part: HGNC:WDR34
+has_part: HGNC:WDR60
+
+[Term]
+id: FPLX:Dynein
+name: Dynein
+synonym: "dynein" EXACT []
+synonym: "dyneins" EXACT []
+synonym: "Dynein" EXACT []
+synonym: "Dyneins" EXACT []
+synonym: "dynein complex" EXACT []
+synonym: "dynein complexes" EXACT []
+synonym: "dynein motor" EXACT []
+synonym: "dynein motor complex" EXACT []
+synonym: "dynein motors" EXACT []
+synonym: "motor dynein" EXACT []
+synonym: "motor protein dynein" EXACT []
+xref: HGNC_GROUP:537
+xref: MESH:D004398
+is_a: FPLX:root
+inverse_is_a: FPLX:Axonemal_dynein
+inverse_is_a: FPLX:Cytoplasmic_dynein
 
 [Term]
 id: FPLX:DYRK

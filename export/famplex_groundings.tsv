@@ -261,6 +261,9 @@ Atg4	ATG4	fplx	Family
 Augmin	Augmin	fplx	Family
 Autophagy	GO:0006914	go	BioProcess
 Axin	AXIN	fplx	Family
+Axonemal-dynein	Axonemal_dynein	fplx	Family
+Axonemal-dynein-IDA	Axonemal_dynein_IDA	fplx	Family
+Axonemal-dynein-ODA	Axonemal_dynein_ODA	fplx	Family
 Aβ	P05067	uniprot	Gene_or_gene_product
 B-Raf	P15056	uniprot	Gene_or_gene_product
 B3GAT	B3GAT	fplx	Family
@@ -594,6 +597,7 @@ Cytochrome P-450	CYP	fplx	Family
 Cytochrome P450	CYP	fplx	Family
 Cytochrome c oxidase subunit 6a	COX6A	fplx	Family
 Cytochrome p450	CYP	fplx	Family
+Cytoplasmic dynein	Cytoplasmic_dynein	fplx	Family
 Cytoplasmic-dynein	Cytoplasmic_dynein	fplx	Family
 D-type cyclins	Cyclin_D	fplx	Family
 DA	CHEBI:18243	chebi	Simple_chemical
@@ -623,6 +627,8 @@ DSB	D053903	mesh	BioProcess
 DUSP	DUSP	fplx	Family
 DUSP1	P28562	uniprot	Gene_or_gene_product
 DVL	DVL	fplx	Family
+DYNC1	DYNC1	fplx	Family
+DYNC2	DYNC2	fplx	Family
 DYRK	DYRK	fplx	Family
 Danusertib	CHEBI:94490	chebi	Simple_chemical
 Death-receptor	Death_receptor	fplx	Family
@@ -635,6 +641,8 @@ Dok2	O60496	uniprot	Gene_or_gene_product
 Doxorubicin	CHEBI:28748	chebi	Simple_chemical
 Drp-1	O00429	uniprot	Gene_or_gene_product
 Dvl	DVL	fplx	Family
+Dynein	Dynein	fplx	Family
+Dyneins	Dynein	fplx	Family
 E-cadherin	P12830	uniprot	Gene_or_gene_product
 E2 enzyme	UBE2	fplx	Family
 E2 ubiquitin-conjugating enzyme	UBE2	fplx	Family
@@ -2442,6 +2450,7 @@ aspirin	CHEBI:15365	chebi	Simple_chemical
 aura	D020325	mesh	BioProcess
 autophagic cell death	GO:0048102	go	BioProcess
 autophagy	GO:0006914	go	BioProcess
+axonemal dynein	Axonemal_dynein	fplx	Family
 b-adrenergic receptor	ADRB	fplx	Family
 b-arrestin	ARRB	fplx	Family
 b-receptors	ADRB	fplx	Family
@@ -2707,6 +2716,13 @@ doxorubicin	CHEBI:28748	chebi	Simple_chemical
 doxycycline	CHEBI:50845	chebi	Simple_chemical
 dynamin	DNM	fplx	Family
 dynamin family	DNM	fplx	Family
+dynein	Dynein	fplx	Family
+dynein complex	Dynein	fplx	Family
+dynein complexes	Dynein	fplx	Family
+dynein motor	Dynein	fplx	Family
+dynein motor complex	Dynein	fplx	Family
+dynein motors	Dynein	fplx	Family
+dyneins	Dynein	fplx	Family
 dystrophin glycoprotein	DGC	fplx	Family
 dystrophin glycoprotein complex	DGC	fplx	Family
 dystrophin-associated glycoprotein complex	DGC	fplx	Family
@@ -2940,6 +2956,7 @@ miR-145	MIR145	hgnc	Gene_or_gene_product
 miR-155	MIR155	hgnc	Gene_or_gene_product
 miR-21	MIR21	hgnc	Gene_or_gene_product
 miR-7	MIR7-1	hgnc	Gene_or_gene_product
+microtubule motor cytoplasmic dynein	Cytoplasmic_dynein	fplx	Family
 mini-chromosome maintenance complex	MCM	fplx	Family
 minichromosome maintenance complex	MCM	fplx	Family
 minichromosome maintenance protein complex	MCM	fplx	Family
@@ -2953,6 +2970,8 @@ mitogen-activated protein kinase	MAPK	fplx	Family
 mitogen-activated protein kinase kinase	MAP2K	fplx	Family
 mitogen-activated protein kinases	MAPK	fplx	Family
 mitoribosome	Mitochondrial_Ribosome	fplx	Family
+motor dynein	Dynein	fplx	Family
+motor protein dynein	Dynein	fplx	Family
 mutp53	P04637	uniprot	Gene_or_gene_product
 myoblast	D032446	mesh	BioProcess
 myoblasts	D032446	mesh	BioProcess
@@ -3003,6 +3022,7 @@ ofalpha(2)-adrenoceptor	ADRA2	fplx	Family
 ofα(2)-adrenoceptor	ADRA2	fplx	Family
 olfactory receptor	OR	fplx	Family
 olfactory receptors	OR	fplx	Family
+outer dynein	Axonemal_dynein_ODA	fplx	Family
 ov-serpins	SERPINB	fplx	Family
 oxaliplatin	CHEBI:31941	chebi	Simple_chemical
 oxidant	D016877	mesh	BioProcess
