@@ -4198,3 +4198,5 @@ HGNC,TCTE3,partof,FPLX,Axonemal_dynein_ODA
 FPLX,ASIC,isa,FPLX,Mechanosensitive_ion_channels
 FPLX,KCNK,isa,FPLX,Mechanosensitive_ion_channels
 FPLX,TRP,isa,FPLX,Mechanosensitive_ion_channels
+HGNC,CAP1,isa,FPLX,CAP,,,,
+HGNC,CAP2,isa,FPLX,CAP,,,,
