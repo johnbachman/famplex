@@ -4195,3 +4195,6 @@ HGNC,DYNLRB1,partof,FPLX,Axonemal_dynein_ODA
 HGNC,DYNLRB2,partof,FPLX,Axonemal_dynein_ODA
 HGNC,DYNLT1,partof,FPLX,Axonemal_dynein_ODA
 HGNC,TCTE3,partof,FPLX,Axonemal_dynein_ODA
+FPLX,ASIC,isa,FPLX,Mechanosensitive_ion_channels
+FPLX,KCNK,isa,FPLX,Mechanosensitive_ion_channels
+FPLX,TRP,isa,FPLX,Mechanosensitive_ion_channels
