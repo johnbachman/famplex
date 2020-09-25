@@ -4220,3 +4220,6 @@ FPLX,Adaptor_protein_II,isa,FPLX,Adaptor_protein
 FPLX,Adaptor_protein_III,isa,FPLX,Adaptor_protein
 FPLX,Adaptor_protein_IV,isa,FPLX,Adaptor_protein
 FPLX,Adaptor_protein_V,isa,FPLX,Adaptor_protein
+HGNC,RB1,FPLX,Pocket_protein
+HGNC,RBL1,FPLX,Pocket_protein
+HGNC,RBL2,FPLX,Pocket_protein
