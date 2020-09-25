@@ -4223,3 +4223,7 @@ FPLX,Adaptor_protein_V,isa,FPLX,Adaptor_protein
 HGNC,RB1,FPLX,Pocket_protein
 HGNC,RBL1,FPLX,Pocket_protein
 HGNC,RBL2,FPLX,Pocket_protein
+HGNC,POLA1,partof,FPLX,DNA_polymerase_alpha
+HGNC,POLA2,partof,FPLX,DNA_polymerase_alpha
+HGNC,PRIM1,partof,FPLX,DNA_polymerase_alpha
+HGNC,PRIM2,partof,FPLX,DNA_polymerase_alpha
