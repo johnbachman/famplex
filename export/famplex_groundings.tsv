@@ -232,8 +232,12 @@ Activin-AB	Activin_AB	fplx	Family
 Activin-B	Activin_B	fplx	Family
 Acyl-CoA Oxidase	ACOX	fplx	Family
 Adaptor Protein 2 complex	Adaptor_protein_II	fplx	Family
+Adaptor-protein	Adaptor_protein	fplx	Family
+Adaptor-protein-I	Adaptor_protein_I	fplx	Family
 Adaptor-protein-II	Adaptor_protein_II	fplx	Family
 Adaptor-protein-III	Adaptor_protein_III	fplx	Family
+Adaptor-protein-IV	Adaptor_protein_IV	fplx	Family
+Adaptor-protein-V	Adaptor_protein_V	fplx	Family
 Akt	AKT	fplx	Family
 Akt1	P31749	uniprot	Gene_or_gene_product
 Akt2	P31751	uniprot	Gene_or_gene_product
@@ -353,6 +357,7 @@ CAMK2	CAMK2_complex	fplx	Family
 CAMK2-complex	CAMK2_complex	fplx	Family
 CAMK2-family	CAMK2_family	fplx	Family
 CAMKII	CAMK2_complex	fplx	Family
+CAP	CAP	fplx	Family
 CAP23	P80723	uniprot	Gene_or_gene_product
 CAPE	CHEBI:8062	chebi	Simple_chemical
 CAPN	CAPN	fplx	Family
@@ -610,6 +615,8 @@ DGC	DGC	fplx	Family
 DGK	DGK	fplx	Family
 DHA	CHEBI:207229	chebi	Simple_chemical
 DHT	CHEBI:2150	chebi	Simple_chemical
+DNA polymerase alpha	DNA_polymerase_alpha	fplx	Family
+DNA polymerase alpha-primase	DNA_polymerase_alpha	fplx	Family
 DNA polymerase delta	DNA_polymerase_delta	fplx	Family
 DNA polymerase δ	DNA_polymerase_delta	fplx	Family
 DNA repair	GO:0006281	go	BioProcess
@@ -617,6 +624,7 @@ DNA replication factor C	RFC	fplx	Family
 DNA replication factor C complex	RFC	fplx	Family
 DNA-PKcs	P78527	uniprot	Gene_or_gene_product
 DNA-Pkcs	P78527	uniprot	Gene_or_gene_product
+DNA-polymerase-alpha	DNA_polymerase_alpha	fplx	Family
 DNA-polymerase-delta	DNA_polymerase_delta	fplx	Family
 DNM	DNM	fplx	Family
 DP complex	TFDP	fplx	Family
@@ -923,6 +931,7 @@ GJ	GJ	fplx	Family
 GLRA-GLRB	GLRA_GLRB	fplx	Family
 GLUT	SLC2A	fplx	Family
 GNRH	GNRH	fplx	Family
+GOT	GOT	fplx	Family
 GPCR	GPCR	fplx	Family
 GPCR kinases	GRK	fplx	Family
 GPCR-C	GPCR_C	fplx	Family
@@ -1081,6 +1090,7 @@ HOTAIR	HOTAIR	hgnc	Gene_or_gene_product
 HR	GO:0000725	go	BioProcess
 HRAS	P01112	uniprot	Gene_or_gene_product
 HRASV12	P01112	uniprot	Gene_or_gene_product
+HRH	HRH	fplx	Family
 HSF1	Q00613	uniprot	Gene_or_gene_product
 HSP20	O14558	uniprot	Gene_or_gene_product
 HSP27	P04792	uniprot	Gene_or_gene_product
@@ -1381,6 +1391,7 @@ Maf subfamily	MAF	fplx	Family
 Mcl-1	Q07820	uniprot	Gene_or_gene_product
 Mdm2	Q00987	uniprot	Gene_or_gene_product
 Mdmx	O15151	uniprot	Gene_or_gene_product
+Mechanosensitive-ion-channels	Mechanosensitive_ion_channels	fplx	Family
 Met	P08581	uniprot	Gene_or_gene_product
 Metallothionein	Metallothionein	fplx	Family
 Metformin	CHEBI:6801	chebi	Simple_chemical
@@ -1603,6 +1614,7 @@ P70RSK	P70S6K	fplx	Family
 P70S6K	P70S6K	fplx	Family
 P90RSK	P90RSK	fplx	Family
 PA	CHEBI:16337	chebi	Simple_chemical
+PAFc	Paf1/RNA_polymerase_II_complex	fplx	Family
 PAI-1	P05121	uniprot	Gene_or_gene_product
 PAK	PAK	fplx	Family
 PAK1	Q13153	uniprot	Gene_or_gene_product
@@ -1685,8 +1697,8 @@ PF-3758309	CHEBI:93751	chebi	Simple_chemical
 PFN	PFN	fplx	Family
 PGC-1alpha	Q9UBK2	uniprot	Gene_or_gene_product
 PGC-1α	Q9UBK2	uniprot	Gene_or_gene_product
-PGE 2	CHEBI:73965	chebi	Simple_chemical
-PGE2	P35408	uniprot	Gene_or_gene_product
+PGE 2	CHEBI:15551	chebi	Simple_chemical
+PGE2	CHEBI:15551	chebi	Simple_chemical
 PI	CHEBI:28874	chebi	Simple_chemical
 PI 3-kinase	PI3K	fplx	Family
 PI 3-kinases	PI3K	fplx	Family
@@ -1806,6 +1818,7 @@ PTX	Pertussis_toxin	fplx	Family
 PTX3	P26022	uniprot	Gene_or_gene_product
 PUMA	Q96PG8	uniprot	Gene_or_gene_product
 PYG	PYG	fplx	Family
+Paf1/RNA-polymerase-II-complex	Paf1/RNA_polymerase_II_complex	fplx	Family
 Pak	PAK	fplx	Family
 Pak1	Q13153	uniprot	Gene_or_gene_product
 Pak2	Q13177	uniprot	Gene_or_gene_product
@@ -1857,8 +1870,15 @@ Phosphorylase kinase	PhK	fplx	Family
 Pin1	Q13526	uniprot	Gene_or_gene_product
 Pka1	P06244	uniprot	Gene_or_gene_product
 Plk1	P53350	uniprot	Gene_or_gene_product
+Pocket protein	Pocket_protein	fplx	Family
+Pocket protein family	Pocket_protein	fplx	Family
+Pocket proteins	Pocket_protein	fplx	Family
+Pocket-protein	Pocket_protein	fplx	Family
 Pol I	RNApo_I	fplx	Family
 Pol delta	DNA_polymerase_delta	fplx	Family
+Pol α	DNA_polymerase_alpha	fplx	Family
+Pol α-primase	DNA_polymerase_alpha	fplx	Family
+Pol α-primase complex	DNA_polymerase_alpha	fplx	Family
 Pol δ	DNA_polymerase_delta	fplx	Family
 Poly(ADP-ribose) polymerase	PARP	fplx	Family
 Poly(ADP-ribose) polymerases	PARP	fplx	Family
@@ -1872,6 +1892,7 @@ Polycomb repressive complex PRC1	PRC1_complex	fplx	Family
 Polycomb repressive complex PRC2	PRC2_complex	fplx	Family
 Polycomb-repressive complex 1	PRC1_complex	fplx	Family
 Polycomb-repressive complex 2	PRC2_complex	fplx	Family
+Polα/primase complex	DNA_polymerase_alpha	fplx	Family
 Porin	Porins	fplx	Family
 Porins	Porins	fplx	Family
 Potassium channel	KCN	fplx	Family
@@ -2446,6 +2467,8 @@ apoptosis	GO:0006915	go	BioProcess
 arsenic	CHEBI:27563	chebi	Simple_chemical
 arsenite	CHEBI:29866	chebi	Simple_chemical
 artemisinin	CHEBI:223316	chebi	Simple_chemical
+aspartate aminotransferase	GOT	fplx	Family
+aspartate transaminase	GOT	fplx	Family
 aspirin	CHEBI:15365	chebi	Simple_chemical
 aura	D020325	mesh	BioProcess
 autophagic cell death	GO:0048102	go	BioProcess
@@ -2623,6 +2646,7 @@ class III histone deacetylases	HDAC_III	fplx	Family
 class IV HDACs	HDAC_IV	fplx	Family
 class IV histone deacetylases	HDAC_IV	fplx	Family
 clathrin	Clathrin	fplx	Family
+clathrin associated protein	Adaptor_protein	fplx	Family
 clathrin coat	Clathrin	fplx	Family
 cleaved PARP	P09874	uniprot	Gene_or_gene_product
 cocaine	CHEBI:27958	chebi	Simple_chemical
@@ -2649,6 +2673,8 @@ cullin	CUL	fplx	Family
 cullin proteins	CUL	fplx	Family
 cullins	CUL	fplx	Family
 curcumin	CHEBI:3962	chebi	Simple_chemical
+cyclase associated protein	CAP	fplx	Family
+cyclase associated proteins	CAP	fplx	Family
 cyclic AMP-dependent protein kinase	PKA	fplx	Family
 cyclic-AMP-dependent protein kinase	PKA	fplx	Family
 cyclin	Cyclin	fplx	Family
@@ -2804,6 +2830,8 @@ glucose	CHEBI:17234	chebi	Simple_chemical
 glucose transporter	SLC2A	fplx	Family
 glucose transporters	SLC2A	fplx	Family
 glutamate metabotropic receptors	GRM	fplx	Family
+glutamate oxaloacetate transaminase	GOT	fplx	Family
+glutamic-oxaloacetic transaminase	GOT	fplx	Family
 glutathione	CHEBI:16856	chebi	Simple_chemical
 glutathione S-transferase	GST	fplx	Family
 glutathione peroxidase	GPX	fplx	Family
@@ -2834,6 +2862,7 @@ h9-1-1 complex	9_1_1	fplx	Family
 hAxin	AXIN	fplx	Family
 hCG	hCG	fplx	Family
 hER	ESR	fplx	Family
+hH	HRH	fplx	Family
 hK4	Q9Y5K2	uniprot	Gene_or_gene_product
 hRI	P13489	uniprot	Gene_or_gene_product
 hTERT	O14746	uniprot	Gene_or_gene_product
@@ -2845,6 +2874,8 @@ heme oxygenase	HMOX	fplx	Family
 hemoglobin	Hemoglobin	fplx	Family
 heparin	CHEBI:28304	chebi	Simple_chemical
 her4	Q90466	uniprot	Gene_or_gene_product
+histamine receptor	HRH	fplx	Family
+histamine receptors	HRH	fplx	Family
 histone	Histone	fplx	Family
 histone H1	Histone_H1	fplx	Family
 histone H2A	Histone_H2A	fplx	Family
@@ -2941,6 +2972,8 @@ mTORC2	mTORC2	fplx	Family
 mammalian mitochondrial ribosome	Mitochondrial_Ribosome	fplx	Family
 mammalian target of rapamycin	P42345	uniprot	Gene_or_gene_product
 mangiferin	CHEBI:6682	chebi	Simple_chemical
+mechanosensitive ion channel	Mechanosensitive_ion_channels	fplx	Family
+mechanosensitive ion channels	Mechanosensitive_ion_channels	fplx	Family
 melanin	CHEBI:89634	chebi	Simple_chemical
 melatonin	CHEBI:16796	chebi	Simple_chemical
 membrane attack	MAC	fplx	Family
@@ -3147,11 +3180,18 @@ phospholipase Cδ	PLCD	fplx	Family
 phospholipase D	PLD	fplx	Family
 phospholipase-C	PLC	fplx	Family
 phosphorylase kinase	PhK	fplx	Family
+pocket protein	Pocket_protein	fplx	Family
+pocket protein family	Pocket_protein	fplx	Family
+pocket proteins	Pocket_protein	fplx	Family
 pol delta	DNA_polymerase_delta	fplx	Family
+pol α	DNA_polymerase_alpha	fplx	Family
+pol α-primase	DNA_polymerase_alpha	fplx	Family
+pol α-primase complex	DNA_polymerase_alpha	fplx	Family
 pol δ	DNA_polymerase_delta	fplx	Family
 polycomb Repressive Complex (PRC) 1	PRC1_complex	fplx	Family
 polycomb repressive complex 1	PRC1_complex	fplx	Family
 polycomb repressive complex 2	PRC2_complex	fplx	Family
+polα/primase complex	DNA_polymerase_alpha	fplx	Family
 porin	Porins	fplx	Family
 porins	Porins	fplx	Family
 potassium channel	KCN	fplx	Family

@@ -14,8 +14,12 @@ Activin_A
 Activin_AB
 Activin_B
 ACTN
+Adaptor_protein
+Adaptor_protein_I
 Adaptor_protein_II
 Adaptor_protein_III
+Adaptor_protein_IV
+Adaptor_protein_V
 ADCY
 ADH
 ADORA
@@ -96,6 +100,7 @@ CALM
 CAMK
 CAMK2_complex
 CAMK2_family
+CAP
 CAPN
 Carboxylesterase
 Caspase
@@ -184,6 +189,7 @@ Deoxyribonucleoside_kinases
 Desmoglein
 DGC
 DGK
+DNA_polymerase_alpha
 DNA_polymerase_delta
 DNM
 DRD
@@ -279,6 +285,7 @@ GJ
 GLRA_GLRB
 Glycosyltransferase
 GNRH
+GOT
 GPCR
 GPCR_C
 GPCR_C_orphans
@@ -332,6 +339,7 @@ Histone_H3
 Histone_H4
 HLA_DR
 HMOX
+HRH
 HSP90
 HSP90A
 HSP90AA
@@ -398,6 +406,7 @@ MAP2K
 MAP3K
 MAPK
 MCM
+Mechanosensitive_ion_channels
 MED
 MEF2
 MEK
@@ -482,6 +491,7 @@ p38
 p53_family
 P70S6K
 P90RSK
+Paf1/RNA_polymerase_II_complex
 PAK
 PARP
 PARV
@@ -528,6 +538,7 @@ PLCB
 PLCD
 PLCG
 PLD
+Pocket_protein
 Porins
 Potassium_calcium_activated_channels
 Potassium_voltage_gated_channels

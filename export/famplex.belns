@@ -2,8 +2,8 @@
 Keyword=FPLX
 NameString=FamPlex
 DomainString=Gene and Gene Products
-VersionString=20200812
-CreatedDateTime=2020-08-12T16:17:41
+VersionString=20201002
+CreatedDateTime=2020-10-02T12:26:40
 DescriptionString=FamPlex is a collection of resources for grounding biological entities from text and describing their hierarchical relationships.
 QueryValueURL=http://identifiers.org/fplx/
 
@@ -84,8 +84,12 @@ Activin|CGPR
 Activin_A|CGPR
 Activin_AB|CGPR
 Activin_B|CGPR
+Adaptor_protein|CGPR
+Adaptor_protein_I|CGPR
 Adaptor_protein_II|CGPR
 Adaptor_protein_III|CGPR
+Adaptor_protein_IV|CGPR
+Adaptor_protein_V|CGPR
 Annexin_II_heterotetramer|CGPR
 Apolipoprotein|CGPR
 Arp2_3_protein|CGPR
@@ -116,6 +120,7 @@ CALM|CGPR
 CAMK|CGPR
 CAMK2_complex|CGPR
 CAMK2_family|CGPR
+CAP|CGPR
 CAPN|CGPR
 CATSPER|CGPR
 CAV|CGPR
@@ -204,6 +209,7 @@ DAPK|CGPR
 DDR|CGPR
 DGC|CGPR
 DGK|CGPR
+DNA_polymerase_alpha|CGPR
 DNA_polymerase_delta|CGPR
 DNM|CGPR
 DRD|CGPR
@@ -292,6 +298,7 @@ GEF|CGPR
 GJ|CGPR
 GLRA_GLRB|CGPR
 GNRH|CGPR
+GOT|CGPR
 GPCR|CGPR
 GPCR_C|CGPR
 GPCR_C_orphans|CGPR
@@ -346,6 +353,7 @@ HIF_alpha|CGPR
 HIF_beta|CGPR
 HLA_DR|CGPR
 HMOX|CGPR
+HRH|CGPR
 HSP90|CGPR
 HSP90A|CGPR
 HSP90AA|CGPR
@@ -445,6 +453,7 @@ MYO7|CGPR
 MYO9|CGPR
 MYST|CGPR
 Macrophage_inflammatory_proteins|CGPR
+Mechanosensitive_ion_channels|CGPR
 Metallothionein|CGPR
 Mitochondrial_Ribosome|CGPR
 Myosin_complex|CGPR
@@ -561,10 +570,12 @@ PRKAR|CGPR
 PRKG|CGPR
 PTGER|CGPR
 PYG|CGPR
+Paf1/RNA_polymerase_II_complex|CGPR
 Patched|CGPR
 Pertussis_toxin|CGPR
 PhK|CGPR
 Phosphatase|CGPR
+Pocket_protein|CGPR
 Porins|CGPR
 Potassium_calcium_activated_channels|CGPR
 Potassium_voltage_gated_channels|CGPR
