@@ -1614,7 +1614,7 @@ P70RSK	P70S6K	fplx	Family
 P70S6K	P70S6K	fplx	Family
 P90RSK	P90RSK	fplx	Family
 PA	CHEBI:16337	chebi	Simple_chemical
-PAFc	RNA_polymerase_II_complex	fplx	Family
+PAFc	Paf1/RNA_polymerase_II_complex	fplx	Family
 PAI-1	P05121	uniprot	Gene_or_gene_product
 PAK	PAK	fplx	Family
 PAK1	Q13153	uniprot	Gene_or_gene_product

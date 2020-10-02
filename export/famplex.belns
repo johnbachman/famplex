@@ -3,7 +3,7 @@ Keyword=FPLX
 NameString=FamPlex
 DomainString=Gene and Gene Products
 VersionString=20201002
-CreatedDateTime=2020-10-02T11:12:06
+CreatedDateTime=2020-10-02T12:26:40
 DescriptionString=FamPlex is a collection of resources for grounding biological entities from text and describing their hierarchical relationships.
 QueryValueURL=http://identifiers.org/fplx/
 

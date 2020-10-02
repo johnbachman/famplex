@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 02:10:2020 11:12
+date: 02:10:2020 12:26
 
 [Term]
 id: FPLX:5_hydroxytryptamine_receptors_G_protein_coupled
@@ -8462,6 +8462,7 @@ inverse_is_a: HGNC:RPS6KA6
 [Term]
 id: FPLX:Paf1/RNA_polymerase_II_complex
 name: Paf1/RNA-polymerase-II-complex
+synonym: "PAFc" EXACT []
 xref: HGNC_GROUP:1029
 is_a: FPLX:root
 has_part: HGNC:CDC73
