@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 02:10:2020 17:14
+date: 02:10:2020 18:01
 
 [Term]
 id: FPLX:5_hydroxytryptamine_receptors_G_protein_coupled
@@ -4385,7 +4385,7 @@ synonym: "γ-aminobutyric-acid A receptor" EXACT []
 xref: BEL:"GABR Family"
 xref: GO:0004890
 xref: HGNC_GROUP:563
-xref: MESH:D011963
+xref: MESH:D018079
 is_a: FPLX:Ligand_gated_ion_channels
 inverse_is_a: HGNC:GABRA1
 inverse_is_a: HGNC:GABRA2
@@ -11656,7 +11656,7 @@ name: VEGF
 synonym: "vascular endothelial growth factor" EXACT []
 synonym: "VEGF" EXACT []
 xref: BEL:"VEGF Family"
-xref: MESH:D041442
+xref: MESH:D042442
 xref: NCIT:C129646
 xref: RE:R-HSA-195361
 xref: RE:R-HSA-195376
