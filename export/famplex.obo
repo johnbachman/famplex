@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 12:08:2020 16:17
+date: 02:10:2020 11:12
 
 [Term]
 id: FPLX:5_hydroxytryptamine_receptors_G_protein_coupled
@@ -226,6 +226,33 @@ inverse_is_a: HGNC:ACTN3
 inverse_is_a: HGNC:ACTN4
 
 [Term]
+id: FPLX:Adaptor_protein
+name: Adaptor-protein
+synonym: "clathrin associated protein" EXACT []
+xref: HGNC_GROUP:1670
+xref: MESH:D033942
+is_a: FPLX:root
+inverse_is_a: FPLX:Adaptor_protein_I
+inverse_is_a: FPLX:Adaptor_protein_II
+inverse_is_a: FPLX:Adaptor_protein_III
+inverse_is_a: FPLX:Adaptor_protein_IV
+inverse_is_a: FPLX:Adaptor_protein_V
+
+[Term]
+id: FPLX:Adaptor_protein_I
+name: Adaptor-protein-I
+xref: HGNC_GROUP:1671
+xref: MESH:D033961
+is_a: FPLX:Adaptor_protein
+has_part: HGNC:AP1B1
+has_part: HGNC:AP1G1
+has_part: HGNC:AP1M1
+has_part: HGNC:AP1M2
+has_part: HGNC:AP1S1
+has_part: HGNC:AP1S2
+has_part: HGNC:AP1S3
+
+[Term]
 id: FPLX:Adaptor_protein_II
 name: Adaptor-protein-II
 synonym: "Adaptor Protein 2 complex" EXACT []
@@ -239,8 +266,9 @@ synonym: "AP2 complex" EXACT []
 synonym: "AP2" EXACT []
 xref: BEL:"Adaptor Protein II Complex"
 xref: GO:0030122
+xref: HGNC_GROUP:1672
 xref: MESH:D033962
-is_a: FPLX:root
+is_a: FPLX:Adaptor_protein
 has_part: HGNC:AP2B1
 has_part: HGNC:AP2M1
 has_part: HGNC:AP2S1
@@ -253,12 +281,34 @@ synonym: "adaptor protein complex 3" EXACT []
 synonym: "AP-3" EXACT []
 synonym: "AP3" EXACT []
 xref: BEL:"Adaptor Protein III Complex"
+xref: HGNC_GROUP:1673
 xref: MESH:D033963
-is_a: FPLX:root
+is_a: FPLX:Adaptor_protein
 has_part: HGNC:AP3B1
 has_part: HGNC:AP3D1
 has_part: HGNC:AP3S1
 has_part: HGNC:AP3S2
+
+[Term]
+id: FPLX:Adaptor_protein_IV
+name: Adaptor-protein-IV
+xref: HGNC_GROUP:1674
+xref: MESH:D033964
+is_a: FPLX:Adaptor_protein
+has_part: HGNC:AP4B1
+has_part: HGNC:AP4E1
+has_part: HGNC:AP4M1
+has_part: HGNC:AP4S1
+
+[Term]
+id: FPLX:Adaptor_protein_V
+name: Adaptor-protein-V
+xref: HGNC_GROUP:1675
+is_a: FPLX:Adaptor_protein
+has_part: HGNC:AP5Z1
+has_part: HGNC:AP5B1
+has_part: HGNC:AP5M1
+has_part: HGNC:AP5S1
 
 [Term]
 id: FPLX:ADCY
@@ -997,6 +1047,7 @@ name: ASIC
 xref: HGNC_GROUP:290
 xref: MESH:D062565
 is_a: FPLX:Sodium_channels
+is_a: FPLX:Mechanosensitive_ion_channels
 inverse_is_a: HGNC:ASIC1
 inverse_is_a: HGNC:ASIC2
 inverse_is_a: HGNC:ASIC3
@@ -1612,6 +1663,17 @@ inverse_is_a: HGNC:CAMK2A
 inverse_is_a: HGNC:CAMK2B
 inverse_is_a: HGNC:CAMK2D
 inverse_is_a: HGNC:CAMK2G
+
+[Term]
+id: FPLX:CAP
+name: CAP
+synonym: "cyclase associated protein" EXACT []
+synonym: "cyclase associated proteins" EXACT []
+xref: IP:IPR013992
+xref: XFAM:PF01213
+is_a: FPLX:root
+inverse_is_a: HGNC:CAP1
+inverse_is_a: HGNC:CAP2
 
 [Term]
 id: FPLX:CAPN
@@ -3109,6 +3171,25 @@ inverse_is_a: HGNC:DGKZ
 inverse_is_a: HGNC:DGKE
 inverse_is_a: HGNC:DGKI
 inverse_is_a: HGNC:DGKK
+
+[Term]
+id: FPLX:DNA_polymerase_alpha
+name: DNA-polymerase-alpha
+synonym: "DNA polymerase alpha" EXACT []
+synonym: "DNA polymerase alpha-primase" EXACT []
+synonym: "Polα/primase complex" EXACT []
+synonym: "polα/primase complex" EXACT []
+synonym: "Pol α-primase complex" EXACT []
+synonym: "pol α-primase complex" EXACT []
+synonym: "Pol α-primase" EXACT []
+synonym: "pol α-primase" EXACT []
+synonym: "Pol α" EXACT []
+synonym: "pol α" EXACT []
+is_a: FPLX:root
+has_part: HGNC:POLA1
+has_part: HGNC:POLA2
+has_part: HGNC:PRIM1
+has_part: HGNC:PRIM2
 
 [Term]
 id: FPLX:DNA_polymerase_delta
@@ -4659,6 +4740,18 @@ inverse_is_a: HGNC:GNRH1
 inverse_is_a: HGNC:GNRH2
 
 [Term]
+id: FPLX:GOT
+name: GOT
+synonym: "aspartate aminotransferase" EXACT []
+synonym: "aspartate transaminase" EXACT []
+synonym: "glutamic-oxaloacetic transaminase" EXACT []
+synonym: "glutamate oxaloacetate transaminase" EXACT []
+xref: MESH:D001219
+is_a: FPLX:root
+inverse_is_a: HGNC:GOT1
+inverse_is_a: HGNC:GOT2
+
+[Term]
 id: FPLX:GPCR
 name: GPCR
 synonym: "GPCR" EXACT []
@@ -5534,6 +5627,20 @@ inverse_is_a: HGNC:HMOX1
 inverse_is_a: HGNC:HMOX2
 
 [Term]
+id: FPLX:HRH
+name: HRH
+synonym: "histamine receptor" EXACT []
+synonym: "histamine receptors" EXACT []
+synonym: "hH" EXACT []
+xref: HGNC_GROUP:187
+xref: MESH:D011968
+is_a: FPLX:root
+inverse_is_a: HGNC:HRH1
+inverse_is_a: HGNC:HRH2
+inverse_is_a: HGNC:HRH3
+inverse_is_a: HGNC:HRH4
+
+[Term]
 id: FPLX:HSP90
 name: HSP90
 synonym: "HSP90" EXACT []
@@ -6171,6 +6278,7 @@ xref: HGNC_GROUP:277
 xref: MESH:D024683
 is_a: FPLX:KCN
 is_a: FPLX:Voltage_gated_ion_channels
+is_a: FPLX:Mechanosensitive_ion_channels
 inverse_is_a: HGNC:KCNK1
 inverse_is_a: HGNC:KCNK10
 inverse_is_a: HGNC:KCNK12
@@ -6603,6 +6711,16 @@ inverse_is_a: HGNC:MCM7
 inverse_is_a: HGNC:MCM8
 inverse_is_a: HGNC:MCM9
 inverse_is_a: HGNC:MCMDC2
+
+[Term]
+id: FPLX:Mechanosensitive_ion_channels
+name: Mechanosensitive-ion-channels
+synonym: "mechanosensitive ion channel" EXACT []
+synonym: "mechanosensitive ion channels" EXACT []
+is_a: FPLX:root
+inverse_is_a: FPLX:ASIC
+inverse_is_a: FPLX:KCNK
+inverse_is_a: FPLX:TRP
 
 [Term]
 id: FPLX:MED
@@ -8342,6 +8460,18 @@ inverse_is_a: HGNC:RPS6KA5
 inverse_is_a: HGNC:RPS6KA6
 
 [Term]
+id: FPLX:Paf1/RNA_polymerase_II_complex
+name: Paf1/RNA-polymerase-II-complex
+xref: HGNC_GROUP:1029
+is_a: FPLX:root
+has_part: HGNC:CDC73
+has_part: HGNC:CTR9
+has_part: HGNC:LEO1
+has_part: HGNC:PAF1
+has_part: HGNC:RTF1
+has_part: HGNC:WDR61
+
+[Term]
 id: FPLX:PAK
 name: PAK
 synonym: "PAK" EXACT []
@@ -9087,6 +9217,20 @@ inverse_is_a: HGNC:PLD3
 inverse_is_a: HGNC:PLD4
 inverse_is_a: HGNC:PLD5
 inverse_is_a: HGNC:PLD6
+
+[Term]
+id: FPLX:Pocket_protein
+name: Pocket-protein
+synonym: "pocket protein" EXACT []
+synonym: "pocket proteins" EXACT []
+synonym: "Pocket protein" EXACT []
+synonym: "Pocket proteins" EXACT []
+synonym: "pocket protein family" EXACT []
+synonym: "Pocket protein family" EXACT []
+is_a: FPLX:root
+inverse_is_a: HGNC:RB1
+inverse_is_a: HGNC:RBL1
+inverse_is_a: HGNC:RBL2
 
 [Term]
 id: FPLX:Porins
@@ -11195,6 +11339,7 @@ name: TRP
 xref: HGNC_GROUP:249
 xref: MESH:D050051
 is_a: FPLX:Voltage_gated_ion_channels
+is_a: FPLX:Mechanosensitive_ion_channels
 inverse_is_a: HGNC:MCOLN1
 inverse_is_a: HGNC:MCOLN2
 inverse_is_a: HGNC:MCOLN3
