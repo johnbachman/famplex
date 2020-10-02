@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 02:10:2020 12:26
+date: 02:10:2020 17:14
 
 [Term]
 id: FPLX:5_hydroxytryptamine_receptors_G_protein_coupled
@@ -187,6 +187,7 @@ synonym: "activin-A" EXACT []
 synonym: "activinA" EXACT []
 xref: GO:0043509
 xref: IP:IPR000491
+xref: MESH:C422405
 xref: RE:R-HSA-206893
 is_a: FPLX:Activin
 has_part: HGNC:INHBA
@@ -581,6 +582,7 @@ synonym: "Alpha-1,4-glucosyltransferase" EXACT []
 synonym: "Alpha-1,4-glucosyltransferases" EXACT []
 synonym: "alpha-1,4-glucosyltransferase" EXACT []
 synonym: "alpha-1,4-glucosyltransferases" EXACT []
+xref: MESH:C036655
 is_a: FPLX:Glycosyltransferase
 inverse_is_a: HGNC:ALG6
 inverse_is_a: HGNC:ALG8
@@ -3530,6 +3532,7 @@ id: FPLX:ELA
 name: ELA
 synonym: "elastase" EXACT []
 xref: BEL:"ELA Family"
+xref: MESH:D010196
 xref: NEXTPROT-FAMILY:02762
 is_a: FPLX:root
 inverse_is_a: HGNC:AZU1
@@ -3617,6 +3620,7 @@ name: EPN
 synonym: "epsin" EXACT []
 synonym: "epsins" EXACT []
 xref: BEL:"EPN Family"
+xref: MESH:C114154
 xref: NEXTPROT-FAMILY:01121
 is_a: FPLX:root
 inverse_is_a: HGNC:EPN1
@@ -5095,6 +5099,7 @@ synonym: "transcription factor II E" EXACT []
 synonym: "transcription factor IIE" EXACT []
 xref: BEL:"GTF2E Complex"
 xref: GO:0005673
+xref: MESH:C066644
 xref: RE:R-HSA-109633
 is_a: FPLX:root
 has_part: HGNC:GTF2E1
@@ -5110,6 +5115,7 @@ synonym: "transcription factor IIF" EXACT []
 xref: BEL:"GTF2F Complex"
 xref: GO:0005674
 xref: IP:IPR011039
+xref: MESH:C056604
 xref: RE:R-HSA-109631
 is_a: FPLX:root
 has_part: HGNC:GTF2F1
@@ -5962,6 +5968,7 @@ synonym: "inhibin A" EXACT []
 synonym: "inhibin-A" EXACT []
 synonym: "inhibin-a" EXACT []
 xref: MEDSCAN:urn:agi-complex:inhibin%20A
+xref: MESH:C422362
 xref: NCIT:C2277
 is_a: FPLX:Inhibin
 has_part: HGNC:INHA
@@ -7669,6 +7676,7 @@ name: NPFFR
 synonym: "neuropeptide FF receptor" EXACT []
 synonym: "neuropeptide FF receptors" EXACT []
 xref: IP:IPR005395
+xref: MESH:C083929
 is_a: FPLX:Neuropeptide_receptor
 inverse_is_a: HGNC:NPFFR1
 inverse_is_a: HGNC:NPFFR2
@@ -8725,6 +8733,7 @@ synonym: "PDGF-AB" EXACT []
 synonym: "PDGF-ab" EXACT []
 synonym: "PDGFAB" EXACT []
 xref: MEDSCAN:urn:agi-complex:platelet%20derived%20growth%20factor%20AB
+xref: MESH:C095477
 xref: RE:R-HSA-380759
 is_a: FPLX:root
 has_part: HGNC:PDGFA
@@ -8946,7 +8955,7 @@ synonym: "Phosphoinositide 3-kinase" EXACT []
 xref: BEL:"p85/p110 PI3Kinase Complex"
 xref: MEDSCAN:urn:agi-aopfc:0000447
 xref: MEDSCAN:urn:agi-complex:prophash-285b9ff3749679e4d6266406a20973aa
-xref: MESH:D019869
+xref: MESH:D058539
 xref: NCIT:C17270
 is_a: FPLX:root
 has_part: FPLX:PI3K_p110
