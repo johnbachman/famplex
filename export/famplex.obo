@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 02:10:2020 18:01
+date: 02:10:2020 21:23
 
 [Term]
 id: FPLX:5_hydroxytryptamine_receptors_G_protein_coupled
@@ -5980,7 +5980,7 @@ name: Inhibin-B
 synonym: "inhibin B" EXACT []
 synonym: "inhibin-B" EXACT []
 synonym: "inhibin-b" EXACT []
-xref: MESH:D028322
+xref: MESH:C422364
 xref: NCIT:C2278
 is_a: FPLX:Inhibin
 has_part: HGNC:INHA
