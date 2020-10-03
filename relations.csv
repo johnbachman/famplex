@@ -4329,3 +4329,5 @@ HGNC,MRE11,partof,FPLX,MRN_complex
 HGNC,NBN,partof,FPLX,MRN_complex
 HGNC,RAD50,partof,FPLX,MRN_complex
 HGNC,WDCP,partof,FPLX,MRN_complex
+HGNC,GAD1,isa,FPLX,GAD
+HGNC,GAD2,isa,FPLX,GAD
