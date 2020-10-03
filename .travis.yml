@@ -40,7 +40,7 @@ script:
       echo $belns;
       echo $obo;
       echo $hgnc;
-      echo $reach
+      echo $reach;
       exit 1;
     fi
   - mypy famplex/api.py famplex/graph.py famplex/load.py
