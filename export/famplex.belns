@@ -2,8 +2,8 @@
 Keyword=FPLX
 NameString=FamPlex
 DomainString=Gene and Gene Products
-VersionString=20201005
-CreatedDateTime=2020-10-05T18:01:32
+VersionString=20201006
+CreatedDateTime=2020-10-06T00:39:37
 DescriptionString=FamPlex is a collection of resources for grounding biological entities from text and describing their hierarchical relationships.
 QueryValueURL=http://identifiers.org/fplx/
 
@@ -257,6 +257,7 @@ EXT|CGPR
 Eotaxin|CGPR
 Ephrin_receptor|CGPR
 FANC|CGPR
+FERMT|CGPR
 FGF|CGPR
 FGFR|CGPR
 FLOT|CGPR
@@ -373,6 +374,7 @@ Histone_H2A|CGPR
 Histone_H2B|CGPR
 Histone_H3|CGPR
 Histone_H4|CGPR
+IFITM|CGPR
 IFNA|CGPR
 IFNAR|CGPR
 IFNB|CGPR
@@ -412,6 +414,7 @@ KSR|CGPR
 Kainate_family|CGPR
 Kinesin|CGPR
 Kinetochore|CGPR
+LATS|CGPR
 LDH|CGPR
 LFA_1|CGPR
 LH|CGPR
@@ -439,6 +442,7 @@ MIRLET7F|CGPR
 MKNK|CGPR
 MMP|CGPR
 MOB|CGPR
+MOB1|CGPR
 MRC|CGPR
 MRN_complex|CGPR
 MRPL|CGPR

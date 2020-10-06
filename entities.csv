@@ -235,6 +235,7 @@ EXOC
 EXT
 F_actin
 FANC
+FERMT
 FGF
 FGFR
 Fibrin
@@ -351,6 +352,7 @@ HTR
 HTR1
 HTR2
 HVCN
+IFITM
 IFNA
 IFNAR
 IFNB
@@ -392,6 +394,7 @@ KLK
 KSR
 Laminin_111
 Laminin_332
+LATS
 LDH
 LFA_1
 LH
@@ -421,6 +424,7 @@ Mitochondrial_Ribosome
 MKNK
 MMP
 MOB
+MOB1
 MRC
 MRN_complex
 MRPL
