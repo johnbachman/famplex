@@ -422,6 +422,7 @@ CK1	CSNK1	fplx	Family
 CK2	CK2	fplx	Family
 CKIs	CDKN	fplx	Family
 CLCN	CLCN	fplx	Family
+CLEC	CLEC	fplx	Family
 CLIC	CLIC	fplx	Family
 CLK	CLK	fplx	Family
 CNG	CNG	fplx	Family
@@ -912,6 +913,7 @@ GABA receptors	GABR	fplx	Family
 GABA-A receptor	GABR	fplx	Family
 GABBR	GABBR	fplx	Family
 GABR	GABR	fplx	Family
+GAD	GAD	fplx	Family
 GALNT	GALNT	fplx	Family
 GAP	GAP	fplx	Family
 GARP	GARP	fplx	Family
@@ -1360,6 +1362,9 @@ MMPs	MMP	fplx	Family
 MNK1 and MNK2	MKNK	fplx	Family
 MNK1 and MNK2 kinases	MKNK	fplx	Family
 MOB	MOB	fplx	Family
+MRC	MRC	fplx	Family
+MRN complex	MRN_complex	fplx	Family
+MRN-complex	MRN_complex	fplx	Family
 MRPS	MRPS	fplx	Family
 MST1	Q13043	uniprot	Gene_or_gene_product
 MST2	Q13188	uniprot	Gene_or_gene_product
@@ -1406,6 +1411,7 @@ Miz1	Q13105	uniprot	Gene_or_gene_product
 Mn	CHEBI:29035	chebi	Simple_chemical
 Mnk1 and Mnk2	MKNK	fplx	Family
 Mnk1 and Mnk2 kinases	MKNK	fplx	Family
+Mre11/Rad50 (M/R) DNA-repair complex	MRN_complex	fplx	Family
 Mu-A	375150	pubchem	Simple_chemical
 Myc	P01106	uniprot	Gene_or_gene_product
 Myoblast	D032446	mesh	BioProcess
@@ -1614,7 +1620,8 @@ P70RSK	P70S6K	fplx	Family
 P70S6K	P70S6K	fplx	Family
 P90RSK	P90RSK	fplx	Family
 PA	CHEBI:16337	chebi	Simple_chemical
-PAFc	Paf1/RNA_polymerase_II_complex	fplx	Family
+PAF1-complex	PAF1_complex	fplx	Family
+PAFc	PAF1_complex	fplx	Family
 PAI-1	P05121	uniprot	Gene_or_gene_product
 PAK	PAK	fplx	Family
 PAK1	Q13153	uniprot	Gene_or_gene_product
@@ -1818,7 +1825,6 @@ PTX	Pertussis_toxin	fplx	Family
 PTX3	P26022	uniprot	Gene_or_gene_product
 PUMA	Q96PG8	uniprot	Gene_or_gene_product
 PYG	PYG	fplx	Family
-Paf1/RNA-polymerase-II-complex	Paf1/RNA_polymerase_II_complex	fplx	Family
 Pak	PAK	fplx	Family
 Pak1	Q13153	uniprot	Gene_or_gene_product
 Pak2	Q13177	uniprot	Gene_or_gene_product
@@ -2829,8 +2835,10 @@ genistein	CHEBI:28088	chebi	Simple_chemical
 glucose	CHEBI:17234	chebi	Simple_chemical
 glucose transporter	SLC2A	fplx	Family
 glucose transporters	SLC2A	fplx	Family
+glutamate decarboxylase	GAD	fplx	Family
 glutamate metabotropic receptors	GRM	fplx	Family
 glutamate oxaloacetate transaminase	GOT	fplx	Family
+glutamic acid decarboxylase 	GAD	fplx	Family
 glutamic-oxaloacetic transaminase	GOT	fplx	Family
 glutathione	CHEBI:16856	chebi	Simple_chemical
 glutathione S-transferase	GST	fplx	Family
@@ -2972,6 +2980,8 @@ mTORC2	mTORC2	fplx	Family
 mammalian mitochondrial ribosome	Mitochondrial_Ribosome	fplx	Family
 mammalian target of rapamycin	P42345	uniprot	Gene_or_gene_product
 mangiferin	CHEBI:6682	chebi	Simple_chemical
+mannose receptor	MRC	fplx	Family
+mannose receptors	MRC	fplx	Family
 mechanosensitive ion channel	Mechanosensitive_ion_channels	fplx	Family
 mechanosensitive ion channels	Mechanosensitive_ion_channels	fplx	Family
 melanin	CHEBI:89634	chebi	Simple_chemical

@@ -2,8 +2,8 @@
 Keyword=FPLX
 NameString=FamPlex
 DomainString=Gene and Gene Products
-VersionString=20201002
-CreatedDateTime=2020-10-02T17:14:13
+VersionString=20201005
+CreatedDateTime=2020-10-05T18:01:32
 DescriptionString=FamPlex is a collection of resources for grounding biological entities from text and describing their hierarchical relationships.
 QueryValueURL=http://identifiers.org/fplx/
 
@@ -145,6 +145,7 @@ CHRM|CGPR
 CHRN|CGPR
 CK2|CGPR
 CLCN|CGPR
+CLEC|CGPR
 CLIC|CGPR
 CLK|CGPR
 CNG|CGPR
@@ -288,6 +289,7 @@ Fibrin|CGPR
 Fibrinogen|CGPR
 GABBR|CGPR
 GABR|CGPR
+GAD|CGPR
 GALNT|CGPR
 GAP|CGPR
 GARP|CGPR
@@ -437,6 +439,8 @@ MIRLET7F|CGPR
 MKNK|CGPR
 MMP|CGPR
 MOB|CGPR
+MRC|CGPR
+MRN_complex|CGPR
 MRPL|CGPR
 MRPS|CGPR
 MYH|CGPR
@@ -508,6 +512,7 @@ P2RX|CGPR
 P2RY|CGPR
 P70S6K|CGPR
 P90RSK|CGPR
+PAF1_complex|CGPR
 PAK|CGPR
 PARP|CGPR
 PARV|CGPR
@@ -570,7 +575,6 @@ PRKAR|CGPR
 PRKG|CGPR
 PTGER|CGPR
 PYG|CGPR
-Paf1/RNA_polymerase_II_complex|CGPR
 Patched|CGPR
 Pertussis_toxin|CGPR
 PhK|CGPR

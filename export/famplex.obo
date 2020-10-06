@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 02:10:2020 21:23
+date: 05:10:2020 18:01
 
 [Term]
 id: FPLX:5_hydroxytryptamine_receptors_G_protein_coupled
@@ -2280,6 +2280,96 @@ inverse_is_a: HGNC:CLCNKA
 inverse_is_a: HGNC:CLCNKB
 
 [Term]
+id: FPLX:CLEC
+name: CLEC
+xref: HGNC_GROUP:1298
+is_a: FPLX:root
+inverse_is_a: HGNC:ACAN
+inverse_is_a: HGNC:ASGR1
+inverse_is_a: HGNC:ASGR2
+inverse_is_a: HGNC:ATRN
+inverse_is_a: HGNC:ATRNL1
+inverse_is_a: HGNC:BCAN
+inverse_is_a: HGNC:CD207
+inverse_is_a: HGNC:CD209
+inverse_is_a: HGNC:CD248
+inverse_is_a: HGNC:CD302
+inverse_is_a: HGNC:CD69
+inverse_is_a: HGNC:CD72
+inverse_is_a: HGNC:CD93
+inverse_is_a: HGNC:CHODL
+inverse_is_a: HGNC:CLEC10A
+inverse_is_a: HGNC:CLEC11A
+inverse_is_a: HGNC:CLEC12A
+inverse_is_a: HGNC:CLEC12B
+inverse_is_a: HGNC:CLEC14A
+inverse_is_a: HGNC:CLEC16A
+inverse_is_a: HGNC:CLEC17A
+inverse_is_a: HGNC:CLEC18A
+inverse_is_a: HGNC:CLEC18B
+inverse_is_a: HGNC:CLEC18C
+inverse_is_a: HGNC:CLEC19A
+inverse_is_a: HGNC:CLEC1A
+inverse_is_a: HGNC:CLEC1B
+inverse_is_a: HGNC:CLEC20A
+inverse_is_a: HGNC:CLEC2A
+inverse_is_a: HGNC:CLEC2B
+inverse_is_a: HGNC:CLEC2D
+inverse_is_a: HGNC:CLEC2L
+inverse_is_a: HGNC:CLEC3A
+inverse_is_a: HGNC:CLEC3B
+inverse_is_a: HGNC:CLEC4A
+inverse_is_a: HGNC:CLEC4C
+inverse_is_a: HGNC:CLEC4D
+inverse_is_a: HGNC:CLEC4E
+inverse_is_a: HGNC:CLEC4F
+inverse_is_a: HGNC:CLEC4G
+inverse_is_a: HGNC:CLEC5A
+inverse_is_a: HGNC:CLEC6A
+inverse_is_a: HGNC:CLEC7A
+inverse_is_a: HGNC:CLEC9A
+inverse_is_a: HGNC:COLEC10
+inverse_is_a: HGNC:COLEC11
+inverse_is_a: HGNC:COLEC12
+inverse_is_a: HGNC:DGCR2
+inverse_is_a: HGNC:FCER2
+inverse_is_a: HGNC:FREM1
+inverse_is_a: HGNC:KLRB1
+inverse_is_a: HGNC:KLRC1
+inverse_is_a: HGNC:KLRC2
+inverse_is_a: HGNC:KLRC3
+inverse_is_a: HGNC:KLRD1
+inverse_is_a: HGNC:KLRF1
+inverse_is_a: HGNC:KLRF2
+inverse_is_a: HGNC:KLRG1
+inverse_is_a: HGNC:KLRG2
+inverse_is_a: HGNC:KLRK1
+inverse_is_a: HGNC:LAYN
+inverse_is_a: HGNC:LY75
+inverse_is_a: FPLX:MRC
+inverse_is_a: HGNC:NCAN
+inverse_is_a: HGNC:OLR1
+inverse_is_a: HGNC:PKD1
+inverse_is_a: HGNC:PKD1L2
+inverse_is_a: HGNC:PKD1L3
+inverse_is_a: HGNC:PLA2R1
+inverse_is_a: HGNC:PRG2
+inverse_is_a: HGNC:PRG3
+inverse_is_a: HGNC:REG1A
+inverse_is_a: HGNC:REG1B
+inverse_is_a: HGNC:REG3A
+inverse_is_a: HGNC:REG3G
+inverse_is_a: HGNC:REG4
+inverse_is_a: HGNC:SELE
+inverse_is_a: HGNC:SELL
+inverse_is_a: HGNC:SELP
+inverse_is_a: HGNC:SFTPA1
+inverse_is_a: HGNC:SFTPA2
+inverse_is_a: HGNC:SFTPD
+inverse_is_a: HGNC:THBD
+inverse_is_a: HGNC:VCAN
+
+[Term]
 id: FPLX:CLIC
 name: CLIC
 xref: HGNC_GROUP:307
@@ -4419,6 +4509,16 @@ has_part: HGNC:ACTB
 has_part: HGNC:ACTC1
 has_part: HGNC:ACTG1
 has_part: HGNC:ACTG2
+
+[Term]
+id: FPLX:GAD
+name: GAD
+synonym: "glutamate decarboxylase" EXACT []
+synonym: "glutamic acid decarboxylase " EXACT []
+xref: MESH:D005968
+is_a: FPLX:root
+inverse_is_a: HGNC:GAD1
+inverse_is_a: HGNC:GAD2
 
 [Term]
 id: FPLX:GALNT
@@ -6955,6 +7055,27 @@ inverse_is_a: HGNC:MOB3C
 inverse_is_a: HGNC:MOB4
 
 [Term]
+id: FPLX:MRC
+name: MRC
+synonym: "mannose receptor" EXACT []
+synonym: "mannose receptors" EXACT []
+is_a: FPLX:CLEC
+inverse_is_a: HGNC:MRC1
+inverse_is_a: HGNC:MRC2
+
+[Term]
+id: FPLX:MRN_complex
+name: MRN-complex
+synonym: "MRN complex" EXACT []
+synonym: "Mre11/Rad50 (M/R) DNA-repair complex" EXACT []
+xref: HGNC_GROUP:1344
+is_a: FPLX:root
+has_part: HGNC:MRE11
+has_part: HGNC:NBN
+has_part: HGNC:RAD50
+has_part: HGNC:WDCP
+
+[Term]
 id: FPLX:MRPL
 name: MRPL
 synonym: "large mitoribosomal subunit" EXACT []
@@ -8468,8 +8589,8 @@ inverse_is_a: HGNC:RPS6KA5
 inverse_is_a: HGNC:RPS6KA6
 
 [Term]
-id: FPLX:Paf1/RNA_polymerase_II_complex
-name: Paf1/RNA-polymerase-II-complex
+id: FPLX:PAF1_complex
+name: PAF1-complex
 synonym: "PAFc" EXACT []
 xref: HGNC_GROUP:1029
 is_a: FPLX:root

@@ -136,6 +136,7 @@ CHRN
 CK2
 Clathrin
 CLCN
+CLEC
 CLIC
 CLK
 CNG
@@ -268,6 +269,7 @@ G_12_alpha
 GABBR
 GABR
 G_actin
+GAD
 GALNT
 G_alpha
 Gamma_secretase
@@ -419,6 +421,8 @@ Mitochondrial_Ribosome
 MKNK
 MMP
 MOB
+MRC
+MRN_complex
 MRPL
 MRPS
 mTORC1
@@ -491,7 +495,7 @@ p38
 p53_family
 P70S6K
 P90RSK
-Paf1/RNA_polymerase_II_complex
+PAF1_complex
 PAK
 PARP
 PARV
