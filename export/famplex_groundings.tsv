@@ -760,6 +760,7 @@ FANC	FANC	fplx	Family
 FANC proteins	FANC	fplx	Family
 FANCJ	Q9BX63	uniprot	Gene_or_gene_product
 FBS	C113696	ncit	BioProcess
+FERMT	FERMT	fplx	Family
 FGF	FGF	fplx	Family
 FGF-2	P09038	uniprot	Gene_or_gene_product
 FGF2	P09038	uniprot	Gene_or_gene_product
@@ -814,6 +815,8 @@ FZD	FZD	fplx	Family
 Fas	P25445	uniprot	Gene_or_gene_product
 FasL	P48023	uniprot	Gene_or_gene_product
 Fer-1	4068248	pubchem	Simple_chemical
+Fermitin	FERMT	fplx	Family
+Fermitins	FERMT	fplx	Family
 Fes	P07332	uniprot	Gene_or_gene_product
 Fibrin	Fibrin	fplx	Family
 Fibrinogen	Fibrinogen	fplx	Family
@@ -1138,6 +1141,7 @@ I/R	D015427	mesh	BioProcess
 ICAM-1	P05362	uniprot	Gene_or_gene_product
 IER3	P46695	uniprot	Gene_or_gene_product
 IFI16	Q16666	uniprot	Gene_or_gene_product
+IFITM	IFITM	fplx	Family
 IFN	Interferon	fplx	Family
 IFN-a	IFNA	fplx	Family
 IFN-alpha	IFNA	fplx	Family
@@ -1266,12 +1270,15 @@ Kainate-family	Kainate_family	fplx	Family
 Keap1	Q14145	uniprot	Gene_or_gene_product
 Ki-67	P46013	uniprot	Gene_or_gene_product
 Ki67	P46013	uniprot	Gene_or_gene_product
+Kindlin	FERMT	fplx	Family
+Kindlins	FERMT	fplx	Family
 Kinesin	Kinesin	fplx	Family
 Kinetochore	Kinetochore	fplx	Family
 Klf5	Q13887	uniprot	Gene_or_gene_product
 Kras	P01116	uniprot	Gene_or_gene_product
 LA	CHEBI:30314	chebi	Simple_chemical
 LAT	O43561	uniprot	Gene_or_gene_product
+LATS	LATS	fplx	Family
 LC3	MAP1LC3	fplx	Family
 LDH	LDH	fplx	Family
 LFA-1	LFA_1	fplx	Family
@@ -1362,6 +1369,7 @@ MMPs	MMP	fplx	Family
 MNK1 and MNK2	MKNK	fplx	Family
 MNK1 and MNK2 kinases	MKNK	fplx	Family
 MOB	MOB	fplx	Family
+MOB1	MOB1	fplx	Family
 MRC	MRC	fplx	Family
 MRN complex	MRN_complex	fplx	Family
 MRN-complex	MRN_complex	fplx	Family
@@ -2807,6 +2815,8 @@ exostosin glycosyltransferase family	EXT	fplx	Family
 extracellular signal-regulated kinase	ERK	fplx	Family
 ezrin	P15311	uniprot	Gene_or_gene_product
 farnesyltransferase	FNT	fplx	Family
+fermitin	FERMT	fplx	Family
+fermitins	FERMT	fplx	Family
 fibrin	Fibrin	fplx	Family
 fibrinogen	Fibrinogen	fplx	Family
 fibronectin	P02751	uniprot	Gene_or_gene_product
@@ -2928,6 +2938,8 @@ integrins alphavbeta3	VTNR	fplx	Family
 interferon	Interferon	fplx	Family
 interferon beta	IFNB	fplx	Family
 interferon gamma receptor	Interferon_gamma_receptor	fplx	Family
+interferon induced transmembrane protein	IFITM	fplx	Family
+interferon induced transmembrane proteins	IFITM	fplx	Family
 interferon β	IFNB	fplx	Family
 interferon γ receptor	Interferon_gamma_receptor	fplx	Family
 interferon-gamma receptor	Interferon_gamma_receptor	fplx	Family
@@ -2942,6 +2954,8 @@ ischemia	D007511	mesh	BioProcess
 isoflurane	CHEBI:6015	chebi	Simple_chemical
 kallikrein	KLK	fplx	Family
 kallikrein-related peptidases	KLK	fplx	Family
+kindlin	FERMT	fplx	Family
+kindlins	FERMT	fplx	Family
 kinesin	Kinesin	fplx	Family
 kinesins	Kinesin	fplx	Family
 kinetochore	Kinetochore	fplx	Family
@@ -2957,6 +2971,8 @@ laminin-5	Laminin_332	fplx	Family
 lapatinib	CHEBI:49603	chebi	Simple_chemical
 large mitoribosomal subunit	MRPL	fplx	Family
 large subunit of the mammalian mitochondrial ribosome	MRPL	fplx	Family
+large tumor suppressor kinase	LATS	fplx	Family
+large tumor suppressor kinases	LATS	fplx	Family
 lead	CHEBI:25016	chebi	Simple_chemical
 leptin	P41159	uniprot	Gene_or_gene_product
 ligand-gated ion channel	Ligand_gated_ion_channels	fplx	Family

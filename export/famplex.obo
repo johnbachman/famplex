@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 05:10:2020 18:01
+date: 06:10:2020 00:39
 
 [Term]
 id: FPLX:5_hydroxytryptamine_receptors_G_protein_coupled
@@ -3727,6 +3727,7 @@ xref: BEL:"EGFR/ERBB Family"
 xref: IP:IPR016245
 xref: MESH:D066246
 xref: NCIT:C17763
+xref: SIGNOR:SIGNOR-PF36
 is_a: FPLX:root
 inverse_is_a: HGNC:EGFR
 inverse_is_a: HGNC:ERBB2
@@ -4013,6 +4014,24 @@ inverse_is_a: HGNC:RAD51
 inverse_is_a: HGNC:BRCA1
 inverse_is_a: HGNC:UBE2T
 inverse_is_a: HGNC:XRCC2
+
+[Term]
+id: FPLX:FERMT
+name: FERMT
+synonym: "fermitin" EXACT []
+synonym: "fermitins" EXACT []
+synonym: "Fermitin" EXACT []
+synonym: "Fermitins" EXACT []
+synonym: "kindlin" EXACT []
+synonym: "kindlins" EXACT []
+synonym: "Kindlin" EXACT []
+synonym: "Kindlins" EXACT []
+xref: HGNC_GROUP:561
+xref: SIGNOR:SIGNOR-PF48
+is_a: FPLX:root
+inverse_is_a: HGNC:FERMT1
+inverse_is_a: HGNC:FERMT2
+inverse_is_a: HGNC:FERMT3
 
 [Term]
 id: FPLX:FGF
@@ -5858,6 +5877,21 @@ is_a: FPLX:Voltage_gated_ion_channels
 inverse_is_a: HGNC:HVCN1
 
 [Term]
+id: FPLX:IFITM
+name: IFITM
+synonym: "IFITM" EXACT []
+synonym: "interferon induced transmembrane protein" EXACT []
+synonym: "interferon induced transmembrane proteins" EXACT []
+xref: HGNC_GROUP:1598
+xref: SIGNOR:SIGNOR-PF49
+is_a: FPLX:root
+inverse_is_a: HGNC:IFITM1
+inverse_is_a: HGNC:IFITM2
+inverse_is_a: HGNC:IFITM3
+inverse_is_a: HGNC:IFITM5
+inverse_is_a: HGNC:IFITM10
+
+[Term]
 id: FPLX:IFNA
 name: IFNA
 synonym: "IFN-a" EXACT []
@@ -6131,6 +6165,7 @@ xref: MEDSCAN:urn:agi-protfc:interferon
 xref: MESH:D007372
 xref: NCIT:C20493
 xref: XFAM:PF00143
+xref: SIGNOR:SIGNOR-PF50
 is_a: FPLX:root
 inverse_is_a: FPLX:IFNA
 inverse_is_a: FPLX:IFNB
@@ -6564,6 +6599,16 @@ is_a: FPLX:root
 has_part: HGNC:LAMA3
 has_part: HGNC:LAMB3
 has_part: HGNC:LAMC2
+
+[Term]
+id: FPLX:LATS
+name: LATS
+synonym: "large tumor suppressor kinase" EXACT []
+synonym: "large tumor suppressor kinases" EXACT []
+xref: SIGNOR:SIGNOR-PF43
+is_a: FPLX:root
+inverse_is_a: HGNC:LATS1
+inverse_is_a: HGNC:LATS2
 
 [Term]
 id: FPLX:LDH
@@ -7046,13 +7091,20 @@ id: FPLX:MOB
 name: MOB
 xref: HGNC_GROUP:647
 is_a: FPLX:root
-inverse_is_a: HGNC:MOB1A
-inverse_is_a: HGNC:MOB1B
+inverse_is_a: FPLX:MOB1
 inverse_is_a: HGNC:MOB2
 inverse_is_a: HGNC:MOB3A
 inverse_is_a: HGNC:MOB3B
 inverse_is_a: HGNC:MOB3C
 inverse_is_a: HGNC:MOB4
+
+[Term]
+id: FPLX:MOB1
+name: MOB1
+xref: SIGNOR:SIGNOR-PF42
+is_a: FPLX:MOB
+inverse_is_a: HGNC:MOB1A
+inverse_is_a: HGNC:MOB1B
 
 [Term]
 id: FPLX:MRC
@@ -7832,6 +7884,7 @@ xref: MEDSCAN:urn:agi-protfc:neuregulin%20family
 xref: MESH:D020880
 xref: XFAM:PF02158
 xref: RE:R-HSA-1227957
+xref: SIGNOR:SIGNOR-PF37
 is_a: FPLX:root
 inverse_is_a: FPLX:NRG_1_2
 inverse_is_a: FPLX:NRG_3_4
@@ -10039,6 +10092,7 @@ synonym: "retinoic acid receptors" EXACT []
 xref: BEL:"RAR Family"
 xref: MESH:D018168
 xref: NCIT:C17532
+xref: SIGNOR:SIGNOR-PF45
 is_a: FPLX:root
 inverse_is_a: HGNC:RARA
 inverse_is_a: HGNC:RARB
@@ -10395,6 +10449,7 @@ xref: GO:0004886
 xref: MEDSCAN:urn:agi-complex:prophash-bd459ca2937257c9e3f2b75abf22f422
 xref: MESH:D047488
 xref: NCIT:C17534
+xref: SIGNOR:SIGNOR-PF44
 is_a: FPLX:root
 inverse_is_a: HGNC:RXRA
 inverse_is_a: HGNC:RXRB
@@ -11603,6 +11658,7 @@ xref: MEDSCAN:urn:agi-protfc:tubulin
 xref: MESH:D014404
 xref: NCIT:C17219
 xref: NEXTPROT-FAMILY:04239
+xref: SIGNOR:SIGNOR-PF46
 is_a: FPLX:root
 inverse_is_a: FPLX:TUBA
 inverse_is_a: FPLX:TUBB
@@ -11852,6 +11908,7 @@ xref: RE:R-HSA-3238374
 xref: RE:R-HSA-3247790
 xref: RE:R-HSA-3247824
 xref: RE:R-HSA-3247835
+xref: SIGNOR:SIGNOR-PF40
 is_a: FPLX:root
 inverse_is_a: HGNC:WNT1
 inverse_is_a: HGNC:WNT2
