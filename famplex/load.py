@@ -51,7 +51,7 @@ def _construct_grounding_map(rows):
     for row in rows:
         text = row[0]
         db_refs = {'TEXT': text}
-        db_refs.update({ns: id_ for ns, id_ in zip(row[1::2], row[2::2])})
+        db_refs.update({ns: id_ for ns, id_ in zip(row[1::2], row[2::2]) if ns})
         gmap[text] = db_refs if len(db_refs) > 1 else None
     return gmap
 
