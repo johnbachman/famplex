@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 06:10:2020 00:39
+date: 19:10:2020 11:08
 
 [Term]
 id: FPLX:5_hydroxytryptamine_receptors_G_protein_coupled
@@ -3227,11 +3227,7 @@ has_part: HGNC:DMD
 has_part: HGNC:DTNA
 has_part: HGNC:DTNB
 has_part: HGNC:NOS1
-has_part: HGNC:SGCA
-has_part: HGNC:SGCB
-has_part: HGNC:SGCD
-has_part: HGNC:SGCE
-has_part: HGNC:SGCZ
+has_part: FPLX:Sarcoglycan_complex
 has_part: HGNC:SNTA1
 has_part: HGNC:SNTB1
 has_part: HGNC:SNTG1
@@ -10537,6 +10533,21 @@ is_a: FPLX:root
 inverse_is_a: HGNC:SAA1
 inverse_is_a: HGNC:SAA2
 inverse_is_a: HGNC:SAA4
+
+[Term]
+id: FPLX:Sarcoglycan_complex
+name: Sarcoglycan-complex
+synonym: "sarcoglycan" EXACT []
+synonym: "sarcoglycans" EXACT []
+synonym: "Sarcoglycan" EXACT []
+synonym: "Sarcoglycans" EXACT []
+xref: MESH:D049031
+part_of: FPLX:DGC
+has_part: HGNC:SGCA
+has_part: HGNC:SGCB
+has_part: HGNC:SGCD
+has_part: HGNC:SGCE
+has_part: HGNC:SGCZ
 
 [Term]
 id: FPLX:SCD
