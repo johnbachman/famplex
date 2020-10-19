@@ -2145,6 +2145,9 @@ SWI/SNF	SWI_SNF	fplx	Family
 SWI/SNF complex	SWI_SNF	fplx	Family
 SWI/SNF-like	SWI_SNF	fplx	Family
 SYNJ2	O15056	uniprot	Gene_or_gene_product
+Sarcoglycan	Sarcoglycan_complex	fplx	Family
+Sarcoglycan-complex	Sarcoglycan_complex	fplx	Family
+Sarcoglycans	Sarcoglycan_complex	fplx	Family
 Se	CHEBI:27568	chebi	Simple_chemical
 Shc	SHC	fplx	Family
 Shc family	SHC	fplx	Family
@@ -3288,6 +3291,8 @@ rutin	CHEBI:28527	chebi	Simple_chemical
 s6k	P70S6K	fplx	Family
 sGC	SGC	fplx	Family
 salt inducible kinase	SIK	fplx	Family
+sarcoglycan	Sarcoglycan_complex	fplx	Family
+sarcoglycans	Sarcoglycan_complex	fplx	Family
 sarcoplasmic/endoplasmic reticulum calcium ATPase	SERCA	fplx	Family
 senescence	GO:0090398	go	BioProcess
 serine/threonine protein kinase CK1	CSNK1	fplx	Family

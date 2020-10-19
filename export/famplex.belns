@@ -2,8 +2,8 @@
 Keyword=FPLX
 NameString=FamPlex
 DomainString=Gene and Gene Products
-VersionString=20201006
-CreatedDateTime=2020-10-06T00:39:37
+VersionString=20201019
+CreatedDateTime=2020-10-19T11:08:06
 DescriptionString=FamPlex is a collection of resources for grounding biological entities from text and describing their hierarchical relationships.
 QueryValueURL=http://identifiers.org/fplx/
 
@@ -661,6 +661,7 @@ STAT|CGPR
 STAT5|CGPR
 STT3|CGPR
 SWI_SNF|CGPR
+Sarcoglycan_complex|CGPR
 Sodium_channels|CGPR
 Sodium_voltage_gated_channel_alpha_subunits|CGPR
 Sodium_voltage_gated_channel_beta_subunits|CGPR
